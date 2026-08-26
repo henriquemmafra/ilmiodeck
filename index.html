@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Master Deck — 379 Cards · Anki Mode</title><style>
+:root{--bg:#0d0f13;--panel:#151922;--panel2:#1b202b;--text:#f4f6f8;--muted:#9ca6b5;--line:#2a3240;--accent:#b7ceff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}body{padding:18px}.wrap{max-width:920px;margin:auto}.top{position:sticky;top:0;background:rgba(13,15,19,.96);backdrop-filter:blur(10px);padding:10px 0 14px;z-index:2}.title{font-size:28px;font-weight:800}.sub{color:var(--muted);margin-top:4px}.card{margin:12px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel)}summary{cursor:pointer;padding:16px 18px;font-weight:700;line-height:1.4;list-style:none}summary::-webkit-details-marker{display:none}.ans{padding:0 18px 18px;color:#dfe6ef;line-height:1.55;border-top:1px solid var(--line);padding-top:15px}.tags{margin-top:12px;color:var(--muted);font-size:12px}.num{color:var(--accent);font-size:12px;margin-right:8px}.hint{color:var(--muted);font-size:13px;margin-top:8px}
+
+.visual-box{margin-top:16px;padding:12px;border:1px solid #2d3c52;border-radius:16px;background:linear-gradient(180deg,#101722,#0c1118);overflow:hidden}
+.visual-title{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b7ceff;margin:0 0 8px}
+.visual-box svg{width:100%;height:auto;display:block;border-radius:12px;background:#0a0e14}
+.visual-caption{margin-top:8px;color:#aab5c4;font-size:12px;line-height:1.35}
+.vlabel{font:700 15px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#f4f6f8}
+.vsmall{font:600 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#c6d0dc}
+.vtiny{font:600 10px -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;fill:#aab5c4}
+.vmuted{fill:#141b25;stroke:#334155;stroke-width:2}
+.vblue{fill:#2f6feb}.vcyan{fill:#22b8cf}.vorange{fill:#f08c46}.vred{fill:#d9534f}.vgreen{fill:#36a269}.vpink{fill:#c75ca8}.vyellow{fill:#d8a72e}.vwhite{fill:#eef3f8}.vline{stroke:#dfe6ef;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.vthin{stroke:#8ea0b5;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+</style><style>
+/* Anki-style single-card study mode */
+html,body{min-height:100%;}
+body{padding:0;background:#0b0d11;overflow-x:hidden;}
+.wrap{max-width:none;width:100%;margin:0;}
+#source-deck{display:none;}
+#study-shell{
+  width:min(1180px,100%);
+  min-height:calc(100dvh - 0px);
+  margin:0 auto;
+  padding:clamp(14px,2.5vw,30px);
+  display:flex;
+  flex-direction:column;
+  gap:clamp(12px,2vh,20px);
+}
+.study-topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.deck-kicker{font-size:11px;letter-spacing:.12em;font-weight:800;color:#8693a6;}
+.deck-title{font-size:clamp(20px,2.7vw,30px);font-weight:850;letter-spacing:-.02em;margin-top:3px;}
+.study-controls{display:flex;gap:10px;align-items:end;flex-wrap:wrap;justify-content:flex-end;}
+.mode-control{display:flex;flex-direction:column;gap:5px;color:#96a2b4;font-size:11px;font-weight:750;letter-spacing:.04em;text-transform:uppercase;}
+#mode-select,.small-button{
+  appearance:none;border:1px solid #30394a;background:#151a23;color:#f4f6f8;border-radius:12px;
+  min-height:42px;padding:0 13px;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+#mode-select{padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,#aebbd0 50%),linear-gradient(135deg,#aebbd0 50%,transparent 50%);background-position:calc(100% - 16px) 18px,calc(100% - 11px) 18px;background-size:5px 5px,5px 5px;background-repeat:no-repeat;}
+.small-button{cursor:pointer;}
+.progress-row{display:flex;align-items:center;gap:12px;color:#9ba7b8;font-size:12px;font-weight:700;}
+#progress-text{white-space:nowrap;min-width:86px;}
+.progress-track{height:5px;background:#202633;border-radius:999px;overflow:hidden;flex:1;}
+#progress-bar{width:0;height:100%;background:#9cb8ff;border-radius:999px;transition:width .18s ease;}
+#study-stage{
+  flex:1;
+  min-height:clamp(430px,64dvh,780px);
+  border:1px solid #2b3444;
+  border-radius:24px;
+  background:linear-gradient(180deg,#171c25 0%,#12161e 100%);
+  box-shadow:0 18px 55px rgba(0,0,0,.28);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:clamp(24px,5vw,64px);
+  outline:none;
+  cursor:pointer;
+  position:relative;
+  overflow:auto;
+}
+#study-stage:focus-visible{box-shadow:0 0 0 3px rgba(156,184,255,.25),0 18px 55px rgba(0,0,0,.28);}
+.card-meta{position:absolute;top:18px;left:22px;right:22px;display:flex;justify-content:space-between;gap:12px;color:#7f8ca0;font-size:11px;font-weight:750;letter-spacing:.03em;}
+#source-number{color:#9cb8ff;}
+#study-question{
+  width:min(920px,100%);
+  margin:0 auto;
+  text-align:center;
+  font-size:clamp(27px,4.4vw,48px);
+  line-height:1.22;
+  letter-spacing:-.025em;
+  font-weight:780;
+  color:#f7f9fc;
+}
+#answer-divider{width:min(760px,82%);height:1px;background:#333c4d;margin:clamp(28px,5vh,46px) auto;}
+#study-answer{
+  width:min(920px,100%);
+  margin:0 auto;
+  font-size:clamp(19px,2.5vw,26px);
+  line-height:1.58;
+  color:#e3e9f2;
+}
+#study-answer b{color:#ffffff;}
+#study-answer .tags{margin-top:22px;padding-top:14px;border-top:1px solid #2a3240;font-size:12px;line-height:1.5;color:#8c99ad;}
+#study-answer .visual-box{margin:24px auto 0;padding:16px;border-radius:18px;max-width:900px;}
+#study-answer .visual-title{font-size:13px;}
+#study-answer .visual-caption{font-size:14px;line-height:1.45;}
+.answer-action{display:flex;justify-content:center;}
+.show-answer{
+  width:min(520px,100%);min-height:58px;border:0;border-radius:16px;background:#e9edf5;color:#0e1117;
+  font:800 clamp(17px,2.2vw,21px) -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  cursor:pointer;box-shadow:0 8px 26px rgba(0,0,0,.2);
+}
+.show-answer[hidden]{display:none;}
+.study-nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.study-nav button{
+  min-height:52px;border:1px solid #30394a;border-radius:15px;background:#151a23;color:#eef2f8;
+  font:750 16px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;cursor:pointer;
+}
+.study-nav button:disabled{opacity:.35;cursor:default;}
+#next-card{background:#1b2638;border-color:#364b6e;}
+.keyboard-help{text-align:center;color:#657185;font-size:11px;padding-bottom:2px;}
+@media (max-width:680px){
+  #study-shell{padding:12px;gap:11px;}
+  .study-topbar{align-items:flex-start;}
+  .deck-title{font-size:20px;}
+  .study-controls{gap:7px;}
+  #mode-select,.small-button{min-height:38px;font-size:13px;border-radius:10px;}
+  #study-stage{min-height:calc(100dvh - 260px);border-radius:20px;padding:54px 22px 28px;justify-content:center;}
+  .card-meta{top:15px;left:18px;right:18px;}
+  #reveal-hint{display:none;}
+  #study-question{font-size:clamp(26px,7.2vw,36px);}
+  #study-answer{font-size:clamp(18px,5vw,22px);line-height:1.52;}
+  #answer-divider{margin:26px auto;}
+  .show-answer{min-height:54px;}
+  .study-nav button{min-height:48px;font-size:15px;}
+  .keyboard-help{display:none;}
+}
+@media (prefers-reduced-motion:reduce){#progress-bar{transition:none;}}
+</style></head><body><div class="wrap"><div aria-live="polite" id="study-shell"><header class="study-topbar"><div class="deck-heading"><div class="deck-kicker">MASTER DECK · 379 CARDS</div><div class="deck-title">Anki-style review</div></div><div class="study-controls"><label class="mode-control" for="mode-select"><span>Order</span><select aria-label="Study order" id="mode-select"><option value="sequential">Sequential</option><option value="random">Random</option></select></label><button class="small-button" id="restart-session" type="button">Restart</button></div></header><div class="progress-row"><span id="progress-text">Card 1 of 379</span><div aria-hidden="true" class="progress-track"><div id="progress-bar"></div></div></div><main aria-label="Study card" id="study-stage" tabindex="0"><div class="card-meta"><span id="source-number">Card 001</span><span id="reveal-hint">Tap card or press Space to reveal</span></div><section id="study-question"></section><div hidden="" id="answer-divider"></div><section hidden="" id="study-answer"></section></main><div class="answer-action"><button class="show-answer" id="show-answer" type="button">Show answer</button></div><nav aria-label="Card navigation" class="study-nav"><button id="prev-card" type="button">← Previous</button><button id="next-card" type="button">Next →</button></nav><div class="keyboard-help">Space / Enter: show answer · ← / →: navigate</div></div><div id="source-deck"></div></div><script id="deck-logic">
+window.DeckLogic = {
+  createOrder: function(count, mode, rng) {
+    var order = Array.from({length: count}, function(_, i) { return i; });
+    if (mode !== 'random') return order;
+    var random = rng || Math.random;
+    for (var i = order.length - 1; i > 0; i--) {
+      var j = Math.floor(random() * (i + 1));
+      var tmp = order[i]; order[i] = order[j]; order[j] = tmp;
+    }
+    return order;
+  },
+  nextPosition: function(position, count) {
+    return Math.min(position + 1, Math.max(0, count - 1));
+  },
+  previousPosition: function(position, count) {
+    return Math.max(position - 1, 0);
+  }
+};
+</script>
+<script id="study-ui">
+(async function () {
+  'use strict';
+  var sourceDeck = document.getElementById('source-deck');
+  try {
+    if (typeof DecompressionStream === 'undefined') throw new Error('This browser does not support DecompressionStream. Open the deck in a recent Safari or Chrome.');
+    var b64 = (await (await fetch('cards.gz.b64', {cache:'no-store'})).text()).trim();
+    var bin = atob(b64);
+    var bytes = new Uint8Array(bin.length);
+    for (var i=0;i<bin.length;i++) bytes[i]=bin.charCodeAt(i);
+    var stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+    var html = await new Response(stream).text();
+    sourceDeck.innerHTML = html;
+  } catch (err) {
+    document.getElementById('study-question').textContent = 'Could not load the deck.';
+    document.getElementById('study-answer').hidden = false;
+    document.getElementById('study-answer').textContent = String(err);
+    return;
+  }
+  var sourceCards = Array.from(document.querySelectorAll('#source-deck details.card'));
+  var questionEl = document.getElementById('study-question');
+  var answerEl = document.getElementById('study-answer');
+  var dividerEl = document.getElementById('answer-divider');
+  var showAnswerBtn = document.getElementById('show-answer');
+  var previousBtn = document.getElementById('prev-card');
+  var nextBtn = document.getElementById('next-card');
+  var modeSelect = document.getElementById('mode-select');
+  var restartBtn = document.getElementById('restart-session');
+  var progressText = document.getElementById('progress-text');
+  var progressBar = document.getElementById('progress-bar');
+  var sourceNumber = document.getElementById('source-number');
+  var revealHint = document.getElementById('reveal-hint');
+  var stage = document.getElementById('study-stage');
+  var order = [], position = 0, revealed = false;
+  function currentSourceIndex() { return order[position]; }
+  function render() {
+    var card = sourceCards[currentSourceIndex()]; if (!card) return;
+    var summary = card.querySelector('summary'); var answer = card.querySelector('.ans'); var number = card.querySelector('.num');
+    questionEl.innerHTML = summary ? summary.innerHTML : '';
+    var copiedNum = questionEl.querySelector('.num'); if (copiedNum) copiedNum.remove();
+    answerEl.innerHTML = answer ? answer.innerHTML : '';
+    sourceNumber.textContent = 'Card ' + (number ? number.textContent.trim() : String(currentSourceIndex()+1));
+    progressText.textContent = 'Card ' + (position+1) + ' of ' + order.length;
+    progressBar.style.width = (((position+1)/order.length)*100) + '%';
+    revealed=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal';
+    previousBtn.disabled=position===0; nextBtn.disabled=position===order.length-1; stage.scrollTop=0;
+  }
+  function revealAnswer() {
+    if(revealed) return; revealed=true; answerEl.hidden=false; dividerEl.hidden=false; showAnswerBtn.hidden=true; revealHint.textContent='Answer shown';
+    requestAnimationFrame(function(){ if(stage.scrollHeight>stage.clientHeight) dividerEl.scrollIntoView({behavior:'smooth',block:'center'}); });
+  }
+  function goNext() { var n=window.DeckLogic.nextPosition(position,order.length); if(n!==position){position=n;render();} }
+  function goPrevious() { var p=window.DeckLogic.previousPosition(position,order.length); if(p!==position){position=p;render();} }
+  function startSession() { order=window.DeckLogic.createOrder(sourceCards.length,modeSelect.value); position=0; render(); }
+  showAnswerBtn.addEventListener('click',function(e){e.stopPropagation();revealAnswer();});
+  previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext); modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',revealAnswer);
+  document.addEventListener('keydown',function(event){
+    var tag=document.activeElement&&document.activeElement.tagName; if(tag==='SELECT'||tag==='INPUT'||tag==='TEXTAREA') return;
+    if(event.code==='Space'||event.key==='Enter'){event.preventDefault();revealAnswer();}
+    else if(event.key==='ArrowRight'){event.preventDefault();goNext();}
+    else if(event.key==='ArrowLeft'){event.preventDefault();goPrevious();}
+  });
+  startSession();
+})();
+</script></body></html>
