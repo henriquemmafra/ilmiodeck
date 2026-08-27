@@ -98,6 +98,25 @@ body{padding:0;background:#0b0d11;overflow-x:hidden;}
 .study-nav button:disabled{opacity:.35;cursor:default;}
 #next-card{background:#1b2638;border-color:#364b6e;}
 .keyboard-help{text-align:center;color:#657185;font-size:11px;padding-bottom:2px;}
+.ask-chatgpt-panel{
+  width:min(920px,100%);margin:0 auto;padding:16px;border:1px solid #2f3b50;border-radius:16px;
+  background:#111722;display:flex;flex-direction:column;gap:10px;
+}
+.ask-chatgpt-panel[hidden]{display:none;}
+.ask-chatgpt-label{font-size:13px;font-weight:800;color:#cbd8ef;}
+#ask-chatgpt-question{
+  width:100%;min-height:76px;resize:vertical;border:1px solid #35435a;border-radius:12px;background:#0c1119;
+  color:#f4f6f8;padding:12px;font:500 15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+#ask-chatgpt-question:focus{outline:2px solid rgba(156,184,255,.38);outline-offset:1px;}
+.ask-chatgpt-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+#ask-chatgpt-button{
+  min-height:44px;border:1px solid #819ee0;border-radius:12px;background:#dfe8ff;color:#101722;padding:0 16px;
+  font:800 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;cursor:pointer;
+}
+#ask-chatgpt-button:disabled{opacity:.6;cursor:wait;}
+#ask-chatgpt-status{min-height:20px;color:#aebbd0;font-size:12px;}
+.ask-chatgpt-note{color:#758297;font-size:11px;line-height:1.4;}
 @media (max-width:680px){
   #study-shell{padding:12px;gap:11px;}
   .study-topbar{align-items:flex-start;}
@@ -112,10 +131,12 @@ body{padding:0;background:#0b0d11;overflow-x:hidden;}
   #answer-divider{margin:26px auto;}
   .show-answer{min-height:54px;}
   .study-nav button{min-height:48px;font-size:15px;}
+  .ask-chatgpt-panel{padding:13px;border-radius:14px;}
+  #ask-chatgpt-button{width:100%;}
   .keyboard-help{display:none;}
 }
 @media (prefers-reduced-motion:reduce){#progress-bar{transition:none;}}
-</style></head><body><div class="wrap"><div aria-live="polite" id="study-shell"><header class="study-topbar"><div class="deck-heading"><div class="deck-kicker">MASTER DECK · 379 CARDS</div><div class="deck-title">Anki-style review</div></div><div class="study-controls"><label class="mode-control" for="mode-select"><span>Order</span><select aria-label="Study order" id="mode-select"><option value="sequential">Sequential</option><option value="random">Random</option></select></label><button class="small-button" id="restart-session" type="button">Restart</button></div></header><div class="progress-row"><span id="progress-text">Card 1 of 379</span><div aria-hidden="true" class="progress-track"><div id="progress-bar"></div></div></div><main aria-label="Study card" id="study-stage" tabindex="0"><div class="card-meta"><span id="source-number">Card 001</span><span id="reveal-hint">Tap card or press Space to reveal</span></div><section id="study-question"></section><div hidden="" id="answer-divider"></div><section hidden="" id="study-answer"></section></main><div class="answer-action"><button class="show-answer" id="show-answer" type="button">Show answer</button></div><nav aria-label="Card navigation" class="study-nav"><button id="prev-card" type="button">← Previous</button><button id="next-card" type="button">Next →</button></nav><div class="keyboard-help">Space / Enter: show answer · ← / →: navigate</div></div><div id="source-deck"></div></div><script id="deck-logic">
+</style></head><body><div class="wrap"><div aria-live="polite" id="study-shell"><header class="study-topbar"><div class="deck-heading"><div class="deck-kicker">MASTER DECK · 379 CARDS</div><div class="deck-title">Anki-style review</div></div><div class="study-controls"><label class="mode-control" for="mode-select"><span>Order</span><select aria-label="Study order" id="mode-select"><option value="sequential">Sequential</option><option value="random">Random</option></select></label><button class="small-button" id="restart-session" type="button">Restart</button></div></header><div class="progress-row"><span id="progress-text">Card 1 of 379</span><div aria-hidden="true" class="progress-track"><div id="progress-bar"></div></div></div><main aria-label="Study card" id="study-stage" tabindex="0"><div class="card-meta"><span id="source-number">Card 001</span><span id="reveal-hint">Tap card or press Space to reveal</span></div><section id="study-question"></section><div hidden="" id="answer-divider"></div><section hidden="" id="study-answer"></section></main><div class="answer-action"><button class="show-answer" id="show-answer" type="button">Show answer</button></div><section aria-label="Ask about this card" class="ask-chatgpt-panel" hidden id="ask-chatgpt-panel"><label class="ask-chatgpt-label" for="ask-chatgpt-question">Ask about this card</label><textarea id="ask-chatgpt-question" placeholder="What would you like to ask about this card?"></textarea><div class="ask-chatgpt-actions"><button id="ask-chatgpt-button" type="button">Ask ChatGPT about this card ↗</button><span aria-live="polite" id="ask-chatgpt-status"></span></div><div class="ask-chatgpt-note">The prompt is copied, then ChatGPT opens in a new tab. Paste and send it from your own account.</div></section><nav aria-label="Card navigation" class="study-nav"><button id="prev-card" type="button">← Previous</button><button id="next-card" type="button">Next →</button></nav><div class="keyboard-help">Space / Enter: flip card · ← / →: navigate</div></div><div id="source-deck"></div></div><script id="deck-logic">
 window.DeckLogic = {
   createOrder: function(count, mode, rng) {
     var order = Array.from({length: count}, function(_, i) { return i; });
@@ -135,6 +156,7 @@ window.DeckLogic = {
   }
 };
 </script>
+<script src="ask-chatgpt.js"></script>
 <script id="study-ui">
 (async function () {
   'use strict';
@@ -168,6 +190,10 @@ window.DeckLogic = {
   var sourceNumber = document.getElementById('source-number');
   var revealHint = document.getElementById('reveal-hint');
   var stage = document.getElementById('study-stage');
+  var askPanel = document.getElementById('ask-chatgpt-panel');
+  var askQuestion = document.getElementById('ask-chatgpt-question');
+  var askButton = document.getElementById('ask-chatgpt-button');
+  var askStatus = document.getElementById('ask-chatgpt-status');
   var order = [], position = 0, revealed = false;
   function currentSourceIndex() { return order[position]; }
   function render() {
@@ -179,21 +205,35 @@ window.DeckLogic = {
     sourceNumber.textContent = 'Card ' + (number ? number.textContent.trim() : String(currentSourceIndex()+1));
     progressText.textContent = 'Card ' + (position+1) + ' of ' + order.length;
     progressBar.style.width = (((position+1)/order.length)*100) + '%';
-    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal';
+    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; askPanel.hidden=true; askQuestion.value=''; askStatus.textContent=''; revealHint.textContent='Tap card or press Space to reveal';
     previousBtn.disabled=position===0; nextBtn.disabled=position===order.length-1; stage.scrollTop=0;
   }
   function showAnswer() {
-    revealed=true; questionEl.hidden=true; answerEl.hidden=false; dividerEl.hidden=true; showAnswerBtn.hidden=true; revealHint.textContent='Tap card or press Space to show question';
+    revealed=true; questionEl.hidden=true; answerEl.hidden=false; dividerEl.hidden=true; showAnswerBtn.hidden=true; askPanel.hidden=false; revealHint.textContent='Tap card or press Space to show question';
     requestAnimationFrame(function(){ if(stage.scrollHeight>stage.clientHeight) dividerEl.scrollIntoView({behavior:'smooth',block:'center'}); });
   }
   function showQuestion() {
-    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal'; stage.scrollTop=0;
+    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; askPanel.hidden=true; revealHint.textContent='Tap card or press Space to reveal'; stage.scrollTop=0;
   }
   function toggleAnswer() { if(revealed) showQuestion(); else showAnswer(); }
   function goNext() { var n=window.DeckLogic.nextPosition(position,order.length); if(n!==position){position=n;render();} }
   function goPrevious() { var p=window.DeckLogic.previousPosition(position,order.length); if(p!==position){position=p;render();} }
   function startSession() { order=window.DeckLogic.createOrder(sourceCards.length,modeSelect.value); position=0; render(); }
   showAnswerBtn.addEventListener('click',function(e){e.stopPropagation();showAnswer();});
+  window.AskChatGpt.setupAskChatGptUI({
+    input: askQuestion,
+    button: askButton,
+    status: askStatus,
+    getCurrentCard: function() {
+      return {
+        cardNumber: sourceNumber.textContent.replace(/^Card\s+/i,''),
+        question: questionEl.textContent,
+        answer: answerEl.textContent
+      };
+    },
+    copyText: function(text) { return window.AskChatGpt.copyToClipboard(text); },
+    openChat: function(url) { window.open(url,'_blank','noopener,noreferrer'); }
+  });
   previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext); modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',toggleAnswer);
   document.addEventListener('keydown',function(event){
     var tag=document.activeElement&&document.activeElement.tagName; if(tag==='SELECT'||tag==='INPUT'||tag==='TEXTAREA') return;
