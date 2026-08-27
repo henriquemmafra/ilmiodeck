@@ -179,21 +179,25 @@ window.DeckLogic = {
     sourceNumber.textContent = 'Card ' + (number ? number.textContent.trim() : String(currentSourceIndex()+1));
     progressText.textContent = 'Card ' + (position+1) + ' of ' + order.length;
     progressBar.style.width = (((position+1)/order.length)*100) + '%';
-    revealed=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal';
+    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal';
     previousBtn.disabled=position===0; nextBtn.disabled=position===order.length-1; stage.scrollTop=0;
   }
-  function revealAnswer() {
-    if(revealed) return; revealed=true; answerEl.hidden=false; dividerEl.hidden=false; showAnswerBtn.hidden=true; revealHint.textContent='Answer shown';
+  function showAnswer() {
+    revealed=true; questionEl.hidden=true; answerEl.hidden=false; dividerEl.hidden=true; showAnswerBtn.hidden=true; revealHint.textContent='Tap card or press Space to show question';
     requestAnimationFrame(function(){ if(stage.scrollHeight>stage.clientHeight) dividerEl.scrollIntoView({behavior:'smooth',block:'center'}); });
   }
+  function showQuestion() {
+    revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; revealHint.textContent='Tap card or press Space to reveal'; stage.scrollTop=0;
+  }
+  function toggleAnswer() { if(revealed) showQuestion(); else showAnswer(); }
   function goNext() { var n=window.DeckLogic.nextPosition(position,order.length); if(n!==position){position=n;render();} }
   function goPrevious() { var p=window.DeckLogic.previousPosition(position,order.length); if(p!==position){position=p;render();} }
   function startSession() { order=window.DeckLogic.createOrder(sourceCards.length,modeSelect.value); position=0; render(); }
-  showAnswerBtn.addEventListener('click',function(e){e.stopPropagation();revealAnswer();});
-  previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext); modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',revealAnswer);
+  showAnswerBtn.addEventListener('click',function(e){e.stopPropagation();showAnswer();});
+  previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext); modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',toggleAnswer);
   document.addEventListener('keydown',function(event){
     var tag=document.activeElement&&document.activeElement.tagName; if(tag==='SELECT'||tag==='INPUT'||tag==='TEXTAREA') return;
-    if(event.code==='Space'||event.key==='Enter'){event.preventDefault();revealAnswer();}
+    if(event.code==='Space'||event.key==='Enter'){event.preventDefault();toggleAnswer();}
     else if(event.key==='ArrowRight'){event.preventDefault();goNext();}
     else if(event.key==='ArrowLeft'){event.preventDefault();goPrevious();}
   });
