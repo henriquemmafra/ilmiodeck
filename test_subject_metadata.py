@@ -21,9 +21,14 @@ class SubjectMetadataTest(unittest.TestCase):
         cls.cards = load_cards()
 
     def test_every_card_has_one_explicit_subject_and_subtopic(self):
-        self.assertEqual(len(self.cards), 399)
+        self.assertEqual(len(self.cards), 432)
         for card in self.cards:
             self.assertRegex(card, r'^<details class="card" data-subject="[^"]+" data-subtopic="[^"]+"[^>]*>')
+        numbers = [
+            int(re.search(r'<span class="num">(\d+)</span>', card).group(1))
+            for card in self.cards
+        ]
+        self.assertEqual(numbers, list(range(1, 433)))
 
     def test_subjects_use_the_curated_catalog(self):
         allowed = {
@@ -138,6 +143,76 @@ class SubjectMetadataTest(unittest.TestCase):
             "Purines",
         ):
             self.assertNotIn(duplicate_or_malformed, subtopics)
+
+    def test_pain_pharmacology_set_is_complete_and_numbered(self):
+        pain = [
+            card
+            for card in self.cards
+            if 'data-expansion="pain-pharmacology-2026"' in card
+        ]
+        self.assertEqual(len(pain), 33)
+        numbers = [
+            int(re.search(r'<span class="num">(\d+)</span>', card).group(1))
+            for card in pain
+        ]
+        self.assertEqual(numbers, list(range(400, 433)))
+        self.assertTrue(all('data-subject="Pharmacology"' in card for card in pain))
+        self.assertEqual(
+            {
+                re.search(r'data-subtopic="([^"]+)"', card).group(1)
+                for card in pain
+            },
+            {
+                "Pain Principles",
+                "Opioids",
+                "NSAIDs",
+                "Acetaminophen",
+                "Local Anesthetics",
+                "Neuropathic Pain",
+                "Muscle Relaxants",
+                "Anti-inflammatory Analgesics",
+                "Topical Analgesics",
+            },
+        )
+
+    def test_pain_cards_capture_corrected_high_yield_mechanisms(self):
+        pain = "\n".join(
+            card
+            for card in self.cards
+            if 'data-expansion="pain-pharmacology-2026"' in card
+        )
+        for concept in (
+            "high receptor affinity",
+            "presynaptic voltage-gated Ca2+ channels",
+            "Little tolerance develops to miosis and constipation",
+            "afferent arteriole",
+            "about 20 weeks",
+            "about 30 weeks",
+            "N-acetylcysteine",
+            "Rumack–Matthew nomogram",
+            "20% lipid emulsion",
+            "alpha-2-delta",
+            "carbamazepine or oxcarbazepine",
+            "TRPV1",
+            "pentazocine",
+            "Tramadol",
+            "pseudoallergic",
+            "Reye syndrome",
+        ):
+            self.assertIn(concept, pain)
+
+    def test_pain_cards_include_three_precise_visual_maps(self):
+        pain = "\n".join(
+            card
+            for card in self.cards
+            if 'data-expansion="pain-pharmacology-2026"' in card
+        )
+        for marker in (
+            'data-diagram="opioid-synapse-map"',
+            'data-diagram="pain-treatment-map"',
+            'data-diagram="last-emergency-map"',
+        ):
+            self.assertEqual(pain.count(marker), 1)
 
 
 if __name__ == "__main__":
