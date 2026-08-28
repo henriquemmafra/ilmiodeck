@@ -44,7 +44,7 @@ assert button["tag"] == "button"
 assert button["attrs"]["type"] == "button"
 assert button["text"].strip() == "Ask ChatGPT about this card ↗"
 assert status["attrs"]["aria-live"] == "polite"
-assert parser.scripts == ["ask-chatgpt.js"]
+assert parser.scripts == ["subject-filter.js", "ask-chatgpt.js"]
 
 # The study UI must connect the current rendered card to the tested controller.
 assert "window.AskChatGpt.setupAskChatGptUI" in page
@@ -52,4 +52,3 @@ assert "askPanel.hidden=false" in page
 assert "askPanel.hidden=true" in page
 
 print("Ask ChatGPT page integration checks passed")
-
