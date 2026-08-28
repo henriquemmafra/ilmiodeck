@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Master Deck — 379 Cards · Anki Mode</title><style>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Master Deck · Anki Mode</title><style>
 :root{--bg:#0d0f13;--panel:#151922;--panel2:#1b202b;--text:#f4f6f8;--muted:#9ca6b5;--line:#2a3240;--accent:#b7ceff}
 *{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}body{padding:18px}.wrap{max-width:920px;margin:auto}.top{position:sticky;top:0;background:rgba(13,15,19,.96);backdrop-filter:blur(10px);padding:10px 0 14px;z-index:2}.title{font-size:28px;font-weight:800}.sub{color:var(--muted);margin-top:4px}.card{margin:12px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel)}summary{cursor:pointer;padding:16px 18px;font-weight:700;line-height:1.4;list-style:none}summary::-webkit-details-marker{display:none}.ans{padding:0 18px 18px;color:#dfe6ef;line-height:1.55;border-top:1px solid var(--line);padding-top:15px}.tags{margin-top:12px;color:var(--muted);font-size:12px}.num{color:var(--accent);font-size:12px;margin-right:8px}.hint{color:var(--muted);font-size:13px;margin-top:8px}
 
@@ -31,11 +31,12 @@ body{padding:0;background:#0b0d11;overflow-x:hidden;}
 .deck-title{font-size:clamp(20px,2.7vw,30px);font-weight:850;letter-spacing:-.02em;margin-top:3px;}
 .study-controls{display:flex;gap:10px;align-items:end;flex-wrap:wrap;justify-content:flex-end;}
 .mode-control{display:flex;flex-direction:column;gap:5px;color:#96a2b4;font-size:11px;font-weight:750;letter-spacing:.04em;text-transform:uppercase;}
-#mode-select,.small-button{
+#subject-select,#subtopic-select,#mode-select,.small-button{
   appearance:none;border:1px solid #30394a;background:#151a23;color:#f4f6f8;border-radius:12px;
   min-height:42px;padding:0 13px;font:700 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
-#mode-select{padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,#aebbd0 50%),linear-gradient(135deg,#aebbd0 50%,transparent 50%);background-position:calc(100% - 16px) 18px,calc(100% - 11px) 18px;background-size:5px 5px,5px 5px;background-repeat:no-repeat;}
+#subject-select,#subtopic-select,#mode-select{padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,#aebbd0 50%),linear-gradient(135deg,#aebbd0 50%,transparent 50%);background-position:calc(100% - 16px) 18px,calc(100% - 11px) 18px;background-size:5px 5px,5px 5px;background-repeat:no-repeat;}
+#subject-select{width:180px;}#subtopic-select{width:200px;}#subtopic-select:disabled{opacity:.5;}
 .small-button{cursor:pointer;}
 .progress-row{display:flex;align-items:center;gap:12px;color:#9ba7b8;font-size:12px;font-weight:700;}
 #progress-text{white-space:nowrap;min-width:86px;}
@@ -119,11 +120,12 @@ body{padding:0;background:#0b0d11;overflow-x:hidden;}
 .ask-chatgpt-note{color:#758297;font-size:11px;line-height:1.4;}
 @media (max-width:680px){
   #study-shell{padding:12px;gap:11px;}
-  .study-topbar{align-items:flex-start;}
+  .study-topbar{align-items:flex-start;flex-direction:column;}
   .deck-title{font-size:20px;}
-  .study-controls{gap:7px;}
-  #mode-select,.small-button{min-height:38px;font-size:13px;border-radius:10px;}
-  #study-stage{min-height:calc(100dvh - 260px);border-radius:20px;padding:54px 22px 28px;justify-content:center;}
+  .study-controls{gap:7px;width:100%;display:grid;grid-template-columns:1fr 1fr;}
+  .mode-control{min-width:0;}.mode-control select{width:100%!important;}
+  #subject-select,#subtopic-select,#mode-select,.small-button{min-height:38px;font-size:13px;border-radius:10px;}
+  #study-stage{min-height:calc(100dvh - 350px);border-radius:20px;padding:54px 22px 28px;justify-content:center;}
   .card-meta{top:15px;left:18px;right:18px;}
   #reveal-hint{display:none;}
   #study-question{font-size:clamp(26px,7.2vw,36px);}
@@ -136,7 +138,7 @@ body{padding:0;background:#0b0d11;overflow-x:hidden;}
   .keyboard-help{display:none;}
 }
 @media (prefers-reduced-motion:reduce){#progress-bar{transition:none;}}
-</style></head><body><div class="wrap"><div aria-live="polite" id="study-shell"><header class="study-topbar"><div class="deck-heading"><div class="deck-kicker">MASTER DECK · 379 CARDS</div><div class="deck-title">Anki-style review</div></div><div class="study-controls"><label class="mode-control" for="mode-select"><span>Order</span><select aria-label="Study order" id="mode-select"><option value="sequential">Sequential</option><option value="random">Random</option></select></label><button class="small-button" id="restart-session" type="button">Restart</button></div></header><div class="progress-row"><span id="progress-text">Card 1 of 379</span><div aria-hidden="true" class="progress-track"><div id="progress-bar"></div></div></div><main aria-label="Study card" id="study-stage" tabindex="0"><div class="card-meta"><span id="source-number">Card 001</span><span id="reveal-hint">Tap card or press Space to reveal</span></div><section id="study-question"></section><div hidden="" id="answer-divider"></div><section hidden="" id="study-answer"></section></main><div class="answer-action"><button class="show-answer" id="show-answer" type="button">Show answer</button></div><section aria-label="Ask about this card" class="ask-chatgpt-panel" hidden id="ask-chatgpt-panel"><label class="ask-chatgpt-label" for="ask-chatgpt-question">Ask about this card</label><textarea id="ask-chatgpt-question" placeholder="What would you like to ask about this card?"></textarea><div class="ask-chatgpt-actions"><button id="ask-chatgpt-button" type="button">Ask ChatGPT about this card ↗</button><span aria-live="polite" id="ask-chatgpt-status"></span></div><div class="ask-chatgpt-note">The prompt is copied, then ChatGPT opens in a new tab. Paste and send it from your own account.</div></section><nav aria-label="Card navigation" class="study-nav"><button id="prev-card" type="button">← Previous</button><button id="next-card" type="button">Next →</button></nav><div class="keyboard-help">Space / Enter: flip card · ← / →: navigate</div></div><div id="source-deck"></div></div><script id="deck-logic">
+</style></head><body><div class="wrap"><div aria-live="polite" id="study-shell"><header class="study-topbar"><div class="deck-heading"><div class="deck-kicker">MASTER DECK</div><div class="deck-title">Anki-style review</div></div><div class="study-controls"><label class="mode-control" for="subject-select"><span>Subject</span><select aria-label="Study subject" id="subject-select"><option value="all">All subjects</option></select></label><label class="mode-control" for="subtopic-select"><span>Subtopic</span><select aria-label="Study subtopic" disabled id="subtopic-select"><option value="all">All subtopics</option></select></label><label class="mode-control" for="mode-select"><span>Order</span><select aria-label="Study order" id="mode-select"><option value="sequential">Sequential</option><option value="random">Random</option></select></label><button class="small-button" id="restart-session" type="button">Restart</button></div></header><div class="progress-row"><span id="progress-text">Loading cards…</span><div aria-hidden="true" class="progress-track"><div id="progress-bar"></div></div></div><main aria-label="Study card" id="study-stage" tabindex="0"><div class="card-meta"><span id="source-number">Card</span><span id="reveal-hint">Tap card or press Space to reveal</span></div><section id="study-question"></section><div hidden="" id="answer-divider"></div><section hidden="" id="study-answer"></section></main><div class="answer-action"><button class="show-answer" id="show-answer" type="button">Show answer</button></div><section aria-label="Ask about this card" class="ask-chatgpt-panel" hidden id="ask-chatgpt-panel"><label class="ask-chatgpt-label" for="ask-chatgpt-question">Ask about this card</label><textarea id="ask-chatgpt-question" placeholder="What would you like to ask about this card?"></textarea><div class="ask-chatgpt-actions"><button id="ask-chatgpt-button" type="button">Ask ChatGPT about this card ↗</button><span aria-live="polite" id="ask-chatgpt-status"></span></div><div class="ask-chatgpt-note">The prompt is copied, then ChatGPT opens in a new tab. Paste and send it from your own account.</div></section><nav aria-label="Card navigation" class="study-nav"><button id="prev-card" type="button">← Previous</button><button id="next-card" type="button">Next →</button></nav><div class="keyboard-help">Space / Enter: flip card · ← / →: navigate</div></div><div id="source-deck"></div></div><script id="deck-logic">
 window.DeckLogic = {
   createOrder: function(count, mode, rng) {
     var order = Array.from({length: count}, function(_, i) { return i; });
@@ -156,6 +158,7 @@ window.DeckLogic = {
   }
 };
 </script>
+<script src="subject-filter.js"></script>
 <script src="ask-chatgpt.js"></script>
 <script id="study-ui">
 (async function () {
@@ -177,12 +180,15 @@ window.DeckLogic = {
     return;
   }
   var sourceCards = Array.from(document.querySelectorAll('#source-deck details.card'));
+  var catalog = window.DeckSubjectFilter.buildCatalog(sourceCards);
   var questionEl = document.getElementById('study-question');
   var answerEl = document.getElementById('study-answer');
   var dividerEl = document.getElementById('answer-divider');
   var showAnswerBtn = document.getElementById('show-answer');
   var previousBtn = document.getElementById('prev-card');
   var nextBtn = document.getElementById('next-card');
+  var subjectSelect = document.getElementById('subject-select');
+  var subtopicSelect = document.getElementById('subtopic-select');
   var modeSelect = document.getElementById('mode-select');
   var restartBtn = document.getElementById('restart-session');
   var progressText = document.getElementById('progress-text');
@@ -194,10 +200,39 @@ window.DeckLogic = {
   var askQuestion = document.getElementById('ask-chatgpt-question');
   var askButton = document.getElementById('ask-chatgpt-button');
   var askStatus = document.getElementById('ask-chatgpt-status');
+  var deckKicker = document.querySelector('.deck-kicker');
   var order = [], position = 0, revealed = false;
+  function addOption(select, value, label) {
+    var option=document.createElement('option'); option.value=value; option.textContent=label; select.appendChild(option);
+  }
+  function populateSubjectSelect() {
+    subjectSelect.innerHTML=''; addOption(subjectSelect,'all','All subjects ('+sourceCards.length+')');
+    catalog.forEach(function(item){ addOption(subjectSelect,item.subject,item.subject+' ('+item.count+')'); });
+  }
+  function populateSubtopicSelect() {
+    var subject=subjectSelect.value; subtopicSelect.innerHTML='';
+    if(subject==='all') { addOption(subtopicSelect,'all','All subtopics'); subtopicSelect.disabled=true; return; }
+    var entry=catalog.find(function(item){return item.subject===subject;});
+    addOption(subtopicSelect,'all','All subtopics ('+(entry?entry.count:0)+')');
+    if(entry) entry.subtopics.forEach(function(item){addOption(subtopicSelect,item.subtopic,item.subtopic+' ('+item.count+')');});
+    subtopicSelect.disabled=false;
+  }
   function currentSourceIndex() { return order[position]; }
+  function updateSessionLabel() {
+    var subject=subjectSelect.value; var subtopic=subtopicSelect.value;
+    var label=subject==='all'?'MASTER DECK':subject.toUpperCase();
+    if(subject!=='all'&&subtopic!=='all') label+=' · '+subtopic.toUpperCase();
+    deckKicker.textContent=label+' · '+order.length+' CARDS';
+    document.title=(subject==='all'?'Master Deck':subject)+' · '+order.length+' Cards';
+  }
+  function renderEmpty() {
+    questionEl.textContent='No cards match this selection.'; answerEl.hidden=true; dividerEl.hidden=true;
+    sourceNumber.textContent='No cards'; progressText.textContent='0 cards'; progressBar.style.width='0%';
+    showAnswerBtn.hidden=true; askPanel.hidden=true; previousBtn.disabled=true; nextBtn.disabled=true;
+    revealHint.textContent='Choose another subject or subtopic'; updateSessionLabel();
+  }
   function render() {
-    var card = sourceCards[currentSourceIndex()]; if (!card) return;
+    var card = sourceCards[currentSourceIndex()]; if (!card) {renderEmpty();return;}
     var summary = card.querySelector('summary'); var answer = card.querySelector('.ans'); var number = card.querySelector('.num');
     questionEl.innerHTML = summary ? summary.innerHTML : '';
     var copiedNum = questionEl.querySelector('.num'); if (copiedNum) copiedNum.remove();
@@ -215,10 +250,13 @@ window.DeckLogic = {
   function showQuestion() {
     revealed=false; questionEl.hidden=false; answerEl.hidden=true; dividerEl.hidden=true; showAnswerBtn.hidden=false; askPanel.hidden=true; revealHint.textContent='Tap card or press Space to reveal'; stage.scrollTop=0;
   }
-  function toggleAnswer() { if(revealed) showQuestion(); else showAnswer(); }
+  function toggleAnswer() { if(!order.length)return; if(revealed) showQuestion(); else showAnswer(); }
   function goNext() { var n=window.DeckLogic.nextPosition(position,order.length); if(n!==position){position=n;render();} }
   function goPrevious() { var p=window.DeckLogic.previousPosition(position,order.length); if(p!==position){position=p;render();} }
-  function startSession() { order=window.DeckLogic.createOrder(sourceCards.length,modeSelect.value); position=0; render(); }
+  function startSession() {
+    order=window.DeckSubjectFilter.createFilteredOrder(sourceCards,subjectSelect.value,subtopicSelect.value,modeSelect.value);
+    position=0; updateSessionLabel(); render();
+  }
   showAnswerBtn.addEventListener('click',function(e){e.stopPropagation();showAnswer();});
   window.AskChatGpt.setupAskChatGptUI({
     input: askQuestion,
@@ -234,13 +272,16 @@ window.DeckLogic = {
     copyText: function(text) { return window.AskChatGpt.copyToClipboard(text); },
     openChat: function(url) { window.open(url,'_blank','noopener,noreferrer'); }
   });
-  previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext); modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',toggleAnswer);
+  previousBtn.addEventListener('click',goPrevious); nextBtn.addEventListener('click',goNext);
+  subjectSelect.addEventListener('change',function(){populateSubtopicSelect();startSession();});
+  subtopicSelect.addEventListener('change',startSession);
+  modeSelect.addEventListener('change',startSession); restartBtn.addEventListener('click',startSession); stage.addEventListener('click',toggleAnswer);
   document.addEventListener('keydown',function(event){
     var tag=document.activeElement&&document.activeElement.tagName; if(tag==='SELECT'||tag==='INPUT'||tag==='TEXTAREA') return;
     if(event.code==='Space'||event.key==='Enter'){event.preventDefault();toggleAnswer();}
     else if(event.key==='ArrowRight'){event.preventDefault();goNext();}
     else if(event.key==='ArrowLeft'){event.preventDefault();goPrevious();}
   });
-  startSession();
+  populateSubjectSelect(); populateSubtopicSelect(); startSession();
 })();
 </script></body></html>
