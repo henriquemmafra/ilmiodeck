@@ -13,10 +13,7 @@
   }
 
   function cardMeta(card) {
-    return {
-      subject: cardValue(card, 'subject'),
-      subtopic: cardValue(card, 'subtopic')
-    };
+    return { subject: cardValue(card, 'subject'), subtopic: cardValue(card, 'subtopic') };
   }
 
   function buildCatalog(cards) {
@@ -28,17 +25,12 @@
       var subtopics = subjects.get(meta.subject);
       subtopics.set(meta.subtopic, (subtopics.get(meta.subtopic) || 0) + 1);
     });
-
     return Array.from(subjects.keys()).sort(function (a, b) { return a.localeCompare(b); }).map(function (subject) {
       var subtopics = subjects.get(subject);
       var items = Array.from(subtopics.keys()).sort(function (a, b) { return a.localeCompare(b); }).map(function (subtopic) {
         return { subtopic: subtopic, count: subtopics.get(subtopic) };
       });
-      return {
-        subject: subject,
-        count: items.reduce(function (total, item) { return total + item.count; }, 0),
-        subtopics: items
-      };
+      return { subject: subject, count: items.reduce(function (total, item) { return total + item.count; }, 0), subtopics: items };
     });
   }
 
@@ -55,13 +47,16 @@
     return indexes;
   }
 
-  function classifySwipe(startX, startY, endX, endY, width) {
+  function classifySwipe(startX, startY, endX, endY, width, velocityX) {
     var dx = Number(endX) - Number(startX);
     var dy = Number(endY) - Number(startY);
     var cardWidth = Math.max(1, Number(width) || 360);
-    var threshold = Math.max(64, Math.min(110, cardWidth * 0.18));
-    if (Math.abs(dx) <= Math.abs(dy) * 1.15) return null;
-    if (Math.abs(dx) < threshold) return null;
+    var speed = Math.abs(Number(velocityX) || 0);
+    var distanceThreshold = Math.max(42, Math.min(72, cardWidth * 0.12));
+    var flickThreshold = 0.55;
+    var horizontalEnough = Math.abs(dx) > Math.abs(dy) * 0.72;
+    if (!horizontalEnough) return null;
+    if (Math.abs(dx) < distanceThreshold && !(speed >= flickThreshold && Math.abs(dx) >= 24)) return null;
     return dx < 0 ? 'next' : 'previous';
   }
 
@@ -73,17 +68,21 @@
     if (!stage || !previousBtn || !nextBtn || typeof stage.addEventListener !== 'function') return false;
 
     var activePointer = null;
-    var startX = 0, startY = 0, currentX = 0, currentY = 0;
+    var startX = 0, startY = 0, currentX = 0, currentY = 0, startTime = 0;
     var moved = false, suppressClick = false;
     stage.style.touchAction = 'pan-y';
     stage.style.userSelect = 'none';
+    stage.style.willChange = 'transform, opacity';
 
     function frame(fn) {
       var raf = (typeof requestAnimationFrame === 'function') ? requestAnimationFrame : function (cb) { return setTimeout(cb, 0); };
       raf(fn);
     }
+    function now(event) {
+      return event && Number.isFinite(Number(event.timeStamp)) ? Number(event.timeStamp) : Date.now();
+    }
     function resetVisual(animate) {
-      stage.style.transition = animate ? 'transform 160ms ease, opacity 160ms ease' : 'none';
+      stage.style.transition = animate ? 'transform 260ms cubic-bezier(.22,1.35,.36,1), opacity 220ms ease' : 'none';
       stage.style.transform = '';
       stage.style.opacity = '';
     }
@@ -96,6 +95,7 @@
       activePointer = event.pointerId;
       startX = currentX = event.clientX;
       startY = currentY = event.clientY;
+      startTime = now(event);
       moved = false;
       resetVisual(false);
       if (typeof stage.setPointerCapture === 'function' && event.pointerId != null) {
@@ -106,42 +106,55 @@
       if (activePointer == null || (event.pointerId != null && event.pointerId !== activePointer)) return;
       currentX = event.clientX; currentY = event.clientY;
       var dx = currentX - startX, dy = currentY - startY;
-      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+      if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return;
       moved = true;
-      if (Math.abs(dx) <= Math.abs(dy)) { resetVisual(false); return; }
-      var maxDrag = width() * 0.82;
+      if (Math.abs(dx) <= Math.abs(dy) * 0.68) { resetVisual(false); return; }
+      var cardWidth = width();
+      var maxDrag = cardWidth * 0.94;
       var drag = Math.max(-maxDrag, Math.min(maxDrag, dx));
-      var rotation = Math.max(-5, Math.min(5, drag / width() * 7));
-      stage.style.transform = 'translateX(' + drag + 'px) rotate(' + rotation + 'deg)';
-      stage.style.opacity = String(Math.max(0.72, 1 - Math.abs(drag) / width() * 0.28));
+      var progress = Math.min(1, Math.abs(drag) / (cardWidth * 0.55));
+      var rotation = Math.max(-10, Math.min(10, drag / cardWidth * 13));
+      var scale = 1 - progress * 0.018;
+      var lift = progress * -3;
+      stage.style.transform = 'translate3d(' + drag + 'px,' + lift + 'px,0) rotate(' + rotation + 'deg) scale(' + scale + ')';
+      stage.style.opacity = String(Math.max(0.82, 1 - progress * 0.16));
       if (event.cancelable && typeof event.preventDefault === 'function') event.preventDefault();
     }
-    function navigate(direction) {
+    function navigate(direction, velocity) {
       var button = direction === 'next' ? nextBtn : previousBtn;
       if (!button || button.disabled) { resetVisual(true); return; }
       var sign = direction === 'next' ? -1 : 1;
-      stage.style.transition = 'transform 140ms ease, opacity 140ms ease';
-      stage.style.transform = 'translateX(' + (sign * 110) + '%) rotate(' + (sign * 5) + 'deg)';
+      var speed = Math.min(1.6, Math.max(0.55, Math.abs(velocity || 0)));
+      var duration = Math.round(205 - (speed - 0.55) * 45);
+      var exitDistance = Math.max(width() * 1.35, 520);
+      stage.style.transition = 'transform ' + duration + 'ms cubic-bezier(.18,.72,.22,1), opacity ' + duration + 'ms ease-out';
+      stage.style.transform = 'translate3d(' + (sign * exitDistance) + 'px,-10px,0) rotate(' + (sign * 13) + 'deg) scale(.97)';
       stage.style.opacity = '0';
       setTimeout(function () {
         if (typeof button.click === 'function') button.click();
         stage.style.transition = 'none';
-        stage.style.transform = 'translateX(' + (-sign * 24) + 'px)';
-        stage.style.opacity = '0.78';
-        frame(function () { resetVisual(true); });
-      }, 140);
+        stage.style.transform = 'translate3d(' + (-sign * Math.min(72, width() * 0.18)) + 'px,4px,0) rotate(' + (-sign * 2.5) + 'deg) scale(.985)';
+        stage.style.opacity = '0.72';
+        frame(function () {
+          stage.style.transition = 'transform 300ms cubic-bezier(.2,1.28,.32,1), opacity 220ms ease-out';
+          stage.style.transform = '';
+          stage.style.opacity = '';
+        });
+      }, duration);
     }
     function finishPointer(event, cancelled) {
       if (activePointer == null || (event.pointerId != null && event.pointerId !== activePointer)) return;
       if (event.clientX != null) currentX = event.clientX;
       if (event.clientY != null) currentY = event.clientY;
-      var direction = cancelled ? null : classifySwipe(startX, startY, currentX, currentY, width());
+      var elapsed = Math.max(16, now(event) - startTime);
+      var velocityX = (currentX - startX) / elapsed;
+      var direction = cancelled ? null : classifySwipe(startX, startY, currentX, currentY, width(), velocityX);
       activePointer = null;
       if (moved) {
         suppressClick = true;
         setTimeout(function () { suppressClick = false; }, 350);
       }
-      if (direction) navigate(direction); else resetVisual(true);
+      if (direction) navigate(direction, velocityX); else resetVisual(true);
     }
     stage.addEventListener('pointerdown', onPointerDown);
     stage.addEventListener('pointermove', onPointerMove);
