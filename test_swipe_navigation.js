@@ -2,11 +2,12 @@ const assert = require('assert');
 const deck = require('./subject-filter.js');
 
 assert.strictEqual(typeof deck.classifySwipe, 'function', 'classifySwipe must be exported');
-assert.strictEqual(deck.classifySwipe(0, 0, -90, 8, 360), 'next');
-assert.strictEqual(deck.classifySwipe(0, 0, 90, 8, 360), 'previous');
-assert.strictEqual(deck.classifySwipe(0, 0, -40, 2, 360), null, 'short drags must not navigate');
-assert.strictEqual(deck.classifySwipe(0, 0, 90, 140, 360), null, 'vertical scrolling must not navigate');
-assert.strictEqual(deck.classifySwipe(0, 0, -70, 5, 320), 'next', 'minimum threshold should work on small screens');
+assert.strictEqual(deck.classifySwipe(0, 0, -48, 20, 360), 'next', 'moderate diagonal left swipe should navigate');
+assert.strictEqual(deck.classifySwipe(0, 0, 48, 20, 360), 'previous', 'moderate diagonal right swipe should navigate');
+assert.strictEqual(deck.classifySwipe(0, 0, -28, 5, 360), null, 'slow short drag must not navigate');
+assert.strictEqual(deck.classifySwipe(0, 0, 55, 95, 360), null, 'clearly vertical scrolling must not navigate');
+assert.strictEqual(deck.classifySwipe(0, 0, -30, 7, 360, 0.65), 'next', 'quick flick should navigate with less distance');
+assert.strictEqual(deck.classifySwipe(0, 0, 30, 7, 360, 0.65), 'previous', 'quick reverse flick should navigate with less distance');
 
 (async () => {
   const listeners = {};
@@ -28,26 +29,30 @@ assert.strictEqual(deck.classifySwipe(0, 0, -70, 5, 320), 'next', 'minimum thres
   }
   assert.strictEqual(listeners.click.capture, true, 'swipe click suppression must run in capture phase');
 
-  listeners.pointerdown.fn({ pointerId: 1, button: 0, clientX: 240, clientY: 100 });
-  listeners.pointermove.fn({ pointerId: 1, clientX: 130, clientY: 105, cancelable: true, preventDefault() {} });
-  listeners.pointerup.fn({ pointerId: 1, clientX: 130, clientY: 105 });
-  await new Promise(resolve => setTimeout(resolve, 170));
+  listeners.pointerdown.fn({ pointerId: 1, button: 0, clientX: 240, clientY: 100, timeStamp: 0 });
+  listeners.pointermove.fn({ pointerId: 1, clientX: 190, clientY: 118, timeStamp: 100, cancelable: true, preventDefault() {} });
+  assert.match(stage.style.transform, /rotate/, 'card should rotate while following the finger');
+  assert.match(stage.style.transform, /scale/, 'card should gain depth while dragging');
+  listeners.pointerup.fn({ pointerId: 1, clientX: 190, clientY: 118, timeStamp: 120 });
+  assert.match(stage.style.transition, /cubic-bezier/, 'committed swipe should use inertial easing');
+  await new Promise(resolve => setTimeout(resolve, 240));
   assert.strictEqual(nextClicks, 1, 'left swipe must activate Next');
 
-  listeners.pointerdown.fn({ pointerId: 2, button: 0, clientX: 120, clientY: 100 });
-  listeners.pointermove.fn({ pointerId: 2, clientX: 230, clientY: 104, cancelable: true, preventDefault() {} });
-  listeners.pointerup.fn({ pointerId: 2, clientX: 230, clientY: 104 });
-  await new Promise(resolve => setTimeout(resolve, 170));
+  listeners.pointerdown.fn({ pointerId: 2, button: 0, clientX: 120, clientY: 100, timeStamp: 500 });
+  listeners.pointermove.fn({ pointerId: 2, clientX: 168, clientY: 118, timeStamp: 600, cancelable: true, preventDefault() {} });
+  listeners.pointerup.fn({ pointerId: 2, clientX: 168, clientY: 118, timeStamp: 620 });
+  await new Promise(resolve => setTimeout(resolve, 240));
   assert.strictEqual(previousClicks, 1, 'right swipe must activate Previous');
 
-  listeners.pointerdown.fn({ pointerId: 3, button: 0, clientX: 200, clientY: 100 });
-  listeners.pointermove.fn({ pointerId: 3, clientX: 180, clientY: 102, cancelable: true, preventDefault() {} });
-  listeners.pointerup.fn({ pointerId: 3, clientX: 180, clientY: 102 });
+  listeners.pointerdown.fn({ pointerId: 3, button: 0, clientX: 200, clientY: 100, timeStamp: 1000 });
+  listeners.pointermove.fn({ pointerId: 3, clientX: 180, clientY: 102, timeStamp: 1300, cancelable: true, preventDefault() {} });
+  listeners.pointerup.fn({ pointerId: 3, clientX: 180, clientY: 102, timeStamp: 1350 });
   let blocked = false;
   listeners.click.fn({ preventDefault() { blocked = true; }, stopImmediatePropagation() { blocked = true; } });
   assert.strictEqual(blocked, true, 'a drag must suppress the following tap/click');
   assert.strictEqual(nextClicks, 1, 'short drag must not navigate');
   assert.strictEqual(previousClicks, 1, 'short drag must not navigate backward');
+  assert.match(stage.style.transition, /cubic-bezier/, 'cancelled drag should spring back smoothly');
 
-  console.log('Swipe navigation unit and gesture checks passed');
+  console.log('Responsive swipe navigation and animation checks passed');
 })().catch(error => { console.error(error); process.exit(1); });
