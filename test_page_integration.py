@@ -1,5 +1,6 @@
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 
 
 class PageParser(HTMLParser):
@@ -51,4 +52,11 @@ assert "window.AskChatGpt.setupAskChatGptUI" in page
 assert "askPanel.hidden=false" in page
 assert "askPanel.hidden=true" in page
 
-print("Ask ChatGPT page integration checks passed")
+# The card itself must not create a competing internal vertical scroll area.
+stage_rule = re.search(r"#study-stage\s*\{([^}]*)\}", page, re.S)
+assert stage_rule, "#study-stage CSS rule must exist"
+stage_css = stage_rule.group(1)
+assert "overflow:auto" not in stage_css.replace(" ", ""), "study card must not use internal auto scrolling"
+assert re.search(r"overflow\s*:\s*visible", stage_css), "study card should expand and let the page scroll"
+
+print("Page integration and page-level scrolling checks passed")
