@@ -1,5 +1,4 @@
-// Original USMLE-style questions; no proprietary question-bank text.
-// Keep question IDs stable to preserve review progress.
+// Original USMLE-style questions based on deck concepts; not copied from commercial banks.
 window.RAPIDFIRE_QUESTIONS = [
   {
     "id": "polio-serum",
@@ -1020,5 +1019,165 @@ window.RAPIDFIRE_QUESTIONS = [
       "Incorrect: Galactokinase. Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol."
     ],
     "teaching": "Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol."
+  },
+  {
+    "id": "cftr-airway",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A child with recurrent Pseudomonas infections has thick airway secretions. Which epithelial transport abnormality directly dehydrates the airway surface?",
+    "options": [
+      "Increased chloride secretion",
+      "Decreased epithelial sodium absorption",
+      "Reduced CFTR-mediated chloride secretion with increased ENaC-mediated sodium absorption",
+      "Increased apical bicarbonate secretion"
+    ],
+    "answer": 2,
+    "explanations": [
+      "More chloride secretion draws water into the airway lumen.",
+      "Reduced sodium absorption would retain water in airway secretions.",
+      "CFTR dysfunction reduces luminal chloride secretion and disinhibits ENaC, increasing sodium and water absorption.",
+      "Bicarbonate secretion is impaired rather than increased in cystic fibrosis."
+    ],
+    "teaching": "CFTR normally secretes chloride and inhibits ENaC in airways; defective CFTR dehydrates mucus."
+  },
+  {
+    "id": "cftr-sweat",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A teenager has recurrent pulmonary infections and elevated sweat chloride. What explains the elevated salt concentration in sweat?",
+    "options": [
+      "Increased chloride secretion into the sweat duct",
+      "Failure of chloride and sodium reabsorption by sweat ducts",
+      "Increased sodium uptake from sweat",
+      "Increased water reabsorption from the duct"
+    ],
+    "answer": 1,
+    "explanations": [
+      "CFTR normally reabsorbs chloride in sweat ducts.",
+      "Defective ductal CFTR impairs chloride reabsorption and secondarily reduces sodium reabsorption.",
+      "Greater sodium uptake would lower sweat sodium.",
+      "Sweat ducts are relatively impermeable to water."
+    ],
+    "teaching": "Airways: impaired chloride secretion. Sweat ducts: impaired chloride reabsorption."
+  },
+  {
+    "id": "dynein-cilia",
+    "topic": "Cell Biology",
+    "level": 2,
+    "stem": "A man has chronic sinusitis, bronchiectasis, infertility, and situs inversus. Which protein is dysfunctional?",
+    "options": [
+      "Kinesin motor protein",
+      "Axonemal dynein",
+      "Spectrin",
+      "Clathrin"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Kinesin moves intracellular cargo toward microtubule plus ends; it does not drive ciliary beating.",
+      "Axonemal dynein powers microtubule sliding in motile cilia; its dysfunction causes primary ciliary dyskinesia.",
+      "Spectrin stabilizes the red blood cell membrane.",
+      "Clathrin mediates coated-vesicle endocytosis."
+    ],
+    "teaching": "Axonemal dynein powers motile cilia; cytoplasmic dynein transports cargo toward microtubule minus ends."
+  },
+  {
+    "id": "kinesin-direction",
+    "topic": "Cell Biology",
+    "level": 2,
+    "stem": "A vesicle must move from the neuronal cell body toward the axon terminal. Which motor protein mediates this transport?",
+    "options": [
+      "Cytoplasmic dynein",
+      "Kinesin",
+      "Myosin II",
+      "Axonemal dynein"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Cytoplasmic dynein moves cargo retrogradely toward the cell body.",
+      "Kinesin generally moves cargo anterogradely toward the microtubule plus end.",
+      "Myosin II drives actin-based contraction rather than long-distance axonal transport.",
+      "Axonemal dynein is responsible for ciliary beating."
+    ],
+    "teaching": "Kinesin: anterograde/plus end; dynein: retrograde/minus end."
+  },
+  {
+    "id": "gs-signaling",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "Activation of a beta-1 adrenergic receptor increases heart rate through which intracellular pathway?",
+    "options": [
+      "Gi inhibition of adenylyl cyclase",
+      "Gs activation of adenylyl cyclase and protein kinase A",
+      "Gq activation of phospholipase C",
+      "Direct opening of nuclear calcium channels"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Gi decreases cyclic AMP.",
+      "Beta-1 receptors couple to Gs, increasing cyclic AMP and protein kinase A activity.",
+      "Gq signaling is typical of alpha-1 adrenergic receptors.",
+      "Adrenergic receptors signal through G proteins rather than nuclear calcium channels."
+    ],
+    "teaching": "Beta-1, beta-2, and beta-3 receptors are Gs-coupled; alpha-1 is Gq and alpha-2 is Gi."
+  },
+  {
+    "id": "gi-signaling",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "Presynaptic alpha-2 adrenergic receptor activation reduces norepinephrine release. Which second messenger change is expected?",
+    "options": [
+      "Increased cyclic AMP",
+      "Decreased cyclic AMP",
+      "Increased inositol trisphosphate",
+      "Increased cyclic GMP"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Gs activation raises cyclic AMP.",
+      "Alpha-2 receptors couple to Gi, which inhibits adenylyl cyclase and lowers cyclic AMP.",
+      "Gq signaling raises inositol trisphosphate.",
+      "Nitric oxide activates guanylyl cyclase and increases cyclic GMP."
+    ],
+    "teaching": "Alpha-2 is Gi-coupled; alpha-1 is Gq-coupled."
+  },
+  {
+    "id": "sarcoid-vitd-regulation",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A patient with sarcoidosis has hypercalcemia, suppressed parathyroid hormone, and elevated calcitriol. Which process accounts for the findings?",
+    "options": [
+      "Parathyroid-driven renal calcitriol synthesis",
+      "Unregulated extra-renal calcitriol production by granuloma macrophages",
+      "Excess calcitonin secretion",
+      "Reduced intestinal calcium absorption"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Parathyroid hormone is suppressed by the hypercalcemia.",
+      "Activated macrophages express 1-alpha-hydroxylase, increasing calcitriol and intestinal calcium absorption.",
+      "Calcitonin lowers calcium rather than causing hypercalcemia.",
+      "Calcitriol increases intestinal calcium absorption."
+    ],
+    "teaching": "Granulomatous macrophage 1-alpha-hydroxylase can generate calcitriol despite low parathyroid hormone."
+  },
+  {
+    "id": "pcd-nitric-oxide",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A patient with lifelong sinusitis, recurrent otitis media, and bronchiectasis has normal sweat chloride and very low nasal nitric oxide. What is the most likely diagnosis?",
+    "options": [
+      "Cystic fibrosis",
+      "Primary ciliary dyskinesia",
+      "Alpha-1 antitrypsin deficiency",
+      "Selective immunoglobulin A deficiency"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Cystic fibrosis often causes elevated sweat chloride and pancreatic insufficiency.",
+      "Primary ciliary dyskinesia causes impaired mucociliary clearance; low nasal nitric oxide is a useful diagnostic clue.",
+      "Alpha-1 antitrypsin deficiency causes early emphysema and liver disease.",
+      "Immunoglobulin A deficiency can cause recurrent infections but not characteristic ciliary dysfunction."
+    ],
+    "teaching": "Primary ciliary dyskinesia: low nasal nitric oxide and normal sweat chloride; cystic fibrosis: elevated sweat chloride."
   }
 ];
