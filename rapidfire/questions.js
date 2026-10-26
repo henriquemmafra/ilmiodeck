@@ -1,9 +1,9 @@
-// Questões originais para revisão (não copiar enunciados de bancos comerciais).
-// Cada id deve permanecer estável para preservar o histórico de respostas.
+// Original USMLE-style questions; no proprietary question-bank text.
+// Keep question IDs stable to preserve review progress.
 window.RAPIDFIRE_QUESTIONS = [
   {
     "id": "polio-serum",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "A child receives either oral attenuated poliovirus vaccine or injected inactivated poliovirus vaccine. What most directly prevents paralytic poliomyelitis?",
     "options": [
@@ -14,16 +14,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Linfócitos T citotóxicos combatem células infectadas, mas não são a proteção sistêmica principal contra a paralisia.",
-      "Anticorpos neutralizantes no sangue impedem que o poliovírus alcance o sistema nervoso.",
-      "A imunoglobulina A secretória reduz a infecção e a transmissão intestinal, mas isoladamente não explica a proteção contra paralisia oferecida pelas duas vacinas.",
-      "A neutralização por anticorpos é mais importante que a lise pelo sistema complemento."
+      "Not the best answer: Circulating cytotoxic T lymphocytes. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
+      "Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
+      "Not the best answer: Intestinal secretory immunoglobulin A alone. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
+      "Not the best answer: Complement-mediated viral lysis. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system."
     ],
-    "teaching": "Distinguir imunidade intestinal de proteção sistêmica contra a paralisia."
+    "teaching": "Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system."
   },
   {
     "id": "polio-mucosal",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 2,
     "stem": "Compared with the injected inactivated poliovirus vaccine, what additional immune response is typically stronger after the oral live-attenuated vaccine?",
     "options": [
@@ -34,16 +34,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A vacina oral se replica na mucosa intestinal e estimula imunoglobulina A secretória local.",
-      "As duas vacinas induzem anticorpos neutralizantes no sangue.",
-      "Imunoglobulina E participa principalmente de alergia e defesa antiparasitária.",
-      "Vacinação normalmente forma células de memória, não as elimina."
+      "Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
+      "Not the best answer: Absence of circulating neutralizing antibodies. Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
+      "Not the best answer: Selective production of immunoglobulin E. Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
+      "Not the best answer: Elimination of all memory lymphocytes. Oral live vaccine induces stronger intestinal secretory immunoglobulin A."
     ],
-    "teaching": "A vacina oral tende a produzir maior imunidade mucosa."
+    "teaching": "Oral live vaccine induces stronger intestinal secretory immunoglobulin A."
   },
   {
     "id": "b-memory",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "A vaccinated adult has circulating antibodies years after immunization. Which cells directly maintain antibody secretion during this period?",
     "options": [
@@ -54,16 +54,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Linfócitos B de memória permanecem prontos para reativação, mas não são a fonte principal da secreção contínua.",
-      "Plasmócitos de longa duração, frequentemente na medula óssea, secretam anticorpos persistentemente.",
-      "Linfócitos T citotóxicos não secretam anticorpos.",
-      "Linfócitos B virgens ainda não foram ativados por aquele antígeno."
+      "Not the best answer: Memory B lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
+      "Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
+      "Not the best answer: Memory cytotoxic T lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
+      "Not the best answer: Naive B lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure."
     ],
-    "teaching": "Plasmócito produz anticorpos agora; linfócito B de memória reforça a resposta futura."
+    "teaching": "Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure."
   },
   {
     "id": "t-memory",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 2,
     "stem": "After re-exposure to a previously encountered virus, what is a key role of memory cytotoxic T lymphocytes?",
     "options": [
@@ -74,16 +74,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Anticorpos são produzidos por plasmócitos, não por linfócitos T.",
-      "Linfócitos T citotóxicos de memória proliferam e recuperam a capacidade de eliminar células infectadas.",
-      "Produção contínua de anticorpos é função dos plasmócitos de longa duração.",
-      "Linfócitos T não se diferenciam em plasmócitos."
+      "Not the best answer: Secretion of immunoglobulin G. Memory T cells mount rapid responses after re-exposure to an antigen.",
+      "Memory T cells mount rapid responses after re-exposure to an antigen.",
+      "Not the best answer: Continuous production of serum antibodies. Memory T cells mount rapid responses after re-exposure to an antigen.",
+      "Not the best answer: Conversion into bone marrow plasma cells. Memory T cells mount rapid responses after re-exposure to an antigen."
     ],
-    "teaching": "Memória T significa resposta celular; memória B contribui para futura resposta humoral."
+    "teaching": "Memory T cells mount rapid responses after re-exposure to an antigen."
   },
   {
     "id": "pralidoxime-mechanism",
-    "topic": "Toxicologia",
+    "topic": "Toxicology",
     "level": 1,
     "stem": "A farmworker has sweating, salivation, bronchorrhea, miosis, and muscle fasciculations after insecticide exposure. Which action describes pralidoxime?",
     "options": [
@@ -94,16 +94,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Atropina bloqueia os receptores muscarínicos; pralidoxima não age principalmente por esse bloqueio.",
-      "Pralidoxima remove o grupo organofosforado da acetilcolinesterase antes do envelhecimento da ligação, reativando a enzima.",
-      "A pralidoxima não bloqueia a liberação de acetilcolina.",
-      "Ela não funciona como bloqueador direto dos receptores nicotínicos."
+      "Not the best answer: Blocks muscarinic acetylcholine receptors. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
+      "Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
+      "Not the best answer: Inhibits acetylcholine release from nerve terminals. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
+      "Not the best answer: Antagonizes nicotinic acetylcholine receptors. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging."
     ],
-    "teaching": "A pralidoxima restaura a enzima acetilcolinesterase; a atropina bloqueia receptores muscarínicos."
+    "teaching": "Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging."
   },
   {
     "id": "pralidoxime-aging",
-    "topic": "Toxicologia",
+    "topic": "Toxicology",
     "level": 2,
     "stem": "Why is pralidoxime most useful when administered early after organophosphate poisoning?",
     "options": [
@@ -114,16 +114,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A eliminação renal não explica a janela farmacológica da pralidoxima.",
-      "Envelhecimento é o fortalecimento da ligação entre organofosforado e acetilcolinesterase, dificultando sua reativação.",
-      "Atropina não destrói receptores; ela os bloqueia temporariamente.",
-      "A junção neuromuscular continua utilizando acetilcolina."
+      "Not the best answer: The toxin is eliminated only by the kidneys during the first hour. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
+      "Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
+      "Not the best answer: Atropine irreversibly destroys acetylcholine receptors. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
+      "Not the best answer: Neuromuscular junctions stop using acetylcholine after six hours. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation."
     ],
-    "teaching": "Administrar precocemente, antes do envelhecimento irreversível da ligação."
+    "teaching": "Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation."
   },
   {
     "id": "pralidoxime-nicotinic",
-    "topic": "Toxicologia",
+    "topic": "Toxicology",
     "level": 2,
     "stem": "A poisoned patient has severe bronchorrhea and muscle weakness due to organophosphates. Which treatment helps restore acetylcholinesterase function and may improve neuromuscular weakness?",
     "options": [
@@ -134,16 +134,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Atropina trata efeitos muscarínicos, sobretudo secreções e broncoconstrição; não reativa a enzima.",
-      "Pralidoxima precoce pode reativar a acetilcolinesterase também nas junções neuromusculares.",
-      "Difenidramina é um anti-histamínico e não reverte a inibição da acetilcolinesterase.",
-      "Fisostigmina inibe ainda mais a acetilcolinesterase."
+      "Not the best answer: Atropine alone. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
+      "Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
+      "Not the best answer: Diphenhydramine. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
+      "Not the best answer: Physostigmine. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness."
     ],
-    "teaching": "Intoxicação importante: suporte ventilatório quando necessário, atropina e pralidoxima precoce."
+    "teaching": "Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness."
   },
   {
     "id": "homocystinuria-cbs",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 1,
     "stem": "A child has inferonasal lens displacement, venous thrombosis, and developmental delay. Which blood pattern best fits cystathionine beta-synthase deficiency?",
     "options": [
@@ -154,16 +154,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A via de produção de cistationina está bloqueada: sobe homocisteína e parte retorna à metionina.",
-      "Metionina baixa sugere defeito de remetilação, por exemplo da metionina sintase.",
-      "O defeito causa elevação, não redução, da homocisteína; a cisteína tende a cair.",
-      "A homocisteína não costuma cair nessa deficiência."
+      "Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
+      "Not the best answer: High homocysteine, low methionine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
+      "Not the best answer: Low homocysteine, high cysteine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
+      "Not the best answer: Low methionine, low homocysteine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine."
     ],
-    "teaching": "Deficiência de cistationina beta-sintase: homocisteína e metionina elevadas."
+    "teaching": "Cystathionine beta-synthase deficiency raises both homocysteine and methionine."
   },
   {
     "id": "homocystinuria-remethylation",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 2,
     "stem": "A patient has elevated plasma homocysteine but low methionine due to an inherited defect in remethylation. Which enzyme is most directly impaired?",
     "options": [
@@ -174,16 +174,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A deficiência de cistationina beta-sintase tipicamente eleva também a metionina.",
-      "Metionina sintase devolve um grupo metil à homocisteína, formando metionina.",
-      "Fenilalanina hidroxilase converte fenilalanina em tirosina.",
-      "Homogentisato dioxigenase participa da degradação da tirosina e está relacionada à alcaptonúria."
+      "Not the best answer: Cystathionine beta-synthase. Methionine synthase remethylates homocysteine to methionine.",
+      "Methionine synthase remethylates homocysteine to methionine.",
+      "Not the best answer: Phenylalanine hydroxylase. Methionine synthase remethylates homocysteine to methionine.",
+      "Not the best answer: Homogentisate dioxygenase. Methionine synthase remethylates homocysteine to methionine."
     ],
-    "teaching": "Defeito de remetilação: homocisteína alta e metionina baixa."
+    "teaching": "Methionine synthase remethylates homocysteine to methionine."
   },
   {
     "id": "methyl-donor",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 2,
     "stem": "Which compound formed from methionine serves as a major methyl-group donor in cellular reactions?",
     "options": [
@@ -194,16 +194,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "S-adenosilmetionina é a forma ativada da metionina que doa grupos metil.",
-      "S-adenosil-homocisteína é formada após a doação do grupo metil.",
-      "Cistationina é um intermediário na via de formação de cisteína.",
-      "Homocisteína é produzida após remoção da adenosina da S-adenosil-homocisteína."
+      "S-adenosylmethionine is the major activated methyl-group donor.",
+      "Not the best answer: S-adenosylhomocysteine. S-adenosylmethionine is the major activated methyl-group donor.",
+      "Not the best answer: Cystathionine. S-adenosylmethionine is the major activated methyl-group donor.",
+      "Not the best answer: Homocysteine. S-adenosylmethionine is the major activated methyl-group donor."
     ],
-    "teaching": "Metionina → S-adenosilmetionina → S-adenosil-homocisteína → homocisteína."
+    "teaching": "S-adenosylmethionine is the major activated methyl-group donor."
   },
   {
     "id": "cbs-vitamin",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 1,
     "stem": "Cystathionine beta-synthase, the enzyme that converts homocysteine toward cysteine production, requires which vitamin-derived cofactor?",
     "options": [
@@ -214,16 +214,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Tiamina é importante em reações oxidativas, mas não é o cofator dessa enzima.",
-      "A cistationina beta-sintase utiliza fosfato de piridoxal, derivado da vitamina B6.",
-      "Vitamina B12 é cofator para metionina sintase, que recicla homocisteína em metionina.",
-      "Niacina é precursora de coenzimas de oxidorredução, não desse passo."
+      "Not the best answer: Vitamin B1 (thiamine). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
+      "Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
+      "Not the best answer: Vitamin B12 (cobalamin). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
+      "Not the best answer: Vitamin B3 (niacin). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6."
     ],
-    "teaching": "Cistationina beta-sintase usa vitamina B6; metionina sintase usa vitamina B12 e folato."
+    "teaching": "Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6."
   },
   {
     "id": "fructose-aldolase",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 1,
     "stem": "An infant develops vomiting, sweating, hypoglycemia, and liver injury after fruit juice is introduced. Which enzyme deficiency is most likely?",
     "options": [
@@ -234,16 +234,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Deficiência de frutoquinase causa frutosúria essencial, geralmente benigna.",
-      "Deficiência de aldolase B causa intolerância hereditária à frutose, com acúmulo de frutose-1-fosfato.",
-      "Deficiência de galactoquinase causa sobretudo catarata por acúmulo de galactitol.",
-      "Deficiência de galactose-1-fosfato uridiltransferase causa galactosemia clássica, precipitada pelo leite."
+      "Not the best answer: Fructokinase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
+      "Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
+      "Not the best answer: Galactokinase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
+      "Not the best answer: Galactose-1-phosphate uridylyltransferase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake."
     ],
-    "teaching": "Frutose + sintomas graves após fruta = deficiência de aldolase B."
+    "teaching": "Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake."
   },
   {
     "id": "fructose-phosphate",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 2,
     "stem": "In hereditary fructose intolerance, fructose-1-phosphate accumulation causes hypoglycemia primarily through which mechanism?",
     "options": [
@@ -254,16 +254,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A retenção de fosfato reduz energia celular e prejudica glicogenólise e gliconeogênese.",
-      "A hipoglicemia não depende primariamente de hiperinsulinemia.",
-      "Metabolismo da galactose não explica a intolerância à frutose.",
-      "Glicogenólise é inibida, não estimulada."
+      "Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
+      "Not the best answer: Excess insulin secretion from pancreatic beta cells. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
+      "Not the best answer: Accelerated galactose oxidation. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
+      "Not the best answer: Overactivation of glycogen phosphorylase. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis."
     ],
-    "teaching": "Frutose-1-fosfato sequestra fosfato e prejudica a produção de glicose."
+    "teaching": "Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis."
   },
   {
     "id": "galactose-classic",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 1,
     "stem": "A newborn fed milk develops jaundice, hepatomegaly, poor feeding, and cataracts. Which enzyme deficiency causes classic galactosemia?",
     "options": [
@@ -274,16 +274,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Galactoquinase causa catarata, geralmente sem a síndrome hepática grave clássica.",
-      "A deficiência de galactose-1-fosfato uridiltransferase causa galactosemia clássica.",
-      "Frutoquinase está relacionada à frutosúria essencial.",
-      "Aldolase B está relacionada à intolerância hereditária à frutose."
+      "Not the best answer: Galactokinase. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
+      "Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
+      "Not the best answer: Fructokinase. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
+      "Not the best answer: Aldolase B. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia."
     ],
-    "teaching": "Leite + icterícia + catarata = pensar em galactosemia clássica."
+    "teaching": "Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia."
   },
   {
     "id": "galactose-cataract",
-    "topic": "Bioquímica",
+    "topic": "Biochemistry",
     "level": 2,
     "stem": "A child has isolated early cataracts from galactose accumulation, without severe hepatic manifestations. Which enzyme deficiency is most consistent?",
     "options": [
@@ -294,16 +294,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A deficiência de galactoquinase favorece formação de galactitol, que causa alterações osmóticas no cristalino.",
-      "Aldolase B causa intolerância hereditária à frutose com toxicidade hepática e hipoglicemia.",
-      "Glicose-6-fosfatase causa doença de armazenamento de glicogênio do tipo I.",
-      "Cistationina beta-sintase deficiente produz homocistinúria clássica."
+      "Galactokinase deficiency increases galactose conversion to lens galactitol.",
+      "Not the best answer: Aldolase B. Galactokinase deficiency increases galactose conversion to lens galactitol.",
+      "Not the best answer: Glucose-6-phosphatase. Galactokinase deficiency increases galactose conversion to lens galactitol.",
+      "Not the best answer: Cystathionine beta-synthase. Galactokinase deficiency increases galactose conversion to lens galactitol."
     ],
-    "teaching": "Galactoquinase: catarata; galactose-1-fosfato uridiltransferase: catarata mais doença sistêmica."
+    "teaching": "Galactokinase deficiency increases galactose conversion to lens galactitol."
   },
   {
     "id": "cgd-dhr",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "A child has recurrent infections with catalase-positive bacteria and fungi. A neutrophil dihydrorhodamine flow-cytometry test is abnormal. What is defective?",
     "options": [
@@ -314,16 +314,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A deficiência da oxidase do fosfato de dinucleotídeo de nicotinamida e adenina reduz a explosão respiratória dos fagócitos.",
-      "A deficiência isolada de mieloperoxidase costuma ser mais branda, podendo se associar a Candida.",
-      "Defeito de integrina beta-2 caracteriza deficiência de adesão leucocitária.",
-      "Deficiência do componente 3 do complemento compromete a opsonização, não a explosão respiratória."
+      "NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
+      "Not the best answer: Myeloperoxidase alone. NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
+      "Not the best answer: Leukocyte integrin subunit beta-2. NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
+      "Not the best answer: Complement component 3 (a central complement protein). NADPH oxidase deficiency impairs the neutrophil respiratory burst."
     ],
-    "teaching": "Doença granulomatosa crônica: defeito na explosão respiratória dos fagócitos."
+    "teaching": "NADPH oxidase deficiency impairs the neutrophil respiratory burst."
   },
   {
     "id": "lad-no-pus",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "A newborn has delayed umbilical cord separation, recurrent bacterial infections, marked neutrophilia, and little pus. Which defect is most likely?",
     "options": [
@@ -334,16 +334,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A deficiência de adesão leucocitária prejudica a saída dos neutrófilos do sangue para os tecidos.",
-      "Defeito de explosão respiratória causa doença granulomatosa crônica; os neutrófilos conseguem migrar.",
-      "Deficiência isolada de imunoglobulina A não explica ausência de pus e atraso na queda do cordão.",
-      "Defeito de desenvolvimento tímico afeta predominantemente linfócitos T."
+      "Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
+      "Not the best answer: Defective oxidative burst in neutrophils. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
+      "Not the best answer: Absent immunoglobulin A only. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
+      "Not the best answer: Defective thymic development. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration."
     ],
-    "teaching": "Ausência de pus + neutrofilia + atraso na queda do cordão = defeito de adesão leucocitária."
+    "teaching": "Defective beta-2 integrin prevents neutrophil adhesion and tissue migration."
   },
   {
     "id": "xla-tonsils",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "A boy develops recurrent bacterial infections after maternal antibodies wane. He has almost no tonsillar tissue and very low levels of all immunoglobulin classes. What is the mechanism?",
     "options": [
@@ -354,16 +354,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Agamaglobulinemia ligada ao cromossomo X impede a maturação de linfócitos B, causando ausência de imunoglobulinas e tonsilas pouco desenvolvidas.",
-      "Deficiência isolada de linfócitos T não explica especificamente ausência de linfócitos B maduros.",
-      "Ativação excessiva do complemento não causa esse fenótipo.",
-      "Defeitos plaquetários causam problemas hemorrágicos, não ausência de anticorpos."
+      "Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
+      "Not the best answer: Failure of T lymphocyte selection only. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
+      "Not the best answer: Excess complement activation. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
+      "Not the best answer: Deficiency of platelet adhesion receptors. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development."
     ],
-    "teaching": "Agamaglobulinemia ligada ao cromossomo X: praticamente sem linfócitos B maduros e sem tonsilas."
+    "teaching": "Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development."
   },
   {
     "id": "digeorge-pouch",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 1,
     "stem": "An infant has congenital cardiac defects, hypocalcemia, and profound T lymphocyte deficiency due to thymic aplasia. Which embryologic structure is affected?",
     "options": [
@@ -374,16 +374,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "A primeira bolsa faríngea origina estruturas da orelha média.",
-      "A segunda bolsa faríngea contribui para o tecido das tonsilas palatinas.",
-      "A terceira bolsa faríngea origina o timo e as paratireoides inferiores.",
-      "A quarta fenda não é a origem do timo."
+      "Not the best answer: First pharyngeal pouch. The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
+      "Not the best answer: Second pharyngeal pouch. The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
+      "The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
+      "Not the best answer: Fourth pharyngeal cleft. The third pharyngeal pouch forms the thymus and inferior parathyroid glands."
     ],
-    "teaching": "Síndrome de DiGeorge: alteração da terceira e quarta bolsas faríngeas, com aplasia tímica."
+    "teaching": "The third pharyngeal pouch forms the thymus and inferior parathyroid glands."
   },
   {
     "id": "hyper-igm",
-    "topic": "Imunologia",
+    "topic": "Immunology",
     "level": 2,
     "stem": "A boy has recurrent bacterial and opportunistic infections. Immunoglobulin M is normal or high, but immunoglobulin G and A are markedly reduced. What process fails?",
     "options": [
@@ -394,16 +394,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Há falha na troca de classe dos anticorpos, muitas vezes por defeito na interação entre a proteína CD40 (cluster de diferenciação 40) e seu ligante, presente nos linfócitos T.",
-      "Rearranjo do receptor T não explica especificamente o padrão de imunoglobulinas.",
-      "Migração neutrofílica é defeituosa na deficiência de adesão leucocitária.",
-      "Complexo de ataque à membrana envolve a via terminal do complemento."
+      "Defective CD40 ligand signaling impairs immunoglobulin class switching.",
+      "Not the best answer: Antigen-independent T receptor rearrangement. Defective CD40 ligand signaling impairs immunoglobulin class switching.",
+      "Not the best answer: Neutrophil migration through endothelium. Defective CD40 ligand signaling impairs immunoglobulin class switching.",
+      "Not the best answer: Complement membrane attack complex formation. Defective CD40 ligand signaling impairs immunoglobulin class switching."
     ],
-    "teaching": "Síndrome de hiperimunoglobulina M: falha da troca de classe."
+    "teaching": "Defective CD40 ligand signaling impairs immunoglobulin class switching."
   },
   {
     "id": "psc",
-    "topic": "Gastroenterologia",
+    "topic": "Gastroenterology",
     "level": 1,
     "stem": "A man with ulcerative colitis develops progressive cholestasis. Imaging shows multiple alternating strictures and dilations of intrahepatic and extrahepatic bile ducts. What is the diagnosis?",
     "options": [
@@ -414,16 +414,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Colangite biliar primária acomete predominantemente pequenos ductos intra-hepáticos e costuma apresentar anticorpos antimitocôndria.",
-      "Colangite esclerosante primária está associada à retocolite ulcerativa e provoca estenoses multifocais em vias biliares.",
-      "Colecistite calculosa aguda não produz padrão difuso de estreitamentos e dilatações.",
-      "Síndrome de Gilbert causa hiperbilirrubinemia indireta não conjugada."
+      "Not the best answer: Primary biliary cholangitis. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
+      "Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
+      "Not the best answer: Acute calculous cholecystitis. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
+      "Not the best answer: Gilbert syndrome. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis."
     ],
-    "teaching": "Retocolite ulcerativa + vias biliares em contas de rosário = colangite esclerosante primária."
+    "teaching": "Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis."
   },
   {
     "id": "pbc",
-    "topic": "Gastroenterologia",
+    "topic": "Gastroenterology",
     "level": 2,
     "stem": "A middle-aged woman has pruritus, cholestatic liver tests, and positive antimitochondrial antibodies. Which structure is primarily destroyed?",
     "options": [
@@ -434,16 +434,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Colangite biliar primária destrói pequenos ductos biliares intra-hepáticos.",
-      "Grandes ductos são mais característicos da colangite esclerosante primária.",
-      "Ilhotas pancreáticas são acometidas em diabetes autoimune.",
-      "Veias portais não são o alvo clássico da colangite biliar primária."
+      "Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
+      "Not the best answer: Large extrahepatic bile ducts. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
+      "Not the best answer: Pancreatic islet beta cells. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
+      "Not the best answer: Hepatic portal veins. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies."
     ],
-    "teaching": "Colangite biliar primária: mulher, prurido, anticorpos antimitocôndria."
+    "teaching": "Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies."
   },
   {
     "id": "sulfonylurea",
-    "topic": "Farmacologia",
+    "topic": "Pharmacology",
     "level": 1,
     "stem": "How do sulfonylureas trigger insulin secretion from pancreatic beta cells?",
     "options": [
@@ -454,16 +454,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Abrir canais de potássio hiperpolariza a célula e reduz secreção de insulina.",
-      "Fechar canais de potássio sensíveis ao trifosfato de adenosina despolariza a célula e abre canais de cálcio, liberando insulina.",
-      "O influxo de cálcio é necessário à exocitose de insulina; bloqueá-lo diminui a secreção.",
-      "Sulfonilureias não destroem receptores de insulina."
+      "Not the best answer: Open adenosine triphosphate-sensitive potassium channels. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
+      "Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
+      "Not the best answer: Block voltage-gated calcium channels. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
+      "Not the best answer: Destroy the insulin receptor. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels."
     ],
-    "teaching": "Fechar potássio → despolarizar → abrir cálcio → liberar insulina."
+    "teaching": "Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels."
   },
   {
     "id": "nms",
-    "topic": "Farmacologia",
+    "topic": "Pharmacology",
     "level": 2,
     "stem": "After initiation of a high-potency dopamine receptor antagonist, a patient develops fever, severe lead-pipe rigidity, autonomic instability, and elevated creatine kinase. What is most likely?",
     "options": [
@@ -474,16 +474,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Síndrome serotoninérgica costuma ter hiperreflexia e clônus, além de alterações autonômicas.",
-      "Síndrome neuroléptica maligna decorre de bloqueio dopaminérgico e apresenta rigidez intensa e hipertermia.",
-      "Hipertermia maligna é relacionada sobretudo a anestésicos voláteis e succinilcolina.",
-      "Intoxicação por organofosforados produz síndrome colinérgica com secreções, miose e fasciculações."
+      "Not the best answer: Serotonin syndrome. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
+      "Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
+      "Not the best answer: Malignant hyperthermia triggered by anesthetics. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
+      "Not the best answer: Organophosphate poisoning. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase."
     ],
-    "teaching": "Rigidez em cano de chumbo sugere síndrome neuroléptica maligna; clônus sugere síndrome serotoninérgica."
+    "teaching": "Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase."
   },
   {
     "id": "serotonin",
-    "topic": "Farmacologia",
+    "topic": "Pharmacology",
     "level": 2,
     "stem": "A patient taking two serotonergic drugs develops agitation, fever, diarrhea, hyperreflexia, and inducible ankle clonus. Which syndrome is most likely?",
     "options": [
@@ -494,12 +494,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Síndrome neuroléptica maligna tende a causar rigidez intensa e reflexos não tipicamente hiperativos com clônus.",
-      "Síndrome serotoninérgica combina hiperatividade autonômica, alteração mental, hiperreflexia e clônus.",
-      "Toxicidade anticolinérgica provoca pele seca e redução de ruídos intestinais, não diarreia e clônus.",
-      "Abstinência de opioides pode causar diarreia e agitação, mas o clônus com exposição serotoninérgica aponta outra causa."
+      "Not the best answer: Neuroleptic malignant syndrome. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
+      "Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
+      "Not the best answer: Anticholinergic toxicity. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
+      "Not the best answer: Opioid withdrawal. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability."
     ],
-    "teaching": "Clônus + hiperreflexia + fármacos serotoninérgicos = síndrome serotoninérgica."
+    "teaching": "Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability."
   },
   {
     "id": "nnt",
@@ -514,12 +514,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Cinco corresponderia à redução absoluta de risco de 20%, não 5%.",
-      "Dez corresponderia à redução absoluta de risco de 10%.",
-      "Redução absoluta de risco = 10% − 5% = 5% = 0,05. Número necessário para tratar = 1 / 0,05 = 20.",
-      "Cinquenta corresponderia à redução absoluta de risco de 2%."
+      "Not the best answer: 5. Number needed to treat is the reciprocal of absolute risk reduction.",
+      "Not the best answer: 10. Number needed to treat is the reciprocal of absolute risk reduction.",
+      "Number needed to treat is the reciprocal of absolute risk reduction.",
+      "Not the best answer: 50. Number needed to treat is the reciprocal of absolute risk reduction."
     ],
-    "teaching": "Número necessário para tratar = 1 ÷ redução absoluta do risco."
+    "teaching": "Number needed to treat is the reciprocal of absolute risk reduction."
   },
   {
     "id": "alpha",
@@ -534,12 +534,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Erro do tipo I (alfa) é declarar um resultado positivo quando a hipótese nula é verdadeira: falso positivo.",
-      "Erro do tipo II (beta) é deixar de rejeitar hipótese nula falsa: falso negativo.",
-      "Poder estatístico é 1 menos beta, relacionado à detecção de efeitos reais.",
-      "Viés de seleção é um problema de composição dos grupos, não a definição do erro estatístico descrito."
+      "Type I error (alpha) means rejecting a true null hypothesis.",
+      "Not the best answer: Type II error (beta). Type I error (alpha) means rejecting a true null hypothesis.",
+      "Not the best answer: Reduced statistical power. Type I error (alpha) means rejecting a true null hypothesis.",
+      "Not the best answer: Selection bias. Type I error (alpha) means rejecting a true null hypothesis."
     ],
-    "teaching": "Alfa = falso positivo; beta = falso negativo."
+    "teaching": "Type I error (alpha) means rejecting a true null hypothesis."
   },
   {
     "id": "power",
@@ -554,16 +554,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Vinte por cento é beta: risco de erro do tipo II, ou falso negativo.",
-      "Cinquenta por cento não corresponde a 1 menos 0,20.",
-      "Poder estatístico é 1 menos beta: 1 − 0,20 = 0,80, ou 80%.",
-      "Noventa e cinco por cento não é derivado do beta informado."
+      "Not the best answer: 20%. Statistical power is 1 minus beta, the probability of detecting a true effect.",
+      "Not the best answer: 50%. Statistical power is 1 minus beta, the probability of detecting a true effect.",
+      "Statistical power is 1 minus beta, the probability of detecting a true effect.",
+      "Not the best answer: 95%. Statistical power is 1 minus beta, the probability of detecting a true effect."
     ],
-    "teaching": "Poder estatístico = 1 − beta (probabilidade de erro tipo II)."
+    "teaching": "Statistical power is 1 minus beta, the probability of detecting a true effect."
   },
   {
     "id": "cml",
-    "topic": "Hematologia",
+    "topic": "Hematology",
     "level": 1,
     "stem": "A patient has marked granulocytosis with left shift, splenomegaly, and a reciprocal translocation between chromosomes 9 and 22. What is the pathogenic product?",
     "options": [
@@ -574,16 +574,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Proteína antiapoptótica B-cell lymphoma 2 é típica de linfoma folicular.",
-      "A translocação dos cromossomos 9 e 22 gera a fusão BCR–ABL (região de agrupamento de pontos de quebra e quinase Abelson), com atividade contínua de tirosina quinase.",
-      "Fusão envolvendo receptor de ácido retinoico é típica de leucemia promielocítica aguda.",
-      "Rearranjos do fator de transcrição MYC são típicos de linfoma de Burkitt."
+      "Not the best answer: An anti-apoptotic B-cell lymphoma 2 protein. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
+      "The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
+      "Not the best answer: A retinoic acid receptor fusion. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
+      "Not the best answer: A rearrangement of the MYC (myelocytomatosis) oncogene. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase."
     ],
-    "teaching": "Leucemia mieloide crônica: cromossomos 9 e 22, tirosina quinase BCR–ABL."
+    "teaching": "The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase."
   },
   {
     "id": "follicular",
-    "topic": "Hematologia",
+    "topic": "Hematology",
     "level": 2,
     "stem": "A painless generalized lymphadenopathy biopsy reveals follicles with a translocation between chromosomes 14 and 18. Which cellular effect drives the disease?",
     "options": [
@@ -594,16 +594,16 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A doença é caracterizada por resistência à apoptose, não por excesso dela.",
-      "A translocação entre os cromossomos 14 e 18 aumenta expressão de B-cell lymphoma 2, proteína antiapoptótica.",
-      "Reparo de pareamento incorreto do ácido desoxirribonucleico não é o mecanismo típico.",
-      "Receptor de ácido retinoico alterado caracteriza leucemia promielocítica aguda."
+      "Not the best answer: Increased apoptosis via p53. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
+      "The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
+      "Not the best answer: Increased DNA repair via mismatch-repair proteins. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
+      "Not the best answer: Loss of retinoic acid receptor function. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma."
     ],
-    "teaching": "Linfoma folicular: cromossomos 14 e 18 → B-cell lymphoma 2 → evita apoptose."
+    "teaching": "The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma."
   },
   {
     "id": "apl",
-    "topic": "Hematologia",
+    "topic": "Hematology",
     "level": 2,
     "stem": "A patient has acute leukemia with abnormal promyelocytes, multiple Auer rods, and disseminated intravascular coagulation. Which targeted treatment promotes malignant-cell differentiation?",
     "options": [
@@ -614,12 +614,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Ácido all-trans-retinoico age na proteína de fusão da leucemia promielocítica aguda e restaura diferenciação celular.",
-      "Hidroxiureia aumenta hemoglobina fetal em anemia falciforme; não é o tratamento diferenciador principal desta leucemia.",
-      "Imatinibe inibe tirosina quinase BCR–ABL.",
-      "Rituximabe tem como alvo a proteína CD20 (cluster de diferenciação 20) dos linfócitos B."
+      "The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
+      "Not the best answer: Hydroxyurea. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
+      "Not the best answer: Imatinib. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
+      "Not the best answer: Rituximab. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid."
     ],
-    "teaching": "Leucemia promielocítica aguda: cromossomos 15 e 17, coagulopatia e ácido all-trans-retinoico."
+    "teaching": "The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid."
   },
   {
     "id": "telomerase-stem",
