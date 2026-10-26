@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Questões rápidas e revisão inteligente de erros para o Step 1">
+  <title>Step 1 RapidFire</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./questions.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Seu banco de erros · Step 1</p>
+        <h1>Rapid<span>Fire</span></h1>
+        <p class="subtitle">Uma questão por vez. Feedback imediato. Prioridade para o que você erra.</p>
+      </div>
+      <div class="pill">Banco atualizado no GitHub</div>
+    </header>
+    <section class="controls" aria-label="Filtros da sessão">
+      <label>Assunto <select id="topic"><option value="all">Todos os assuntos</option></select></label>
+      <label>Treino <select id="mode">
+        <option value="all">Todos — priorizar erros</option>
+        <option value="missed">Erros pendentes</option>
+        <option value="due">Revisar agora</option>
+        <option value="unseen">Nunca respondidas</option>
+      </select></label>
+      <label>Dificuldade <select id="level"><option value="all">Todas</option><option value="1">Fundamentos</option><option value="2">Intermediárias</option><option value="3">Difíceis</option></select></label>
+    </section>
+    <section class="metrics" aria-label="Progresso">
+      <div><strong id="answered">0</strong><small>respostas</small></div>
+      <div><strong id="accuracy">—</strong><small>acertos totais</small></div>
+      <div><strong id="streak">0</strong><small>sequência</small></div>
+      <div><strong id="pending">0</strong><small>erros pendentes</small></div>
+    </section>
+    <div class="session-line">
+      <span id="session-count">Questão 1</span>
+      <span id="session-type">Alternativa única</span>
+    </div>
+    <div class="progress" aria-hidden="true"><div id="progress-fill"></div></div>
+    <section id="stage" class="stage" aria-live="polite"></section>
+    <div class="actions">
+      <button id="skip" class="secondary" type="button">Pular</button>
+      <button id="next" class="primary" type="button" disabled>Próxima questão <span aria-hidden="true">→</span></button>
+    </div>
+    <footer>
+      <span>Teclas A–D ou 1–4 para responder; Enter para avançar.</span>
+      <div class="footer-actions">
+        <button id="export" class="linklike" type="button">Exportar progresso</button>
+        <label class="linklike import-label" for="import-file">Importar progresso</label>
+        <input id="import-file" type="file" accept=".json,application/json" hidden>
+        <button id="reset" class="linklike danger" type="button">Zerar progresso</button>
+      </div>
+    </footer>
+    <p class="disclaimer">Treinamento educacional com questões originais; não contém cópias de bancos comerciais. O progresso fica neste navegador, não no repositório público.</p>
+  </main>
+</body>
+</html>
