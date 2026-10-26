@@ -1,14 +1,14 @@
 # Step 1 RapidFire
 
-Quiz rápido, independente do deck antigo, mantido dentro de \`ilmiodeck/rapidfire\`.
+Quiz rápido, independente do deck antigo, mantido dentro de `ilmiodeck/rapidfire`.
 
 ## Abrir
 
-Depois que a alteração for incorporada ao ramo principal, abra \`rapidfire/index.html\` localmente no navegador ou publique a pasta com GitHub Pages.
+Depois que a alteração for incorporada ao ramo principal, abra `rapidfire/index.html` localmente no navegador ou publique a pasta com GitHub Pages.
 
-Se o GitHub Pages do repositório estiver habilitado para o ramo \`main\` e a raiz \`/\`, o endereço será:
+Se o GitHub Pages do repositório estiver habilitado para o ramo `main` e a raiz `/`, o endereço será:
 
-\`https://henriquemmafra.github.io/ilmiodeck/rapidfire/\`
+`https://henriquemmafra.github.io/ilmiodeck/rapidfire/`
 
 Esse endereço depende de GitHub Pages estar habilitado; não é uma confirmação de implantação.
 
@@ -29,9 +29,9 @@ Ao enviar uma questão errada para o ChatGPT, peça: **"Adicione este conceito a
 
 O arquivo de manutenção é [questions.js](./questions.js). A nova questão deve ser *original*: preservar o conceito cobrado, mas não reproduzir literalmente textos, alternativas ou imagens de bancos comerciais.
 
-Formato de cada objeto do array \`window.RAPIDFIRE_QUESTIONS\`:
+Formato de cada objeto do array `window.RAPIDFIRE_QUESTIONS`:
 
-\`\`\`js
+```js
 {
   id: "identificador-unico-estavel",
   topic: "Imunologia",
@@ -42,12 +42,12 @@ Formato de cada objeto do array \`window.RAPIDFIRE_QUESTIONS\`:
   explanations: ["Explicação A", "Explicação B", "Explicação C", "Explicação D"],
   teaching: "Ponto central para memorizar."
 }
-\`\`\`
+```
 
-Cada identificador \`id\` deve ser único e permanecer estável; alterá-lo faz o progresso do item deixar de ser reconhecido.
+Cada identificador `id` deve ser único e permanecer estável; alterá-lo faz o progresso do item deixar de ser reconhecido.
 
-Para imagens **originais/autorizadas**, coloque o arquivo em \`rapidfire/images/\` e acrescente ao objeto:
-\`image: "images/nome.png"\`, \`imageAlt: "Descrição acessível"\` e, opcionalmente, \`imageCaption: "Legenda"\`.
+Para imagens **originais/autorizadas**, coloque o arquivo em `rapidfire/images/` e acrescente ao objeto:
+`image: "images/nome.png"`, `imageAlt: "Descrição acessível"` e, opcionalmente, `imageCaption: "Legenda"`.
 
 ## Privacidade e limites
 
