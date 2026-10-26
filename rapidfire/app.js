@@ -47,7 +47,7 @@
     try {
       localStorage.setItem(storageKey, JSON.stringify(history));
     } catch (error) {
-      // Navegação privada pode bloquear o armazenamento.
+      // Private browsing may block storage.
     }
   }
 
@@ -96,8 +96,8 @@
     ids.accuracy.textContent = attempts ? Math.round(100 * hits / attempts) + "%" : "—";
     ids.streak.textContent = String(session.streak);
     ids.pending.textContent = String(missed);
-    ids.count.textContent = finished ? "Fim da sessão" : "Questão " + Math.max(1, seen.size) + " de " + session.initialSize;
-    ids.type.textContent = session.asked + " respondidas nesta sessão";
+    ids.count.textContent = finished ? "Session complete" : "Question " + Math.max(1, seen.size) + " de " + session.initialSize;
+    ids.type.textContent = session.asked + " answered this session";
     ids.progress.style.width = (session.initialSize ? Math.min(100, 100 * seen.size / session.initialSize) : 0) + "%";
   }
 
@@ -159,9 +159,9 @@
 
     var chips = make("div", "chips");
     chips.appendChild(make("span", "chip", q.topic));
-    chips.appendChild(make("span", "chip secondary", q.level === 1 ? "Fundamentos" : q.level === 2 ? "Intermediária" : "Difícil"));
+    chips.appendChild(make("span", "chip secondary", q.level === 1 ? "Foundational" : q.level === 2 ? "Intermediate" : "Advanced"));
     if (getProgress(q) && getProgress(q).lastWrong && selected === null) {
-      chips.appendChild(make("span", "chip secondary", "Erro pendente"));
+      chips.appendChild(make("span", "chip secondary", "Previously missed"));
     }
     ids.stage.appendChild(chips);
     ids.stage.appendChild(make("p", "stem", q.stem));
@@ -169,7 +169,7 @@
     if (typeof q.image === "string" && /^(\.\/)?images\/[a-zA-Z0-9_.\/-]+$/.test(q.image) && !q.image.includes("..")) {
       var img = make("img", "question-image");
       img.src = q.image;
-      img.alt = q.imageAlt || "Imagem associada à questão";
+      img.alt = q.imageAlt || "Question image";
       img.loading = "lazy";
       ids.stage.appendChild(img);
       if (q.imageCaption) ids.stage.appendChild(make("p", "image-caption", q.imageCaption));
@@ -193,12 +193,12 @@
       var feedback = make("section", "feedback");
       var success = selected === q.answer;
       feedback.appendChild(make("div", "verdict " + (success ? "good" : "bad"),
-        success ? "Acertou. Continue." : "Errou. Resposta: " + String.fromCharCode(65 + q.answer) + "."));
+        success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
       q.explanations.forEach(function (reason, i) {
         var style = "explain" + (i === q.answer ? " is-correct" : "") + (i === selected ? " is-chosen" : "");
         feedback.appendChild(make("div", style, String.fromCharCode(65 + i) + ". " + reason));
       });
-      feedback.appendChild(make("div", "takeaway", "Para guardar: " + q.teaching));
+      feedback.appendChild(make("div", "takeaway", "Takeaway: " + q.teaching));
       ids.stage.appendChild(feedback);
     }
     updateNumbers();
@@ -210,17 +210,17 @@
     ids.skip.hidden = true;
     var empty = make("div", "empty");
     var count = session.asked;
-    empty.appendChild(make("h2", "", session.initialSize === 0 ? "Sem questões nesse filtro" : "Sessão concluída"));
+    empty.appendChild(make("h2", "", session.initialSize === 0 ? "No questions match this filter" : "Session complete"));
     var msg = session.initialSize === 0
-      ? "Escolha outro assunto ou modo. Questões respondidas corretamente voltam à revisão em dias futuros."
-      : "Você respondeu " + count + " questões, acertou " + session.correct +
-        " (" + (count ? Math.round(100 * session.correct / count) : 0) + "%). Erros permanecem disponíveis para revisar.";
+      ? "Choose a different subject or mode. Correct answers return for review on future days."
+      : "You answered " + count + " questions and got " + session.correct +
+        " (" + (count ? Math.round(100 * session.correct / count) : 0) + "%). Missed questions remain available for review.";
     empty.appendChild(make("p", "", msg));
-    var restart = make("button", "finish-button", "Recomeçar sessão");
+    var restart = make("button", "finish-button", "Restart session");
     restart.type = "button";
     restart.addEventListener("click", startSession);
     empty.appendChild(restart);
-    var review = make("button", "secondary finish-button", "Revisar erros pendentes");
+    var review = make("button", "secondary finish-button", "Review missed questions");
     review.type = "button";
     review.addEventListener("click", function () { ids.mode.value = "missed"; startSession(); });
     empty.appendChild(review);
@@ -234,7 +234,7 @@
     var url = URL.createObjectURL(blob);
     var anchor = make("a");
     anchor.href = url;
-    anchor.download = "rapidfire-progresso.json";
+    anchor.download = "rapidfire-progress.json";
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
@@ -248,7 +248,7 @@
       try {
         var obj = JSON.parse(reader.result);
         if (!obj || obj.app !== "step1-rapidfire" || !obj.history || typeof obj.history !== "object" || Array.isArray(obj.history)) {
-          throw new Error("Arquivo não reconhecido.");
+          throw new Error("Unrecognized file.");
         }
         var clean = {};
         questions.forEach(function (q) {
@@ -264,12 +264,12 @@
             nextAt: Number(value.nextAt) || 0
           };
         });
-        if (!confirm("Substituir o progresso deste navegador pelo progresso importado?")) return;
+        if (!confirm("Replace this browser's progress with the imported progress?")) return;
         history = clean;
         saveHistory();
         startSession();
       } catch (error) {
-        alert("Não foi possível importar: " + error.message);
+        alert("Could not import: " + error.message);
       }
     };
     reader.readAsText(file);
@@ -293,7 +293,7 @@
     ids.importInput.value = "";
   });
   ids.reset.addEventListener("click", function () {
-    if (!confirm("Apagar o histórico de acertos e erros salvo neste navegador?")) return;
+    if (!confirm("Delete saved answer history in this browser?")) return;
     history = {};
     saveHistory();
     startSession();
