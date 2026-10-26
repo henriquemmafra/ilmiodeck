@@ -118,8 +118,9 @@
       renderEnd();
       return;
     }
-    candidates.sort(function (a, b) { return priority(b) - priority(a); });
-    current = candidates[0];
+    var ranked = candidates.map(function (q) { return { question: q, score: priority(q) }; });
+    ranked.sort(function (a, b) { return b.score - a.score; });
+    current = ranked[0].question;
     seen.add(current.id);
     renderQuestion();
   }
