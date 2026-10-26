@@ -310,7 +310,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Nicotinamide adenine dinucleotide phosphate oxidase",
       "Myeloperoxidase alone",
       "Leukocyte integrin subunit beta-2",
-      "Complement component C3"
+      "Complement component 3 (a central complement protein)"
     ],
     "answer": 0,
     "explanations": [
@@ -394,7 +394,7 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Há falha na troca de classe de anticorpos, frequentemente por defeito na interação entre ligante de CD40 e CD40 em linfócitos T e B.",
+      "Há falha na troca de classe dos anticorpos, muitas vezes por defeito na interação entre a proteína CD40 (cluster de diferenciação 40) e seu ligante, presente nos linfócitos T.",
       "Rearranjo do receptor T não explica especificamente o padrão de imunoglobulinas.",
       "Migração neutrofílica é defeituosa na deficiência de adesão leucocitária.",
       "Complexo de ataque à membrana envolve a via terminal do complemento."
@@ -568,14 +568,14 @@ window.RAPIDFIRE_QUESTIONS = [
     "stem": "A patient has marked granulocytosis with left shift, splenomegaly, and a reciprocal translocation between chromosomes 9 and 22. What is the pathogenic product?",
     "options": [
       "An anti-apoptotic B-cell lymphoma 2 protein",
-      "A constitutively active BCR–ABL tyrosine kinase",
+      "A constitutively active BCR–ABL tyrosine kinase (breakpoint cluster region–Abelson fusion)",
       "A retinoic acid receptor fusion",
-      "A MYC transcription factor rearrangement"
+      "A rearrangement of the MYC (myelocytomatosis) oncogene"
     ],
     "answer": 1,
     "explanations": [
       "Proteína antiapoptótica B-cell lymphoma 2 é típica de linfoma folicular.",
-      "A translocação entre cromossomos 9 e 22 gera proteína de fusão BCR–ABL com atividade de tirosina quinase constitutiva.",
+      "A translocação dos cromossomos 9 e 22 gera a fusão BCR–ABL (região de agrupamento de pontos de quebra e quinase Abelson), com atividade contínua de tirosina quinase.",
       "Fusão envolvendo receptor de ácido retinoico é típica de leucemia promielocítica aguda.",
       "Rearranjos do fator de transcrição MYC são típicos de linfoma de Burkitt."
     ],
@@ -617,7 +617,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Ácido all-trans-retinoico age na proteína de fusão da leucemia promielocítica aguda e restaura diferenciação celular.",
       "Hidroxiureia aumenta hemoglobina fetal em anemia falciforme; não é o tratamento diferenciador principal desta leucemia.",
       "Imatinibe inibe tirosina quinase BCR–ABL.",
-      "Rituximabe tem como alvo a proteína de superfície CD20 dos linfócitos B."
+      "Rituximabe tem como alvo a proteína CD20 (cluster de diferenciação 20) dos linfócitos B."
     ],
     "teaching": "Leucemia promielocítica aguda: cromossomos 15 e 17, coagulopatia e ácido all-trans-retinoico."
   }
