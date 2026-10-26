@@ -194,11 +194,9 @@
       var success = selected === q.answer;
       feedback.appendChild(make("div", "verdict " + (success ? "good" : "bad"),
         success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
-      q.explanations.forEach(function (reason, i) {
-        var style = "explain" + (i === q.answer ? " is-correct" : "") + (i === selected ? " is-chosen" : "");
-        feedback.appendChild(make("div", style, String.fromCharCode(65 + i) + ". " + reason));
-      });
-      feedback.appendChild(make("div", "takeaway", "Takeaway: " + q.teaching));
+      feedback.appendChild(make("div", "explain is-correct", "Why: " + q.explanations[q.answer]));
+      if (!success) feedback.appendChild(make("div", "explain", "Your choice: " + q.options[selected]));
+      feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
     }
     updateNumbers();
