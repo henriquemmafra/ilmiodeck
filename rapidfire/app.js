@@ -97,7 +97,7 @@
     ids.streak.textContent = String(session.streak);
     ids.pending.textContent = String(missed);
     ids.count.textContent = finished ? "Session complete" : "Question " + Math.max(1, seen.size) + " de " + session.initialSize;
-    ids.type.textContent = session.asked + " answered this session";
+    ids.type.textContent = session.asked + " answered this session · " + questions.length + " in bank";
     ids.progress.style.width = (session.initialSize ? Math.min(100, 100 * seen.size / session.initialSize) : 0) + "%";
   }
 
