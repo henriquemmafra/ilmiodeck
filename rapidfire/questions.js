@@ -1421,4 +1421,205 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "Encapsulated organisms resist phagocytosis; the spleen is crucial for their blood clearance."
   }
+,
+  {
+    "id": "oncogene-kras-activating",
+    "topic": "Genetics",
+    "level": 1,
+    "stem": "A tumor contains a single-base substitution that activates a growth-promoting gene. Which gene is the most likely target?",
+    "options": [
+      "TP53",
+      "RB1",
+      "KRAS",
+      "APC"
+    ],
+    "answer": 2,
+    "explanations": [
+      "TP53 is a tumor suppressor typically impaired by loss-of-function changes.",
+      "RB1 is a cell-cycle tumor suppressor typically inactivated in tumors.",
+      "KRAS is a proto-oncogene; activating point mutations can provide persistent mitogenic signaling.",
+      "APC is a tumor suppressor; loss of APC promotes beta-catenin signaling."
+    ],
+    "teaching": "An activating mutation favors an oncogene such as KRAS; inactivating mutations favor tumor suppressors."
+  },
+  {
+    "id": "oncogene-ras-gtp-switch",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "An activating RAS mutation causes sustained growth signaling despite the absence of growth factors. Which biochemical state of RAS is favored?",
+    "options": [
+      "GDP-bound inactive state",
+      "GTP-bound active state",
+      "Dephosphorylated RAS bound to p53",
+      "RAS permanently bound to E2F"
+    ],
+    "answer": 1,
+    "explanations": [
+      "RAS bound to guanosine diphosphate is inactive, not growth-stimulating.",
+      "GTP-bound RAS is active; oncogenic mutations commonly impair its intrinsic or GAP-stimulated GTP hydrolysis.",
+      "Binding to p53 is not the nucleotide switch that regulates RAS.",
+      "E2F is regulated by RB and is not the nucleotide-binding partner that switches RAS on."
+    ],
+    "teaching": "RAS-GTP = ON; RAS-GDP = OFF. Oncogenic RAS resists GTP hydrolysis."
+  },
+  {
+    "id": "oncogene-dominant-cellular",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "A neoplastic clone acquires one activating allele of a proto-oncogene while the other allele remains normal. Why can this mutation still promote tumor growth?",
+    "options": [
+      "Proto-oncogenes always require deletion of both alleles",
+      "Gain-of-function mutations usually act dominantly at the cellular level",
+      "The normal allele is always silenced by methylation",
+      "Tumor suppressors are activated by one mutated allele"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Two-hit inactivation is classically associated with many tumor suppressors, not oncogene activation.",
+      "One activated copy can produce excessive growth-promoting signaling despite a normal second allele.",
+      "Silencing of the normal allele is not generally required for oncogene activation.",
+      "Tumor suppressors generally protect against proliferation and are commonly inactivated rather than activated."
+    ],
+    "teaching": "Oncogene = cellular dominant gain of function; tumor suppressor = often two-hit loss of function."
+  },
+  {
+    "id": "suppressor-two-hit-rb",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "A person inherits a pathogenic RB1 variant in every cell and later develops retinoblastoma. What additional somatic event most directly promotes tumorigenesis?",
+    "options": [
+      "Activation of the intact RB1 allele",
+      "Loss of function of the remaining normal RB1 allele",
+      "Amplification of wild-type RB1",
+      "Increased RB binding to E2F"
+    ],
+    "answer": 1,
+    "explanations": [
+      "RB1 acts as a brake; making its remaining allele more active would not remove that brake.",
+      "In hereditary retinoblastoma, loss of the remaining functional RB1 allele provides the second hit.",
+      "Extra wild-type RB1 would not create RB1 deficiency.",
+      "Increased RB–E2F binding restrains the G1-to-S transition."
+    ],
+    "teaching": "Classic two-hit model: inherited RB1 loss plus somatic inactivation of the other allele."
+  },
+  {
+    "id": "suppressor-p53-p21",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "A cell develops DNA double-strand breaks. A normal p53 response arrests the cell cycle. Which downstream protein directly inhibits cyclin-dependent kinases?",
+    "options": [
+      "p21",
+      "MYC",
+      "KRAS",
+      "BRAF"
+    ],
+    "answer": 0,
+    "explanations": [
+      "p53 increases p21 transcription; p21 inhibits cyclin-dependent kinases and causes cell-cycle arrest.",
+      "MYC is a transcription factor proto-oncogene that generally promotes cell growth.",
+      "KRAS is a signaling GTPase that promotes proliferation when activated.",
+      "BRAF is a kinase proto-oncogene in the RAS–RAF–MEK pathway."
+    ],
+    "teaching": "DNA damage → p53 → p21 → cyclin-dependent kinase inhibition → arrest."
+  },
+  {
+    "id": "suppressor-rb-e2f",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "An unphosphorylated RB protein holds the cell at the G1 checkpoint. What does RB directly bind to inhibit entry into S phase?",
+    "options": [
+      "p21",
+      "RAS",
+      "E2F",
+      "BRCA1"
+    ],
+    "answer": 2,
+    "explanations": [
+      "p21 inhibits cyclin-dependent kinases but is not the canonical RB-bound transcription factor.",
+      "RAS is a small GTPase upstream of proliferative signaling.",
+      "RB binds E2F transcription factors, suppressing the expression of S-phase genes.",
+      "BRCA1 mediates DNA repair and is not the RB transcriptional target."
+    ],
+    "teaching": "Active hypophosphorylated RB binds E2F; RB phosphorylation frees E2F to drive S phase."
+  },
+  {
+    "id": "suppressor-apc-beta-catenin",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "Loss of APC causes accumulation of a transcriptional coactivator associated with intestinal adenoma formation. Which protein accumulates?",
+    "options": [
+      "p53",
+      "Beta-catenin",
+      "RAS-GDP",
+      "BRCA2"
+    ],
+    "answer": 1,
+    "explanations": [
+      "p53 is a separate tumor suppressor controlling damage responses.",
+      "APC normally helps degrade beta-catenin; APC loss allows beta-catenin to activate Wnt-responsive growth genes.",
+      "RAS-GDP is the inactive form of RAS, not the APC-regulated Wnt effector.",
+      "BRCA2 is important in homologous recombination, not the APC destruction complex."
+    ],
+    "teaching": "APC loss → beta-catenin accumulation → Wnt-driven proliferation."
+  },
+  {
+    "id": "suppressor-brca-homologous",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "A woman with a pathogenic BRCA1 loss-of-function allele develops breast cancer after loss of the other allele. Which repair pathway is most directly affected?",
+    "options": [
+      "Nucleotide excision repair",
+      "Base excision repair",
+      "Mismatch repair",
+      "Homologous recombination of double-strand breaks"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Nucleotide excision repair removes bulky DNA lesions such as UV photoproducts.",
+      "Base excision repair handles small chemically altered bases.",
+      "Mismatch repair fixes replication-associated base mismatches and insertion-deletion loops.",
+      "BRCA1 and BRCA2 are central to homologous recombination repair of double-strand DNA breaks."
+    ],
+    "teaching": "BRCA1/2 loss → defective homologous recombination; they are tumor suppressors."
+  },
+  {
+    "id": "oncogene-braf-activating",
+    "topic": "Genetics",
+    "level": 3,
+    "stem": "A melanoma carries a BRAF V600E substitution that increases MAP kinase pathway signaling. What type of genetic alteration does this represent?",
+    "options": [
+      "Gain-of-function mutation in a proto-oncogene",
+      "Two-hit inactivation of a tumor suppressor",
+      "Silencing of a DNA repair gene",
+      "Loss of function in a cell-cycle brake"
+    ],
+    "answer": 0,
+    "explanations": [
+      "BRAF V600E activates kinase signaling and is an oncogenic gain-of-function mutation.",
+      "Two-hit loss typically describes tumor suppressors rather than constitutively active BRAF.",
+      "BRAF is a kinase-signaling proto-oncogene, not primarily a DNA repair gene.",
+      "BRAF activation is not a loss-of-function change in a proliferation brake."
+    ],
+    "teaching": "BRAF and KRAS are proto-oncogenes; activating single-nucleotide variants can turn them on."
+  },
+  {
+    "id": "oncogene-her2-amplification",
+    "topic": "Genetics",
+    "level": 3,
+    "stem": "A breast carcinoma has a high copy number of ERBB2, which encodes a growth factor receptor. Which mechanism best describes its oncogenic effect?",
+    "options": [
+      "Inactivation of mismatch repair",
+      "Loss of both TP53 alleles",
+      "Proto-oncogene amplification leading to excess signaling",
+      "Deletion of the gene encoding beta-catenin"
+    ],
+    "answer": 2,
+    "explanations": [
+      "ERBB2 copy-number gain does not primarily impair mismatch repair.",
+      "TP53 loss is a distinct tumor suppressor mechanism.",
+      "ERBB2 (HER2) amplification increases growth-promoting receptor signaling and is oncogene activation.",
+      "Beta-catenin deletion is not the mechanism of ERBB2 amplification."
+    ],
+    "teaching": "Oncogenes may activate through point mutation, amplification, or translocation."
+  }
 ];
