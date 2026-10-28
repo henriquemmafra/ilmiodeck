@@ -1180,4 +1180,245 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "Primary ciliary dyskinesia: low nasal nitric oxide and normal sweat chloride; cystic fibrosis: elevated sweat chloride."
   }
+,
+  {
+    "id": "ecoli-k1-neonatal-meningitis",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A 19-day-old infant has fever and cerebrospinal fluid with neutrophils, low glucose, and gram-negative lactose-fermenting bacilli. Which microbial factor most directly protects the organism from phagocytosis?",
+    "options": [
+      "Lipid A",
+      "K1 polysialic acid capsule",
+      "P fimbriae",
+      "O antigen"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Lipid A is the endotoxin component of lipopolysaccharide and drives inflammation, not the main antiphagocytic mechanism.",
+      "The K1 polysialic acid capsule limits complement-mediated opsonization and phagocytosis, enabling invasive E. coli infection.",
+      "P fimbriae mediate adhesion to urinary tract epithelium, especially in pyelonephritis.",
+      "O antigen is the variable outer polysaccharide of lipopolysaccharide and is used in serotyping, not the key K1 meningitis defense."
+    ],
+    "teaching": "Neonatal E. coli meningitis points to its K1 capsule; septic shock points to Lipid A."
+  },
+  {
+    "id": "gramnegative-capsule-location",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "A gram-negative bacillus possesses a protective polysaccharide capsule. Where is this capsule located relative to the bacterial envelope?",
+    "options": [
+      "Inside the cytoplasm",
+      "Outside the outer membrane",
+      "Between the two membranes",
+      "Within the inner membrane"
+    ],
+    "answer": 1,
+    "explanations": [
+      "The capsule is an extracellular surface layer, not a cytoplasmic structure.",
+      "Both gram-negative and gram-positive bacteria can have a capsule. In gram-negative bacteria it lies outside the outer membrane.",
+      "The periplasm lies between the inner and outer membranes; the capsule is external to both.",
+      "The capsule is not embedded within the inner cytoplasmic membrane."
+    ],
+    "teaching": "Capsule is optional and external; Gram classification depends on cell-envelope structure."
+  },
+  {
+    "id": "gramnegative-cell-wall",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Which structural feature distinguishes a typical gram-negative bacterium from a gram-positive bacterium?",
+    "options": [
+      "Thick peptidoglycan without an outer membrane",
+      "A capsule made exclusively of lipids",
+      "Thin peptidoglycan plus an outer membrane",
+      "No cytoplasmic membrane"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Thick peptidoglycan without an outer membrane is typical of gram-positive bacteria.",
+      "Capsules are often polysaccharide and may occur in either Gram group; they do not determine staining.",
+      "Gram-negative bacteria have a thin peptidoglycan layer in the periplasm and a lipopolysaccharide-containing outer membrane.",
+      "Both Gram groups have a cytoplasmic membrane."
+    ],
+    "teaching": "Gram-negative = thin peptidoglycan + outer membrane containing lipopolysaccharide."
+  },
+  {
+    "id": "ecoli-k1-complement-mimicry",
+    "topic": "Microbiology",
+    "level": 3,
+    "stem": "A strain of Escherichia coli survives in blood despite intact neutrophil function. Its surface contains polysialic acid that resembles host glycans. What immune event is most directly reduced?",
+    "options": [
+      "C3b deposition and opsonization",
+      "Host ribosomal protein synthesis",
+      "Neutrophil production in marrow",
+      "Antibody gene rearrangement"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The K1 capsule limits complement deposition and opsonization, reducing phagocytic clearance.",
+      "Inhibition of host ribosomes is associated with Shiga toxin, not the K1 capsule.",
+      "The capsule changes bacterial clearance, not the production of neutrophils.",
+      "The capsule does not directly block lymphocyte immunoglobulin gene rearrangement."
+    ],
+    "teaching": "Polysialic acid K1 capsule uses host-like surface chemistry to evade complement and phagocytosis."
+  },
+  {
+    "id": "ecoli-endotoxic-shock-lipida",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A patient with gram-negative bacteremia develops hypotension, fever, and a surge in tumor necrosis factor-alpha. Which part of the bacterial envelope is the main endotoxin trigger?",
+    "options": [
+      "K antigen",
+      "P fimbrial adhesin",
+      "O-specific polysaccharide",
+      "Lipid A"
+    ],
+    "answer": 3,
+    "explanations": [
+      "K antigen refers to a capsular antigen and is more directly associated with immune evasion.",
+      "Fimbrial adhesins facilitate attachment to host cells rather than producing the principal endotoxin response.",
+      "O antigen is the outermost variable polysaccharide of lipopolysaccharide, not its principal toxic moiety.",
+      "Lipid A is the toxic anchor of lipopolysaccharide that drives innate inflammatory responses in gram-negative sepsis."
+    ],
+    "teaching": "Endotoxic shock = Lipid A; invasive neonatal E. coli meningitis = K1 capsule."
+  },
+  {
+    "id": "lipida-tlr4-receptor",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "Macrophages exposed to purified gram-negative endotoxin release interleukin-1 and tumor necrosis factor-alpha. Which receptor complex recognizes the toxin?",
+    "options": [
+      "Toll-like receptor 2",
+      "Toll-like receptor 4 with MD-2 and CD14",
+      "Toll-like receptor 5",
+      "Toll-like receptor 9"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Toll-like receptor 2 primarily recognizes several bacterial lipoproteins and lipoteichoic acid.",
+      "Toll-like receptor 4, with MD-2 and CD14, senses lipopolysaccharide (particularly Lipid A) and triggers proinflammatory signaling.",
+      "Toll-like receptor 5 detects bacterial flagellin.",
+      "Toll-like receptor 9 recognizes unmethylated CpG-rich DNA."
+    ],
+    "teaching": "Lipid A/LPS → TLR4–MD-2/CD14 → NF-κB → TNF-alpha and IL-1."
+  },
+  {
+    "id": "ecoli-o-versus-k-antigen",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "An E. coli isolate is classified by its O serotype. Which surface component is measured for this classification?",
+    "options": [
+      "Flagellar protein",
+      "Capsular polysialic acid",
+      "Repeating polysaccharide of lipopolysaccharide",
+      "Inner-membrane phospholipid"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Flagellar protein is the H antigen, not the O antigen.",
+      "Capsular polysaccharide corresponds to K antigen, not O antigen.",
+      "The O antigen is the variable repeating outer polysaccharide of lipopolysaccharide and defines the O serotype.",
+      "Inner-membrane phospholipids are not the O serotype-defining structure."
+    ],
+    "teaching": "E. coli: O = LPS outer polysaccharide; K = capsule; H = flagellum."
+  },
+  {
+    "id": "macconkey-pink-lactose",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "A stool isolate grows as pink colonies on MacConkey agar. What property accounts for the colony color?",
+    "options": [
+      "Production of a polysaccharide capsule",
+      "Release of Shiga toxin",
+      "Lactose fermentation with acid production",
+      "Presence of gram-positive peptidoglycan"
+    ],
+    "answer": 2,
+    "explanations": [
+      "A capsule may aid virulence but does not produce the lactose-dependent pink indicator.",
+      "Shiga toxin is not responsible for colony color on MacConkey agar.",
+      "Lactose fermentation produces acid that turns the pH indicator pink, as commonly seen with E. coli.",
+      "MacConkey selects against most gram-positive organisms; Gram staining is not the reason for pink colonies."
+    ],
+    "teaching": "Pink MacConkey colonies indicate lactose fermentation, not the presence of a capsule."
+  },
+  {
+    "id": "ecoli-p-fimbriae-pyelonephritis",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A young adult develops fever, flank pain, pyuria, and a urine culture positive for E. coli. Which bacterial feature especially promotes ascent and attachment in the upper urinary tract?",
+    "options": [
+      "K1 capsule",
+      "P fimbriae",
+      "Lipid A",
+      "Shiga toxin"
+    ],
+    "answer": 1,
+    "explanations": [
+      "K1 capsule is strongly associated with neonatal meningitis rather than urinary epithelial attachment.",
+      "P fimbriae bind glycolipid receptors on uroepithelial cells and are associated with pyelonephritis.",
+      "Lipid A promotes systemic inflammation but is not the primary adhesin for pyelonephritis.",
+      "Shiga toxin is associated with hemorrhagic colitis and hemolytic uremic syndrome."
+    ],
+    "teaching": "P fimbriae = pyelonephritis; K1 capsule = neonatal meningitis."
+  },
+  {
+    "id": "shiga-toxin-ribosome",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A child develops bloody diarrhea and then hemolytic anemia, thrombocytopenia, and acute kidney injury. The causative E. coli strain produces a toxin that blocks which process?",
+    "options": [
+      "Ribosomal function at the 60S subunit",
+      "Intestinal chloride secretion via increased cyclic AMP",
+      "Complement C3 convertase assembly",
+      "Bacterial adhesion to uroepithelium"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Shiga toxin damages 28S ribosomal RNA in the 60S subunit, inhibiting protein synthesis and injuring vascular endothelium.",
+      "Increased cyclic AMP is the mechanism of heat-labile enterotoxin, typically causing watery diarrhea.",
+      "Complement regulation is relevant to immune evasion but not Shiga toxin's direct molecular target.",
+      "Uroepithelial adherence is mediated by fimbriae and is associated with urinary infection."
+    ],
+    "teaching": "Bloody diarrhea + hemolytic uremic syndrome → Shiga toxin → 60S inhibition."
+  },
+  {
+    "id": "etec-heat-labile-camp",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A traveler develops profuse watery diarrhea after eating contaminated food. An enterotoxigenic E. coli toxin persistently activates the Gs alpha protein. Which messenger increases?",
+    "options": [
+      "Cyclic AMP",
+      "Cyclic GMP",
+      "Inositol trisphosphate only",
+      "Cytosolic guanosine triphosphate only"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Heat-labile toxin ADP-ribosylates Gs alpha, activating adenylyl cyclase and increasing cyclic AMP.",
+      "Heat-stable ETEC toxin activates guanylyl cyclase and increases cyclic GMP, not the Gs pathway.",
+      "The classic Gs–adenylyl cyclase pathway raises cyclic AMP, not inositol trisphosphate.",
+      "Gs alpha binds guanosine triphosphate, but increased cyclic AMP is the tested downstream second messenger."
+    ],
+    "teaching": "ETEC heat-labile = ↑cAMP (Gs); heat-stable = ↑cGMP."
+  },
+  {
+    "id": "asplenia-encapsulated-bacteria",
+    "topic": "Microbiology",
+    "level": 3,
+    "stem": "A splenectomized adult develops overwhelming pneumococcal bacteremia. Why does loss of splenic function particularly increase risk from encapsulated bacteria?",
+    "options": [
+      "Loss of liver synthesis of all complement proteins",
+      "Reduced clearance of poorly opsonized organisms from blood",
+      "Loss of gastric acid production",
+      "Inability to make neutrophils in bone marrow"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Most complement proteins are made in the liver; splenectomy does not abolish their synthesis.",
+      "Splenic macrophages and antibody responses help clear encapsulated organisms from blood; loss of this function raises risk of invasive infection.",
+      "Splenectomy does not remove gastric acid secretion.",
+      "Splenectomy does not prevent neutrophil generation in the marrow."
+    ],
+    "teaching": "Encapsulated organisms resist phagocytosis; the spleen is crucial for their blood clearance."
+  }
 ];
