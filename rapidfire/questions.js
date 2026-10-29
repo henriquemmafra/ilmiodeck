@@ -3341,5 +3341,505 @@ window.RAPIDFIRE_QUESTIONS = [
       "Terbinafine inhibits squalene epoxidase."
     ],
     "teaching": "Amphotericin B binds ergosterol and forms pores; major adverse effects include nephrotoxicity and hypokalemia."
+  },
+  {
+    "id": "top50-20261029-26-chemotherapy",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient receiving chemotherapy for Hodgkin lymphoma develops progressive dyspnea and interstitial pulmonary fibrosis. Which drug is the most likely cause?",
+    "options": [
+      "Bleomycin",
+      "Vincristine",
+      "Cyclophosphamide",
+      "Methotrexate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Bleomycin is associated with dose-related pulmonary toxicity including pneumonitis and fibrosis.",
+      "Vincristine classically causes peripheral neuropathy and autonomic dysfunction.",
+      "Cyclophosphamide classically causes hemorrhagic cystitis and myelosuppression.",
+      "Methotrexate can cause pneumonitis, but bleomycin is the classic agent associated with pulmonary fibrosis in this treatment context."
+    ],
+    "teaching": "Bleomycin: pulmonary fibrosis and skin toxicity; relatively little myelosuppression."
+  },
+  {
+    "id": "top50-20261029-27-adverse-effects",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient taking an iodinated class III antiarrhythmic develops photosensitivity, blue-gray skin discoloration and abnormal thyroid function tests. Which drug is implicated?",
+    "options": [
+      "Sotalol",
+      "Amiodarone",
+      "Lidocaine",
+      "Adenosine"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Sotalol may cause torsades de pointes but is not associated with iodine-driven thyroid effects.",
+      "Amiodarone can cause hypo- or hyperthyroidism, pulmonary toxicity, liver injury, photosensitivity and blue-gray skin changes.",
+      "Lidocaine is a class Ib antiarrhythmic and may cause neurologic toxicity.",
+      "Adenosine has a very short half-life and may cause transient flushing, chest discomfort or bronchospasm."
+    ],
+    "teaching": "Amiodarone: thyroid dysfunction, pulmonary fibrosis, hepatotoxicity, photosensitivity, corneal deposits and blue-gray skin."
+  },
+  {
+    "id": "top50-20261029-28-bacterial-toxin",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A patient develops profuse rice-water diarrhea. A bacterial enterotoxin causes sustained activation of a stimulatory G protein in intestinal epithelial cells. What biochemical change follows?",
+    "options": [
+      "Decreased cyclic adenosine monophosphate",
+      "Increased cyclic adenosine monophosphate",
+      "Decreased cyclic guanosine monophosphate",
+      "Inhibition of elongation factor 2"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Cholera toxin increases, rather than decreases, cyclic adenosine monophosphate.",
+      "Cholera toxin ADP-ribosylates Gs alpha, activating adenylate cyclase and increasing cyclic adenosine monophosphate.",
+      "Heat-stable ETEC toxin increases cyclic guanosine monophosphate; cholera toxin acts through cAMP.",
+      "Elongation factor 2 inhibition is characteristic of diphtheria toxin and Pseudomonas exotoxin A."
+    ],
+    "teaching": "Cholera toxin: ADP-ribosylates Gs alpha → increased cAMP → chloride and water secretion."
+  },
+  {
+    "id": "top50-20261029-29-hbv-serology",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "Hepatitis B testing shows negative hepatitis B surface antigen, negative antibody to hepatitis B surface antigen, and positive IgM antibody to hepatitis B core antigen. What stage best fits?",
+    "options": [
+      "Remote resolved infection",
+      "Vaccination-induced immunity",
+      "Acute infection in the serologic window period",
+      "Chronic hepatitis B with persistent surface antigen"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Resolved infection usually has anti-HBs and total anti-HBc positivity, usually IgG predominant.",
+      "Vaccination produces anti-HBs without anti-HBc.",
+      "During the classic acute window period, HBsAg has disappeared and anti-HBs is not yet detectable; IgM anti-HBc remains positive.",
+      "Chronic infection is usually HBsAg positive for at least six months."
+    ],
+    "teaching": "HBV window period: HBsAg negative, anti-HBs negative, IgM anti-HBc positive."
+  },
+  {
+    "id": "top50-20261029-30-hiv-oi",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A person with advanced human immunodeficiency virus infection and CD4+ T-cell count 35 cells/µL develops blurred vision. Fundoscopy shows fluffy retinal lesions with hemorrhages. Which organism is most likely?",
+    "options": [
+      "Toxoplasma gondii",
+      "Cytomegalovirus",
+      "Pneumocystis jirovecii",
+      "Cryptococcus neoformans"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Toxoplasma typically causes ring-enhancing brain lesions with encephalitis rather than classic hemorrhagic retinitis.",
+      "Cytomegalovirus retinitis is strongly associated with profound immunosuppression, commonly CD4 below 50/µL.",
+      "Pneumocystis typically causes hypoxemic pneumonia, often with CD4 below 200/µL.",
+      "Cryptococcus typically causes subacute meningitis, often at CD4 below 100/µL."
+    ],
+    "teaching": "High-yield CD4: PCP below 200, toxoplasmosis below 100, CMV retinitis and disseminated MAC especially below 50 cells/µL."
+  },
+  {
+    "id": "top50-20261029-31-microcytic-anemia",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has low hemoglobin, mean corpuscular volume 68 fL and transferrin saturation 7%. Which additional iron study most strongly supports iron-deficiency anemia over anemia of chronic inflammation?",
+    "options": [
+      "Low serum ferritin",
+      "High serum ferritin",
+      "Low total iron-binding capacity",
+      "High hepcidin level"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Low ferritin reflects depleted iron stores and is highly supportive of iron deficiency.",
+      "Ferritin often rises in inflammation and may be normal or high in anemia of chronic disease.",
+      "Total iron-binding capacity is often decreased in anemia of chronic inflammation, but increased in iron deficiency.",
+      "Hepcidin rises in inflammatory iron sequestration and reduces ferroportin activity."
+    ],
+    "teaching": "Iron deficiency: low ferritin, high TIBC, low transferrin saturation; inflammation: often high ferritin and low TIBC."
+  },
+  {
+    "id": "top50-20261029-32-hemophilia",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A teenager has recurrent hemarthroses, normal platelet count, normal prothrombin time and prolonged activated partial thromboplastin time. Deficiency of which factor is a classic cause?",
+    "options": [
+      "Factor VII",
+      "Factor VIII",
+      "Factor XIII",
+      "von Willebrand factor alone"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Factor VII deficiency generally prolongs prothrombin time.",
+      "Factor VIII deficiency causes hemophilia A, characterized by deep tissue and joint bleeding with prolonged aPTT.",
+      "Factor XIII deficiency often has normal routine PT and aPTT despite bleeding.",
+      "von Willebrand disease more commonly produces mucocutaneous bleeding, although aPTT can be prolonged when factor VIII is reduced."
+    ],
+    "teaching": "Hemophilia A: factor VIII deficiency, hemarthroses, isolated prolonged aPTT with normal PT and platelet count."
+  },
+  {
+    "id": "top50-20261029-33-mantle-cell",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A 67-year-old patient has lymphadenopathy and a B-cell neoplasm expressing CD5 and cyclin D1. A translocation involves chromosomes 11 and 14. What is the diagnosis?",
+    "options": [
+      "Follicular lymphoma",
+      "Mantle cell lymphoma",
+      "Burkitt lymphoma",
+      "Chronic myeloid leukemia"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Follicular lymphoma classically has t(14;18), BCL2 overexpression and CD10 positivity.",
+      "Mantle cell lymphoma commonly has t(11;14) involving CCND1 with cyclin D1 overexpression and CD5 positivity.",
+      "Burkitt lymphoma is strongly associated with MYC translocations such as t(8;14).",
+      "Chronic myeloid leukemia contains the BCR::ABL1 fusion from t(9;22)."
+    ],
+    "teaching": "Mantle cell: t(11;14), cyclin D1 overexpression, CD5-positive mature B cells."
+  },
+  {
+    "id": "top50-20261029-34-oncogene",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has hundreds of adenomatous colon polyps beginning in adolescence. Which tumor suppressor normally helps degrade beta-catenin to restrain Wnt signaling?",
+    "options": [
+      "TP53",
+      "APC",
+      "VHL",
+      "RB1"
+    ],
+    "answer": 1,
+    "explanations": [
+      "TP53 coordinates DNA-damage responses and apoptosis.",
+      "APC is part of the beta-catenin destruction complex; germline APC defects cause familial adenomatous polyposis.",
+      "VHL targets hypoxia-inducible factors for degradation under normoxia.",
+      "RB1 restricts G1-to-S progression through E2F regulation."
+    ],
+    "teaching": "APC is a tumor suppressor in the Wnt/beta-catenin pathway; germline loss causes familial adenomatous polyposis."
+  },
+  {
+    "id": "top50-20261029-35-paraneoplastic",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient with a lung mass has hypercalcemia and suppressed endogenous parathyroid hormone. The tumor is a squamous cell carcinoma. Which secreted substance most likely explains the findings?",
+    "options": [
+      "Parathyroid hormone-related peptide",
+      "Calcitonin",
+      "Antidiuretic hormone",
+      "Adrenocorticotropic hormone"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Squamous cell carcinoma may secrete PTH-related peptide, raising calcium while suppressing endogenous PTH.",
+      "Calcitonin is associated with medullary thyroid carcinoma and tends to lower serum calcium.",
+      "ADH production causes hyponatremia with small cell lung carcinoma.",
+      "Ectopic ACTH causes Cushing syndrome, classically in small cell lung carcinoma."
+    ],
+    "teaching": "Squamous cell carcinoma of lung → PTHrP hypercalcemia; small cell → SIADH, ectopic ACTH, Lambert–Eaton."
+  },
+  {
+    "id": "top50-20261029-36-cah",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A child has early virilization, hypertension and hypokalemia. Testing suggests increased deoxycorticosterone production due to congenital adrenal hyperplasia. Which enzyme is deficient?",
+    "options": [
+      "21-hydroxylase",
+      "11-beta-hydroxylase",
+      "17-alpha-hydroxylase",
+      "Aromatase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "21-hydroxylase deficiency typically reduces mineralocorticoids and may cause salt wasting and hypotension.",
+      "11-beta-hydroxylase deficiency causes excess deoxycorticosterone (mineralocorticoid effect) plus androgen excess.",
+      "17-alpha-hydroxylase deficiency causes hypertension but reduced sex steroids, not virilization due to androgen excess.",
+      "Aromatase deficiency affects conversion of androgens to estrogens and is not the classic DOC-mediated CAH syndrome."
+    ],
+    "teaching": "11-beta-hydroxylase deficiency: high DOC, hypertension, hypokalemia and androgen-driven virilization."
+  },
+  {
+    "id": "top50-20261029-37-thyroid",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient with Hashimoto thyroiditis has fatigue, cold intolerance and constipation. Which thyroid function pattern best fits untreated primary hypothyroidism?",
+    "options": [
+      "Low TSH, high free T4",
+      "High TSH, low free T4",
+      "Low TSH, low free T4",
+      "High TSH, high free T4"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Low TSH with high free T4 is a typical pattern of primary hyperthyroidism.",
+      "Primary gland failure produces low free T4 and loss of negative feedback, raising TSH.",
+      "Low or inappropriately normal TSH with low free T4 suggests central hypothyroidism.",
+      "High TSH and high free T4 suggests inappropriate TSH secretion, thyroid hormone resistance or assay effects rather than typical primary hypothyroidism."
+    ],
+    "teaching": "Primary hypothyroidism: high TSH and low free T4; central hypothyroidism: low free T4 with low/inappropriately normal TSH."
+  },
+  {
+    "id": "top50-20261029-38-pth",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has hypocalcemia, hyperphosphatemia and elevated parathyroid hormone despite normal kidney function. Which diagnosis best explains end-organ resistance to PTH?",
+    "options": [
+      "Primary hyperparathyroidism",
+      "Hypoparathyroidism after thyroid surgery",
+      "Pseudohypoparathyroidism",
+      "PTH-related peptide secretion"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Primary hyperparathyroidism tends to raise serum calcium and lower phosphate.",
+      "True hypoparathyroidism causes low PTH rather than elevated PTH.",
+      "Pseudohypoparathyroidism is resistance to PTH, causing low calcium, high phosphate and compensatory high PTH.",
+      "PTHrP secretion typically causes hypercalcemia with low endogenous PTH."
+    ],
+    "teaching": "PTH resistance → low calcium, high phosphate and high PTH (pseudohypoparathyroidism)."
+  },
+  {
+    "id": "top50-20261029-39-men",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has mucosal neuromas, a marfanoid body habitus and medullary thyroid carcinoma. Which inherited syndrome is most likely?",
+    "options": [
+      "MEN1",
+      "MEN2A",
+      "MEN2B",
+      "Von Hippel–Lindau syndrome"
+    ],
+    "answer": 2,
+    "explanations": [
+      "MEN1 features parathyroid, pancreatic neuroendocrine and pituitary tumors.",
+      "MEN2A features medullary thyroid carcinoma, pheochromocytoma and hyperparathyroidism.",
+      "MEN2B features medullary thyroid carcinoma, pheochromocytoma, mucosal neuromas and marfanoid habitus.",
+      "Von Hippel–Lindau is associated with hemangioblastomas and clear-cell renal cell carcinoma."
+    ],
+    "teaching": "MEN2B: activating RET variants, medullary thyroid cancer, pheochromocytoma, mucosal neuromas and marfanoid habitus."
+  },
+  {
+    "id": "top50-20261029-40-sulfonylurea",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "Glyburide lowers blood glucose by stimulating pancreatic beta-cell insulin release. Which ion-channel event occurs first?",
+    "options": [
+      "Opening of ATP-sensitive potassium channels",
+      "Closure of ATP-sensitive potassium channels",
+      "Blockade of voltage-gated calcium channels",
+      "Opening of ligand-gated chloride channels"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Opening KATP channels hyperpolarizes beta cells and reduces insulin secretion.",
+      "Sulfonylureas bind SUR1, close KATP channels and depolarize beta cells.",
+      "Calcium channels open after depolarization, allowing calcium entry to trigger insulin exocytosis.",
+      "Chloride channels are not the primary sulfonylurea target."
+    ],
+    "teaching": "Sulfonylurea → KATP channel closure → depolarization → voltage-gated calcium influx → insulin secretion."
+  },
+  {
+    "id": "top50-20261029-41-glomerular",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An adult has nephrotic-range proteinuria. Kidney biopsy shows diffuse glomerular capillary-wall thickening, granular IgG/C3 staining and subepithelial immune deposits with spikes on silver stain. What is most likely?",
+    "options": [
+      "Minimal change disease",
+      "Membranous nephropathy",
+      "Poststreptococcal glomerulonephritis",
+      "IgA nephropathy"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Minimal change disease shows diffuse foot-process effacement but typically normal light microscopy.",
+      "Membranous nephropathy produces subepithelial deposits and a spike-and-dome appearance.",
+      "Poststreptococcal glomerulonephritis is typically nephritic with subepithelial humps and endocapillary proliferation.",
+      "IgA nephropathy features predominant mesangial IgA deposition."
+    ],
+    "teaching": "Membranous nephropathy: nephrotic syndrome, subepithelial immune deposits and spike-and-dome morphology."
+  },
+  {
+    "id": "top50-20261029-42-brainstem",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A patient has right eyelid ptosis, a right eye deviated down and out and weakness of the left arm and leg. Which lesion location best explains these crossed findings?",
+    "options": [
+      "Right ventral midbrain",
+      "Right lateral medulla",
+      "Left cerebellar hemisphere",
+      "Left dorsal pons"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Right ventral midbrain injury can affect oculomotor fascicles and descending corticospinal fibers (Weber syndrome).",
+      "Lateral medullary lesions more often cause dysphagia, hoarseness, ipsilateral facial sensory and contralateral body pain-temperature deficits.",
+      "Isolated cerebellar damage produces coordination deficits rather than a third-nerve palsy plus contralateral hemiparesis.",
+      "A left dorsal pontine lesion would not classically cause ipsilateral right third-nerve palsy."
+    ],
+    "teaching": "Weber syndrome: ipsilateral CN III palsy plus contralateral hemiparesis from ventral midbrain involvement."
+  },
+  {
+    "id": "top50-20261029-43-spinal-cord",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A young adult has progressive bilateral loss of pain and temperature sensation over shoulders and upper limbs but preserved vibration and joint-position sense. Which structure is initially damaged?",
+    "options": [
+      "Posterior columns",
+      "Anterior white commissure",
+      "Lateral corticospinal tracts alone",
+      "Dorsal root ganglia throughout the body"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Posterior column loss impairs vibration and proprioception.",
+      "Syringomyelia damages crossing spinothalamic fibers in the anterior white commissure, producing suspended pain-temperature loss.",
+      "Isolated corticospinal injury causes upper-motor-neuron weakness rather than selective suspended sensory loss.",
+      "Widespread dorsal root ganglion injury would not create the classic symmetric cape-like dissociation."
+    ],
+    "teaching": "Syringomyelia: anterior white commissure crossing fibers → bilateral cape-like pain and temperature loss."
+  },
+  {
+    "id": "top50-20261029-44-stroke",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A right-handed patient has abrupt right-sided face and arm weakness greater than leg weakness, with nonfluent aphasia. Which artery is most likely affected?",
+    "options": [
+      "Left anterior cerebral artery",
+      "Left middle cerebral artery",
+      "Right posterior cerebral artery",
+      "Right middle cerebral artery"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Left ACA infarcts preferentially affect the contralateral leg and may cause abulia.",
+      "A dominant (usually left) MCA stroke produces right face-arm deficits and aphasia.",
+      "Right PCA lesions mainly affect vision and may cause left homonymous hemianopia.",
+      "Right MCA infarcts produce left-sided deficits and may cause neglect but not typically Broca aphasia."
+    ],
+    "teaching": "Dominant MCA: contralateral face/arm weakness with aphasia; ACA: leg; PCA: visual cortex."
+  },
+  {
+    "id": "top50-20261029-45-brachial-plexus",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A newborn experiences shoulder dystocia and later holds one arm adducted and internally rotated, elbow extended and forearm pronated (waiter's tip). Which lesion is most likely?",
+    "options": [
+      "Upper trunk C5–C6 injury",
+      "Lower trunk C8–T1 injury",
+      "Long thoracic nerve injury",
+      "Posterior interosseous nerve injury"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Upper trunk (C5–C6) injury causes Erb–Duchenne palsy with the waiter's-tip posture.",
+      "Lower trunk (C8–T1) injury causes Klumpke palsy with intrinsic hand-muscle weakness.",
+      "Long thoracic nerve injury causes scapular winging due to serratus anterior weakness.",
+      "Posterior interosseous nerve injury impairs finger extension without this neonatal shoulder-elbow pattern."
+    ],
+    "teaching": "Erb–Duchenne = C5–C6, waiter's tip; Klumpke = C8–T1, claw hand."
+  },
+  {
+    "id": "top50-20261029-46-embryology",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A newborn with conotruncal cardiac malformation, hypocalcemia and absent thymic shadow has a 22q11.2 deletion. Abnormal migration of which embryonic cells contributes to the cardiac defect?",
+    "options": [
+      "Neural crest cells",
+      "Paraxial mesoderm somites",
+      "Intermediate mesoderm",
+      "Surface ectoderm"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Cardiac neural crest cells contribute to outflow-tract septation and are implicated in conotruncal defects.",
+      "Somites form skeletal muscle, dermis and axial skeleton components.",
+      "Intermediate mesoderm forms much of the urogenital system.",
+      "Surface ectoderm primarily contributes to epidermis and associated structures."
+    ],
+    "teaching": "22q11.2 deletion/DiGeorge: pharyngeal pouch abnormalities, hypoplastic thymus/parathyroids and cardiac neural crest-linked outflow defects."
+  },
+  {
+    "id": "top50-20261029-47-autoantibody",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has Raynaud phenomenon, sclerodactyly, telangiectasias, esophageal dysmotility and calcinosis cutis. Which autoantibody is classically associated?",
+    "options": [
+      "Anti-centromere",
+      "Anti-topoisomerase I (Scl-70)",
+      "Anti-Jo-1",
+      "Anti-mitochondrial M2"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Anti-centromere antibodies are associated with limited cutaneous systemic sclerosis (CREST phenotype).",
+      "Anti-Scl-70 is more associated with diffuse cutaneous systemic sclerosis and interstitial lung disease.",
+      "Anti-Jo-1 is associated with antisynthetase syndrome and inflammatory myopathy.",
+      "Anti-mitochondrial M2 antibodies are associated with primary biliary cholangitis."
+    ],
+    "teaching": "CREST/limited systemic sclerosis → anti-centromere; diffuse disease → anti-Scl-70."
+  },
+  {
+    "id": "top50-20261029-48-vasculitis",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has chronic sinusitis, hemoptysis, cavitary lung nodules and rapidly progressive glomerulonephritis. Which autoantibody is classically associated?",
+    "options": [
+      "Myeloperoxidase (p-ANCA)",
+      "Proteinase 3 (c-ANCA)",
+      "Anti-glomerular basement membrane antibody",
+      "Anti-double-stranded DNA"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Myeloperoxidase/p-ANCA is more often associated with microscopic polyangiitis and some cases of other vasculitides.",
+      "Proteinase 3/c-ANCA is strongly associated with granulomatosis with polyangiitis.",
+      "Anti-GBM disease causes pulmonary-renal syndrome but typically lacks granulomatous sinonasal disease.",
+      "Anti-dsDNA supports systemic lupus erythematosus and lupus nephritis."
+    ],
+    "teaching": "Granulomatosis with polyangiitis: upper airway, lung and kidney involvement; classically PR3/c-ANCA."
+  },
+  {
+    "id": "top50-20261029-49-apoptosis",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "Severe DNA damage triggers mitochondrial cytochrome c release and apoptosome assembly. Which initiator caspase is directly activated downstream?",
+    "options": [
+      "Caspase-1",
+      "Caspase-3",
+      "Caspase-8",
+      "Caspase-9"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Caspase-1 mediates inflammasome-dependent inflammatory signaling and pyroptosis.",
+      "Caspase-3 is a downstream executioner caspase.",
+      "Caspase-8 is the classic initiator in the extrinsic death-receptor pathway.",
+      "Cytochrome c, Apaf-1 and procaspase-9 form the apoptosome, activating initiator caspase-9."
+    ],
+    "teaching": "Intrinsic apoptosis: BAX/BAK → cytochrome c → Apaf-1 apoptosome → caspase-9 → caspase-3."
+  },
+  {
+    "id": "top50-20261029-50-psychiatric-drugs",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A patient taking sertraline is given linezolid and develops agitation, diarrhea, diaphoresis, tremor, hyperreflexia and inducible ankle clonus. Which syndrome is most likely?",
+    "options": [
+      "Neuroleptic malignant syndrome",
+      "Serotonin syndrome",
+      "Malignant hyperthermia",
+      "Acute dystonic reaction"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Neuroleptic malignant syndrome generally follows dopamine blockade and features severe rigidity and bradyreflexia or normal reflexes rather than prominent clonus.",
+      "Serotonin syndrome features hyperreflexia, clonus, autonomic instability and gastrointestinal symptoms after serotonergic exposures.",
+      "Malignant hyperthermia is triggered by volatile anesthetics or succinylcholine in susceptible patients.",
+      "Acute dystonia causes focal sustained muscle contractions without the classic hyperreflexia, clonus and diarrhea."
+    ],
+    "teaching": "Serotonin syndrome: serotonergic exposure, hyperreflexia and clonus; linezolid has monoamine oxidase-inhibiting activity."
   }
 ];
