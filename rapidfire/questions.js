@@ -2041,5 +2041,405 @@ window.RAPIDFIRE_QUESTIONS = [
       "Not the best answer: Calcitonin. Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself."
     ],
     "teaching": "Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself."
+  },
+  {
+    "id": "microbuzz-20261029-staph-food",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "Several guests develop abrupt vomiting 3 hours after eating unrefrigerated cream-filled pastries. Which organism most likely produced a preformed enterotoxin?",
+    "options": [
+      "Bacillus cereus",
+      "Staphylococcus aureus",
+      "Clostridium perfringens",
+      "Salmonella Typhi"
+    ],
+    "answer": 1,
+    "explanations": [
+      "B. cereus emetic illness is classically associated with reheated rice.",
+      "S. aureus can produce a heat-stable, preformed enterotoxin causing vomiting within 1–6 hours.",
+      "C. perfringens food poisoning more often causes delayed abdominal cramps and diarrhea.",
+      "S. Typhi causes systemic enteric fever after a longer incubation."
+    ],
+    "teaching": "S. aureus: rapid-onset vomiting, preformed heat-stable enterotoxin, golden mannitol-fermenting colonies."
+  },
+  {
+    "id": "microbuzz-20261029-strep-glomerular",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A school-aged child develops cola-colored urine and periorbital swelling 2 weeks after untreated pharyngitis. Which organism is the likely antecedent infection?",
+    "options": [
+      "Streptococcus agalactiae",
+      "Streptococcus pneumoniae",
+      "Streptococcus pyogenes",
+      "Staphylococcus epidermidis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "S. agalactiae is more associated with neonatal sepsis and meningitis.",
+      "S. pneumoniae is alpha-hemolytic and causes pneumonia, otitis and meningitis.",
+      "Group A S. pyogenes can trigger poststreptococcal glomerulonephritis after pharyngitis or skin infection.",
+      "S. epidermidis is a coagulase-negative organism associated with prosthetic-device infections."
+    ],
+    "teaching": "Group A Streptococcus: beta-hemolysis, M protein, streptolysin O, and poststreptococcal glomerulonephritis."
+  },
+  {
+    "id": "microbuzz-20261029-pneumococcus",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient with lobar pneumonia has gram-positive lancet-shaped diplococci that are alpha-hemolytic and optochin sensitive. Which species is most likely?",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Viridans streptococci",
+      "Enterococcus faecalis",
+      "Streptococcus pyogenes"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Pneumococcus is optochin sensitive and has a polysaccharide capsule.",
+      "Viridans streptococci are generally optochin resistant.",
+      "Enterococci are typically found as pairs or chains and are not classically optochin sensitive.",
+      "Group A streptococci are beta-hemolytic cocci in chains."
+    ],
+    "teaching": "Pneumococcus: gram-positive lancet diplococci, alpha hemolysis, optochin sensitivity, and polysaccharide capsule."
+  },
+  {
+    "id": "microbuzz-20261029-meningococcus",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A college dormitory resident develops abrupt fever, meningitis, petechiae and hypotension. Cerebrospinal fluid contains gram-negative diplococci. Which pathogen is most likely?",
+    "options": [
+      "Haemophilus influenzae",
+      "Neisseria meningitidis",
+      "Neisseria gonorrhoeae",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 1,
+    "explanations": [
+      "H. influenzae is a small gram-negative coccobacillus.",
+      "N. meningitidis causes meningococcemia with petechiae and septic shock.",
+      "N. gonorrhoeae may cause disseminated infection but is not the classic cause of meningococcemia.",
+      "S. pneumoniae is gram-positive, not gram-negative."
+    ],
+    "teaching": "N. meningitidis: encapsulated gram-negative kidney-shaped diplococci, meningitis and petechial septicemia."
+  },
+  {
+    "id": "microbuzz-20261029-hib-epiglottitis",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "An unimmunized child has high fever, drooling, stridor and a tripod posture. Which organism classically requires hemin and nicotinamide adenine dinucleotide for growth?",
+    "options": [
+      "Moraxella catarrhalis",
+      "Bordetella pertussis",
+      "Haemophilus influenzae type b",
+      "Neisseria meningitidis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "M. catarrhalis is an oxidase-positive gram-negative diplococcus.",
+      "B. pertussis causes whooping cough and grows on specialized Bordet-Gengou or Regan-Lowe media.",
+      "H. influenzae requires X (hemin) and V (NAD) factors; type b historically causes pediatric epiglottitis.",
+      "N. meningitidis is a gram-negative diplococcus that grows on chocolate or selective Thayer-Martin agar."
+    ],
+    "teaching": "Hib: encapsulated gram-negative coccobacillus; requires factor X (hemin) and factor V (NAD)."
+  },
+  {
+    "id": "microbuzz-20261029-ecoli-uti",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A young woman has pyelonephritis. Urine culture grows a motile, indole-positive gram-negative rod forming pink colonies on MacConkey agar. Which species is most likely?",
+    "options": [
+      "Proteus mirabilis",
+      "Escherichia coli",
+      "Pseudomonas aeruginosa",
+      "Salmonella enterica"
+    ],
+    "answer": 1,
+    "explanations": [
+      "P. mirabilis is a motile non-lactose fermenter and urease positive.",
+      "E. coli is a common cause of urinary tract infection and is typically indole positive and lactose fermenting.",
+      "P. aeruginosa does not ferment lactose and may produce blue-green pigment.",
+      "Salmonella is generally a non-lactose fermenter."
+    ],
+    "teaching": "E. coli: lactose-fermenting pink MacConkey colonies; uropathogenic strains use pili for attachment."
+  },
+  {
+    "id": "microbuzz-20261029-klebsiella-pneumonia",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient with aspiration risk develops necrotizing pneumonia, thick blood-tinged sputum and highly mucoid lactose-fermenting colonies. Which organism is most likely?",
+    "options": [
+      "Klebsiella pneumoniae",
+      "Streptococcus pyogenes",
+      "Pseudomonas aeruginosa",
+      "Legionella pneumophila"
+    ],
+    "answer": 0,
+    "explanations": [
+      "K. pneumoniae has a prominent capsule and can cause necrotizing pneumonia with thick blood-tinged sputum.",
+      "S. pyogenes produces beta-hemolytic gram-positive cocci and is not a lactose fermenter.",
+      "P. aeruginosa generally does not ferment lactose.",
+      "L. pneumophila is a fastidious intracellular gram-negative organism, not a mucoid lactose fermenter."
+    ],
+    "teaching": "Klebsiella: prominent polysaccharide capsule, mucoid colonies and classic currant-jelly or tobacco-spit sputum."
+  },
+  {
+    "id": "microbuzz-20261029-pseudomonas-burn",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A burn patient develops a wound infection with green exudate and a sweet, grape-like odor. Which pathogen is most likely?",
+    "options": [
+      "Escherichia coli",
+      "Klebsiella pneumoniae",
+      "Pseudomonas aeruginosa",
+      "Staphylococcus epidermidis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "E. coli generally lacks the characteristic pigment and odor.",
+      "Klebsiella is typically mucoid and lactose fermenting.",
+      "P. aeruginosa produces blue-green pigments and can cause severe burn-wound infection.",
+      "S. epidermidis is associated with prosthetic devices and biofilms."
+    ],
+    "teaching": "Pseudomonas: blue-green pyocyanin, grape-like odor, burn infection, hot-tub folliculitis."
+  },
+  {
+    "id": "microbuzz-20261029-tuberculosis",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient has months of cough, night sweats, weight loss and an upper-lobe cavitary lesion. Sputum reveals red bacilli after Ziehl–Neelsen staining. Which pathogen is most likely?",
+    "options": [
+      "Nocardia asteroides",
+      "Mycobacterium tuberculosis",
+      "Legionella pneumophila",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Nocardia can be weakly acid-fast with modified staining, and is branching and filamentous.",
+      "M. tuberculosis is classically acid-fast due to mycolic acids in its cell wall.",
+      "Legionella is not identified by conventional acid-fast staining.",
+      "Klebsiella is a gram-negative encapsulated rod."
+    ],
+    "teaching": "M. tuberculosis: acid-fast bacilli, chronic cough, cavitation, cord factor and ESAT-6 secretion."
+  },
+  {
+    "id": "microbuzz-20261029-typhi",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A traveler develops prolonged fever, abdominal discomfort and faint salmon-colored macules on the trunk. Blood cultures recover a motile gram-negative enteric bacillus. Which organism is most likely?",
+    "options": [
+      "Shigella sonnei",
+      "Vibrio cholerae",
+      "Salmonella Typhi",
+      "Campylobacter jejuni"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Shigella typically causes dysentery and is nonmotile.",
+      "V. cholerae typically causes profuse watery diarrhea without invasive enteric fever.",
+      "S. Typhi causes enteric fever with bacteremia and occasional rose spots.",
+      "C. jejuni produces inflammatory diarrhea and may precede Guillain-Barré syndrome."
+    ],
+    "teaching": "S. Typhi: enteric fever, bacteremia, Vi antigen and rose spots; blood culture is important for diagnosis."
+  },
+  {
+    "id": "microbuzz-20261029-shigella",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "Several children in a daycare develop fever, abdominal cramps and bloody diarrhea. The implicated organism has a very low infectious dose and is nonmotile. Which is most likely?",
+    "options": [
+      "Salmonella Typhi",
+      "Shigella species",
+      "Vibrio cholerae",
+      "Enterotoxigenic Escherichia coli"
+    ],
+    "answer": 1,
+    "explanations": [
+      "S. Typhi is motile and more strongly linked to systemic enteric fever.",
+      "Shigella is nonmotile, spreads with a low infectious inoculum and invades colonic epithelium.",
+      "V. cholerae classically causes watery secretory diarrhea.",
+      "ETEC typically causes watery traveler's diarrhea."
+    ],
+    "teaching": "Shigella: nonmotile gram-negative rod, dysentery, invasion proteins and very low infectious dose."
+  },
+  {
+    "id": "microbuzz-20261029-cdiff",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A hospitalized patient develops watery diarrhea after clindamycin use. Endoscopy shows raised yellow-white plaques over the colonic mucosa. Which pathogen is most likely?",
+    "options": [
+      "Clostridioides difficile",
+      "Clostridium perfringens",
+      "Campylobacter jejuni",
+      "Enterococcus faecium"
+    ],
+    "answer": 0,
+    "explanations": [
+      "C. difficile toxins injure colonic epithelium and produce pseudomembranous colitis after antibiotics.",
+      "C. perfringens food poisoning usually causes short-lived diarrhea without pseudomembranes.",
+      "C. jejuni causes inflammatory gastroenteritis, not classic antibiotic-associated pseudomembranes.",
+      "E. faecium may cause nosocomial infection but is not the usual agent of pseudomembranous colitis."
+    ],
+    "teaching": "C. difficile: post-antibiotic pseudomembranous colitis; toxins A and B disrupt the actin cytoskeleton."
+  },
+  {
+    "id": "microbuzz-20261029-tetani",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient develops trismus, risus sardonicus and painful generalized muscle spasms after a puncture wound. Which bacterium is implicated?",
+    "options": [
+      "Clostridium botulinum",
+      "Clostridium tetani",
+      "Clostridium perfringens",
+      "Bacillus anthracis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "C. botulinum causes descending flaccid paralysis.",
+      "C. tetani produces tetanospasmin and leads to disinhibited motor neurons and spastic paralysis.",
+      "C. perfringens causes myonecrosis and gas gangrene.",
+      "B. anthracis is associated with painless eschars and inhalational disease."
+    ],
+    "teaching": "Tetanus: lockjaw and painful spasms due to tetanospasmin blocking inhibitory neurotransmitter release."
+  },
+  {
+    "id": "microbuzz-20261029-perfringens",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient with a contaminated crush injury has excruciating pain, rapidly progressive muscle necrosis and gas visible in tissues. Which organism is most likely?",
+    "options": [
+      "Clostridium tetani",
+      "Bacteroides fragilis",
+      "Clostridium perfringens",
+      "Listeria monocytogenes"
+    ],
+    "answer": 2,
+    "explanations": [
+      "C. tetani causes spastic paralysis without typical gas-producing myonecrosis.",
+      "B. fragilis causes intra-abdominal abscesses and is not the classic cause of traumatic clostridial myonecrosis.",
+      "C. perfringens produces alpha toxin and is the classic cause of gas gangrene.",
+      "L. monocytogenes is a facultative intracellular rod linked to meningitis in at-risk groups."
+    ],
+    "teaching": "C. perfringens: gas gangrene with crepitus; alpha toxin is a phospholipase C (lecithinase)."
+  },
+  {
+    "id": "microbuzz-20261029-legionella",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "Following a hotel conference, several attendees develop high fever, cough, diarrhea and hyponatremia. Which pathogen is most consistent with this cluster?",
+    "options": [
+      "Mycoplasma pneumoniae",
+      "Legionella pneumophila",
+      "Streptococcus pneumoniae",
+      "Chlamydia trachomatis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Mycoplasma can cause atypical pneumonia but is not the classic hotel-water exposure with hyponatremia.",
+      "Legionella survives intracellularly and is linked to contaminated aerosolized water systems.",
+      "Pneumococcus more often causes typical pneumonia and is not linked to engineered water systems.",
+      "C. trachomatis is a cause of neonatal pneumonia rather than hotel-associated outbreaks."
+    ],
+    "teaching": "Legionella: water aerosols, atypical pneumonia, diarrhea, hyponatremia and specialized testing."
+  },
+  {
+    "id": "microbuzz-20261029-candida",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "A patient with immunosuppression has painful swallowing and removable white oral plaques. Microscopy reveals budding yeasts and pseudohyphae. Which fungus is most likely?",
+    "options": [
+      "Cryptococcus neoformans",
+      "Candida albicans",
+      "Aspergillus fumigatus",
+      "Histoplasma capsulatum"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Cryptococcus is an encapsulated budding yeast and is not characterized by pseudohyphae.",
+      "C. albicans produces budding yeast and pseudohyphae and can cause thrush and esophagitis.",
+      "Aspergillus forms septate hyphae with acute-angle branching.",
+      "Histoplasma appears as small intracellular budding yeasts in tissue."
+    ],
+    "teaching": "Candida: budding yeasts plus pseudohyphae; adherence and biofilm formation aid infection."
+  },
+  {
+    "id": "microbuzz-20261029-crypto",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A patient with advanced human immunodeficiency virus infection develops subacute meningitis. A capsulated yeast is visible as a clear halo on India ink preparation. Which organism is most likely?",
+    "options": [
+      "Candida albicans",
+      "Cryptococcus neoformans",
+      "Pneumocystis jirovecii",
+      "Coccidioides immitis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Candida typically forms budding yeast with pseudohyphae.",
+      "Cryptococcus has a thick polysaccharide capsule that excludes India ink.",
+      "Pneumocystis produces cystic lung infection rather than India ink-positive encapsulated yeasts.",
+      "Coccidioides forms spherules with endospores in tissue."
+    ],
+    "teaching": "Cryptococcus: encapsulated yeast causing meningitis; cryptococcal antigen testing is more sensitive than India ink."
+  },
+  {
+    "id": "microbuzz-20261029-toxo",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A patient with advanced human immunodeficiency virus infection has fever, headache and multiple ring-enhancing brain lesions, particularly in the basal ganglia. Which pathogen is a leading cause?",
+    "options": [
+      "Cryptococcus neoformans",
+      "Toxoplasma gondii",
+      "JC polyomavirus",
+      "Giardia duodenalis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Cryptococcus primarily causes subacute meningitis.",
+      "Toxoplasma reactivation commonly causes multiple ring-enhancing brain lesions in advanced immunosuppression.",
+      "JC polyomavirus causes progressive multifocal leukoencephalopathy with nonenhancing demyelinating lesions.",
+      "Giardia causes intestinal malabsorption, not focal brain abscesses."
+    ],
+    "teaching": "T. gondii: crescent-shaped tachyzoites; latent tissue cysts can reactivate and cause encephalitis."
+  },
+  {
+    "id": "microbuzz-20261029-falciparum",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A traveler has high parasitemia, severe malaria and thin blood smear showing several delicate ring forms within a single red blood cell. Which organism is most likely?",
+    "options": [
+      "Plasmodium malariae",
+      "Plasmodium vivax",
+      "Plasmodium falciparum",
+      "Babesia microti"
+    ],
+    "answer": 2,
+    "explanations": [
+      "P. malariae characteristically produces band-form trophozoites.",
+      "P. vivax often infects enlarged red blood cells and may show Schüffner stippling.",
+      "P. falciparum often shows multiple ring forms in one erythrocyte and is associated with severe malaria.",
+      "Babesia can show tetrads (Maltese cross) and lacks malaria pigment."
+    ],
+    "teaching": "P. falciparum: multiple rings per erythrocyte and severe disease linked to infected-cell sequestration."
+  },
+  {
+    "id": "microbuzz-20261029-giardia",
+    "topic": "Microbiology Buzzwords",
+    "level": 1,
+    "stem": "After drinking untreated stream water, a camper develops foul-smelling greasy diarrhea and bloating. Stool microscopy shows a pear-shaped trophozoite with two nuclei. What is the pathogen?",
+    "options": [
+      "Cryptosporidium parvum",
+      "Entamoeba histolytica",
+      "Giardia duodenalis",
+      "Cyclospora cayetanensis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Cryptosporidium causes watery diarrhea with acid-fast oocysts.",
+      "E. histolytica typically causes bloody diarrhea and flask-shaped ulcers.",
+      "Giardia produces malabsorption and steatorrhea; its two nuclei give a face-like appearance.",
+      "Cyclospora produces prolonged watery diarrhea with oocysts."
+    ],
+    "teaching": "Giardia: two nuclei ('face'), ventral adhesive disc and fatty, foul-smelling stool."
   }
 ];
