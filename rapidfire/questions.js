@@ -2841,5 +2841,505 @@ window.RAPIDFIRE_QUESTIONS = [
       "Endothelial cytoadherence is linked to P. falciparum-infected erythrocytes."
     ],
     "teaching": "Giardia trophozoites use a ventral adhesive disc, causing malabsorption and steatorrhea without deep tissue invasion."
+  },
+  {
+    "id": "top50-20261029-01-acid-base",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A patient has Na+ 140 mEq/L, Cl− 100 mEq/L, bicarbonate 10 mEq/L, pH 7.22 and PaCO₂ 23 mm Hg. Which acid–base disorder is present?",
+    "options": [
+      "High-anion-gap metabolic acidosis with appropriate respiratory compensation",
+      "Normal-anion-gap metabolic acidosis with respiratory alkalosis",
+      "Primary respiratory alkalosis with metabolic compensation",
+      "High-anion-gap metabolic acidosis plus respiratory acidosis"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Anion gap = 140 − (100 + 10) = 30; Winter expected PaCO₂ = 1.5(10) + 8 ± 2 = 21–25, matching 23.",
+      "The anion gap is elevated at 30, not normal; PaCO₂ is as predicted by compensation.",
+      "The low pH and bicarbonate identify metabolic acidosis, not a primary respiratory alkalosis.",
+      "A concomitant respiratory acidosis would make PaCO₂ higher than Winter's predicted range."
+    ],
+    "teaching": "Calculate anion gap first, then use Winter's formula to check for a mixed respiratory disorder."
+  },
+  {
+    "id": "top50-20261029-02-diuretics",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient with hypertension begins hydrochlorothiazide. Where does this drug directly inhibit sodium chloride reabsorption?",
+    "options": [
+      "Thick ascending limb of Henle",
+      "Early distal convoluted tubule",
+      "Collecting duct principal cell",
+      "Proximal convoluted tubule"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Loop diuretics block NKCC2 in the thick ascending limb.",
+      "Thiazides block the Na+/Cl− cotransporter in the early distal convoluted tubule.",
+      "Amiloride blocks epithelial sodium channels in collecting duct principal cells.",
+      "Acetazolamide blocks carbonic anhydrase in the proximal tubule."
+    ],
+    "teaching": "Thiazides inhibit NCC in the early distal convoluted tubule and increase calcium reabsorption."
+  },
+  {
+    "id": "top50-20261029-03-pv-loop",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "An acute rise in systemic vascular resistance occurs while left ventricular preload and contractility remain unchanged. What happens on the next left ventricular pressure–volume loop?",
+    "options": [
+      "End-systolic volume decreases",
+      "End-systolic volume increases",
+      "End-diastolic volume falls to zero",
+      "Stroke volume increases"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Greater afterload leaves more blood behind, so end-systolic volume does not decrease.",
+      "Greater afterload increases end-systolic volume and reduces stroke volume on the next beat.",
+      "End-diastolic volume does not fall to zero with an isolated rise in afterload.",
+      "Stroke volume decreases at constant preload and contractility."
+    ],
+    "teaching": "Increased afterload shifts the end-systolic point upward and to the right, increasing end-systolic volume."
+  },
+  {
+    "id": "top50-20261029-04-murmur",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A young adult with exertional presyncope has a systolic murmur that becomes louder during the strain phase of Valsalva. Which condition best explains the murmur?",
+    "options": [
+      "Aortic stenosis",
+      "Hypertrophic obstructive cardiomyopathy",
+      "Mitral regurgitation",
+      "Ventricular septal defect"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Aortic stenosis generally becomes quieter as Valsalva reduces venous return.",
+      "Reduced preload worsens dynamic outflow obstruction in hypertrophic obstructive cardiomyopathy, increasing murmur intensity.",
+      "Mitral regurgitation usually does not classically intensify with reduced preload.",
+      "A ventricular septal defect generally becomes quieter with reduced venous return."
+    ],
+    "teaching": "HOCM becomes louder with decreased preload (Valsalva, standing); squatting increases preload and typically reduces it."
+  },
+  {
+    "id": "top50-20261029-05-dlco",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has FEV1/FVC of 0.54, hyperinflation and reduced diffusing capacity for carbon monoxide. Which diagnosis best explains these findings?",
+    "options": [
+      "Asthma",
+      "Chronic bronchitis without emphysema",
+      "Emphysema",
+      "Idiopathic pulmonary fibrosis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Asthma is obstructive but diffusing capacity is typically normal or increased.",
+      "Pure chronic bronchitis is obstructive but often has preserved diffusing capacity.",
+      "Emphysema destroys alveolar-capillary surface area, reducing DLCO in obstructive physiology.",
+      "Pulmonary fibrosis decreases DLCO but usually produces restrictive physiology with normal or increased FEV1/FVC."
+    ],
+    "teaching": "Low FEV1/FVC + low DLCO suggests emphysema; restriction typically preserves or increases FEV1/FVC."
+  },
+  {
+    "id": "top50-20261029-06-aagradient",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient develops hypoxemia due solely to opioid-induced alveolar hypoventilation, without underlying lung disease. What happens to the alveolar–arterial oxygen gradient?",
+    "options": [
+      "It is usually normal",
+      "It is markedly elevated from dead space",
+      "It becomes negative",
+      "It becomes elevated from an intracardiac shunt"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Pure hypoventilation decreases alveolar and arterial oxygen together, so the A–a gradient remains normal.",
+      "A marked elevation suggests an additional gas-exchange defect rather than pure hypoventilation.",
+      "The physiologic A–a gradient is not expected to become negative.",
+      "An intracardiac shunt is a separate cause of hypoxemia with elevated A–a gradient."
+    ],
+    "teaching": "Normal A–a gradient: hypoventilation or low inspired oxygen; increased gradient: V/Q mismatch, diffusion impairment or shunt."
+  },
+  {
+    "id": "top50-20261029-07-hypersensitivity",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient with hemoptysis and nephritic syndrome has linear IgG staining along the glomerular basement membrane. What hypersensitivity mechanism is responsible?",
+    "options": [
+      "Type I, IgE-mediated",
+      "Type II, antibody-mediated",
+      "Type III, circulating immune-complex",
+      "Type IV, delayed T-cell-mediated"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Type I features IgE-mediated mast-cell degranulation.",
+      "Goodpasture syndrome involves antibodies directed against a fixed basement-membrane antigen: type II.",
+      "Type III produces granular immune-complex deposits, not classically linear IgG.",
+      "Type IV is mediated by sensitized T cells, not linear IgG autoantibodies."
+    ],
+    "teaching": "Linear anti-GBM antibodies = type II; granular immune complexes = type III."
+  },
+  {
+    "id": "top50-20261029-08-immunodeficiency",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A boy has recurrent infections with catalase-positive organisms, granuloma formation and an abnormal dihydrorhodamine oxidative burst test. Which defect is most likely?",
+    "options": [
+      "Bruton tyrosine kinase deficiency",
+      "NADPH oxidase deficiency",
+      "CD40 ligand deficiency",
+      "Adenosine deaminase deficiency"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Bruton tyrosine kinase deficiency causes X-linked agammaglobulinemia and absent mature B cells.",
+      "NADPH oxidase deficiency causes chronic granulomatous disease with impaired respiratory burst.",
+      "CD40 ligand deficiency causes hyper-IgM syndrome.",
+      "Adenosine deaminase deficiency causes a form of severe combined immunodeficiency."
+    ],
+    "teaching": "CGD: deficient NADPH oxidase, defective oxidative burst, abnormal dihydrorhodamine test, catalase-positive pathogens."
+  },
+  {
+    "id": "top50-20261029-09-complement",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A young person has recurrent disseminated infections with Neisseria species. Which complement deficiency is most characteristic?",
+    "options": [
+      "C1 inhibitor",
+      "C3",
+      "C5–C9 membrane attack complex",
+      "Factor H"
+    ],
+    "answer": 2,
+    "explanations": [
+      "C1 inhibitor deficiency causes hereditary angioedema.",
+      "C3 deficiency predisposes to severe recurrent infections with many encapsulated bacteria.",
+      "Terminal complement C5–C9 deficiency predisposes strongly to invasive Neisseria infection.",
+      "Factor H dysfunction causes alternative-pathway dysregulation and can be linked to atypical hemolytic uremic syndrome."
+    ],
+    "teaching": "Terminal complement defects (C5–C9) strongly predispose to recurrent Neisseria infections."
+  },
+  {
+    "id": "top50-20261029-10-predictive-values",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A screening test with unchanged sensitivity and specificity is introduced into a population with much higher disease prevalence. Which metric generally increases?",
+    "options": [
+      "Sensitivity",
+      "Specificity",
+      "Positive predictive value",
+      "Negative predictive value"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Sensitivity is a test characteristic conditioned on disease status and does not inherently rise with prevalence.",
+      "Specificity is conditioned on absence of disease and does not inherently rise with prevalence.",
+      "Positive predictive value rises because a greater fraction of positive tests represent true disease.",
+      "Negative predictive value generally falls, rather than rising, as prevalence increases."
+    ],
+    "teaching": "PPV increases with prevalence; NPV decreases. Sensitivity and specificity are not directly prevalence-dependent."
+  },
+  {
+    "id": "top50-20261029-11-lead-time",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A cancer screening program appears to increase five-year survival from diagnosis, but the age at death and disease-specific mortality remain unchanged. What bias explains the apparent benefit?",
+    "options": [
+      "Lead-time bias",
+      "Recall bias",
+      "Observer expectancy bias",
+      "Attrition bias"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Lead-time bias starts the survival clock earlier without changing the patient's death date.",
+      "Recall bias concerns differential memory of prior exposures.",
+      "Observer expectancy bias occurs when expectations influence measurement or interpretation.",
+      "Attrition bias arises when loss to follow-up differs and distorts results."
+    ],
+    "teaching": "Lead-time bias prolongs measured time since diagnosis without necessarily prolonging life."
+  },
+  {
+    "id": "top50-20261029-12-nnt",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "Over five years, 20% of untreated patients and 10% of treated patients develop an event. What is the number needed to treat to prevent one event over five years?",
+    "options": [
+      "5",
+      "10",
+      "20",
+      "50"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Five corresponds to an absolute risk reduction of 20%, but the actual reduction is 10 percentage points.",
+      "Absolute risk reduction = 0.20 − 0.10 = 0.10; NNT = 1/0.10 = 10.",
+      "Twenty corresponds to a 5% absolute risk reduction, not the observed 10%.",
+      "Fifty corresponds to a 2% absolute risk reduction."
+    ],
+    "teaching": "NNT = 1/absolute risk reduction; always specify the follow-up interval."
+  },
+  {
+    "id": "top50-20261029-13-capacity",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An alert adult demonstrates understanding and appreciation of the consequences of refusing a recommended blood transfusion and can communicate a stable choice. What is the most appropriate response?",
+    "options": [
+      "Administer blood because refusal is medically unwise",
+      "Respect the informed refusal after discussing alternatives",
+      "Ask the patient's family to override the decision",
+      "Automatically declare the patient incompetent"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A capacitous adult may decline treatment even if refusal increases risk.",
+      "Decision-making capacity allows an informed adult to refuse treatment; offer alternatives and document the discussion.",
+      "Family members cannot override a capacitous adult's own decision.",
+      "Disagreeing with medical advice does not by itself establish lack of decision-making capacity."
+    ],
+    "teaching": "Capacity is decision-specific: understanding, appreciation, reasoning and communication of a choice."
+  },
+  {
+    "id": "top50-20261029-14-lysosomal",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An infant develops progressive neurodegeneration and a cherry-red macula but no hepatosplenomegaly. Which substrate accumulates?",
+    "options": [
+      "Glucocerebroside",
+      "Sphingomyelin",
+      "GM2 ganglioside",
+      "Ceramide trihexoside"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Glucocerebroside accumulates in Gaucher disease, which often has hepatosplenomegaly.",
+      "Sphingomyelin accumulates in Niemann–Pick A/B and can cause hepatosplenomegaly.",
+      "GM2 ganglioside accumulates in Tay–Sachs disease due to hexosaminidase A deficiency.",
+      "Ceramide trihexoside (globotriaosylceramide) accumulates in Fabry disease."
+    ],
+    "teaching": "Tay–Sachs = hexosaminidase A deficiency, GM2 accumulation, cherry-red macula without organomegaly."
+  },
+  {
+    "id": "top50-20261029-15-glycogen",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A teenager has painful muscle cramps after brief strenuous exercise, recurrent myoglobinuria and little increase in lactate during a forearm exercise test. Which enzyme is deficient?",
+    "options": [
+      "Lysosomal acid alpha-glucosidase",
+      "Debranching enzyme",
+      "Muscle glycogen phosphorylase",
+      "Glucose-6-phosphatase"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Lysosomal acid alpha-glucosidase deficiency causes Pompe disease, often with cardiomyopathy.",
+      "Debranching-enzyme deficiency causes Cori disease.",
+      "Muscle glycogen phosphorylase (myophosphorylase) deficiency causes McArdle disease with exercise intolerance.",
+      "Glucose-6-phosphatase deficiency causes von Gierke disease with fasting hypoglycemia and hepatomegaly."
+    ],
+    "teaching": "McArdle: exercise intolerance, muscle cramps, myoglobinuria, second-wind phenomenon and poor exercise lactate rise."
+  },
+  {
+    "id": "top50-20261029-16-urea-cycle",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 3,
+    "stem": "A male infant has profound hyperammonemia, respiratory alkalosis, low blood urea nitrogen and elevated urinary orotic acid. Which enzyme deficiency is most likely?",
+    "options": [
+      "Carbamoyl phosphate synthetase I",
+      "Ornithine transcarbamylase",
+      "Argininosuccinate lyase",
+      "Arginase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Carbamoyl phosphate synthetase I deficiency causes hyperammonemia with low orotic acid.",
+      "Ornithine transcarbamylase deficiency shunts excess mitochondrial carbamoyl phosphate to pyrimidine synthesis, raising orotic acid.",
+      "Argininosuccinate lyase deficiency is associated with elevated argininosuccinate.",
+      "Arginase deficiency raises arginine and often presents with progressive spasticity."
+    ],
+    "teaching": "OTC deficiency: X-linked urea-cycle defect, high ammonia and elevated orotic acid."
+  },
+  {
+    "id": "top50-20261029-17-vitamins",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient has macrocytic anemia, impaired vibration sense and elevated methylmalonic acid. Which vitamin is deficient?",
+    "options": [
+      "Folate (vitamin B9)",
+      "Cobalamin (vitamin B12)",
+      "Thiamine (vitamin B1)",
+      "Niacin (vitamin B3)"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Folate deficiency causes megaloblastic anemia but typically does not elevate methylmalonic acid or cause posterior column deficits.",
+      "Cobalamin deficiency causes megaloblastic anemia, neurologic deficits and elevated methylmalonic acid.",
+      "Thiamine deficiency causes beriberi or Wernicke encephalopathy.",
+      "Niacin deficiency causes pellagra."
+    ],
+    "teaching": "Vitamin B12 deficiency elevates homocysteine and methylmalonic acid; folate deficiency elevates homocysteine only."
+  },
+  {
+    "id": "top50-20261029-18-imprinting",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A child has neonatal hypotonia, developmental delay, hyperphagia and obesity. Genetic testing shows loss of the normally expressed paternal contribution from chromosome 15q11–q13. Which syndrome is likely?",
+    "options": [
+      "Angelman syndrome",
+      "Prader–Willi syndrome",
+      "Fragile X syndrome",
+      "Beckwith–Wiedemann syndrome"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Angelman syndrome classically follows loss of maternal UBE3A expression in relevant brain regions.",
+      "Prader–Willi syndrome results from loss of paternally expressed genes in 15q11–q13.",
+      "Fragile X involves CGG repeat expansion and silencing of FMR1.",
+      "Beckwith–Wiedemann relates to altered imprinting at 11p15."
+    ],
+    "teaching": "Prader–Willi: loss of paternal 15q11–q13 expression; Angelman: loss of maternal UBE3A expression."
+  },
+  {
+    "id": "top50-20261029-19-trinucleotide",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A boy has intellectual disability, large ears, macroorchidism and a long narrow face. Which repeat expansion is associated with this disorder?",
+    "options": [
+      "CAG in HTT",
+      "CGG in FMR1",
+      "CTG in DMPK",
+      "GAA in FXN"
+    ],
+    "answer": 1,
+    "explanations": [
+      "CAG expansion in HTT causes Huntington disease.",
+      "CGG expansion in FMR1 causes Fragile X syndrome through promoter hypermethylation and silencing.",
+      "CTG expansion in DMPK causes myotonic dystrophy type 1.",
+      "GAA expansion in FXN causes Friedreich ataxia."
+    ],
+    "teaching": "Fragile X = CGG expansion in FMR1; hypermethylation leads to reduced FMRP."
+  },
+  {
+    "id": "top50-20261029-20-loading-dose",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An intravenously administered medication has volume of distribution 40 L. What loading dose produces a desired initial plasma concentration of 10 mg/L, assuming immediate distribution and bioavailability of 100%?",
+    "options": [
+      "100 mg",
+      "200 mg",
+      "400 mg",
+      "800 mg"
+    ],
+    "answer": 2,
+    "explanations": [
+      "100 mg/40 L yields 2.5 mg/L.",
+      "200 mg/40 L yields 5 mg/L.",
+      "Loading dose = volume of distribution × target concentration = 40 L × 10 mg/L = 400 mg.",
+      "800 mg/40 L yields 20 mg/L."
+    ],
+    "teaching": "IV loading dose = target plasma concentration × volume of distribution (when F = 1)."
+  },
+  {
+    "id": "top50-20261029-21-competitive",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A reversible competitive inhibitor is added to an enzyme reaction. Which changes are expected on a Michaelis–Menten plot?",
+    "options": [
+      "Increased apparent Km and unchanged Vmax",
+      "Decreased Km and decreased Vmax",
+      "Unchanged Km and decreased Vmax",
+      "Decreased Km and unchanged Vmax"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Competitive inhibition increases apparent Km because more substrate is needed, but sufficiently high substrate achieves the original Vmax.",
+      "Competitive inhibition does not lower both Km and Vmax.",
+      "A pure noncompetitive inhibitor reduces Vmax with unchanged Km.",
+      "Competitive inhibition does not increase affinity by lowering Km."
+    ],
+    "teaching": "Competitive inhibitors increase apparent Km while preserving Vmax."
+  },
+  {
+    "id": "top50-20261029-22-autonomic",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An intravenous bolus of phenylephrine in a healthy adult increases systemic vascular resistance. What reflex heart rate response is expected?",
+    "options": [
+      "Tachycardia from direct beta-1 stimulation",
+      "Bradycardia through increased baroreceptor firing",
+      "Tachycardia from beta-2 vasodilation",
+      "No heart rate effect despite rising blood pressure"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Phenylephrine is primarily an alpha-1 agonist, not a beta-1 agonist.",
+      "Alpha-1 vasoconstriction raises blood pressure, triggering baroreceptor-mediated vagal bradycardia.",
+      "Phenylephrine does not primarily cause beta-2 vasodilation.",
+      "A rapid pressure increase usually triggers a baroreflex heart-rate change."
+    ],
+    "teaching": "Phenylephrine: alpha-1 agonism → vasoconstriction → increased BP → reflex bradycardia."
+  },
+  {
+    "id": "top50-20261029-23-cyp450",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "A patient taking combined oral contraceptives starts treatment for tuberculosis. Which drug is most likely to lower contraceptive exposure by inducing hepatic drug-metabolizing enzymes?",
+    "options": [
+      "Rifampin",
+      "Clarithromycin",
+      "Fluconazole",
+      "Grapefruit juice"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Rifampin is a potent CYP450 inducer that reduces exposure to many coadministered drugs.",
+      "Clarithromycin is an important CYP3A4 inhibitor.",
+      "Fluconazole inhibits several cytochrome P450 enzymes.",
+      "Grapefruit juice inhibits intestinal CYP3A4."
+    ],
+    "teaching": "Classic CYP inducers: rifampin, carbamazepine, phenytoin, phenobarbital; inhibitors: macrolides, azoles, grapefruit."
+  },
+  {
+    "id": "top50-20261029-24-antibiotics",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An antibiotic binds the D-alanyl-D-alanine termini of bacterial cell-wall precursors and prevents normal peptidoglycan assembly. Which drug is described?",
+    "options": [
+      "Vancomycin",
+      "Ceftriaxone",
+      "Daptomycin",
+      "Linezolid"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vancomycin binds D-Ala–D-Ala residues on peptidoglycan precursors.",
+      "Ceftriaxone inhibits penicillin-binding proteins, which catalyze cross-linking.",
+      "Daptomycin disrupts gram-positive bacterial membranes.",
+      "Linezolid inhibits formation of the 70S initiation complex at the 50S subunit."
+    ],
+    "teaching": "Vancomycin binds D-Ala–D-Ala; beta-lactams bind penicillin-binding proteins."
+  },
+  {
+    "id": "top50-20261029-25-antifungals",
+    "topic": "Top 50 High-Yield Topics",
+    "level": 2,
+    "stem": "An antifungal used for severe systemic fungal infections binds membrane ergosterol and creates pores that leak cellular contents. Which agent does this?",
+    "options": [
+      "Fluconazole",
+      "Caspofungin",
+      "Amphotericin B",
+      "Terbinafine"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Fluconazole inhibits fungal 14-alpha-demethylase and ergosterol synthesis.",
+      "Caspofungin inhibits beta-1,3-D-glucan synthesis in the fungal cell wall.",
+      "Amphotericin B binds ergosterol and forms membrane pores.",
+      "Terbinafine inhibits squalene epoxidase."
+    ],
+    "teaching": "Amphotericin B binds ergosterol and forms pores; major adverse effects include nephrotoxicity and hypokalemia."
   }
 ];
