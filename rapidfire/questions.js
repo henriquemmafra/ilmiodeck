@@ -2441,5 +2441,405 @@ window.RAPIDFIRE_QUESTIONS = [
       "Cyclospora produces prolonged watery diarrhea with oocysts."
     ],
     "teaching": "Giardia: two nuclei ('face'), ventral adhesive disc and fatty, foul-smelling stool."
+  },
+  {
+    "id": "microbuzz-20261029-staph-protein-a",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A gram-positive coccus impairs antibody-mediated opsonization by binding immunoglobulin G in an abnormal orientation. Which virulence factor is responsible?",
+    "options": [
+      "Coagulase",
+      "Protein A",
+      "Streptolysin O",
+      "M protein"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Coagulase promotes fibrin formation but does not bind the Fc domain of IgG.",
+      "Staphylococcal protein A binds the Fc portion of IgG, impairing Fc receptor-mediated opsonophagocytosis.",
+      "Streptolysin O is an oxygen-labile cytotoxin produced by group A streptococci.",
+      "M protein is an antiphagocytic surface protein of group A Streptococcus."
+    ],
+    "teaching": "Protein A binds the Fc region of immunoglobulin G; coagulase is a separate S. aureus virulence factor."
+  },
+  {
+    "id": "microbuzz-20261029-strep-m-protein",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A strain of group A Streptococcus expresses a surface protein that interferes with complement deposition and phagocytosis. Which protein is involved?",
+    "options": [
+      "M protein",
+      "Protein A",
+      "Pneumolysin",
+      "Exotoxin A"
+    ],
+    "answer": 0,
+    "explanations": [
+      "M protein impairs complement-mediated opsonization and contributes to group A streptococcal virulence.",
+      "Protein A is produced by Staphylococcus aureus and binds the Fc region of IgG.",
+      "Pneumolysin is associated with Streptococcus pneumoniae.",
+      "Exotoxin A is characteristic of Pseudomonas aeruginosa."
+    ],
+    "teaching": "S. pyogenes M protein helps resist phagocytosis; streptolysin O is antigenic and can raise anti-streptolysin O titers."
+  },
+  {
+    "id": "microbuzz-20261029-pneumococcal-capsule",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "An alpha-hemolytic, optochin-sensitive diplococcus is more virulent when encapsulated. What is the capsule's principal role in invasive disease?",
+    "options": [
+      "Increasing acid-fastness",
+      "Preventing phagocytosis",
+      "Blocking protein synthesis",
+      "Promoting intracellular actin tails"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Acid-fastness is associated with the mycolic-acid-rich cell wall of mycobacteria.",
+      "The pneumococcal polysaccharide capsule interferes with phagocytosis.",
+      "Protein-synthesis inhibition is a toxin action, not the main function of the capsule.",
+      "Actin-based intracellular movement is characteristic of other invasive organisms."
+    ],
+    "teaching": "Encapsulation is a major virulence determinant of Streptococcus pneumoniae and underlies capsular vaccines."
+  },
+  {
+    "id": "microbuzz-20261029-meningococcal-los",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "An adolescent with meningococcemia develops septic shock, disseminated intravascular coagulation and bilateral adrenal hemorrhage. Which bacterial component drives the systemic inflammatory response?",
+    "options": [
+      "Lipooligosaccharide",
+      "M protein",
+      "Coagulase",
+      "Tetanospasmin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Meningococcal lipooligosaccharide acts as endotoxin and can produce cytokine-mediated shock and disseminated intravascular coagulation.",
+      "M protein is associated with Streptococcus pyogenes.",
+      "Coagulase is a virulence factor of Staphylococcus aureus.",
+      "Tetanospasmin causes disinhibited motor neurons in tetanus."
+    ],
+    "teaching": "N. meningitidis: capsule helps resist phagocytosis; lipooligosaccharide endotoxin contributes to fulminant meningococcemia."
+  },
+  {
+    "id": "microbuzz-20261029-hib-x-v",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A small gram-negative coccobacillus from a child with epiglottitis grows on chocolate agar but not standard blood agar. Which essential growth factors does it require?",
+    "options": [
+      "Vitamin K and heme",
+      "Hemin and nicotinamide adenine dinucleotide",
+      "Cysteine and iron",
+      "Urea and nickel"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Vitamin K and heme are not the diagnostic X and V growth-factor pair.",
+      "Factor X is hemin and factor V is nicotinamide adenine dinucleotide (NAD).",
+      "Cysteine and iron are important growth requirements for Legionella on buffered charcoal yeast extract agar.",
+      "Urea and nickel support urease activity in certain bacteria but are not the X and V pair."
+    ],
+    "teaching": "Haemophilus influenzae requires X (hemin) and V (NAD) factors; type b has a polyribosylribitol phosphate capsule."
+  },
+  {
+    "id": "microbuzz-20261029-ecoli-lt",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A traveler has watery diarrhea caused by enterotoxigenic Escherichia coli. Its heat-labile toxin stimulates persistent intestinal cyclic adenosine monophosphate signaling. What is the proximal action?",
+    "options": [
+      "ADP-ribosylation of Gs alpha",
+      "Cleavage of synaptobrevin",
+      "Inhibition of 60S ribosomes",
+      "Glucosylation of Rho proteins"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Heat-labile enterotoxin ADP-ribosylates Gs alpha, raising cyclic adenosine monophosphate and chloride secretion.",
+      "Synaptobrevin cleavage is a mechanism used by tetanus and botulinum neurotoxins.",
+      "Ribosomal 60S inactivation is seen with Shiga toxin and Shiga-like toxins.",
+      "Rho-family glucosylation is caused by Clostridioides difficile toxins."
+    ],
+    "teaching": "ETEC: heat-labile toxin activates Gs/cAMP; heat-stable toxin activates guanylate cyclase/cGMP."
+  },
+  {
+    "id": "microbuzz-20261029-klebsiella-capsule",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A gram-negative lactose fermenter forms extremely mucoid colonies and causes severe pneumonia. Which structural feature most directly explains the colony appearance and resistance to phagocytosis?",
+    "options": [
+      "Polysaccharide capsule",
+      "Mycolic acid-rich cell wall",
+      "Peritrichous flagella",
+      "Intracellular endospores"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A thick polysaccharide capsule produces a mucoid appearance and helps Klebsiella evade phagocytosis.",
+      "Mycolic acids cause acid-fastness in mycobacteria.",
+      "Klebsiella pneumoniae is typically nonmotile, so flagella do not account for this appearance.",
+      "Klebsiella does not form bacterial endospores."
+    ],
+    "teaching": "Klebsiella has an antiphagocytic capsule and thick mucoid colonies; it is typically nonmotile and lactose fermenting."
+  },
+  {
+    "id": "microbuzz-20261029-pseudo-exotoxin-a",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A patient with a burn infection grows Pseudomonas aeruginosa. Which action accounts for the organism's exotoxin A-mediated cellular injury?",
+    "options": [
+      "Activation of adenylate cyclase through Gs",
+      "ADP-ribosylation of elongation factor 2",
+      "Cleavage of glycine-containing vesicles",
+      "Direct inhibition of DNA gyrase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Gs activation is the mechanism of certain enterotoxins, not Pseudomonas exotoxin A.",
+      "Exotoxin A inactivates elongation factor 2 through ADP-ribosylation and halts protein synthesis.",
+      "Disruption of inhibitory neurotransmitter release is a property of tetanospasmin.",
+      "DNA gyrase inhibition describes fluoroquinolone antibacterial activity."
+    ],
+    "teaching": "Pseudomonas exotoxin A and diphtheria toxin both inhibit elongation factor 2 (EF-2)."
+  },
+  {
+    "id": "microbuzz-20261029-tb-cord-factor",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A virulent strain of Mycobacterium tuberculosis produces a glycolipid linked to serpentine cord formation and host inflammatory injury. Which molecule is it?",
+    "options": [
+      "Trehalose dimycolate",
+      "Lipooligosaccharide",
+      "Capsular Vi polysaccharide",
+      "Lipoteichoic acid"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Trehalose dimycolate is the mycobacterial cord factor associated with virulence and host inflammatory responses.",
+      "Lipooligosaccharide is found in organisms such as Neisseria meningitidis.",
+      "The Vi antigen is associated with Salmonella Typhi.",
+      "Lipoteichoic acid is a cell-wall component of gram-positive bacteria."
+    ],
+    "teaching": "Cord factor = trehalose dimycolate; mycolic acids contribute to acid-fast staining."
+  },
+  {
+    "id": "microbuzz-20261029-typhi-vi",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A strain of Salmonella Typhi carries the Vi surface antigen. Which bacterial feature does this antigen represent?",
+    "options": [
+      "Polysaccharide capsule",
+      "Flagellar motor protein",
+      "Spore coat protein",
+      "Intracellular actin polymerase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The Vi antigen is a capsular polysaccharide involved in immune evasion.",
+      "The H antigen, rather than Vi, refers to flagellar antigens.",
+      "Salmonella does not form endospores.",
+      "Actin-based motility is not the defining function of the Vi antigen."
+    ],
+    "teaching": "Salmonella Typhi expresses a Vi capsular antigen; do not rely on the Widal test instead of culture for definitive diagnosis."
+  },
+  {
+    "id": "microbuzz-20261029-shigella-ipa",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A dysentery-causing gram-negative rod uses proteins encoded on a large virulence plasmid to enter colonic epithelial cells. Which proteins mediate this invasion step?",
+    "options": [
+      "Ipa proteins",
+      "M protein",
+      "Protein A",
+      "Vi capsular antigen"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Shigella invasion plasmid antigen (Ipa) proteins mediate host-cell entry using a type III secretion system.",
+      "M protein helps group A Streptococcus evade phagocytosis.",
+      "Protein A binds the Fc region of immunoglobulin G in S. aureus.",
+      "The Vi capsule is associated with Salmonella Typhi."
+    ],
+    "teaching": "Shigella: Ipa invasion proteins, type III secretion, mucosal invasion and bloody dysentery."
+  },
+  {
+    "id": "microbuzz-20261029-cdiff-rho",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A patient with antibiotic-associated colitis is infected by a bacterium whose toxins disrupt intestinal epithelial tight junctions and the actin cytoskeleton. Which molecular action is responsible?",
+    "options": [
+      "Glucosylation of Rho-family GTPases",
+      "ADP-ribosylation of elongation factor 2",
+      "Blockade of inhibitory neuronal transmitter release",
+      "Inhibition of bacterial DNA polymerase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Toxins A and B of C. difficile glucosylate and inactivate Rho-family GTPases, destabilizing the actin cytoskeleton.",
+      "Elongation factor 2 inactivation occurs with diphtheria toxin and Pseudomonas exotoxin A.",
+      "Neuronal disinhibition is characteristic of tetanus toxin.",
+      "DNA polymerase inhibition is not the principal mechanism of C. difficile toxins."
+    ],
+    "teaching": "C. difficile toxin A/B: Rho inactivation, epithelial cytoskeletal collapse and pseudomembranous colitis."
+  },
+  {
+    "id": "microbuzz-20261029-tetani-gaba",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A neurotoxin from a contaminated wound causes sustained muscle contraction by blocking release of inhibitory neurotransmitters in the spinal cord. Which transmitters are inhibited?",
+    "options": [
+      "Acetylcholine and dopamine",
+      "Gamma-aminobutyric acid and glycine",
+      "Glutamate and substance P",
+      "Norepinephrine and serotonin"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Acetylcholine release at motor end plates is inhibited by botulinum toxin, producing flaccid weakness.",
+      "Tetanospasmin blocks release of GABA and glycine, producing spastic paralysis.",
+      "Glutamate and substance P are generally excitatory transmitters rather than the key inhibitory pair.",
+      "Norepinephrine and serotonin are not the defining inhibitory transmitter targets of tetanospasmin."
+    ],
+    "teaching": "Tetanus: tetanospasmin cleaves synaptobrevin, inhibiting GABA and glycine release from inhibitory interneurons."
+  },
+  {
+    "id": "microbuzz-20261029-perfringens-alpha",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A patient with clostridial myonecrosis has rapid membrane destruction and tissue necrosis. Which enzymatic action characterizes the major alpha toxin?",
+    "options": [
+      "Phospholipase C (lecithinase) activity",
+      "ADP-ribosylation of elongation factor 2",
+      "Ribosomal RNA depurination",
+      "Proteolytic cleavage of synaptobrevin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "C. perfringens alpha toxin is a phospholipase C (lecithinase) that damages cell membranes.",
+      "Elongation factor 2 ADP-ribosylation is associated with diphtheria and Pseudomonas toxins.",
+      "Ribosomal RNA injury is associated with Shiga toxin.",
+      "Synaptobrevin cleavage is a clostridial neurotoxin mechanism, not C. perfringens alpha toxin."
+    ],
+    "teaching": "C. perfringens: alpha toxin = lecithinase/phospholipase C; gas gangrene and tissue necrosis."
+  },
+  {
+    "id": "microbuzz-20261029-legionella-antigen",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "A patient has pneumonia highly suggestive of Legionella, but the standard Legionella urinary antigen test is negative. Which limitation is most relevant?",
+    "options": [
+      "It primarily detects Legionella pneumophila serogroup 1",
+      "It becomes positive only after six months",
+      "It detects only gram-positive organisms",
+      "It cannot be performed on urine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Common urinary antigen tests primarily detect L. pneumophila serogroup 1 and can miss other serogroups or species.",
+      "Legionella urinary antigen testing does not require six months to become positive.",
+      "Legionella is gram-negative.",
+      "The assay is specifically designed for urine specimens."
+    ],
+    "teaching": "Legionella urine antigen is useful but mainly identifies serogroup 1; consider PCR or culture on buffered charcoal yeast extract when suspicion persists."
+  },
+  {
+    "id": "microbuzz-20261029-candida-biofilm",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A hospitalized patient develops persistent candidemia associated with a central venous catheter. Which fungal property is particularly important in adherence to the device and persistence?",
+    "options": [
+      "Biofilm formation",
+      "Acid-fast cell walls",
+      "Polysaccharide encapsulation",
+      "Intracellular red-blood-cell invasion"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Candida forms adherent biofilms on catheters and other medical devices.",
+      "Acid-fastness is characteristic of mycobacteria rather than Candida.",
+      "The classic thick polysaccharide capsule is a Cryptococcus feature.",
+      "Red-cell invasion is characteristic of malaria parasites, not Candida."
+    ],
+    "teaching": "Candida albicans: adherence, biofilm, budding yeast and pseudohyphae; bloodstream infection may involve catheters."
+  },
+  {
+    "id": "microbuzz-20261029-crypto-antigen",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A patient with advanced immunosuppression has suspected cryptococcal meningitis. Which cerebrospinal fluid assay directly targets the organism's capsular material and is generally more sensitive than India ink?",
+    "options": [
+      "Cryptococcal antigen assay",
+      "Serum anti-streptolysin O titer",
+      "Urinary Legionella antigen test",
+      "Fungal galactomannan assay"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Cryptococcal antigen testing detects fungal capsular polysaccharide with high sensitivity.",
+      "Anti-streptolysin O titers assess recent group A streptococcal exposure.",
+      "Legionella urine antigen does not diagnose cryptococcal meningitis.",
+      "Galactomannan is primarily used for invasive aspergillosis."
+    ],
+    "teaching": "Cryptococcus has a polysaccharide capsule; cerebrospinal fluid cryptococcal antigen testing is typically more sensitive than India ink."
+  },
+  {
+    "id": "microbuzz-20261029-toxo-cysts",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "In a patient with advanced human immunodeficiency virus infection, previously acquired Toxoplasma infection reactivates from latent tissue cysts. Which parasitic form is present inside these latent cysts?",
+    "options": [
+      "Tachyzoites",
+      "Bradyzoites",
+      "Sporozoites circulating freely in blood",
+      "Merozoites"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Tachyzoites are the rapidly dividing form during active infection.",
+      "Bradyzoites reside in tissue cysts and can reactivate when cellular immunity decreases.",
+      "Sporozoites arise from sporulated oocysts, not as the latent tissue-cyst form.",
+      "Merozoites are associated with malaria and other apicomplexan replication cycles, not Toxoplasma latent cysts."
+    ],
+    "teaching": "Toxoplasma latent tissue cysts contain bradyzoites; active disease features rapidly replicating tachyzoites."
+  },
+  {
+    "id": "microbuzz-20261029-falciparum-pfemp1",
+    "topic": "Microbiology Buzzwords",
+    "level": 3,
+    "stem": "Severe Plasmodium falciparum malaria causes microvascular obstruction when parasitized erythrocytes adhere to endothelial cells. Which antigen mediates much of this sequestration?",
+    "options": [
+      "PfEMP1",
+      "Vi capsule",
+      "M protein",
+      "ESAT-6"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Plasmodium falciparum erythrocyte membrane protein 1 (PfEMP1) mediates cytoadherence and antigenic variation.",
+      "Vi is a Salmonella Typhi capsular antigen.",
+      "M protein is a group A streptococcal antiphagocytic factor.",
+      "ESAT-6 is a secreted mycobacterial virulence-associated protein."
+    ],
+    "teaching": "PfEMP1 supports endothelial binding and sequestration of infected red blood cells, contributing to cerebral malaria."
+  },
+  {
+    "id": "microbuzz-20261029-giardia-attachment",
+    "topic": "Microbiology Buzzwords",
+    "level": 2,
+    "stem": "A protozoan causes noninvasive small-intestinal infection with bloating and fat malabsorption. How do its trophozoites primarily remain attached to intestinal mucosa?",
+    "options": [
+      "A ventral adhesive disc",
+      "A polysaccharide capsule",
+      "Invasion of intestinal macrophages",
+      "Endothelial cytoadherence"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Giardia trophozoites attach to the intestinal epithelium using a ventral adhesive disc.",
+      "A polysaccharide capsule is not its primary intestinal adherence mechanism.",
+      "Giardia is primarily a luminal, noninvasive protozoan.",
+      "Endothelial cytoadherence is linked to P. falciparum-infected erythrocytes."
+    ],
+    "teaching": "Giardia trophozoites use a ventral adhesive disc, causing malabsorption and steatorrhea without deep tissue invasion."
   }
 ];
