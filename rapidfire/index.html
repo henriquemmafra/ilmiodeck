@@ -8,7 +8,8 @@
   <title>Step 1 RapidFire</title>
   <link rel="stylesheet" href="./style.css">
   <script defer src="./questions.js?v=20261102-197"></script>
-  <script defer src="./app.js?v=20261102-197"></script>
+  <script defer src="./assistant.js?v=20261102-chat"></script>
+  <script defer src="./app.js?v=20261102-swipe-chat"></script>
 </head>
 <body>
   <main class="shell">
@@ -42,7 +43,9 @@
     </div>
     <div class="progress" aria-hidden="true"><div id="progress-fill"></div></div>
     <section id="stage" class="stage" aria-live="polite"></section>
+    <p class="swipe-hint">← Swipe left for next · Swipe right for previous →</p>
     <div class="actions">
+      <button id="previous" class="secondary previous" type="button" disabled aria-label="Previous question" title="Previous question">←</button>
       <button id="skip" class="secondary" type="button">Skip</button>
       <button id="next" class="primary" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
     </div>
