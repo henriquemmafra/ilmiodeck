@@ -18,16 +18,16 @@
     (question.options || []).forEach(function (option, index) {
       lines.push(String.fromCharCode(65 + index) + ". " + option);
     });
-    lines.push("Correct answer: " + String.fromCharCode(65 + question.answer) + ". " + question.options[question.answer]);
     if (chosenIndex !== null && chosenIndex !== undefined) {
+      lines.push("Correct answer: " + String.fromCharCode(65 + question.answer) + ". " + question.options[question.answer]);
       lines.push("My answer: " + String.fromCharCode(65 + chosenIndex) + ". " + question.options[chosenIndex]);
     } else {
-      lines.push("I have not answered this question yet. Avoid revealing the correct answer unless needed to answer my question.");
+      lines.push("I have not answered this question yet. Please avoid revealing the correct answer; give hints without spoilers.");
     }
     if (chosenIndex !== null && chosenIndex !== undefined) {
       lines.push("Explanation: " + ((question.explanations || [])[question.answer] || ""));
     }
-    if (question.teaching) lines.push("High-yield takeaway: " + question.teaching);
+    if (question.teaching && chosenIndex !== null && chosenIndex !== undefined) lines.push("High-yield takeaway: " + question.teaching);
     lines.push("", "My question: " + String(visitorQuestion || "").trim());
     return lines.join("\n");
   }
