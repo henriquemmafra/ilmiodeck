@@ -15,7 +15,9 @@ Esse endereço depende de GitHub Pages estar habilitado; não é uma confirmaç�
 ## Como funciona
 
 - Uma questão de múltipla escolha por vez. Alternativas A, B, C e D, com suporte às teclas A–D e 1–4.
+- **Navegação como cartas:** deslize para a esquerda para avançar (ou pular sem responder) e para a direita para voltar. Também há botão de voltar. Respostas já dadas são preservadas sem computar uma segunda tentativa.
 - Correção imediatamente após responder; explicação de cada alternativa, inclusive por que estão erradas.
+- **Ask ChatGPT:** caixa de dúvidas dentro de cada questão; abre o ChatGPT com enunciado, alternativas, resposta dada e explicação (se já respondida) preenchidos no prompt. Envie a mensagem no ChatGPT para receber a resposta. Não há bot conversando dentro do site; isso exigiria servidor seguro e API da OpenAI, com cobrança separada. A conversa aberta pode ser nova, não necessariamente a conversa anterior do usuário.
 - Questões originais em inglês estilo Step 1 e explicações em português.
 - Filtros por assunto, dificuldade, questões nunca respondidas, erros pendentes e revisões devidas.
 - Questões erradas recebem prioridade nas novas sessões.
@@ -51,7 +53,7 @@ Para imagens **originais/autorizadas**, coloque o arquivo em `rapidfire/images/`
 
 ## Privacidade e limites
 
-O aplicativo não usa servidor, login, rastreamento nem chave de acesso. O banco de questões é compartilhado pelo GitHub; o progresso é local e não sincroniza automaticamente entre aparelhos. Atualizações do banco são feitas por commits no GitHub, quando há acesso autorizado. Não inclui questões copiadas de exames ou bancos pagos.
+O aplicativo não usa servidor próprio, login, rastreamento nem chave de API. O botão Ask ChatGPT abre o site externo do ChatGPT com o texto da pergunta pré-preenchido na URL e também tenta copiá-lo para a área de transferência. Isso envia o contexto da questão ao ChatGPT, mas não garante recuperar o histórico de conversas anteriores. O banco de questões é compartilhado pelo GitHub; o progresso é local e não sincroniza automaticamente entre aparelhos. Atualizações do banco são feitas por commits no GitHub, quando há acesso autorizado. Não inclui questões copiadas de exames ou bancos pagos.
 
 ## Desenvolvimento
 
