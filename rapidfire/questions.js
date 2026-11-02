@@ -3841,5 +3841,105 @@ window.RAPIDFIRE_QUESTIONS = [
       "Acute dystonia causes focal sustained muscle contractions without the classic hyperreflexia, clonus and diarrhea."
     ],
     "teaching": "Serotonin syndrome: serotonergic exposure, hyperreflexia and clonus; linezolid has monoamine oxidase-inhibiting activity."
+  },
+  {
+    "id": "rna-20261102-amanitin",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "After eating foraged mushrooms, a patient develops delayed severe diarrhea followed by acute liver injury. Alpha-amanitin most directly inhibits synthesis of which molecule?",
+    "options": [
+      "Messenger RNA",
+      "Transfer RNA",
+      "DNA",
+      "Protein at the ribosome"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Alpha-amanitin inhibits eukaryotic RNA polymerase II, directly reducing messenger RNA synthesis.",
+      "Transfer RNA is synthesized by RNA polymerase III; it is not the classic target tested for alpha-amanitin.",
+      "DNA replication uses DNA polymerases, not RNA polymerase II.",
+      "Protein production falls secondarily because messenger RNA is depleted; the ribosome is not the direct target."
+    ],
+    "teaching": "Amanita phalloides → alpha-amanitin → RNA polymerase II inhibition → reduced messenger RNA. Protein synthesis falls indirectly."
+  },
+  {
+    "id": "rna-20261102-pol1",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Which eukaryotic RNA polymerase produces the precursor for 18S, 5.8S, and 28S ribosomal RNA?",
+    "options": [
+      "RNA polymerase II",
+      "DNA polymerase alpha",
+      "RNA polymerase I",
+      "RNA polymerase III"
+    ],
+    "answer": 2,
+    "explanations": [
+      "RNA polymerase II produces messenger RNA precursors and several noncoding RNAs.",
+      "DNA polymerase alpha participates in DNA replication, not ribosomal RNA transcription.",
+      "RNA polymerase I transcribes the large ribosomal RNA precursor in the nucleolus.",
+      "RNA polymerase III makes transfer RNA and 5S ribosomal RNA, not the precursor for 18S, 5.8S, and 28S."
+    ],
+    "teaching": "Polymerase I = most ribosomal RNA (18S, 5.8S, 28S); 5S ribosomal RNA is the polymerase III exception."
+  },
+  {
+    "id": "rna-20261102-pol2",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "A human cell transcribes a protein-coding gene into a precursor that will undergo capping, splicing, and polyadenylation. Which enzyme makes this precursor?",
+    "options": [
+      "RNA polymerase I",
+      "RNA polymerase II",
+      "RNA polymerase III",
+      "DNA polymerase delta"
+    ],
+    "answer": 1,
+    "explanations": [
+      "RNA polymerase I makes the large ribosomal RNA precursor.",
+      "RNA polymerase II makes precursor messenger RNA, which is processed into mature messenger RNA.",
+      "RNA polymerase III primarily makes transfer RNA, 5S ribosomal RNA, and some other small RNAs.",
+      "DNA polymerase delta synthesizes DNA during replication."
+    ],
+    "teaching": "Polymerase II = precursor messenger RNA → processed messenger RNA → template for translation."
+  },
+  {
+    "id": "rna-20261102-pol3",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Which eukaryotic RNA polymerase transcribes the RNA molecules that carry amino acids to the ribosome?",
+    "options": [
+      "RNA polymerase I",
+      "RNA polymerase II",
+      "Mitochondrial DNA polymerase",
+      "RNA polymerase III"
+    ],
+    "answer": 3,
+    "explanations": [
+      "RNA polymerase I makes most ribosomal RNA, not transfer RNA.",
+      "RNA polymerase II makes messenger RNA precursors; messenger RNA supplies the coding template rather than carrying amino acids.",
+      "Mitochondrial DNA polymerase replicates mitochondrial DNA.",
+      "Transfer RNA carries amino acids to ribosomes and is transcribed by RNA polymerase III."
+    ],
+    "teaching": "Polymerase III = transfer RNA plus 5S ribosomal RNA. Transfer RNA carries amino acids; messenger RNA carries the coding message."
+  },
+  {
+    "id": "rna-20261102-5s-exception",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A student says that all ribosomal RNA is made by RNA polymerase I. Which molecule disproves this statement?",
+    "options": [
+      "28S ribosomal RNA",
+      "18S ribosomal RNA",
+      "5S ribosomal RNA",
+      "5.8S ribosomal RNA"
+    ],
+    "answer": 2,
+    "explanations": [
+      "28S ribosomal RNA is derived from the precursor made by RNA polymerase I.",
+      "18S ribosomal RNA is derived from the precursor made by RNA polymerase I.",
+      "5S ribosomal RNA is transcribed separately by RNA polymerase III.",
+      "5.8S ribosomal RNA is derived from the precursor made by RNA polymerase I."
+    ],
+    "teaching": "Do not confuse 5S with 5.8S: 5S uses polymerase III; 5.8S uses polymerase I."
   }
 ];
