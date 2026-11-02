@@ -15,6 +15,9 @@
   var current = null;
   var selected = null;
   var finished = false;
+  var trail = [];
+  var trailPosition = -1;
+  var swipeBusy = false;
   var ids = {
     topic: document.getElementById("topic"),
     mode: document.getElementById("mode"),
@@ -28,6 +31,7 @@
     type: document.getElementById("session-type"),
     progress: document.getElementById("progress-fill"),
     next: document.getElementById("next"),
+    previous: document.getElementById("previous"),
     skip: document.getElementById("skip"),
     export: document.getElementById("export"),
     importInput: document.getElementById("import-file"),
@@ -96,13 +100,15 @@
     ids.accuracy.textContent = attempts ? Math.round(100 * hits / attempts) + "%" : "—";
     ids.streak.textContent = String(session.streak);
     ids.pending.textContent = String(missed);
-    ids.count.textContent = finished ? "Session complete" : "Question " + Math.max(1, seen.size) + " de " + session.initialSize;
+    ids.count.textContent = finished ? "Session complete" : "Question " + Math.max(1, trailPosition + 1) + " de " + session.initialSize;
     ids.type.textContent = session.asked + " answered this session · " + questions.length + " in bank";
     ids.progress.style.width = (session.initialSize ? Math.min(100, 100 * seen.size / session.initialSize) : 0) + "%";
   }
 
   function startSession() {
     seen = new Set();
+    trail = [];
+    trailPosition = -1;
     session = { asked: 0, correct: 0, streak: 0, initialSize: filtered().length };
     finished = false;
     selected = null;
@@ -111,6 +117,15 @@
 
   function nextQuestion() {
     selected = null;
+    // Revisit the next card if the user previously swiped backward.
+    if (trailPosition < trail.length - 1) {
+      trailPosition++;
+      current = trail[trailPosition].question;
+      selected = trail[trailPosition].selected;
+      finished = false;
+      renderQuestion();
+      return;
+    }
     var candidates = filtered().filter(function (q) { return !seen.has(q.id); });
     if (candidates.length === 0) {
       current = null;
@@ -122,12 +137,29 @@
     ranked.sort(function (a, b) { return b.score - a.score; });
     current = ranked[0].question;
     seen.add(current.id);
+    trail.push({ question: current, selected: null });
+    trailPosition = trail.length - 1;
+    renderQuestion();
+  }
+
+  function previousQuestion() {
+    if (finished && trail.length) {
+      trailPosition = trail.length - 1;
+    } else if (trailPosition > 0) {
+      trailPosition--;
+    } else {
+      return;
+    }
+    current = trail[trailPosition].question;
+    selected = trail[trailPosition].selected;
+    finished = false;
     renderQuestion();
   }
 
   function grade(index) {
     if (!current || selected !== null) return;
     selected = index;
+    if (trail[trailPosition]) trail[trailPosition].selected = index;
     var q = current;
     var correct = index === q.answer;
     var p = getProgress(q) || { attempts: 0, hits: 0, misses: 0, streak: 0 };
@@ -152,6 +184,8 @@
     var q = current;
     ids.stage.replaceChildren();
     ids.next.disabled = selected === null;
+    ids.previous.disabled = trailPosition <= 0;
+    ids.previous.hidden = false;
     ids.next.hidden = false;
     ids.skip.hidden = false;
     ids.skip.disabled = selected !== null;
@@ -199,6 +233,9 @@
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
     }
+    if (window.RapidFireAssistant && typeof window.RapidFireAssistant.mount === "function") {
+      window.RapidFireAssistant.mount(ids.stage, q, selected);
+    }
     updateNumbers();
   }
 
@@ -206,6 +243,8 @@
     ids.stage.replaceChildren();
     ids.next.hidden = true;
     ids.skip.hidden = true;
+    ids.previous.hidden = !trail.length;
+    ids.previous.disabled = !trail.length;
     var empty = make("div", "empty");
     var count = session.asked;
     empty.appendChild(make("h2", "", session.initialSize === 0 ? "No questions match this filter" : "Session complete"));
@@ -284,6 +323,7 @@
     control.addEventListener("change", startSession);
   });
   ids.next.addEventListener("click", function () { if (selected !== null) nextQuestion(); });
+  ids.previous.addEventListener("click", previousQuestion);
   ids.skip.addEventListener("click", function () { if (current && selected === null) nextQuestion(); });
   ids.export.addEventListener("click", exportProgress);
   ids.importInput.addEventListener("change", function () {
@@ -296,6 +336,44 @@
     saveHistory();
     startSession();
   });
+
+  // Swipe left for the next card (skip if unanswered), right to revisit a card.
+  // Pointer events work on touch screens and with mouse/trackpad dragging.
+  var pointerStart = null;
+  var suppressClickUntil = 0;
+  ids.stage.addEventListener("pointerdown", function (event) {
+    if (swipeBusy || event.button > 0 || (event.target.closest && event.target.closest(".chat-assist, input, textarea, select, a"))) return;
+    pointerStart = { x: event.clientX, y: event.clientY, id: event.pointerId };
+  });
+  ids.stage.addEventListener("pointercancel", function () { pointerStart = null; });
+  ids.stage.addEventListener("pointerup", function (event) {
+    if (!pointerStart || pointerStart.id !== event.pointerId || swipeBusy) return;
+    var dx = event.clientX - pointerStart.x;
+    var dy = event.clientY - pointerStart.y;
+    pointerStart = null;
+    if (Math.abs(dx) < 65 || Math.abs(dx) < Math.abs(dy) * 1.3) return;
+    var forward = dx < 0;
+    if (forward && finished) return;
+    if (!forward && trailPosition <= 0 && !finished) return;
+    suppressClickUntil = Date.now() + 450;
+    swipeBusy = true;
+    ids.stage.classList.add(forward ? "swipe-exit-left" : "swipe-exit-right");
+    setTimeout(function () {
+      ids.stage.classList.remove("swipe-exit-left", "swipe-exit-right");
+      if (forward) nextQuestion(); else previousQuestion();
+      ids.stage.classList.add("swipe-enter");
+      setTimeout(function () {
+        ids.stage.classList.remove("swipe-enter");
+        swipeBusy = false;
+      }, 190);
+    }, 145);
+  });
+  ids.stage.addEventListener("click", function (event) {
+    if (Date.now() < suppressClickUntil) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
 
   document.addEventListener("keydown", function (event) {
     if (event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
