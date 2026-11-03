@@ -228,8 +228,17 @@
       var success = selected === q.answer;
       feedback.appendChild(make("div", "verdict " + (success ? "good" : "bad"),
         success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
-      feedback.appendChild(make("div", "explain is-correct", "Why: " + q.explanations[q.answer]));
-      if (!success) feedback.appendChild(make("div", "explain", "Your choice: " + q.options[selected]));
+      feedback.appendChild(make("div", "review-heading", "Review every alternative"));
+      q.options.forEach(function (option, index) {
+        var isCorrect = index === q.answer;
+        var row = make("div", "answer-review " + (isCorrect ? "answer-review-correct" : "answer-review-wrong"));
+        var label = String.fromCharCode(65 + index) + ". " + option +
+          (isCorrect ? " — Correct" : "") +
+          (index === selected && !isCorrect ? " — Your answer" : "");
+        row.appendChild(make("div", "answer-review-label", label));
+        row.appendChild(make("div", "answer-review-reason", q.explanations[index]));
+        feedback.appendChild(row);
+      });
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
     }
