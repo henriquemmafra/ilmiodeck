@@ -211,6 +211,7 @@
 
     var list = make("div", "options");
     q.options.forEach(function (label, index) {
+      var wrapper = make("div", "option-group");
       var btn = make("button", "option");
       btn.type = "button";
       btn.disabled = selected !== null;
@@ -219,26 +220,25 @@
       btn.appendChild(make("span", "letter", String.fromCharCode(65 + index)));
       btn.appendChild(make("span", "", label));
       btn.addEventListener("click", function () { grade(index); });
-      list.appendChild(btn);
+      wrapper.appendChild(btn);
+      if (selected !== null) {
+        var isCorrect = index === q.answer;
+        var explanation = make("div", "inline-option-explanation " +
+          (isCorrect ? "inline-correct" : index === selected ? "inline-selected" : ""));
+        explanation.appendChild(make("span", "inline-result",
+          isCorrect ? "Correct answer" : index === selected ? "Your answer" : "Why not"));
+        explanation.appendChild(make("span", "inline-reason", q.explanations[index]));
+        wrapper.appendChild(explanation);
+      }
+      list.appendChild(wrapper);
     });
     ids.stage.appendChild(list);
 
     if (selected !== null) {
-      var feedback = make("section", "feedback");
+      var feedback = make("section", "feedback feedback-compact");
       var success = selected === q.answer;
       feedback.appendChild(make("div", "verdict " + (success ? "good" : "bad"),
         success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
-      feedback.appendChild(make("div", "review-heading", "Review every alternative"));
-      q.options.forEach(function (option, index) {
-        var isCorrect = index === q.answer;
-        var row = make("div", "answer-review " + (isCorrect ? "answer-review-correct" : "answer-review-wrong"));
-        var label = String.fromCharCode(65 + index) + ". " + option +
-          (isCorrect ? " — Correct" : "") +
-          (index === selected && !isCorrect ? " — Your answer" : "");
-        row.appendChild(make("div", "answer-review-label", label));
-        row.appendChild(make("div", "answer-review-reason", q.explanations[index]));
-        feedback.appendChild(row);
-      });
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
     }
