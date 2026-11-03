@@ -27,3 +27,18 @@
 .answer-review-label{font-size:13px;font-weight:800;line-height:1.4;margin-bottom:4px}
 .answer-review-correct .answer-review-label{color:#92e5bc}
 .answer-review-reason{color:#cbd7e8;font-size:12.5px;line-height:1.55}
+
+/* Keep the explanation attached to its own answer, not repeated below the question. */
+.option-group{border:1px solid #35465f;border-radius:13px;overflow:hidden;background:var(--card2)}
+.option-group .option{width:100%;border:none;border-radius:0}
+.option-group:has(.option.correct){border-color:var(--good)}
+.option-group:has(.option.incorrect){border-color:var(--bad)}
+.inline-option-explanation{display:flex;flex-direction:column;gap:5px;padding:10px 14px 13px 55px;border-top:1px solid #34465e;color:#cbd7e8;background:#111b2c;font-size:12.5px;line-height:1.5}
+.inline-option-explanation.inline-correct{background:#152b29;border-top-color:#2b6650}
+.inline-option-explanation.inline-selected{background:#30212c;border-top-color:#76505a}
+.inline-result{font-size:11px;text-transform:uppercase;letter-spacing:.04em;font-weight:800;color:#9fb5d4}
+.inline-correct .inline-result{color:#92e5bc}
+.inline-selected .inline-result{color:#ffb9c0}
+.feedback-compact{margin-top:12px;padding-top:12px}
+.feedback-compact .takeaway{margin-top:7px}
+@media(max-width:700px){.inline-option-explanation{padding-left:14px}}
