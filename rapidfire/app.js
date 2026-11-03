@@ -375,13 +375,25 @@
     }
   }, true);
 
+  // Keyboard navigation: left/right arrows revisit/advance cards, space advances,
+  // and 1–4 (or A–D) select an answer. Never steal keys from editable controls.
   document.addEventListener("keydown", function (event) {
-    if (event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
+    if (event.altKey || event.ctrlKey || event.metaKey || event.repeat || swipeBusy) return;
     var target = event.target;
-    if (target && /^(INPUT|SELECT|TEXTAREA|BUTTON)$/.test(target.tagName)) return;
-    if (event.key === "Enter" && selected !== null) {
+    if (target && (target.isContentEditable || /^(INPUT|SELECT|TEXTAREA|BUTTON)$/.test(target.tagName) ||
+        (target.closest && target.closest('[contenteditable="true"], [role="textbox"], .chat-assist')))) return;
+
+    if (event.key === "ArrowLeft") {
       event.preventDefault();
-      nextQuestion();
+      previousQuestion();
+      return;
+    }
+    if (event.key === "ArrowRight" || event.key === " " || event.code === "Space" ||
+        (event.key === "Enter" && selected !== null)) {
+      if (!finished) {
+        event.preventDefault();
+        nextQuestion();
+      }
       return;
     }
     if (!current || selected !== null) return;
