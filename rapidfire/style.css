@@ -19,3 +19,11 @@
 .chat-assist-status{color:var(--muted);font-size:11px;margin:0;line-height:1.5}
 @media(max-width:700px){.chat-assist-actions{align-items:flex-start;flex-direction:column}.swipe-hint{font-size:11px}.actions .previous{flex-basis:42px;padding:12px 8px}}
 @media(prefers-reduced-motion:reduce){.stage.swipe-exit-left,.stage.swipe-exit-right,.stage.swipe-enter{animation:none!important}}
+
+/* Show the rationale for every option after submitting an answer. */
+.review-heading{font-size:14px;font-weight:850;color:var(--ink);margin:14px 0 10px}
+.answer-review{margin:8px 0;padding:11px 13px;border-radius:11px;background:#111b2c;border:1px solid #34445d;border-left:3px solid #596c88}
+.answer-review-correct{border-left-color:var(--good);background:#152b29}
+.answer-review-label{font-size:13px;font-weight:800;line-height:1.4;margin-bottom:4px}
+.answer-review-correct .answer-review-label{color:#92e5bc}
+.answer-review-reason{color:#cbd7e8;font-size:12.5px;line-height:1.55}
