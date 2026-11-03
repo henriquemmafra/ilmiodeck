@@ -633,10 +633,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: DNA polymerase delta. DNA polymerase requires a primer and does not solve the end-replication problem.",
-      "Telomerase uses an internal RNA template to extend the 3′ chromosome end.",
-      "Incorrect: DNA ligase I. DNA polymerase requires a primer and does not solve the end-replication problem.",
-      "Incorrect: Topoisomerase II. DNA polymerase requires a primer and does not solve the end-replication problem."
+      "DNA polymerase delta extends DNA from a preexisting primer but cannot fully replicate the terminal lagging strand.",
+      "Telomerase reverse transcriptase adds TTAGGG repeats using its integral RNA template.",
+      "DNA ligase seals nicks in the sugar–phosphate backbone; it does not synthesize telomeric repeats.",
+      "Topoisomerase II resolves DNA supercoiling and tangling, not chromosome-end shortening."
     ],
     "teaching": "DNA polymerase requires a primer and does not solve the end-replication problem."
   },
@@ -653,10 +653,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Incorrect: Loss of p53 only. p53 loss impairs checkpoints but does not itself lengthen telomeres.",
-      "Incorrect: Increased mismatch repair. p53 loss impairs checkpoints but does not itself lengthen telomeres.",
-      "Telomerase reactivation maintains telomeres during repeated cell division.",
-      "Incorrect: Increased histone acetylation. p53 loss impairs checkpoints but does not itself lengthen telomeres."
+      "Loss of p53 permits survival despite DNA damage but does not directly restore telomere repeats.",
+      "Mismatch repair corrects replication errors; it does not extend chromosome ends.",
+      "Reactivated telomerase maintains telomere repeats during successive cell divisions.",
+      "Histone acetylation alters chromatin accessibility but is not itself a telomere-extension mechanism."
     ],
     "teaching": "p53 loss impairs checkpoints but does not itself lengthen telomeres."
   },
@@ -673,10 +673,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Somatostatin. Ghrelin stimulates hunger; somatostatin inhibits many hormones but is secreted by delta cells.",
-      "Amylin is co-secreted with insulin and promotes satiety.",
-      "Incorrect: Ghrelin. Ghrelin stimulates hunger; somatostatin inhibits many hormones but is secreted by delta cells.",
-      "Incorrect: Glucagon-like peptide 2. Ghrelin stimulates hunger; somatostatin inhibits many hormones but is secreted by delta cells."
+      "Somatostatin inhibits multiple endocrine secretions but is released by pancreatic delta cells, not beta cells.",
+      "Amylin is co-secreted with insulin by beta cells, slows gastric emptying, promotes satiety, and suppresses postprandial glucagon.",
+      "Ghrelin is mainly produced in the stomach and promotes hunger, unlike satiety-promoting amylin.",
+      "GLP-2 is an intestinal enteroendocrine peptide that supports mucosal growth, not the beta-cell hormone described."
     ],
     "teaching": "Ghrelin stimulates hunger; somatostatin inhibits many hormones but is secreted by delta cells."
   },
@@ -693,10 +693,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: It is slower. Blood:gas predicts speed; oil:gas solubility correlates with potency.",
-      "Low blood solubility allows alveolar partial pressure to rise quickly, accelerating induction.",
-      "Incorrect: Potency must be lower. Blood:gas predicts speed; oil:gas solubility correlates with potency.",
-      "Incorrect: Minimum alveolar concentration increases. Blood:gas predicts speed; oil:gas solubility correlates with potency."
+      "Low blood solubility speeds rather than slows induction because alveolar anesthetic partial pressure rises rapidly.",
+      "A low blood:gas partition coefficient allows rapid equilibration between inspired gas, alveoli, and brain.",
+      "Blood:gas partitioning governs uptake and speed; potency tracks more closely with lipid solubility.",
+      "Minimum alveolar concentration reflects potency and cannot be inferred from blood:gas solubility alone."
     ],
     "teaching": "Blood:gas predicts speed; oil:gas solubility correlates with potency."
   },
@@ -713,10 +713,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Incorrect: Higher minimum alveolar concentration. Blood:gas solubility, not oil:gas solubility, primarily predicts induction speed.",
-      "Incorrect: Lower potency. Blood:gas solubility, not oil:gas solubility, primarily predicts induction speed.",
-      "Greater lipid solubility generally means higher potency and lower minimum alveolar concentration.",
-      "Incorrect: Faster induction in every patient. Blood:gas solubility, not oil:gas solubility, primarily predicts induction speed."
+      "Higher oil:gas solubility generally means greater potency and a lower, not higher, minimum alveolar concentration.",
+      "Greater lipid solubility correlates with greater anesthetic potency, not lower potency.",
+      "Greater oil:gas solubility generally correlates inversely with minimum alveolar concentration.",
+      "Induction speed mainly depends on blood:gas partitioning, ventilation, and perfusion, not lipid solubility alone."
     ],
     "teaching": "Blood:gas solubility, not oil:gas solubility, primarily predicts induction speed."
   },
@@ -733,10 +733,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Williams syndrome involves a 7q11.23 microdeletion affecting elastin (ELN).",
-      "Incorrect: Deletion of 22q11.2. 22q11.2 deletion causes DiGeorge syndrome with hypocalcemia and T-cell deficiency.",
-      "Incorrect: FBN1 missense mutation. 22q11.2 deletion causes DiGeorge syndrome with hypocalcemia and T-cell deficiency.",
-      "Incorrect: Trinucleotide CGG expansion. 22q11.2 deletion causes DiGeorge syndrome with hypocalcemia and T-cell deficiency."
+      "Williams syndrome involves a 7q11.23 microdeletion encompassing ELN, explaining supravalvular aortic stenosis.",
+      "22q11.2 deletion causes DiGeorge/velocardiofacial features such as hypocalcemia and conotruncal defects.",
+      "FBN1 pathogenic variants cause Marfan syndrome with aortic root dilation and lens dislocation.",
+      "CGG repeat expansion in FMR1 causes fragile X syndrome, not the Williams vascular phenotype."
     ],
     "teaching": "22q11.2 deletion causes DiGeorge syndrome with hypocalcemia and T-cell deficiency."
   },
@@ -753,10 +753,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Dorsal columns. Dorsal columns carry vibration and proprioception, which are initially spared.",
-      "A cervical syrinx injures crossing spinothalamic fibers in the anterior white commissure.",
-      "Incorrect: Lateral corticospinal tracts alone. Dorsal columns carry vibration and proprioception, which are initially spared.",
-      "Incorrect: Medial lemniscus. Dorsal columns carry vibration and proprioception, which are initially spared."
+      "Dorsal columns carry vibration and proprioception, which remain intact in the classic early syrinx.",
+      "A central cervical syrinx damages crossing pain–temperature fibers of the anterior white commissure.",
+      "Isolated corticospinal tract injury causes upper motor neuron weakness rather than selective pain–temperature loss.",
+      "The medial lemniscus carries dorsal-column modalities in the brainstem, not crossing spinothalamic fibers in the spinal cord."
     ],
     "teaching": "Dorsal columns carry vibration and proprioception, which are initially spared."
   },
@@ -773,10 +773,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Metformin can impair calcium-dependent absorption of the intrinsic factor–vitamin B12 complex.",
-      "Incorrect: Vitamin C. B12 deficiency may cause neuropathy even without prominent macrocytosis.",
-      "Incorrect: Vitamin K. B12 deficiency may cause neuropathy even without prominent macrocytosis.",
-      "Incorrect: Folate exclusively. B12 deficiency may cause neuropathy even without prominent macrocytosis."
+      "Metformin can impair calcium-dependent absorption of the intrinsic factor–vitamin B12 complex in the terminal ileum.",
+      "Vitamin C deficiency causes scurvy and is not the characteristic long-term metformin nutritional effect.",
+      "Vitamin K deficiency causes impaired gamma-carboxylation of clotting factors, not the typical metformin complication.",
+      "Folate deficiency can produce macrocytosis but does not explain metformin-associated impaired B12 absorption and neuropathy."
     ],
     "teaching": "B12 deficiency may cause neuropathy even without prominent macrocytosis."
   },
@@ -793,10 +793,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Incorrect: Glucose high, lactose absent. Lactose alone is insufficient for maximal transcription when glucose remains high.",
-      "Incorrect: Glucose high, lactose present. Lactose alone is insufficient for maximal transcription when glucose remains high.",
-      "Incorrect: Glucose low, lactose absent. Lactose alone is insufficient for maximal transcription when glucose remains high.",
-      "Lactose relieves repression; low glucose raises cyclic AMP, activating CAP."
+      "High glucose lowers cyclic AMP/CAP activation and absent lactose leaves the repressor bound.",
+      "Lactose inactivates the repressor, but high glucose limits CAP–cAMP activation, reducing transcription.",
+      "Low glucose activates CAP–cAMP, but without lactose the LacI repressor blocks transcription.",
+      "Low glucose raises cAMP–CAP activity and lactose (allolactose) relieves LacI repression, allowing maximal expression."
     ],
     "teaching": "Lactose alone is insufficient for maximal transcription when glucose remains high."
   },
@@ -813,10 +813,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: 21-hydroxylase. 17-alpha-hydroxylase deficiency also raises deoxycorticosterone but reduces sex steroids.",
-      "11-beta-hydroxylase deficiency raises deoxycorticosterone and adrenal androgens.",
-      "Incorrect: 17-alpha-hydroxylase. 17-alpha-hydroxylase deficiency also raises deoxycorticosterone but reduces sex steroids.",
-      "Incorrect: Aromatase. 17-alpha-hydroxylase deficiency also raises deoxycorticosterone but reduces sex steroids."
+      "21-hydroxylase deficiency reduces cortisol and often aldosterone, causing androgen excess without DOC-mediated hypertension.",
+      "11-beta-hydroxylase deficiency raises 11-deoxycortisol and DOC, causing hypertension plus androgen excess.",
+      "17-alpha-hydroxylase deficiency increases mineralocorticoid precursors but decreases androgens and sex steroids.",
+      "Aromatase deficiency reduces estrogen synthesis and can virilize an XX fetus but does not classically cause DOC-driven hypertension."
     ],
     "teaching": "17-alpha-hydroxylase deficiency also raises deoxycorticosterone but reduces sex steroids."
   },
@@ -833,10 +833,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "17-alpha-hydroxylase deficiency diverts precursors toward deoxycorticosterone.",
-      "Incorrect: 21-hydroxylase deficiency. 21-hydroxylase deficiency causes androgen excess and often salt wasting.",
-      "Incorrect: 5-alpha-reductase excess. 21-hydroxylase deficiency causes androgen excess and often salt wasting.",
-      "Incorrect: Aldosterone synthase deficiency. 21-hydroxylase deficiency causes androgen excess and often salt wasting."
+      "17-alpha-hydroxylase deficiency reduces cortisol and sex steroids while diverting precursors toward DOC, causing hypertension.",
+      "21-hydroxylase deficiency increases androgen production and may cause salt-wasting hypotension.",
+      "5-alpha-reductase excess is not the classic cause of hypertension with low adrenal and gonadal sex steroids.",
+      "Aldosterone synthase deficiency reduces mineralocorticoid production, favoring salt wasting and hyperkalemia rather than hypertension."
     ],
     "teaching": "21-hydroxylase deficiency causes androgen excess and often salt wasting."
   },
@@ -844,7 +844,7 @@ window.RAPIDFIRE_QUESTIONS = [
     "id": "bartter-calcium",
     "topic": "Renal",
     "level": 2,
-    "stem": "Which urinary calcium finding distinguishes Bartter syndrome from Gitelman syndrome?",
+    "stem": "In classic Bartter syndrome types I and II (thick ascending limb transporter defects), which urinary calcium pattern is typical compared with Gitelman syndrome?",
     "options": [
       "Bartter: low calcium",
       "Bartter: high calcium",
@@ -853,12 +853,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Bartter: low calcium. Gitelman mimics thiazides and typically causes hypocalciuria with hypomagnesemia.",
-      "Bartter mimics loop diuretics and typically causes hypercalciuria.",
-      "Incorrect: Both: absent calcium excretion. Gitelman mimics thiazides and typically causes hypocalciuria with hypomagnesemia.",
-      "Incorrect: Both: high calcium. Gitelman mimics thiazides and typically causes hypocalciuria with hypomagnesemia."
+      "Classic loop-transporter Bartter types I/II tend to cause increased rather than decreased urinary calcium.",
+      "Bartter types I/II reduce thick ascending limb paracellular calcium reabsorption, commonly causing hypercalciuria.",
+      "Neither Bartter nor Gitelman abolishes urinary calcium excretion; both can excrete calcium.",
+      "Gitelman commonly produces hypocalciuria, so high urinary calcium is not typical of both syndromes."
     ],
-    "teaching": "Gitelman mimics thiazides and typically causes hypocalciuria with hypomagnesemia."
+    "teaching": "Bartter I/II: loop-like defect, often hypercalciuria and nephrocalcinosis. Gitelman: thiazide-like defect and hypocalciuria. Other Bartter subtypes have variable calciuria."
   },
   {
     "id": "rta-distal",
@@ -873,10 +873,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Proximal bicarbonate reabsorption. Proximal (type 2) acidosis can eventually produce acidic urine after bicarbonate depletion.",
-      "Distal (type 1) renal tubular acidosis impairs urinary acidification and predisposes to stones.",
-      "Incorrect: Aldosterone excess. Proximal (type 2) acidosis can eventually produce acidic urine after bicarbonate depletion.",
-      "Incorrect: Increased ammonium excretion. Proximal (type 2) acidosis can eventually produce acidic urine after bicarbonate depletion."
+      "Proximal type 2 RTA impairs bicarbonate reabsorption; once serum bicarbonate falls below its lowered threshold, urine may acidify.",
+      "Distal type 1 RTA impairs alpha-intercalated-cell hydrogen secretion, causing persistently alkaline urine and calcium phosphate stones.",
+      "Aldosterone excess typically promotes hydrogen and potassium loss, producing metabolic alkalosis rather than this acidosis.",
+      "Increased ammonium excretion enhances urinary acid elimination and does not explain failure to acidify urine."
     ],
     "teaching": "Proximal (type 2) acidosis can eventually produce acidic urine after bicarbonate depletion."
   },
@@ -893,10 +893,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Bohr effect. The Bohr effect describes reduced hemoglobin oxygen affinity with increased CO2 or H+.",
-      "The Haldane effect: deoxygenated hemoglobin binds more CO2 and buffers more hydrogen ions.",
-      "Incorrect: Chloride channel blockade. The Bohr effect describes reduced hemoglobin oxygen affinity with increased CO2 or H+.",
-      "Incorrect: Reduced bicarbonate formation. The Bohr effect describes reduced hemoglobin oxygen affinity with increased CO2 or H+."
+      "The Bohr effect concerns how increased CO2/H+ lowers hemoglobin oxygen affinity, promoting oxygen unloading.",
+      "The Haldane effect describes increased CO2 and H+ carriage by deoxygenated hemoglobin.",
+      "Chloride shift facilitates bicarbonate transport, but chloride channel blockade does not explain deoxygenated hemoglobin's CO2 affinity.",
+      "Carbonic anhydrase forms bicarbonate from CO2; reduced bicarbonate formation is not the Haldane mechanism."
     ],
     "teaching": "The Bohr effect describes reduced hemoglobin oxygen affinity with increased CO2 or H+."
   },
@@ -913,10 +913,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: 24-hydroxylase. This extra-renal activation can occur despite suppressed parathyroid hormone.",
-      "Granuloma macrophages convert 25-hydroxyvitamin D to active 1,25-dihydroxyvitamin D.",
-      "Incorrect: Parathyroid hormone synthase. This extra-renal activation can occur despite suppressed parathyroid hormone.",
-      "Incorrect: Calcitonin receptor kinase. This extra-renal activation can occur despite suppressed parathyroid hormone."
+      "24-hydroxylase contributes to vitamin D catabolism rather than the macrophage-driven activation responsible for hypercalcemia.",
+      "Granuloma macrophage 1-alpha-hydroxylase generates excess calcitriol, increasing intestinal calcium uptake.",
+      "Parathyroid hormone is a peptide hormone, not a macrophage synthase that activates vitamin D.",
+      "Calcitonin signaling tends to oppose hypercalcemia and is unrelated to excess macrophage calcitriol synthesis."
     ],
     "teaching": "This extra-renal activation can occur despite suppressed parathyroid hormone."
   },
@@ -933,10 +933,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "AAUAAA is the canonical polyadenylation signal near the 3′ end.",
-      "Incorrect: AUG. The splice-site GU dinucleotide directs intron removal, not poly-A tail addition.",
-      "Incorrect: UAG. The splice-site GU dinucleotide directs intron removal, not poly-A tail addition.",
-      "Incorrect: GU at the 5′ splice site. The splice-site GU dinucleotide directs intron removal, not poly-A tail addition."
+      "AAUAAA is the canonical 3′ polyadenylation signal recognized during pre-mRNA cleavage and processing.",
+      "AUG is the translation initiation codon, not the 3′ polyadenylation signal.",
+      "UAG is a translation termination codon, not a polyadenylation signal.",
+      "GU at the 5′ splice junction marks an intron boundary for splicing, not cleavage/polyadenylation."
     ],
     "teaching": "The splice-site GU dinucleotide directs intron removal, not poly-A tail addition."
   },
@@ -953,10 +953,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "The branch-point adenine 2′-OH attacks the 5′ splice site to form a lariat.",
-      "Incorrect: The poly-A tail terminal adenine. AAUAAA marks polyadenylation, not the branch point.",
-      "Incorrect: A cytosine in the start codon. AAUAAA marks polyadenylation, not the branch point.",
-      "Incorrect: A guanine in the stop codon. AAUAAA marks polyadenylation, not the branch point."
+      "The branch-point adenine 2′-OH attacks the 5′ splice site and forms the 2′–5′ lariat linkage.",
+      "Poly-A tail adenines are added during 3′ end processing and do not initiate intron lariat formation.",
+      "AUG, the start codon, begins translation; a cytosine is not the branch-point nucleophile.",
+      "Stop codons end translation; their nucleotides do not initiate spliceosomal lariat formation."
     ],
     "teaching": "AAUAAA marks polyadenylation, not the branch point."
   },
@@ -973,10 +973,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Blocks serotonin 5-HT2A receptors. Dantrolene reduces skeletal muscle calcium release; cyproheptadine treats serotonin syndrome.",
-      "Bromocriptine is a dopamine receptor agonist that counteracts dopamine blockade.",
-      "Incorrect: Inhibits acetylcholinesterase. Dantrolene reduces skeletal muscle calcium release; cyproheptadine treats serotonin syndrome.",
-      "Incorrect: Blocks calcium release from skeletal muscle. Dantrolene reduces skeletal muscle calcium release; cyproheptadine treats serotonin syndrome."
+      "Serotonin 5-HT2A blockade with cyproheptadine may treat serotonin syndrome, not the dopamine-blockade mechanism of NMS.",
+      "Bromocriptine stimulates dopamine receptors and can reverse aspects of severe dopamine deficiency in NMS.",
+      "Acetylcholinesterase inhibition increases cholinergic signaling and is not an NMS-specific treatment.",
+      "Dantrolene reduces skeletal-muscle calcium release; bromocriptine instead acts as a dopamine agonist."
     ],
     "teaching": "Dantrolene reduces skeletal muscle calcium release; cyproheptadine treats serotonin syndrome."
   },
@@ -993,10 +993,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Incorrect: Glucose and galactose. Aldolase A cleaves fructose-1,6-bisphosphate in glycolysis.",
-      "Aldolase B generates dihydroxyacetone phosphate and glyceraldehyde for downstream metabolism.",
-      "Incorrect: Pyruvate and lactate. Aldolase A cleaves fructose-1,6-bisphosphate in glycolysis.",
-      "Incorrect: Glycerol and acetyl-CoA. Aldolase A cleaves fructose-1,6-bisphosphate in glycolysis."
+      "Glucose and galactose are not the triose products of fructose-1-phosphate cleavage.",
+      "Aldolase B cleaves fructose-1-phosphate into dihydroxyacetone phosphate and glyceraldehyde.",
+      "Pyruvate and lactate are possible downstream glycolytic products, not the direct aldolase B cleavage products.",
+      "Glycerol and acetyl-CoA are not generated together by the aldolase B reaction."
     ],
     "teaching": "Aldolase A cleaves fructose-1,6-bisphosphate in glycolysis."
   },
@@ -1013,10 +1013,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Aldose reductase reduces galactose to galactitol, promoting lens swelling.",
-      "Incorrect: Galactose-1-phosphate uridylyltransferase. Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol.",
-      "Incorrect: Aldolase B. Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol.",
-      "Incorrect: Galactokinase. Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol."
+      "Aldose reductase reduces excess galactose into galactitol, which accumulates osmotically in the lens.",
+      "GALT processes galactose-1-phosphate in normal galactose metabolism, not the reduction to galactitol.",
+      "Aldolase B participates in fructose metabolism and does not convert galactose to galactitol.",
+      "Galactokinase phosphorylates galactose to galactose-1-phosphate rather than reducing it to galactitol."
     ],
     "teaching": "Galactokinase deficiency causes galactose accumulation; aldose reductase produces the cataract-causing galactitol."
   },
