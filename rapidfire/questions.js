@@ -533,10 +533,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Type I error (alpha) means rejecting a true null hypothesis.",
-      "Not the best answer: Type II error (beta). Type I error (alpha) means rejecting a true null hypothesis.",
-      "Not the best answer: Reduced statistical power. Type I error (alpha) means rejecting a true null hypothesis.",
-      "Not the best answer: Selection bias. Type I error (alpha) means rejecting a true null hypothesis."
+      "Type I (alpha) error is rejecting a true null hypothesis: a false positive.",
+      "Type II (beta) error is failing to reject a false null hypothesis: a false negative.",
+      "Statistical power is 1 − beta; low power increases missed true effects rather than false positives by definition.",
+      "Selection bias distorts the sampled groups and is not the statistical definition of rejecting a true null."
     ],
     "teaching": "Type I error (alpha) means rejecting a true null hypothesis."
   },
@@ -553,10 +553,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Not the best answer: 20%. Statistical power is 1 minus beta, the probability of detecting a true effect.",
-      "Not the best answer: 50%. Statistical power is 1 minus beta, the probability of detecting a true effect.",
-      "Statistical power is 1 minus beta, the probability of detecting a true effect.",
-      "Not the best answer: 95%. Statistical power is 1 minus beta, the probability of detecting a true effect."
+      "20% is beta, the probability of a type II error, rather than the study's power.",
+      "50% power would correspond to beta = 50%, not the stated 20%.",
+      "Power = 1 − beta = 1 − 0.20 = 0.80, or 80%.",
+      "95% power would require beta = 5%, not 20%."
     ],
     "teaching": "Statistical power is 1 minus beta, the probability of detecting a true effect."
   },
@@ -573,10 +573,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: An anti-apoptotic B-cell lymphoma 2 protein. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
-      "The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
-      "Not the best answer: A retinoic acid receptor fusion. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase.",
-      "Not the best answer: A rearrangement of the MYC (myelocytomatosis) oncogene. The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase."
+      "BCL2 overexpression from t(14;18) is characteristic of follicular lymphoma, not t(9;22) CML.",
+      "The Philadelphia chromosome t(9;22) generates constitutively active BCR–ABL tyrosine kinase.",
+      "PML–RARA from t(15;17) blocks differentiation in acute promyelocytic leukemia.",
+      "MYC rearrangement, often t(8;14), drives Burkitt lymphoma rather than CML."
     ],
     "teaching": "The BCR-ABL fusion from t(9;22) produces a constitutively active tyrosine kinase."
   },
@@ -593,10 +593,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Increased apoptosis via p53. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
-      "The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
-      "Not the best answer: Increased DNA repair via mismatch-repair proteins. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma.",
-      "Not the best answer: Loss of retinoic acid receptor function. The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma."
+      "Enhanced p53-mediated apoptosis would suppress tumor survival, not drive follicular lymphoma.",
+      "t(14;18) juxtaposes BCL2 with the immunoglobulin heavy-chain locus, preventing apoptosis.",
+      "Mismatch repair proteins correct replication errors; they are not activated by the BCL2 translocation.",
+      "Retinoic acid receptor fusion is characteristic of acute promyelocytic leukemia."
     ],
     "teaching": "The t(14;18) translocation increases antiapoptotic BCL2 expression in follicular lymphoma."
   },
@@ -613,10 +613,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
-      "Not the best answer: Hydroxyurea. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
-      "Not the best answer: Imatinib. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid.",
-      "Not the best answer: Rituximab. The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid."
+      "All-trans retinoic acid overcomes the PML–RARA differentiation block in acute promyelocytic leukemia.",
+      "Hydroxyurea inhibits ribonucleotide reductase but is not the specific differentiation therapy for PML–RARA.",
+      "Imatinib inhibits BCR–ABL kinase, classically used in chronic myeloid leukemia.",
+      "Rituximab targets CD20-positive B cells; promyelocytic leukemia is not a CD20-driven B-cell malignancy."
     ],
     "teaching": "The t(15;17) PML-RARA fusion blocks myeloid maturation and responds to all-trans retinoic acid."
   },
@@ -1633,10 +1633,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Cardiomyocytes enlarge by increasing protein synthesis; adult cardiac muscle has limited capacity for cell division.",
-      "Not the best answer: Hyperplasia. Cardiomyocytes enlarge by increasing protein synthesis; adult cardiac muscle has limited capacity for cell division.",
-      "Not the best answer: Metaplasia. Cardiomyocytes enlarge by increasing protein synthesis; adult cardiac muscle has limited capacity for cell division.",
-      "Not the best answer: Dysplasia. Cardiomyocytes enlarge by increasing protein synthesis; adult cardiac muscle has limited capacity for cell division."
+      "Cardiomyocytes enlarge in response to pressure overload; this is cellular hypertrophy.",
+      "Hyperplasia increases cell number and is limited in terminally differentiated adult cardiomyocytes.",
+      "Metaplasia replaces one differentiated cell type with another, such as squamous change in airways.",
+      "Dysplasia denotes disordered cellular maturation and atypia, not adaptive myocardial thickening."
     ],
     "teaching": "Cardiomyocytes enlarge by increasing protein synthesis; adult cardiac muscle has limited capacity for cell division."
   },
@@ -1653,10 +1653,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Dysplasia. Chronic irritation causes reversible reprogramming of tissue stem cells; persistent injury can predispose to dysplasia.",
-      "Chronic irritation causes reversible reprogramming of tissue stem cells; persistent injury can predispose to dysplasia.",
-      "Not the best answer: Anaplasia. Chronic irritation causes reversible reprogramming of tissue stem cells; persistent injury can predispose to dysplasia.",
-      "Not the best answer: Hypertrophy. Chronic irritation causes reversible reprogramming of tissue stem cells; persistent injury can predispose to dysplasia."
+      "Dysplasia shows atypia and disordered maturation, not simply replacement by another mature epithelial type.",
+      "Squamous metaplasia substitutes stratified squamous cells for ciliated columnar epithelium under chronic smoke exposure.",
+      "Anaplasia describes loss of differentiation in malignant tumors, not reversible epithelial adaptation.",
+      "Hypertrophy is increased cell size, not conversion from one epithelial lineage to another."
     ],
     "teaching": "Chronic irritation causes reversible reprogramming of tissue stem cells; persistent injury can predispose to dysplasia."
   },
@@ -1673,10 +1673,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Suppressed luteinizing hormone and follicle-stimulating hormone reduce endogenous testicular stimulation; ubiquitin-proteasome activity promotes atrophy.",
-      "Not the best answer: Increased mitotic activity. Suppressed luteinizing hormone and follicle-stimulating hormone reduce endogenous testicular stimulation; ubiquitin-proteasome activity promotes atrophy.",
-      "Not the best answer: Accumulation of extracellular amyloid. Suppressed luteinizing hormone and follicle-stimulating hormone reduce endogenous testicular stimulation; ubiquitin-proteasome activity promotes atrophy.",
-      "Not the best answer: Squamous metaplasia. Suppressed luteinizing hormone and follicle-stimulating hormone reduce endogenous testicular stimulation; ubiquitin-proteasome activity promotes atrophy."
+      "Atrophy involves decreased cell mass from protein degradation, including ubiquitin–proteasome pathways.",
+      "Increased mitosis would increase tissue cellularity and cannot explain testicular shrinkage.",
+      "Amyloid deposition is extracellular protein accumulation, not a primary mechanism of testicular atrophy.",
+      "Squamous metaplasia is epithelial cell-type replacement, unrelated to loss of testicular mass."
     ],
     "teaching": "Suppressed luteinizing hormone and follicle-stimulating hormone reduce endogenous testicular stimulation; ubiquitin-proteasome activity promotes atrophy."
   },
@@ -1693,10 +1693,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Uncontrolled membrane rupture. Apoptosis involves caspases, DNA fragmentation and membrane-bound apoptotic bodies without the typical inflammatory response of necrosis.",
-      "Apoptosis involves caspases, DNA fragmentation and membrane-bound apoptotic bodies without the typical inflammatory response of necrosis.",
-      "Not the best answer: Bacterial enzyme-mediated liquefaction. Apoptosis involves caspases, DNA fragmentation and membrane-bound apoptotic bodies without the typical inflammatory response of necrosis.",
-      "Not the best answer: Ischemic coagulation of tissue. Apoptosis involves caspases, DNA fragmentation and membrane-bound apoptotic bodies without the typical inflammatory response of necrosis."
+      "Uncontrolled membrane rupture triggers inflammation and is characteristic of necrosis, not apoptosis.",
+      "Apoptosis activates caspases, cell shrinkage, chromatin condensation, and phagocytosis with little inflammation.",
+      "Bacterial enzymatic liquefaction describes suppurative necrosis, with inflammatory tissue digestion.",
+      "Ischemic coagulative necrosis preserves tissue outlines initially and often provokes inflammation."
     ],
     "teaching": "Apoptosis involves caspases, DNA fragmentation and membrane-bound apoptotic bodies without the typical inflammatory response of necrosis."
   },
@@ -1713,10 +1713,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Amyloid deposition. Pancreatic lipases release fatty acids that bind calcium, causing saponification in enzymatic fat necrosis.",
-      "Pancreatic lipases release fatty acids that bind calcium, causing saponification in enzymatic fat necrosis.",
-      "Not the best answer: Hemosiderin accumulation. Pancreatic lipases release fatty acids that bind calcium, causing saponification in enzymatic fat necrosis.",
-      "Not the best answer: Urate crystal precipitation. Pancreatic lipases release fatty acids that bind calcium, causing saponification in enzymatic fat necrosis."
+      "Amyloid is misfolded protein deposition and does not account for chalky fat saponification.",
+      "Pancreatic lipases release fatty acids that bind calcium, forming chalky soaps in enzymatic fat necrosis.",
+      "Hemosiderin is stored iron pigment, often brown-golden, not calcium-fatty acid deposits.",
+      "Monosodium urate crystals cause gouty tophi rather than pancreatic fat necrosis."
     ],
     "teaching": "Pancreatic lipases release fatty acids that bind calcium, causing saponification in enzymatic fat necrosis."
   },
@@ -1733,10 +1733,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Dry gangrene usually reflects ischemic coagulative necrosis; superinfection can produce wet gangrene with liquefactive changes.",
-      "Not the best answer: Liquefactive necrosis. Dry gangrene usually reflects ischemic coagulative necrosis; superinfection can produce wet gangrene with liquefactive changes.",
-      "Not the best answer: Caseous necrosis. Dry gangrene usually reflects ischemic coagulative necrosis; superinfection can produce wet gangrene with liquefactive changes.",
-      "Not the best answer: Fibrinoid necrosis. Dry gangrene usually reflects ischemic coagulative necrosis; superinfection can produce wet gangrene with liquefactive changes."
+      "Dry ischemic gangrene usually represents coagulative necrosis with preserved tissue outlines early on.",
+      "Liquefactive necrosis dominates brain infarcts and abscesses, or infected wet gangrene.",
+      "Caseous necrosis forms friable cheese-like granulomatous debris, classically in tuberculosis.",
+      "Fibrinoid necrosis involves vascular wall damage with immune-mediated or severe hypertensive injury."
     ],
     "teaching": "Dry gangrene usually reflects ischemic coagulative necrosis; superinfection can produce wet gangrene with liquefactive changes."
   },
@@ -1753,10 +1753,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Protein denaturation with preserved tissue outlines. Cerebral infarction produces liquefactive necrosis owing to hydrolytic digestion, followed by cystic change and reactive gliosis.",
-      "Cerebral infarction produces liquefactive necrosis owing to hydrolytic digestion, followed by cystic change and reactive gliosis.",
-      "Not the best answer: Calcium-fatty acid soap formation. Cerebral infarction produces liquefactive necrosis owing to hydrolytic digestion, followed by cystic change and reactive gliosis.",
-      "Not the best answer: Immune complex deposition in arterial walls. Cerebral infarction produces liquefactive necrosis owing to hydrolytic digestion, followed by cystic change and reactive gliosis."
+      "Preserved tissue outlines from protein denaturation describe coagulative necrosis, typical of many non-CNS infarcts.",
+      "Brain infarcts undergo liquefactive necrosis as hydrolytic enzymes digest dead tissue and leave a cystic cavity.",
+      "Calcium–fatty acid soaps occur in fat necrosis, as in pancreatitis, not the typical brain infarct.",
+      "Immune complex deposition in arterial walls produces fibrinoid vascular injury, not cerebral liquefaction."
     ],
     "teaching": "Cerebral infarction produces liquefactive necrosis owing to hydrolytic digestion, followed by cystic change and reactive gliosis."
   },
@@ -1773,10 +1773,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Serum amyloid A. AL amyloid derives from immunoglobulin light chains in plasma cell disorders; Congo red shows apple-green birefringence under polarized light.",
-      "AL amyloid derives from immunoglobulin light chains in plasma cell disorders; Congo red shows apple-green birefringence under polarized light.",
-      "Not the best answer: Beta-2 microglobulin. AL amyloid derives from immunoglobulin light chains in plasma cell disorders; Congo red shows apple-green birefringence under polarized light.",
-      "Not the best answer: Transthyretin. AL amyloid derives from immunoglobulin light chains in plasma cell disorders; Congo red shows apple-green birefringence under polarized light."
+      "Serum amyloid A produces AA amyloidosis associated with chronic inflammation.",
+      "Plasma-cell dyscrasias produce misfolded immunoglobulin light chains, the precursor in AL amyloidosis.",
+      "Beta-2 microglobulin deposition is linked to long-term dialysis-associated amyloidosis.",
+      "Transthyretin causes ATTR amyloidosis (wild-type or hereditary), not monoclonal light-chain amyloidosis."
     ],
     "teaching": "AL amyloid derives from immunoglobulin light chains in plasma cell disorders; Congo red shows apple-green birefringence under polarized light."
   },
@@ -1793,10 +1793,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Long-term dialysis-associated amyloidosis involves beta-2 microglobulin accumulation, often affecting joints and periarticular tissues.",
-      "Not the best answer: Alpha-1 antitrypsin. Long-term dialysis-associated amyloidosis involves beta-2 microglobulin accumulation, often affecting joints and periarticular tissues.",
-      "Not the best answer: Immunoglobulin E. Long-term dialysis-associated amyloidosis involves beta-2 microglobulin accumulation, often affecting joints and periarticular tissues.",
-      "Not the best answer: Amyloid beta peptide. Long-term dialysis-associated amyloidosis involves beta-2 microglobulin accumulation, often affecting joints and periarticular tissues."
+      "Beta-2 microglobulin is poorly cleared in longstanding dialysis and accumulates in joints and tendon sheaths.",
+      "Alpha-1 antitrypsin deficiency causes emphysema and liver disease, not dialysis arthropathy amyloid.",
+      "IgE participates in allergy and parasite immunity, not the characteristic dialysis amyloid.",
+      "Amyloid-beta peptide is associated with Alzheimer plaques and cerebral amyloid angiopathy."
     ],
     "teaching": "Long-term dialysis-associated amyloidosis involves beta-2 microglobulin accumulation, often affecting joints and periarticular tissues."
   },
@@ -1813,10 +1813,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Interleukin-4. Interleukin-12 drives T helper type 1 differentiation; these cells produce interferon-gamma to activate macrophages. Tumor necrosis factor supports granuloma integrity.",
-      "Interleukin-12 drives T helper type 1 differentiation; these cells produce interferon-gamma to activate macrophages. Tumor necrosis factor supports granuloma integrity.",
-      "Not the best answer: Interleukin-10. Interleukin-12 drives T helper type 1 differentiation; these cells produce interferon-gamma to activate macrophages. Tumor necrosis factor supports granuloma integrity.",
-      "Not the best answer: Interleukin-5. Interleukin-12 drives T helper type 1 differentiation; these cells produce interferon-gamma to activate macrophages. Tumor necrosis factor supports granuloma integrity."
+      "IL-4 promotes T helper type 2 differentiation and alternative macrophage activation, not the classic Th1 response.",
+      "Th1-derived interferon-gamma activates macrophages to contain intracellular pathogens in granulomas.",
+      "IL-10 downregulates inflammatory macrophage activity, rather than providing the main Th1 activating signal.",
+      "IL-5 mainly activates eosinophils and supports IgA responses, not granulomatous macrophage activation."
     ],
     "teaching": "Interleukin-12 drives T helper type 1 differentiation; these cells produce interferon-gamma to activate macrophages. Tumor necrosis factor supports granuloma integrity."
   },
@@ -1833,10 +1833,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Selectin-mediated rolling. Activated leukocyte integrins (including LFA-1) bind endothelial ICAM-1 to mediate firm adhesion; PECAM-1 helps diapedesis.",
-      "Activated leukocyte integrins (including LFA-1) bind endothelial ICAM-1 to mediate firm adhesion; PECAM-1 helps diapedesis.",
-      "Not the best answer: Platelet aggregation. Activated leukocyte integrins (including LFA-1) bind endothelial ICAM-1 to mediate firm adhesion; PECAM-1 helps diapedesis.",
-      "Not the best answer: Chemotaxis through interstitial tissue. Activated leukocyte integrins (including LFA-1) bind endothelial ICAM-1 to mediate firm adhesion; PECAM-1 helps diapedesis."
+      "Rolling is mediated mainly by selectins; blocking ICAM-1 chiefly impairs a later step.",
+      "ICAM-1 binds activated leukocyte integrins such as LFA-1, stabilizing firm adhesion.",
+      "Platelet aggregation involves platelet receptors and hemostasis, not ICAM-1-dependent neutrophil recruitment.",
+      "Chemotaxis after extravasation follows gradients such as IL-8 and C5a, not primarily endothelial ICAM-1."
     ],
     "teaching": "Activated leukocyte integrins (including LFA-1) bind endothelial ICAM-1 to mediate firm adhesion; PECAM-1 helps diapedesis."
   },
@@ -1853,10 +1853,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Inflammation-associated interleukin-6 increases hepatic hepcidin, which internalizes and degrades ferroportin, reducing iron release and absorption.",
-      "Not the best answer: Erythropoietin. Inflammation-associated interleukin-6 increases hepatic hepcidin, which internalizes and degrades ferroportin, reducing iron release and absorption.",
-      "Not the best answer: Transferrin. Inflammation-associated interleukin-6 increases hepatic hepcidin, which internalizes and degrades ferroportin, reducing iron release and absorption.",
-      "Not the best answer: Haptoglobin. Inflammation-associated interleukin-6 increases hepatic hepcidin, which internalizes and degrades ferroportin, reducing iron release and absorption."
+      "Hepcidin binds ferroportin and causes its internalization, reducing macrophage iron release.",
+      "Erythropoietin stimulates marrow erythrocyte production and does not directly block ferroportin.",
+      "Transferrin transports circulating iron; it does not cause macrophage ferroportin degradation.",
+      "Haptoglobin binds free hemoglobin in plasma and is not the iron-export inhibitor in inflammation."
     ],
     "teaching": "Inflammation-associated interleukin-6 increases hepatic hepcidin, which internalizes and degrades ferroportin, reducing iron release and absorption."
   },
@@ -1873,10 +1873,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Transforming growth factor-beta. Vascular endothelial growth factor promotes endothelial growth and new capillary formation; transforming growth factor-beta is particularly associated with fibrosis.",
-      "Vascular endothelial growth factor promotes endothelial growth and new capillary formation; transforming growth factor-beta is particularly associated with fibrosis.",
-      "Not the best answer: Interferon-alpha. Vascular endothelial growth factor promotes endothelial growth and new capillary formation; transforming growth factor-beta is particularly associated with fibrosis.",
-      "Not the best answer: Interleukin-2. Vascular endothelial growth factor promotes endothelial growth and new capillary formation; transforming growth factor-beta is particularly associated with fibrosis."
+      "TGF-beta promotes fibrosis and extracellular matrix production rather than being the principal endothelial mitogen.",
+      "VEGF directly stimulates endothelial proliferation, migration, and new vessel formation.",
+      "Interferon-alpha has antiviral and antiproliferative effects, not the central granulation angiogenic role.",
+      "IL-2 drives T-lymphocyte proliferation and is not the principal angiogenesis factor."
     ],
     "teaching": "Vascular endothelial growth factor promotes endothelial growth and new capillary formation; transforming growth factor-beta is particularly associated with fibrosis."
   },
@@ -1893,10 +1893,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Not the best answer: Infiltrative invasion. Benign tumors generally remain localized and differentiated. Invasion and metastasis define malignant behavior.",
-      "Not the best answer: Distant metastases. Benign tumors generally remain localized and differentiated. Invasion and metastasis define malignant behavior.",
-      "Benign tumors generally remain localized and differentiated. Invasion and metastasis define malignant behavior.",
-      "Not the best answer: Marked cellular pleomorphism. Benign tumors generally remain localized and differentiated. Invasion and metastasis define malignant behavior."
+      "Invasion into surrounding tissue is a defining concern for malignancy, not a benign feature.",
+      "Distant metastasis is evidence of malignant dissemination and not expected of benign neoplasms.",
+      "Well-differentiated growth lacking stromal invasion strongly supports a benign neoplasm.",
+      "Marked pleomorphism and nuclear atypia favor malignancy, although interpretation depends on tumor context."
     ],
     "teaching": "Benign tumors generally remain localized and differentiated. Invasion and metastasis define malignant behavior."
   },
@@ -1913,10 +1913,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Enhanced cell-to-cell adhesion. E-cadherin (CDH1) maintains epithelial cell-cell adhesion; loss promotes discohesive growth and invasion.",
-      "E-cadherin (CDH1) maintains epithelial cell-cell adhesion; loss promotes discohesive growth and invasion.",
-      "Not the best answer: Inhibition of extracellular matrix degradation. E-cadherin (CDH1) maintains epithelial cell-cell adhesion; loss promotes discohesive growth and invasion.",
-      "Not the best answer: Induction of physiologic apoptosis. E-cadherin (CDH1) maintains epithelial cell-cell adhesion; loss promotes discohesive growth and invasion."
+      "E-cadherin loss reduces rather than enhances adhesion between epithelial tumor cells.",
+      "Loss of E-cadherin weakens epithelial cohesion and facilitates diffuse infiltration by individual cells.",
+      "Matrix degradation is driven by enzymes such as matrix metalloproteinases; E-cadherin loss does not inhibit it.",
+      "E-cadherin loss is not a programmed pro-apoptotic signal and can promote cancer invasion."
     ],
     "teaching": "E-cadherin (CDH1) maintains epithelial cell-cell adhesion; loss promotes discohesive growth and invasion."
   },
@@ -1933,10 +1933,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: BCL2. Burkitt lymphoma classically features t(8;14), placing MYC under immunoglobulin enhancer control and driving proliferation.",
-      "Burkitt lymphoma classically features t(8;14), placing MYC under immunoglobulin enhancer control and driving proliferation.",
-      "Not the best answer: RB1. Burkitt lymphoma classically features t(8;14), placing MYC under immunoglobulin enhancer control and driving proliferation.",
-      "Not the best answer: APC. Burkitt lymphoma classically features t(8;14), placing MYC under immunoglobulin enhancer control and driving proliferation."
+      "BCL2 from t(14;18) prevents apoptosis in follicular lymphoma, not the hallmark Burkitt growth signal.",
+      "MYC rearrangement, classically t(8;14), drives rapid proliferation in Burkitt lymphoma.",
+      "RB1 is a cell-cycle tumor suppressor, notably associated with retinoblastoma.",
+      "APC regulates beta-catenin/Wnt signaling and is implicated in colorectal tumorigenesis."
     ],
     "teaching": "Burkitt lymphoma classically features t(8;14), placing MYC under immunoglobulin enhancer control and driving proliferation."
   },
@@ -1953,10 +1953,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "BRCA1 and BRCA2 participate in homologous recombination DNA repair and function as tumor suppressors.",
-      "Not the best answer: Receptor tyrosine kinase signaling. BRCA1 and BRCA2 participate in homologous recombination DNA repair and function as tumor suppressors.",
-      "Not the best answer: RAS hydrolysis of guanosine triphosphate. BRCA1 and BRCA2 participate in homologous recombination DNA repair and function as tumor suppressors.",
-      "Not the best answer: Microtubule depolymerization. BRCA1 and BRCA2 participate in homologous recombination DNA repair and function as tumor suppressors."
+      "BRCA1 participates in homologous recombination repair of double-strand DNA breaks.",
+      "Receptor tyrosine kinase signaling depends on receptors such as EGFR/HER2, not BRCA1's principal function.",
+      "RAS GTP hydrolysis involves RAS intrinsic GTPase activity and GTPase-activating proteins, not BRCA1.",
+      "Microtubule disassembly is targeted by some anticancer drugs; BRCA1 is a DNA repair factor."
     ],
     "teaching": "BRCA1 and BRCA2 participate in homologous recombination DNA repair and function as tumor suppressors."
   },
@@ -1973,10 +1973,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Lambert-Eaton myasthenic syndrome involves antibodies against presynaptic P/Q-type voltage-gated calcium channels and is associated with small cell lung carcinoma.",
-      "Not the best answer: Papillary thyroid carcinoma. Lambert-Eaton myasthenic syndrome involves antibodies against presynaptic P/Q-type voltage-gated calcium channels and is associated with small cell lung carcinoma.",
-      "Not the best answer: Colorectal adenocarcinoma. Lambert-Eaton myasthenic syndrome involves antibodies against presynaptic P/Q-type voltage-gated calcium channels and is associated with small cell lung carcinoma.",
-      "Not the best answer: Basal cell carcinoma. Lambert-Eaton myasthenic syndrome involves antibodies against presynaptic P/Q-type voltage-gated calcium channels and is associated with small cell lung carcinoma."
+      "Small cell lung carcinoma is strongly linked to Lambert–Eaton syndrome through antibodies against presynaptic P/Q-type calcium channels.",
+      "Papillary thyroid carcinoma is not the classic malignancy associated with Lambert–Eaton syndrome.",
+      "Colorectal adenocarcinoma is not the characteristic paraneoplastic source of presynaptic calcium channel antibodies.",
+      "Basal cell carcinoma does not classically produce Lambert–Eaton neuromuscular transmission defects."
     ],
     "teaching": "Lambert-Eaton myasthenic syndrome involves antibodies against presynaptic P/Q-type voltage-gated calcium channels and is associated with small cell lung carcinoma."
   },
@@ -1993,10 +1993,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Vinyl chloride. Asbestos exposure strongly predisposes to mesothelioma and also increases bronchogenic carcinoma risk, especially with smoking.",
-      "Asbestos exposure strongly predisposes to mesothelioma and also increases bronchogenic carcinoma risk, especially with smoking.",
-      "Not the best answer: Aflatoxin B1. Asbestos exposure strongly predisposes to mesothelioma and also increases bronchogenic carcinoma risk, especially with smoking.",
-      "Not the best answer: Benzene. Asbestos exposure strongly predisposes to mesothelioma and also increases bronchogenic carcinoma risk, especially with smoking."
+      "Vinyl chloride exposure is associated with hepatic angiosarcoma, not mesothelioma.",
+      "Asbestos exposure is strongly associated with malignant pleural mesothelioma after long latency.",
+      "Aflatoxin B1 is linked to hepatocellular carcinoma, especially with hepatitis B co-exposure.",
+      "Benzene exposure increases hematologic malignancy risk, notably acute myeloid leukemia."
     ],
     "teaching": "Asbestos exposure strongly predisposes to mesothelioma and also increases bronchogenic carcinoma risk, especially with smoking."
   },
@@ -2013,10 +2013,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Epstein-Barr virus is strongly associated with endemic Burkitt lymphoma; MYC translocation is its key oncogenic driver.",
-      "Not the best answer: Human papillomavirus type 16. Epstein-Barr virus is strongly associated with endemic Burkitt lymphoma; MYC translocation is its key oncogenic driver.",
-      "Not the best answer: Hepatitis C virus. Epstein-Barr virus is strongly associated with endemic Burkitt lymphoma; MYC translocation is its key oncogenic driver.",
-      "Not the best answer: Human herpesvirus 8. Epstein-Barr virus is strongly associated with endemic Burkitt lymphoma; MYC translocation is its key oncogenic driver."
+      "Endemic African Burkitt lymphoma is strongly associated with Epstein–Barr virus.",
+      "HPV16 is associated with cervical and oropharyngeal squamous carcinoma, not endemic Burkitt lymphoma.",
+      "Hepatitis C virus is associated with some B-cell lymphomas but is not the classic endemic Burkitt association.",
+      "HHV8 is linked to Kaposi sarcoma and primary effusion lymphoma, not endemic Burkitt lymphoma."
     ],
     "teaching": "Epstein-Barr virus is strongly associated with endemic Burkitt lymphoma; MYC translocation is its key oncogenic driver."
   },
@@ -2033,10 +2033,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Alpha-fetoprotein. Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself.",
-      "Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself.",
-      "Not the best answer: Prostate-specific antigen. Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself.",
-      "Not the best answer: Calcitonin. Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself."
+      "Alpha-fetoprotein is a marker for hepatocellular carcinoma and yolk sac tumors, not the usual epithelial ovarian marker.",
+      "CA-125 is commonly used to monitor response and recurrence in epithelial ovarian carcinoma, though it is not specific for screening.",
+      "Prostate-specific antigen is primarily a prostate disease/cancer marker.",
+      "Calcitonin is used to monitor medullary thyroid carcinoma, not ovarian epithelial tumors."
     ],
     "teaching": "Cancer antigen 125 (CA-125) can help monitor epithelial ovarian carcinoma, but is nonspecific and is not diagnostic by itself."
   },
