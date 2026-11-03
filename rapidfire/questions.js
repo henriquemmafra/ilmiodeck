@@ -13,10 +13,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Circulating cytotoxic T lymphocytes. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
-      "Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
-      "Not the best answer: Intestinal secretory immunoglobulin A alone. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system.",
-      "Not the best answer: Complement-mediated viral lysis. Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system."
+      "CD8+ T cells kill infected cells, but circulating neutralizing antibodies are the key defense against paralytic spread.",
+      "Serum neutralizing antibodies block viremia and prevent poliovirus dissemination to the central nervous system.",
+      "Secretory IgA reduces intestinal replication and transmission, but is not the sole protection against paralysis.",
+      "Complement is not the principal correlate of protection against paralytic poliovirus infection."
     ],
     "teaching": "Circulating neutralizing antibodies prevent poliovirus from reaching the nervous system."
   },
@@ -33,10 +33,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
-      "Not the best answer: Absence of circulating neutralizing antibodies. Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
-      "Not the best answer: Selective production of immunoglobulin E. Oral live vaccine induces stronger intestinal secretory immunoglobulin A.",
-      "Not the best answer: Elimination of all memory lymphocytes. Oral live vaccine induces stronger intestinal secretory immunoglobulin A."
+      "Oral live-attenuated vaccine replicates in the gut and induces strong mucosal secretory IgA.",
+      "Both oral and injected vaccines can generate circulating neutralizing antibodies; the oral vaccine does not eliminate them.",
+      "IgE mainly mediates allergy and helminth defense, not the characteristic response to polio vaccination.",
+      "Effective vaccination generates memory lymphocytes rather than eliminating them."
     ],
     "teaching": "Oral live vaccine induces stronger intestinal secretory immunoglobulin A."
   },
@@ -53,10 +53,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Memory B lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
-      "Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
-      "Not the best answer: Memory cytotoxic T lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure.",
-      "Not the best answer: Naive B lymphocytes. Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure."
+      "Memory B cells rapidly differentiate on re-exposure; they do not continuously secrete most long-term serum antibody.",
+      "Long-lived plasma cells in bone marrow constitutively secrete antibodies for years.",
+      "Memory CD8+ T cells kill infected cells after reactivation; they do not secrete antibodies.",
+      "Naive B cells have not yet encountered their cognate antigen and are not sustained antibody factories."
     ],
     "teaching": "Long-lived plasma cells continuously secrete antibodies; memory B cells respond to re-exposure."
   },
@@ -73,10 +73,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Secretion of immunoglobulin G. Memory T cells mount rapid responses after re-exposure to an antigen.",
-      "Memory T cells mount rapid responses after re-exposure to an antigen.",
-      "Not the best answer: Continuous production of serum antibodies. Memory T cells mount rapid responses after re-exposure to an antigen.",
-      "Not the best answer: Conversion into bone marrow plasma cells. Memory T cells mount rapid responses after re-exposure to an antigen."
+      "Immunoglobulin G is secreted by plasma cells, not cytotoxic T lymphocytes.",
+      "Memory CD8+ T cells expand and differentiate into cytotoxic effectors that eliminate infected cells.",
+      "Persistent serum antibody is produced by long-lived plasma cells, not memory T cells.",
+      "Plasma cells develop from B-lineage cells; T cells do not convert into them."
     ],
     "teaching": "Memory T cells mount rapid responses after re-exposure to an antigen."
   },
@@ -93,10 +93,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Blocks muscarinic acetylcholine receptors. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
-      "Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
-      "Not the best answer: Inhibits acetylcholine release from nerve terminals. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging.",
-      "Not the best answer: Antagonizes nicotinic acetylcholine receptors. Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging."
+      "Atropine antagonizes muscarinic receptors; it does not reactivate acetylcholinesterase.",
+      "Pralidoxime removes the organophosphate group from acetylcholinesterase before aging, restoring enzyme activity.",
+      "Botulinum toxin inhibits presynaptic acetylcholine release; pralidoxime does not act this way.",
+      "Nicotinic receptor blockade would worsen neuromuscular weakness rather than reverse enzyme inhibition."
     ],
     "teaching": "Pralidoxime reactivates acetylcholinesterase by removing organophosphate before aging."
   },
@@ -113,10 +113,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: The toxin is eliminated only by the kidneys during the first hour. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
-      "Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
-      "Not the best answer: Atropine irreversibly destroys acetylcholine receptors. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation.",
-      "Not the best answer: Neuromuscular junctions stop using acetylcholine after six hours. Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation."
+      "Renal elimination within an arbitrary first hour does not explain pralidoxime's time-dependent efficacy.",
+      "After aging, the phosphorylated acetylcholinesterase-organophosphate complex becomes resistant to oxime reactivation.",
+      "Atropine competitively blocks muscarinic effects; it does not irreversibly destroy receptors.",
+      "Neuromuscular junctions continue to depend on acetylcholine; aging affects the inhibited enzyme, not transmitter usage."
     ],
     "teaching": "Aging stabilizes the organophosphate–acetylcholinesterase bond and prevents reactivation."
   },
@@ -133,10 +133,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Atropine alone. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
-      "Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
-      "Not the best answer: Diphenhydramine. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness.",
-      "Not the best answer: Physostigmine. Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness."
+      "Atropine relieves muscarinic bronchorrhea and bradycardia but does not restore acetylcholinesterase or directly correct nicotinic weakness.",
+      "Early pralidoxime reactivates acetylcholinesterase and can improve neuromuscular transmission.",
+      "Diphenhydramine is an H1 antihistamine; it does not reverse organophosphate inhibition.",
+      "Physostigmine inhibits acetylcholinesterase and can worsen cholinergic toxicity."
     ],
     "teaching": "Early pralidoxime restores acetylcholinesterase and can reverse nicotinic weakness."
   },
@@ -153,10 +153,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
-      "Not the best answer: High homocysteine, low methionine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
-      "Not the best answer: Low homocysteine, high cysteine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine.",
-      "Not the best answer: Low methionine, low homocysteine. Cystathionine beta-synthase deficiency raises both homocysteine and methionine."
+      "CBS deficiency prevents transsulfuration: homocysteine rises and more is remethylated to methionine.",
+      "High homocysteine with low methionine instead suggests a remethylation defect, such as impaired methionine synthase.",
+      "Homocysteine is elevated, not low, when cystathionine beta-synthase is deficient.",
+      "Both homocysteine and methionine are not expected to be low in classic CBS-deficient homocystinuria."
     ],
     "teaching": "Cystathionine beta-synthase deficiency raises both homocysteine and methionine."
   },
@@ -173,10 +173,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Cystathionine beta-synthase. Methionine synthase remethylates homocysteine to methionine.",
-      "Methionine synthase remethylates homocysteine to methionine.",
-      "Not the best answer: Phenylalanine hydroxylase. Methionine synthase remethylates homocysteine to methionine.",
-      "Not the best answer: Homogentisate dioxygenase. Methionine synthase remethylates homocysteine to methionine."
+      "CBS converts homocysteine to cystathionine; its deficiency typically increases methionine rather than lowering it.",
+      "Methionine synthase remethylates homocysteine to methionine; deficiency causes high homocysteine and low methionine.",
+      "Phenylalanine hydroxylase converts phenylalanine to tyrosine and is unrelated to this remethylation pattern.",
+      "Homogentisate dioxygenase is defective in alkaptonuria, not homocysteine remethylation."
     ],
     "teaching": "Methionine synthase remethylates homocysteine to methionine."
   },
@@ -193,10 +193,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "S-adenosylmethionine is the major activated methyl-group donor.",
-      "Not the best answer: S-adenosylhomocysteine. S-adenosylmethionine is the major activated methyl-group donor.",
-      "Not the best answer: Cystathionine. S-adenosylmethionine is the major activated methyl-group donor.",
-      "Not the best answer: Homocysteine. S-adenosylmethionine is the major activated methyl-group donor."
+      "S-adenosylmethionine (SAM) is the activated universal methyl donor synthesized from methionine and ATP.",
+      "S-adenosylhomocysteine is formed after SAM transfers its methyl group; it is not the active donor.",
+      "Cystathionine is an intermediate in transsulfuration toward cysteine synthesis.",
+      "Homocysteine is a precursor for remethylation or transsulfuration, not the activated methyl donor."
     ],
     "teaching": "S-adenosylmethionine is the major activated methyl-group donor."
   },
@@ -213,10 +213,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Vitamin B1 (thiamine). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
-      "Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
-      "Not the best answer: Vitamin B12 (cobalamin). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6.",
-      "Not the best answer: Vitamin B3 (niacin). Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6."
+      "Thiamine (B1) supports oxidative decarboxylation and transketolase, not CBS catalysis.",
+      "Cystathionine beta-synthase requires pyridoxal phosphate, the active form of vitamin B6.",
+      "Cobalamin (B12) is needed for methionine synthase, not the CBS transsulfuration reaction.",
+      "Niacin (B3) forms NAD+/NADP+ electron carriers, not the CBS cofactor."
     ],
     "teaching": "Cystathionine beta-synthase requires pyridoxal phosphate derived from vitamin B6."
   },
@@ -233,10 +233,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Fructokinase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
-      "Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
-      "Not the best answer: Galactokinase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake.",
-      "Not the best answer: Galactose-1-phosphate uridylyltransferase. Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake."
+      "Fructokinase deficiency causes essential fructosuria, usually benign without severe hypoglycemia or liver injury.",
+      "Aldolase B deficiency traps fructose-1-phosphate, depleting phosphate and impairing hepatic glucose production.",
+      "Galactokinase deficiency classically causes infantile cataracts, not fructose-triggered hepatic injury.",
+      "GALT deficiency causes classic galactosemia after milk/galactose exposure, not selective intolerance to fruit fructose."
     ],
     "teaching": "Aldolase B deficiency causes toxic fructose-1-phosphate accumulation after fructose intake."
   },
@@ -253,10 +253,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
-      "Not the best answer: Excess insulin secretion from pancreatic beta cells. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
-      "Not the best answer: Accelerated galactose oxidation. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis.",
-      "Not the best answer: Overactivation of glycogen phosphorylase. Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis."
+      "Fructose-1-phosphate traps inorganic phosphate and depletes ATP, inhibiting glycogenolysis and gluconeogenesis.",
+      "Insulin excess is not the primary mechanism of hypoglycemia in aldolase B deficiency.",
+      "Galactose oxidation belongs to a different carbohydrate pathway and does not explain fructose phosphate trapping.",
+      "Glycogen phosphorylase is functionally impaired by phosphate depletion rather than overactivated."
     ],
     "teaching": "Trapped inorganic phosphate depletes ATP and impairs glycogenolysis and gluconeogenesis."
   },
@@ -273,10 +273,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Galactokinase. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
-      "Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
-      "Not the best answer: Fructokinase. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia.",
-      "Not the best answer: Aldolase B. Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia."
+      "Galactokinase deficiency most often produces galactitol-related cataracts without the typical severe systemic disease.",
+      "GALT deficiency accumulates galactose-1-phosphate and causes neonatal liver injury, cataracts, and infection risk.",
+      "Fructokinase deficiency causes benign essential fructosuria rather than milk-triggered galactosemia.",
+      "Aldolase B deficiency causes hereditary fructose intolerance after fructose/sucrose exposure."
     ],
     "teaching": "Galactose-1-phosphate uridylyltransferase deficiency causes classic systemic galactosemia."
   },
@@ -293,10 +293,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Galactokinase deficiency increases galactose conversion to lens galactitol.",
-      "Not the best answer: Aldolase B. Galactokinase deficiency increases galactose conversion to lens galactitol.",
-      "Not the best answer: Glucose-6-phosphatase. Galactokinase deficiency increases galactose conversion to lens galactitol.",
-      "Not the best answer: Cystathionine beta-synthase. Galactokinase deficiency increases galactose conversion to lens galactitol."
+      "Galactokinase deficiency permits galactose accumulation and conversion to galactitol in the lens, causing cataracts.",
+      "Aldolase B deficiency affects fructose metabolism and typically produces hypoglycemia and liver injury.",
+      "Glucose-6-phosphatase deficiency causes von Gierke disease with fasting hypoglycemia and hepatomegaly.",
+      "CBS deficiency causes homocystinuria, with thrombosis and lens subluxation rather than isolated galactitol cataracts."
     ],
     "teaching": "Galactokinase deficiency increases galactose conversion to lens galactitol."
   },
@@ -313,10 +313,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
-      "Not the best answer: Myeloperoxidase alone. NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
-      "Not the best answer: Leukocyte integrin subunit beta-2. NADPH oxidase deficiency impairs the neutrophil respiratory burst.",
-      "Not the best answer: Complement component 3 (a central complement protein). NADPH oxidase deficiency impairs the neutrophil respiratory burst."
+      "NADPH oxidase deficiency impairs respiratory burst and yields an abnormal dihydrorhodamine assay in chronic granulomatous disease.",
+      "Isolated myeloperoxidase deficiency generally preserves the NADPH oxidase burst measured by DHR.",
+      "CD18 integrin deficiency causes leukocyte adhesion deficiency with delayed cord separation and absent pus.",
+      "C3 deficiency compromises opsonization, not the neutrophil oxidative burst measured by DHR."
     ],
     "teaching": "NADPH oxidase deficiency impairs the neutrophil respiratory burst."
   },
@@ -333,10 +333,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
-      "Not the best answer: Defective oxidative burst in neutrophils. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
-      "Not the best answer: Absent immunoglobulin A only. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration.",
-      "Not the best answer: Defective thymic development. Defective beta-2 integrin prevents neutrophil adhesion and tissue migration."
+      "CD18 beta-2 integrin dysfunction prevents firm neutrophil adhesion and extravasation, causing neutrophilia and minimal pus.",
+      "NADPH oxidase deficiency causes chronic granulomatous disease, typically with catalase-positive infections, not absent adhesion.",
+      "Selective IgA deficiency predisposes to mucosal infections but does not cause delayed cord separation and profound neutrophilia.",
+      "Thymic aplasia impairs T-cell maturation, leading to DiGeorge-associated immunodeficiency and hypocalcemia."
     ],
     "teaching": "Defective beta-2 integrin prevents neutrophil adhesion and tissue migration."
   },
@@ -353,10 +353,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
-      "Not the best answer: Failure of T lymphocyte selection only. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
-      "Not the best answer: Excess complement activation. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development.",
-      "Not the best answer: Deficiency of platelet adhesion receptors. Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development."
+      "BTK deficiency arrests B-cell maturation, yielding absent B cells, low immunoglobulins, and small or absent tonsils.",
+      "Isolated T-cell selection defects do not specifically explain near-absence of B cells and tonsillar tissue.",
+      "Excess complement activation does not produce the profound pan-immunoglobulin deficiency of X-linked agammaglobulinemia.",
+      "Platelet adhesion receptor defects cause bleeding disorders, not absent mature B cells."
     ],
     "teaching": "Bruton tyrosine kinase deficiency blocks B-cell maturation and tonsil development."
   },
@@ -373,10 +373,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Not the best answer: First pharyngeal pouch. The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
-      "Not the best answer: Second pharyngeal pouch. The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
-      "The third pharyngeal pouch forms the thymus and inferior parathyroid glands.",
-      "Not the best answer: Fourth pharyngeal cleft. The third pharyngeal pouch forms the thymus and inferior parathyroid glands."
+      "The first pharyngeal pouch contributes to the middle ear cavity and auditory tube, not thymus formation.",
+      "The second pharyngeal pouch contributes to palatine tonsillar epithelium, not thymic tissue.",
+      "The third pharyngeal pouch forms thymus and inferior parathyroids; its abnormal development explains T-cell deficiency and hypocalcemia.",
+      "The fourth pharyngeal cleft is not the developmental origin of the thymus; superior parathyroids derive from the fourth pouch."
     ],
     "teaching": "The third pharyngeal pouch forms the thymus and inferior parathyroid glands."
   },
@@ -393,10 +393,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Defective CD40 ligand signaling impairs immunoglobulin class switching.",
-      "Not the best answer: Antigen-independent T receptor rearrangement. Defective CD40 ligand signaling impairs immunoglobulin class switching.",
-      "Not the best answer: Neutrophil migration through endothelium. Defective CD40 ligand signaling impairs immunoglobulin class switching.",
-      "Not the best answer: Complement membrane attack complex formation. Defective CD40 ligand signaling impairs immunoglobulin class switching."
+      "Defective CD40–CD40L signaling prevents B-cell class-switch recombination, leaving IgM normal/high and IgG/IgA low.",
+      "T-cell receptor rearrangement concerns T-cell development, not immunoglobulin heavy-chain class switching.",
+      "Defective neutrophil extravasation characterizes leukocyte adhesion deficiency, not a selective class-switch defect.",
+      "Membrane attack complex deficiency predisposes to Neisseria infections and does not cause a hyper-IgM profile."
     ],
     "teaching": "Defective CD40 ligand signaling impairs immunoglobulin class switching."
   },
@@ -413,10 +413,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Primary biliary cholangitis. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
-      "Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
-      "Not the best answer: Acute calculous cholecystitis. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis.",
-      "Not the best answer: Gilbert syndrome. Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis."
+      "Primary biliary cholangitis is autoimmune destruction of small intrahepatic ducts, often with antimitochondrial antibodies.",
+      "Primary sclerosing cholangitis causes multifocal intra- and extrahepatic strictures and is associated with ulcerative colitis.",
+      "Acute calculous cholecystitis causes gallbladder inflammation rather than multifocal beading of bile ducts.",
+      "Gilbert syndrome causes unconjugated hyperbilirubinemia, not cholestatic duct strictures."
     ],
     "teaching": "Primary sclerosing cholangitis causes multifocal biliary strictures and is associated with ulcerative colitis."
   },
@@ -434,9 +434,9 @@ window.RAPIDFIRE_QUESTIONS = [
     "answer": 0,
     "explanations": [
       "Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
-      "Not the best answer: Large extrahepatic bile ducts. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
-      "Not the best answer: Pancreatic islet beta cells. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies.",
-      "Not the best answer: Hepatic portal veins. Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies."
+      "Large intra- and extrahepatic duct stricturing is more characteristic of primary sclerosing cholangitis.",
+      "Pancreatic beta-cell destruction produces type 1 diabetes, not autoimmune cholangitis.",
+      "Portal venous injury is not the primary lesion of primary biliary cholangitis."
     ],
     "teaching": "Primary biliary cholangitis targets small intrahepatic bile ducts and is associated with antimitochondrial antibodies."
   },
@@ -453,10 +453,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Open adenosine triphosphate-sensitive potassium channels. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
-      "Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
-      "Not the best answer: Block voltage-gated calcium channels. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels.",
-      "Not the best answer: Destroy the insulin receptor. Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels."
+      "Opening beta-cell KATP channels hyperpolarizes the membrane and reduces insulin release.",
+      "Sulfonylureas bind SUR1 to close ATP-sensitive K+ channels, causing depolarization, Ca2+ influx, and insulin secretion.",
+      "Calcium channel blockade reduces the Ca2+ signal needed for insulin granule exocytosis.",
+      "Insulin receptor destruction would cause insulin resistance rather than stimulate secretion."
     ],
     "teaching": "Closing ATP-sensitive potassium channels depolarizes beta cells and opens calcium channels."
   },
@@ -473,10 +473,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Serotonin syndrome. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
-      "Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
-      "Not the best answer: Malignant hyperthermia triggered by anesthetics. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase.",
-      "Not the best answer: Organophosphate poisoning. Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase."
+      "Serotonin syndrome usually causes hyperreflexia, clonus, and gastrointestinal hyperactivity rather than lead-pipe rigidity.",
+      "Dopamine D2 receptor blockade can cause neuroleptic malignant syndrome with severe rigidity, fever, and elevated CK.",
+      "Malignant hyperthermia follows triggering anesthetics and involves uncontrolled skeletal-muscle calcium release.",
+      "Organophosphate poisoning causes muscarinic secretions, miosis, and fasciculations, not the typical dopamine-blockade syndrome."
     ],
     "teaching": "Dopamine D2 receptor blockade causes severe rigidity, hyperthermia, and elevated creatine kinase."
   },
@@ -493,10 +493,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Not the best answer: Neuroleptic malignant syndrome. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
-      "Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
-      "Not the best answer: Anticholinergic toxicity. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability.",
-      "Not the best answer: Opioid withdrawal. Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability."
+      "Neuroleptic malignant syndrome usually has lead-pipe rigidity and reduced reflexes without characteristic clonus.",
+      "Excess serotonin causes agitation, autonomic hyperactivity, diarrhea, hyperreflexia, and clonus.",
+      "Anticholinergic toxicity causes dry skin and mucosa, urinary retention, and reduced bowel sounds, not diarrhea and clonus.",
+      "Opioid withdrawal causes autonomic and gastrointestinal symptoms but clonus and serotonergic drug interaction favor serotonin syndrome."
     ],
     "teaching": "Serotonin syndrome typically causes clonus, hyperreflexia, and autonomic instability."
   },
@@ -513,10 +513,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Not the best answer: 5. Number needed to treat is the reciprocal of absolute risk reduction.",
-      "Not the best answer: 10. Number needed to treat is the reciprocal of absolute risk reduction.",
-      "Number needed to treat is the reciprocal of absolute risk reduction.",
-      "Not the best answer: 50. Number needed to treat is the reciprocal of absolute risk reduction."
+      "NNT is 1 divided by absolute risk reduction; a 5% reduction does not yield 5.",
+      "Ten corresponds to a 10% absolute risk reduction, but here the difference is only 5 percentage points.",
+      "Absolute risk reduction = 0.10 − 0.05 = 0.05; NNT = 1/0.05 = 20.",
+      "Fifty would correspond to a 2% absolute risk reduction, not 5%."
     ],
     "teaching": "Number needed to treat is the reciprocal of absolute risk reduction."
   },
@@ -1179,8 +1179,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Immunoglobulin A deficiency can cause recurrent infections but not characteristic ciliary dysfunction."
     ],
     "teaching": "Primary ciliary dyskinesia: low nasal nitric oxide and normal sweat chloride; cystic fibrosis: elevated sweat chloride."
-  }
-,
+  },
   {
     "id": "ecoli-k1-neonatal-meningitis",
     "topic": "Microbiology",
@@ -1420,8 +1419,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Splenectomy does not prevent neutrophil generation in the marrow."
     ],
     "teaching": "Encapsulated organisms resist phagocytosis; the spleen is crucial for their blood clearance."
-  }
-,
+  },
   {
     "id": "oncogene-kras-activating",
     "topic": "Genetics",
