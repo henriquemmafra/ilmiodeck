@@ -3939,5 +3939,105 @@ window.RAPIDFIRE_QUESTIONS = [
       "5.8S ribosomal RNA is derived from the precursor made by RNA polymerase I."
     ],
     "teaching": "Do not confuse 5S with 5.8S: 5S uses polymerase III; 5.8S uses polymerase I."
-  }
+  },
+{
+  "id": "msud-20261103-diagnosis",
+  "topic": "Biochemistry",
+  "level": 1,
+  "stem": "A 3-month-old infant has poor feeding, vomiting, lethargy, intermittent abnormal muscle tone, and urine with a sweet maple-syrup odor. Plasma amino acid analysis reveals elevated alloisoleucine. Which diagnosis best explains these findings?",
+  "options": [
+    "Phenylketonuria",
+    "Maple syrup urine disease",
+    "Classic homocystinuria",
+    "Tyrosinemia type I"
+  ],
+  "answer": 1,
+  "explanations": [
+    "Phenylketonuria causes elevated phenylalanine, developmental impairment, and a musty or mousy odor, not the characteristic alloisoleucine elevation.",
+    "Maple syrup urine disease causes accumulation of branched-chain amino acids and their keto acids; alloisoleucine and maple-syrup odor are strong clues.",
+    "Classic homocystinuria causes lens subluxation (downward), thrombosis, and marfanoid features due to impaired methionine metabolism.",
+    "Tyrosinemia type I causes hepatic dysfunction, renal Fanconi syndrome, and elevated succinylacetone rather than a maple-syrup odor."
+  ],
+  "teaching": "MSUD: sweet urine + neonatal encephalopathy + elevated alloisoleucine. Branched-chain amino acids are leucine, isoleucine, and valine (I Love Vermont)."
+},
+{
+  "id": "msud-20261103-enzyme",
+  "topic": "Biochemistry",
+  "level": 2,
+  "stem": "An infant develops metabolic encephalopathy because oxidative decarboxylation of branched-chain alpha-keto acids is impaired. Which enzyme complex is deficient?",
+  "options": [
+    "Phenylalanine hydroxylase",
+    "Branched-chain alpha-ketoacid dehydrogenase",
+    "Homogentisate oxidase",
+    "Cystathionine beta-synthase"
+  ],
+  "answer": 1,
+  "explanations": [
+    "Phenylalanine hydroxylase deficiency causes phenylketonuria; it blocks phenylalanine-to-tyrosine conversion.",
+    "Branched-chain alpha-ketoacid dehydrogenase deficiency causes MSUD after the initial transamination of leucine, isoleucine, and valine.",
+    "Homogentisate oxidase deficiency causes alkaptonuria, associated with ochronosis and darkening urine on standing.",
+    "Cystathionine beta-synthase deficiency causes classic homocystinuria, with elevated homocysteine and methionine."
+  ],
+  "teaching": "MSUD blocks the oxidative decarboxylation step after BCAA transamination. Branched-chain alpha-ketoacid dehydrogenase uses thiamine (B1), lipoate, coenzyme A (B5), FAD (B2), and NAD+ (B3)."
+},
+{
+  "id": "msud-20261103-diet",
+  "topic": "Biochemistry",
+  "level": 2,
+  "stem": "A child with confirmed maple syrup urine disease begins long-term nutritional therapy. Which amino acid group must be carefully restricted while providing enough nutrients for growth?",
+  "options": [
+    "Methionine",
+    "Phenylalanine",
+    "Leucine, isoleucine, and valine",
+    "Tyrosine"
+  ],
+  "answer": 2,
+  "explanations": [
+    "Methionine restriction may be used in classic homocystinuria, depending on biochemical response and management plan.",
+    "Phenylalanine restriction is the main dietary strategy for phenylketonuria.",
+    "All three branched-chain amino acids require controlled intake in MSUD; leucine is particularly neurotoxic, and measured isoleucine and valine must still be supplied for growth.",
+    "Tyrosine and phenylalanine restriction with nitisinone is used in tyrosinemia type I."
+  ],
+  "teaching": "MSUD diet: restrict BCAAs (Ile, Leu, Val), not eliminate essential amino acids entirely. Use specialized BCAA-free formula plus prescribed amounts and plasma amino acid monitoring."
+},
+{
+  "id": "msud-20261103-crisis",
+  "topic": "Biochemistry",
+  "level": 3,
+  "stem": "A previously stable child with maple syrup urine disease develops fever, vomiting, ataxia, and encephalopathy during an infection. Which immediate metabolic strategy is most appropriate?",
+  "options": [
+    "Increase natural protein to replace lost calories",
+    "Reverse catabolism using high-calorie glucose-containing support and urgently manage elevated leucine",
+    "Restrict only dietary tyrosine and start nitisinone",
+    "Give phenylalanine hydroxylase replacement"
+  ],
+  "answer": 1,
+  "explanations": [
+    "Extra natural protein can increase branched-chain amino acid load and worsen the crisis; nutrition must be managed by a metabolic specialist.",
+    "An MSUD crisis requires urgent hospital management: temporarily hold natural protein, give high-calorie intravenous dextrose (often with lipids), treat triggers, and monitor amino acids; severe cases may require dialysis.",
+    "Nitisinone with restriction of tyrosine and phenylalanine treats tyrosinemia type I, not MSUD.",
+    "Phenylalanine hydroxylase is involved in phenylketonuria, not the branched-chain alpha-ketoacid dehydrogenase defect."
+  ],
+  "teaching": "In MSUD, infection and fasting trigger protein breakdown and leucine accumulation. Crisis = urgent anti-catabolic support and specialist-directed amino acid management; dialysis may be needed if severe."
+},
+{
+  "id": "msud-20261103-differential",
+  "topic": "Biochemistry",
+  "level": 3,
+  "stem": "A 9-month-old child has progressive macrocephaly, dystonia, and bilateral basal ganglia injury during a febrile illness. Organic acid testing shows elevated glutaric acid and 3-hydroxyglutaric acid. Which dietary amino acid restriction targets the primary defect?",
+  "options": [
+    "Lysine",
+    "Valine",
+    "Methionine",
+    "Phenylalanine"
+  ],
+  "answer": 0,
+  "explanations": [
+    "Glutaric aciduria type I is caused by glutaryl-CoA dehydrogenase deficiency in lysine (and tryptophan) catabolism; lysine restriction with special formula and carnitine is a key treatment.",
+    "Valine is one of the branched-chain amino acids restricted in maple syrup urine disease, which classically features sweet-smelling urine and elevated alloisoleucine.",
+    "Methionine restriction can be indicated in classic homocystinuria, associated with thrombosis and lens subluxation.",
+    "Phenylalanine restriction is used in phenylketonuria, which features excess phenylalanine and may cause a musty odor."
+  ],
+  "teaching": "Differentiate diets: MSUD = Ile/Leu/Val; PKU = phenylalanine; homocystinuria = methionine (selected patients); tyrosinemia I = tyrosine + phenylalanine; glutaric aciduria I = lysine."
+}
 ];
