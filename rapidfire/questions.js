@@ -4919,5 +4919,505 @@ window.RAPIDFIRE_QUESTIONS = [
       "C1 esterase inhibitor baixo causa angioedema hereditário."
     ],
     "teaching": "Bare lymphocyte syndrome tipo II = MHC II baixo/ausente → ativação e seleção de CD4+ prejudicadas; infecções oportunistas."
+  },
+  {
+    "id": "endocrine-addison",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A patient has fatigue, darkened skin, orthostatic hypotension, hyponatremia, and hyperkalemia. Which hormonal pattern is expected?",
+    "options": [
+      "Low ACTH with normal aldosterone",
+      "High ACTH with low cortisol and low aldosterone",
+      "Low ACTH with high cortisol",
+      "High aldosterone with suppressed renin"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Secondary insufficiency lowers ACTH and often preserves aldosterone.",
+      "Primary adrenal failure reduces both cortisol and aldosterone; feedback raises ACTH and causes pigmentation.",
+      "ACTH and cortisol generally move in the same direction when the pituitary drives production.",
+      "Aldosterone excess causes hypertension and potassium loss."
+    ],
+    "teaching": "Primary adrenal insufficiency: low cortisol, low aldosterone, high ACTH; hyperkalemia distinguishes it from most secondary causes."
+  },
+  {
+    "id": "endocrine-secondary-adrenal",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A patient with pituitary damage has low morning cortisol and low ACTH but no hyperkalemia. Why is potassium often normal?",
+    "options": [
+      "Aldosterone is largely regulated by angiotensin II and potassium",
+      "ACTH has no effect on cortisol",
+      "The pituitary directly releases aldosterone",
+      "The distal nephron cannot secrete potassium"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correct: the renin–angiotensin–aldosterone system remains relatively intact.",
+      "ACTH is the principal trophic stimulus for cortisol release.",
+      "Aldosterone is synthesized in the adrenal zona glomerulosa.",
+      "Potassium secretion usually remains functional when aldosterone is preserved."
+    ],
+    "teaching": "Secondary adrenal insufficiency preserves mineralocorticoid activity in most patients."
+  },
+  {
+    "id": "endocrine-21hydrox",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A neonate with vomiting, dehydration, hyperkalemia, and virilization has elevated 17-hydroxyprogesterone. Which enzyme is defective?",
+    "options": [
+      "11β-hydroxylase",
+      "17α-hydroxylase",
+      "21-hydroxylase",
+      "Aromatase"
+    ],
+    "answer": 2,
+    "explanations": [
+      "11β deficiency causes androgen excess but usually hypertension from deoxycorticosterone.",
+      "17α deficiency causes low sex steroids and hypertension, not virilization.",
+      "Correct: reduced cortisol and aldosterone with increased adrenal androgen synthesis.",
+      "Aromatase deficiency affects estrogen synthesis and does not explain salt wasting from low aldosterone."
+    ],
+    "teaching": "21-hydroxylase deficiency = salt wasting + virilization + increased 17-hydroxyprogesterone."
+  },
+  {
+    "id": "endocrine-11beta",
+    "topic": "Endocrinology",
+    "level": 3,
+    "stem": "A child has virilization, hypertension, and hypokalemia. Cortisol is low, but 11-deoxycorticosterone is high. Which defect explains the findings?",
+    "options": [
+      "21-hydroxylase deficiency",
+      "11β-hydroxylase deficiency",
+      "Aldosterone synthase deficiency",
+      "5α-reductase deficiency"
+    ],
+    "answer": 1,
+    "explanations": [
+      "21-hydroxylase deficiency typically causes low blood pressure and hyperkalemia.",
+      "Correct: excess 11-deoxycorticosterone produces mineralocorticoid effects despite low aldosterone.",
+      "Aldosterone synthase deficiency produces salt wasting, not hypertension.",
+      "5α-reductase deficiency impairs dihydrotestosterone production and does not cause this adrenal profile."
+    ],
+    "teaching": "11β-hydroxylase deficiency: androgen excess plus hypertension from 11-deoxycorticosterone."
+  },
+  {
+    "id": "endocrine-pheo-block",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "Before resection of a catecholamine-producing adrenal tumor, which blockade should be established first?",
+    "options": [
+      "Beta-adrenergic blockade before alpha blockade",
+      "Alpha-adrenergic blockade before beta blockade",
+      "Aldosterone receptor blockade alone",
+      "Muscarinic receptor blockade alone"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Early beta blockade can leave unopposed alpha-mediated vasoconstriction and trigger severe hypertension.",
+      "Correct: establish alpha blockade, then add beta blockade for tachycardia when needed.",
+      "Mineralocorticoid blockade does not treat catecholamine-mediated vasoconstriction.",
+      "Muscarinic blockade does not target the dominant catecholamine receptors."
+    ],
+    "teaching": "Pheochromocytoma: alpha before beta."
+  },
+  {
+    "id": "endocrine-hypercalcemia-granuloma",
+    "topic": "Endocrinology",
+    "level": 3,
+    "stem": "A patient with pulmonary granulomas develops hypercalcemia, low PTH, and elevated 1,25-dihydroxyvitamin D. What increases the active vitamin D?",
+    "options": [
+      "Parathyroid chief-cell hyperplasia",
+      "Extrarenal macrophage 1α-hydroxylase activity",
+      "Suppression of intestinal calcium transport",
+      "PTH-related peptide from a tumor"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Primary hyperparathyroidism would usually raise PTH.",
+      "Correct: activated macrophages in granulomas convert vitamin D to calcitriol.",
+      "Active vitamin D increases rather than suppresses calcium absorption.",
+      "PTH-related peptide can raise calcium but does not explain increased calcitriol from granulomas."
+    ],
+    "teaching": "Sarcoidosis may cause PTH-independent hypercalcemia via macrophage 1α-hydroxylase."
+  },
+  {
+    "id": "endocrine-sheehan",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A patient develops failure to lactate, amenorrhea, fatigue, and hypotension after severe postpartum hemorrhage. Which mechanism is most likely?",
+    "options": [
+      "Autoimmune destruction of adrenal cortex",
+      "Ischemic infarction of the anterior pituitary",
+      "Posterior pituitary oxytocin overproduction",
+      "An activating prolactin receptor mutation"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Addison disease does not directly explain failure to lactate after hemorrhage.",
+      "Correct: hypoperfusion of the enlarged anterior pituitary causes Sheehan syndrome.",
+      "Excess oxytocin does not cause combined anterior pituitary hormone deficiency.",
+      "Increased prolactin action would not explain absent milk production."
+    ],
+    "teaching": "Sheehan syndrome = postpartum hemorrhage → anterior pituitary infarction → low prolactin and other pituitary hormones."
+  },
+  {
+    "id": "endocrine-lithium-di",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A patient taking lithium has marked polyuria, hypernatremia, dilute urine, and minimal response to desmopressin. What is the diagnosis?",
+    "options": [
+      "Central diabetes insipidus",
+      "Syndrome of inappropriate antidiuretic hormone secretion",
+      "Nephrogenic diabetes insipidus",
+      "Primary hyperaldosteronism"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Central diabetes insipidus typically improves with desmopressin.",
+      "Inappropriate antidiuretic hormone secretion causes water retention and concentrated urine.",
+      "Correct: renal collecting ducts resist antidiuretic hormone; lithium is a classic cause.",
+      "Aldosterone excess does not produce the defining desmopressin resistance."
+    ],
+    "teaching": "Lithium → nephrogenic diabetes insipidus; desmopressin response is blunted."
+  },
+  {
+    "id": "pulm-potter",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A neonate born after prolonged severe oligohydramnios has small lungs and respiratory failure. Which developmental process was impaired?",
+    "options": [
+      "Normal fetal lung expansion and alveolar development",
+      "Separation of trachea from esophagus alone",
+      "Surfactant breakdown by alveolar macrophages",
+      "Postnatal closure of the ductus arteriosus"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correct: reduced amniotic fluid compresses fetal lungs, causing pulmonary hypoplasia.",
+      "A tracheoesophageal septation defect causes a different pattern of symptoms.",
+      "Surfactant deficiency can cause distress but not explain small lungs from oligohydramnios.",
+      "Ductus closure does not determine fetal lung size."
+    ],
+    "teaching": "Potter sequence / prolonged oligohydramnios → pulmonary hypoplasia."
+  },
+  {
+    "id": "pulm-surfactant",
+    "topic": "Pulmonology",
+    "level": 1,
+    "stem": "A premature infant has diffuse ground-glass pulmonary opacities and poor lung compliance shortly after birth. Which substance is deficient?",
+    "options": [
+      "Alveolar elastin",
+      "Surfactant from type II pneumocytes",
+      "Mucus from goblet cells",
+      "Nitric oxide from airway nerves"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Elastin supports recoil but is not the primary neonatal deficiency.",
+      "Correct: low surfactant raises surface tension and causes alveolar collapse.",
+      "Goblet-cell mucus is not the substance that prevents alveolar collapse.",
+      "Nitric oxide modulates vascular tone, not alveolar surface tension in this syndrome."
+    ],
+    "teaching": "Neonatal respiratory distress syndrome = type II pneumocyte surfactant deficiency."
+  },
+  {
+    "id": "pulm-bochdalek",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A neonate has a scaphoid abdomen, left-sided bowel sounds in the chest, and respiratory distress. Which embryologic defect is responsible?",
+    "options": [
+      "Failure of pleuroperitoneal membrane closure",
+      "Failure of foregut rotation",
+      "Persistent thyroglossal duct",
+      "Failure of the septum primum to fuse"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correct: posterolateral congenital diaphragmatic hernia results from incomplete pleuroperitoneal membrane fusion.",
+      "Foregut rotation abnormalities do not create a posterolateral diaphragm defect.",
+      "Thyroglossal remnants cause a midline neck lesion.",
+      "Atrial septal defects do not allow abdominal viscera into the chest."
+    ],
+    "teaching": "Bochdalek hernia: posterolateral, often left, with pulmonary hypoplasia."
+  },
+  {
+    "id": "pulm-choanal",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A newborn becomes cyanotic during feeding but improves when crying; a catheter cannot pass through either nostril. Which anomaly is most likely?",
+    "options": [
+      "Laryngomalacia",
+      "Bilateral choanal atresia",
+      "Tracheoesophageal fistula",
+      "Unilateral vocal fold paralysis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Laryngomalacia typically causes inspiratory stridor.",
+      "Correct: blocked posterior nasal openings cause distress in an obligate nasal-breathing neonate; crying enables oral breathing.",
+      "Tracheoesophageal fistula classically causes choking with feeding, not bilateral nasal catheter obstruction.",
+      "Vocal fold paralysis does not obstruct nasal catheter passage."
+    ],
+    "teaching": "Choanal atresia: cyanosis relieved by crying plus inability to pass nasal catheter."
+  },
+  {
+    "id": "pulm-aspiration-position",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "An intoxicated patient aspirates gastric contents while lying supine. Which pulmonary region is especially vulnerable?",
+    "options": [
+      "Left upper lobe apical segment only",
+      "Posterior upper lobes or superior lower-lobe segments",
+      "Anterior upper-lobe segments exclusively",
+      "Lingular segments exclusively"
+    ],
+    "answer": 1,
+    "explanations": [
+      "This is not the typical dependent supine distribution.",
+      "Correct: gravitationally dependent posterior upper lobes and superior lower lobes are at risk.",
+      "Anterior upper-lobe segments are less dependent when supine.",
+      "The lingula is not the classic distribution in a supine patient."
+    ],
+    "teaching": "Aspiration distribution depends on position: supine posterior upper / superior lower; upright basal lower lobes."
+  },
+  {
+    "id": "pulm-phrenic",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "After cardiac surgery, one hemidiaphragm moves upward during inspiration. Which nerve was most likely injured?",
+    "options": [
+      "Vagus nerve",
+      "Phrenic nerve (C3–C5)",
+      "Long thoracic nerve",
+      "Recurrent laryngeal nerve"
+    ],
+    "answer": 1,
+    "explanations": [
+      "The vagus is not the main motor supply to the diaphragm.",
+      "Correct: phrenic injury paralyzes the hemidiaphragm, allowing paradoxical motion.",
+      "Long thoracic injury causes scapular winging.",
+      "Recurrent laryngeal injury causes hoarseness or vocal fold paralysis."
+    ],
+    "teaching": "Phrenic nerve (C3–C5) travels along pericardium; damage causes hemidiaphragm paralysis."
+  },
+  {
+    "id": "pulm-hypoxic-vasoconstriction",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "An alveolus becomes poorly ventilated and its oxygen tension falls. What happens to its supplying pulmonary arteriole?",
+    "options": [
+      "Vasodilates to maximize shunt",
+      "Constrains blood flow by vasoconstriction",
+      "No response because pulmonary vessels lack oxygen sensors",
+      "Increases flow exclusively through beta-2 activation"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Vasodilation would worsen ventilation–perfusion mismatch.",
+      "Correct: hypoxic pulmonary vasoconstriction redirects perfusion to better ventilated lung.",
+      "Pulmonary resistance vessels respond to local alveolar oxygen.",
+      "Beta-2 stimulation is not the defining hypoxic pulmonary response."
+    ],
+    "teaching": "Pulmonary vessels constrict in response to alveolar hypoxia, opposite the usual systemic response."
+  },
+  {
+    "id": "pulm-ards-ventilation",
+    "topic": "Pulmonology",
+    "level": 3,
+    "stem": "An intubated patient with acute respiratory distress syndrome has high arterial carbon dioxide despite adequate oxygen saturation. Which parameter most directly lowers PaCO2?",
+    "options": [
+      "Increase alveolar ventilation while respecting lung-protective limits",
+      "Increase inspired oxygen fraction alone",
+      "Reduce respiratory rate",
+      "Increase hemoglobin concentration"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correct: PaCO2 varies inversely with alveolar ventilation; in ARDS settings must remain lung-protective.",
+      "FiO2 primarily changes oxygenation, not CO2 elimination.",
+      "Lower respiratory rate usually reduces minute ventilation.",
+      "Hemoglobin concentration does not directly control ventilation of CO2."
+    ],
+    "teaching": "PaCO2 tracks alveolar ventilation; oxygenation tracks FiO2 and recruitment/PEEP."
+  },
+  {
+    "id": "pulm-mycoplasma",
+    "topic": "Pulmonology",
+    "level": 2,
+    "stem": "A college student has mild atypical pneumonia and hemolysis with cold-reactive IgM antibodies. Which pathogen is most likely?",
+    "options": [
+      "Streptococcus pneumoniae",
+      "Mycoplasma pneumoniae",
+      "Pneumocystis jirovecii",
+      "Klebsiella pneumoniae"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Pneumococcus classically causes acute lobar pneumonia, not cold agglutinin hemolysis.",
+      "Correct: Mycoplasma may cause atypical pneumonia and cold agglutinin autoimmune hemolytic anemia.",
+      "Pneumocystis usually causes subacute bilateral interstitial pneumonia in immunocompromised patients.",
+      "Klebsiella causes severe typical pneumonia rather than the characteristic cold agglutinins."
+    ],
+    "teaching": "Mycoplasma pneumoniae + cold agglutinin (IgM) hemolysis is a Step 1 association."
+  },
+  {
+    "id": "nutrition-refeeding",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A malnourished patient becomes weak and develops arrhythmias 48 hours after starting carbohydrate-rich feeding. Phosphate drops sharply. What mechanism explains this?",
+    "options": [
+      "Glucagon drives phosphate out of cells",
+      "Insulin drives phosphate into cells during renewed ATP synthesis",
+      "Aldosterone directly binds circulating phosphate",
+      "Vitamin D excess inhibits renal phosphate reabsorption"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Refeeding increases insulin, not glucagon, as the characteristic trigger.",
+      "Correct: insulin increases cellular uptake and use of phosphate, producing severe hypophosphatemia.",
+      "Aldosterone does not explain the acute characteristic phosphate shift.",
+      "Vitamin D excess is not the main mechanism of refeeding syndrome."
+    ],
+    "teaching": "Refeeding syndrome: insulin surge → intracellular phosphate shift → hypophosphatemia; also low potassium and magnesium."
+  },
+  {
+    "id": "nutrition-thiamine",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A severely malnourished patient receives intravenous dextrose and develops confusion, ataxia, and ophthalmoplegia. Which vitamin should be urgently replaced?",
+    "options": [
+      "Vitamin B1 (thiamine)",
+      "Vitamin B12 (cobalamin)",
+      "Vitamin C (ascorbic acid)",
+      "Vitamin K (phylloquinone)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correct: thiamine deficiency impairs key carbohydrate metabolic enzymes, precipitating Wernicke encephalopathy.",
+      "B12 deficiency causes megaloblastic anemia and neurologic dysfunction, not this acute post-dextrose syndrome.",
+      "Vitamin C deficiency causes scurvy.",
+      "Vitamin K deficiency causes impaired coagulation."
+    ],
+    "teaching": "Give thiamine promptly before or alongside glucose when feasible in patients at risk; do not delay life-saving glucose for hypoglycemia."
+  },
+  {
+    "id": "nutrition-fructose",
+    "topic": "Nutrition",
+    "level": 3,
+    "stem": "An infant develops vomiting, hypoglycemia, and liver dysfunction after fruit puree is introduced. Which accumulated intermediate depletes hepatic phosphate?",
+    "options": [
+      "Galactose-1-phosphate",
+      "Fructose-1-phosphate",
+      "Glucose-6-phosphate",
+      "Ribose-5-phosphate"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Galactose-1-phosphate accumulates in classic galactosemia, usually after milk exposure.",
+      "Correct: aldolase B deficiency traps phosphate as fructose-1-phosphate, impairing glycogenolysis and gluconeogenesis.",
+      "Glucose-6-phosphate does not cause hereditary fructose intolerance.",
+      "Ribose-5-phosphate is a pentose phosphate pathway intermediate."
+    ],
+    "teaching": "Hereditary fructose intolerance = aldolase B deficiency → fructose-1-phosphate accumulation."
+  },
+  {
+    "id": "nutrition-galactose",
+    "topic": "Nutrition",
+    "level": 3,
+    "stem": "A milk-fed newborn has jaundice, hepatomegaly, cataracts, and Escherichia coli sepsis. Which enzyme is most likely deficient?",
+    "options": [
+      "Aldolase B",
+      "Galactose-1-phosphate uridyltransferase",
+      "Fructokinase",
+      "Pyruvate carboxylase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Aldolase B deficiency presents after fructose exposure rather than from neonatal milk feeding.",
+      "Correct: classic galactosemia is caused by galactose-1-phosphate uridyltransferase deficiency.",
+      "Fructokinase deficiency is typically benign essential fructosuria.",
+      "Pyruvate carboxylase deficiency has different metabolic consequences."
+    ],
+    "teaching": "Classic galactosemia: milk exposure, liver injury, cataracts, E. coli sepsis; eliminate galactose/lactose."
+  },
+  {
+    "id": "nutrition-kwashiorkor",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A child has edema, a distended abdomen, fatty liver, and substantial protein deprivation. Which mechanism contributes to edema?",
+    "options": [
+      "Increased oncotic pressure from albumin synthesis",
+      "Decreased plasma oncotic pressure due to low albumin",
+      "Hyperaldosteronism as the sole mechanism",
+      "Lymphatic obstruction from an abdominal tumor"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Albumin synthesis is impaired rather than elevated.",
+      "Correct: low circulating albumin lowers oncotic pressure; fatty liver reflects impaired lipoprotein synthesis.",
+      "Salt and water balance may contribute, but cannot solely explain the syndrome.",
+      "Lymphatic obstruction is not the defining mechanism of kwashiorkor."
+    ],
+    "teaching": "Kwashiorkor = edematous protein-energy malnutrition with hypoalbuminemia and fatty liver."
+  },
+  {
+    "id": "nutrition-pancreatic-lipase",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A child with cystic fibrosis has bulky, floating, foul-smelling stools and low levels of fat-soluble vitamins. What is the primary digestive deficiency?",
+    "options": [
+      "Brush-border lactase",
+      "Pancreatic lipase",
+      "Salivary amylase alone",
+      "Gastric intrinsic factor"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Lactase deficiency causes osmotic diarrhea after lactose, not prominent steatorrhea.",
+      "Correct: pancreatic duct obstruction reduces digestive enzyme delivery, especially lipase.",
+      "Amylase digests starch rather than triglycerides.",
+      "Intrinsic factor deficiency impairs B12 absorption, not primary fat digestion."
+    ],
+    "teaching": "Cystic fibrosis → exocrine pancreatic insufficiency → fat malabsorption and vitamins A, D, E, K deficiency."
+  },
+  {
+    "id": "nutrition-dumping",
+    "topic": "Nutrition",
+    "level": 3,
+    "stem": "A patient develops cramping, diarrhea, sweating, and palpitations 15 minutes after sugary meals following gastric surgery. What is the most likely mechanism?",
+    "options": [
+      "Exaggerated insulin release causing delayed hypoglycemia",
+      "Rapid delivery of hyperosmolar contents into small bowel causing fluid shifts",
+      "Bacterial invasion of the colon",
+      "Excess pancreatic bicarbonate production"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Reactive hypoglycemia is characteristic of late dumping, usually 1–3 hours after eating.",
+      "Correct: early dumping causes intestinal fluid influx and vasomotor symptoms shortly after meals.",
+      "Infection does not explain reproducible rapid postprandial symptoms after surgery.",
+      "Pancreatic bicarbonate is not the mechanism."
+    ],
+    "teaching": "Early dumping: 10–30 minutes, osmotic fluid shift; late dumping: 1–3 hours, reactive hypoglycemia."
+  },
+  {
+    "id": "nutrition-protein-energy",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A severely burned patient receives adequate energy intake but insufficient protein and continues losing lean muscle. Which balance is negative?",
+    "options": [
+      "Energy balance only",
+      "Nitrogen balance",
+      "Calcium balance only",
+      "Water balance only"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Total caloric intake can be adequate while protein loss continues.",
+      "Correct: proteolysis exceeds protein synthesis, causing negative nitrogen balance.",
+      "Calcium balance does not describe muscle protein losses.",
+      "Water balance does not describe loss of nitrogen-containing tissue."
+    ],
+    "teaching": "Calorie sufficiency does not guarantee positive nitrogen balance during severe catabolic stress."
   }
 ];
