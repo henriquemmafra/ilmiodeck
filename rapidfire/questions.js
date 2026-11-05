@@ -4284,21 +4284,21 @@ window.RAPIDFIRE_QUESTIONS = [
     "id": "inborn-20261105-mma",
     "topic": "Inborn Errors of Metabolism",
     "level": 3,
-    "stem": "An infant has metabolic acidosis, hyperammonemia, and elevated methylmalonic acid. Which additional blood abnormality most strongly supports methylmalonyl-CoA mutase deficiency?",
+    "stem": "An infant has metabolic acidosis, hyperammonemia, elevated methylmalonic acid, elevated homocysteine, and low methionine. Which underlying defect best explains this combined biochemical pattern?",
     "options": [
-      "Elevated homocysteine with low methionine",
-      "Elevated homocysteine with high methionine",
-      "Low homocysteine with high methionine",
-      "Elevated phenylalanine with low tyrosine"
+      "Combined intracellular cobalamin processing defect",
+      "Isolated methylmalonyl-CoA mutase deficiency",
+      "Cystathionine beta-synthase deficiency",
+      "Phenylalanine hydroxylase deficiency"
     ],
     "answer": 0,
     "explanations": [
-      "Correta: a mutase depende de adenosilcobalamina (vitamina B12); defeitos combinados podem elevar homocisteína e reduzir metionina.",
-      "Homocisteína e metionina altas sugerem deficiência de cistationina beta-sintase.",
-      "Homocisteína baixa e metionina alta não é o padrão da acidemia metilmalônica.",
-      "Fenilalanina alta e tirosina baixa sugerem fenilcetonúria."
+      "Correta: um defeito combinado de processamento da cobalamina pode comprometer metilmalonil-CoA mutase e metionina sintase, elevando ácido metilmalônico e homocisteína e reduzindo metionina.",
+      "Deficiência isolada da metilmalonil-CoA mutase eleva ácido metilmalônico, mas não costuma elevar homocisteína nem reduzir metionina.",
+      "Deficiência de cistationina beta-sintase eleva homocisteína e metionina, não ácido metilmalônico.",
+      "Deficiência de fenilalanina hidroxilase eleva fenilalanina e reduz tirosina."
     ],
-    "teaching": "Acidemia metilmalônica pode decorrer de deficiência de metilmalonil-CoA mutase ou de B12; alteração da via de metionina pode elevar homocisteína e reduzir metionina."
+    "teaching": "Ácido metilmalônico alto + homocisteína alta + metionina baixa sugere defeito combinado de cobalamina (por exemplo, cblC), que afeta duas reações dependentes de vitamina B12."
   },
   {
     "id": "inborn-20261105-tyrosinemia",
