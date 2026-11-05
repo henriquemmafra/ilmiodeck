@@ -14,6 +14,8 @@ Esse endereço depende de GitHub Pages estar habilitado; não é uma confirmaç�
 
 ## Como funciona
 
+O banco reúne questões originais sobre glicogenoses, doenças lisossômicas, erros inatos do metabolismo e mecanismos de bioquímica de alta incidência, incluindo temas das dúvidas recorrentes do Henrique.
+
 - Uma questão de múltipla escolha por vez. Alternativas A, B, C e D, com suporte às teclas A–D e 1–4.
 - **Navegação como cartas:** deslize para a esquerda para avançar (ou pular sem responder) e para a direita para voltar. Também há botão de voltar. Respostas já dadas são preservadas sem computar uma segunda tentativa.
 - Correção imediatamente após responder; explicação de cada alternativa, inclusive por que estão erradas.
