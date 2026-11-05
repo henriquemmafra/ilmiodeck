@@ -4619,5 +4619,305 @@ window.RAPIDFIRE_QUESTIONS = [
       "Neurofibromina regula RAS, não receptor tirosina-fosfatase nem diretamente AMPc."
     ],
     "teaching": "NF1 (neurofibromatose tipo 1) perde neurofibromina, uma GAP: RAS permanece mais tempo ativo ligado a GTP → via MAPK aumenta."
+  },
+  {
+    "id": "biochem-20261105-etec-st",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A traveler develops watery diarrhea after ingesting enterotoxigenic E. coli. The heat-stable toxin activates intestinal guanylyl cyclase C. Which intracellular messenger rises?",
+    "options": [
+      "Cyclic AMP",
+      "Cyclic GMP",
+      "Inositol trisphosphate",
+      "Cytosolic calcium only"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A toxina termolábil da ETEC ADP-ribosila Gs, ativa adenilil ciclase e aumenta AMPc.",
+      "Correta: a toxina termoestável ativa guanilil ciclase C e aumenta GMPc.",
+      "IP3 é produzido pela via da fosfolipase C, ativada por Gq.",
+      "Aumento isolado de cálcio não é o mecanismo da toxina termoestável."
+    ],
+    "teaching": "ETEC termoestável → guanilil ciclase C → GMP cíclico ↑; termo-lábil → Gs/adenilil ciclase → AMP cíclico ↑."
+  },
+  {
+    "id": "biochem-20261105-cps1",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which mitochondrial enzyme catalyzes the first committed step of the urea cycle by combining ammonia and bicarbonate to form carbamoyl phosphate?",
+    "options": [
+      "Carbamoyl phosphate synthetase I",
+      "Carbamoyl phosphate synthetase II",
+      "Ornithine transcarbamylase",
+      "Argininosuccinate synthetase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: CPS I é mitocondrial, usa amônia e bicarbonato e requer dois ATP; é ativada por N-acetilglutamato.",
+      "CPS II é citosólica, usa glutamina e participa da síntese de pirimidinas.",
+      "OTC combina carbamoil-fosfato com ornitina para formar citrulina.",
+      "Argininosuccinato sintetase atua depois, no citosol, combinando citrulina e aspartato."
+    ],
+    "teaching": "CPS I = mitocôndria + amônia + ciclo da ureia; CPS II = citosol + glutamina + síntese de pirimidinas."
+  },
+  {
+    "id": "biochem-20261105-nags",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "N-acetylglutamate synthase produces a molecule required to activate which urea-cycle enzyme?",
+    "options": [
+      "Carbamoyl phosphate synthetase I",
+      "Carbamoyl phosphate synthetase II",
+      "Ornithine transcarbamylase",
+      "Arginase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: N-acetilglutamato é o ativador alostérico obrigatório da CPS I mitocondrial.",
+      "CPS II participa da síntese de pirimidinas e não depende de N-acetilglutamato.",
+      "OTC utiliza carbamoil-fosfato e ornitina; não é ativada diretamente por N-acetilglutamato.",
+      "Arginase hidrolisa arginina em ureia e ornitina na etapa final."
+    ],
+    "teaching": "N-acetilglutamato (feito pela NAGS) liga e ativa CPS I, permitindo iniciar o ciclo da ureia."
+  },
+  {
+    "id": "biochem-20261105-bckd-cofactors",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "The branched-chain alpha-ketoacid dehydrogenase complex is defective in maple syrup urine disease. Which set of cofactors does this enzyme complex require?",
+    "options": [
+      "Thiamine, lipoate, coenzyme A, FAD, and NAD+",
+      "Biotin, tetrahydrofolate, pyridoxal phosphate, and vitamin C",
+      "Cobalamin, biotin, heme, and glutathione",
+      "Pyridoxal phosphate and tetrahydrobiopterin only"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: o complexo é semelhante à piruvato desidrogenase e usa TPP (B1), lipoato, CoA (B5), FAD (B2) e NAD+ (B3).",
+      "Biotina, folato, B6 e vitamina C não compõem o conjunto de cofatores desse complexo.",
+      "Cobalamina e glutationa não substituem os cofatores do complexo de desidrogenase.",
+      "PLP e BH4 não são suficientes; o complexo depende dos cinco cofatores listados na opção correta."
+    ],
+    "teaching": "BCKD e piruvato desidrogenase usam o mesmo conjunto clássico: B1, lipoato, B5, B2 e B3."
+  },
+  {
+    "id": "biochem-20261105-ammonia-akg",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "In severe hyperammonemia, astrocytes convert glutamate to glutamine to detoxify ammonia. Which additional change contributes to impaired cerebral energy metabolism?",
+    "options": [
+      "Depletion of alpha-ketoglutarate from the tricarboxylic acid cycle",
+      "Increased oxaloacetate production from pyruvate",
+      "Inhibition of glutamine synthesis",
+      "Increased acetyl-CoA entry into the urea cycle"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: retirar glutamato para formar glutamina pode consumir alfa-cetoglutarato, intermediário do ciclo do ácido cítrico, reduzindo o fluxo energético neuronal.",
+      "A alteração importante é perda de intermediários do ciclo, não aumento de oxaloacetato como causa primária.",
+      "A síntese de glutamina aumenta como mecanismo de detoxificação da amônia.",
+      "Acetil-CoA não entra diretamente no ciclo da ureia; N-acetilglutamato ativa CPS I."
+    ],
+    "teaching": "Amônia alta → glutamato é desviado para glutamina; a depleção de alfa-cetoglutarato prejudica o ciclo do ácido cítrico e a produção de energia cerebral."
+  },
+  {
+    "id": "biochem-20261105-hgprt",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A boy has self-mutilation, dystonia, and hyperuricemia. Deficiency of which purine-salvage enzyme causes this disorder?",
+    "options": [
+      "Hypoxanthine-guanine phosphoribosyltransferase",
+      "Adenosine deaminase",
+      "Xanthine oxidase",
+      "Adenine phosphoribosyltransferase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: deficiência de HGPRT causa síndrome de Lesch–Nyhan; falha no salvage aumenta PRPP e síntese de novo de purinas, elevando ácido úrico.",
+      "Deficiência de adenosina desaminase causa imunodeficiência combinada grave.",
+      "Inibição de xantina oxidase reduz ácido úrico e é explorada terapeuticamente.",
+      "Deficiência de APRT pode causar cálculos de 2,8-diidroxiadenina, mas não o quadro neurocomportamental clássico."
+    ],
+    "teaching": "Lesch–Nyhan = deficiência ligada ao X de HGPRT → salvage de hipoxantina/guanina falha, ácido úrico alto e automutilação."
+  },
+  {
+    "id": "biochem-20261105-cystinuria",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A young adult has recurrent hexagonal kidney stones composed of cystine. Which renal tubular defect is responsible?",
+    "options": [
+      "Impaired proximal tubular reabsorption of cystine and dibasic amino acids",
+      "Impaired lysosomal cystine transport in all tissues",
+      "Deficient conversion of cystathionine to cysteine",
+      "Impaired renal reabsorption of glucose and phosphate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: cistinúria resulta de defeito do transportador proximal de aminoácidos dibásicos COLA: cistina, ornitina, lisina e arginina.",
+      "Esse mecanismo descreve cistinose, por defeito do transportador lisossômico de cistina.",
+      "Deficiência de cistationina beta-sintase causa homocistinúria, não cálculos hexagonais de cistina.",
+      "Glicosúria e fosfatúria sugerem disfunção tubular proximal generalizada, como síndrome de Fanconi."
+    ],
+    "teaching": "Cistinúria: transporte COLA (cistina, ornitina, lisina, arginina) proximal deficiente → cálculos hexagonais; cistinose é doença lisossômica distinta."
+  },
+  {
+    "id": "biochem-20261105-alkaptonuria",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A patient's urine turns dark after standing, and bluish-black pigmentation develops in cartilage and connective tissue. Which enzyme is deficient?",
+    "options": [
+      "Homogentisate oxidase",
+      "Tyrosinase",
+      "Fumarylacetoacetate hydrolase",
+      "Phenylalanine hydroxylase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: deficiência de homogentisato oxidase causa alcaptonúria; homogentisato se acumula e oxida, escurecendo urina e tecidos.",
+      "Tirosinase participa da síntese de melanina; sua deficiência causa albinismo oculocutâneo.",
+      "Fumarylacetoacetato hidrolase deficiente causa tirosinemia tipo I, com succinilacetona e lesão hepatorrenal.",
+      "Fenilalanina hidroxilase deficiente causa fenilcetonúria."
+    ],
+    "teaching": "Alcaptonúria = homogentisato oxidase baixa → urina escurece ao oxidar e ocorre ocronose."
+  },
+  {
+    "id": "biochem-20261105-cyanide",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Cyanide poisoning causes histotoxic hypoxia by inhibiting which component of oxidative phosphorylation?",
+    "options": [
+      "Complex I (NADH dehydrogenase)",
+      "Complex II (succinate dehydrogenase)",
+      "Complex IV (cytochrome c oxidase)",
+      "ATP synthase"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Rotenona é um inibidor clássico do complexo I.",
+      "Malonato pode inibir o complexo II.",
+      "Correta: cianeto bloqueia citocromo c oxidase (complexo IV), impedindo transferência de elétrons ao oxigênio.",
+      "Oligomicina inibe ATP sintase (complexo V)."
+    ],
+    "teaching": "Cianeto → complexo IV bloqueado → cadeia respiratória para; oxigênio pode estar presente, mas os tecidos não conseguem utilizá-lo (hipóxia histotóxica)."
+  },
+  {
+    "id": "biochem-20261105-methanol",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "After ingesting adulterated alcohol, a patient develops anion-gap metabolic acidosis and blurred vision. Which toxic metabolite is chiefly responsible for optic nerve injury?",
+    "options": [
+      "Formate",
+      "Oxalate",
+      "Glycolate",
+      "Acetaldehyde"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: metanol é metabolizado a formaldeído e formiato; formiato causa acidose e lesão do nervo óptico.",
+      "Oxalato é metabólito do etilenoglicol e pode precipitar com cálcio nos rins.",
+      "Glicolato, metabólito do etilenoglicol, contribui para a acidose e não é o principal tóxico óptico do metanol.",
+      "Acetaldeído deriva do etanol e não explica a neuropatia óptica típica."
+    ],
+    "teaching": "Metanol → formiato → acidose metabólica e toxicidade retiniana/nervo óptico; etilenoglicol → glicolato/oxalato e lesão renal."
+  },
+  {
+    "id": "biochem-20261105-lead-heme",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child with abdominal pain and microcytic anemia has basophilic stippling. Lead toxicity impairs heme synthesis by inhibiting which enzymes?",
+    "options": [
+      "ALA dehydratase and ferrochelatase",
+      "ALA synthase and porphobilinogen deaminase",
+      "Porphobilinogen deaminase and uroporphyrinogen decarboxylase",
+      "Ferrochelatase and heme oxygenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: chumbo inibe ALA desidratase e ferroquelatase, prejudicando síntese do heme e contribuindo para anemia microcítica com pontilhado basofílico.",
+      "ALA sintase e porfobilinogênio desaminase são relevantes em porfirias, mas não são os alvos clássicos do chumbo.",
+      "Essas enzimas não são os dois alvos inibidos pelo chumbo.",
+      "Heme oxigenase degrada heme e não é o alvo clássico; ferroquelatase é inibida."
+    ],
+    "teaching": "Chumbo inibe ALA desidratase e ferroquelatase → síntese de heme cai; anemia microcítica, dor abdominal e pontilhado basofílico."
+  },
+  {
+    "id": "micro-20261105-tb-listeria",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "Which comparison correctly distinguishes the intracellular survival strategies of Mycobacterium tuberculosis and Listeria monocytogenes?",
+    "options": [
+      "M. tuberculosis escapes into the cytosol; Listeria blocks phagolysosome fusion",
+      "M. tuberculosis inhibits phagolysosome maturation; Listeria escapes into the cytosol using listeriolysin O",
+      "Both organisms survive only by preventing antibody binding",
+      "Both organisms replicate exclusively inside phagolysosomes"
+    ],
+    "answer": 1,
+    "explanations": [
+      "As estratégias estão trocadas: TB bloqueia maturação/fusão; Listeria escapa do fagossomo.",
+      "Correta: M. tuberculosis impede maturação do fagossomo; Listeria usa listeriolisina O para romper o vacúolo e alcançar o citosol.",
+      "Anticorpos não são o mecanismo principal de sobrevivência intracelular desses patógenos.",
+      "Listeria replica no citosol e TB pode sobreviver em fagossomos modificados; não ambas exclusivamente em fagolisossomos."
+    ],
+    "teaching": "TB bloqueia maturação/fusão fagolisossômica; Listeria escapa do fagossomo via listeriolisina O e usa ActA para motilidade baseada em actina."
+  },
+  {
+    "id": "phys-20261105-fsh-lh",
+    "topic": "Physiology",
+    "level": 2,
+    "stem": "In the testes, which cell-hormone pairing is correct?",
+    "options": [
+      "FSH → Leydig cells → testosterone",
+      "LH → Sertoli cells → inhibin B",
+      "FSH → Sertoli cells → androgen-binding protein and inhibin B",
+      "LH → Sertoli cells → spermatogenesis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "LH estimula células de Leydig a produzirem testosterona.",
+      "FSH atua principalmente nas células de Sertoli; inibina B reduz FSH.",
+      "Correta: FSH estimula Sertoli, que sustenta espermatogênese e produz ABP e inibina B.",
+      "LH estimula Leydig e a produção de testosterona, não Sertoli diretamente."
+    ],
+    "teaching": "FSH → Sertoli → espermatogênese, ABP e inibina B; LH → Leydig → testosterona."
+  },
+  {
+    "id": "pharm-20261105-buprenorphine",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "A patient dependent on heroin takes buprenorphine shortly after the last dose and develops abrupt withdrawal. Which property best explains this?",
+    "options": [
+      "Low-affinity full agonism at mu receptors",
+      "High-affinity partial agonism at mu receptors that displaces a full agonist",
+      "Irreversible antagonism at kappa receptors only",
+      "Inhibition of opioid metabolism by CYP3A4"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Buprenorfina não é agonista pleno de baixa afinidade; sua afinidade pelo receptor μ é alta.",
+      "Correta: como agonista parcial de alta afinidade, desloca heroína (agonista pleno) e reduz rapidamente a ativação do receptor, precipitando abstinência se iniciada cedo demais.",
+      "Esse mecanismo não descreve a ação clínica principal da buprenorfina.",
+      "Ela não precipita abstinência por bloquear CYP3A4."
+    ],
+    "teaching": "Buprenorfina = agonista parcial μ com alta afinidade; pode deslocar agonista pleno e precipitar abstinência se iniciada antes do momento adequado."
+  },
+  {
+    "id": "immunology-20261105-bare2",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A child has recurrent viral, fungal, and intracellular infections, low CD4+ T-cell counts, and absent MHC class II expression on antigen-presenting cells. Which defect is most likely?",
+    "options": [
+      "Bare lymphocyte syndrome type I from absent MHC class I",
+      "Bare lymphocyte syndrome type II from defective MHC class II expression",
+      "DiGeorge syndrome from absent thymic development",
+      "C1 esterase inhibitor deficiency"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Deficiência de MHC I reduz apresentação a CD8+; não explica ausência de MHC II e baixa contagem de CD4+.",
+      "Correta: síndrome do linfócito nu tipo II é deficiência de MHC II, prejudica seleção/ativação de CD4+ e causa imunodeficiência combinada.",
+      "DiGeorge causa hipoplasia/aplasia tímica e deficiência de células T, mas MHC II não está ausente nas células apresentadoras.",
+      "C1 esterase inhibitor baixo causa angioedema hereditário."
+    ],
+    "teaching": "Bare lymphocyte syndrome tipo II = MHC II baixo/ausente → ativação e seleção de CD4+ prejudicadas; infecções oportunistas."
   }
 ];
