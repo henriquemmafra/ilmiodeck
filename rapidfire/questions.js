@@ -4559,5 +4559,65 @@ window.RAPIDFIRE_QUESTIONS = [
       "NADH alto inibe beta-oxidação e favorece acúmulo de triglicerídeos."
     ],
     "teaching": "Etanol ↑NADH/NAD+ → piruvato vira lactato e oxaloacetato vira malato; gliconeogênese cai e pode ocorrer hipoglicemia."
+  },
+  {
+    "id": "biochem-20261105-dna-direction",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "During DNA replication, DNA polymerase adds each new nucleotide to the 3′ hydroxyl group of the growing strand. In which direction is the new DNA strand synthesized?",
+    "options": [
+      "5′ to 3′",
+      "3′ to 5′",
+      "Both directions, depending on the template",
+      "From the origin toward either terminus without polarity"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: DNA polimerases adicionam nucleotídeos à extremidade 3′-OH, então a fita nova cresce 5′→3′.",
+      "A fita molde é lida 3′→5′; a fita nova não é sintetizada nessa direção.",
+      "Cada fita nova é sintetizada 5′→3′, embora uma seja contínua e outra em fragmentos de Okazaki.",
+      "A replicação pode ser bidirecional a partir da origem, mas cada fita filha ainda tem polaridade 5′→3′."
+    ],
+    "teaching": "DNA polimerase lê a fita molde 3′→5′ e sintetiza DNA novo 5′→3′; ela só consegue adicionar à extremidade 3′."
+  },
+  {
+    "id": "cell-20261105-ras-gep-gap",
+    "topic": "Cell Biology",
+    "level": 2,
+    "stem": "A growth factor activates RAS. Which statement correctly describes the nucleotide cycle that turns RAS signaling off?",
+    "options": [
+      "GEF hydrolyzes RAS-bound GTP to GDP",
+      "RAS hydrolyzes its bound GTP to GDP; GAP accelerates this reaction",
+      "GAP exchanges GDP for GTP",
+      "RAS converts GDP into GTP without an exchange factor"
+    ],
+    "answer": 1,
+    "explanations": [
+      "GEF promove a troca de GDP por GTP, ativando RAS; não hidrolisa GTP.",
+      "Correta: RAS tem atividade GTPase intrínseca e hidrolisa GTP em GDP; GAP acelera a hidrólise e desliga o sinal.",
+      "GAP acelera a hidrólise de GTP; GEF promove a troca GDP→GTP.",
+      "RAS precisa de fatores de troca de nucleotídeos de guanina (GEFs) para facilitar a saída de GDP e entrada de GTP."
+    ],
+    "teaching": "GEF ativa RAS ao trocar GDP por GTP. RAS hidrolisa GTP por conta própria; GAP acelera essa hidrólise e desliga RAS."
+  },
+  {
+    "id": "cell-20261105-nf1-gap",
+    "topic": "Cell Biology",
+    "level": 3,
+    "stem": "A child with café-au-lait macules and multiple neurofibromas has a loss-of-function mutation in NF1. Which signaling consequence best explains tumor formation?",
+    "options": [
+      "Reduced GAP activity keeps RAS predominantly GTP-bound and active",
+      "Increased GEF activity prevents GDP from leaving RAS",
+      "Increased RAS GTPase activity suppresses MAP kinase signaling",
+      "Loss of a receptor tyrosine phosphatase directly increases cAMP"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: NF1 codifica neurofibromina, uma GAP; sua perda reduz a hidrólise de RAS-GTP e prolonga o sinal proliferativo.",
+      "GEF favorece a troca GDP→GTP; NF1 não codifica um GEF.",
+      "Perda de NF1 reduz, não aumenta, o estímulo à atividade GTPase de RAS.",
+      "Neurofibromina regula RAS, não receptor tirosina-fosfatase nem diretamente AMPc."
+    ],
+    "teaching": "NF1 (neurofibromatose tipo 1) perde neurofibromina, uma GAP: RAS permanece mais tempo ativo ligado a GTP → via MAPK aumenta."
   }
 ];
