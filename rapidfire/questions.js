@@ -3940,104 +3940,624 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "Do not confuse 5S with 5.8S: 5S uses polymerase III; 5.8S uses polymerase I."
   },
-{
-  "id": "msud-20261103-diagnosis",
-  "topic": "Biochemistry",
-  "level": 1,
-  "stem": "A 3-month-old infant has poor feeding, vomiting, lethargy, intermittent abnormal muscle tone, and urine with a sweet maple-syrup odor. Plasma amino acid analysis reveals elevated alloisoleucine. Which diagnosis best explains these findings?",
-  "options": [
-    "Phenylketonuria",
-    "Maple syrup urine disease",
-    "Classic homocystinuria",
-    "Tyrosinemia type I"
-  ],
-  "answer": 1,
-  "explanations": [
-    "Phenylketonuria causes elevated phenylalanine, developmental impairment, and a musty or mousy odor, not the characteristic alloisoleucine elevation.",
-    "Maple syrup urine disease causes accumulation of branched-chain amino acids and their keto acids; alloisoleucine and maple-syrup odor are strong clues.",
-    "Classic homocystinuria causes lens subluxation (downward), thrombosis, and marfanoid features due to impaired methionine metabolism.",
-    "Tyrosinemia type I causes hepatic dysfunction, renal Fanconi syndrome, and elevated succinylacetone rather than a maple-syrup odor."
-  ],
-  "teaching": "MSUD: sweet urine + neonatal encephalopathy + elevated alloisoleucine. Branched-chain amino acids are leucine, isoleucine, and valine (I Love Vermont)."
-},
-{
-  "id": "msud-20261103-enzyme",
-  "topic": "Biochemistry",
-  "level": 2,
-  "stem": "An infant develops metabolic encephalopathy because oxidative decarboxylation of branched-chain alpha-keto acids is impaired. Which enzyme complex is deficient?",
-  "options": [
-    "Phenylalanine hydroxylase",
-    "Branched-chain alpha-ketoacid dehydrogenase",
-    "Homogentisate oxidase",
-    "Cystathionine beta-synthase"
-  ],
-  "answer": 1,
-  "explanations": [
-    "Phenylalanine hydroxylase deficiency causes phenylketonuria; it blocks phenylalanine-to-tyrosine conversion.",
-    "Branched-chain alpha-ketoacid dehydrogenase deficiency causes MSUD after the initial transamination of leucine, isoleucine, and valine.",
-    "Homogentisate oxidase deficiency causes alkaptonuria, associated with ochronosis and darkening urine on standing.",
-    "Cystathionine beta-synthase deficiency causes classic homocystinuria, with elevated homocysteine and methionine."
-  ],
-  "teaching": "MSUD blocks the oxidative decarboxylation step after BCAA transamination. Branched-chain alpha-ketoacid dehydrogenase uses thiamine (B1), lipoate, coenzyme A (B5), FAD (B2), and NAD+ (B3)."
-},
-{
-  "id": "msud-20261103-diet",
-  "topic": "Biochemistry",
-  "level": 2,
-  "stem": "A child with confirmed maple syrup urine disease begins long-term nutritional therapy. Which amino acid group must be carefully restricted while providing enough nutrients for growth?",
-  "options": [
-    "Methionine",
-    "Phenylalanine",
-    "Leucine, isoleucine, and valine",
-    "Tyrosine"
-  ],
-  "answer": 2,
-  "explanations": [
-    "Methionine restriction may be used in classic homocystinuria, depending on biochemical response and management plan.",
-    "Phenylalanine restriction is the main dietary strategy for phenylketonuria.",
-    "All three branched-chain amino acids require controlled intake in MSUD; leucine is particularly neurotoxic, and measured isoleucine and valine must still be supplied for growth.",
-    "Tyrosine and phenylalanine restriction with nitisinone is used in tyrosinemia type I."
-  ],
-  "teaching": "MSUD diet: restrict BCAAs (Ile, Leu, Val), not eliminate essential amino acids entirely. Use specialized BCAA-free formula plus prescribed amounts and plasma amino acid monitoring."
-},
-{
-  "id": "msud-20261103-crisis",
-  "topic": "Biochemistry",
-  "level": 3,
-  "stem": "A previously stable child with maple syrup urine disease develops fever, vomiting, ataxia, and encephalopathy during an infection. Which immediate metabolic strategy is most appropriate?",
-  "options": [
-    "Increase natural protein to replace lost calories",
-    "Reverse catabolism using high-calorie glucose-containing support and urgently manage elevated leucine",
-    "Restrict only dietary tyrosine and start nitisinone",
-    "Give phenylalanine hydroxylase replacement"
-  ],
-  "answer": 1,
-  "explanations": [
-    "Extra natural protein can increase branched-chain amino acid load and worsen the crisis; nutrition must be managed by a metabolic specialist.",
-    "An MSUD crisis requires urgent hospital management: temporarily hold natural protein, give high-calorie intravenous dextrose (often with lipids), treat triggers, and monitor amino acids; severe cases may require dialysis.",
-    "Nitisinone with restriction of tyrosine and phenylalanine treats tyrosinemia type I, not MSUD.",
-    "Phenylalanine hydroxylase is involved in phenylketonuria, not the branched-chain alpha-ketoacid dehydrogenase defect."
-  ],
-  "teaching": "In MSUD, infection and fasting trigger protein breakdown and leucine accumulation. Crisis = urgent anti-catabolic support and specialist-directed amino acid management; dialysis may be needed if severe."
-},
-{
-  "id": "msud-20261103-differential",
-  "topic": "Biochemistry",
-  "level": 3,
-  "stem": "A 9-month-old child has progressive macrocephaly, dystonia, and bilateral basal ganglia injury during a febrile illness. Organic acid testing shows elevated glutaric acid and 3-hydroxyglutaric acid. Which dietary amino acid restriction targets the primary defect?",
-  "options": [
-    "Lysine",
-    "Valine",
-    "Methionine",
-    "Phenylalanine"
-  ],
-  "answer": 0,
-  "explanations": [
-    "Glutaric aciduria type I is caused by glutaryl-CoA dehydrogenase deficiency in lysine (and tryptophan) catabolism; lysine restriction with special formula and carnitine is a key treatment.",
-    "Valine is one of the branched-chain amino acids restricted in maple syrup urine disease, which classically features sweet-smelling urine and elevated alloisoleucine.",
-    "Methionine restriction can be indicated in classic homocystinuria, associated with thrombosis and lens subluxation.",
-    "Phenylalanine restriction is used in phenylketonuria, which features excess phenylalanine and may cause a musty odor."
-  ],
-  "teaching": "Differentiate diets: MSUD = Ile/Leu/Val; PKU = phenylalanine; homocystinuria = methionine (selected patients); tyrosinemia I = tyrosine + phenylalanine; glutaric aciduria I = lysine."
-}
+  {
+    "id": "msud-20261103-diagnosis",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "A 3-month-old infant has poor feeding, vomiting, lethargy, intermittent abnormal muscle tone, and urine with a sweet maple-syrup odor. Plasma amino acid analysis reveals elevated alloisoleucine. Which diagnosis best explains these findings?",
+    "options": [
+      "Phenylketonuria",
+      "Maple syrup urine disease",
+      "Classic homocystinuria",
+      "Tyrosinemia type I"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Phenylketonuria causes elevated phenylalanine, developmental impairment, and a musty or mousy odor, not the characteristic alloisoleucine elevation.",
+      "Maple syrup urine disease causes accumulation of branched-chain amino acids and their keto acids; alloisoleucine and maple-syrup odor are strong clues.",
+      "Classic homocystinuria causes lens subluxation (downward), thrombosis, and marfanoid features due to impaired methionine metabolism.",
+      "Tyrosinemia type I causes hepatic dysfunction, renal Fanconi syndrome, and elevated succinylacetone rather than a maple-syrup odor."
+    ],
+    "teaching": "MSUD: sweet urine + neonatal encephalopathy + elevated alloisoleucine. Branched-chain amino acids are leucine, isoleucine, and valine (I Love Vermont)."
+  },
+  {
+    "id": "msud-20261103-enzyme",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An infant develops metabolic encephalopathy because oxidative decarboxylation of branched-chain alpha-keto acids is impaired. Which enzyme complex is deficient?",
+    "options": [
+      "Phenylalanine hydroxylase",
+      "Branched-chain alpha-ketoacid dehydrogenase",
+      "Homogentisate oxidase",
+      "Cystathionine beta-synthase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Phenylalanine hydroxylase deficiency causes phenylketonuria; it blocks phenylalanine-to-tyrosine conversion.",
+      "Branched-chain alpha-ketoacid dehydrogenase deficiency causes MSUD after the initial transamination of leucine, isoleucine, and valine.",
+      "Homogentisate oxidase deficiency causes alkaptonuria, associated with ochronosis and darkening urine on standing.",
+      "Cystathionine beta-synthase deficiency causes classic homocystinuria, with elevated homocysteine and methionine."
+    ],
+    "teaching": "MSUD blocks the oxidative decarboxylation step after BCAA transamination. Branched-chain alpha-ketoacid dehydrogenase uses thiamine (B1), lipoate, coenzyme A (B5), FAD (B2), and NAD+ (B3)."
+  },
+  {
+    "id": "msud-20261103-diet",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child with confirmed maple syrup urine disease begins long-term nutritional therapy. Which amino acid group must be carefully restricted while providing enough nutrients for growth?",
+    "options": [
+      "Methionine",
+      "Phenylalanine",
+      "Leucine, isoleucine, and valine",
+      "Tyrosine"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Methionine restriction may be used in classic homocystinuria, depending on biochemical response and management plan.",
+      "Phenylalanine restriction is the main dietary strategy for phenylketonuria.",
+      "All three branched-chain amino acids require controlled intake in MSUD; leucine is particularly neurotoxic, and measured isoleucine and valine must still be supplied for growth.",
+      "Tyrosine and phenylalanine restriction with nitisinone is used in tyrosinemia type I."
+    ],
+    "teaching": "MSUD diet: restrict BCAAs (Ile, Leu, Val), not eliminate essential amino acids entirely. Use specialized BCAA-free formula plus prescribed amounts and plasma amino acid monitoring."
+  },
+  {
+    "id": "msud-20261103-crisis",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A previously stable child with maple syrup urine disease develops fever, vomiting, ataxia, and encephalopathy during an infection. Which immediate metabolic strategy is most appropriate?",
+    "options": [
+      "Increase natural protein to replace lost calories",
+      "Reverse catabolism using high-calorie glucose-containing support and urgently manage elevated leucine",
+      "Restrict only dietary tyrosine and start nitisinone",
+      "Give phenylalanine hydroxylase replacement"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Extra natural protein can increase branched-chain amino acid load and worsen the crisis; nutrition must be managed by a metabolic specialist.",
+      "An MSUD crisis requires urgent hospital management: temporarily hold natural protein, give high-calorie intravenous dextrose (often with lipids), treat triggers, and monitor amino acids; severe cases may require dialysis.",
+      "Nitisinone with restriction of tyrosine and phenylalanine treats tyrosinemia type I, not MSUD.",
+      "Phenylalanine hydroxylase is involved in phenylketonuria, not the branched-chain alpha-ketoacid dehydrogenase defect."
+    ],
+    "teaching": "In MSUD, infection and fasting trigger protein breakdown and leucine accumulation. Crisis = urgent anti-catabolic support and specialist-directed amino acid management; dialysis may be needed if severe."
+  },
+  {
+    "id": "msud-20261103-differential",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A 9-month-old child has progressive macrocephaly, dystonia, and bilateral basal ganglia injury during a febrile illness. Organic acid testing shows elevated glutaric acid and 3-hydroxyglutaric acid. Which dietary amino acid restriction targets the primary defect?",
+    "options": [
+      "Lysine",
+      "Valine",
+      "Methionine",
+      "Phenylalanine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Glutaric aciduria type I is caused by glutaryl-CoA dehydrogenase deficiency in lysine (and tryptophan) catabolism; lysine restriction with special formula and carnitine is a key treatment.",
+      "Valine is one of the branched-chain amino acids restricted in maple syrup urine disease, which classically features sweet-smelling urine and elevated alloisoleucine.",
+      "Methionine restriction can be indicated in classic homocystinuria, associated with thrombosis and lens subluxation.",
+      "Phenylalanine restriction is used in phenylketonuria, which features excess phenylalanine and may cause a musty odor."
+    ],
+    "teaching": "Differentiate diets: MSUD = Ile/Leu/Val; PKU = phenylalanine; homocystinuria = methionine (selected patients); tyrosinemia I = tyrosine + phenylalanine; glutaric aciduria I = lysine."
+  },
+  {
+    "id": "glycogen-20261105-von-gierke",
+    "topic": "Glycogen Storage Diseases",
+    "level": 2,
+    "stem": "An infant has severe fasting hypoglycemia, hepatomegaly, lactic acidosis, hyperuricemia, and hypertriglyceridemia. Which hepatic enzyme is deficient?",
+    "options": [
+      "Debranching enzyme",
+      "Glucose-6-phosphatase",
+      "Lysosomal acid alpha-glucosidase",
+      "Muscle glycogen phosphorylase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A deficiência da enzima desramificadora causa doença de Cori (tipo III), com dextrina-limite.",
+      "Correta: a doença de Von Gierke (tipo I) impede a liberação de glicose-6-fosfato como glicose livre no fígado.",
+      "A deficiência da alfa-glicosidase ácida causa doença de Pompe (tipo II), sobretudo com cardiomiopatia e hipotonia.",
+      "A deficiência da fosforilase muscular causa doença de McArdle (tipo V), com intolerância ao exercício."
+    ],
+    "teaching": "Von Gierke = glicose-6-fosfatase ausente: hipoglicemia de jejum, lactato alto, ácido úrico alto, lipídios altos e hepatomegalia."
+  },
+  {
+    "id": "glycogen-20261105-pompe",
+    "topic": "Glycogen Storage Diseases",
+    "level": 2,
+    "stem": "A 4-month-old infant has hypotonia, macroglossia, cardiomegaly, and hypertrophic cardiomyopathy. Blood glucose is normal. Which defect is most likely?",
+    "options": [
+      "Deficient lysosomal acid alpha-glucosidase",
+      "Deficient hepatic glucose-6-phosphatase",
+      "Deficient muscle glycogen phosphorylase",
+      "Deficient branching enzyme"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: a doença de Pompe (tipo II) é causada por deficiência da alfa-glicosidase ácida lisossômica; glicogênio se acumula em músculo e coração.",
+      "Von Gierke costuma causar hipoglicemia de jejum e hepatomegalia, não cardiomiopatia por depósito lisossômico.",
+      "McArdle causa cãibras e intolerância ao exercício, geralmente sem cardiomiopatia infantil.",
+      "A deficiência da enzima ramificadora causa doença de Andersen, com doença hepática progressiva."
+    ],
+    "teaching": "Pompe = depósito lisossômico de glicogênio; coração aumentado e hipotonia com glicemia geralmente normal."
+  },
+  {
+    "id": "glycogen-20261105-cori",
+    "topic": "Glycogen Storage Diseases",
+    "level": 2,
+    "stem": "A child has hepatomegaly, mild fasting hypoglycemia, and limit-dextrin accumulation in liver and muscle. Which enzyme is deficient?",
+    "options": [
+      "Glycogen branching enzyme",
+      "Glycogen debranching enzyme",
+      "Glucose-6-phosphatase",
+      "Muscle glycogen phosphorylase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A enzima ramificadora deficiente causa doença de Andersen (tipo IV), com glicogênio pouco ramificado e cirrose progressiva.",
+      "Correta: doença de Cori (tipo III) decorre da deficiência da enzima desramificadora; a dextrina-limite permanece após a glicogenólise.",
+      "A glicose-6-fosfatase deficiente causa doença de Von Gierke (tipo I), com hipoglicemia grave e acidose láctica.",
+      "A fosforilase muscular deficiente causa doença de McArdle (tipo V), que se manifesta durante exercício."
+    ],
+    "teaching": "Cori (tipo III) = deficiência da enzima desramificadora e acúmulo de dextrina-limite; hipoglicemia costuma ser mais leve que em Von Gierke."
+  },
+  {
+    "id": "glycogen-20261105-andersen",
+    "topic": "Glycogen Storage Diseases",
+    "level": 2,
+    "stem": "A child develops progressive hepatosplenomegaly, cirrhosis, and liver failure. Biopsy shows poorly branched glycogen. Which enzyme is deficient?",
+    "options": [
+      "Glycogen branching enzyme",
+      "Glycogen debranching enzyme",
+      "Liver glycogen phosphorylase",
+      "Acid alpha-glucosidase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: deficiência da enzima ramificadora produz glicogênio anormal, pouco ramificado, e causa doença de Andersen (tipo IV).",
+      "A deficiência da enzima desramificadora causa doença de Cori (tipo III) e dextrina-limite.",
+      "A deficiência da fosforilase hepática causa doença de Hers (tipo VI), geralmente mais branda.",
+      "A alfa-glicosidase ácida é lisossômica; sua deficiência causa doença de Pompe."
+    ],
+    "teaching": "Andersen (tipo IV): glicogênio com poucas ramificações → depósito hepático e cirrose progressiva."
+  },
+  {
+    "id": "glycogen-20261105-hers",
+    "topic": "Glycogen Storage Diseases",
+    "level": 1,
+    "stem": "A child has mild fasting hypoglycemia and hepatomegaly due to impaired hepatic glycogen breakdown, but no major lactic acidosis. Which enzyme is most likely deficient?",
+    "options": [
+      "Liver glycogen phosphorylase",
+      "Glucose-6-phosphatase",
+      "Muscle glycogen phosphorylase",
+      "Branching enzyme"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: doença de Hers (tipo VI) decorre da deficiência da fosforilase hepática e costuma ter curso relativamente brando.",
+      "Von Gierke costuma produzir hipoglicemia grave, acidose láctica e hiperuricemia.",
+      "McArdle afeta músculo esquelético e causa intolerância ao exercício.",
+      "A deficiência da enzima ramificadora causa doença hepática progressiva de Andersen."
+    ],
+    "teaching": "Hers (tipo VI) = fosforilase hepática; hepatomegalia e hipoglicemia de jejum geralmente leves."
+  },
+  {
+    "id": "lysosomal-20261105-gaucher",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "An adult has hepatosplenomegaly, thrombocytopenia, bone pain, and macrophages with wrinkled, tissue-paper-like cytoplasm. Which enzyme is deficient?",
+    "options": [
+      "Sphingomyelinase",
+      "Glucocerebrosidase",
+      "Hexosaminidase A",
+      "Alpha-galactosidase A"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A deficiência de esfingomielinase causa Niemann–Pick, com células espumosas.",
+      "Correta: Gaucher decorre da deficiência de glucocerebrosidase e acumula glucocerebrosídeo em macrófagos.",
+      "A deficiência de hexosaminidase A causa Tay–Sachs, com neurodegeneração e mancha vermelho-cereja sem hepatoesplenomegalia.",
+      "A deficiência de alfa-galactosidase A causa Fabry."
+    ],
+    "teaching": "Gaucher = glucocerebrosidase baixa; macrófagos com aspecto de papel amassado, citopenias e doença óssea."
+  },
+  {
+    "id": "lysosomal-20261105-niemann-pick",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A child has neurodegeneration, hepatosplenomegaly, foam cells, and a cherry-red macula. Which enzyme deficiency best explains this combination?",
+    "options": [
+      "Hexosaminidase A",
+      "Sphingomyelinase",
+      "Glucocerebrosidase",
+      "Iduronate-2-sulfatase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Hexosaminidase A deficiente causa Tay–Sachs, tipicamente sem hepatoesplenomegalia.",
+      "Correta: Niemann–Pick tipo A/B resulta da deficiência de esfingomielinase ácida e acumula esfingomielina.",
+      "Glucocerebrosidase deficiente causa Gaucher; macrófagos têm citoplasma de papel amassado.",
+      "Iduronate-2-sulfatase deficiente causa Hunter, uma mucopolissacaridose."
+    ],
+    "teaching": "Niemann–Pick: esfingomielinase ácida baixa, células espumosas e hepatoesplenomegalia; pode haver mancha vermelho-cereja."
+  },
+  {
+    "id": "lysosomal-20261105-fabry",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A young man has episodic burning pain in his hands and feet, angiokeratomas, hypohidrosis, and progressive kidney disease. Which substrate accumulates?",
+    "options": [
+      "Globotriaosylceramide",
+      "Glucocerebroside",
+      "Sphingomyelin",
+      "GM2 ganglioside"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: Fabry, ligada ao X, decorre da deficiência de alfa-galactosidase A e acumula globotriaosilceramida (Gb3).",
+      "Glucocerebrosídeo se acumula na doença de Gaucher.",
+      "Esfingomielina se acumula na doença de Niemann–Pick.",
+      "GM2 se acumula na doença de Tay–Sachs por deficiência de hexosaminidase A."
+    ],
+    "teaching": "Fabry = alfa-galactosidase A baixa → Gb3; dor acral, angiokeratomas, hipohidrose e doença renal/cardiaca."
+  },
+  {
+    "id": "lysosomal-20261105-hurler",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A child has coarse facial features, developmental delay, hepatosplenomegaly, and cloudy corneas. Which enzyme is deficient?",
+    "options": [
+      "Iduronate-2-sulfatase",
+      "Alpha-L-iduronidase",
+      "Arylsulfatase A",
+      "Hexosaminidase A"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Iduronate-2-sulfatase deficiente causa Hunter, ligada ao X e sem opacidade corneana típica.",
+      "Correta: deficiência de alfa-L-iduronidase causa Hurler (MPS I), com opacidade corneana e armazenamento de glicosaminoglicanos.",
+      "Arilsulfatase A deficiente causa leucodistrofia metacromática.",
+      "Hexosaminidase A deficiente causa Tay–Sachs."
+    ],
+    "teaching": "Hurler (MPS I) = alfa-L-iduronidase; opacidade corneana. Hunter (MPS II) = iduronate-2-sulfatase; sem opacidade corneana."
+  },
+  {
+    "id": "lysosomal-20261105-hunter",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A boy has coarse facial features, hepatosplenomegaly, and developmental delay, but his corneas are clear. Which inheritance pattern and enzyme defect are most likely?",
+    "options": [
+      "Autosomal recessive; alpha-L-iduronidase",
+      "X-linked recessive; iduronate-2-sulfatase",
+      "Autosomal recessive; arylsulfatase A",
+      "X-linked recessive; alpha-galactosidase A"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Essa combinação caracteriza Hurler, que tem opacidade corneana e herança autossômica recessiva.",
+      "Correta: Hunter (MPS II) é ligada ao X e decorre de iduronate-2-sulfatase; não causa opacidade corneana.",
+      "Arilsulfatase A baixa causa leucodistrofia metacromática, não a síndrome descrita.",
+      "Alfa-galactosidase A baixa causa Fabry, com angiokeratomas e dor acral."
+    ],
+    "teaching": "Hunter = MPS II, ligada ao X, iduronate-2-sulfatase, córneas claras."
+  },
+  {
+    "id": "inborn-20261105-pku",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "A newborn has elevated phenylalanine and low tyrosine. A trial of tetrahydrobiopterin does not lower phenylalanine. Which enzyme is most likely deficient?",
+    "options": [
+      "Phenylalanine hydroxylase",
+      "Tyrosine hydroxylase",
+      "Homogentisate oxidase",
+      "Dihydropteridine reductase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: fenilalanina hidroxilase converte fenilalanina em tirosina; sua deficiência causa fenilcetonúria clássica e não responde à reposição de BH4.",
+      "Tirosina hidroxilase participa da síntese de catecolaminas.",
+      "Homogentisato oxidase deficiente causa alcaptonúria.",
+      "Dihidropteridina redutase regenera BH4; seu defeito pode reduzir a atividade de enzimas dependentes de BH4 e exige manejo específico."
+    ],
+    "teaching": "Fenilcetonúria clássica = fenilalanina hidroxilase baixa → fenilalanina alta e tirosina baixa; tirosina torna-se essencial."
+  },
+  {
+    "id": "inborn-20261105-mcad",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "After an overnight fast, a toddler develops hypoketotic hypoglycemia, lethargy, and elevated dicarboxylic acids. Which enzyme is most likely deficient?",
+    "options": [
+      "Medium-chain acyl-CoA dehydrogenase",
+      "Pyruvate dehydrogenase",
+      "Hormone-sensitive lipase",
+      "Hepatic glycogen phosphorylase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: deficiência de MCAD prejudica beta-oxidação de ácidos graxos de cadeia média; há hipoglicemia com poucos corpos cetônicos e dicarboxílicos elevados.",
+      "Piruvato desidrogenase deficiente causa acidose láctica e comprometimento neurológico, não o padrão clássico de hipoglicemia hipocetótica no jejum.",
+      "Lipase hormônio-sensível não é a deficiência herdada clássica desse quadro.",
+      "A fosforilase hepática baixa causa glicogenose VI, com hipoglicemia e hepatomegalia, não dicarboxilacidúria."
+    ],
+    "teaching": "MCAD = defeito de beta-oxidação; jejum → hipoglicemia hipocetótica. Crianças afetadas devem evitar jejum prolongado."
+  },
+  {
+    "id": "inborn-20261105-mma",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 3,
+    "stem": "An infant has metabolic acidosis, hyperammonemia, and elevated methylmalonic acid. Which additional blood abnormality most strongly supports methylmalonyl-CoA mutase deficiency?",
+    "options": [
+      "Elevated homocysteine with low methionine",
+      "Elevated homocysteine with high methionine",
+      "Low homocysteine with high methionine",
+      "Elevated phenylalanine with low tyrosine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: a mutase depende de adenosilcobalamina (vitamina B12); defeitos combinados podem elevar homocisteína e reduzir metionina.",
+      "Homocisteína e metionina altas sugerem deficiência de cistationina beta-sintase.",
+      "Homocisteína baixa e metionina alta não é o padrão da acidemia metilmalônica.",
+      "Fenilalanina alta e tirosina baixa sugerem fenilcetonúria."
+    ],
+    "teaching": "Acidemia metilmalônica pode decorrer de deficiência de metilmalonil-CoA mutase ou de B12; alteração da via de metionina pode elevar homocisteína e reduzir metionina."
+  },
+  {
+    "id": "inborn-20261105-tyrosinemia",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "An infant has progressive liver failure, renal tubular dysfunction, and elevated succinylacetone. Which enzyme is deficient?",
+    "options": [
+      "Fumarylacetoacetate hydrolase",
+      "Tyrosine aminotransferase",
+      "Homogentisate oxidase",
+      "Phenylalanine hydroxylase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: deficiência de fumarylacetoacetato hidrolase causa tirosinemia tipo I; succinilacetona é um marcador diagnóstico importante.",
+      "Tirosina aminotransferase deficiente causa tirosinemia tipo II, com lesões oculares e cutâneas.",
+      "Homogentisato oxidase baixa causa alcaptonúria, com urina escura e ocronose.",
+      "Fenilalanina hidroxilase deficiente causa fenilcetonúria."
+    ],
+    "teaching": "Tirosinemia tipo I = fumarylacetoacetato hidrolase baixa; succinilacetona, insuficiência hepática e lesão renal."
+  },
+  {
+    "id": "biochem-20261105-glut4",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "After insulin binds its receptor in skeletal muscle, which transporter is moved to the plasma membrane to increase glucose uptake?",
+    "options": [
+      "GLUT1",
+      "GLUT2",
+      "GLUT3",
+      "GLUT4"
+    ],
+    "answer": 3,
+    "explanations": [
+      "GLUT1 provides basal glucose uptake in many tissues, including erythrocytes.",
+      "GLUT2 is a high-capacity transporter in liver and pancreatic beta cells and is not insulin-dependent.",
+      "GLUT3 has high affinity for glucose and is prominent in neurons.",
+      "Correta: insulina estimula translocação de GLUT4 para a membrana em músculo esquelético e tecido adiposo."
+    ],
+    "teaching": "GLUT4 = transportador de glicose sensível à insulina em músculo e tecido adiposo; exercício também pode aumentar sua translocação muscular."
+  },
+  {
+    "id": "biochem-20261105-beta2-gs",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A beta-2 adrenergic receptor in bronchial smooth muscle is activated. Which intracellular signaling change is expected?",
+    "options": [
+      "Gi inhibits adenylyl cyclase, decreasing cyclic AMP",
+      "Gs activates adenylyl cyclase, increasing cyclic AMP",
+      "Gq activates phospholipase C, increasing IP3 and DAG",
+      "A receptor tyrosine kinase directly phosphorylates STAT proteins"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Gi reduz a atividade da adenilil ciclase e o AMPc; é associado, por exemplo, a receptores alfa-2.",
+      "Correta: receptor beta-2 acopla-se a Gs, ativa adenilil ciclase, aumenta AMPc e relaxa músculo liso brônquico.",
+      "Gq ativa fosfolipase C, formando IP3 e DAG; alfa-1 é exemplo clássico.",
+      "STAT é ativada principalmente por receptores de citocinas associados a JAK."
+    ],
+    "teaching": "Beta-2 = Gs → adenilil ciclase → AMPc sobe → proteína quinase A → relaxamento do músculo liso."
+  },
+  {
+    "id": "biochem-20261105-pertussis-gi",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Pertussis toxin causes ADP-ribosylation of Gi. What is the downstream effect in respiratory epithelial cells?",
+    "options": [
+      "Persistent inhibition of adenylyl cyclase and low cyclic AMP",
+      "Failure of Gi to inhibit adenylyl cyclase, causing increased cyclic AMP",
+      "Activation of Gq and increased intracellular calcium",
+      "Direct activation of protein kinase C"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Isso é o efeito oposto; Gi funcional inibe adenilil ciclase.",
+      "Correta: a toxina da coqueluche mantém Gi inativa, incapaz de frear a adenilil ciclase; AMPc aumenta.",
+      "Gq ativa fosfolipase C, mas não é o alvo clássico da toxina pertussis.",
+      "Proteína quinase C é ativada por DAG downstream de Gq, não diretamente por essa toxina."
+    ],
+    "teaching": "Toxina pertussis ADP-ribosila Gi e a deixa inativa → adenilil ciclase sem freio → AMPc aumenta."
+  },
+  {
+    "id": "biochem-20261105-translation-direction",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "During translation, in which direction does the ribosome read messenger RNA, and in which direction is the polypeptide synthesized?",
+    "options": [
+      "Messenger RNA 3′ to 5′; protein C-terminus to N-terminus",
+      "Messenger RNA 5′ to 3′; protein N-terminus to C-terminus",
+      "Messenger RNA 5′ to 3′; protein C-terminus to N-terminus",
+      "Messenger RNA 3′ to 5′; protein N-terminus to C-terminus"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Ambas as direções estão invertidas.",
+      "Correta: o ribossomo percorre o RNA mensageiro 5′→3′ e adiciona aminoácidos à extremidade C-terminal, então a proteína cresce de N para C.",
+      "A direção do RNA está correta, mas a proteína cresce no sentido oposto ao descrito.",
+      "A síntese proteica é N→C e o RNA é lido 5′→3′."
+    ],
+    "teaching": "Tradução: leitura do RNA mensageiro 5′→3′; crescimento da proteína N-terminal→C-terminal."
+  },
+  {
+    "id": "biochem-20261105-trna-ape",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A charged transfer RNA enters the ribosome carrying the next amino acid. At which site does it usually bind first during elongation?",
+    "options": [
+      "A site",
+      "P site",
+      "E site",
+      "Peptidyl-transferase center only"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: o sítio A (aminoacil) recebe o novo tRNA carregado durante o alongamento.",
+      "O sítio P mantém o tRNA ligado à cadeia peptídica em crescimento.",
+      "O sítio E é a saída do tRNA descarregado.",
+      "A atividade peptidil-transferase catalisa a ligação peptídica na subunidade grande; não é o sítio de entrada do novo tRNA."
+    ],
+    "teaching": "A-P-E: aminoacil entra no A; peptidil fica no P; tRNA vazio sai pelo E."
+  },
+  {
+    "id": "biochem-20261105-kozak",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A eukaryotic ribosome scans a messenger RNA and initiates translation at the first suitable AUG. Which sequence helps the ribosome recognize the start site?",
+    "options": [
+      "TATA box",
+      "Kozak sequence",
+      "Pribnow box",
+      "Shine-Dalgarno sequence"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A TATA box helps position RNA polymerase II during transcription initiation.",
+      "Correta: a sequência de Kozak circunda o AUG e favorece reconhecimento do códon de iniciação pelo ribossomo eucariótico.",
+      "A caixa de Pribnow é uma sequência promotora de procariotos.",
+      "A sequência Shine–Dalgarno alinha o ribossomo em mRNA procariótico."
+    ],
+    "teaching": "Eucariotos: subunidade 40S faz scanning do 5′ cap; a sequência de Kozak favorece a escolha do AUG de início."
+  },
+  {
+    "id": "biochem-20261105-telomerase",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A stem cell maintains chromosome ends despite repeated DNA replication. Which property of telomerase enables this?",
+    "options": [
+      "It uses an internal RNA template to extend the 3′ end of DNA",
+      "It ligates Okazaki fragments at the 5′ end",
+      "It replaces DNA polymerase delta at every replication fork",
+      "It removes RNA primers from the lagging strand"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: telomerase é uma transcriptase reversa que usa seu RNA interno como molde para estender a extremidade 3′ do DNA telomérico.",
+      "DNA ligase I une fragmentos de Okazaki; não alonga telômeros.",
+      "DNA polimerase delta replica DNA, mas não substitui telomerase.",
+      "RNase H e exonucleases participam da remoção de primers; isso não resolve o encurtamento terminal."
+    ],
+    "teaching": "Telomerase carrega seu próprio RNA molde e alonga a extremidade 3′ do telômero; depois a maquinaria convencional completa a fita complementar."
+  },
+  {
+    "id": "biochem-20261105-competitive",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A reversible competitive inhibitor binds the active site of an enzyme. What happens to the apparent Km and Vmax?",
+    "options": [
+      "Km decreases; Vmax decreases",
+      "Km increases; Vmax is unchanged",
+      "Km is unchanged; Vmax decreases",
+      "Km and Vmax both increase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Inibição competitiva não reduz ambos os parâmetros.",
+      "Correta: mais substrato é necessário para atingir metade da Vmax (Km aparente sobe), mas substrato suficiente pode superar a inibição, preservando Vmax.",
+      "Essa é a mudança típica da inibição não competitiva pura.",
+      "Vmax não aumenta; a competição eleva Km aparente e mantém Vmax."
+    ],
+    "teaching": "Inibidor competitivo: Km aparente ↑, Vmax inalterada; aumentar substrato pode superar a inibição."
+  },
+  {
+    "id": "biochem-20261105-nadph",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An erythrocyte exposed to oxidant stress cannot generate enough NADPH because of glucose-6-phosphate dehydrogenase deficiency. Which protective system fails first?",
+    "options": [
+      "Reduced glutathione recycling",
+      "Catalase synthesis",
+      "Heme oxygenase activity",
+      "Fetal hemoglobin production"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: NADPH mantém glutationa na forma reduzida, que remove peróxidos e protege a hemácia.",
+      "Catalase degrada peróxido de hidrogênio; o problema central é a incapacidade de sustentar defesas redutoras dependentes de NADPH.",
+      "Heme oxygenase degrada heme e não é o sistema que depende diretamente de NADPH para esse papel protetor eritrocitário.",
+      "A produção de hemoglobina fetal não é a defesa antioxidante em questão."
+    ],
+    "teaching": "Via das pentoses fosfato gera NADPH; NADPH regenera glutationa reduzida e protege hemácias contra estresse oxidativo."
+  },
+  {
+    "id": "biochem-20261105-pyruvate-carboxylase",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child with developmental delay and lactic acidosis has impaired conversion of pyruvate to oxaloacetate. Which cofactor does the deficient enzyme require?",
+    "options": [
+      "Biotin",
+      "Thiamine pyrophosphate",
+      "Pyridoxal phosphate",
+      "Tetrahydrofolate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: piruvato carboxilase é uma carboxilase dependente de biotina e produz oxaloacetato para gliconeogênese e anaplerose.",
+      "TPP é cofator da piruvato desidrogenase, alfa-cetoglutarato desidrogenase e desidrogenase de alfa-cetoácidos de cadeia ramificada.",
+      "Fosfato de piridoxal é vitamina B6 e participa de transaminações e descarboxilações.",
+      "Tetrahidrofolato carrega unidades de um carbono."
+    ],
+    "teaching": "Piruvato carboxilase: piruvato → oxaloacetato; precisa de biotina e ATP."
+  },
+  {
+    "id": "biochem-20261105-mrna-5cap",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "A eukaryotic pre-mRNA receives a 7-methylguanosine cap at its 5′ end. Which function is directly promoted by this cap?",
+    "options": [
+      "Recognition by the small ribosomal subunit during translation initiation",
+      "Removal of introns by the spliceosome",
+      "Polyadenylation at the 3′ end",
+      "DNA replication origin licensing"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: o cap 5′ ajuda a recrutar fatores de iniciação e a subunidade 40S para começar a tradução.",
+      "O spliceossomo remove íntrons por reconhecimento de sequências de splicing; o cap não realiza a remoção.",
+      "A cauda poli-A é adicionada separadamente à extremidade 3′.",
+      "Licenciamento de origens de replicação ocorre no DNA e não depende do cap de mRNA."
+    ],
+    "teaching": "Cap 5′ de 7-metilguanosina protege o mRNA e ajuda a iniciar tradução; cauda poli-A fica na extremidade 3′."
+  },
+  {
+    "id": "biochem-20261105-ethanol-nad",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Ethanol metabolism raises the hepatic NADH/NAD+ ratio. Which metabolic change is promoted?",
+    "options": [
+      "Pyruvate conversion to lactate",
+      "Lactate conversion to pyruvate",
+      "Oxaloacetate conversion to phosphoenolpyruvate",
+      "Increased beta-oxidation of fatty acids"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Correta: excesso de NADH desloca lactato desidrogenase para piruvato → lactato, contribuindo para acidose láctica.",
+      "O equilíbrio é deslocado no sentido oposto pela alta razão NADH/NAD+.",
+      "A gliconeogênese é prejudicada porque oxaloacetato é deslocado para malato; esta reação não é favorecida.",
+      "NADH alto inibe beta-oxidação e favorece acúmulo de triglicerídeos."
+    ],
+    "teaching": "Etanol ↑NADH/NAD+ → piruvato vira lactato e oxaloacetato vira malato; gliconeogênese cai e pode ocorrer hipoglicemia."
+  }
 ];
