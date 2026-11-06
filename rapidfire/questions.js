@@ -5419,5 +5419,285 @@ window.RAPIDFIRE_QUESTIONS = [
       "Water balance does not describe loss of nitrogen-containing tissue."
     ],
     "teaching": "Calorie sufficiency does not guarantee positive nitrogen balance during severe catabolic stress."
+  },
+  {
+    "id": "scid-20261106-pattern",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "An infant has persistent thrush, chronic diarrhea, poor growth, very low T-cell numbers, and poor antibody responses. Which immune defect best unifies these findings?",
+    "options": [
+      "Combined cellular and humoral deficiency",
+      "Isolated neutrophil oxidative-burst failure",
+      "Isolated terminal complement deficiency",
+      "Isolated immunoglobulin A deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "SCID, imunodeficiência combinada grave, compromete a imunidade celular e a função humoral.",
+      "O defeito da explosão oxidativa causa doença granulomatosa crônica, mas não explica T muito baixos e deficiência profunda de anticorpos.",
+      "Deficiência do complemento terminal favorece Neisseria, sem esse padrão de linfopenia.",
+      "Deficiência isolada de imunoglobulina A não causa perda profunda de linfócitos T."
+    ],
+    "teaching": "SCID: infecções precoces + diarreia + baixo ganho ponderal + deficiência de T e da função de anticorpos."
+  },
+  {
+    "id": "scid-20261106-ada-enzyme",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "An infant with combined immunodeficiency has almost no adenosine deaminase activity. Which pathway is directly impaired?",
+    "options": [
+      "Neutrophil superoxide production",
+      "Purine nucleoside degradation",
+      "Complement membrane-attack complex assembly",
+      "Immunoglobulin class switching only"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A produção de superóxido depende da NADPH oxidase; NADPH significa nicotinamida adenina dinucleotídeo fosfato reduzida.",
+      "A adenosina desaminase (ADA) degrada adenosina e desoxiadenosina. Sua deficiência causa acúmulo de metabólitos tóxicos para linfócitos.",
+      "O complemento terminal é outro sistema de defesa.",
+      "A deficiência de ADA prejudica a sobrevivência dos linfócitos, não apenas a troca de classe."
+    ],
+    "teaching": "ADA é uma enzima do metabolismo de purinas; sua deficiência causa SCID."
+  },
+  {
+    "id": "scid-20261106-datp",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "In adenosine deaminase deficiency, excess deoxyadenosine triphosphate most directly inhibits which enzyme?",
+    "options": [
+      "Myeloperoxidase",
+      "Xanthine oxidase",
+      "Ribonucleotide reductase",
+      "Adenylate cyclase"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Mieloperoxidase produz ácido hipocloroso nos fagócitos.",
+      "Xantina oxidase participa da produção de ácido úrico.",
+      "O excesso de dATP, desoxiadenosina trifosfato, inibe a ribonucleotídeo redutase e prejudica a síntese de desoxirribonucleotídeos e de DNA, ácido desoxirribonucleico.",
+      "Adenilato ciclase produz adenosina monofosfato cíclica; não é o alvo clássico dessa toxicidade."
+    ],
+    "teaching": "ADA baixa → desoxiadenosina/dATP altos → ribonucleotídeo redutase inibida → proliferação linfocitária prejudicada."
+  },
+  {
+    "id": "scid-20261106-ada-phenotype",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "Which lymphocyte pattern is classically associated with severe adenosine deaminase deficiency? NK denotes natural killer cells.",
+    "options": [
+      "T− B+ NK−",
+      "T+ B− NK+",
+      "T− B− NK+",
+      "T− B− NK−"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Padrão clássico do defeito da cadeia gama comum ou de JAK3, Janus quinase 3.",
+      "Sugere defeito predominantemente de células B, como agamaglobulinemia de Bruton.",
+      "Pode ocorrer com defeitos de recombinação dos receptores, como RAG1/2.",
+      "Na deficiência grave de ADA, os metabólitos tóxicos atingem T, B e NK, células natural killer."
+    ],
+    "teaching": "ADA: herança autossômica recessiva e padrão clássico T− B− NK−; formas parciais podem variar."
+  },
+  {
+    "id": "scid-20261106-gamma",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A boy has severe combined immunodeficiency with absent T and natural killer cells but preserved B-cell numbers. Which receptor component is most likely defective?",
+    "options": [
+      "Common gamma chain shared by several cytokine receptors",
+      "Complement C5 receptor",
+      "B-cell antigen receptor heavy chain only",
+      "Neutrophil integrin CD18"
+    ],
+    "answer": 0,
+    "explanations": [
+      "O gene IL2RG codifica a cadeia gama comum. Falha na sinalização de interleucina 7 prejudica T; de interleucina 15 prejudica NK.",
+      "O receptor de complemento não explica o padrão T− B+ NK−.",
+      "Um defeito restrito ao receptor de B não explica a perda de T e NK.",
+      "CD18, agrupamento de diferenciação 18, está ligado à adesão de leucócitos."
+    ],
+    "teaching": "SCID ligado ao X: cadeia gama comum, compartilhada por vários receptores; não apenas pelo receptor de interleucina 2."
+  },
+  {
+    "id": "scid-20261106-b-present",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "Why can antibody production be severely impaired in severe combined immunodeficiency even when B-cell numbers are normal?",
+    "options": [
+      "Normal B-cell counts guarantee normal antibodies",
+      "B cells lack adequate T-cell help and may also have intrinsic signaling defects",
+      "Neutrophils normally produce immunoglobulins",
+      "Natural killer cells normally become plasma cells"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Número e função são coisas diferentes: B presentes não garantem resposta humoral adequada.",
+      "Linfócitos T auxiliares sustentam a ativação e diferenciação de B; alguns defeitos de SCID também comprometem a sinalização intrínseca de B.",
+      "Anticorpos são produzidos por plasmócitos da linhagem B.",
+      "Células NK não se transformam em plasmócitos."
+    ],
+    "teaching": "Combinada descreve perda de função celular e humoral; não exige ausência numérica de B em todos os subtipos."
+  },
+  {
+    "id": "scid-20261106-cgd-distinction",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "Which finding most strongly favors severe combined immunodeficiency over chronic granulomatous disease?",
+    "options": [
+      "Recurrent bacterial infection",
+      "Pneumonia",
+      "Profound T-cell lymphopenia with very low immunoglobulins",
+      "A fungal infection"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Ambas podem causar infecções bacterianas.",
+      "Pneumonia ocorre em ambas.",
+      "A combinação indica defeito de linfócitos e de função humoral. A doença granulomatosa crônica afeta principalmente a atividade microbicida dos fagócitos.",
+      "Infecções fúngicas também ocorrem na doença granulomatosa crônica."
+    ],
+    "teaching": "Não escolha a doença só pelo microrganismo: localize o defeito pelo padrão imunológico."
+  },
+  {
+    "id": "scid-20261106-trec",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A newborn screen detects very low T-cell receptor excision circles (TRECs). What is the next key assessment?",
+    "options": [
+      "Diagnose adenosine deaminase deficiency without further testing",
+      "Measure only serum immunoglobulin E",
+      "Exclude immunodeficiency because the infant looks well",
+      "Quantify lymphocyte subsets and assess T-cell function"
+    ],
+    "answer": 3,
+    "explanations": [
+      "TREC baixo não identifica sozinho a causa genética.",
+      "Imunoglobulina E isolada não avalia a deficiência de T.",
+      "A triagem pode detectar a doença antes dos sintomas.",
+      "TRECs são círculos de excisão do receptor de células T, marcadores de produção de novos T. Citometria de fluxo e testes funcionais ajudam a confirmar e classificar o defeito."
+    ],
+    "teaching": "TREC baixo é triagem para baixa produção de T; não confirma sozinho SCID nem seu subtipo."
+  },
+  {
+    "id": "scid-20261106-bruton",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "A boy has nearly absent circulating B cells, normal T-cell numbers and function, and low levels of all immunoglobulin classes. Which diagnosis is most likely?",
+    "options": [
+      "X-linked agammaglobulinemia",
+      "Typical severe combined immunodeficiency",
+      "Chronic granulomatous disease",
+      "Complete thymic aplasia"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Na agamaglobulinemia de Bruton, o defeito da tirosina quinase de Bruton bloqueia a maturação dos B; T estão preservados.",
+      "SCID típico apresenta deficiência profunda de T, além de função humoral prejudicada.",
+      "O defeito é de fagócitos e não causa ausência seletiva de B.",
+      "Aplasia tímica completa causa deficiência profunda de T, que estão normais aqui."
+    ],
+    "teaching": "Bruton: B ausentes e T preservados. SCID: T gravemente comprometidos."
+  },
+  {
+    "id": "scid-20261106-digeorge",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "An infant with low T-cell numbers also has hypocalcemic seizures and a conotruncal cardiac defect. Which diagnosis best explains the combination?",
+    "options": [
+      "Adenosine deaminase deficiency",
+      "22q11.2 deletion syndrome",
+      "Isolated immunoglobulin A deficiency",
+      "Myeloperoxidase deficiency"
+    ],
+    "answer": 1,
+    "explanations": [
+      "ADA pode causar SCID, mas não explica tão bem a associação cardíaca e hipoparatireoidismo.",
+      "Síndrome de DiGeorge: hipoplasia/aplasia do timo e das paratireoides associada a cardiopatias conotruncais; gravidade imunológica variável.",
+      "Não causa deficiência de T com esse conjunto de malformações.",
+      "É um defeito microbicida de fagócitos, frequentemente assintomático."
+    ],
+    "teaching": "T baixos + hipocalcemia + cardiopatia conotruncal → DiGeorge; aplasia tímica completa pode produzir imunodeficiência grave."
+  },
+  {
+    "id": "scid-20261106-hyperigm",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A child with opportunistic infections has preserved T- and B-cell numbers, normal or high immunoglobulin M, and very low immunoglobulin G and A. Which defect is most likely?",
+    "options": [
+      "Adenosine deaminase deficiency",
+      "NADPH oxidase deficiency",
+      "CD40 ligand deficiency",
+      "Terminal complement deficiency"
+    ],
+    "answer": 2,
+    "explanations": [
+      "ADA grave costuma reduzir T, B e células natural killer, sem esse padrão seletivo de imunoglobulinas.",
+      "NADPH oxidase atua na explosão oxidativa de fagócitos, não na troca de classe.",
+      "CD40L, ligante de CD40 nos T ativados, permite a troca de classe de anticorpos e ajuda a ativar macrófagos. Seu defeito causa síndrome hiper-IgM ligada ao X.",
+      "Deficiência do complemento terminal favorece Neisseria."
+    ],
+    "teaching": "Hiper-IgM: imunoglobulina M preservada/alta, G e A baixas; contagem de células pode estar normal."
+  },
+  {
+    "id": "scid-20261106-wiskott",
+    "topic": "Immunology",
+    "level": 1,
+    "stem": "A boy with recurrent infections develops eczema, petechiae, and thrombocytopenia with unusually small platelets. Which diagnosis is most likely?",
+    "options": [
+      "Isolated immunoglobulin A deficiency",
+      "Chronic granulomatous disease",
+      "Bruton agammaglobulinemia",
+      "Wiskott–Aldrich syndrome"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Deficiência de imunoglobulina A não explica microplaquetas e eczema.",
+      "Doença granulomatosa crônica não apresenta classicamente essa tríade.",
+      "Bruton causa ausência de B, sem a tríade típica.",
+      "Wiskott–Aldrich é uma imunodeficiência ligada ao X com eczema, infecções e trombocitopenia com plaquetas pequenas."
+    ],
+    "teaching": "Infecções + eczema + microplaquetas → Wiskott–Aldrich."
+  },
+  {
+    "id": "scid-20261106-gene-therapy",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "Autologous hematopoietic stem cells from a patient with adenosine deaminase deficiency receive a functional ADA gene ex vivo. Why target these cells?",
+    "options": [
+      "Their descendants can sustain production of the missing enzyme",
+      "They supply viral reverse transcriptase that the patient normally lacks",
+      "They directly repair every mature neutrophil in the body",
+      "They permanently remove the need for immune monitoring"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Células-tronco hematopoéticas se autorrenovam e originam células sanguíneas; a correção pode persistir em suas descendentes.",
+      "Transcriptase reversa pertence ao vetor retroviral, não é a proteína humana deficiente.",
+      "A estratégia corrige células-tronco e descendentes, não cada neutrófilo maduro já existente.",
+      "Acompanhamento imunológico e de segurança continua necessário."
+    ],
+    "teaching": "Na terapia gênica, o vetor transporta o gene terapêutico; o vetor não é a proteína que falta ao paciente."
+  },
+  {
+    "id": "scid-20261106-mpo",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A patient has normal lymphocyte counts and normal neutrophil superoxide generation but cannot efficiently form hypochlorous acid. Which enzyme is deficient?",
+    "options": [
+      "Adenosine deaminase",
+      "Myeloperoxidase",
+      "NADPH oxidase",
+      "Ribonucleotide reductase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "ADA atua no metabolismo de purinas; deficiência grave causa linfopenia.",
+      "Mieloperoxidase usa peróxido de hidrogênio e cloreto para formar ácido hipocloroso. A deficiência é frequentemente assintomática, mas pode predispor a Candida.",
+      "NADPH oxidase inicia a geração de superóxido, que está preservada.",
+      "Ribonucleotídeo redutase fornece precursores para a síntese de DNA, ácido desoxirribonucleico."
+    ],
+    "teaching": "NADPH oxidase inicia a explosão oxidativa; mieloperoxidase usa o peróxido produzido a jusante."
   }
 ];
