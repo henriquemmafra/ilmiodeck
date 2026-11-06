@@ -7143,4 +7143,253 @@ window.RAPIDFIRE_QUESTIONS = [
     "teaching": "Tirosinase: cobre e melanina; tirosina hidroxilase: via das catecolaminas."
   }
 
+,
+
+  {
+    "id": "cf-cultures-20261106-age",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "In the classic cystic fibrosis colonization pattern, which organism becomes increasingly prominent with age?",
+    "options": [
+      "Pseudomonas aeruginosa",
+      "Haemophilus influenzae",
+      "Streptococcus pyogenes",
+      "Bordetella pertussis"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Pseudomonas ganha importância com a idade no padrão clássico; também pode aparecer cedo.",
+      "Haemophilus é mais associado às faixas pediátricas no esquema.",
+      "Estreptococo do grupo A não é a curva crescente clássica.",
+      "Bordetella causa coqueluche e não é a associação do gráfico."
+    ],
+    "teaching": "Idade orienta a probabilidade, mas não determina sozinha a bactéria."
+  },
+  {
+    "id": "cf-cultures-20261106-child",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Which organism is classically very common in the airways of young children with cystic fibrosis?",
+    "options": [
+      "Clostridium tetani",
+      "Staphylococcus aureus",
+      "Treponema pallidum",
+      "Vibrio cholerae"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Causa tétano; não é colonizador respiratório típico.",
+      "Staphylococcus aureus é muito frequente na infância no padrão clássico da fibrose cística.",
+      "Causa sífilis; não é essa associação.",
+      "É associado a diarreia secretória."
+    ],
+    "teaching": "Infância: lembre de Staphylococcus aureus e Haemophilus influenzae; Pseudomonas não é exclusiva do adulto."
+  },
+  {
+    "id": "cf-cultures-20261106-macconkey",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "A respiratory isolate from a patient with cystic fibrosis is Pseudomonas aeruginosa. How does it typically appear on MacConkey agar?",
+    "options": [
+      "Pink from lactose fermentation",
+      "No growth because all gram-negative bacteria are inhibited",
+      "Colorless colonies because it does not ferment lactose",
+      "Yellow from mannitol fermentation"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Colônias rosas sugerem fermentação de lactose; Pseudomonas não fermenta lactose.",
+      "MacConkey seleciona muitos bacilos gram-negativos e inibe muitos gram-positivos.",
+      "Pseudomonas cresce como não fermentadora de lactose, com colônias incolores no MacConkey.",
+      "Manitol e mudança para amarelo são a associação com ágar sal-manitol."
+    ],
+    "teaching": "Cor da curva não é cor da colônia: Pseudomonas pode estar vermelha no gráfico e ser incolor no MacConkey."
+  },
+  {
+    "id": "cf-cultures-20261106-salt",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "Why does mannitol salt agar favor the isolation of staphylococci?",
+    "options": [
+      "It supplies only hemin",
+      "It contains no carbohydrates",
+      "It contains an antibiotic that identifies S. aureus specifically",
+      "Its high sodium chloride concentration selects salt-tolerant organisms"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Hemina é fator X e está ligada às exigências de Haemophilus.",
+      "O meio contém manitol.",
+      "O crescimento não identifica sozinho a espécie; salinidade é o mecanismo seletivo clássico.",
+      "A concentração elevada de cloreto de sódio favorece microrganismos tolerantes ao sal, como estafilococos."
+    ],
+    "teaching": "Sal seleciona; fermentação do manitol diferencia."
+  },
+  {
+    "id": "cf-cultures-20261106-mannitol",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Staphylococcus aureus turns mannitol salt agar yellow. What causes this color change?",
+    "options": [
+      "Acid production from mannitol fermentation",
+      "Release of blue-green pigment",
+      "Lactose fermentation on MacConkey agar",
+      "Consumption of hemin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A fermentação do manitol produz ácido, alterando o indicador de pH para amarelo.",
+      "Pigmentos azul-esverdeados são associados a Pseudomonas, em condições apropriadas.",
+      "É outro açúcar e outro meio.",
+      "Hemina não explica a mudança de cor nesse meio."
+    ],
+    "teaching": "S. aureus: tolera sal e geralmente fermenta manitol → amarelo."
+  },
+  {
+    "id": "cf-cultures-20261106-chocolate",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Which medium supports a respiratory Haemophilus influenzae isolate that requires factors X and V?",
+    "options": [
+      "Mannitol salt agar alone",
+      "Chocolate agar",
+      "MacConkey agar alone",
+      "Sabouraud agar"
+    ],
+    "answer": 1,
+    "explanations": [
+      "É utilizado para seleção de organismos tolerantes ao sal, como estafilococos.",
+      "Ágar chocolate fornece os fatores necessários ao crescimento de Haemophilus.",
+      "Não fornece adequadamente as exigências desse organismo fastidioso.",
+      "É voltado ao cultivo de fungos."
+    ],
+    "teaching": "Chocolate é sangue aquecido, não chocolate de comer."
+  },
+  {
+    "id": "cf-cultures-20261106-xv",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Which pairing correctly identifies the growth factors required by Haemophilus influenzae?",
+    "options": [
+      "X = vitamin K; V = vitamin B12",
+      "X = glucose; V = lactose",
+      "X = hemin; V = nicotinamide adenine dinucleotide",
+      "X = sodium chloride; V = mannitol"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Essas vitaminas não correspondem aos fatores X e V.",
+      "Não são os açúcares glicose e lactose.",
+      "X é hemina; V é nicotinamida adenina dinucleotídeo, abreviada NAD.",
+      "Sal e manitol são componentes do meio usado para estafilococos."
+    ],
+    "teaching": "Haemophilus: X = hemina; V = NAD (nicotinamida adenina dinucleotídeo)."
+  },
+  {
+    "id": "cf-cultures-20261106-heated-blood",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "Why does heating blood during chocolate agar preparation help support Haemophilus influenzae growth?",
+    "options": [
+      "It converts the bacterium into a spore",
+      "It removes all available iron",
+      "It turns lactose into mannitol",
+      "It lyses erythrocytes and improves availability of required growth factors"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Haemophilus não depende da formação de esporos.",
+      "Hemina contém ferro e é necessária ao crescimento.",
+      "O aquecimento não é utilizado para essa conversão.",
+      "A lise de hemácias disponibiliza fatores; o aquecimento também inativa enzimas que degradariam o fator V."
+    ],
+    "teaching": "Ágar chocolate resolve exigências nutricionais de bactérias fastidiosas."
+  },
+  {
+    "id": "cf-cultures-20261106-burkholderia-medium",
+    "topic": "Microbiology",
+    "level": 1,
+    "stem": "Which medium is specifically designed to help recover Burkholderia cepacia complex from mixed respiratory specimens?",
+    "options": [
+      "Burkholderia cepacia selective agar",
+      "Mannitol salt agar",
+      "Lowenstein–Jensen medium",
+      "Thayer–Martin medium"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Meio seletivo para o complexo Burkholderia cepacia reduz interferência de outras bactérias na amostra.",
+      "É associado a estafilococos.",
+      "É utilizado para micobactérias.",
+      "É associado ao isolamento de Neisseria patogênicas."
+    ],
+    "teaching": "Burkholderia tem meio seletivo próprio; baixa frequência não significa baixa importância clínica."
+  },
+  {
+    "id": "cf-cultures-20261106-biofilm",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "Why can mucoid Pseudomonas aeruginosa persist in cystic fibrosis airways despite host defenses?",
+    "options": [
+      "It requires melanocytes to reproduce",
+      "An alginate-rich biofilm promotes persistence",
+      "It is an obligate intracellular virus",
+      "It must ferment lactose to survive"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Melanócitos não são necessários à reprodução bacteriana.",
+      "Matriz rica em alginato e biofilme favorecem persistência e dificultam eliminação pela resposta imune e por antimicrobianos.",
+      "É uma bactéria, não vírus.",
+      "Pseudomonas não fermenta lactose."
+    ],
+    "teaching": "Pseudomonas mucoide → alginato → biofilme → persistência."
+  },
+  {
+    "id": "cf-cultures-20261106-chart-sum",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "The percentages for different bacteria in this schematic can sum to more than 100% at one age. What best explains this?",
+    "options": [
+      "Each curve must represent mortality",
+      "The y-axis must be mislabeled",
+      "A patient may carry more than one bacterial species",
+      "All curves must be added to determine a patient's age"
+    ],
+    "answer": 2,
+    "explanations": [
+      "O gráfico mostra colonização, não mortalidade.",
+      "Percentuais de grupos não mutuamente exclusivos podem somar mais de 100%.",
+      "As categorias se sobrepõem: o mesmo paciente pode ter mais de uma espécie.",
+      "Somar percentuais não fornece a idade."
+    ],
+    "teaching": "Colonização não é uma classificação em grupos exclusivos.",
+    "image": "images/fibrose-cistica-bacterias.svg",
+    "imageAlt": "Curvas didáticas aproximadas de colonização por idade na fibrose cística e meios de cultura.",
+    "imageCaption": "Esquema aproximado para revisão, não estimativa epidemiológica atual."
+  },
+  {
+    "id": "cf-cultures-20261106-chart-limit",
+    "topic": "Microbiology",
+    "level": 2,
+    "stem": "A young child with cystic fibrosis has a culture positive for Pseudomonas aeruginosa. How should the classic age-pattern chart be interpreted?",
+    "options": [
+      "The culture must be contaminated because the child is young",
+      "Pseudomonas occurs only after age 20",
+      "The chart determines antibiotic susceptibility",
+      "Age changes probability but does not exclude early acquisition"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Idade isolada não permite descartar o resultado da cultura.",
+      "Pseudomonas pode ser adquirida na infância.",
+      "Sensibilidade exige testes microbiológicos; não pode ser lida na curva.",
+      "As curvas mostram frequências populacionais aproximadas, não limites absolutos para um indivíduo."
+    ],
+    "teaching": "Decore tendências e mecanismos; percentuais históricos não são previsões individuais.",
+    "image": "images/fibrose-cistica-bacterias.svg",
+    "imageAlt": "Curvas didáticas aproximadas de colonização por idade na fibrose cística e meios de cultura.",
+    "imageCaption": "Esquema aproximado para revisão, não estimativa epidemiológica atual."
+  }
+
 ];
