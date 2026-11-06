@@ -5699,5 +5699,547 @@ window.RAPIDFIRE_QUESTIONS = [
       "Ribonucleotídeo redutase fornece precursores para a síntese de DNA, ácido desoxirribonucleico."
     ],
     "teaching": "NADPH oxidase inicia a explosão oxidativa; mieloperoxidase usa o peróxido produzido a jusante."
+  },
+[
+  {
+    "id": "nutrition-failure-to-thrive-percentiles",
+    "topic": "Nutrition",
+    "level": 1,
+    "stem": "A 10-month-old has tracked near the 12th weight percentile since birth, with normal length, head growth, and development. Which interpretation is most appropriate?",
+    "options": [
+      "Failure to thrive; any percentile below the median is abnormal",
+      "Normal growth; failure to thrive is suggested by weight below the 3rd percentile or a downward crossing of at least two major percentile lines",
+      "Failure to thrive because head circumference exceeds weight percentile",
+      "Protein deficiency because weight is lower than length percentile"
+    ],
+    "answer": 1,
+    "explanations": [
+      "A low percentile alone does not establish growth failure when the child follows a stable curve.",
+      "A stable growth trajectory is reassuring; failure to thrive is suggested by very low weight or crossing downward through at least two major percentile lines.",
+      "Head circumference can remain preserved early in inadequate caloric intake; this pattern alone does not diagnose failure to thrive.",
+      "Percentile differences across measurements do not by themselves diagnose a specific nutrient deficiency."
+    ],
+    "teaching": "Judge growth by the trajectory: weight usually falls first, while length and head circumference are initially spared."
+  },
+  {
+    "id": "nutrition-older-adult-weight-loss",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "An older adult has unintentionally lost 6% of body weight over 8 months. Thyroid, blood count, and metabolic panel are unrevealing; she reports poor appetite and forgetfulness. Which assessment is especially important?",
+    "options": [
+      "Screen for depression and cognitive impairment",
+      "Diagnose hyperthyroidism despite the normal thyroid test",
+      "Start a gluten-free diet before further assessment",
+      "Assume the weight loss is a normal consequence of aging"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Poor intake and memory difficulty in an older adult should prompt assessment for depression and cognitive impairment.",
+      "A normal thyroid-stimulating hormone level makes hyperthyroidism less likely as the explanation.",
+      "There is no evidence here of gluten-sensitive enteropathy.",
+      "Clinically significant unintentional weight loss warrants evaluation rather than attribution to age alone."
+    ],
+    "teaching": "In older adults with reduced intake, assess mood, cognition, medications, feeding access, and medical causes."
+  },
+  {
+    "id": "nutrition-energy-nitrogen-balance",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with severe burns receives enough calories to maintain body weight but very little protein. He is losing skeletal muscle. Which pairing best describes his balances?",
+    "options": [
+      "Negative energy balance and positive nitrogen balance",
+      "Positive energy balance and negative nitrogen balance",
+      "Positive energy balance and positive nitrogen balance",
+      "Negative energy balance and neutral nitrogen balance"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Weight maintenance suggests calories are adequate; low protein and severe stress promote muscle protein breakdown.",
+      "Calories can be adequate while protein breakdown exceeds intake, producing negative nitrogen balance.",
+      "Positive nitrogen balance requires net protein gain, which is inconsistent with muscle wasting.",
+      "The stated caloric intake supports energy balance, while muscle loss indicates net nitrogen loss."
+    ],
+    "teaching": "Energy balance tracks calories; nitrogen balance tracks protein gain or loss. They can move in opposite directions."
+  },
+  {
+    "id": "nutrition-cancer-cachexia",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with advanced cancer continues to lose muscle despite increased caloric intake. Which mechanism most directly contributes to this syndrome?",
+    "options": [
+      "Inflammatory cytokines promoting a hypercatabolic state",
+      "Isolated lactase deficiency causing osmotic diarrhea",
+      "Excess insulin causing glycogen storage",
+      "Reduced bile salts causing vitamin K excess"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tumor-associated inflammation, including tumor necrosis factor and interleukin-6, contributes to muscle catabolism and cachexia.",
+      "Lactase deficiency can cause gastrointestinal symptoms but does not explain cancer-associated muscle wasting.",
+      "Insulin promotes nutrient storage and does not cause the described inflammatory wasting syndrome.",
+      "Reduced bile salts impair fat absorption; they do not cause vitamin K excess or explain cachexia."
+    ],
+    "teaching": "Cancer cachexia is inflammation-driven and may not fully reverse with calories alone; nutrition supports function and treatment tolerance."
+  },
+  {
+    "id": "nutrition-fasting-gluconeogenesis",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "After approximately 36 hours without food, liver glycogen is largely depleted. Which pathway is now the primary source of blood glucose?",
+    "options": [
+      "Glycogenesis from circulating glucose",
+      "Gluconeogenesis using lactate, glycerol, and amino acids",
+      "Ketogenesis in skeletal muscle",
+      "Fatty acid synthesis in the liver"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Glycogenesis stores glucose as glycogen and cannot provide glucose when intake and glycogen stores are depleted.",
+      "The liver maintains glucose through gluconeogenesis, using lactate, glycerol, and amino acids as substrates.",
+      "The liver produces ketone bodies; skeletal muscle does not make them, and ketones do not replace all glucose needs.",
+      "Fatty acid synthesis is favored in the fed state when insulin is high."
+    ],
+    "teaching": "After hepatic glycogen falls during fasting, gluconeogenesis sustains glucose; ketone use gradually reduces muscle protein breakdown."
+  },
+  {
+    "id": "nutrition-caloric-density",
+    "topic": "Nutrition",
+    "level": 1,
+    "stem": "Which macronutrient provides the most energy per gram?",
+    "options": [
+      "Carbohydrate, 4 kcal/g",
+      "Protein, 4 kcal/g",
+      "Fat, 9 kcal/g",
+      "Ethanol, 7 kcal/g"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Carbohydrate provides about 4 kilocalories per gram.",
+      "Protein provides about 4 kilocalories per gram.",
+      "Fat provides about 9 kilocalories per gram, the most of these choices.",
+      "Ethanol provides about 7 kilocalories per gram, less than fat."
+    ],
+    "teaching": "Energy densities: carbohydrate 4, protein 4, fat 9, and ethanol 7 kilocalories per gram."
+  },
+  {
+    "id": "nutrition-metabolic-syndrome-visceral-fat",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient has central obesity, elevated triglycerides, low high-density lipoprotein, hypertension, and impaired fasting glucose. Which underlying process links these findings?",
+    "options": [
+      "Visceral adiposity causing insulin resistance and inflammatory signaling",
+      "Autoimmune destruction of pancreatic alpha cells",
+      "Defective intestinal absorption of bile acids",
+      "Excess adiponectin increasing hepatic glucose production"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Visceral adipose tissue releases free fatty acids and inflammatory signals that promote insulin resistance and the metabolic syndrome.",
+      "Alpha-cell destruction is not the common mechanism linking this cluster of cardiometabolic findings.",
+      "Bile acid malabsorption can cause diarrhea but does not explain the combination of central obesity and insulin resistance.",
+      "Adiponectin generally improves insulin sensitivity; it is not the proposed driver."
+    ],
+    "teaching": "Metabolic syndrome is a cluster of cardiometabolic risk factors commonly driven by visceral adiposity and insulin resistance."
+  },
+  {
+    "id": "nutrition-lactase-brush-border",
+    "topic": "Nutrition",
+    "level": 1,
+    "stem": "A child develops bloating, gas, and watery diarrhea after drinking milk. Which mechanism best explains the symptoms?",
+    "options": [
+      "Unabsorbed lactose retains water in the intestinal lumen and is fermented by bacteria",
+      "Excess pancreatic lipase generates irritating fatty acids",
+      "Failure to absorb fructose causes ketone accumulation",
+      "Low gastric pepsin prevents lactose digestion"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Reduced brush-border lactase leaves lactose in the lumen, causing osmotic diarrhea and bacterial fermentation with gas.",
+      "Pancreatic lipase digests fat and does not explain symptoms specifically triggered by lactose.",
+      "Fructose malabsorption does not cause lactose-triggered symptoms or ketone accumulation.",
+      "Pepsin digests protein; lactose is hydrolyzed by brush-border lactase."
+    ],
+    "teaching": "Lactase is a brush-border enzyme; deficiency causes osmotic symptoms after lactose ingestion."
+  },
+  {
+    "id": "nutrition-vitamin-a-night-blindness",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A child with fat malabsorption has night blindness and foamy conjunctival plaques. Which vitamin deficiency is most likely?",
+    "options": [
+      "Vitamin A",
+      "Vitamin B12",
+      "Vitamin C",
+      "Vitamin K"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin A is needed to regenerate retinal for vision in dim light; deficiency can cause night blindness and Bitot spots.",
+      "Vitamin B12 deficiency causes megaloblastic anemia and neurologic findings, not Bitot spots.",
+      "Vitamin C deficiency causes defective collagen and bleeding manifestations.",
+      "Vitamin K deficiency impairs clotting-factor gamma-carboxylation and causes bleeding."
+    ],
+    "teaching": "Night blindness and Bitot spots point to vitamin A deficiency; fat malabsorption can reduce vitamins A, D, E, and K."
+  },
+  {
+    "id": "nutrition-vitamin-a-toxicity",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient taking a systemic retinoid develops headache, papilledema, and hair loss. Which adverse effect best explains this pattern?",
+    "options": [
+      "Hypervitaminosis A with increased intracranial pressure",
+      "Vitamin A deficiency with impaired rhodopsin formation",
+      "Vitamin D deficiency with secondary hyperparathyroidism",
+      "Vitamin E deficiency with oxidative hemolysis"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Retinoid excess can cause intracranial hypertension, alopecia, liver injury, and teratogenicity.",
+      "Vitamin A deficiency causes night blindness and epithelial changes, not this toxicity pattern.",
+      "Vitamin D deficiency affects calcium and bone mineralization.",
+      "Vitamin E deficiency can cause hemolysis and neurologic dysfunction, but not the characteristic retinoid toxicity pattern."
+    ],
+    "teaching": "Systemic retinoids can cause pseudotumor cerebri, alopecia, hepatotoxicity, and fetal harm."
+  },
+  {
+    "id": "nutrition-niacin-pellagra",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with a severely restricted corn-based diet develops photosensitive dermatitis, diarrhea, and cognitive changes. Which deficiency is most likely?",
+    "options": [
+      "Niacin deficiency",
+      "Riboflavin deficiency",
+      "Vitamin K deficiency",
+      "Biotin deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Niacin deficiency causes pellagra: dermatitis, diarrhea, dementia, and, if untreated, death.",
+      "Riboflavin deficiency more typically causes cheilosis, angular stomatitis, glossitis, and corneal vascularization.",
+      "Vitamin K deficiency causes impaired coagulation and bleeding.",
+      "Biotin deficiency can cause dermatitis and alopecia, but does not classically cause the pellagra triad."
+    ],
+    "teaching": "Pellagra is niacin deficiency: the classic four Ds are dermatitis, diarrhea, dementia, and death."
+  },
+  {
+    "id": "nutrition-isoniazid-pyridoxine",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient taking isoniazid develops distal paresthesias and a microcytic anemia with ring sideroblasts. Which nutrient should be supplemented?",
+    "options": [
+      "Pyridoxine (vitamin B6)",
+      "Cobalamin (vitamin B12)",
+      "Ascorbic acid (vitamin C)",
+      "Calciferol (vitamin D)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Isoniazid can reduce active pyridoxal phosphate, causing neuropathy and impaired heme synthesis; pyridoxine prevents this deficiency.",
+      "Cobalamin deficiency causes macrocytic megaloblastic anemia and neurologic findings, not sideroblastic anemia from isoniazid.",
+      "Ascorbic acid deficiency causes scurvy and does not prevent this drug-related toxicity.",
+      "Calciferol deficiency causes defective bone mineralization."
+    ],
+    "teaching": "Isoniazid is associated with vitamin B6 deficiency, peripheral neuropathy, and sideroblastic anemia."
+  },
+  {
+    "id": "nutrition-biotin-avidin",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A person who regularly consumes raw egg whites develops dermatitis and alopecia. Which interaction is responsible?",
+    "options": [
+      "Avidin binds biotin and reduces its absorption",
+      "Intrinsic factor binds biotin in the stomach",
+      "Phytates increase biotin degradation in the liver",
+      "Excess biotin blocks folate absorption"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Avidin in raw egg white binds biotin; cooking denatures avidin and reduces this risk.",
+      "Intrinsic factor binds vitamin B12, not biotin.",
+      "Phytates can reduce absorption of some minerals, but this is not the mechanism described.",
+      "Biotin does not block folate absorption in this way."
+    ],
+    "teaching": "Raw egg-white avidin can cause biotin deficiency; heat denatures avidin."
+  },
+  {
+    "id": "nutrition-folate-neural-tube",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A neural tube defect is diagnosed in a newborn whose mother had no folate supplementation before pregnancy. Which developmental process was most directly affected?",
+    "options": [
+      "Rapid nucleotide synthesis during early neural tube closure",
+      "Gamma-carboxylation of clotting factors",
+      "Myelin maintenance in the posterior columns",
+      "Hydroxylation of collagen proline residues"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Folate supports one-carbon transfer for purine and thymidylate synthesis during rapid cell division; neural tube closure occurs early in pregnancy.",
+      "Gamma-carboxylation depends on vitamin K.",
+      "Posterior-column myelin injury is associated with vitamin B12 deficiency.",
+      "Proline hydroxylation in collagen depends on vitamin C."
+    ],
+    "teaching": "Folate is needed before conception and in early pregnancy because the neural tube closes before many pregnancies are recognized."
+  },
+  {
+    "id": "nutrition-vitamin-d-rickets",
+    "topic": "Nutrition",
+    "level": 1,
+    "stem": "An infant has bowed legs, delayed closure of the fontanelle, and metaphyseal cupping. Which deficiency is most likely?",
+    "options": [
+      "Vitamin D deficiency",
+      "Vitamin E deficiency",
+      "Vitamin K deficiency",
+      "Vitamin C deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin D deficiency impairs calcium and phosphate absorption and causes rickets in children.",
+      "Vitamin E deficiency can cause hemolysis and neurologic dysfunction.",
+      "Vitamin K deficiency causes bleeding due to defective clotting-factor activation.",
+      "Vitamin C deficiency causes defective collagen synthesis and scurvy."
+    ],
+    "teaching": "Rickets is defective mineralization of growing bone, commonly caused by vitamin D deficiency."
+  },
+  {
+    "id": "nutrition-vitamin-e-malabsorption",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A child with cystic fibrosis and steatorrhea develops hemolytic anemia, ataxia, and absent ankle reflexes. Which deficiency best unifies these findings?",
+    "options": [
+      "Vitamin E",
+      "Vitamin A",
+      "Vitamin K",
+      "Folate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin E protects cell membranes from oxidation; deficiency can cause hemolysis, ataxia, and loss of reflexes, especially with fat malabsorption.",
+      "Vitamin A deficiency causes night blindness and epithelial changes.",
+      "Vitamin K deficiency causes a bleeding tendency and prolonged prothrombin time.",
+      "Folate deficiency causes megaloblastic anemia without the characteristic neurologic syndrome."
+    ],
+    "teaching": "Vitamin E deficiency can combine oxidative hemolysis with neurologic dysfunction in fat malabsorption."
+  },
+  {
+    "id": "nutrition-vitamin-k-factor-vii",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with fat malabsorption develops easy bruising and an isolated prolonged prothrombin time. Which mechanism best explains the laboratory pattern?",
+    "options": [
+      "Reduced vitamin K-dependent gamma-carboxylation, first affecting factor VII",
+      "Reduced vitamin C hydroxylation of collagen, first affecting factor VIII",
+      "Reduced folate synthesis, first affecting factor IX",
+      "Increased vitamin E oxidation, first affecting factor II"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin K is required for gamma-carboxylation of factors II, VII, IX, and X and proteins C and S; factor VII falls first because of its short half-life.",
+      "Vitamin C deficiency weakens collagen and vessel integrity but does not selectively prolong prothrombin time through factor VIII.",
+      "Folate deficiency impairs DNA synthesis rather than activating clotting factors.",
+      "Vitamin E is an antioxidant and does not cause selective loss of factor II."
+    ],
+    "teaching": "Vitamin K deficiency often prolongs prothrombin time first because factor VII has the shortest half-life."
+  },
+  {
+    "id": "nutrition-vitamin-c-scurvy",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with a limited diet has bleeding gums, perifollicular hemorrhages, and poor wound healing. Coagulation studies are normal. Which biochemical process is impaired?",
+    "options": [
+      "Hydroxylation of proline and lysine during collagen synthesis",
+      "Gamma-carboxylation of glutamate residues in clotting factors",
+      "Methylmalonyl-CoA conversion to succinyl-CoA",
+      "Oxidative decarboxylation of pyruvate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin C is a cofactor for prolyl and lysyl hydroxylases, which support collagen stability.",
+      "Vitamin K supports gamma-carboxylation of clotting factors; normal coagulation tests make that less likely.",
+      "Methylmalonyl-CoA mutase requires vitamin B12.",
+      "Pyruvate dehydrogenase uses thiamine, lipoic acid, coenzyme A, FAD, and NAD+."
+    ],
+    "teaching": "Scurvy causes vessel fragility and impaired wound healing from defective collagen hydroxylation; PT and PTT can remain normal."
+  },
+  {
+    "id": "nutrition-iron-absorption-vitamin-c",
+    "topic": "Nutrition",
+    "level": 1,
+    "stem": "Which change increases absorption of non-heme dietary iron in the duodenum?",
+    "options": [
+      "Reduction of ferric iron to ferrous iron by vitamin C",
+      "Binding iron with intestinal phytates",
+      "Increasing gastric pH with antacids",
+      "Taking iron together with a calcium supplement"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin C helps reduce ferric (Fe3+) iron to ferrous (Fe2+) iron, which is more readily absorbed.",
+      "Phytates bind iron and decrease its absorption.",
+      "A higher gastric pH can reduce iron solubility and absorption.",
+      "Calcium can inhibit non-heme iron absorption when taken together."
+    ],
+    "teaching": "Vitamin C and an acidic environment improve non-heme iron absorption; phytates, tannins, and calcium can reduce it."
+  },
+  {
+    "id": "nutrition-hypocalcemia-tetany",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A malnourished patient develops perioral tingling, carpopedal spasm, and a prolonged QT interval. Which electrolyte abnormality best explains this pattern?",
+    "options": [
+      "Hypocalcemia",
+      "Hypercalcemia",
+      "Hypernatremia",
+      "Hypermagnesemia"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Low extracellular calcium increases neuromuscular excitability and can prolong the QT interval.",
+      "Hypercalcemia more often causes weakness, constipation, and a shortened QT interval.",
+      "Hypernatremia causes hypertonicity and neurologic symptoms but not the characteristic tetany pattern.",
+      "Hypermagnesemia typically reduces neuromuscular excitability and can cause hyporeflexia."
+    ],
+    "teaching": "Hypocalcemia causes tetany, perioral paresthesias, and QT prolongation."
+  },
+  {
+    "id": "nutrition-magnesium-refractory-hypokalemia",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient with chronic diarrhea has hypokalemia that persists despite potassium replacement. Which additional abnormality should be corrected?",
+    "options": [
+      "Hypomagnesemia",
+      "Hyperphosphatemia",
+      "Hypernatremia",
+      "Iron deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Magnesium depletion increases renal potassium wasting; potassium may remain low until magnesium is repleted.",
+      "Phosphate abnormalities do not explain the classic refractory hypokalemia mechanism.",
+      "Sodium concentration does not directly account for persistent potassium wasting in this setting.",
+      "Iron deficiency causes anemia, not refractory hypokalemia."
+    ],
+    "teaching": "When hypokalemia is refractory to replacement, check and correct magnesium."
+  },
+  {
+    "id": "nutrition-zinc-acrodermatitis",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A weaned infant develops periorificial and acral dermatitis, diarrhea, and alopecia. Which inherited defect is most likely?",
+    "options": [
+      "Impaired intestinal zinc uptake due to a ZIP4 transporter defect",
+      "Impaired intestinal copper export due to ATP7B",
+      "Impaired iron uptake due to a DMT1 defect",
+      "Impaired biotin transport due to avidin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Acrodermatitis enteropathica is caused by impaired zinc absorption, classically from a ZIP4 transporter defect.",
+      "ATP7B dysfunction causes Wilson disease, with copper accumulation rather than this zinc-deficiency presentation.",
+      "A DMT1 defect affects iron transport and does not cause the classic periorificial dermatitis, diarrhea, and alopecia triad.",
+      "Avidin binds biotin in raw egg whites; it is not an inherited zinc transporter defect."
+    ],
+    "teaching": "Acrodermatitis enteropathica: zinc deficiency with periorificial/acral dermatitis, diarrhea, and alopecia after weaning."
+  },
+  {
+    "id": "nutrition-selenium-keshan",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient receiving long-term parenteral nutrition without trace-element supplementation develops dilated cardiomyopathy and muscle weakness. Which deficiency is most likely?",
+    "options": [
+      "Selenium",
+      "Fluoride",
+      "Manganese",
+      "Iodine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Selenium is needed for antioxidant glutathione peroxidase and thyroid deiodinases; deficiency can cause cardiomyopathy and myopathy.",
+      "Fluoride deficiency is associated with dental caries, not cardiomyopathy.",
+      "Manganese deficiency is rare and does not classically cause this cardiomyopathy syndrome.",
+      "Iodine deficiency impairs thyroid hormone synthesis but does not classically cause Keshan cardiomyopathy."
+    ],
+    "teaching": "Selenium deficiency in prolonged parenteral nutrition can cause cardiomyopathy and skeletal myopathy."
+  },
+  {
+    "id": "nutrition-zinc-copper-deficiency",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient taking high-dose zinc develops anemia, neutropenia, and a myelopathy despite a normal vitamin B12 level. Which mechanism is most likely?",
+    "options": [
+      "Excess zinc induces intestinal metallothionein, which traps copper",
+      "Excess zinc blocks intrinsic-factor secretion",
+      "Zinc directly oxidizes folate in plasma",
+      "Zinc increases renal loss of vitamin K"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Zinc induces intestinal metallothionein; copper binds it avidly and is lost as enterocytes are shed, causing copper deficiency.",
+      "Intrinsic factor is required for vitamin B12 absorption; zinc excess does not explain this finding through intrinsic-factor blockade.",
+      "Folate oxidation is not the mechanism of zinc-associated anemia and myelopathy.",
+      "Renal loss of vitamin K is not the expected effect of zinc supplementation."
+    ],
+    "teaching": "Excess zinc can cause copper deficiency, producing anemia, neutropenia, and a B12-like myelopathy."
+  },
+  {
+    "id": "nutrition-iodine-fetal-development",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A pregnant patient lives in an iodine-deficient region. Her newborn has severe hypothyroidism and impaired neurodevelopment. Which process was limited?",
+    "options": [
+      "Thyroid hormone synthesis from tyrosine residues",
+      "Conversion of vitamin D to calcitriol in the kidney",
+      "Synthesis of heme from glycine and succinyl-CoA",
+      "Gamma-carboxylation of vitamin K-dependent proteins"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Iodine is incorporated into thyroid hormone; deficiency can cause maternal and fetal hypothyroidism and impaired brain development.",
+      "Renal activation of vitamin D is a separate process and does not require iodine.",
+      "Heme synthesis uses glycine and succinyl-CoA but is not iodine dependent.",
+      "Gamma-carboxylation requires vitamin K, not iodine."
+    ],
+    "teaching": "Iodine is required to synthesize thyroid hormones; deficiency during pregnancy threatens fetal neurodevelopment."
+  },
+  {
+    "id": "nutrition-tpn-cholestasis",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient receiving total parenteral nutrition for several weeks develops cholestatic liver tests, gallbladder sludge, and hepatic steatosis. Which factor contributes to this complication?",
+    "options": [
+      "Lack of enteral stimulation with prolonged parenteral feeding",
+      "Excess brush-border lactase activity",
+      "Increased bile flow caused by oral fat intake",
+      "Vitamin C-dependent collagen synthesis"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Prolonged parenteral nutrition without enteral stimulation can impair gallbladder emptying and contribute to cholestasis, sludge, and steatosis.",
+      "Lactase activity does not explain parenteral-nutrition-associated liver disease.",
+      "Oral fat stimulates gallbladder contraction; the patient is not receiving normal enteral intake.",
+      "Collagen synthesis is unrelated to the cholestatic pattern."
+    ],
+    "teaching": "Prolonged parenteral nutrition can cause cholestasis, gallbladder sludge, and fatty liver, especially without enteral stimulation."
+  },
+  {
+    "id": "nutrition-gastrectomy-b12-iron",
+    "topic": "Nutrition",
+    "level": 2,
+    "stem": "A patient develops macrocytic anemia years after total gastrectomy. Which nutrient deficiency is most directly linked to loss of gastric intrinsic-factor production?",
+    "options": [
+      "Vitamin B12",
+      "Iron",
+      "Vitamin C",
+      "Vitamin K"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Gastric parietal cells produce intrinsic factor, which is needed for vitamin B12 absorption in the terminal ileum; loss can deplete B12 stores over years.",
+      "Iron deficiency can occur after gastric surgery, but it is not caused by loss of intrinsic factor.",
+      "Vitamin C deficiency causes scurvy and does not depend on intrinsic factor.",
+      "Vitamin K deficiency affects coagulation and is not linked to intrinsic-factor loss."
+    ],
+    "teaching": "Loss of intrinsic factor after gastrectomy can cause vitamin B12 deficiency; body stores may delay symptoms for years."
   }
+]
 ];
