@@ -6240,4 +6240,907 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "Loss of intrinsic factor after gastrectomy can cause vitamin B12 deficiency; body stores may delay symptoms for years."
   }
+,
+
+  {
+    "id": "metabolic-eyes-20261106-pigment-pattern",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "An infant has white eyelashes, diffuse hypopigmentation, translucent irides, and underdeveloped foveae without developmental regression. Which diagnosis best explains the findings?",
+    "options": [
+      "Oculocutaneous albinism",
+      "Krabbe disease",
+      "Classic galactosemia",
+      "Metachromatic leukodystrophy"
+    ],
+    "answer": 0,
+    "explanations": [
+      "O conjunto indica albinismo: a falta de melanina afeta pigmentação e desenvolvimento visual. Não há a regressão neurológica típica das leucodistrofias.",
+      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
+      "Galactosemia clássica causa doença hepática, dificuldade alimentar e cataratas após exposição à galactose do leite.",
+      "Leucodistrofia metacromática envolve deficiência de arilsulfatase A e acúmulo de sulfatídeos."
+    ],
+    "teaching": "Nistagmo isolado é inespecífico; cabelo branco + transiluminação da íris + hipoplasia foveal apontam para albinismo."
+  },
+  {
+    "id": "metabolic-eyes-20261106-enzyme",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "A child has genetically confirmed oculocutaneous albinism type 1. Which enzyme is impaired?",
+    "options": [
+      "Galactocerebrosidase",
+      "Tyrosinase",
+      "Galactose-1-phosphate uridyltransferase",
+      "Acid sphingomyelinase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
+      "O tipo 1 resulta de variantes no gene TYR, que codifica tirosinase, enzima da síntese de melanina.",
+      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
+      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B."
+    ],
+    "teaching": "Albinismo tipo 1 = tirosinase. Krabbe = galactocerebrosidase."
+  },
+  {
+    "id": "metabolic-eyes-20261106-melanocytes",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "In tyrosinase-deficient albinism, which skin finding is expected?",
+    "options": [
+      "Complete absence of melanocytes",
+      "Normal pigment synthesis with excess pigment degradation",
+      "Melanocytes are present but make little or no melanin",
+      "Selective loss of keratinocytes"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Ausência de melanócitos sugere outras causas de despigmentação, como vitiligo ou piebaldismo.",
+      "O defeito primário é a produção de melanina, não sua destruição acelerada.",
+      "Os melanócitos estão presentes, mas a tirosinase deficiente impede a síntese adequada de melanina.",
+      "Perda de queratinócitos não explica o defeito enzimático."
+    ],
+    "teaching": "Não confunda célula produtora de pigmento com a enzima que ela usa."
+  },
+  {
+    "id": "metabolic-eyes-20261106-organelle",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "In which organelle do melanocytes synthesize melanin?",
+    "options": [
+      "Peroxisome",
+      "Mitochondrial matrix",
+      "Nucleolus",
+      "Melanosome"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Peroxissomos participam, entre outras funções, da oxidação de ácidos graxos de cadeia muito longa.",
+      "A matriz mitocondrial participa do metabolismo energético.",
+      "O nucléolo participa da produção de ribossomos.",
+      "Melanina é sintetizada em melanossomos, que depois podem ser transferidos aos queratinócitos."
+    ],
+    "teaching": "Melanócito = célula; melanossomo = organela; melanina = pigmento."
+  },
+  {
+    "id": "metabolic-eyes-20261106-precursor",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Which amino acid is the direct starting substrate for tyrosinase in melanin synthesis?",
+    "options": [
+      "Tyrosine",
+      "Tryptophan",
+      "Histidine",
+      "Glutamate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tirosinase converte tirosina em L-DOPA, L-3,4-di-hidroxifenilalanina, e depois em dopaquinona na via da melanina.",
+      "Triptofano é precursor de serotonina e melatonina, não de melanina.",
+      "Histidina é precursora de histamina.",
+      "Glutamato pode originar ácido gama-aminobutírico, um neurotransmissor inibitório."
+    ],
+    "teaching": "Melanina vem de tirosina; melatonina vem de triptofano."
+  },
+  {
+    "id": "metabolic-eyes-20261106-two-enzymes",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Tyrosine is converted to L-DOPA in both pigment and catecholamine pathways. Which enzyme performs this step in catecholamine synthesis?",
+    "options": [
+      "Tyrosinase",
+      "Tyrosine hydroxylase",
+      "Phenylalanine hydroxylase",
+      "Homogentisate oxidase"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
+      "Na síntese de catecolaminas, a enzima é tirosina hidroxilase. Na produção de melanina, é tirosinase.",
+      "Fenilalanina hidroxilase converte fenilalanina em tirosina; seu defeito causa a forma clássica de fenilcetonúria.",
+      "Homogentisato oxidase é deficiente na alcaptonúria, com urina que escurece e ocronose."
+    ],
+    "teaching": "Mesmo substrato e intermediário, mas enzimas diferentes conforme a via."
+  },
+  {
+    "id": "metabolic-eyes-20261106-iris",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "Why does the iris transilluminate in albinism?",
+    "options": [
+      "The lens has become opaque",
+      "The cornea contains accumulated glycosaminoglycans",
+      "Reduced iris melanin allows excess light transmission",
+      "The optic nerve has accumulated galactitol"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Opacidade do cristalino é catarata e impede a passagem regular da luz.",
+      "Depósito corneano de glicosaminoglicanos pode ocorrer em mucopolissacaridoses.",
+      "A íris tem pouco pigmento para bloquear a luz; por isso a luz atravessa regiões que normalmente seriam pigmentadas.",
+      "Galactitol causa principalmente lesão osmótica do cristalino."
+    ],
+    "teaching": "Íris translúcida = pouco pigmento; catarata = cristalino opaco."
+  },
+  {
+    "id": "metabolic-eyes-20261106-fovea",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "Why can visual acuity remain reduced in albinism even after refractive errors are corrected?",
+    "options": [
+      "All patients have cataracts",
+      "The retina contains globoid macrophages",
+      "The cornea must be completely opaque",
+      "Foveal development and visual pathway routing are abnormal"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Catarata não é o mecanismo definidor da redução visual no albinismo.",
+      "Macrófagos globóides são associados a Krabbe, não à alteração foveal do albinismo.",
+      "Opacidade corneana não é necessária no albinismo.",
+      "Hipoplasia da fóvea e trajeto anormal de fibras ópticas prejudicam a visão além de qualquer erro refrativo."
+    ],
+    "teaching": "Melanina participa do desenvolvimento visual; o problema não é apenas deixar entrar luz demais."
+  },
+  {
+    "id": "metabolic-eyes-20261106-nystagmus",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "Which additional finding most strongly favors albinism over Krabbe disease in an infant with nystagmus?",
+    "options": [
+      "Iris transillumination and foveal hypoplasia",
+      "Loss of previously acquired motor skills",
+      "Marked irritability and progressive spasticity",
+      "Demyelination with slowed nerve conduction"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Transiluminação da íris com hipoplasia foveal localiza o problema na pigmentação e no desenvolvimento visual.",
+      "Regressão motora favorece doença neurodegenerativa.",
+      "Esse padrão pode ocorrer em Krabbe infantil.",
+      "Desmielinização central e periférica favorece leucodistrofia."
+    ],
+    "teaching": "Não diagnostique Krabbe apenas por nistagmo ou por um nervo óptico anormal."
+  },
+  {
+    "id": "metabolic-eyes-20261106-tyrosinase-not-all",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "A patient has oculocutaneous albinism but preserved tyrosinase catalytic activity. Which conclusion is most accurate?",
+    "options": [
+      "Albinism is excluded",
+      "Another gene affecting melanin production or melanosome function may be involved",
+      "Krabbe disease is established",
+      "All melanocytes must be absent"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Há formas de albinismo causadas por genes diferentes de TYR.",
+      "Defeito de tirosinase define albinismo tipo 1, mas outras formas envolvem proteínas de função e maturação dos melanossomos.",
+      "Tirosinase preservada não comprova uma leucodistrofia.",
+      "Melanócitos podem estar presentes em diferentes formas de albinismo."
+    ],
+    "teaching": "Na questão de enzimas, tirosinase é a associação clássica; nem todo albinismo é deficiência de tirosinase."
+  },
+  {
+    "id": "metabolic-eyes-20261106-inheritance",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "Two unaffected parents both carry the same autosomal recessive TYR disorder. What is the chance that each pregnancy produces an affected child?",
+    "options": [
+      "0%",
+      "50%",
+      "25%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Dois portadores podem ter filhos afetados.",
+      "50% é a probabilidade de um filho portador não afetado nesse cruzamento.",
+      "Cada gestação tem probabilidade independente de 25% de um filho com duas cópias patogênicas.",
+      "Ambos os pais são portadores, não homozigotos afetados."
+    ],
+    "teaching": "Albinismo oculocutâneo tipo 1 e Krabbe têm herança autossômica recessiva."
+  },
+  {
+    "id": "metabolic-eyes-20261106-uv",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "Reduced cutaneous melanin in albinism primarily increases susceptibility to which injury?",
+    "options": [
+      "Iron-mediated hemolysis",
+      "Lysosomal myelin accumulation",
+      "Ammonia-induced cerebral edema",
+      "Ultraviolet-induced DNA damage"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Não decorre diretamente da falta de melanina cutânea.",
+      "É outro mecanismo e não consequência da perda de fotoproteção.",
+      "Relaciona-se à hiperamonemia.",
+      "Menos melanina reduz a proteção contra radiação ultravioleta, favorecendo queimaduras e dano ao DNA, ácido desoxirribonucleico."
+    ],
+    "teaching": "Falta de pigmento tem consequência funcional: menor fotoproteção."
+  },
+  {
+    "id": "metabolic-eyes-20261106-krabbe-enzyme",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 1,
+    "stem": "An infant develops progressive irritability, spasticity, peripheral neuropathy, and globoid macrophages in white matter. Which enzyme is deficient?",
+    "options": [
+      "Galactocerebrosidase",
+      "Galactose-1-phosphate uridyltransferase",
+      "Tyrosinase",
+      "Arylsulfatase A"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Krabbe decorre de deficiência de galactocerebrosidase, também chamada galactosilceramidase.",
+      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
+      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
+      "Arilsulfatase A degrada sulfatídeos; sua deficiência causa leucodistrofia metacromática."
+    ],
+    "teaching": "GALC, gene da galactocerebrosidase, é diferente de GALT, gene da galactose-1-fosfato uridiltransferase."
+  },
+  {
+    "id": "metabolic-eyes-20261106-psychosine",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "Which accumulating lipid is especially toxic to myelin-forming cells in Krabbe disease?",
+    "options": [
+      "Sulfatides",
+      "Psychosine",
+      "GM2 ganglioside",
+      "Globotriaosylceramide"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Sulfatídeos acumulam-se na leucodistrofia metacromática.",
+      "Psicosina, ou galactosilesfingosina, acumula-se quando falta galactocerebrosidase e contribui para a perda das células produtoras de mielina.",
+      "Gangliosídeo GM2 acumula-se em Tay–Sachs e Sandhoff.",
+      "Globotriaosilceramida, abreviada Gb3, acumula-se em Fabry."
+    ],
+    "teaching": "Krabbe: psicosina tóxica → desmielinização."
+  },
+  {
+    "id": "metabolic-eyes-20261106-myelin-cells",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "Krabbe disease damages myelin in both the central and peripheral nervous systems. Which cells normally form that myelin?",
+    "options": [
+      "Astrocytes and microglia",
+      "Melanocytes and keratinocytes",
+      "Oligodendrocytes and Schwann cells",
+      "Ependymal cells and neurons"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Astrócitos sustentam o tecido neural; micróglia são células imunes residentes.",
+      "Essas células participam da pigmentação e da barreira cutânea.",
+      "Oligodendrócitos formam mielina no sistema nervoso central; células de Schwann, nos nervos periféricos.",
+      "Células ependimárias revestem ventrículos; neurônios não formam sua própria bainha de mielina."
+    ],
+    "teaching": "Krabbe compromete mielina central e periférica."
+  },
+  {
+    "id": "metabolic-eyes-20261106-globoid",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 1,
+    "stem": "What are the characteristic globoid cells in Krabbe disease?",
+    "options": [
+      "Melanocytes without pigment",
+      "Neutrophils with giant granules",
+      "Platelets without dense granules",
+      "Lipid-laden macrophages, often multinucleated"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Não são melanócitos; a patologia é da substância branca.",
+      "Grânulos gigantes em neutrófilos sugerem Chediak–Higashi.",
+      "Deficiência de grânulos densos plaquetários ocorre em Hermansky–Pudlak.",
+      "Células globóides são macrófagos carregados de lipídios, frequentemente multinucleados, encontrados na substância branca."
+    ],
+    "teaching": "Globoid cell leukodystrophy é outro nome de Krabbe."
+  },
+  {
+    "id": "metabolic-eyes-20261106-regression",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 1,
+    "stem": "Which course best supports infantile Krabbe disease rather than nonsyndromic albinism?",
+    "options": [
+      "Initially acquired skills are followed by progressive neurologic loss",
+      "Stable hypopigmentation with early visual impairment",
+      "Acquired depigmented skin patches with normal vision",
+      "Isolated lens opacity without neurologic decline"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Krabbe infantil pode começar após desenvolvimento inicial aparentemente normal, seguido de irritabilidade e rápida deterioração neurológica.",
+      "Esse padrão combina mais com albinismo não sindrômico.",
+      "Sugere vitiligo.",
+      "Favorece uma causa de catarata, não uma leucodistrofia."
+    ],
+    "teaching": "Diferencie alteração de desenvolvimento visual de perda progressiva de habilidades."
+  },
+  {
+    "id": "metabolic-eyes-20261106-enzyme-names",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which enzyme–disease pairing correctly distinguishes similarly named galactose-related enzymes?",
+    "options": [
+      "Galactocerebrosidase — classic galactosemia",
+      "Galactose-1-phosphate uridyltransferase — classic galactosemia",
+      "Galactokinase — Krabbe disease",
+      "Alpha-galactosidase A — albinism"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Galactocerebrosidase é a enzima de Krabbe.",
+      "Galactose-1-fosfato uridiltransferase atua no metabolismo de um açúcar; galactocerebrosidase atua na degradação de um lipídio.",
+      "Galactoquinase atua sobre o açúcar galactose e sua deficiência causa sobretudo cataratas.",
+      "Alfa-galactosidase A é a enzima de Fabry."
+    ],
+    "teaching": "Galactose no nome não torna as enzimas equivalentes: açúcar livre versus glicoesfingolipídio."
+  },
+  {
+    "id": "metabolic-eyes-20261106-mld-substrate",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A child has progressive central and peripheral demyelination with deficient arylsulfatase A activity. Which material accumulates?",
+    "options": [
+      "Psychosine",
+      "GM2 ganglioside",
+      "Sulfatides",
+      "Globotriaosylceramide"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Psicosina é galactosilesfingosina e é particularmente tóxica para células produtoras de mielina em Krabbe.",
+      "Gangliosídeo GM2 acumula-se em Tay–Sachs e Sandhoff.",
+      "Na leucodistrofia metacromática, a falha em degradar sulfatídeos causa seu acúmulo e compromete a mielina.",
+      "Globotriaosilceramida, abreviada Gb3, acumula-se em Fabry."
+    ],
+    "teaching": "Krabbe: psicosina/galactocerebrosidase. Metacromática: sulfatídeos/arilsulfatase A."
+  },
+  {
+    "id": "metabolic-eyes-20261106-metachromasia",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A child with a leukodystrophy has lipid deposits that stain a different color from the applied dye. Which enzyme deficiency is classically associated?",
+    "options": [
+      "Galactocerebrosidase",
+      "Tyrosinase",
+      "Acid sphingomyelinase",
+      "Arylsulfatase A"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
+      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
+      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B.",
+      "Metacromasia é a mudança de cor do corante ao interagir com depósitos, característica da leucodistrofia metacromática por arilsulfatase A."
+    ],
+    "teaching": "Metacromática descreve a coloração histológica; não significa perda de pigmento da pele."
+  },
+  {
+    "id": "metabolic-eyes-20261106-ceramide",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Which two components form ceramide?",
+    "options": [
+      "Sphingosine and a fatty acid",
+      "Glycerol and three fatty acids",
+      "Tyrosine and a copper ion",
+      "Glucose and galactose"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Ceramida é formada por esfingosina ligada a um ácido graxo por uma ligação amida.",
+      "Essa combinação forma triacilglicerol.",
+      "Tirosina é substrato da melanina; cobre é cofator da tirosinase.",
+      "Esses dois açúcares formam lactose quando unidos pela ligação apropriada."
+    ],
+    "teaching": "Ceramida é a base estrutural de muitos esfingolipídios."
+  },
+  {
+    "id": "metabolic-eyes-20261106-galactocerebroside",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Adding one galactose residue to ceramide produces which lipid?",
+    "options": [
+      "Sphingomyelin",
+      "Galactocerebroside",
+      "Triacylglycerol",
+      "Cholesterol"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Esfingomielina contém fosfocolina ligada à ceramida.",
+      "Galactocerebrosídeo é ceramida com uma galactose; é um componente da mielina e substrato da galactocerebrosidase.",
+      "Triacilglicerol tem glicerol e três ácidos graxos.",
+      "Colesterol é um esterol e não um derivado de ceramida com galactose."
+    ],
+    "teaching": "Galactocerebrosídeo = galactose + ceramida."
+  },
+  {
+    "id": "metabolic-eyes-20261106-compartment",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Where does the defective lipid degradation in Krabbe disease primarily occur?",
+    "options": [
+      "Nucleolus",
+      "Melanosome only",
+      "Lysosome",
+      "Cytosolic ribosome"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Nucléolo participa da formação de ribossomos.",
+      "Melanossomos participam da pigmentação, não são o local principal da degradação em Krabbe.",
+      "Galactocerebrosidase é uma enzima lisossômica; Krabbe é uma doença de depósito lisossômico.",
+      "Ribossomos sintetizam proteínas."
+    ],
+    "teaching": "Albinismo tipo 1: síntese de pigmento. Krabbe: degradação lisossômica de lipídios."
+  },
+  {
+    "id": "metabolic-eyes-20261106-cherry-location",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 1,
+    "stem": "A cherry-red spot in a lysosomal storage disorder is observed in which ocular structure?",
+    "options": [
+      "Lens",
+      "Cornea",
+      "Iris",
+      "Retinal macula"
+    ],
+    "answer": 3,
+    "explanations": [
+      "O cristalino é a estrutura que fica opaca na catarata.",
+      "A córnea pode ficar opaca em algumas mucopolissacaridoses.",
+      "A íris pode transiluminar no albinismo.",
+      "A mácula em cereja é um achado retiniano: a fóvea relativamente preservada contrasta com a retina ao redor."
+    ],
+    "teaching": "Catarata = cristalino; opacidade corneana = córnea; cherry-red spot = mácula."
+  },
+  {
+    "id": "metabolic-eyes-20261106-tay-enzyme",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 1,
+    "stem": "A child with progressive neurodegeneration and a cherry-red macula has confirmed Tay–Sachs disease. Which enzyme is deficient?",
+    "options": [
+      "Hexosaminidase A",
+      "Acid sphingomyelinase",
+      "Galactocerebrosidase",
+      "Tyrosinase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tay–Sachs resulta de deficiência de hexosaminidase A, com acúmulo de gangliosídeo GM2.",
+      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B.",
+      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
+      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1."
+    ],
+    "teaching": "Tay–Sachs não causa a íris translúcida e o cabelo branco típicos de albinismo."
+  },
+  {
+    "id": "metabolic-eyes-20261106-organomegaly",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "Which finding most favors infantile neurovisceral acid sphingomyelinase deficiency over classic Tay–Sachs disease?",
+    "options": [
+      "Progressive neurologic decline",
+      "Marked hepatosplenomegaly",
+      "A cherry-red macula",
+      "Loss of visual function"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Pode ocorrer em ambas.",
+      "Hepatoesplenomegalia é típica da forma infantil neurovisceral de deficiência de esfingomielinase ácida, historicamente Niemann–Pick A, e geralmente ausente em Tay–Sachs clássico.",
+      "Pode ocorrer em ambas; não distingue isoladamente.",
+      "Pode ocorrer em ambas."
+    ],
+    "teaching": "Mácula em cereja não basta: procure organomegalia."
+  },
+  {
+    "id": "metabolic-eyes-20261106-npc-transport",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A child has splenomegaly, ataxia, and vertical supranuclear gaze palsy with normal acid sphingomyelinase activity. Which process is most likely defective?",
+    "options": [
+      "Tyrosine conversion to pigment",
+      "Galactose phosphorylation",
+      "Intracellular cholesterol trafficking",
+      "Ganglioside GM2 hydrolysis by hexosaminidase A"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Explica albinismo tipo 1, não esse quadro neurovisceral.",
+      "Explica deficiência de galactoquinase.",
+      "Niemann–Pick C envolve proteínas NPC1 ou NPC2 do transporte intracelular de lipídios, e não deficiência de esfingomielinase ácida.",
+      "É o mecanismo de Tay–Sachs."
+    ],
+    "teaching": "Niemann–Pick A/B e C não têm o mesmo defeito molecular."
+  },
+  {
+    "id": "metabolic-eyes-20261106-fabry-step",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "Which enzyme removes the terminal alpha-galactose from globotriaosylceramide during lysosomal degradation?",
+    "options": [
+      "Galactocerebrosidase",
+      "Galactose-1-phosphate uridyltransferase",
+      "Arylsulfatase A",
+      "Alpha-galactosidase A"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
+      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
+      "Arilsulfatase A degrada sulfatídeos; sua deficiência causa leucodistrofia metacromática.",
+      "Alfa-galactosidase A retira a galactose terminal da globotriaosilceramida, Gb3; sua deficiência causa Fabry."
+    ],
+    "teaching": "Krabbe e Fabry têm enzimas com galacto no nome, mas substratos diferentes."
+  },
+  {
+    "id": "metabolic-eyes-20261106-cornea-verticillata",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "A man with burning extremity pain, reduced sweating, and angiokeratomas has whorl-like corneal deposits. Which diagnosis is most likely?",
+    "options": [
+      "Fabry disease",
+      "Hurler syndrome",
+      "Classic galactosemia",
+      "Oculocutaneous albinism"
+    ],
+    "answer": 0,
+    "explanations": [
+      "O conjunto sugere Fabry; córnea verticilata é um padrão em redemoinho e pode não reduzir muito a acuidade visual.",
+      "Hurler, mucopolissacaridose tipo I grave, associa opacidade corneana, fácies grosseira e deficiência de alfa-L-iduronidase.",
+      "Galactosemia clássica causa doença hepática, dificuldade alimentar e cataratas após exposição à galactose do leite.",
+      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal."
+    ],
+    "teaching": "Córnea verticilata + dor acral + angiokeratomas → Fabry; fármacos também podem causar córnea verticilata."
+  },
+  {
+    "id": "metabolic-eyes-20261106-hurler-hunter",
+    "topic": "Lysosomal Storage Diseases",
+    "level": 2,
+    "stem": "Which ocular finding helps distinguish classic Hurler syndrome from Hunter syndrome?",
+    "options": [
+      "Iris transillumination in Hunter syndrome",
+      "Corneal clouding in Hurler syndrome",
+      "Lens dislocation in both disorders",
+      "A cherry-red macula only in Hunter syndrome"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Transiluminação da íris é uma pista de albinismo.",
+      "Opacidade corneana é característica de Hurler e geralmente ausente em Hunter.",
+      "Não é a distinção clássica entre essas mucopolissacaridoses.",
+      "Mácula em cereja não é a principal distinção."
+    ],
+    "teaching": "Hurler: córnea opaca. Hunter: córnea geralmente clara e herança ligada ao X."
+  },
+  {
+    "id": "metabolic-eyes-20261106-galactose-lens",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "A milk-fed infant develops jaundice and a cloudy lens. Which anatomic abnormality accounts for the visual impairment?",
+    "options": [
+      "Iris pigment loss",
+      "Absent foveal development",
+      "Cataract",
+      "Primary optic nerve demyelination"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Isso causa transiluminação, não cristalino opaco.",
+      "É um achado de desenvolvimento retiniano, como no albinismo.",
+      "Catarata é opacidade do cristalino; na galactosemia pode decorrer de acúmulo osmótico de galactitol.",
+      "Desmielinização do nervo óptico não torna o cristalino opaco."
+    ],
+    "teaching": "Localize a alteração ocular antes de associar uma enzima."
+  },
+  {
+    "id": "metabolic-eyes-20261106-milk",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "Why can breast milk trigger symptoms in a newborn with classic galactosemia?",
+    "options": [
+      "Breast milk contains psychosine",
+      "Breast milk blocks tyrosinase",
+      "Breast milk contains no glucose",
+      "Its lactose is digested into glucose and galactose"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Psicosina não é a explicação para a toxicidade alimentar na galactosemia.",
+      "Não é o mecanismo.",
+      "O leite contém lactose, que fornece glicose e galactose após digestão.",
+      "A digestão da lactose fornece galactose, que não é adequadamente processada na deficiência de galactose-1-fosfato uridiltransferase."
+    ],
+    "teaching": "Aleitamento materno não exclui galactosemia: leite materno também contém lactose."
+  },
+  {
+    "id": "metabolic-eyes-20261106-galt-reaction",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Galactose-1-phosphate uridyltransferase transfers a uridyl group from UDP-glucose to galactose-1-phosphate. Which products are formed? UDP means uridine diphosphate.",
+    "options": [
+      "Glucose-1-phosphate and UDP-galactose",
+      "Galactitol and free uridine",
+      "Ceramide and galactose",
+      "L-DOPA and dopaquinone"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A reação forma glicose-1-fosfato e UDP-galactose; UDP significa uridina difosfato.",
+      "Galactitol é produzido pela aldose redutase.",
+      "São produtos de degradação de um glicoesfingolipídio, não dessa reação.",
+      "São intermediários da síntese de melanina."
+    ],
+    "teaching": "GALT atua numa via de açúcares fosforilados; GALC atua sobre lipídios lisossômicos."
+  },
+  {
+    "id": "metabolic-eyes-20261106-osmotic",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "Accumulated galactitol damages lens fibers primarily through which mechanism?",
+    "options": [
+      "Direct inhibition of melanin synthesis",
+      "Osmotic water entry and swelling",
+      "Autoimmune destruction of melanocytes",
+      "Failure of myelin synthesis by oligodendrocytes"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Galactitol não causa o padrão de hipopigmentação do albinismo.",
+      "Galactitol fica retido nas fibras do cristalino e atrai água, causando edema, dano e opacificação.",
+      "Isso descreve outro mecanismo, como no vitiligo.",
+      "Não explica a lesão primária do cristalino."
+    ],
+    "teaching": "Galactitol → água entra no cristalino → catarata."
+  },
+  {
+    "id": "metabolic-eyes-20261106-galk-versus-galt",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "Which finding would favor classic galactosemia over isolated galactokinase deficiency in a child with cataracts?",
+    "options": [
+      "A cloudy lens",
+      "Elevated galactitol",
+      "Severe hepatic dysfunction after milk feeding",
+      "Otherwise normal growth and no systemic illness"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Catarata pode ocorrer em ambas.",
+      "Pode ocorrer em ambas.",
+      "Galactosemia clássica compromete o fígado e pode causar doença sistêmica grave; deficiência de galactoquinase costuma ter manifestações predominantemente oculares.",
+      "Esse quadro favorece a forma predominantemente ocular por galactoquinase."
+    ],
+    "teaching": "Catarata + hepatopatia → GALT; catarata isolada → pense em galactoquinase."
+  },
+  {
+    "id": "metabolic-eyes-20261106-otc-versus-mma",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "A lethargic neonate has hyperammonemia, respiratory alkalosis, and increased urinary orotic acid without a high-anion-gap metabolic acidosis. Which defect is most likely?",
+    "options": [
+      "Methylmalonyl-CoA mutase deficiency",
+      "Galactose-1-phosphate uridyltransferase",
+      "Galactocerebrosidase",
+      "Ornithine transcarbamylase deficiency"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Deficiência de metilmalonil-coenzima A mutase causa acidemia metilmalônica, com acidose metabólica e possível hiperamonemia.",
+      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
+      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
+      "Deficiência de ornitina transcarbamilase é um defeito do ciclo da ureia: hiperamonemia e ácido orótico alto, frequentemente com alcalose respiratória."
+    ],
+    "teaching": "Hiperamonemia com alcalose respiratória sugere ciclo da ureia; acidose com ânion gap alto sugere acidemia orgânica."
+  },
+  {
+    "id": "metabolic-eyes-20261106-mma-cofactor",
+    "topic": "Biochemistry",
+    "level": 1,
+    "stem": "Which vitamin-derived cofactor is used by methylmalonyl-CoA mutase? CoA means coenzyme A.",
+    "options": [
+      "Adenosylcobalamin (vitamin B12)",
+      "Biotin (vitamin B7)",
+      "Thiamine pyrophosphate (vitamin B1)",
+      "Pyridoxal phosphate (vitamin B6)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Adenosilcobalamina é cofator da conversão de metilmalonil-coenzima A em succinil-coenzima A.",
+      "Biotina é cofator de carboxilases, como propionil-coenzima A carboxilase.",
+      "Tiamina pirofosfato participa de descarboxilações oxidativas e da transcetolase.",
+      "Piridoxal fosfato participa de várias reações de aminoácidos."
+    ],
+    "teaching": "Metilmalonil-coenzima A mutase depende de vitamina B12; seu defeito não explica albinismo."
+  },
+  {
+    "id": "metabolic-eyes-20261106-ch-giant",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "A child with partial albinism and recurrent pyogenic infections has giant granules in neutrophils. Which diagnosis is most likely?",
+    "options": [
+      "Oculocutaneous albinism",
+      "Chediak–Higashi syndrome",
+      "Hermansky–Pudlak syndrome",
+      "Krabbe disease"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
+      "Chediak–Higashi combina alteração de pigmentação e imunodeficiência com grânulos gigantes em leucócitos.",
+      "Hermansky–Pudlak associa albinismo e deficiência de grânulos densos das plaquetas; alguns subtipos causam fibrose pulmonar.",
+      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização."
+    ],
+    "teaching": "Albinismo + infecções + grânulos gigantes → Chediak–Higashi."
+  },
+  {
+    "id": "metabolic-eyes-20261106-ch-mechanism",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A pathogenic LYST variant causes partial albinism and giant leukocyte granules. Which process is primarily abnormal?",
+    "options": [
+      "Melanin synthesis by tyrosinase alone",
+      "Galactose-1-phosphate metabolism",
+      "Lysosomal and lysosome-related organelle trafficking",
+      "Sulfatide hydrolysis"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Um defeito restrito à tirosinase não explica os grânulos gigantes e a imunodeficiência.",
+      "É a via de galactosemia, não de Chediak–Higashi.",
+      "Chediak–Higashi decorre de alteração da regulação e do tráfego de lisossomos e organelas relacionadas, afetando pigmentação e função imune.",
+      "Relaciona-se à arilsulfatase A."
+    ],
+    "teaching": "O defeito de tráfego afeta diferentes células; não é apenas falta de uma enzima de pigmento."
+  },
+  {
+    "id": "metabolic-eyes-20261106-hps",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "A patient with albinism has recurrent mucosal bleeding, absent platelet dense bodies, and progressive pulmonary fibrosis. Which syndrome is most likely?",
+    "options": [
+      "Chediak–Higashi syndrome",
+      "Oculocutaneous albinism",
+      "Krabbe disease",
+      "Hermansky–Pudlak syndrome"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Chediak–Higashi associa albinismo parcial, infecções e grânulos gigantes em leucócitos por defeito do tráfego de organelas.",
+      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
+      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
+      "Hermansky–Pudlak associa albinismo e defeito dos grânulos densos plaquetários; fibrose pulmonar ocorre em determinados subtipos."
+    ],
+    "teaching": "Albinismo + sangramento por grânulos densos ausentes ± fibrose pulmonar → Hermansky–Pudlak."
+  },
+  {
+    "id": "metabolic-eyes-20261106-platelet-count",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "Why can bleeding occur in Hermansky–Pudlak syndrome despite a normal platelet count?",
+    "options": [
+      "Platelet secretion is impaired by absent dense granules",
+      "All coagulation factors are absent",
+      "The platelets are necessarily too few",
+      "Tyrosinase directly dissolves clots"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Contar plaquetas não testa sua função. A falta de grânulos densos prejudica liberação de mediadores e amplificação da agregação.",
+      "Não é o defeito característico.",
+      "A contagem pode estar normal.",
+      "Tirosinase atua na melanina, não na fibrinólise."
+    ],
+    "teaching": "Contagem normal não exclui doença funcional das plaquetas."
+  },
+  {
+    "id": "metabolic-eyes-20261106-vitiligo",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 1,
+    "stem": "An adult develops sharply demarcated depigmented patches. Biopsy shows loss of melanocytes; childhood vision was normal. Which diagnosis is most likely?",
+    "options": [
+      "Oculocutaneous albinism",
+      "Vitiligo",
+      "Krabbe disease",
+      "Hermansky–Pudlak syndrome"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
+      "Vitiligo é uma perda adquirida de melanócitos, com distribuição em manchas; é diferente da síntese deficiente de pigmento no albinismo tipo 1.",
+      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
+      "Hermansky–Pudlak associa albinismo e deficiência de grânulos densos das plaquetas; alguns subtipos causam fibrose pulmonar."
+    ],
+    "teaching": "Vitiligo: perda de melanócitos. Albinismo tipo 1: melanócitos presentes com tirosinase deficiente."
+  },
+  {
+    "id": "metabolic-eyes-20261106-pku-pigment",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Untreated phenylketonuria can cause relatively light skin and hair. Which explanation best connects this to melanin synthesis?",
+    "options": [
+      "Galactocerebrosidase deficiency destroys pigment",
+      "All melanocytes are destroyed at birth",
+      "Reduced tyrosine availability and excess phenylalanine impair pigment synthesis",
+      "Platelet dense granules cannot release melanin"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Essa enzima é de Krabbe.",
+      "Não é o mecanismo da fenilcetonúria.",
+      "Menor formação de tirosina e interferência do excesso de fenilalanina na melanogênese contribuem para hipopigmentação na fenilcetonúria não tratada.",
+      "Plaquetas não são responsáveis pela pigmentação cutânea."
+    ],
+    "teaching": "Pele clara também pode ocorrer na fenilcetonúria; use o conjunto clínico, não só a cor."
+  },
+  {
+    "id": "metabolic-eyes-20261106-homocystinuria-eye",
+    "topic": "Inborn Errors of Metabolism",
+    "level": 2,
+    "stem": "A tall adolescent has inferonasal lens dislocation and recurrent thrombosis. Which pathway is classically defective?",
+    "options": [
+      "Melanin production from tyrosine",
+      "Galactose conversion to glucose intermediates",
+      "Galactocerebroside breakdown",
+      "Homocysteine conversion to cystathionine"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Albinismo afeta pigmentação e desenvolvimento visual, não esse conjunto.",
+      "Galactosemia causa catarata, não a associação clássica de ectopia lentis e trombose.",
+      "Krabbe causa desmielinização.",
+      "Deficiência de cistationina beta-sintase causa homocistinúria clássica, com ectopia lentis e risco trombótico."
+    ],
+    "teaching": "Luxação do cristalino é diferente de catarata; lente deslocada + trombose → homocistinúria."
+  },
+  {
+    "id": "metabolic-eyes-20261106-copper",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Tyrosinase requires which metal cofactor for melanin synthesis?",
+    "options": [
+      "Copper",
+      "Iron",
+      "Cobalt",
+      "Molybdenum"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tirosinase é uma enzima dependente de cobre. Isso é distinto da tirosina hidroxilase da via das catecolaminas.",
+      "Ferro participa de outras enzimas, incluindo tirosina hidroxilase.",
+      "Cobalto integra a estrutura da vitamina B12.",
+      "Molibdênio é cofator de enzimas como xantina oxidase."
+    ],
+    "teaching": "Tirosinase: cobre e melanina; tirosina hidroxilase: via das catecolaminas."
+  }
+
 ];
