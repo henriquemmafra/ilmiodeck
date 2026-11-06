@@ -5700,7 +5700,6 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "NADPH oxidase inicia a explosão oxidativa; mieloperoxidase usa o peróxido produzido a jusante."
   },
-[
   {
     "id": "nutrition-failure-to-thrive-percentiles",
     "topic": "Nutrition",
@@ -6241,5 +6240,4 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "teaching": "Loss of intrinsic factor after gastrectomy can cause vitamin B12 deficiency; body stores may delay symptoms for years."
   }
-]
 ];
