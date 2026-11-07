@@ -4053,10 +4053,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A deficiência da enzima desramificadora causa doença de Cori (tipo III), com dextrina-limite.",
-      "Correta: a doença de Von Gierke (tipo I) impede a liberação de glicose-6-fosfato como glicose livre no fígado.",
-      "A deficiência da alfa-glicosidase ácida causa doença de Pompe (tipo II), sobretudo com cardiomiopatia e hipotonia.",
-      "A deficiência da fosforilase muscular causa doença de McArdle (tipo V), com intolerância ao exercício."
+      "Debranching enzyme deficiency causes Cori disease (type III), with limit dextrin accumulation.",
+      "Correct: Von Gierke disease (type I) prevents the release of glucose-6-phosphate as free glucose in the liver.",
+      "Acid alpha-glucosidase deficiency causes Pompe disease (type II), primarily with cardiomyopathy and hypotonia.",
+      "Muscle phosphorylase deficiency causes McArdle disease (type V), with exercise intolerance."
     ],
     "teaching": "Von Gierke = glicose-6-fosfatase ausente: hipoglicemia de jejum, lactato alto, ácido úrico alto, lipídios altos e hepatomegalia."
   },
@@ -4073,10 +4073,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: a doença de Pompe (tipo II) é causada por deficiência da alfa-glicosidase ácida lisossômica; glicogênio se acumula em músculo e coração.",
-      "Von Gierke costuma causar hipoglicemia de jejum e hepatomegalia, não cardiomiopatia por depósito lisossômico.",
-      "McArdle causa cãibras e intolerância ao exercício, geralmente sem cardiomiopatia infantil.",
-      "A deficiência da enzima ramificadora causa doença de Andersen, com doença hepática progressiva."
+      "Correct: Pompe disease (type II) is caused by lysosomal acid alpha-glucosidase deficiency; glycogen accumulates in muscle and the heart.",
+      "Von Gierke disease typically causes fasting hypoglycemia and hepatomegaly, rather than cardiomyopathy due to lysosomal storage.",
+      "McArdle disease causes cramps and exercise intolerance, generally without infantile cardiomyopathy.",
+      "Branching enzyme deficiency causes Andersen disease, with progressive liver disease."
     ],
     "teaching": "Pompe = depósito lisossômico de glicogênio; coração aumentado e hipotonia com glicemia geralmente normal."
   },
@@ -4093,10 +4093,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A enzima ramificadora deficiente causa doença de Andersen (tipo IV), com glicogênio pouco ramificado e cirrose progressiva.",
-      "Correta: doença de Cori (tipo III) decorre da deficiência da enzima desramificadora; a dextrina-limite permanece após a glicogenólise.",
-      "A glicose-6-fosfatase deficiente causa doença de Von Gierke (tipo I), com hipoglicemia grave e acidose láctica.",
-      "A fosforilase muscular deficiente causa doença de McArdle (tipo V), que se manifesta durante exercício."
+      "Branching enzyme deficiency causes Andersen disease (type IV), with poorly branched glycogen and progressive cirrhosis.",
+      "Correct: Cori disease (type III) results from debranching enzyme deficiency; limit dextrin remains after glycogenolysis.",
+      "Glucose-6-phosphatase deficiency causes Von Gierke disease (type I), with severe hypoglycemia and lactic acidosis.",
+      "Muscle phosphorylase deficiency causes McArdle disease (type V), which manifests during exercise."
     ],
     "teaching": "Cori (tipo III) = deficiência da enzima desramificadora e acúmulo de dextrina-limite; hipoglicemia costuma ser mais leve que em Von Gierke."
   },
@@ -4113,10 +4113,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: deficiência da enzima ramificadora produz glicogênio anormal, pouco ramificado, e causa doença de Andersen (tipo IV).",
-      "A deficiência da enzima desramificadora causa doença de Cori (tipo III) e dextrina-limite.",
-      "A deficiência da fosforilase hepática causa doença de Hers (tipo VI), geralmente mais branda.",
-      "A alfa-glicosidase ácida é lisossômica; sua deficiência causa doença de Pompe."
+      "Correct: branching enzyme deficiency produces abnormal, poorly branched glycogen and causes Andersen disease (type IV).",
+      "Debranching enzyme deficiency causes Cori disease (type III) and limit dextrin accumulation.",
+      "Liver phosphorylase deficiency causes Hers disease (type VI), which is generally milder.",
+      "Acid alpha-glucosidase is a lysosomal enzyme; its deficiency causes Pompe disease."
     ],
     "teaching": "Andersen (tipo IV): glicogênio com poucas ramificações → depósito hepático e cirrose progressiva."
   },
@@ -4133,10 +4133,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: doença de Hers (tipo VI) decorre da deficiência da fosforilase hepática e costuma ter curso relativamente brando.",
-      "Von Gierke costuma produzir hipoglicemia grave, acidose láctica e hiperuricemia.",
-      "McArdle afeta músculo esquelético e causa intolerância ao exercício.",
-      "A deficiência da enzima ramificadora causa doença hepática progressiva de Andersen."
+      "Correct: Hers disease (type VI) results from liver phosphorylase deficiency and usually has a relatively mild course.",
+      "Von Gierke disease typically produces severe hypoglycemia, lactic acidosis, and hyperuricemia.",
+      "McArdle disease affects skeletal muscle and causes exercise intolerance.",
+      "Branching enzyme deficiency causes the progressive liver disease of Andersen disease."
     ],
     "teaching": "Hers (tipo VI) = fosforilase hepática; hepatomegalia e hipoglicemia de jejum geralmente leves."
   },
@@ -4153,10 +4153,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A deficiência de esfingomielinase causa Niemann–Pick, com células espumosas.",
-      "Correta: Gaucher decorre da deficiência de glucocerebrosidase e acumula glucocerebrosídeo em macrófagos.",
-      "A deficiência de hexosaminidase A causa Tay–Sachs, com neurodegeneração e mancha vermelho-cereja sem hepatoesplenomegalia.",
-      "A deficiência de alfa-galactosidase A causa Fabry."
+      "Sphingomyelinase deficiency causes Niemann–Pick disease, with foam cells.",
+      "Correct: Gaucher disease results from glucocerebrosidase deficiency, with glucocerebroside accumulation in macrophages.",
+      "Hexosaminidase A deficiency causes Tay–Sachs disease, with neurodegeneration and a cherry-red spot without hepatosplenomegaly.",
+      "Alpha-galactosidase A deficiency causes Fabry disease."
     ],
     "teaching": "Gaucher = glucocerebrosidase baixa; macrófagos com aspecto de papel amassado, citopenias e doença óssea."
   },
@@ -4173,10 +4173,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Hexosaminidase A deficiente causa Tay–Sachs, tipicamente sem hepatoesplenomegalia.",
-      "Correta: Niemann–Pick tipo A/B resulta da deficiência de esfingomielinase ácida e acumula esfingomielina.",
-      "Glucocerebrosidase deficiente causa Gaucher; macrófagos têm citoplasma de papel amassado.",
-      "Iduronate-2-sulfatase deficiente causa Hunter, uma mucopolissacaridose."
+      "Hexosaminidase A deficiency causes Tay–Sachs disease, typically without hepatosplenomegaly.",
+      "Correct: Niemann–Pick disease types A/B result from acid sphingomyelinase deficiency, with sphingomyelin accumulation.",
+      "Glucocerebrosidase deficiency causes Gaucher disease; macrophages have a crumpled tissue-paper appearance.",
+      "Iduronate-2-sulfatase deficiency causes Hunter syndrome, a mucopolysaccharidosis."
     ],
     "teaching": "Niemann–Pick: esfingomielinase ácida baixa, células espumosas e hepatoesplenomegalia; pode haver mancha vermelho-cereja."
   },
@@ -4193,10 +4193,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: Fabry, ligada ao X, decorre da deficiência de alfa-galactosidase A e acumula globotriaosilceramida (Gb3).",
-      "Glucocerebrosídeo se acumula na doença de Gaucher.",
-      "Esfingomielina se acumula na doença de Niemann–Pick.",
-      "GM2 se acumula na doença de Tay–Sachs por deficiência de hexosaminidase A."
+      "Correct: X-linked Fabry disease results from alpha-galactosidase A deficiency, with globotriaosylceramide (Gb3) accumulation.",
+      "Glucocerebroside accumulates in Gaucher disease.",
+      "Sphingomyelin accumulates in Niemann–Pick disease.",
+      "GM2 accumulates in Tay–Sachs disease due to hexosaminidase A deficiency."
     ],
     "teaching": "Fabry = alfa-galactosidase A baixa → Gb3; dor acral, angiokeratomas, hipohidrose e doença renal/cardiaca."
   },
@@ -4213,10 +4213,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Iduronate-2-sulfatase deficiente causa Hunter, ligada ao X e sem opacidade corneana típica.",
-      "Correta: deficiência de alfa-L-iduronidase causa Hurler (MPS I), com opacidade corneana e armazenamento de glicosaminoglicanos.",
-      "Arilsulfatase A deficiente causa leucodistrofia metacromática.",
-      "Hexosaminidase A deficiente causa Tay–Sachs."
+      "Iduronate-2-sulfatase deficiency causes Hunter syndrome, which is X-linked and typically lacks corneal clouding.",
+      "Correct: alpha-L-iduronidase deficiency causes Hurler syndrome (MPS I), with corneal clouding and glycosaminoglycan storage.",
+      "Arylsulfatase A deficiency causes metachromatic leukodystrophy.",
+      "Hexosaminidase A deficiency causes Tay–Sachs disease."
     ],
     "teaching": "Hurler (MPS I) = alfa-L-iduronidase; opacidade corneana. Hunter (MPS II) = iduronate-2-sulfatase; sem opacidade corneana."
   },
@@ -4233,10 +4233,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Essa combinação caracteriza Hurler, que tem opacidade corneana e herança autossômica recessiva.",
-      "Correta: Hunter (MPS II) é ligada ao X e decorre de iduronate-2-sulfatase; não causa opacidade corneana.",
-      "Arilsulfatase A baixa causa leucodistrofia metacromática, não a síndrome descrita.",
-      "Alfa-galactosidase A baixa causa Fabry, com angiokeratomas e dor acral."
+      "This combination characterizes Hurler syndrome, which features corneal clouding and autosomal recessive inheritance.",
+      "Correct: Hunter syndrome (MPS II) is X-linked and results from iduronate-2-sulfatase deficiency; it does not cause corneal clouding.",
+      "Low arylsulfatase A causes metachromatic leukodystrophy, not the syndrome described.",
+      "Low alpha-galactosidase A causes Fabry disease, with angiokeratomas and acral pain."
     ],
     "teaching": "Hunter = MPS II, ligada ao X, iduronate-2-sulfatase, córneas claras."
   },
@@ -4253,10 +4253,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: fenilalanina hidroxilase converte fenilalanina em tirosina; sua deficiência causa fenilcetonúria clássica e não responde à reposição de BH4.",
-      "Tirosina hidroxilase participa da síntese de catecolaminas.",
-      "Homogentisato oxidase deficiente causa alcaptonúria.",
-      "Dihidropteridina redutase regenera BH4; seu defeito pode reduzir a atividade de enzimas dependentes de BH4 e exige manejo específico."
+      "Correct: phenylalanine hydroxylase converts phenylalanine to tyrosine; its deficiency causes classic phenylketonuria and does not respond to BH4 replacement.",
+      "Tyrosine hydroxylase participates in catecholamine synthesis.",
+      "Homogentisate oxidase deficiency causes alkaptonuria.",
+      "Dihydropteridine reductase regenerates BH4; a defect can reduce the activity of BH4-dependent enzymes and requires specific management."
     ],
     "teaching": "Fenilcetonúria clássica = fenilalanina hidroxilase baixa → fenilalanina alta e tirosina baixa; tirosina torna-se essencial."
   },
@@ -4273,10 +4273,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: deficiência de MCAD prejudica beta-oxidação de ácidos graxos de cadeia média; há hipoglicemia com poucos corpos cetônicos e dicarboxílicos elevados.",
-      "Piruvato desidrogenase deficiente causa acidose láctica e comprometimento neurológico, não o padrão clássico de hipoglicemia hipocetótica no jejum.",
-      "Lipase hormônio-sensível não é a deficiência herdada clássica desse quadro.",
-      "A fosforilase hepática baixa causa glicogenose VI, com hipoglicemia e hepatomegalia, não dicarboxilacidúria."
+      "Correct: MCAD deficiency impairs beta-oxidation of medium-chain fatty acids; hypoglycemia occurs with few ketone bodies and elevated dicarboxylic acids.",
+      "Pyruvate dehydrogenase deficiency causes lactic acidosis and neurologic impairment, not the classic pattern of fasting hypoketotic hypoglycemia.",
+      "Hormone-sensitive lipase deficiency is not the classic inherited deficiency associated with this presentation.",
+      "Low liver phosphorylase causes glycogen storage disease VI, with hypoglycemia and hepatomegaly, not dicarboxylic aciduria."
     ],
     "teaching": "MCAD = defeito de beta-oxidação; jejum → hipoglicemia hipocetótica. Crianças afetadas devem evitar jejum prolongado."
   },
@@ -4293,10 +4293,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: um defeito combinado de processamento da cobalamina pode comprometer metilmalonil-CoA mutase e metionina sintase, elevando ácido metilmalônico e homocisteína e reduzindo metionina.",
-      "Deficiência isolada da metilmalonil-CoA mutase eleva ácido metilmalônico, mas não costuma elevar homocisteína nem reduzir metionina.",
-      "Deficiência de cistationina beta-sintase eleva homocisteína e metionina, não ácido metilmalônico.",
-      "Deficiência de fenilalanina hidroxilase eleva fenilalanina e reduz tirosina."
+      "Correct: a combined cobalamin processing defect can impair methylmalonyl-CoA mutase and methionine synthase, increasing methylmalonic acid and homocysteine and reducing methionine.",
+      "Isolated methylmalonyl-CoA mutase deficiency raises methylmalonic acid but does not typically raise homocysteine or reduce methionine.",
+      "Cystathionine beta-synthase deficiency increases homocysteine and methionine, not methylmalonic acid.",
+      "Phenylalanine hydroxylase deficiency raises phenylalanine and reduces tyrosine."
     ],
     "teaching": "Ácido metilmalônico alto + homocisteína alta + metionina baixa sugere defeito combinado de cobalamina (por exemplo, cblC), que afeta duas reações dependentes de vitamina B12."
   },
@@ -4313,10 +4313,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: deficiência de fumarylacetoacetato hidrolase causa tirosinemia tipo I; succinilacetona é um marcador diagnóstico importante.",
-      "Tirosina aminotransferase deficiente causa tirosinemia tipo II, com lesões oculares e cutâneas.",
-      "Homogentisato oxidase baixa causa alcaptonúria, com urina escura e ocronose.",
-      "Fenilalanina hidroxilase deficiente causa fenilcetonúria."
+      "Correct: fumarylacetoacetate hydrolase deficiency causes tyrosinemia type I; succinylacetone is an important diagnostic marker.",
+      "Tyrosine aminotransferase deficiency causes tyrosinemia type II, with ocular and skin lesions.",
+      "Low homogentisate oxidase causes alkaptonuria, with dark urine and ochronosis.",
+      "Phenylalanine hydroxylase deficiency causes phenylketonuria."
     ],
     "teaching": "Tirosinemia tipo I = fumarylacetoacetato hidrolase baixa; succinilacetona, insuficiência hepática e lesão renal."
   },
@@ -4336,7 +4336,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "GLUT1 provides basal glucose uptake in many tissues, including erythrocytes.",
       "GLUT2 is a high-capacity transporter in liver and pancreatic beta cells and is not insulin-dependent.",
       "GLUT3 has high affinity for glucose and is prominent in neurons.",
-      "Correta: insulina estimula translocação de GLUT4 para a membrana em músculo esquelético e tecido adiposo."
+      "Correct: insulin stimulates GLUT4 translocation to the membrane in skeletal muscle and adipose tissue."
     ],
     "teaching": "GLUT4 = transportador de glicose sensível à insulina em músculo e tecido adiposo; exercício também pode aumentar sua translocação muscular."
   },
@@ -4353,10 +4353,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Gi reduz a atividade da adenilil ciclase e o AMPc; é associado, por exemplo, a receptores alfa-2.",
-      "Correta: receptor beta-2 acopla-se a Gs, ativa adenilil ciclase, aumenta AMPc e relaxa músculo liso brônquico.",
-      "Gq ativa fosfolipase C, formando IP3 e DAG; alfa-1 é exemplo clássico.",
-      "STAT é ativada principalmente por receptores de citocinas associados a JAK."
+      "Gi reduces adenylyl cyclase activity and cAMP; it is associated with receptors such as alpha-2.",
+      "Correct: the beta-2 receptor couples to Gs, activates adenylyl cyclase, increases cAMP, and relaxes bronchial smooth muscle.",
+      "Gq activates phospholipase C, forming IP3 and DAG; alpha-1 is a classic example.",
+      "STAT is activated primarily by JAK-associated cytokine receptors."
     ],
     "teaching": "Beta-2 = Gs → adenilil ciclase → AMPc sobe → proteína quinase A → relaxamento do músculo liso."
   },
@@ -4373,10 +4373,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Isso é o efeito oposto; Gi funcional inibe adenilil ciclase.",
-      "Correta: a toxina da coqueluche mantém Gi inativa, incapaz de frear a adenilil ciclase; AMPc aumenta.",
-      "Gq ativa fosfolipase C, mas não é o alvo clássico da toxina pertussis.",
-      "Proteína quinase C é ativada por DAG downstream de Gq, não diretamente por essa toxina."
+      "This is the opposite effect; functional Gi inhibits adenylyl cyclase.",
+      "Correct: pertussis toxin keeps Gi inactive and unable to inhibit adenylyl cyclase; cAMP increases.",
+      "Gq activates phospholipase C but is not the classic target of pertussis toxin.",
+      "Protein kinase C is activated by DAG downstream of Gq, not directly by this toxin."
     ],
     "teaching": "Toxina pertussis ADP-ribosila Gi e a deixa inativa → adenilil ciclase sem freio → AMPc aumenta."
   },
@@ -4393,10 +4393,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Ambas as direções estão invertidas.",
-      "Correta: o ribossomo percorre o RNA mensageiro 5′→3′ e adiciona aminoácidos à extremidade C-terminal, então a proteína cresce de N para C.",
-      "A direção do RNA está correta, mas a proteína cresce no sentido oposto ao descrito.",
-      "A síntese proteica é N→C e o RNA é lido 5′→3′."
+      "Both directions are reversed.",
+      "Correct: the ribosome moves along messenger RNA 5′→3′ and adds amino acids to the C-terminus, so the protein grows from N to C.",
+      "The RNA direction is correct, but the protein grows in the opposite direction to that described.",
+      "Protein synthesis proceeds N→C, and RNA is read 5′→3′."
     ],
     "teaching": "Tradução: leitura do RNA mensageiro 5′→3′; crescimento da proteína N-terminal→C-terminal."
   },
@@ -4413,10 +4413,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: o sítio A (aminoacil) recebe o novo tRNA carregado durante o alongamento.",
-      "O sítio P mantém o tRNA ligado à cadeia peptídica em crescimento.",
-      "O sítio E é a saída do tRNA descarregado.",
-      "A atividade peptidil-transferase catalisa a ligação peptídica na subunidade grande; não é o sítio de entrada do novo tRNA."
+      "Correct: the A (aminoacyl) site receives the new charged tRNA during elongation.",
+      "The P site holds the tRNA attached to the growing peptide chain.",
+      "The E site is the exit site for uncharged tRNA.",
+      "Peptidyl transferase activity catalyzes peptide bond formation in the large subunit; it is not the entry site for the new tRNA."
     ],
     "teaching": "A-P-E: aminoacil entra no A; peptidil fica no P; tRNA vazio sai pelo E."
   },
@@ -4434,9 +4434,9 @@ window.RAPIDFIRE_QUESTIONS = [
     "answer": 1,
     "explanations": [
       "A TATA box helps position RNA polymerase II during transcription initiation.",
-      "Correta: a sequência de Kozak circunda o AUG e favorece reconhecimento do códon de iniciação pelo ribossomo eucariótico.",
-      "A caixa de Pribnow é uma sequência promotora de procariotos.",
-      "A sequência Shine–Dalgarno alinha o ribossomo em mRNA procariótico."
+      "Correct: the Kozak sequence surrounds AUG and promotes recognition of the start codon by the eukaryotic ribosome.",
+      "The Pribnow box is a prokaryotic promoter sequence.",
+      "The Shine–Dalgarno sequence aligns the ribosome on prokaryotic mRNA."
     ],
     "teaching": "Eucariotos: subunidade 40S faz scanning do 5′ cap; a sequência de Kozak favorece a escolha do AUG de início."
   },
@@ -4453,10 +4453,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: telomerase é uma transcriptase reversa que usa seu RNA interno como molde para estender a extremidade 3′ do DNA telomérico.",
-      "DNA ligase I une fragmentos de Okazaki; não alonga telômeros.",
-      "DNA polimerase delta replica DNA, mas não substitui telomerase.",
-      "RNase H e exonucleases participam da remoção de primers; isso não resolve o encurtamento terminal."
+      "Correct: telomerase is a reverse transcriptase that uses its internal RNA as a template to extend the 3′ end of telomeric DNA.",
+      "DNA ligase I joins Okazaki fragments; it does not lengthen telomeres.",
+      "DNA polymerase delta replicates DNA but does not replace telomerase.",
+      "RNase H and exonucleases participate in primer removal; this does not resolve terminal shortening."
     ],
     "teaching": "Telomerase carrega seu próprio RNA molde e alonga a extremidade 3′ do telômero; depois a maquinaria convencional completa a fita complementar."
   },
@@ -4473,10 +4473,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Inibição competitiva não reduz ambos os parâmetros.",
-      "Correta: mais substrato é necessário para atingir metade da Vmax (Km aparente sobe), mas substrato suficiente pode superar a inibição, preservando Vmax.",
-      "Essa é a mudança típica da inibição não competitiva pura.",
-      "Vmax não aumenta; a competição eleva Km aparente e mantém Vmax."
+      "Competitive inhibition does not reduce both parameters.",
+      "Correct: more substrate is needed to reach half of Vmax (apparent Km rises), but sufficient substrate can overcome the inhibition, preserving Vmax.",
+      "This is the typical change seen in pure noncompetitive inhibition.",
+      "Vmax does not increase; competition raises apparent Km and leaves Vmax unchanged."
     ],
     "teaching": "Inibidor competitivo: Km aparente ↑, Vmax inalterada; aumentar substrato pode superar a inibição."
   },
@@ -4493,10 +4493,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: NADPH mantém glutationa na forma reduzida, que remove peróxidos e protege a hemácia.",
-      "Catalase degrada peróxido de hidrogênio; o problema central é a incapacidade de sustentar defesas redutoras dependentes de NADPH.",
-      "Heme oxygenase degrada heme e não é o sistema que depende diretamente de NADPH para esse papel protetor eritrocitário.",
-      "A produção de hemoglobina fetal não é a defesa antioxidante em questão."
+      "Correct: NADPH maintains glutathione in its reduced form, which removes peroxides and protects the erythrocyte.",
+      "Catalase breaks down hydrogen peroxide; the central problem is the inability to sustain NADPH-dependent reducing defenses.",
+      "Heme oxygenase breaks down heme and is not the system that directly depends on NADPH for this protective role in erythrocytes.",
+      "Fetal hemoglobin production is not the antioxidant defense in question."
     ],
     "teaching": "Via das pentoses fosfato gera NADPH; NADPH regenera glutationa reduzida e protege hemácias contra estresse oxidativo."
   },
@@ -4513,10 +4513,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: piruvato carboxilase é uma carboxilase dependente de biotina e produz oxaloacetato para gliconeogênese e anaplerose.",
-      "TPP é cofator da piruvato desidrogenase, alfa-cetoglutarato desidrogenase e desidrogenase de alfa-cetoácidos de cadeia ramificada.",
-      "Fosfato de piridoxal é vitamina B6 e participa de transaminações e descarboxilações.",
-      "Tetrahidrofolato carrega unidades de um carbono."
+      "Correct: pyruvate carboxylase is a biotin-dependent carboxylase and produces oxaloacetate for gluconeogenesis and anaplerosis.",
+      "TPP is a cofactor for pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase, and branched-chain alpha-ketoacid dehydrogenase.",
+      "Pyridoxal phosphate is vitamin B6 and participates in transamination and decarboxylation reactions.",
+      "Tetrahydrofolate carries one-carbon units."
     ],
     "teaching": "Piruvato carboxilase: piruvato → oxaloacetato; precisa de biotina e ATP."
   },
@@ -4533,10 +4533,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: o cap 5′ ajuda a recrutar fatores de iniciação e a subunidade 40S para começar a tradução.",
-      "O spliceossomo remove íntrons por reconhecimento de sequências de splicing; o cap não realiza a remoção.",
-      "A cauda poli-A é adicionada separadamente à extremidade 3′.",
-      "Licenciamento de origens de replicação ocorre no DNA e não depende do cap de mRNA."
+      "Correct: the 5′ cap helps recruit initiation factors and the 40S subunit to begin translation.",
+      "The spliceosome removes introns by recognizing splicing sequences; the cap does not perform this removal.",
+      "The poly-A tail is added separately to the 3′ end.",
+      "Replication origin licensing occurs on DNA and does not depend on the mRNA cap."
     ],
     "teaching": "Cap 5′ de 7-metilguanosina protege o mRNA e ajuda a iniciar tradução; cauda poli-A fica na extremidade 3′."
   },
@@ -4553,10 +4553,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: excesso de NADH desloca lactato desidrogenase para piruvato → lactato, contribuindo para acidose láctica.",
-      "O equilíbrio é deslocado no sentido oposto pela alta razão NADH/NAD+.",
-      "A gliconeogênese é prejudicada porque oxaloacetato é deslocado para malato; esta reação não é favorecida.",
-      "NADH alto inibe beta-oxidação e favorece acúmulo de triglicerídeos."
+      "Correct: excess NADH shifts the lactate dehydrogenase reaction toward pyruvate → lactate, contributing to lactic acidosis.",
+      "The high NADH/NAD+ ratio shifts the equilibrium in the opposite direction.",
+      "Gluconeogenesis is impaired because oxaloacetate is shifted toward malate; this reaction is not favored.",
+      "High NADH inhibits beta-oxidation and promotes triglyceride accumulation."
     ],
     "teaching": "Etanol ↑NADH/NAD+ → piruvato vira lactato e oxaloacetato vira malato; gliconeogênese cai e pode ocorrer hipoglicemia."
   },
@@ -4573,10 +4573,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: DNA polimerases adicionam nucleotídeos à extremidade 3′-OH, então a fita nova cresce 5′→3′.",
-      "A fita molde é lida 3′→5′; a fita nova não é sintetizada nessa direção.",
-      "Cada fita nova é sintetizada 5′→3′, embora uma seja contínua e outra em fragmentos de Okazaki.",
-      "A replicação pode ser bidirecional a partir da origem, mas cada fita filha ainda tem polaridade 5′→3′."
+      "Correct: DNA polymerases add nucleotides to the 3′-OH end, so the new strand grows 5′→3′.",
+      "The template strand is read 3′→5′; the new strand is not synthesized in that direction.",
+      "Each new strand is synthesized 5′→3′, although one is continuous and the other consists of Okazaki fragments.",
+      "Replication can proceed bidirectionally from the origin, but each daughter strand still has 5′→3′ polarity."
     ],
     "teaching": "DNA polimerase lê a fita molde 3′→5′ e sintetiza DNA novo 5′→3′; ela só consegue adicionar à extremidade 3′."
   },
@@ -4593,10 +4593,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "GEF promove a troca de GDP por GTP, ativando RAS; não hidrolisa GTP.",
-      "Correta: RAS tem atividade GTPase intrínseca e hidrolisa GTP em GDP; GAP acelera a hidrólise e desliga o sinal.",
-      "GAP acelera a hidrólise de GTP; GEF promove a troca GDP→GTP.",
-      "RAS precisa de fatores de troca de nucleotídeos de guanina (GEFs) para facilitar a saída de GDP e entrada de GTP."
+      "GEF promotes GDP-for-GTP exchange, activating RAS; it does not hydrolyze GTP.",
+      "Correct: RAS has intrinsic GTPase activity and hydrolyzes GTP to GDP; GAP accelerates hydrolysis and turns off the signal.",
+      "GAP accelerates GTP hydrolysis; GEF promotes GDP→GTP exchange.",
+      "RAS requires guanine nucleotide exchange factors (GEFs) to facilitate GDP release and GTP binding."
     ],
     "teaching": "GEF ativa RAS ao trocar GDP por GTP. RAS hidrolisa GTP por conta própria; GAP acelera essa hidrólise e desliga RAS."
   },
@@ -4613,10 +4613,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: NF1 codifica neurofibromina, uma GAP; sua perda reduz a hidrólise de RAS-GTP e prolonga o sinal proliferativo.",
-      "GEF favorece a troca GDP→GTP; NF1 não codifica um GEF.",
-      "Perda de NF1 reduz, não aumenta, o estímulo à atividade GTPase de RAS.",
-      "Neurofibromina regula RAS, não receptor tirosina-fosfatase nem diretamente AMPc."
+      "Correct: NF1 encodes neurofibromin, a GAP; its loss reduces RAS-GTP hydrolysis and prolongs the proliferative signal.",
+      "GEF promotes GDP→GTP exchange; NF1 does not encode a GEF.",
+      "Loss of NF1 reduces, rather than increases, stimulation of RAS GTPase activity.",
+      "Neurofibromin regulates RAS, not a receptor tyrosine phosphatase or cAMP directly."
     ],
     "teaching": "NF1 (neurofibromatose tipo 1) perde neurofibromina, uma GAP: RAS permanece mais tempo ativo ligado a GTP → via MAPK aumenta."
   },
@@ -4633,10 +4633,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A toxina termolábil da ETEC ADP-ribosila Gs, ativa adenilil ciclase e aumenta AMPc.",
-      "Correta: a toxina termoestável ativa guanilil ciclase C e aumenta GMPc.",
-      "IP3 é produzido pela via da fosfolipase C, ativada por Gq.",
-      "Aumento isolado de cálcio não é o mecanismo da toxina termoestável."
+      "ETEC heat-labile toxin ADP-ribosylates Gs, activates adenylyl cyclase, and increases cAMP.",
+      "Correct: the heat-stable toxin activates guanylyl cyclase C and increases cGMP.",
+      "IP3 is produced by the phospholipase C pathway, which is activated by Gq.",
+      "An isolated calcium increase is not the mechanism of the heat-stable toxin."
     ],
     "teaching": "ETEC termoestável → guanilil ciclase C → GMP cíclico ↑; termo-lábil → Gs/adenilil ciclase → AMP cíclico ↑."
   },
@@ -4653,10 +4653,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: CPS I é mitocondrial, usa amônia e bicarbonato e requer dois ATP; é ativada por N-acetilglutamato.",
-      "CPS II é citosólica, usa glutamina e participa da síntese de pirimidinas.",
-      "OTC combina carbamoil-fosfato com ornitina para formar citrulina.",
-      "Argininosuccinato sintetase atua depois, no citosol, combinando citrulina e aspartato."
+      "Correct: CPS I is mitochondrial, uses ammonia and bicarbonate, and requires two ATP; it is activated by N-acetylglutamate.",
+      "CPS II is cytosolic, uses glutamine, and participates in pyrimidine synthesis.",
+      "OTC combines carbamoyl phosphate with ornithine to form citrulline.",
+      "Argininosuccinate synthetase acts later in the cytosol, combining citrulline and aspartate."
     ],
     "teaching": "CPS I = mitocôndria + amônia + ciclo da ureia; CPS II = citosol + glutamina + síntese de pirimidinas."
   },
@@ -4673,10 +4673,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: N-acetilglutamato é o ativador alostérico obrigatório da CPS I mitocondrial.",
-      "CPS II participa da síntese de pirimidinas e não depende de N-acetilglutamato.",
-      "OTC utiliza carbamoil-fosfato e ornitina; não é ativada diretamente por N-acetilglutamato.",
-      "Arginase hidrolisa arginina em ureia e ornitina na etapa final."
+      "Correct: N-acetylglutamate is the obligatory allosteric activator of mitochondrial CPS I.",
+      "CPS II participates in pyrimidine synthesis and does not depend on N-acetylglutamate.",
+      "OTC uses carbamoyl phosphate and ornithine; it is not directly activated by N-acetylglutamate.",
+      "Arginase hydrolyzes arginine to urea and ornithine in the final step."
     ],
     "teaching": "N-acetilglutamato (feito pela NAGS) liga e ativa CPS I, permitindo iniciar o ciclo da ureia."
   },
@@ -4693,10 +4693,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: o complexo é semelhante à piruvato desidrogenase e usa TPP (B1), lipoato, CoA (B5), FAD (B2) e NAD+ (B3).",
-      "Biotina, folato, B6 e vitamina C não compõem o conjunto de cofatores desse complexo.",
-      "Cobalamina e glutationa não substituem os cofatores do complexo de desidrogenase.",
-      "PLP e BH4 não são suficientes; o complexo depende dos cinco cofatores listados na opção correta."
+      "Correct: the complex is similar to pyruvate dehydrogenase and uses TPP (B1), lipoate, CoA (B5), FAD (B2), and NAD+ (B3).",
+      "Biotin, folate, B6, and vitamin C do not make up this complex's cofactor set.",
+      "Cobalamin and glutathione do not replace the dehydrogenase complex's cofactors.",
+      "PLP and BH4 are not sufficient; the complex depends on the five cofactors listed in the correct option."
     ],
     "teaching": "BCKD e piruvato desidrogenase usam o mesmo conjunto clássico: B1, lipoato, B5, B2 e B3."
   },
@@ -4713,10 +4713,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: retirar glutamato para formar glutamina pode consumir alfa-cetoglutarato, intermediário do ciclo do ácido cítrico, reduzindo o fluxo energético neuronal.",
-      "A alteração importante é perda de intermediários do ciclo, não aumento de oxaloacetato como causa primária.",
-      "A síntese de glutamina aumenta como mecanismo de detoxificação da amônia.",
-      "Acetil-CoA não entra diretamente no ciclo da ureia; N-acetilglutamato ativa CPS I."
+      "Correct: diverting glutamate to form glutamine can consume alpha-ketoglutarate, a citric acid cycle intermediate, reducing neuronal energy metabolism.",
+      "The important change is loss of cycle intermediates, not an increase in oxaloacetate as the primary cause.",
+      "Glutamine synthesis increases as a mechanism of ammonia detoxification.",
+      "Acetyl-CoA does not directly enter the urea cycle; N-acetylglutamate activates CPS I."
     ],
     "teaching": "Amônia alta → glutamato é desviado para glutamina; a depleção de alfa-cetoglutarato prejudica o ciclo do ácido cítrico e a produção de energia cerebral."
   },
@@ -4733,10 +4733,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: deficiência de HGPRT causa síndrome de Lesch–Nyhan; falha no salvage aumenta PRPP e síntese de novo de purinas, elevando ácido úrico.",
-      "Deficiência de adenosina desaminase causa imunodeficiência combinada grave.",
-      "Inibição de xantina oxidase reduz ácido úrico e é explorada terapeuticamente.",
-      "Deficiência de APRT pode causar cálculos de 2,8-diidroxiadenina, mas não o quadro neurocomportamental clássico."
+      "Correct: HGPRT deficiency causes Lesch–Nyhan syndrome; failed salvage increases PRPP and de novo purine synthesis, raising uric acid.",
+      "Adenosine deaminase deficiency causes severe combined immunodeficiency.",
+      "Xanthine oxidase inhibition reduces uric acid and is used therapeutically.",
+      "APRT deficiency can cause 2,8-dihydroxyadenine stones but not the classic neurobehavioral presentation."
     ],
     "teaching": "Lesch–Nyhan = deficiência ligada ao X de HGPRT → salvage de hipoxantina/guanina falha, ácido úrico alto e automutilação."
   },
@@ -4753,10 +4753,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: cistinúria resulta de defeito do transportador proximal de aminoácidos dibásicos COLA: cistina, ornitina, lisina e arginina.",
-      "Esse mecanismo descreve cistinose, por defeito do transportador lisossômico de cistina.",
-      "Deficiência de cistationina beta-sintase causa homocistinúria, não cálculos hexagonais de cistina.",
-      "Glicosúria e fosfatúria sugerem disfunção tubular proximal generalizada, como síndrome de Fanconi."
+      "Correct: cystinuria results from a defect in the proximal transporter for the COLA amino acids: cystine, ornithine, lysine, and arginine.",
+      "This mechanism describes cystinosis, caused by a defect in the lysosomal cystine transporter.",
+      "Cystathionine beta-synthase deficiency causes homocystinuria, not hexagonal cystine stones.",
+      "Glucosuria and phosphaturia suggest generalized proximal tubular dysfunction, such as Fanconi syndrome."
     ],
     "teaching": "Cistinúria: transporte COLA (cistina, ornitina, lisina, arginina) proximal deficiente → cálculos hexagonais; cistinose é doença lisossômica distinta."
   },
@@ -4773,10 +4773,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: deficiência de homogentisato oxidase causa alcaptonúria; homogentisato se acumula e oxida, escurecendo urina e tecidos.",
-      "Tirosinase participa da síntese de melanina; sua deficiência causa albinismo oculocutâneo.",
-      "Fumarylacetoacetato hidrolase deficiente causa tirosinemia tipo I, com succinilacetona e lesão hepatorrenal.",
-      "Fenilalanina hidroxilase deficiente causa fenilcetonúria."
+      "Correct: homogentisate oxidase deficiency causes alkaptonuria; homogentisate accumulates and oxidizes, darkening urine and tissues.",
+      "Tyrosinase participates in melanin synthesis; its deficiency causes oculocutaneous albinism.",
+      "Fumarylacetoacetate hydrolase deficiency causes tyrosinemia type I, with succinylacetone and hepatorenal injury.",
+      "Phenylalanine hydroxylase deficiency causes phenylketonuria."
     ],
     "teaching": "Alcaptonúria = homogentisato oxidase baixa → urina escurece ao oxidar e ocorre ocronose."
   },
@@ -4793,10 +4793,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Rotenona é um inibidor clássico do complexo I.",
-      "Malonato pode inibir o complexo II.",
-      "Correta: cianeto bloqueia citocromo c oxidase (complexo IV), impedindo transferência de elétrons ao oxigênio.",
-      "Oligomicina inibe ATP sintase (complexo V)."
+      "Rotenone is a classic inhibitor of complex I.",
+      "Malonate can inhibit complex II.",
+      "Correct: cyanide blocks cytochrome c oxidase (complex IV), preventing electron transfer to oxygen.",
+      "Oligomycin inhibits ATP synthase (complex V)."
     ],
     "teaching": "Cianeto → complexo IV bloqueado → cadeia respiratória para; oxigênio pode estar presente, mas os tecidos não conseguem utilizá-lo (hipóxia histotóxica)."
   },
@@ -4813,10 +4813,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: metanol é metabolizado a formaldeído e formiato; formiato causa acidose e lesão do nervo óptico.",
-      "Oxalato é metabólito do etilenoglicol e pode precipitar com cálcio nos rins.",
-      "Glicolato, metabólito do etilenoglicol, contribui para a acidose e não é o principal tóxico óptico do metanol.",
-      "Acetaldeído deriva do etanol e não explica a neuropatia óptica típica."
+      "Correct: methanol is metabolized to formaldehyde and formate; formate causes acidosis and optic nerve injury.",
+      "Oxalate is an ethylene glycol metabolite and can precipitate with calcium in the kidneys.",
+      "Glycolate, an ethylene glycol metabolite, contributes to acidosis and is not the principal cause of methanol's optic toxicity.",
+      "Acetaldehyde is derived from ethanol and does not explain the typical optic neuropathy."
     ],
     "teaching": "Metanol → formiato → acidose metabólica e toxicidade retiniana/nervo óptico; etilenoglicol → glicolato/oxalato e lesão renal."
   },
@@ -4833,10 +4833,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Correta: chumbo inibe ALA desidratase e ferroquelatase, prejudicando síntese do heme e contribuindo para anemia microcítica com pontilhado basofílico.",
-      "ALA sintase e porfobilinogênio desaminase são relevantes em porfirias, mas não são os alvos clássicos do chumbo.",
-      "Essas enzimas não são os dois alvos inibidos pelo chumbo.",
-      "Heme oxigenase degrada heme e não é o alvo clássico; ferroquelatase é inibida."
+      "Correct: lead inhibits ALA dehydratase and ferrochelatase, impairing heme synthesis and contributing to microcytic anemia with basophilic stippling.",
+      "ALA synthase and porphobilinogen deaminase are relevant to porphyrias but are not the classic targets of lead.",
+      "These enzymes are not the two targets inhibited by lead.",
+      "Heme oxygenase breaks down heme and is not a classic target; ferrochelatase is inhibited."
     ],
     "teaching": "Chumbo inibe ALA desidratase e ferroquelatase → síntese de heme cai; anemia microcítica, dor abdominal e pontilhado basofílico."
   },
@@ -4853,10 +4853,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "As estratégias estão trocadas: TB bloqueia maturação/fusão; Listeria escapa do fagossomo.",
-      "Correta: M. tuberculosis impede maturação do fagossomo; Listeria usa listeriolisina O para romper o vacúolo e alcançar o citosol.",
-      "Anticorpos não são o mecanismo principal de sobrevivência intracelular desses patógenos.",
-      "Listeria replica no citosol e TB pode sobreviver em fagossomos modificados; não ambas exclusivamente em fagolisossomos."
+      "The strategies are reversed: TB blocks maturation/fusion; Listeria escapes the phagosome.",
+      "Correct: M. tuberculosis prevents phagosome maturation; Listeria uses listeriolysin O to rupture the vacuole and reach the cytosol.",
+      "Antibodies are not the principal mechanism of intracellular survival for these pathogens.",
+      "Listeria replicates in the cytosol, and TB can survive in modified phagosomes; they do not both replicate exclusively in phagolysosomes."
     ],
     "teaching": "TB bloqueia maturação/fusão fagolisossômica; Listeria escapa do fagossomo via listeriolisina O e usa ActA para motilidade baseada em actina."
   },
@@ -4873,10 +4873,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "LH estimula células de Leydig a produzirem testosterona.",
-      "FSH atua principalmente nas células de Sertoli; inibina B reduz FSH.",
-      "Correta: FSH estimula Sertoli, que sustenta espermatogênese e produz ABP e inibina B.",
-      "LH estimula Leydig e a produção de testosterona, não Sertoli diretamente."
+      "LH stimulates Leydig cells to produce testosterone.",
+      "FSH acts primarily on Sertoli cells; inhibin B reduces FSH.",
+      "Correct: FSH stimulates Sertoli cells, which support spermatogenesis and produce ABP and inhibin B.",
+      "LH stimulates Leydig cells and testosterone production, not Sertoli cells directly."
     ],
     "teaching": "FSH → Sertoli → espermatogênese, ABP e inibina B; LH → Leydig → testosterona."
   },
@@ -4893,10 +4893,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Buprenorfina não é agonista pleno de baixa afinidade; sua afinidade pelo receptor μ é alta.",
-      "Correta: como agonista parcial de alta afinidade, desloca heroína (agonista pleno) e reduz rapidamente a ativação do receptor, precipitando abstinência se iniciada cedo demais.",
-      "Esse mecanismo não descreve a ação clínica principal da buprenorfina.",
-      "Ela não precipita abstinência por bloquear CYP3A4."
+      "Buprenorphine is not a low-affinity full agonist; its affinity for the μ receptor is high.",
+      "Correct: as a high-affinity partial agonist, it displaces heroin (a full agonist) and rapidly reduces receptor activation, precipitating withdrawal if started too early.",
+      "This mechanism does not describe buprenorphine's main clinical action.",
+      "It does not precipitate withdrawal by blocking CYP3A4."
     ],
     "teaching": "Buprenorfina = agonista parcial μ com alta afinidade; pode deslocar agonista pleno e precipitar abstinência se iniciada antes do momento adequado."
   },
@@ -4913,10 +4913,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Deficiência de MHC I reduz apresentação a CD8+; não explica ausência de MHC II e baixa contagem de CD4+.",
-      "Correta: síndrome do linfócito nu tipo II é deficiência de MHC II, prejudica seleção/ativação de CD4+ e causa imunodeficiência combinada.",
-      "DiGeorge causa hipoplasia/aplasia tímica e deficiência de células T, mas MHC II não está ausente nas células apresentadoras.",
-      "C1 esterase inhibitor baixo causa angioedema hereditário."
+      "MHC I deficiency reduces presentation to CD8+ cells; it does not explain absent MHC II and low CD4+ counts.",
+      "Correct: bare lymphocyte syndrome type II is an MHC II deficiency that impairs CD4+ selection/activation and causes combined immunodeficiency.",
+      "DiGeorge syndrome causes thymic hypoplasia/aplasia and T-cell deficiency, but MHC II is not absent from antigen-presenting cells.",
+      "Low C1 esterase inhibitor causes hereditary angioedema."
     ],
     "teaching": "Bare lymphocyte syndrome tipo II = MHC II baixo/ausente → ativação e seleção de CD4+ prejudicadas; infecções oportunistas."
   },
@@ -5433,10 +5433,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "SCID, imunodeficiência combinada grave, compromete a imunidade celular e a função humoral.",
-      "O defeito da explosão oxidativa causa doença granulomatosa crônica, mas não explica T muito baixos e deficiência profunda de anticorpos.",
-      "Deficiência do complemento terminal favorece Neisseria, sem esse padrão de linfopenia.",
-      "Deficiência isolada de imunoglobulina A não causa perda profunda de linfócitos T."
+      "SCID, severe combined immunodeficiency, impairs cellular immunity and humoral function.",
+      "An oxidative burst defect causes chronic granulomatous disease but does not explain very low T-cell counts and profound antibody deficiency.",
+      "Terminal complement deficiency predisposes to Neisseria infections without this pattern of lymphopenia.",
+      "Isolated immunoglobulin A deficiency does not cause profound T-cell loss."
     ],
     "teaching": "SCID: infecções precoces + diarreia + baixo ganho ponderal + deficiência de T e da função de anticorpos."
   },
@@ -5453,10 +5453,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "A produção de superóxido depende da NADPH oxidase; NADPH significa nicotinamida adenina dinucleotídeo fosfato reduzida.",
-      "A adenosina desaminase (ADA) degrada adenosina e desoxiadenosina. Sua deficiência causa acúmulo de metabólitos tóxicos para linfócitos.",
-      "O complemento terminal é outro sistema de defesa.",
-      "A deficiência de ADA prejudica a sobrevivência dos linfócitos, não apenas a troca de classe."
+      "Superoxide production depends on NADPH oxidase; NADPH stands for reduced nicotinamide adenine dinucleotide phosphate.",
+      "Adenosine deaminase (ADA) degrades adenosine and deoxyadenosine. Its deficiency causes the accumulation of metabolites that are toxic to lymphocytes.",
+      "Terminal complement is a different defense system.",
+      "ADA deficiency impairs lymphocyte survival, not just class switching."
     ],
     "teaching": "ADA é uma enzima do metabolismo de purinas; sua deficiência causa SCID."
   },
@@ -5473,10 +5473,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Mieloperoxidase produz ácido hipocloroso nos fagócitos.",
-      "Xantina oxidase participa da produção de ácido úrico.",
-      "O excesso de dATP, desoxiadenosina trifosfato, inibe a ribonucleotídeo redutase e prejudica a síntese de desoxirribonucleotídeos e de DNA, ácido desoxirribonucleico.",
-      "Adenilato ciclase produz adenosina monofosfato cíclica; não é o alvo clássico dessa toxicidade."
+      "Myeloperoxidase produces hypochlorous acid in phagocytes.",
+      "Xanthine oxidase participates in uric acid production.",
+      "Excess dATP, deoxyadenosine triphosphate, inhibits ribonucleotide reductase and impairs the synthesis of deoxyribonucleotides and DNA, deoxyribonucleic acid.",
+      "Adenylate cyclase produces cyclic adenosine monophosphate; it is not the classic target of this toxicity."
     ],
     "teaching": "ADA baixa → desoxiadenosina/dATP altos → ribonucleotídeo redutase inibida → proliferação linfocitária prejudicada."
   },
@@ -5493,10 +5493,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Padrão clássico do defeito da cadeia gama comum ou de JAK3, Janus quinase 3.",
-      "Sugere defeito predominantemente de células B, como agamaglobulinemia de Bruton.",
-      "Pode ocorrer com defeitos de recombinação dos receptores, como RAG1/2.",
-      "Na deficiência grave de ADA, os metabólitos tóxicos atingem T, B e NK, células natural killer."
+      "This is the classic pattern of a common gamma chain or JAK3, Janus kinase 3, defect.",
+      "This suggests a predominantly B-cell defect, such as Bruton agammaglobulinemia.",
+      "This can occur with receptor recombination defects, such as RAG1/2 defects.",
+      "In severe ADA deficiency, toxic metabolites affect T, B, and NK, natural killer, cells."
     ],
     "teaching": "ADA: herança autossômica recessiva e padrão clássico T− B− NK−; formas parciais podem variar."
   },
@@ -5513,10 +5513,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "O gene IL2RG codifica a cadeia gama comum. Falha na sinalização de interleucina 7 prejudica T; de interleucina 15 prejudica NK.",
-      "O receptor de complemento não explica o padrão T− B+ NK−.",
-      "Um defeito restrito ao receptor de B não explica a perda de T e NK.",
-      "CD18, agrupamento de diferenciação 18, está ligado à adesão de leucócitos."
+      "The IL2RG gene encodes the common gamma chain. Impaired interleukin-7 signaling affects T cells; impaired interleukin-15 signaling affects NK cells.",
+      "The complement receptor does not explain the T− B+ NK− pattern.",
+      "A defect confined to the B-cell receptor does not explain the loss of T and NK cells.",
+      "CD18, cluster of differentiation 18, is involved in leukocyte adhesion."
     ],
     "teaching": "SCID ligado ao X: cadeia gama comum, compartilhada por vários receptores; não apenas pelo receptor de interleucina 2."
   },
@@ -5533,10 +5533,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Número e função são coisas diferentes: B presentes não garantem resposta humoral adequada.",
-      "Linfócitos T auxiliares sustentam a ativação e diferenciação de B; alguns defeitos de SCID também comprometem a sinalização intrínseca de B.",
-      "Anticorpos são produzidos por plasmócitos da linhagem B.",
-      "Células NK não se transformam em plasmócitos."
+      "Cell numbers and function are different: the presence of B cells does not guarantee an adequate humoral response.",
+      "Helper T lymphocytes support B-cell activation and differentiation; some SCID defects also impair intrinsic B-cell signaling.",
+      "Antibodies are produced by plasma cells of the B-cell lineage.",
+      "NK cells do not become plasma cells."
     ],
     "teaching": "Combinada descreve perda de função celular e humoral; não exige ausência numérica de B em todos os subtipos."
   },
@@ -5553,10 +5553,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Ambas podem causar infecções bacterianas.",
-      "Pneumonia ocorre em ambas.",
-      "A combinação indica defeito de linfócitos e de função humoral. A doença granulomatosa crônica afeta principalmente a atividade microbicida dos fagócitos.",
-      "Infecções fúngicas também ocorrem na doença granulomatosa crônica."
+      "Both can cause bacterial infections.",
+      "Pneumonia occurs in both.",
+      "This combination indicates a defect in lymphocytes and humoral function. Chronic granulomatous disease primarily affects the microbicidal activity of phagocytes.",
+      "Fungal infections also occur in chronic granulomatous disease."
     ],
     "teaching": "Não escolha a doença só pelo microrganismo: localize o defeito pelo padrão imunológico."
   },
@@ -5573,10 +5573,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "TREC baixo não identifica sozinho a causa genética.",
-      "Imunoglobulina E isolada não avalia a deficiência de T.",
-      "A triagem pode detectar a doença antes dos sintomas.",
-      "TRECs são círculos de excisão do receptor de células T, marcadores de produção de novos T. Citometria de fluxo e testes funcionais ajudam a confirmar e classificar o defeito."
+      "A low TREC level alone does not identify the genetic cause.",
+      "Immunoglobulin E alone does not assess T-cell deficiency.",
+      "Screening can detect the disease before symptoms appear.",
+      "TRECs are T-cell receptor excision circles, markers of new T-cell production. Flow cytometry and functional tests help confirm and classify the defect."
     ],
     "teaching": "TREC baixo é triagem para baixa produção de T; não confirma sozinho SCID nem seu subtipo."
   },
@@ -5593,10 +5593,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Na agamaglobulinemia de Bruton, o defeito da tirosina quinase de Bruton bloqueia a maturação dos B; T estão preservados.",
-      "SCID típico apresenta deficiência profunda de T, além de função humoral prejudicada.",
-      "O defeito é de fagócitos e não causa ausência seletiva de B.",
-      "Aplasia tímica completa causa deficiência profunda de T, que estão normais aqui."
+      "In Bruton agammaglobulinemia, a defect in Bruton tyrosine kinase blocks B-cell maturation; T cells are preserved.",
+      "Typical SCID features profound T-cell deficiency as well as impaired humoral function.",
+      "The defect affects phagocytes and does not cause selective B-cell absence.",
+      "Complete thymic aplasia causes profound T-cell deficiency, whereas T cells are normal here."
     ],
     "teaching": "Bruton: B ausentes e T preservados. SCID: T gravemente comprometidos."
   },
@@ -5613,10 +5613,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "ADA pode causar SCID, mas não explica tão bem a associação cardíaca e hipoparatireoidismo.",
-      "Síndrome de DiGeorge: hipoplasia/aplasia do timo e das paratireoides associada a cardiopatias conotruncais; gravidade imunológica variável.",
-      "Não causa deficiência de T com esse conjunto de malformações.",
-      "É um defeito microbicida de fagócitos, frequentemente assintomático."
+      "ADA deficiency can cause SCID but does not explain the combination of cardiac abnormalities and hypoparathyroidism as well.",
+      "DiGeorge syndrome features thymic and parathyroid hypoplasia or aplasia associated with conotruncal heart defects; the severity of immune impairment varies.",
+      "This does not cause T-cell deficiency with this combination of malformations.",
+      "This is a defect in phagocyte microbicidal function and is often asymptomatic."
     ],
     "teaching": "T baixos + hipocalcemia + cardiopatia conotruncal → DiGeorge; aplasia tímica completa pode produzir imunodeficiência grave."
   },
@@ -5633,10 +5633,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "ADA grave costuma reduzir T, B e células natural killer, sem esse padrão seletivo de imunoglobulinas.",
-      "NADPH oxidase atua na explosão oxidativa de fagócitos, não na troca de classe.",
-      "CD40L, ligante de CD40 nos T ativados, permite a troca de classe de anticorpos e ajuda a ativar macrófagos. Seu defeito causa síndrome hiper-IgM ligada ao X.",
-      "Deficiência do complemento terminal favorece Neisseria."
+      "Severe ADA deficiency usually reduces T, B, and natural killer cells, without this selective immunoglobulin pattern.",
+      "NADPH oxidase functions in the phagocyte oxidative burst, not in class switching.",
+      "CD40L, the CD40 ligand on activated T cells, enables antibody class switching and helps activate macrophages. Its deficiency causes X-linked hyper-IgM syndrome.",
+      "Terminal complement deficiency predisposes to Neisseria infections."
     ],
     "teaching": "Hiper-IgM: imunoglobulina M preservada/alta, G e A baixas; contagem de células pode estar normal."
   },
@@ -5653,10 +5653,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Deficiência de imunoglobulina A não explica microplaquetas e eczema.",
-      "Doença granulomatosa crônica não apresenta classicamente essa tríade.",
-      "Bruton causa ausência de B, sem a tríade típica.",
-      "Wiskott–Aldrich é uma imunodeficiência ligada ao X com eczema, infecções e trombocitopenia com plaquetas pequenas."
+      "Immunoglobulin A deficiency does not explain small platelets and eczema.",
+      "Chronic granulomatous disease does not classically present with this triad.",
+      "Bruton agammaglobulinemia causes B-cell absence without this characteristic triad.",
+      "Wiskott–Aldrich syndrome is an X-linked immunodeficiency with eczema, infections, and thrombocytopenia with small platelets."
     ],
     "teaching": "Infecções + eczema + microplaquetas → Wiskott–Aldrich."
   },
@@ -5673,10 +5673,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Células-tronco hematopoéticas se autorrenovam e originam células sanguíneas; a correção pode persistir em suas descendentes.",
-      "Transcriptase reversa pertence ao vetor retroviral, não é a proteína humana deficiente.",
-      "A estratégia corrige células-tronco e descendentes, não cada neutrófilo maduro já existente.",
-      "Acompanhamento imunológico e de segurança continua necessário."
+      "Hematopoietic stem cells self-renew and give rise to blood cells; the correction can persist in their descendants.",
+      "Reverse transcriptase belongs to the retroviral vector; it is not the deficient human protein.",
+      "The strategy corrects stem cells and their descendants, not every existing mature neutrophil.",
+      "Immune and safety monitoring remain necessary."
     ],
     "teaching": "Na terapia gênica, o vetor transporta o gene terapêutico; o vetor não é a proteína que falta ao paciente."
   },
@@ -5693,10 +5693,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "ADA atua no metabolismo de purinas; deficiência grave causa linfopenia.",
-      "Mieloperoxidase usa peróxido de hidrogênio e cloreto para formar ácido hipocloroso. A deficiência é frequentemente assintomática, mas pode predispor a Candida.",
-      "NADPH oxidase inicia a geração de superóxido, que está preservada.",
-      "Ribonucleotídeo redutase fornece precursores para a síntese de DNA, ácido desoxirribonucleico."
+      "ADA functions in purine metabolism; severe deficiency causes lymphopenia.",
+      "Myeloperoxidase uses hydrogen peroxide and chloride to form hypochlorous acid. Its deficiency is often asymptomatic but may predispose to Candida infections.",
+      "NADPH oxidase initiates superoxide generation, which is preserved here.",
+      "Ribonucleotide reductase supplies precursors for the synthesis of DNA, deoxyribonucleic acid."
     ],
     "teaching": "NADPH oxidase inicia a explosão oxidativa; mieloperoxidase usa o peróxido produzido a jusante."
   },
@@ -6255,10 +6255,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "O conjunto indica albinismo: a falta de melanina afeta pigmentação e desenvolvimento visual. Não há a regressão neurológica típica das leucodistrofias.",
-      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
-      "Galactosemia clássica causa doença hepática, dificuldade alimentar e cataratas após exposição à galactose do leite.",
-      "Leucodistrofia metacromática envolve deficiência de arilsulfatase A e acúmulo de sulfatídeos."
+      "The combination indicates albinism: a lack of melanin affects pigmentation and visual development. The neurologic regression typical of leukodystrophies is absent.",
+      "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination.",
+      "Classic galactosemia causes liver disease, feeding difficulties, and cataracts after exposure to galactose from milk.",
+      "Metachromatic leukodystrophy involves arylsulfatase A deficiency and sulfatide accumulation."
     ],
     "teaching": "Nistagmo isolado é inespecífico; cabelo branco + transiluminação da íris + hipoplasia foveal apontam para albinismo."
   },
@@ -6275,10 +6275,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
-      "O tipo 1 resulta de variantes no gene TYR, que codifica tirosinase, enzima da síntese de melanina.",
-      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
-      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B."
+      "Galactocerebrosidase, also called galactosylceramidase, degrades lipids; its deficiency causes Krabbe disease.",
+      "Type 1 results from variants in the TYR gene, which encodes tyrosinase, an enzyme in melanin synthesis.",
+      "Galactose-1-phosphate uridyltransferase processes galactose-1-phosphate; its deficiency causes classic galactosemia.",
+      "Acid sphingomyelinase is deficient in the forms historically called Niemann–Pick types A and B."
     ],
     "teaching": "Albinismo tipo 1 = tirosinase. Krabbe = galactocerebrosidase."
   },
@@ -6295,10 +6295,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Ausência de melanócitos sugere outras causas de despigmentação, como vitiligo ou piebaldismo.",
-      "O defeito primário é a produção de melanina, não sua destruição acelerada.",
-      "Os melanócitos estão presentes, mas a tirosinase deficiente impede a síntese adequada de melanina.",
-      "Perda de queratinócitos não explica o defeito enzimático."
+      "The absence of melanocytes suggests other causes of depigmentation, such as vitiligo or piebaldism.",
+      "The primary defect is in melanin production, not accelerated destruction.",
+      "Melanocytes are present, but deficient tyrosinase prevents adequate melanin synthesis.",
+      "Loss of keratinocytes does not explain the enzyme defect."
     ],
     "teaching": "Não confunda célula produtora de pigmento com a enzima que ela usa."
   },
@@ -6315,10 +6315,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Peroxissomos participam, entre outras funções, da oxidação de ácidos graxos de cadeia muito longa.",
-      "A matriz mitocondrial participa do metabolismo energético.",
-      "O nucléolo participa da produção de ribossomos.",
-      "Melanina é sintetizada em melanossomos, que depois podem ser transferidos aos queratinócitos."
+      "Peroxisomes participate in very-long-chain fatty acid oxidation, among other functions.",
+      "The mitochondrial matrix participates in energy metabolism.",
+      "The nucleolus participates in ribosome production.",
+      "Melanin is synthesized in melanosomes, which can then be transferred to keratinocytes."
     ],
     "teaching": "Melanócito = célula; melanossomo = organela; melanina = pigmento."
   },
@@ -6335,10 +6335,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Tirosinase converte tirosina em L-DOPA, L-3,4-di-hidroxifenilalanina, e depois em dopaquinona na via da melanina.",
-      "Triptofano é precursor de serotonina e melatonina, não de melanina.",
-      "Histidina é precursora de histamina.",
-      "Glutamato pode originar ácido gama-aminobutírico, um neurotransmissor inibitório."
+      "Tyrosinase converts tyrosine to L-DOPA, L-3,4-dihydroxyphenylalanine, and then to dopaquinone in the melanin pathway.",
+      "Tryptophan is a precursor of serotonin and melatonin, not melanin.",
+      "Histidine is a precursor of histamine.",
+      "Glutamate can give rise to gamma-aminobutyric acid, an inhibitory neurotransmitter."
     ],
     "teaching": "Melanina vem de tirosina; melatonina vem de triptofano."
   },
@@ -6355,10 +6355,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
-      "Na síntese de catecolaminas, a enzima é tirosina hidroxilase. Na produção de melanina, é tirosinase.",
-      "Fenilalanina hidroxilase converte fenilalanina em tirosina; seu defeito causa a forma clássica de fenilcetonúria.",
-      "Homogentisato oxidase é deficiente na alcaptonúria, com urina que escurece e ocronose."
+      "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1.",
+      "In catecholamine synthesis, the enzyme is tyrosine hydroxylase. In melanin production, it is tyrosinase.",
+      "Phenylalanine hydroxylase converts phenylalanine to tyrosine; its deficiency causes classic phenylketonuria.",
+      "Homogentisate oxidase is deficient in alkaptonuria, which features darkening urine and ochronosis."
     ],
     "teaching": "Mesmo substrato e intermediário, mas enzimas diferentes conforme a via."
   },
@@ -6375,10 +6375,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Opacidade do cristalino é catarata e impede a passagem regular da luz.",
-      "Depósito corneano de glicosaminoglicanos pode ocorrer em mucopolissacaridoses.",
-      "A íris tem pouco pigmento para bloquear a luz; por isso a luz atravessa regiões que normalmente seriam pigmentadas.",
-      "Galactitol causa principalmente lesão osmótica do cristalino."
+      "Lens opacity is a cataract and interferes with normal light transmission.",
+      "Corneal glycosaminoglycan deposition can occur in mucopolysaccharidoses.",
+      "The iris has little pigment to block light, so light passes through areas that would normally be pigmented.",
+      "Galactitol primarily causes osmotic injury to the lens."
     ],
     "teaching": "Íris translúcida = pouco pigmento; catarata = cristalino opaco."
   },
@@ -6395,10 +6395,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Catarata não é o mecanismo definidor da redução visual no albinismo.",
-      "Macrófagos globóides são associados a Krabbe, não à alteração foveal do albinismo.",
-      "Opacidade corneana não é necessária no albinismo.",
-      "Hipoplasia da fóvea e trajeto anormal de fibras ópticas prejudicam a visão além de qualquer erro refrativo."
+      "Cataracts are not the defining mechanism of reduced vision in albinism.",
+      "Globoid macrophages are associated with Krabbe disease, not the foveal abnormality of albinism.",
+      "Corneal opacity is not required in albinism.",
+      "Foveal hypoplasia and abnormal optic fiber routing impair vision beyond any refractive error."
     ],
     "teaching": "Melanina participa do desenvolvimento visual; o problema não é apenas deixar entrar luz demais."
   },
@@ -6415,10 +6415,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Transiluminação da íris com hipoplasia foveal localiza o problema na pigmentação e no desenvolvimento visual.",
-      "Regressão motora favorece doença neurodegenerativa.",
-      "Esse padrão pode ocorrer em Krabbe infantil.",
-      "Desmielinização central e periférica favorece leucodistrofia."
+      "Iris transillumination with foveal hypoplasia localizes the problem to pigmentation and visual development.",
+      "Motor regression favors a neurodegenerative disease.",
+      "This pattern can occur in infantile Krabbe disease.",
+      "Central and peripheral demyelination favors a leukodystrophy."
     ],
     "teaching": "Não diagnostique Krabbe apenas por nistagmo ou por um nervo óptico anormal."
   },
@@ -6435,10 +6435,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Há formas de albinismo causadas por genes diferentes de TYR.",
-      "Defeito de tirosinase define albinismo tipo 1, mas outras formas envolvem proteínas de função e maturação dos melanossomos.",
-      "Tirosinase preservada não comprova uma leucodistrofia.",
-      "Melanócitos podem estar presentes em diferentes formas de albinismo."
+      "Some forms of albinism are caused by genes other than TYR.",
+      "A tyrosinase defect defines type 1 albinism, but other forms involve proteins involved in melanosome function and maturation.",
+      "Preserved tyrosinase activity does not establish a leukodystrophy.",
+      "Melanocytes can be present in different forms of albinism."
     ],
     "teaching": "Na questão de enzimas, tirosinase é a associação clássica; nem todo albinismo é deficiência de tirosinase."
   },
@@ -6455,10 +6455,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Dois portadores podem ter filhos afetados.",
-      "50% é a probabilidade de um filho portador não afetado nesse cruzamento.",
-      "Cada gestação tem probabilidade independente de 25% de um filho com duas cópias patogênicas.",
-      "Ambos os pais são portadores, não homozigotos afetados."
+      "Two carriers can have affected children.",
+      "50% is the probability of an unaffected carrier child in this cross.",
+      "Each pregnancy has an independent 25% probability of a child with two pathogenic copies.",
+      "Both parents are carriers, not affected homozygotes."
     ],
     "teaching": "Albinismo oculocutâneo tipo 1 e Krabbe têm herança autossômica recessiva."
   },
@@ -6475,10 +6475,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Não decorre diretamente da falta de melanina cutânea.",
-      "É outro mecanismo e não consequência da perda de fotoproteção.",
-      "Relaciona-se à hiperamonemia.",
-      "Menos melanina reduz a proteção contra radiação ultravioleta, favorecendo queimaduras e dano ao DNA, ácido desoxirribonucleico."
+      "This does not result directly from a lack of cutaneous melanin.",
+      "This is a different mechanism, not a consequence of lost photoprotection.",
+      "This is related to hyperammonemia.",
+      "Less melanin reduces protection against ultraviolet radiation, increasing susceptibility to burns and damage to DNA, deoxyribonucleic acid."
     ],
     "teaching": "Falta de pigmento tem consequência funcional: menor fotoproteção."
   },
@@ -6495,10 +6495,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Krabbe decorre de deficiência de galactocerebrosidase, também chamada galactosilceramidase.",
-      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
-      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
-      "Arilsulfatase A degrada sulfatídeos; sua deficiência causa leucodistrofia metacromática."
+      "Krabbe disease results from deficiency of galactocerebrosidase, also called galactosylceramidase.",
+      "Galactose-1-phosphate uridyltransferase processes galactose-1-phosphate; its deficiency causes classic galactosemia.",
+      "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1.",
+      "Arylsulfatase A degrades sulfatides; its deficiency causes metachromatic leukodystrophy."
     ],
     "teaching": "GALC, gene da galactocerebrosidase, é diferente de GALT, gene da galactose-1-fosfato uridiltransferase."
   },
@@ -6515,10 +6515,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Sulfatídeos acumulam-se na leucodistrofia metacromática.",
-      "Psicosina, ou galactosilesfingosina, acumula-se quando falta galactocerebrosidase e contribui para a perda das células produtoras de mielina.",
-      "Gangliosídeo GM2 acumula-se em Tay–Sachs e Sandhoff.",
-      "Globotriaosilceramida, abreviada Gb3, acumula-se em Fabry."
+      "Sulfatides accumulate in metachromatic leukodystrophy.",
+      "Psychosine, or galactosylsphingosine, accumulates when galactocerebrosidase is deficient and contributes to the loss of myelin-producing cells.",
+      "GM2 ganglioside accumulates in Tay–Sachs and Sandhoff diseases.",
+      "Globotriaosylceramide, abbreviated Gb3, accumulates in Fabry disease."
     ],
     "teaching": "Krabbe: psicosina tóxica → desmielinização."
   },
@@ -6535,10 +6535,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Astrócitos sustentam o tecido neural; micróglia são células imunes residentes.",
-      "Essas células participam da pigmentação e da barreira cutânea.",
-      "Oligodendrócitos formam mielina no sistema nervoso central; células de Schwann, nos nervos periféricos.",
-      "Células ependimárias revestem ventrículos; neurônios não formam sua própria bainha de mielina."
+      "Astrocytes support neural tissue; microglia are resident immune cells.",
+      "These cells participate in pigmentation and the skin barrier.",
+      "Oligodendrocytes form myelin in the central nervous system; Schwann cells form myelin in peripheral nerves.",
+      "Ependymal cells line the ventricles; neurons do not form their own myelin sheath."
     ],
     "teaching": "Krabbe compromete mielina central e periférica."
   },
@@ -6555,10 +6555,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Não são melanócitos; a patologia é da substância branca.",
-      "Grânulos gigantes em neutrófilos sugerem Chediak–Higashi.",
-      "Deficiência de grânulos densos plaquetários ocorre em Hermansky–Pudlak.",
-      "Células globóides são macrófagos carregados de lipídios, frequentemente multinucleados, encontrados na substância branca."
+      "They are not melanocytes; the pathology involves white matter.",
+      "Giant granules in neutrophils suggest Chediak–Higashi syndrome.",
+      "Platelet dense granule deficiency occurs in Hermansky–Pudlak syndrome.",
+      "Globoid cells are lipid-laden macrophages, often multinucleated, found in white matter."
     ],
     "teaching": "Globoid cell leukodystrophy é outro nome de Krabbe."
   },
@@ -6575,10 +6575,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Krabbe infantil pode começar após desenvolvimento inicial aparentemente normal, seguido de irritabilidade e rápida deterioração neurológica.",
-      "Esse padrão combina mais com albinismo não sindrômico.",
-      "Sugere vitiligo.",
-      "Favorece uma causa de catarata, não uma leucodistrofia."
+      "Infantile Krabbe disease can begin after apparently normal early development, followed by irritability and rapid neurologic deterioration.",
+      "This pattern is more consistent with nonsyndromic albinism.",
+      "This suggests vitiligo.",
+      "This favors a cause of cataracts, not a leukodystrophy."
     ],
     "teaching": "Diferencie alteração de desenvolvimento visual de perda progressiva de habilidades."
   },
@@ -6595,10 +6595,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Galactocerebrosidase é a enzima de Krabbe.",
-      "Galactose-1-fosfato uridiltransferase atua no metabolismo de um açúcar; galactocerebrosidase atua na degradação de um lipídio.",
-      "Galactoquinase atua sobre o açúcar galactose e sua deficiência causa sobretudo cataratas.",
-      "Alfa-galactosidase A é a enzima de Fabry."
+      "Galactocerebrosidase is the enzyme deficient in Krabbe disease.",
+      "Galactose-1-phosphate uridyltransferase functions in sugar metabolism; galactocerebrosidase functions in lipid degradation.",
+      "Galactokinase acts on the sugar galactose, and its deficiency primarily causes cataracts.",
+      "Alpha-galactosidase A is the enzyme deficient in Fabry disease."
     ],
     "teaching": "Galactose no nome não torna as enzimas equivalentes: açúcar livre versus glicoesfingolipídio."
   },
@@ -6615,10 +6615,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Psicosina é galactosilesfingosina e é particularmente tóxica para células produtoras de mielina em Krabbe.",
-      "Gangliosídeo GM2 acumula-se em Tay–Sachs e Sandhoff.",
-      "Na leucodistrofia metacromática, a falha em degradar sulfatídeos causa seu acúmulo e compromete a mielina.",
-      "Globotriaosilceramida, abreviada Gb3, acumula-se em Fabry."
+      "Psychosine is galactosylsphingosine and is particularly toxic to myelin-producing cells in Krabbe disease.",
+      "GM2 ganglioside accumulates in Tay–Sachs and Sandhoff diseases.",
+      "In metachromatic leukodystrophy, failure to degrade sulfatides causes their accumulation and impairs myelin.",
+      "Globotriaosylceramide, abbreviated Gb3, accumulates in Fabry disease."
     ],
     "teaching": "Krabbe: psicosina/galactocerebrosidase. Metacromática: sulfatídeos/arilsulfatase A."
   },
@@ -6635,10 +6635,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
-      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1.",
-      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B.",
-      "Metacromasia é a mudança de cor do corante ao interagir com depósitos, característica da leucodistrofia metacromática por arilsulfatase A."
+      "Galactocerebrosidase, also called galactosylceramidase, degrades lipids; its deficiency causes Krabbe disease.",
+      "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1.",
+      "Acid sphingomyelinase is deficient in the forms historically called Niemann–Pick types A and B.",
+      "Metachromasia is the change in dye color upon interaction with deposits, characteristic of metachromatic leukodystrophy due to arylsulfatase A deficiency."
     ],
     "teaching": "Metacromática descreve a coloração histológica; não significa perda de pigmento da pele."
   },
@@ -6655,10 +6655,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Ceramida é formada por esfingosina ligada a um ácido graxo por uma ligação amida.",
-      "Essa combinação forma triacilglicerol.",
-      "Tirosina é substrato da melanina; cobre é cofator da tirosinase.",
-      "Esses dois açúcares formam lactose quando unidos pela ligação apropriada."
+      "Ceramide consists of sphingosine linked to a fatty acid by an amide bond.",
+      "This combination forms triacylglycerol.",
+      "Tyrosine is a substrate for melanin synthesis; copper is a cofactor for tyrosinase.",
+      "These two sugars form lactose when joined by the appropriate bond."
     ],
     "teaching": "Ceramida é a base estrutural de muitos esfingolipídios."
   },
@@ -6675,10 +6675,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Esfingomielina contém fosfocolina ligada à ceramida.",
-      "Galactocerebrosídeo é ceramida com uma galactose; é um componente da mielina e substrato da galactocerebrosidase.",
-      "Triacilglicerol tem glicerol e três ácidos graxos.",
-      "Colesterol é um esterol e não um derivado de ceramida com galactose."
+      "Sphingomyelin contains phosphocholine linked to ceramide.",
+      "Galactocerebroside is ceramide with one galactose residue; it is a component of myelin and a substrate for galactocerebrosidase.",
+      "Triacylglycerol contains glycerol and three fatty acids.",
+      "Cholesterol is a sterol, not a ceramide derivative containing galactose."
     ],
     "teaching": "Galactocerebrosídeo = galactose + ceramida."
   },
@@ -6695,10 +6695,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Nucléolo participa da formação de ribossomos.",
-      "Melanossomos participam da pigmentação, não são o local principal da degradação em Krabbe.",
-      "Galactocerebrosidase é uma enzima lisossômica; Krabbe é uma doença de depósito lisossômico.",
-      "Ribossomos sintetizam proteínas."
+      "The nucleolus participates in ribosome formation.",
+      "Melanosomes participate in pigmentation; they are not the primary site of degradation in Krabbe disease.",
+      "Galactocerebrosidase is a lysosomal enzyme; Krabbe disease is a lysosomal storage disease.",
+      "Ribosomes synthesize proteins."
     ],
     "teaching": "Albinismo tipo 1: síntese de pigmento. Krabbe: degradação lisossômica de lipídios."
   },
@@ -6715,10 +6715,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "O cristalino é a estrutura que fica opaca na catarata.",
-      "A córnea pode ficar opaca em algumas mucopolissacaridoses.",
-      "A íris pode transiluminar no albinismo.",
-      "A mácula em cereja é um achado retiniano: a fóvea relativamente preservada contrasta com a retina ao redor."
+      "The lens is the structure that becomes opaque in a cataract.",
+      "The cornea may become cloudy in some mucopolysaccharidoses.",
+      "The iris may transilluminate in albinism.",
+      "A cherry-red spot is a retinal finding: the relatively preserved fovea contrasts with the surrounding retina."
     ],
     "teaching": "Catarata = cristalino; opacidade corneana = córnea; cherry-red spot = mácula."
   },
@@ -6735,10 +6735,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Tay–Sachs resulta de deficiência de hexosaminidase A, com acúmulo de gangliosídeo GM2.",
-      "Esfingomielinase ácida é deficiente nas formas historicamente chamadas Niemann–Pick A e B.",
-      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
-      "Tirosinase atua na síntese de melanina; sua deficiência causa albinismo oculocutâneo tipo 1."
+      "Tay–Sachs disease results from hexosaminidase A deficiency, with GM2 ganglioside accumulation.",
+      "Acid sphingomyelinase is deficient in the forms historically called Niemann–Pick types A and B.",
+      "Galactocerebrosidase, also called galactosylceramidase, degrades lipids; its deficiency causes Krabbe disease.",
+      "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1."
     ],
     "teaching": "Tay–Sachs não causa a íris translúcida e o cabelo branco típicos de albinismo."
   },
@@ -6755,10 +6755,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Pode ocorrer em ambas.",
-      "Hepatoesplenomegalia é típica da forma infantil neurovisceral de deficiência de esfingomielinase ácida, historicamente Niemann–Pick A, e geralmente ausente em Tay–Sachs clássico.",
-      "Pode ocorrer em ambas; não distingue isoladamente.",
-      "Pode ocorrer em ambas."
+      "This can occur in both.",
+      "Hepatosplenomegaly is typical of infantile neurovisceral acid sphingomyelinase deficiency, historically called Niemann–Pick type A, and is generally absent in classic Tay–Sachs disease.",
+      "This can occur in both and does not distinguish them by itself.",
+      "This can occur in both."
     ],
     "teaching": "Mácula em cereja não basta: procure organomegalia."
   },
@@ -6775,10 +6775,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Explica albinismo tipo 1, não esse quadro neurovisceral.",
-      "Explica deficiência de galactoquinase.",
-      "Niemann–Pick C envolve proteínas NPC1 ou NPC2 do transporte intracelular de lipídios, e não deficiência de esfingomielinase ácida.",
-      "É o mecanismo de Tay–Sachs."
+      "This explains type 1 albinism, not this neurovisceral presentation.",
+      "This explains galactokinase deficiency.",
+      "Niemann–Pick type C involves the NPC1 or NPC2 proteins in intracellular lipid transport, not acid sphingomyelinase deficiency.",
+      "This is the mechanism of Tay–Sachs disease."
     ],
     "teaching": "Niemann–Pick A/B e C não têm o mesmo defeito molecular."
   },
@@ -6795,10 +6795,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
-      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
-      "Arilsulfatase A degrada sulfatídeos; sua deficiência causa leucodistrofia metacromática.",
-      "Alfa-galactosidase A retira a galactose terminal da globotriaosilceramida, Gb3; sua deficiência causa Fabry."
+      "Galactocerebrosidase, also called galactosylceramidase, degrades lipids; its deficiency causes Krabbe disease.",
+      "Galactose-1-phosphate uridyltransferase processes galactose-1-phosphate; its deficiency causes classic galactosemia.",
+      "Arylsulfatase A degrades sulfatides; its deficiency causes metachromatic leukodystrophy.",
+      "Alpha-galactosidase A removes the terminal galactose from globotriaosylceramide, Gb3; its deficiency causes Fabry disease."
     ],
     "teaching": "Krabbe e Fabry têm enzimas com galacto no nome, mas substratos diferentes."
   },
@@ -6815,10 +6815,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "O conjunto sugere Fabry; córnea verticilata é um padrão em redemoinho e pode não reduzir muito a acuidade visual.",
-      "Hurler, mucopolissacaridose tipo I grave, associa opacidade corneana, fácies grosseira e deficiência de alfa-L-iduronidase.",
-      "Galactosemia clássica causa doença hepática, dificuldade alimentar e cataratas após exposição à galactose do leite.",
-      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal."
+      "The combination suggests Fabry disease; cornea verticillata is a whorl-like pattern and may not substantially reduce visual acuity.",
+      "Hurler syndrome, severe mucopolysaccharidosis type I, features corneal clouding, coarse facial features, and alpha-L-iduronidase deficiency.",
+      "Classic galactosemia causes liver disease, feeding difficulties, and cataracts after exposure to galactose from milk.",
+      "Oculocutaneous albinism causes hypopigmentation and abnormalities of visual development, such as foveal hypoplasia."
     ],
     "teaching": "Córnea verticilata + dor acral + angiokeratomas → Fabry; fármacos também podem causar córnea verticilata."
   },
@@ -6835,10 +6835,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Transiluminação da íris é uma pista de albinismo.",
-      "Opacidade corneana é característica de Hurler e geralmente ausente em Hunter.",
-      "Não é a distinção clássica entre essas mucopolissacaridoses.",
-      "Mácula em cereja não é a principal distinção."
+      "Iris transillumination is a clue to albinism.",
+      "Corneal clouding is characteristic of Hurler syndrome and is generally absent in Hunter syndrome.",
+      "This is not the classic distinction between these mucopolysaccharidoses.",
+      "A cherry-red macula is not the main distinction."
     ],
     "teaching": "Hurler: córnea opaca. Hunter: córnea geralmente clara e herança ligada ao X."
   },
@@ -6855,10 +6855,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Isso causa transiluminação, não cristalino opaco.",
-      "É um achado de desenvolvimento retiniano, como no albinismo.",
-      "Catarata é opacidade do cristalino; na galactosemia pode decorrer de acúmulo osmótico de galactitol.",
-      "Desmielinização do nervo óptico não torna o cristalino opaco."
+      "This causes transillumination, not an opaque lens.",
+      "This is a retinal developmental finding, as in albinism.",
+      "A cataract is an opacity of the lens; in galactosemia, it can result from osmotic accumulation of galactitol.",
+      "Optic nerve demyelination does not make the lens opaque."
     ],
     "teaching": "Localize a alteração ocular antes de associar uma enzima."
   },
@@ -6875,10 +6875,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Psicosina não é a explicação para a toxicidade alimentar na galactosemia.",
-      "Não é o mecanismo.",
-      "O leite contém lactose, que fornece glicose e galactose após digestão.",
-      "A digestão da lactose fornece galactose, que não é adequadamente processada na deficiência de galactose-1-fosfato uridiltransferase."
+      "Psychosine does not explain dietary toxicity in galactosemia.",
+      "This is not the mechanism.",
+      "Milk contains lactose, which provides glucose and galactose after digestion.",
+      "Lactose digestion supplies galactose, which is not adequately processed in galactose-1-phosphate uridyltransferase deficiency."
     ],
     "teaching": "Aleitamento materno não exclui galactosemia: leite materno também contém lactose."
   },
@@ -6895,10 +6895,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A reação forma glicose-1-fosfato e UDP-galactose; UDP significa uridina difosfato.",
-      "Galactitol é produzido pela aldose redutase.",
-      "São produtos de degradação de um glicoesfingolipídio, não dessa reação.",
-      "São intermediários da síntese de melanina."
+      "The reaction forms glucose-1-phosphate and UDP-galactose; UDP means uridine diphosphate.",
+      "Galactitol is produced by aldose reductase.",
+      "These are breakdown products of a glycosphingolipid, not products of this reaction.",
+      "These are intermediates in melanin synthesis."
     ],
     "teaching": "GALT atua numa via de açúcares fosforilados; GALC atua sobre lipídios lisossômicos."
   },
@@ -6915,10 +6915,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Galactitol não causa o padrão de hipopigmentação do albinismo.",
-      "Galactitol fica retido nas fibras do cristalino e atrai água, causando edema, dano e opacificação.",
-      "Isso descreve outro mecanismo, como no vitiligo.",
-      "Não explica a lesão primária do cristalino."
+      "Galactitol does not cause the hypopigmentation pattern of albinism.",
+      "Galactitol is trapped in lens fibers and attracts water, causing swelling, damage, and opacification.",
+      "This describes a different mechanism, as in vitiligo.",
+      "This does not explain the primary lens injury."
     ],
     "teaching": "Galactitol → água entra no cristalino → catarata."
   },
@@ -6935,10 +6935,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Catarata pode ocorrer em ambas.",
-      "Pode ocorrer em ambas.",
-      "Galactosemia clássica compromete o fígado e pode causar doença sistêmica grave; deficiência de galactoquinase costuma ter manifestações predominantemente oculares.",
-      "Esse quadro favorece a forma predominantemente ocular por galactoquinase."
+      "Cataracts can occur in both conditions.",
+      "This can occur in both conditions.",
+      "Classic galactosemia affects the liver and can cause severe systemic illness; galactokinase deficiency usually has predominantly ocular manifestations.",
+      "This presentation favors the predominantly ocular form due to galactokinase deficiency."
     ],
     "teaching": "Catarata + hepatopatia → GALT; catarata isolada → pense em galactoquinase."
   },
@@ -6955,10 +6955,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Deficiência de metilmalonil-coenzima A mutase causa acidemia metilmalônica, com acidose metabólica e possível hiperamonemia.",
-      "Galactose-1-fosfato uridiltransferase processa galactose-1-fosfato; sua deficiência causa galactosemia clássica.",
-      "Galactocerebrosidase, também chamada galactosilceramidase, degrada lipídios; sua deficiência causa Krabbe.",
-      "Deficiência de ornitina transcarbamilase é um defeito do ciclo da ureia: hiperamonemia e ácido orótico alto, frequentemente com alcalose respiratória."
+      "Methylmalonyl-coenzyme A mutase deficiency causes methylmalonic acidemia, with metabolic acidosis and possible hyperammonemia.",
+      "Galactose-1-phosphate uridyltransferase processes galactose-1-phosphate; its deficiency causes classic galactosemia.",
+      "Galactocerebrosidase, also called galactosylceramidase, breaks down lipids; its deficiency causes Krabbe disease.",
+      "Ornithine transcarbamylase deficiency is a urea cycle defect: hyperammonemia and elevated orotic acid, often with respiratory alkalosis."
     ],
     "teaching": "Hiperamonemia com alcalose respiratória sugere ciclo da ureia; acidose com ânion gap alto sugere acidemia orgânica."
   },
@@ -6975,10 +6975,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Adenosilcobalamina é cofator da conversão de metilmalonil-coenzima A em succinil-coenzima A.",
-      "Biotina é cofator de carboxilases, como propionil-coenzima A carboxilase.",
-      "Tiamina pirofosfato participa de descarboxilações oxidativas e da transcetolase.",
-      "Piridoxal fosfato participa de várias reações de aminoácidos."
+      "Adenosylcobalamin is a cofactor for the conversion of methylmalonyl-coenzyme A to succinyl-coenzyme A.",
+      "Biotin is a cofactor for carboxylases, such as propionyl-coenzyme A carboxylase.",
+      "Thiamine pyrophosphate participates in oxidative decarboxylation reactions and in transketolase activity.",
+      "Pyridoxal phosphate participates in several amino acid reactions."
     ],
     "teaching": "Metilmalonil-coenzima A mutase depende de vitamina B12; seu defeito não explica albinismo."
   },
@@ -6995,10 +6995,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
-      "Chediak–Higashi combina alteração de pigmentação e imunodeficiência com grânulos gigantes em leucócitos.",
-      "Hermansky–Pudlak associa albinismo e deficiência de grânulos densos das plaquetas; alguns subtipos causam fibrose pulmonar.",
-      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização."
+      "Oculocutaneous albinism causes hypopigmentation and abnormalities of visual development, such as foveal hypoplasia.",
+      "Chediak–Higashi syndrome combines altered pigmentation and immunodeficiency with giant granules in leukocytes.",
+      "Hermansky–Pudlak syndrome is associated with albinism and deficient platelet dense granules; some subtypes cause pulmonary fibrosis.",
+      "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination."
     ],
     "teaching": "Albinismo + infecções + grânulos gigantes → Chediak–Higashi."
   },
@@ -7015,10 +7015,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Um defeito restrito à tirosinase não explica os grânulos gigantes e a imunodeficiência.",
-      "É a via de galactosemia, não de Chediak–Higashi.",
-      "Chediak–Higashi decorre de alteração da regulação e do tráfego de lisossomos e organelas relacionadas, afetando pigmentação e função imune.",
-      "Relaciona-se à arilsulfatase A."
+      "A defect limited to tyrosinase does not explain the giant granules and immunodeficiency.",
+      "This is the pathway involved in galactosemia, not Chediak–Higashi syndrome.",
+      "Chediak–Higashi syndrome results from abnormal regulation and trafficking of lysosomes and related organelles, affecting pigmentation and immune function.",
+      "This is related to arylsulfatase A."
     ],
     "teaching": "O defeito de tráfego afeta diferentes células; não é apenas falta de uma enzima de pigmento."
   },
@@ -7035,10 +7035,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Chediak–Higashi associa albinismo parcial, infecções e grânulos gigantes em leucócitos por defeito do tráfego de organelas.",
-      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
-      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
-      "Hermansky–Pudlak associa albinismo e defeito dos grânulos densos plaquetários; fibrose pulmonar ocorre em determinados subtipos."
+      "Chediak–Higashi syndrome is associated with partial albinism, infections, and giant granules in leukocytes due to defective organelle trafficking.",
+      "Oculocutaneous albinism causes hypopigmentation and abnormalities of visual development, such as foveal hypoplasia.",
+      "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination.",
+      "Hermansky–Pudlak syndrome is associated with albinism and defective platelet dense granules; pulmonary fibrosis occurs in certain subtypes."
     ],
     "teaching": "Albinismo + sangramento por grânulos densos ausentes ± fibrose pulmonar → Hermansky–Pudlak."
   },
@@ -7055,10 +7055,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Contar plaquetas não testa sua função. A falta de grânulos densos prejudica liberação de mediadores e amplificação da agregação.",
-      "Não é o defeito característico.",
-      "A contagem pode estar normal.",
-      "Tirosinase atua na melanina, não na fibrinólise."
+      "Counting platelets does not test their function. The absence of dense granules impairs mediator release and amplification of aggregation.",
+      "This is not the characteristic defect.",
+      "The count may be normal.",
+      "Tyrosinase acts in melanin synthesis, not fibrinolysis."
     ],
     "teaching": "Contagem normal não exclui doença funcional das plaquetas."
   },
@@ -7075,10 +7075,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Albinismo oculocutâneo causa hipopigmentação e alterações do desenvolvimento visual, como hipoplasia foveal.",
-      "Vitiligo é uma perda adquirida de melanócitos, com distribuição em manchas; é diferente da síntese deficiente de pigmento no albinismo tipo 1.",
-      "Krabbe é uma leucodistrofia por deficiência de galactocerebrosidase, com toxicidade por psicosina e desmielinização.",
-      "Hermansky–Pudlak associa albinismo e deficiência de grânulos densos das plaquetas; alguns subtipos causam fibrose pulmonar."
+      "Oculocutaneous albinism causes hypopigmentation and abnormalities of visual development, such as foveal hypoplasia.",
+      "Vitiligo is an acquired loss of melanocytes with a patchy distribution; it differs from impaired pigment synthesis in type 1 albinism.",
+      "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination.",
+      "Hermansky–Pudlak syndrome is associated with albinism and deficient platelet dense granules; some subtypes cause pulmonary fibrosis."
     ],
     "teaching": "Vitiligo: perda de melanócitos. Albinismo tipo 1: melanócitos presentes com tirosinase deficiente."
   },
@@ -7095,10 +7095,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Essa enzima é de Krabbe.",
-      "Não é o mecanismo da fenilcetonúria.",
-      "Menor formação de tirosina e interferência do excesso de fenilalanina na melanogênese contribuem para hipopigmentação na fenilcetonúria não tratada.",
-      "Plaquetas não são responsáveis pela pigmentação cutânea."
+      "This enzyme is associated with Krabbe disease.",
+      "This is not the mechanism of phenylketonuria.",
+      "Reduced tyrosine formation and interference with melanogenesis by excess phenylalanine contribute to hypopigmentation in untreated phenylketonuria.",
+      "Platelets are not responsible for skin pigmentation."
     ],
     "teaching": "Pele clara também pode ocorrer na fenilcetonúria; use o conjunto clínico, não só a cor."
   },
@@ -7115,10 +7115,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Albinismo afeta pigmentação e desenvolvimento visual, não esse conjunto.",
-      "Galactosemia causa catarata, não a associação clássica de ectopia lentis e trombose.",
-      "Krabbe causa desmielinização.",
-      "Deficiência de cistationina beta-sintase causa homocistinúria clássica, com ectopia lentis e risco trombótico."
+      "Albinism affects pigmentation and visual development, not this combination of findings.",
+      "Galactosemia causes cataracts, not the classic association of ectopia lentis and thrombosis.",
+      "Krabbe disease causes demyelination.",
+      "Cystathionine beta-synthase deficiency causes classic homocystinuria, with ectopia lentis and thrombotic risk."
     ],
     "teaching": "Luxação do cristalino é diferente de catarata; lente deslocada + trombose → homocistinúria."
   },
@@ -7135,10 +7135,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Tirosinase é uma enzima dependente de cobre. Isso é distinto da tirosina hidroxilase da via das catecolaminas.",
-      "Ferro participa de outras enzimas, incluindo tirosina hidroxilase.",
-      "Cobalto integra a estrutura da vitamina B12.",
-      "Molibdênio é cofator de enzimas como xantina oxidase."
+      "Tyrosinase is a copper-dependent enzyme. It is distinct from tyrosine hydroxylase in the catecholamine pathway.",
+      "Iron is involved in other enzymes, including tyrosine hydroxylase.",
+      "Cobalt is part of the structure of vitamin B12.",
+      "Molybdenum is a cofactor for enzymes such as xanthine oxidase."
     ],
     "teaching": "Tirosinase: cobre e melanina; tirosina hidroxilase: via das catecolaminas."
   }
@@ -7158,10 +7158,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Pseudomonas ganha importância com a idade no padrão clássico; também pode aparecer cedo.",
-      "Haemophilus é mais associado às faixas pediátricas no esquema.",
-      "Estreptococo do grupo A não é a curva crescente clássica.",
-      "Bordetella causa coqueluche e não é a associação do gráfico."
+      "Pseudomonas becomes more prominent with age in the classic pattern; it can also appear early.",
+      "Haemophilus is more associated with pediatric age groups in the schematic.",
+      "Group A streptococcus is not the classic rising curve.",
+      "Bordetella causes whooping cough and is not the association shown in the chart."
     ],
     "teaching": "Idade orienta a probabilidade, mas não determina sozinha a bactéria."
   },
@@ -7178,10 +7178,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Causa tétano; não é colonizador respiratório típico.",
-      "Staphylococcus aureus é muito frequente na infância no padrão clássico da fibrose cística.",
-      "Causa sífilis; não é essa associação.",
-      "É associado a diarreia secretória."
+      "It causes tetanus; it is not a typical respiratory colonizer.",
+      "Staphylococcus aureus is very common in childhood in the classic cystic fibrosis pattern.",
+      "It causes syphilis; this is not the relevant association.",
+      "It is associated with secretory diarrhea."
     ],
     "teaching": "Infância: lembre de Staphylococcus aureus e Haemophilus influenzae; Pseudomonas não é exclusiva do adulto."
   },
@@ -7198,10 +7198,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Colônias rosas sugerem fermentação de lactose; Pseudomonas não fermenta lactose.",
-      "MacConkey seleciona muitos bacilos gram-negativos e inibe muitos gram-positivos.",
-      "Pseudomonas cresce como não fermentadora de lactose, com colônias incolores no MacConkey.",
-      "Manitol e mudança para amarelo são a associação com ágar sal-manitol."
+      "Pink colonies suggest lactose fermentation; Pseudomonas does not ferment lactose.",
+      "MacConkey agar selects for many gram-negative bacilli and inhibits many gram-positive organisms.",
+      "Pseudomonas grows as a non-lactose fermenter, producing colorless colonies on MacConkey agar.",
+      "Mannitol and a change to yellow are associated with mannitol salt agar."
     ],
     "teaching": "Cor da curva não é cor da colônia: Pseudomonas pode estar vermelha no gráfico e ser incolor no MacConkey."
   },
@@ -7218,10 +7218,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Hemina é fator X e está ligada às exigências de Haemophilus.",
-      "O meio contém manitol.",
-      "O crescimento não identifica sozinho a espécie; salinidade é o mecanismo seletivo clássico.",
-      "A concentração elevada de cloreto de sódio favorece microrganismos tolerantes ao sal, como estafilococos."
+      "Hemin is factor X and is related to the requirements of Haemophilus.",
+      "The medium contains mannitol.",
+      "Growth alone does not identify the species; salinity is the classic selective mechanism.",
+      "The high sodium chloride concentration favors salt-tolerant microorganisms, such as staphylococci."
     ],
     "teaching": "Sal seleciona; fermentação do manitol diferencia."
   },
@@ -7238,10 +7238,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A fermentação do manitol produz ácido, alterando o indicador de pH para amarelo.",
-      "Pigmentos azul-esverdeados são associados a Pseudomonas, em condições apropriadas.",
-      "É outro açúcar e outro meio.",
-      "Hemina não explica a mudança de cor nesse meio."
+      "Mannitol fermentation produces acid, turning the pH indicator yellow.",
+      "Blue-green pigments are associated with Pseudomonas under appropriate conditions.",
+      "This involves a different sugar and a different medium.",
+      "Hemin does not explain the color change in this medium."
     ],
     "teaching": "S. aureus: tolera sal e geralmente fermenta manitol → amarelo."
   },
@@ -7258,10 +7258,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "É utilizado para seleção de organismos tolerantes ao sal, como estafilococos.",
-      "Ágar chocolate fornece os fatores necessários ao crescimento de Haemophilus.",
-      "Não fornece adequadamente as exigências desse organismo fastidioso.",
-      "É voltado ao cultivo de fungos."
+      "It is used to select for salt-tolerant organisms, such as staphylococci.",
+      "Chocolate agar supplies the factors required for Haemophilus growth.",
+      "It does not adequately meet the requirements of this fastidious organism.",
+      "It is intended for fungal culture."
     ],
     "teaching": "Chocolate é sangue aquecido, não chocolate de comer."
   },
@@ -7278,10 +7278,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Essas vitaminas não correspondem aos fatores X e V.",
-      "Não são os açúcares glicose e lactose.",
-      "X é hemina; V é nicotinamida adenina dinucleotídeo, abreviada NAD.",
-      "Sal e manitol são componentes do meio usado para estafilococos."
+      "These vitamins do not correspond to factors X and V.",
+      "They are not the sugars glucose and lactose.",
+      "X is hemin; V is nicotinamide adenine dinucleotide, abbreviated NAD.",
+      "Salt and mannitol are components of the medium used for staphylococci."
     ],
     "teaching": "Haemophilus: X = hemina; V = NAD (nicotinamida adenina dinucleotídeo)."
   },
@@ -7298,10 +7298,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Haemophilus não depende da formação de esporos.",
-      "Hemina contém ferro e é necessária ao crescimento.",
-      "O aquecimento não é utilizado para essa conversão.",
-      "A lise de hemácias disponibiliza fatores; o aquecimento também inativa enzimas que degradariam o fator V."
+      "Haemophilus does not depend on spore formation.",
+      "Hemin contains iron and is required for growth.",
+      "Heating is not used for this conversion.",
+      "Red blood cell lysis makes the factors available; heating also inactivates enzymes that would degrade factor V."
     ],
     "teaching": "Ágar chocolate resolve exigências nutricionais de bactérias fastidiosas."
   },
@@ -7318,10 +7318,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Meio seletivo para o complexo Burkholderia cepacia reduz interferência de outras bactérias na amostra.",
-      "É associado a estafilococos.",
-      "É utilizado para micobactérias.",
-      "É associado ao isolamento de Neisseria patogênicas."
+      "Selective medium for Burkholderia cepacia complex reduces interference from other bacteria in the sample.",
+      "It is associated with staphylococci.",
+      "It is used for mycobacteria.",
+      "It is associated with the isolation of pathogenic Neisseria."
     ],
     "teaching": "Burkholderia tem meio seletivo próprio; baixa frequência não significa baixa importância clínica."
   },
@@ -7338,10 +7338,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Melanócitos não são necessários à reprodução bacteriana.",
-      "Matriz rica em alginato e biofilme favorecem persistência e dificultam eliminação pela resposta imune e por antimicrobianos.",
-      "É uma bactéria, não vírus.",
-      "Pseudomonas não fermenta lactose."
+      "Melanocytes are not required for bacterial reproduction.",
+      "An alginate-rich matrix and biofilm promote persistence and hinder elimination by the immune response and antimicrobial agents.",
+      "It is a bacterium, not a virus.",
+      "Pseudomonas does not ferment lactose."
     ],
     "teaching": "Pseudomonas mucoide → alginato → biofilme → persistência."
   },
@@ -7358,10 +7358,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "O gráfico mostra colonização, não mortalidade.",
-      "Percentuais de grupos não mutuamente exclusivos podem somar mais de 100%.",
-      "As categorias se sobrepõem: o mesmo paciente pode ter mais de uma espécie.",
-      "Somar percentuais não fornece a idade."
+      "The chart shows colonization, not mortality.",
+      "Percentages for groups that are not mutually exclusive can add up to more than 100%.",
+      "The categories overlap: the same patient may carry more than one species.",
+      "Adding percentages does not provide the age."
     ],
     "teaching": "Colonização não é uma classificação em grupos exclusivos.",
     "image": "images/fibrose-cistica-bacterias.svg",
@@ -7381,10 +7381,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Idade isolada não permite descartar o resultado da cultura.",
-      "Pseudomonas pode ser adquirida na infância.",
-      "Sensibilidade exige testes microbiológicos; não pode ser lida na curva.",
-      "As curvas mostram frequências populacionais aproximadas, não limites absolutos para um indivíduo."
+      "Age alone does not justify dismissing the culture result.",
+      "Pseudomonas can be acquired in childhood.",
+      "Susceptibility requires microbiological testing; it cannot be read from the curve.",
+      "The curves show approximate population frequencies, not absolute limits for an individual."
     ],
     "teaching": "Decore tendências e mecanismos; percentuais históricos não são previsões individuais.",
     "image": "images/fibrose-cistica-bacterias.svg",
@@ -7405,10 +7405,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Na miastenia gravis mais comum, autoanticorpos reduzem os receptores nicotínicos pós-sinápticos: a margem de segurança da transmissão cai e surge fatigabilidade.",
-      "Canais de cálcio pré-sinápticos são o alvo típico da síndrome de Lambert–Eaton.",
-      "Lesão da mielina periférica sugere neuropatia desmielinizante, frequentemente com hiporreflexia e alterações sensitivas.",
-      "Defeito da distrofina causa distrofias musculares, não fraqueza ocular flutuante."
+      "In the most common form of myasthenia gravis, autoantibodies reduce postsynaptic nicotinic receptors: the safety margin of transmission decreases and fatigability develops.",
+      "Presynaptic calcium channels are the typical target in Lambert–Eaton syndrome.",
+      "Peripheral myelin injury suggests a demyelinating neuropathy, often with hyporeflexia and sensory changes.",
+      "A dystrophin defect causes muscular dystrophies, not fluctuating ocular weakness."
     ],
     "teaching": "Miastenia: fraqueza fatigável, pupilas e sensibilidade preservadas; defeito pós-sináptico."
   },
@@ -7425,10 +7425,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Carcinoma pulmonar de pequenas células é a associação clássica da síndrome de Lambert–Eaton.",
-      "Timoma se associa à miastenia gravis. Hiperplasia tímica também é frequente, mas não é um tumor.",
-      "Schwannoma pode comprimir nervos, mas não é a associação tumoral clássica da miastenia.",
-      "Feocromocitoma causa excesso de catecolaminas, não o padrão típico de miastenia."
+      "Small-cell lung carcinoma is the classic association with Lambert–Eaton syndrome.",
+      "Thymoma is associated with myasthenia gravis. Thymic hyperplasia is also common, but it is not a tumor.",
+      "A schwannoma can compress nerves, but it is not the classic tumor association with myasthenia gravis.",
+      "Pheochromocytoma causes catecholamine excess, not the typical pattern of myasthenia gravis."
     ],
     "teaching": "Miastenia → pesquisar timoma; Lambert–Eaton → lembrar carcinoma de pequenas células."
   },
@@ -7445,10 +7445,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "A piridostigmina não age principalmente aumentando a síntese de acetilcolina.",
-      "Bloquear receptores nicotínicos pioraria a transmissão neuromuscular.",
-      "Inibe acetilcolinesterase → reduz a degradação de acetilcolina → prolonga sua ação sobre os receptores disponíveis.",
-      "A troca plasmática remove anticorpos; a piridostigmina oferece melhora sintomática sem removê-los."
+      "Pyridostigmine does not act primarily by increasing acetylcholine synthesis.",
+      "Blocking nicotinic receptors would worsen neuromuscular transmission.",
+      "It inhibits acetylcholinesterase → reduces acetylcholine breakdown → prolongs its action on the available receptors.",
+      "Plasma exchange removes antibodies; pyridostigmine provides symptomatic improvement without removing them."
     ],
     "teaching": "Piridostigmina aumenta a disponibilidade de acetilcolina na fenda; não corrige a autoimunidade."
   },
@@ -7465,10 +7465,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Miastenia gravis geralmente piora com uso e preserva os reflexos, sem o padrão autonômico típico descrito.",
-      "Perda de neurônios motores inferiores causa atrofia e fasciculações, sem facilitação característica.",
-      "Deficiência de distrofina causa miopatia estrutural, sem melhora breve dos reflexos após contração.",
-      "Lambert–Eaton: anticorpos contra canais de cálcio do tipo P/Q reduzem a entrada de cálcio e a liberação de acetilcolina."
+      "Myasthenia gravis usually worsens with use and preserves reflexes, without the typical autonomic pattern described.",
+      "Loss of lower motor neurons causes atrophy and fasciculations, without characteristic facilitation.",
+      "Dystrophin deficiency causes structural myopathy, without brief improvement in reflexes after contraction.",
+      "Lambert–Eaton syndrome: antibodies against P/Q-type calcium channels reduce calcium entry and acetylcholine release."
     ],
     "teaching": "Lambert–Eaton é pré-sináptica: pouca entrada de cálcio → pouca liberação de acetilcolina."
   },
@@ -7485,10 +7485,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Contrações repetidas acumulam cálcio residual no terminal pré-sináptico → aumentam temporariamente a liberação de acetilcolina.",
-      "Síntese de novos receptores não explica uma melhora em segundos.",
-      "Os anticorpos continuam presentes durante a contração.",
-      "Remielinização não acontece em segundos e não é o mecanismo dessa doença."
+      "Repeated contractions cause residual calcium to accumulate in the presynaptic terminal → temporarily increasing acetylcholine release.",
+      "Synthesis of new receptors does not explain improvement within seconds.",
+      "The antibodies remain present during contraction.",
+      "Remyelination does not occur within seconds and is not the mechanism of this disease."
     ],
     "teaching": "Facilitação em Lambert–Eaton = acúmulo pré-sináptico de cálcio, não aumento rápido de receptores."
   },
@@ -7505,10 +7505,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Inibir a degradação de acetilcolina produz excesso colinérgico, como na intoxicação por organofosforados.",
-      "A toxina botulínica cliva proteínas de fusão vesicular → impede a liberação de acetilcolina → paralisia flácida.",
-      "A toxina não age primariamente na síntese dos receptores pós-sinápticos.",
-      "Defeitos do manuseio muscular de cálcio não explicam o mecanismo botulínico."
+      "Inhibiting acetylcholine breakdown produces cholinergic excess, as in organophosphate poisoning.",
+      "Botulinum toxin cleaves vesicle fusion proteins → prevents acetylcholine release → flaccid paralysis.",
+      "The toxin does not act primarily on postsynaptic receptor synthesis.",
+      "Defects in muscle calcium handling do not explain the mechanism of botulism."
     ],
     "teaching": "Botulismo bloqueia a liberação de acetilcolina; lembra paralisia descendente com sinais autonômicos."
   },
@@ -7525,10 +7525,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "A proteína tende a aumentar, não diminuir, na síndrome de Guillain–Barré.",
-      "Hipoglicorraquia com pleocitose sugere outras causas, incluindo infecções meníngeas.",
-      "Dissociação albuminocitológica = proteína elevada com pouca ou nenhuma elevação de leucócitos. O exame pode ser normal na primeira semana.",
-      "Neutrofilia acentuada não é o padrão esperado e pede investigação de outra causa."
+      "Protein tends to increase, not decrease, in Guillain–Barré syndrome.",
+      "Low cerebrospinal fluid glucose with pleocytosis suggests other causes, including meningeal infections.",
+      "Albuminocytologic dissociation = elevated protein with little or no increase in leukocytes. Testing may be normal during the first week.",
+      "Marked neutrophilia is not the expected pattern and warrants investigation for another cause."
     ],
     "teaching": "Guillain–Barré: dissociação albuminocitológica; líquido normal no início não exclui."
   },
@@ -7545,10 +7545,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Oligodendrócitos formam mielina no sistema nervoso central.",
-      "Astrócitos sustentam o ambiente neural, mas não formam a mielina periférica.",
-      "Micróglia exerce funções imunes no sistema nervoso central.",
-      "Células de Schwann formam mielina periférica. Sua lesão prejudica a condução saltatória nessa variante desmielinizante de Guillain–Barré."
+      "Oligodendrocytes form myelin in the central nervous system.",
+      "Astrocytes support the neural environment but do not form peripheral myelin.",
+      "Microglia perform immune functions in the central nervous system.",
+      "Schwann cells form peripheral myelin. Their injury impairs saltatory conduction in this demyelinating variant of Guillain–Barré syndrome."
     ],
     "teaching": "Mielina periférica = Schwann; mielina central = oligodendrócito. Nem toda variante de Guillain–Barré é desmielinizante."
   },
@@ -7565,10 +7565,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Anticorpos contra o gangliosídeo GQ1b se associam à síndrome de Miller Fisher, variante do espectro de Guillain–Barré.",
-      "Anticorpos contra receptores de acetilcolina sugerem miastenia, que não explica bem ataxia com arreflexia.",
-      "Anti-Jo-1 é dirigido contra histidil-transfer RNA sintetase e se associa à síndrome antissintetase.",
-      "Anticentrômero se associa à esclerose sistêmica cutânea limitada."
+      "Antibodies against the ganglioside GQ1b are associated with Miller Fisher syndrome, a variant within the Guillain–Barré spectrum.",
+      "Antibodies against acetylcholine receptors suggest myasthenia gravis, which does not adequately explain ataxia with areflexia.",
+      "Anti-Jo-1 targets histidyl-transfer RNA synthetase and is associated with antisynthetase syndrome.",
+      "Anticentromere antibodies are associated with limited cutaneous systemic sclerosis."
     ],
     "teaching": "Miller Fisher: olhos + equilíbrio + reflexos → oftalmoplegia, ataxia e arreflexia; anti-GQ1b."
   },
@@ -7585,10 +7585,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Miastenia provoca fatigabilidade, não combinação de sinais de neurônio motor superior e inferior.",
-      "Esclerose lateral amiotrófica combina lesão de neurônio motor superior (hiperreflexia, Babinski) e inferior (atrofia, fasciculações), com sensibilidade geralmente preservada.",
-      "Guillain–Barré costuma causar hiporreflexia/arreflexia, não sinais piramidais típicos.",
-      "Duchenne começa na infância e não causa sinais de neurônio motor superior."
+      "Myasthenia gravis causes fatigability, not a combination of upper and lower motor neuron signs.",
+      "Amyotrophic lateral sclerosis combines upper motor neuron injury (hyperreflexia, Babinski sign) and lower motor neuron injury (atrophy, fasciculations), with sensation generally preserved.",
+      "Guillain–Barré syndrome usually causes hyporeflexia or areflexia, not typical pyramidal signs.",
+      "Duchenne muscular dystrophy begins in childhood and does not cause upper motor neuron signs."
     ],
     "teaching": "Atrofia e fasciculações + hiperreflexia e Babinski, sem déficit sensitivo importante → pensar em esclerose lateral amiotrófica."
   },
@@ -7605,10 +7605,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Gânglios sensitivos não são o alvo principal da atrofia muscular espinhal.",
-      "Lesão isolada do trato corticoespinal não explica o padrão de neurônio motor inferior.",
-      "Perda bialélica de SMN1, gene da proteína de sobrevivência do neurônio motor, causa degeneração de neurônios motores do corno anterior; a herança é autossômica recessiva.",
-      "Receptores da placa motora são alvo na miastenia, não na atrofia muscular espinhal."
+      "Sensory ganglia are not the primary target in spinal muscular atrophy.",
+      "Isolated corticospinal tract injury does not explain the lower motor neuron pattern.",
+      "Biallelic loss of SMN1, the gene encoding survival motor neuron protein, causes degeneration of anterior horn motor neurons; inheritance is autosomal recessive.",
+      "Motor end-plate receptors are targeted in myasthenia gravis, not spinal muscular atrophy."
     ],
     "teaching": "Bebê hipotônico + fasciculações da língua + arreflexia → atrofia muscular espinhal, neurônio motor inferior."
   },
@@ -7625,10 +7625,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Deleções que preservam o quadro de leitura costumam permitir distrofina parcialmente funcional e fenótipo Becker.",
-      "Expansão CTG no gene DMPK causa distrofia miotônica tipo 1.",
-      "Duplicação de PMP22 é a causa clássica de Charcot–Marie–Tooth tipo 1A.",
-      "Deleção fora do quadro de leitura geralmente impede a produção de distrofina funcional e causa Duchenne. A regra do quadro de leitura tem exceções."
+      "Deletions that preserve the reading frame usually allow partially functional dystrophin and a Becker phenotype.",
+      "A CTG expansion in the DMPK gene causes myotonic dystrophy type 1.",
+      "PMP22 duplication is the classic cause of Charcot–Marie–Tooth disease type 1A.",
+      "An out-of-frame deletion generally prevents the production of functional dystrophin and causes Duchenne muscular dystrophy. The reading-frame rule has exceptions."
     ],
     "teaching": "Duchenne: distrofina ausente ou quase ausente; Becker: distrofina parcialmente funcional."
   },
@@ -7645,10 +7645,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "A distrofina liga o citoesqueleto de actina ao complexo proteico da membrana, que se conecta à matriz extracelular, estabilizando o sarcolema durante a contração.",
-      "Acetilcolinesterase hidrolisa acetilcolina; distrofina é uma proteína estrutural.",
-      "A bomba de cálcio do retículo sarcoplasmático recolhe cálcio; não é a distrofina.",
-      "A mielina periférica é produzida por células de Schwann."
+      "Dystrophin links the actin cytoskeleton to the membrane protein complex, which connects to the extracellular matrix, stabilizing the sarcolemma during contraction.",
+      "Acetylcholinesterase hydrolyzes acetylcholine; dystrophin is a structural protein.",
+      "The sarcoplasmic reticulum calcium pump takes calcium back up; this is not the role of dystrophin.",
+      "Peripheral myelin is produced by Schwann cells."
     ],
     "teaching": "Distrofina estabiliza a membrana muscular; sua falta causa lesão, necrose e substituição por gordura/fibrose."
   },
@@ -7665,10 +7665,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Duchenne geralmente começa mais cedo e produz perda mais grave de distrofina funcional.",
-      "Becker costuma resultar de variantes que preservam o quadro de leitura e alguma função da distrofina; cardiomiopatia pode ser importante.",
-      "Miastenia não é um defeito de distrofina e não causa esse padrão de cardiomiopatia.",
-      "Distrofia miotônica sugere miotonia, cataratas e defeitos de condução, com expansão no gene DMPK."
+      "Duchenne muscular dystrophy generally begins earlier and causes a more severe loss of functional dystrophin.",
+      "Becker muscular dystrophy usually results from variants that preserve the reading frame and some dystrophin function; cardiomyopathy can be significant.",
+      "Myasthenia gravis is not a dystrophin defect and does not cause this pattern of cardiomyopathy.",
+      "Myotonic dystrophy suggests myotonia, cataracts, and conduction defects, with an expansion in the DMPK gene."
     ],
     "teaching": "Becker é mais branda no músculo esquelético que Duchenne, mas a cardiomiopatia ainda pode ser grave."
   },
@@ -7685,10 +7685,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "CAG em HTT causa doença de Huntington, com coreia e alterações cognitivas/comportamentais.",
-      "GAA em FXN causa ataxia de Friedreich.",
-      "CTG no gene DMPK, da proteína quinase da distrofia miotônica, causa distrofia miotônica tipo 1, de herança autossômica dominante.",
-      "CGG em FMR1 causa síndrome do X frágil."
+      "A CAG expansion in HTT causes Huntington disease, with chorea and cognitive or behavioral changes.",
+      "A GAA expansion in FXN causes Friedreich ataxia.",
+      "A CTG expansion in DMPK, the myotonic dystrophy protein kinase gene, causes myotonic dystrophy type 1, which has autosomal dominant inheritance.",
+      "A CGG expansion in FMR1 causes fragile X syndrome."
     ],
     "teaching": "Distrofia miotônica tipo 1: dificuldade de relaxar a contração + cataratas; expansão CTG."
   },
@@ -7705,10 +7705,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Distrofia miotônica tipo 1 não é causada por deleção mitocondrial.",
-      "A doença é autossômica dominante, não ligada ao X.",
-      "Encurtamento não explica a antecipação típica por expansão.",
-      "O número de repetições CTG pode aumentar entre gerações, favorecendo início mais precoce e maior gravidade; a forma congênita é geralmente transmitida pela mãe."
+      "Myotonic dystrophy type 1 is not caused by a mitochondrial deletion.",
+      "The disease is autosomal dominant, not X-linked.",
+      "Shortening does not explain the typical anticipation caused by expansion.",
+      "The number of CTG repeats may increase between generations, favoring earlier onset and greater severity; the congenital form is usually maternally transmitted."
     ],
     "teaching": "Antecipação = início mais precoce/maior gravidade em gerações seguintes por expansão de repetições."
   },
@@ -7725,10 +7725,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 0,
     "explanations": [
-      "Atrofia perifascicular é característica de dermatomiosite, no contexto de lesão microvascular e inflamação.",
-      "Atrofia em grupos de fibras angulares sugere desnervação.",
-      "Vacúolos marginados, no contexto clínico adequado, sugerem miosite por corpos de inclusão.",
-      "Ausência de distrofina sugere Duchenne; não explica rash heliotrópico e pápulas de Gottron."
+      "Perifascicular atrophy is characteristic of dermatomyositis in the setting of microvascular injury and inflammation.",
+      "Grouped atrophy of angular fibers suggests denervation.",
+      "Rimmed vacuoles, in the appropriate clinical context, suggest inclusion body myositis.",
+      "Absent dystrophin suggests Duchenne muscular dystrophy; it does not explain a heliotrope rash and Gottron papules."
     ],
     "teaching": "Dermatomiosite: fraqueza proximal + rash heliotrópico/Gottron + atrofia perifascicular."
   },
@@ -7745,10 +7745,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 1,
     "explanations": [
-      "Dermatomiosite é mais associada a atrofia perifascicular e inflamação perivascular/perimisial.",
-      "Esse é o padrão clássico de polimiosite: linfócitos T citotóxicos CD8 positivos atacam fibras musculares. Na prática, o diagnóstico exige excluir outras miopatias, inclusive miosite por corpos de inclusão.",
-      "Duchenne decorre de deficiência de distrofina, não de ataque citotóxico primário.",
-      "Miopatia por corticoide tipicamente causa atrofia de fibras tipo II sem esse infiltrado inflamatório."
+      "Dermatomyositis is more associated with perifascicular atrophy and perivascular or perimysial inflammation.",
+      "This is the classic pattern of polymyositis: CD8-positive cytotoxic T lymphocytes attack muscle fibers. In practice, the diagnosis requires excluding other myopathies, including inclusion body myositis.",
+      "Duchenne muscular dystrophy results from dystrophin deficiency, not a primary cytotoxic attack.",
+      "Steroid myopathy typically causes type II fiber atrophy without this inflammatory infiltrate."
     ],
     "teaching": "Polimiosite clássica: inflamação endomisial citotóxica; dermatomiosite: padrão perifascicular/microvascular."
   },
@@ -7765,10 +7765,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "Miastenia provoca fatigabilidade, frequentemente ocular, e não vacúolos marginados.",
-      "Dermatomiosite favorece fraqueza proximal simétrica e lesões cutâneas típicas.",
-      "Miosite por corpos de inclusão afeta tipicamente idosos, com fraqueza de flexores dos dedos e quadríceps, muitas vezes assimétrica, e vacúolos marginados.",
-      "Lambert–Eaton causa defeito pré-sináptico, sinais autonômicos e facilitação, não esse padrão histológico."
+      "Myasthenia gravis causes fatigability, often ocular, rather than rimmed vacuoles.",
+      "Dermatomyositis tends to cause symmetric proximal weakness and characteristic skin lesions.",
+      "Inclusion body myositis typically affects older adults, with weakness of the finger flexors and quadriceps, often asymmetrically, and rimmed vacuoles.",
+      "Lambert–Eaton syndrome causes a presynaptic defect, autonomic signs, and facilitation, not this histologic pattern."
     ],
     "teaching": "Idoso + flexores dos dedos/quadríceps + assimetria + vacúolos marginados → miosite por corpos de inclusão."
   },
@@ -7785,10 +7785,10 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 3,
     "explanations": [
-      "Deleção da distrofina causa miopatia, normalmente proximal e sem perda sensitiva primária.",
-      "Perda de SMN1 causa atrofia muscular espinhal, predominantemente motora.",
-      "Expansão em DMPK causa distrofia miotônica tipo 1.",
-      "Duplicação do gene PMP22, proteína de mielina periférica 22, causa a neuropatia desmielinizante hereditária Charcot–Marie–Tooth tipo 1A."
+      "A dystrophin deletion causes myopathy, usually proximal and without primary sensory loss.",
+      "Loss of SMN1 causes spinal muscular atrophy, which is predominantly motor.",
+      "An expansion in DMPK causes myotonic dystrophy type 1.",
+      "Duplication of PMP22, the peripheral myelin protein 22 gene, causes the hereditary demyelinating neuropathy Charcot–Marie–Tooth disease type 1A."
     ],
     "teaching": "Charcot–Marie–Tooth: neuropatia distal hereditária com pé cavo; tipo 1A = duplicação de PMP22."
   }
