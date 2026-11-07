@@ -7390,6 +7390,407 @@ window.RAPIDFIRE_QUESTIONS = [
     "image": "images/fibrose-cistica-bacterias.svg",
     "imageAlt": "Curvas didáticas aproximadas de colonização por idade na fibrose cística e meios de cultura.",
     "imageCaption": "Esquema aproximado para revisão, não estimativa epidemiológica atual."
+  },
+
+  {
+    "id": "nm-20261106-mg-target",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "A woman has ptosis and diplopia that worsen late in the day. Sensation, pupils, and tendon reflexes are normal. Which structure is most commonly targeted?",
+    "options": [
+      "Postsynaptic nicotinic acetylcholine receptor",
+      "Presynaptic voltage-gated calcium channel",
+      "Peripheral nerve myelin",
+      "Skeletal muscle dystrophin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Na miastenia gravis mais comum, autoanticorpos reduzem os receptores nicotínicos pós-sinápticos: a margem de segurança da transmissão cai e surge fatigabilidade.",
+      "Canais de cálcio pré-sinápticos são o alvo típico da síndrome de Lambert–Eaton.",
+      "Lesão da mielina periférica sugere neuropatia desmielinizante, frequentemente com hiporreflexia e alterações sensitivas.",
+      "Defeito da distrofina causa distrofias musculares, não fraqueza ocular flutuante."
+    ],
+    "teaching": "Miastenia: fraqueza fatigável, pupilas e sensibilidade preservadas; defeito pós-sináptico."
+  },
+  {
+    "id": "nm-20261106-mg-thymus",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "A patient with acetylcholine receptor antibody-positive myasthenia gravis undergoes chest imaging. Which associated tumor is being sought?",
+    "options": [
+      "Small-cell lung carcinoma",
+      "Thymoma",
+      "Schwannoma",
+      "Pheochromocytoma"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Carcinoma pulmonar de pequenas células é a associação clássica da síndrome de Lambert–Eaton.",
+      "Timoma se associa à miastenia gravis. Hiperplasia tímica também é frequente, mas não é um tumor.",
+      "Schwannoma pode comprimir nervos, mas não é a associação tumoral clássica da miastenia.",
+      "Feocromocitoma causa excesso de catecolaminas, não o padrão típico de miastenia."
+    ],
+    "teaching": "Miastenia → pesquisar timoma; Lambert–Eaton → lembrar carcinoma de pequenas células."
+  },
+  {
+    "id": "nm-20261106-mg-pyridostigmine",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "Pyridostigmine improves strength in a patient with myasthenia gravis. What is its direct mechanism?",
+    "options": [
+      "Increased acetylcholine synthesis",
+      "Blockade of nicotinic receptors",
+      "Inhibition of acetylcholinesterase",
+      "Removal of circulating autoantibodies"
+    ],
+    "answer": 2,
+    "explanations": [
+      "A piridostigmina não age principalmente aumentando a síntese de acetilcolina.",
+      "Bloquear receptores nicotínicos pioraria a transmissão neuromuscular.",
+      "Inibe acetilcolinesterase → reduz a degradação de acetilcolina → prolonga sua ação sobre os receptores disponíveis.",
+      "A troca plasmática remove anticorpos; a piridostigmina oferece melhora sintomática sem removê-los."
+    ],
+    "teaching": "Piridostigmina aumenta a disponibilidade de acetilcolina na fenda; não corrige a autoimunidade."
+  },
+  {
+    "id": "nm-20261106-lems-calcium",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A man has proximal weakness, dry mouth, and reduced reflexes that briefly improve after exercise. Which defect best explains this pattern?",
+    "options": [
+      "Reduced postsynaptic acetylcholine receptors",
+      "Loss of anterior horn neurons",
+      "Dystrophin deficiency",
+      "Antibodies against presynaptic calcium channels"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Miastenia gravis geralmente piora com uso e preserva os reflexos, sem o padrão autonômico típico descrito.",
+      "Perda de neurônios motores inferiores causa atrofia e fasciculações, sem facilitação característica.",
+      "Deficiência de distrofina causa miopatia estrutural, sem melhora breve dos reflexos após contração.",
+      "Lambert–Eaton: anticorpos contra canais de cálcio do tipo P/Q reduzem a entrada de cálcio e a liberação de acetilcolina."
+    ],
+    "teaching": "Lambert–Eaton é pré-sináptica: pouca entrada de cálcio → pouca liberação de acetilcolina."
+  },
+  {
+    "id": "nm-20261106-lems-facilitation",
+    "topic": "Neuromuscular",
+    "level": 3,
+    "stem": "Why can brief repeated contraction improve strength in Lambert–Eaton myasthenic syndrome?",
+    "options": [
+      "Residual calcium accumulates in the nerve terminal",
+      "New receptors are synthesized within seconds",
+      "Autoantibodies disappear during contraction",
+      "Peripheral nerves rapidly remyelinate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Contrações repetidas acumulam cálcio residual no terminal pré-sináptico → aumentam temporariamente a liberação de acetilcolina.",
+      "Síntese de novos receptores não explica uma melhora em segundos.",
+      "Os anticorpos continuam presentes durante a contração.",
+      "Remielinização não acontece em segundos e não é o mecanismo dessa doença."
+    ],
+    "teaching": "Facilitação em Lambert–Eaton = acúmulo pré-sináptico de cálcio, não aumento rápido de receptores."
+  },
+  {
+    "id": "nm-20261106-botulism-mechanism",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "After eating home-canned food, a patient develops diplopia, dilated pupils, and descending flaccid paralysis. What does the toxin directly impair?",
+    "options": [
+      "Acetylcholine breakdown",
+      "Presynaptic vesicle fusion",
+      "Postsynaptic receptor synthesis",
+      "Muscle calcium reuptake"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Inibir a degradação de acetilcolina produz excesso colinérgico, como na intoxicação por organofosforados.",
+      "A toxina botulínica cliva proteínas de fusão vesicular → impede a liberação de acetilcolina → paralisia flácida.",
+      "A toxina não age primariamente na síntese dos receptores pós-sinápticos.",
+      "Defeitos do manuseio muscular de cálcio não explicam o mecanismo botulínico."
+    ],
+    "teaching": "Botulismo bloqueia a liberação de acetilcolina; lembra paralisia descendente com sinais autonômicos."
+  },
+  {
+    "id": "nm-20261106-gbs-csf",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "Two weeks after diarrhea, a patient develops ascending weakness and areflexia. Which cerebrospinal fluid pattern most strongly supports Guillain–Barré syndrome?",
+    "options": [
+      "Low protein with neutrophilic pleocytosis",
+      "Low glucose with many lymphocytes",
+      "High protein with few or no leukocytes",
+      "Normal protein with marked neutrophilia"
+    ],
+    "answer": 2,
+    "explanations": [
+      "A proteína tende a aumentar, não diminuir, na síndrome de Guillain–Barré.",
+      "Hipoglicorraquia com pleocitose sugere outras causas, incluindo infecções meníngeas.",
+      "Dissociação albuminocitológica = proteína elevada com pouca ou nenhuma elevação de leucócitos. O exame pode ser normal na primeira semana.",
+      "Neutrofilia acentuada não é o padrão esperado e pede investigação de outra causa."
+    ],
+    "teaching": "Guillain–Barré: dissociação albuminocitológica; líquido normal no início não exclui."
+  },
+  {
+    "id": "nm-20261106-gbs-myelin",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "Nerve studies show slowed conduction and conduction block in acute inflammatory demyelinating polyradiculoneuropathy. Which cells form the affected myelin?",
+    "options": [
+      "Oligodendrocytes",
+      "Astrocytes",
+      "Microglia",
+      "Schwann cells"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Oligodendrócitos formam mielina no sistema nervoso central.",
+      "Astrócitos sustentam o ambiente neural, mas não formam a mielina periférica.",
+      "Micróglia exerce funções imunes no sistema nervoso central.",
+      "Células de Schwann formam mielina periférica. Sua lesão prejudica a condução saltatória nessa variante desmielinizante de Guillain–Barré."
+    ],
+    "teaching": "Mielina periférica = Schwann; mielina central = oligodendrócito. Nem toda variante de Guillain–Barré é desmielinizante."
+  },
+  {
+    "id": "nm-20261106-miller-fisher",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "After an infection, a patient develops ophthalmoplegia, ataxia, and areflexia. Which antibody is most characteristic?",
+    "options": [
+      "Anti-GQ1b",
+      "Anti-acetylcholine receptor",
+      "Anti-Jo-1",
+      "Anti-centromere"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Anticorpos contra o gangliosídeo GQ1b se associam à síndrome de Miller Fisher, variante do espectro de Guillain–Barré.",
+      "Anticorpos contra receptores de acetilcolina sugerem miastenia, que não explica bem ataxia com arreflexia.",
+      "Anti-Jo-1 é dirigido contra histidil-transfer RNA sintetase e se associa à síndrome antissintetase.",
+      "Anticentrômero se associa à esclerose sistêmica cutânea limitada."
+    ],
+    "teaching": "Miller Fisher: olhos + equilíbrio + reflexos → oftalmoplegia, ataxia e arreflexia; anti-GQ1b."
+  },
+  {
+    "id": "nm-20261106-als-localization",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "A man has progressive weakness, hand atrophy, fasciculations, brisk knee reflexes, and extensor plantar responses. Sensation is intact. Which diagnosis best fits?",
+    "options": [
+      "Myasthenia gravis",
+      "Amyotrophic lateral sclerosis",
+      "Guillain–Barré syndrome",
+      "Duchenne muscular dystrophy"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Miastenia provoca fatigabilidade, não combinação de sinais de neurônio motor superior e inferior.",
+      "Esclerose lateral amiotrófica combina lesão de neurônio motor superior (hiperreflexia, Babinski) e inferior (atrofia, fasciculações), com sensibilidade geralmente preservada.",
+      "Guillain–Barré costuma causar hiporreflexia/arreflexia, não sinais piramidais típicos.",
+      "Duchenne começa na infância e não causa sinais de neurônio motor superior."
+    ],
+    "teaching": "Atrofia e fasciculações + hiperreflexia e Babinski, sem déficit sensitivo importante → pensar em esclerose lateral amiotrófica."
+  },
+  {
+    "id": "nm-20261106-sma-neuron",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "An infant has severe hypotonia, tongue fasciculations, and absent tendon reflexes. Testing shows biallelic SMN1 loss. Which structure primarily degenerates?",
+    "options": [
+      "Dorsal root ganglion",
+      "Corticospinal tract alone",
+      "Anterior horn motor neurons",
+      "Neuromuscular end-plate receptors"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Gânglios sensitivos não são o alvo principal da atrofia muscular espinhal.",
+      "Lesão isolada do trato corticoespinal não explica o padrão de neurônio motor inferior.",
+      "Perda bialélica de SMN1, gene da proteína de sobrevivência do neurônio motor, causa degeneração de neurônios motores do corno anterior; a herança é autossômica recessiva.",
+      "Receptores da placa motora são alvo na miastenia, não na atrofia muscular espinhal."
+    ],
+    "teaching": "Bebê hipotônico + fasciculações da língua + arreflexia → atrofia muscular espinhal, neurônio motor inferior."
+  },
+  {
+    "id": "nm-20261106-duchenne-reading-frame",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A 4-year-old boy has calf pseudohypertrophy, a Gowers maneuver, and markedly elevated creatine kinase. Which variant most typically causes this severe dystrophinopathy?",
+    "options": [
+      "In-frame deletion preserving partial dystrophin function",
+      "CTG repeat expansion in DMPK",
+      "PMP22 duplication",
+      "Out-of-frame deletion in the dystrophin gene"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Deleções que preservam o quadro de leitura costumam permitir distrofina parcialmente funcional e fenótipo Becker.",
+      "Expansão CTG no gene DMPK causa distrofia miotônica tipo 1.",
+      "Duplicação de PMP22 é a causa clássica de Charcot–Marie–Tooth tipo 1A.",
+      "Deleção fora do quadro de leitura geralmente impede a produção de distrofina funcional e causa Duchenne. A regra do quadro de leitura tem exceções."
+    ],
+    "teaching": "Duchenne: distrofina ausente ou quase ausente; Becker: distrofina parcialmente funcional."
+  },
+  {
+    "id": "nm-20261106-dystrophin-function",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "Loss of dystrophin makes contracting muscle fibers vulnerable to membrane injury. What is dystrophin's normal role?",
+    "options": [
+      "Linking the actin cytoskeleton to a membrane-associated protein complex",
+      "Hydrolyzing acetylcholine",
+      "Pumping calcium into the sarcoplasmic reticulum",
+      "Forming peripheral myelin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A distrofina liga o citoesqueleto de actina ao complexo proteico da membrana, que se conecta à matriz extracelular, estabilizando o sarcolema durante a contração.",
+      "Acetilcolinesterase hidrolisa acetilcolina; distrofina é uma proteína estrutural.",
+      "A bomba de cálcio do retículo sarcoplasmático recolhe cálcio; não é a distrofina.",
+      "A mielina periférica é produzida por células de Schwann."
+    ],
+    "teaching": "Distrofina estabiliza a membrana muscular; sua falta causa lesão, necrose e substituição por gordura/fibrose."
+  },
+  {
+    "id": "nm-20261106-becker",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "A 19-year-old man has slowly progressive proximal weakness and dilated cardiomyopathy. Muscle testing shows reduced, shortened but partially functional dystrophin. What is the diagnosis?",
+    "options": [
+      "Duchenne muscular dystrophy",
+      "Becker muscular dystrophy",
+      "Myasthenia gravis",
+      "Myotonic dystrophy type 1"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Duchenne geralmente começa mais cedo e produz perda mais grave de distrofina funcional.",
+      "Becker costuma resultar de variantes que preservam o quadro de leitura e alguma função da distrofina; cardiomiopatia pode ser importante.",
+      "Miastenia não é um defeito de distrofina e não causa esse padrão de cardiomiopatia.",
+      "Distrofia miotônica sugere miotonia, cataratas e defeitos de condução, com expansão no gene DMPK."
+    ],
+    "teaching": "Becker é mais branda no músculo esquelético que Duchenne, mas a cardiomiopatia ainda pode ser grave."
+  },
+  {
+    "id": "nm-20261106-dm1-repeat",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "An adult cannot promptly release a handshake and has early cataracts and frontal balding. Which genetic change is most likely?",
+    "options": [
+      "CAG expansion in HTT",
+      "GAA expansion in FXN",
+      "CTG expansion in DMPK",
+      "CGG expansion in FMR1"
+    ],
+    "answer": 2,
+    "explanations": [
+      "CAG em HTT causa doença de Huntington, com coreia e alterações cognitivas/comportamentais.",
+      "GAA em FXN causa ataxia de Friedreich.",
+      "CTG no gene DMPK, da proteína quinase da distrofia miotônica, causa distrofia miotônica tipo 1, de herança autossômica dominante.",
+      "CGG em FMR1 causa síndrome do X frágil."
+    ],
+    "teaching": "Distrofia miotônica tipo 1: dificuldade de relaxar a contração + cataratas; expansão CTG."
+  },
+  {
+    "id": "nm-20261106-dm1-anticipation",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A woman has mild myotonic dystrophy type 1, but her child has severe neonatal disease. Which mechanism best explains this anticipation?",
+    "options": [
+      "A new mitochondrial deletion in every generation",
+      "Loss of the normal chromosome X",
+      "Progressive shortening of the repeat",
+      "Expansion of an unstable trinucleotide repeat"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Distrofia miotônica tipo 1 não é causada por deleção mitocondrial.",
+      "A doença é autossômica dominante, não ligada ao X.",
+      "Encurtamento não explica a antecipação típica por expansão.",
+      "O número de repetições CTG pode aumentar entre gerações, favorecendo início mais precoce e maior gravidade; a forma congênita é geralmente transmitida pela mãe."
+    ],
+    "teaching": "Antecipação = início mais precoce/maior gravidade em gerações seguintes por expansão de repetições."
+  },
+  {
+    "id": "nm-20261106-dermatomyositis",
+    "topic": "Neuromuscular",
+    "level": 1,
+    "stem": "A woman has symmetric proximal weakness, violaceous eyelids, and papules over the knuckles. Which biopsy finding is most characteristic?",
+    "options": [
+      "Perifascicular atrophy",
+      "Grouped angular fiber atrophy",
+      "Rimmed vacuoles alone",
+      "Complete absence of dystrophin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Atrofia perifascicular é característica de dermatomiosite, no contexto de lesão microvascular e inflamação.",
+      "Atrofia em grupos de fibras angulares sugere desnervação.",
+      "Vacúolos marginados, no contexto clínico adequado, sugerem miosite por corpos de inclusão.",
+      "Ausência de distrofina sugere Duchenne; não explica rash heliotrópico e pápulas de Gottron."
+    ],
+    "teaching": "Dermatomiosite: fraqueza proximal + rash heliotrópico/Gottron + atrofia perifascicular."
+  },
+  {
+    "id": "nm-20261106-polymyositis",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A muscle biopsy shows endomysial CD8-positive T cells invading non-necrotic muscle fibers. Which classic inflammatory myopathy pattern does this describe?",
+    "options": [
+      "Dermatomyositis",
+      "Polymyositis",
+      "Duchenne muscular dystrophy",
+      "Steroid myopathy"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Dermatomiosite é mais associada a atrofia perifascicular e inflamação perivascular/perimisial.",
+      "Esse é o padrão clássico de polimiosite: linfócitos T citotóxicos CD8 positivos atacam fibras musculares. Na prática, o diagnóstico exige excluir outras miopatias, inclusive miosite por corpos de inclusão.",
+      "Duchenne decorre de deficiência de distrofina, não de ataque citotóxico primário.",
+      "Miopatia por corticoide tipicamente causa atrofia de fibras tipo II sem esse infiltrado inflamatório."
+    ],
+    "teaching": "Polimiosite clássica: inflamação endomisial citotóxica; dermatomiosite: padrão perifascicular/microvascular."
+  },
+  {
+    "id": "nm-20261106-ibm",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A 72-year-old man has slowly progressive asymmetric weakness of finger flexors and quadriceps. Biopsy reveals rimmed vacuoles. Which diagnosis is most likely?",
+    "options": [
+      "Myasthenia gravis",
+      "Dermatomyositis",
+      "Inclusion body myositis",
+      "Lambert–Eaton syndrome"
+    ],
+    "answer": 2,
+    "explanations": [
+      "Miastenia provoca fatigabilidade, frequentemente ocular, e não vacúolos marginados.",
+      "Dermatomiosite favorece fraqueza proximal simétrica e lesões cutâneas típicas.",
+      "Miosite por corpos de inclusão afeta tipicamente idosos, com fraqueza de flexores dos dedos e quadríceps, muitas vezes assimétrica, e vacúolos marginados.",
+      "Lambert–Eaton causa defeito pré-sináptico, sinais autonômicos e facilitação, não esse padrão histológico."
+    ],
+    "teaching": "Idoso + flexores dos dedos/quadríceps + assimetria + vacúolos marginados → miosite por corpos de inclusão."
+  },
+  {
+    "id": "nm-20261106-cmt",
+    "topic": "Neuromuscular",
+    "level": 2,
+    "stem": "A teenager has slowly progressive distal leg wasting, foot drop, pes cavus, and distal sensory loss. A parent is similarly affected. Which alteration is typical of Charcot–Marie–Tooth disease type 1A?",
+    "options": [
+      "Dystrophin deletion",
+      "SMN1 deletion",
+      "DMPK repeat expansion",
+      "PMP22 duplication"
+    ],
+    "answer": 3,
+    "explanations": [
+      "Deleção da distrofina causa miopatia, normalmente proximal e sem perda sensitiva primária.",
+      "Perda de SMN1 causa atrofia muscular espinhal, predominantemente motora.",
+      "Expansão em DMPK causa distrofia miotônica tipo 1.",
+      "Duplicação do gene PMP22, proteína de mielina periférica 22, causa a neuropatia desmielinizante hereditária Charcot–Marie–Tooth tipo 1A."
+    ],
+    "teaching": "Charcot–Marie–Tooth: neuropatia distal hereditária com pé cavo; tipo 1A = duplicação de PMP22."
   }
 
 ];
