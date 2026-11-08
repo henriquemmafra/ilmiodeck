@@ -1241,5 +1241,95 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "A brief forearm exercise test evaluates local muscle metabolic pathways; an immediate major serum ketone rise is not the defining McArdle response."
     ],
     "teaching": "McArdle: absent/blunted exercise lactate rise with preserved ammonia rise; Tarui can also have an impaired lactate response, so use second wind and hemolysis to distinguish."
+  },
+  {
+    "id": "nbme28-20261108-juvenile-granulosa-puberty",
+    "topic": "Reproductive Pathology",
+    "level": 2,
+    "stem": "A 5-year-old girl has breast development, vaginal bleeding, an ovarian mass, high estradiol, and suppressed LH/FSH. Which tumor is most likely?",
+    "options": [
+      "Juvenile granulosa cell tumor",
+      "Sertoli–Leydig cell tumor",
+      "Ovarian dysgerminoma"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Juvenile granulosa cell tumors are estrogen-producing ovarian sex cord–stromal neoplasms that can cause gonadotropin-independent precocious puberty and low LH/FSH through negative feedback.",
+      "Sertoli–Leydig cell tumors often produce androgens and cause virilization, such as deepening of the voice and hirsutism.",
+      "Dysgerminoma is a malignant ovarian germ cell tumor, often associated with elevated LDH, rather than the classic estrogen-secreting cause of precocious puberty."
+    ],
+    "teaching": "Ovarian mass + estrogen excess + suppressed gonadotropins in a young child suggests juvenile granulosa cell tumor."
+  },
+  {
+    "id": "nbme28-20261108-two-cell-two-gonadotropin",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "In normal ovarian follicles, which cell converts theca-derived androgens into estradiol through FSH-stimulated aromatase?",
+    "options": [
+      "Granulosa cells",
+      "Theca interna cells",
+      "Ovarian stromal fibroblasts"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Granulosa cells express aromatase stimulated by FSH, converting androgens from neighboring theca cells into estrogens.",
+      "Theca interna cells respond to LH and synthesize androgen precursors that diffuse to granulosa cells.",
+      "Stromal fibroblasts provide connective tissue support and do not perform the primary follicular FSH-driven aromatization step."
+    ],
+    "teaching": "Two-cell model: LH → theca → androgens; FSH → granulosa/aromatase → estradiol."
+  },
+  {
+    "id": "nbme28-20261108-puberty-central-peripheral",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A 6-year-old girl has precocious estrogenization with elevated estradiol but suppressed basal and stimulated LH. Which mechanism best explains this pattern?",
+    "options": [
+      "Gonadotropin-independent peripheral sex steroid production",
+      "Premature GnRH-dependent activation of the hypothalamic–pituitary–gonadal axis",
+      "Primary ovarian failure with absent estrogen negative feedback"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Peripheral precocious puberty results from sex steroid production outside the normal gonadotropin drive, suppressing LH and FSH through negative feedback.",
+      "Central precocious puberty involves premature activation of the GnRH–LH/FSH axis, often with a pubertal LH response to GnRH stimulation.",
+      "Primary ovarian failure leads to low estradiol and elevated gonadotropins because estrogen negative feedback is lost."
+    ],
+    "teaching": "Precocious puberty + high estrogen + low LH/FSH = peripheral; pubertal LH response to GnRH favors central."
+  },
+  {
+    "id": "nbme28-20261108-ovarian-stromal-differentials",
+    "topic": "Reproductive Pathology",
+    "level": 2,
+    "stem": "An ovarian tumor is associated with ascites and pleural effusion but no prominent estrogen or androgen excess. Which diagnosis is classic?",
+    "options": [
+      "Ovarian fibroma (Meigs syndrome)",
+      "Granulosa cell tumor",
+      "Sertoli–Leydig cell tumor"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Meigs syndrome classically consists of a benign ovarian fibroma, ascites, and pleural effusion that resolve after tumor removal.",
+      "Granulosa cell tumors are often estrogen-producing and may cause precocious puberty or abnormal uterine bleeding.",
+      "Sertoli–Leydig cell tumors may secrete androgens, producing virilization rather than the classic Meigs triad."
+    ],
+    "teaching": "Fibroma = Meigs; granulosa = estrogen; Sertoli–Leydig = androgen."
+  },
+  {
+    "id": "nbme28-20261108-granulosa-histology-inhibin",
+    "topic": "Reproductive Pathology",
+    "level": 3,
+    "stem": "An adult ovarian mass produces estrogen and shows grooved 'coffee-bean' nuclei with Call–Exner bodies. Which tumor is most likely?",
+    "options": [
+      "Adult-type granulosa cell tumor",
+      "Juvenile granulosa cell tumor with uniformly absent estrogen production",
+      "Yolk sac tumor with Schiller–Duval bodies"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Adult-type granulosa cell tumor classically shows nuclear grooves and Call–Exner bodies; inhibin is a useful immunohistochemical and sometimes serum marker.",
+      "Juvenile granulosa cell tumors often secrete estrogen but may lack the classic adult-type grooves and Call–Exner bodies, so the stated absolute description is incorrect.",
+      "Yolk sac tumors are germ cell tumors with Schiller–Duval bodies and commonly elevated alpha-fetoprotein, not classic granulosa-type morphology."
+    ],
+    "teaching": "Adult granulosa = coffee-bean grooves/Call–Exner bodies; juvenile subtype may lack them. Inhibin is a helpful marker."
   }
 ]);
