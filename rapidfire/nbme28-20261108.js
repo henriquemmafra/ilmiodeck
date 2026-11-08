@@ -719,5 +719,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Factor V belongs to the common pathway; severe factor V deficiency generally prolongs both PT and aPTT."
     ],
     "teaching": "Factor VII → PT; factors VIII/IX → aPTT; common-pathway factors such as V → both PT and aPTT."
+  },
+  {
+    "id": "nbme28-20261108-somatic-symptom",
+    "topic": "Psychiatry",
+    "level": 2,
+    "stem": "A woman reports multiple distressing physical symptoms over many years and devotes excessive time and energy to them. Evaluation has not identified a unifying disease. What is the best diagnosis?",
+    "options": [
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Functional neurological symptom disorder"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Somatic symptom disorder requires one or more distressing somatic symptoms with excessive symptom-related thoughts, feelings, or behaviors and persistent symptom state (typically over 6 months). Symptoms may or may not have a medical explanation.",
+      "Illness anxiety disorder features predominant fear of having or developing a serious illness, with absent or only mild physical symptoms.",
+      "Functional neurological symptom disorder features motor or sensory deficits with positive clinical evidence of incompatibility with recognized neurological disease."
+    ],
+    "teaching": "Somatic symptom disorder emphasizes distressing bodily symptoms plus excessive symptom-focused responses; unexplained symptoms alone are insufficient."
+  },
+  {
+    "id": "nbme28-20261108-factitious-malingering",
+    "topic": "Psychiatry",
+    "level": 2,
+    "stem": "A patient intentionally falsifies laboratory findings to assume the sick role despite no clear financial, legal, or other external reward. What is most likely?",
+    "options": [
+      "Factitious disorder",
+      "Malingering",
+      "Somatic symptom disorder"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Factitious disorder involves intentional deception about illness without an obvious external incentive; the motive is not necessarily consciously understood.",
+      "Malingering is intentional symptom fabrication or exaggeration motivated by identifiable external incentives, such as money, avoiding work, or obtaining drugs.",
+      "Somatic symptom disorder does not require intentional falsification, and patients experience distressing symptoms with excessive symptom-related concern."
+    ],
+    "teaching": "Factitious = intentional deception without obvious external gain; malingering = intentional deception for external gain."
+  },
+  {
+    "id": "nbme28-20261108-illness-anxiety",
+    "topic": "Psychiatry",
+    "level": 2,
+    "stem": "A patient with minimal bodily symptoms persistently fears having cancer despite appropriate reassurance and repeatedly checks for signs of disease. Which condition is most likely?",
+    "options": [
+      "Somatic symptom disorder",
+      "Illness anxiety disorder",
+      "Factitious disorder"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Somatic symptom disorder has one or more prominent, distressing physical symptoms and disproportionate related concern or behavior.",
+      "Illness anxiety disorder involves persistent preoccupation with having a serious illness despite absent or mild somatic symptoms, with excessive checking or avoidance.",
+      "Factitious disorder involves intentional falsification or induction of signs and symptoms without obvious external reward."
+    ],
+    "teaching": "Illness anxiety = fear of disease with little/no physical symptoms; somatic symptom disorder = prominent distressing symptoms."
   }
 ]);
