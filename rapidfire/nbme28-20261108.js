@@ -413,5 +413,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Visceral afferent fibers carry sensory information from organs and do not provide efferent contraction of pharyngeal skeletal muscle."
     ],
     "teaching": "The vagus carries branchial motor, autonomic, and sensory fibers; pharyngeal constrictors use branchial motor fibers."
+  },
+  {
+    "id": "nbme28-20261108-killian-jamieson",
+    "topic": "Gastroenterology",
+    "level": 2,
+    "stem": "A contrast esophagram shows an anterolateral cervical esophageal pouch below the cricopharyngeus, near the recurrent laryngeal nerve. Diagnosis?",
+    "options": [
+      "Killian–Jamieson diverticulum",
+      "Zenker diverticulum",
+      "Epiphrenic diverticulum"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Killian–Jamieson is an anterolateral pulsion pseudodiverticulum arising below the cricopharyngeus near the recurrent laryngeal nerve.",
+      "Zenker arises posteriorly above the cricopharyngeus through Killian dehiscence and can cause halitosis and undigested food regurgitation.",
+      "Epiphrenic diverticula arise in the distal esophagus near the diaphragm, commonly with an underlying motility disorder."
+    ],
+    "teaching": "Zenker: posterior and above the cricopharyngeus; Killian–Jamieson: anterolateral and below it."
+  },
+  {
+    "id": "nbme28-20261108-traction",
+    "topic": "Gastroenterology",
+    "level": 2,
+    "stem": "A patient with remote mediastinal tuberculosis develops a small outpouching of the middle esophagus. What mechanism is most likely?",
+    "options": [
+      "External fibrotic traction on the esophageal wall",
+      "Increased distal intraluminal pressure from achalasia",
+      "Impaired cricopharyngeal relaxation at Killian dehiscence"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Midesophageal traction diverticula classically arise when mediastinal inflammatory scarring pulls outward on the esophageal wall; they are often true diverticula.",
+      "Distal motility disorders such as achalasia can cause an epiphrenic pulsion diverticulum near the diaphragm.",
+      "Zenker is a posterior pharyngoesophageal pulsion pseudodiverticulum above the cricopharyngeus."
+    ],
+    "teaching": "Midesophageal + prior mediastinal inflammation = traction, classically true; distal + dysmotility = epiphrenic pulsion."
+  },
+  {
+    "id": "nbme28-20261108-epiphrenic",
+    "topic": "Gastroenterology",
+    "level": 2,
+    "stem": "A barium swallow shows a diverticular pouch 4 cm above the diaphragm in a patient with achalasia. Which diverticulum is it?",
+    "options": [
+      "Zenker diverticulum",
+      "Epiphrenic diverticulum",
+      "Traction diverticulum of the middle esophagus"
+    ],
+    "answer": 1,
+    "explanations": [
+      "Zenker originates in the posterior hypopharynx, above the upper esophageal sphincter.",
+      "Epiphrenic diverticula arise in the distal esophagus and are usually pulsion pseudodiverticula associated with dysmotility such as achalasia.",
+      "Classic traction diverticula lie in the middle esophagus and result from external mediastinal inflammation or fibrosis."
+    ],
+    "teaching": "Epiphrenic = distal esophageal pulsion diverticulum associated with motility disorders."
   }
 ]);
