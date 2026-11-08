@@ -1331,5 +1331,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Yolk sac tumors are germ cell tumors with Schiller–Duval bodies and commonly elevated alpha-fetoprotein, not classic granulosa-type morphology."
     ],
     "teaching": "Adult granulosa = coffee-bean grooves/Call–Exner bodies; juvenile subtype may lack them. Inhibin is a helpful marker."
+  },
+  {
+    "id": "nbme28-20261108-ulnar-tibial-diabetic-neuropathy",
+    "topic": "Neurology",
+    "level": 2,
+    "stem": "A patient with longstanding diabetes has atrophy of hand interossei with inability to abduct the fingers and loss of plantar flexion in the opposite foot. Which nerve pair is affected?",
+    "options": [
+      "Ulnar and tibial nerves",
+      "Median and common fibular nerves",
+      "Radial and common fibular nerves"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Ulnar nerve innervates the palmar and dorsal interossei; tibial nerve innervates gastrocnemius and soleus, major plantar flexors.",
+      "Median nerve controls most thenar muscles and some forearm flexors, whereas common fibular nerve lesions impair dorsiflexion and eversion rather than plantar flexion.",
+      "Radial nerve innervates wrist and finger extensors; common fibular nerve injury classically produces foot drop, not isolated inability to plantar flex."
+    ],
+    "teaching": "Finger abduction = ulnar (dorsal interossei); plantar flexion = tibial (gastrocnemius/soleus)."
+  },
+  {
+    "id": "nbme28-20261108-pad-dab-ulnar",
+    "topic": "Neurology",
+    "level": 2,
+    "stem": "A patient cannot spread the fingers apart or bring them back together against resistance. Which nerve supplies the responsible muscles?",
+    "options": [
+      "Ulnar nerve",
+      "Median nerve",
+      "Radial nerve"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The ulnar nerve innervates both dorsal and palmar interossei. DAB = dorsal abduct; PAD = palmar adduct.",
+      "The median nerve innervates most thenar muscles, enabling thumb opposition, but does not innervate the interossei.",
+      "The radial nerve supplies forearm extensors, enabling wrist and finger extension, not interosseous abduction/adduction."
+    ],
+    "teaching": "PAD/DAB: palmar interossei adduct, dorsal interossei abduct; both are ulnar nerve muscles."
+  },
+  {
+    "id": "nbme28-20261108-tibial-vs-fibular",
+    "topic": "Neurology",
+    "level": 2,
+    "stem": "A patient cannot stand on tiptoes but can dorsiflex the ankle. Which nerve is most likely injured?",
+    "options": [
+      "Tibial nerve",
+      "Deep fibular (peroneal) nerve",
+      "Superficial fibular (peroneal) nerve"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The tibial nerve innervates posterior leg muscles including gastrocnemius and soleus; injury impairs plantar flexion and tiptoe standing.",
+      "The deep fibular nerve innervates anterior leg dorsiflexors including tibialis anterior; injury causes foot drop.",
+      "The superficial fibular nerve innervates fibularis longus and brevis, which evert the foot; injury impairs eversion."
+    ],
+    "teaching": "Tibial → plantar flexion; deep fibular → dorsiflexion; superficial fibular → eversion."
+  },
+  {
+    "id": "nbme28-20261108-wrist-drop-foot-drop",
+    "topic": "Neurology",
+    "level": 2,
+    "stem": "A patient has wrist drop after a humeral shaft fracture. Another patient develops foot drop following trauma near the fibular neck. Which nerve pair explains these findings?",
+    "options": [
+      "Radial and common fibular nerves",
+      "Ulnar and tibial nerves",
+      "Median and tibial nerves"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The radial nerve can be injured in the radial groove of the humerus, causing wrist drop; the common fibular nerve winds around the fibular neck and can cause foot drop.",
+      "The ulnar nerve innervates interossei and the tibial nerve supplies plantar flexors; this combination does not explain wrist and foot drop.",
+      "The median nerve mainly supports thumb opposition and forearm flexion, and the tibial nerve supports plantar flexion rather than dorsiflexion."
+    ],
+    "teaching": "Wrist drop = radial; foot drop = common/deep fibular; loss of finger abduction = ulnar."
   }
 ]);
