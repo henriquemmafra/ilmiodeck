@@ -899,5 +899,185 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Mitochondrial inheritance transmits mitochondrial variants through maternal cytoplasm and does not cause autosomal trisomy 21."
     ],
     "teaching": "Most Down syndrome is caused by maternal meiotic nondisjunction; a minority results from Robertsonian translocation or mosaicism."
+  },
+  {
+    "id": "gestational-20261108-hcg-peaks-early",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "During a normal pregnancy, maternal serum hCG peaks at about 9–10 weeks. What generally happens thereafter?",
+    "options": [
+      "It declines and remains at a lower level for the rest of gestation",
+      "It rises steadily until labor begins",
+      "It becomes undetectable as soon as the placenta produces progesterone"
+    ],
+    "answer": 0,
+    "explanations": [
+      "hCG rises rapidly during early pregnancy, peaks near 8–10 weeks, then declines to a lower plateau as the placenta assumes progesterone production.",
+      "Human placental lactogen, not hCG, generally rises with placental mass toward term.",
+      "hCG remains detectable during pregnancy even after the luteal–placental shift."
+    ],
+    "teaching": "hCG peaks in the first trimester; hPL and placental steroids generally increase with advancing gestation."
+  },
+  {
+    "id": "gestational-20261108-pappa-relative-not-falling",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "First-trimester PAPP-A is reported as 0.35 multiples of the median in a pregnancy affected by trisomy 21. Which statement is most accurate?",
+    "options": [
+      "PAPP-A is low relative to the expected value at the same gestational age",
+      "PAPP-A must continuously decline from conception until delivery",
+      "Low PAPP-A alone establishes a diagnosis of trisomy 21"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A low multiple of the median means that serum PAPP-A is below the gestational-age-adjusted expected concentration; absolute PAPP-A normally rises during pregnancy.",
+      "PAPP-A concentrations normally rise as pregnancy progresses, although they are often relatively low during first-trimester trisomy 21 screening.",
+      "PAPP-A is a nonspecific screening marker; diagnosis of fetal aneuploidy requires appropriate diagnostic genetic testing."
+    ],
+    "teaching": "PAPP-A in trisomy 21 is low for gestational age; this does not imply that its absolute level is falling."
+  },
+  {
+    "id": "gestational-20261108-pappa-igf",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "Placental pregnancy-associated plasma protein A helps fetal growth by cleaving IGF-binding protein 4. What is the result?",
+    "options": [
+      "Greater local availability of insulin-like growth factor",
+      "Direct stimulation of the maternal thyroid through TSH receptors",
+      "Direct induction of myometrial contractions through oxytocin receptors"
+    ],
+    "answer": 0,
+    "explanations": [
+      "PAPP-A is a protease that cleaves IGF-binding proteins such as IGFBP-4, allowing more local IGF signaling involved in growth.",
+      "High hCG can weakly stimulate TSH receptors, but this is not the principal role of PAPP-A.",
+      "Oxytocin receptor signaling promotes myometrial contractions; PAPP-A is not the primary uterotonic signal."
+    ],
+    "teaching": "PAPP-A → IGFBP cleavage → increased local IGF bioavailability and placental/fetal growth."
+  },
+  {
+    "id": "gestational-20261108-hpl-term",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "Which placental hormone generally increases through pregnancy and promotes maternal insulin resistance and lipolysis to spare glucose for the fetus?",
+    "options": [
+      "Human placental lactogen (hPL)",
+      "Human chorionic gonadotropin (hCG)",
+      "Follicle-stimulating hormone (FSH)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "hPL is secreted by syncytiotrophoblasts, rises with placental mass, and has diabetogenic, lipolytic effects that favor fetal nutrient delivery.",
+      "hCG peaks early in the first trimester and mainly supports the corpus luteum before the luteal–placental shift.",
+      "FSH is suppressed during pregnancy by elevated gonadal/placental steroids and inhibin."
+    ],
+    "teaching": "hPL rises toward term and promotes maternal insulin resistance and lipolysis; hCG peaks early."
+  },
+  {
+    "id": "gestational-20261108-placental-progesterone",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "A patient at term enters labor. What best describes circulating progesterone in normal human pregnancy?",
+    "options": [
+      "It stays high, with functional withdrawal of progesterone action in the myometrium",
+      "Its serum concentration must abruptly fall before uterine contractions begin",
+      "It is produced exclusively by the corpus luteum until delivery"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Human maternal progesterone generally remains elevated through term; altered local receptor signaling permits functional progesterone withdrawal in the uterus.",
+      "A systemic progesterone drop is not required for human labor; an abrupt fall follows delivery of the placenta.",
+      "The placenta becomes the predominant progesterone source by the end of the first trimester."
+    ],
+    "teaching": "Human labor involves functional progesterone withdrawal, not obligatory serum progesterone withdrawal."
+  },
+  {
+    "id": "gestational-20261108-placental-crh",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "Which placental hormone rises markedly late in pregnancy and contributes to fetal adrenal activation and the physiology of parturition?",
+    "options": [
+      "Corticotropin-releasing hormone (CRH)",
+      "Parathyroid hormone (PTH)",
+      "Thyroid-stimulating hormone (TSH)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Placental CRH rises steeply near term and participates in fetal HPA axis activity and pathways facilitating prostaglandin production and labor.",
+      "PTH primarily regulates calcium and phosphate homeostasis, not the placental timing of parturition.",
+      "TSH regulates thyroid hormone synthesis and is not the primary placental signal governing parturition."
+    ],
+    "teaching": "Placental CRH increases toward term and helps coordinate fetal–placental endocrine signals involved in labor."
+  },
+  {
+    "id": "gestational-20261108-oxytocin-receptor",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "Why does the human myometrium become more responsive to oxytocin as term approaches?",
+    "options": [
+      "Increased myometrial oxytocin receptor expression",
+      "Loss of all circulating maternal progesterone several weeks before delivery",
+      "Decreased prostaglandin synthesis and fewer myometrial gap junctions"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Estrogen-associated increases in oxytocin receptors and contraction-associated proteins enhance myometrial responsiveness near term.",
+      "Maternal progesterone remains high until placental delivery; decreased functional progestational signaling is more important than a necessary systemic fall.",
+      "Prostaglandin activity and myometrial gap junction formation increase, promoting coordinated labor contractions."
+    ],
+    "teaching": "Near term, increased oxytocin receptor density, prostaglandins, and connexin-43 gap junctions prepare the uterus for labor."
+  },
+  {
+    "id": "gestational-20261108-estrogen-estriol-fetal",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "Maternal unconjugated estriol rises toward term. Which source provides crucial steroid precursors for placental estriol synthesis?",
+    "options": [
+      "The fetal adrenal glands and fetal liver",
+      "Maternal thyroid follicular cells",
+      "Maternal pancreatic beta cells"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The fetal adrenal produces DHEA-S and the fetal liver contributes 16-alpha hydroxylation; the placenta converts precursors into estriol.",
+      "Thyroid follicular cells produce thyroid hormones, not the major fetal precursors of placental estriol.",
+      "Pancreatic beta cells produce insulin and do not supply the principal steroid precursor for estriol."
+    ],
+    "teaching": "Estriol reflects fetoplacental collaboration: fetal adrenal/liver precursors plus placental aromatization."
+  },
+  {
+    "id": "gestational-20261108-surfactant-ls",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "In late pregnancy, the amniotic fluid lecithin-to-sphingomyelin ratio reaches 2.0. What does this historically indicate?",
+    "options": [
+      "Fetal pulmonary surfactant maturity",
+      "Persistent surfactant deficiency due to absent lecithin",
+      "Fetal trisomy 21 confirmed by amniotic fluid phospholipids"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Increasing lecithin relative to relatively stable sphingomyelin was historically used as a surrogate for fetal pulmonary maturity; an L/S ratio of 2 or more suggested sufficient surfactant.",
+      "Lecithin (phosphatidylcholine) rises with surfactant production, rather than indicating that surfactant is absent.",
+      "The L/S ratio assesses lung maturity rather than fetal chromosomal number; modern clinical management does not routinely rely on this test."
+    ],
+    "teaching": "Late gestation: lecithin rises more than sphingomyelin; L/S ≥2 is a classic historical fetal lung maturity threshold."
+  },
+  {
+    "id": "gestational-20261108-postpartum-steroid-fall",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "After placental delivery, maternal progesterone and estrogen concentrations fall abruptly. What physiologic event does this facilitate?",
+    "options": [
+      "Prolactin-dependent milk secretion",
+      "New hCG production by the corpus luteum",
+      "Suppression of lactation despite unchanged prolactin levels"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Loss of high placental progesterone and estrogen removes inhibition of prolactin-mediated milk production after delivery.",
+      "The postpartum corpus luteum does not resume hCG production; hCG is principally of placental trophoblast origin.",
+      "High placental steroids inhibit abundant milk secretion during pregnancy; their postpartum decline permits secretory activation."
+    ],
+    "teaching": "Placental delivery → abrupt progesterone/estrogen withdrawal → lactogenesis II with prolactin."
   }
 ]);
