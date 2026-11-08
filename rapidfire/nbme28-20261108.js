@@ -1079,5 +1079,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "High placental steroids inhibit abundant milk secretion during pregnancy; their postpartum decline permits secretory activation."
     ],
     "teaching": "Placental delivery → abrupt progesterone/estrogen withdrawal → lactogenesis II with prolactin."
+  },
+  {
+    "id": "nbme28-20261108-gck-mody",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "A woman has lifelong mild fasting hyperglycemia, a history of gestational hyperglycemia, and several affected relatives in successive generations. Which defect is most likely?",
+    "options": [
+      "Heterozygous inactivating mutation in glucokinase (GCK)",
+      "Inactivating mutation in the insulin receptor in all tissues",
+      "Autoimmune destruction of pancreatic beta cells"
+    ],
+    "answer": 0,
+    "explanations": [
+      "GCK-MODY is autosomal dominant and raises the beta-cell glucose threshold for insulin secretion, causing mild, usually stable fasting hyperglycemia that may be discovered during pregnancy.",
+      "Insulin receptor defects cause severe insulin resistance syndromes and are not the classic cause of stable, mild, multigenerational fasting hyperglycemia.",
+      "Type 1 diabetes involves autoimmune beta-cell destruction and typically progresses toward insulin deficiency rather than stable mild lifelong hyperglycemia."
+    ],
+    "teaching": "GCK-MODY (MODY 2) = autosomal dominant, mild stable fasting hyperglycemia, increased glucose set point; often detected during pregnancy."
+  },
+  {
+    "id": "nbme28-20261108-glucokinase-high-km",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Compared with hexokinase, which kinetic property enables pancreatic glucokinase to act as a glucose sensor?",
+    "options": [
+      "Higher Km and higher glucose concentration needed for half-maximal velocity",
+      "Lower Km and saturation at very low glucose concentrations",
+      "Strong feedback inhibition by glucose-6-phosphate"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Glucokinase has a high apparent Km (lower affinity) and high capacity, allowing activity to vary across physiological blood glucose concentrations.",
+      "Most hexokinase isoenzymes have a low Km and are active even when glucose concentrations are low, favoring basal tissue glucose use.",
+      "Hexokinase is inhibited by its product glucose-6-phosphate, whereas glucokinase is not directly inhibited by glucose-6-phosphate."
+    ],
+    "teaching": "Glucokinase: high Km, high Vmax, no direct inhibition by G6P; hexokinase: low Km and G6P feedback inhibition."
+  },
+  {
+    "id": "nbme28-20261108-gck-beta-cell-signaling",
+    "topic": "Endocrinology",
+    "level": 2,
+    "stem": "Pancreatic beta-cell glucose metabolism raises the ATP/ADP ratio. Which membrane event directly leads toward insulin exocytosis?",
+    "options": [
+      "Closure of ATP-sensitive potassium channels, depolarization, and calcium influx",
+      "Opening of ATP-sensitive potassium channels, hyperpolarization, and reduced calcium influx",
+      "Activation of GABA-A chloride channels followed by membrane hyperpolarization"
+    ],
+    "answer": 0,
+    "explanations": [
+      "ATP closes KATP channels, reducing potassium efflux; membrane depolarization opens voltage-gated calcium channels, triggering insulin granule exocytosis.",
+      "Opening KATP channels maintains a more negative membrane potential and limits insulin secretion.",
+      "GABA-A chloride conductance is not the glucose-sensing mechanism that drives pancreatic beta-cell insulin release."
+    ],
+    "teaching": "Glucose → glucokinase → ATP rises → KATP closes → Ca2+ influx → insulin release. Sulfonylureas also close KATP channels."
+  },
+  {
+    "id": "nbme28-20261108-mody-differential",
+    "topic": "Endocrinology",
+    "level": 3,
+    "stem": "Which feature best differentiates GCK-MODY from HNF1A-MODY?",
+    "options": [
+      "Mild, stable fasting hyperglycemia from a higher glucose threshold for insulin release",
+      "Progressive hyperglycemia that is often highly sensitive to sulfonylureas",
+      "Marked insulin resistance with acanthosis nigricans and elevated endogenous insulin"
+    ],
+    "answer": 0,
+    "explanations": [
+      "GCK-MODY is typically mild and stable because glucokinase loss of function shifts the beta-cell glucose-sensing threshold upward.",
+      "HNF1A-MODY often causes progressive beta-cell dysfunction and can respond strongly to low-dose sulfonylureas.",
+      "Acanthosis and marked insulin resistance suggest insulin-resistant diabetes, not the characteristic monogenic beta-cell glucose sensor defect of GCK-MODY."
+    ],
+    "teaching": "GCK-MODY = stable and mild; HNF1A-MODY = progressive and sulfonylurea sensitive; type 2 diabetes commonly involves insulin resistance."
   }
 ]);
