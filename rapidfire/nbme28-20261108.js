@@ -467,5 +467,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Classic traction diverticula lie in the middle esophagus and result from external mediastinal inflammation or fibrosis."
     ],
     "teaching": "Epiphrenic = distal esophageal pulsion diverticulum associated with motility disorders."
+  },
+  {
+    "id": "nbme28-20261108-tnf-granuloma",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A patient receiving infliximab for Crohn disease develops reactivated pulmonary tuberculosis. Which immune function was impaired?",
+    "options": [
+      "TNF-alpha-mediated granuloma maintenance",
+      "TGF-beta-mediated fibroblast collagen deposition",
+      "IL-8-mediated neutrophil chemotaxis"
+    ],
+    "answer": 0,
+    "explanations": [
+      "TNF-alpha is essential to granuloma formation and maintenance; anti-TNF treatment may reactivate latent tuberculosis.",
+      "TGF-beta activates SMAD signaling, promotes tissue repair and fibrosis, and regulates immune responses; it is not the principal granuloma-maintaining cytokine.",
+      "IL-8 (CXCL8) recruits neutrophils to inflammatory sites, but anti-TNF-associated TB reactivation reflects loss of granuloma integrity."
+    ],
+    "teaching": "Anti-TNF drugs impair granuloma maintenance: screen for latent TB before infliximab or adalimumab."
+  },
+  {
+    "id": "nbme28-20261108-tgf-fibrosis",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A patient develops progressive tissue fibrosis due to fibroblast activation and excess extracellular matrix synthesis. Which cytokine is most directly involved?",
+    "options": [
+      "Interferon-gamma (IFN-gamma)",
+      "Transforming growth factor-beta (TGF-beta)",
+      "Tumor necrosis factor-alpha (TNF-alpha)"
+    ],
+    "answer": 1,
+    "explanations": [
+      "IFN-gamma primarily activates macrophages and supports Th1 responses against intracellular pathogens.",
+      "TGF-beta signals through SMAD2/3 to promote fibroblast activation and collagen deposition; it also has immunoregulatory functions.",
+      "TNF-alpha mainly promotes inflammation, endothelial activation, and granuloma maintenance rather than being the signature profibrotic cytokine."
+    ],
+    "teaching": "TGF-beta = tissue repair and fibrosis via SMAD; TNF-alpha = inflammation and granuloma maintenance."
+  },
+  {
+    "id": "nbme28-20261108-ifng-macrophages",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A patient has recurrent disseminated infections with intracellular mycobacteria due to inadequate macrophage activation. Which cytokine pathway is most relevant?",
+    "options": [
+      "IL-4 signaling for IgE class switching",
+      "IFN-gamma signaling from Th1 and NK cells",
+      "TGF-beta signaling for collagen synthesis"
+    ],
+    "answer": 1,
+    "explanations": [
+      "IL-4 promotes Th2 responses and immunoglobulin class switching to IgE; it is not the main macrophage-activating cytokine.",
+      "IFN-gamma activates macrophage antimicrobial functions; impaired IL-12/IFN-gamma signaling predisposes to disseminated intracellular infections.",
+      "TGF-beta primarily regulates immune responses and promotes fibrosis; it is not the principal Th1 macrophage activation signal."
+    ],
+    "teaching": "IL-12 drives Th1 differentiation, IFN-gamma activates macrophages, and TNF-alpha preserves granulomas."
+  },
+  {
+    "id": "nbme28-20261108-cervix-lymph",
+    "topic": "Anatomy",
+    "level": 2,
+    "stem": "An invasive squamous cell carcinoma arising in the uterine cervix spreads through regional lymphatics. Which nodes are an expected early draining station?",
+    "options": [
+      "Internal iliac pelvic nodes",
+      "Superficial inguinal nodes",
+      "Para-aortic lumbar nodes as the exclusive first station"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Internal iliac and other pelvic nodes, including obturator nodes, are major regional drainage stations for cervical carcinoma.",
+      "Superficial inguinal nodes receive lymph from the vulva, lower vaginal region, scrotal skin, and anal canal below the pectinate line.",
+      "Para-aortic nodes primarily receive lymph from gonads such as the ovaries and testes; cervical cancer generally reaches pelvic stations first."
+    ],
+    "teaching": "Cervix → pelvic (including internal iliac/obturator); ovary/testis → para-aortic; vulva/scrotal skin → superficial inguinal."
   }
 ]);
