@@ -773,5 +773,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Factitious disorder involves intentional falsification or induction of signs and symptoms without obvious external reward."
     ],
     "teaching": "Illness anxiety = fear of disease with little/no physical symptoms; somatic symptom disorder = prominent distressing symptoms."
+  },
+  {
+    "id": "nbme28-20261108-adhd-catecholamines",
+    "topic": "Psychiatry",
+    "level": 2,
+    "stem": "A 7-year-old child has persistent inattention, impulsivity, and hyperactivity in school and at home. First-line stimulant medications primarily enhance signaling by which neurotransmitters?",
+    "options": [
+      "Dopamine and norepinephrine",
+      "Gamma-aminobutyric acid and histamine",
+      "Serotonin and acetylcholine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Stimulants such as methylphenidate and amphetamine increase synaptic dopamine and norepinephrine, enhancing attention and behavioral regulation.",
+      "GABA is the main inhibitory neurotransmitter, and many antihistamines cause sedation; increasing sedation is not the primary mechanism of first-line ADHD stimulants.",
+      "Serotonergic drugs are important in depression and anxiety, and acetylcholine supports several cognitive functions, but they are not the main neurotransmitter targets of first-line ADHD stimulants."
+    ],
+    "teaching": "ADHD stimulants enhance dopamine and norepinephrine transmission, not simply generalized CNS inhibition."
+  },
+  {
+    "id": "nbme28-20261108-methylphenidate-vs-amphetamine",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "A child starts methylphenidate for ADHD. What is its principal action compared with amphetamine?",
+    "options": [
+      "Block dopamine and norepinephrine reuptake transporters",
+      "Promote presynaptic catecholamine release and reverse transport",
+      "Selectively activate postsynaptic alpha-2A adrenergic receptors"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Methylphenidate inhibits DAT and NET, reducing reuptake of dopamine and norepinephrine.",
+      "Amphetamines increase catecholamine release, in part through transporter reversal and vesicular monoamine transporter effects.",
+      "Guanfacine is an alpha-2A adrenergic receptor agonist used as a nonstimulant option in ADHD."
+    ],
+    "teaching": "Methylphenidate blocks DAT/NET; amphetamines promote DA/NE release; guanfacine activates alpha-2A receptors."
+  },
+  {
+    "id": "nbme28-20261108-adhd-nonstimulants",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "A child with ADHD cannot tolerate stimulants and is prescribed atomoxetine. Which mechanism best describes this drug?",
+    "options": [
+      "Selective norepinephrine reuptake inhibition",
+      "Dopamine D2 receptor blockade",
+      "Positive allosteric modulation of GABA-A receptors"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Atomoxetine selectively inhibits the norepinephrine transporter, increasing norepinephrine and indirectly prefrontal cortical dopamine.",
+      "Dopamine D2 receptor antagonists are antipsychotic drugs; blocking D2 receptors is not atomoxetine's mechanism.",
+      "Benzodiazepines enhance GABA-A receptor activity but are not standard treatment for core ADHD symptoms."
+    ],
+    "teaching": "Atomoxetine = NET inhibitor; methylphenidate = DAT/NET inhibitor; amphetamine = increases catecholamine release."
   }
 ]);
