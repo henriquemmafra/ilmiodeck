@@ -1151,5 +1151,95 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Acanthosis and marked insulin resistance suggest insulin-resistant diabetes, not the characteristic monogenic beta-cell glucose sensor defect of GCK-MODY."
     ],
     "teaching": "GCK-MODY = stable and mild; HNF1A-MODY = progressive and sulfonylurea sensitive; type 2 diabetes commonly involves insulin resistance."
+  },
+  {
+    "id": "nbme28-20261108-mcardle-second-wind",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A teenager has muscle cramps and myoglobinuria during exercise but can resume moderate activity after a short rest (second wind). Which enzyme is deficient?",
+    "options": [
+      "Muscle glycogen phosphorylase (PYGM)",
+      "Muscle phosphofructokinase (PFKM)",
+      "Lysosomal acid alpha-glucosidase (GAA)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "McArdle disease (GSD V) is due to myophosphorylase deficiency and produces early exercise intolerance with a characteristic second-wind phenomenon as blood-derived fuels become available.",
+      "Tarui disease (GSD VII) is caused by phosphofructokinase deficiency, usually lacks the classic second wind, and can produce compensated hemolysis.",
+      "Pompe disease (GSD II) results from lysosomal acid alpha-glucosidase deficiency and classically causes infantile cardiomyopathy and hypotonia or later proximal muscle weakness."
+    ],
+    "teaching": "McArdle = myophosphorylase deficiency + second wind; Tarui = PFK deficiency + hemolysis, usually no second wind."
+  },
+  {
+    "id": "nbme28-20261108-tarui-hemolysis",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child has exercise-induced rhabdomyolysis, poor exercise tolerance, and mild compensated hemolytic anemia. Which defect is most likely?",
+    "options": [
+      "Muscle phosphofructokinase deficiency (Tarui disease)",
+      "Muscle glycogen phosphorylase deficiency (McArdle disease)",
+      "Carnitine palmitoyltransferase II deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tarui disease (GSD VII) involves PFKM deficiency in skeletal muscle and erythrocytes, impairing glycolytic ATP production and potentially causing hemolysis with exertional muscle symptoms.",
+      "McArdle disease (GSD V) impairs muscle glycogenolysis and features second wind, but is not classically associated with hemolytic anemia.",
+      "CPT II deficiency disrupts mitochondrial long-chain fatty acid oxidation and commonly causes rhabdomyolysis with prolonged exercise, fasting, or illness rather than hemolysis."
+    ],
+    "teaching": "Exercise intolerance + hemolysis = Tarui; exercise intolerance + second wind = McArdle."
+  },
+  {
+    "id": "nbme28-20261108-tarui-glucose-loading",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A patient with inherited muscle phosphofructokinase deficiency experiences worse exercise tolerance after ingesting glucose before activity. What explains this?",
+    "options": [
+      "Glucose cannot bypass the PFK block and may suppress use of fatty acid fuels",
+      "Glucose restores muscle glycogen phosphorylase activity during a second-wind response",
+      "Glucose accelerates lysosomal glycogen degradation by acid alpha-glucosidase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "In Tarui disease the glycolytic block persists even with blood glucose availability; carbohydrate intake can impair fatty-acid fuel use and trigger an out-of-wind phenomenon.",
+      "McArdle disease blocks muscle glycogenolysis; blood glucose can improve exercise tolerance by bypassing the glycogen phosphorylase block.",
+      "Pompe disease impairs lysosomal glycogen breakdown, causing cardiomyopathy or myopathy rather than the classic carbohydrate-triggered Tarui out-of-wind phenomenon."
+    ],
+    "teaching": "Glucose before exercise may improve McArdle symptoms, but can worsen Tarui symptoms (out-of-wind)."
+  },
+  {
+    "id": "nbme28-20261108-cpt2-vs-glycogenosis",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A young adult has recurrent rhabdomyolysis after prolonged endurance exercise or fasting but generally tolerates brief high-intensity exercise. Which disorder is most likely?",
+    "options": [
+      "Carnitine palmitoyltransferase II deficiency",
+      "McArdle disease (GSD V)",
+      "Tarui disease (GSD VII)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "CPT II deficiency affects long-chain fatty acid oxidation, leading to energy deficiency particularly during prolonged exercise, fasting, or intercurrent illness.",
+      "McArdle disease produces symptoms early in exercise from deficient skeletal muscle glycogen breakdown and often shows a second-wind phenomenon.",
+      "Tarui disease blocks phosphofructokinase in glycolysis and causes early exercise intolerance, sometimes with hemolysis and no classic second wind."
+    ],
+    "teaching": "Early brief exertion → muscle glycogenolysis/glycolysis defects; prolonged endurance or fasting → fatty acid oxidation defects such as CPT II."
+  },
+  {
+    "id": "nbme28-20261108-forearm-lactate",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A patient with McArdle disease performs a forearm exercise test. What is the expected biochemical response?",
+    "options": [
+      "Blunted blood lactate rise despite increased ammonia",
+      "Marked lactate rise with low creatine kinase",
+      "Marked increase in serum ketones immediately after brief handgrip"
+    ],
+    "answer": 0,
+    "explanations": [
+      "McArdle disease blocks muscle glycogen breakdown, producing a flat or blunted lactate response to exercise while ammonia may rise via AMP deamination.",
+      "A brisk lactate rise is expected with normal muscle glycolysis, but is blunted in McArdle disease; creatine kinase is often elevated.",
+      "A brief forearm exercise test evaluates local muscle metabolic pathways; an immediate major serum ketone rise is not the defining McArdle response."
+    ],
+    "teaching": "McArdle: absent/blunted exercise lactate rise with preserved ammonia rise; Tarui can also have an impaired lactate response, so use second wind and hemolysis to distinguish."
   }
 ]);
