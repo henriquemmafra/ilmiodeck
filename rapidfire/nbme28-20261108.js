@@ -539,5 +539,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Para-aortic nodes primarily receive lymph from gonads such as the ovaries and testes; cervical cancer generally reaches pelvic stations first."
     ],
     "teaching": "Cervix → pelvic (including internal iliac/obturator); ovary/testis → para-aortic; vulva/scrotal skin → superficial inguinal."
+  },
+  {
+    "id": "nbme28-20261108-tnf-secretion-receptors",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A macrophage infected by Mycobacterium tuberculosis releases TNF-alpha. Which cell responds directly to this cytokine?",
+    "options": [
+      "Nearby macrophages expressing TNF receptors",
+      "Only B cells expressing membrane immunoglobulin",
+      "Only hepatocytes expressing the IL-6 receptor"
+    ],
+    "answer": 0,
+    "explanations": [
+      "TNF-alpha binds TNFR1 or TNFR2 on macrophages and other cells; autocrine and paracrine signaling supports granuloma organization and inflammation.",
+      "B cells recognize antigen through B-cell receptors; TNF-alpha signals through TNF receptors on multiple cell types rather than exclusively through B-cell receptors.",
+      "IL-6 is a major driver of hepatic acute-phase synthesis, while TNF-alpha has receptors across many tissues, including macrophages and endothelial cells."
+    ],
+    "teaching": "Activated macrophages are a major TNF-alpha source; TNFR1/TNFR2 on many target cells mediate inflammatory signaling."
+  },
+  {
+    "id": "nbme28-20261108-tnf-endothelium",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A macrophage releases TNF-alpha during infection. What happens when TNF-alpha acts on vascular endothelium?",
+    "options": [
+      "Increased endothelial adhesion molecule expression",
+      "Increased immunoglobulin E class switching through IL-4",
+      "Increased fibroblast collagen deposition through SMAD2/3"
+    ],
+    "answer": 0,
+    "explanations": [
+      "TNF-alpha activates endothelial cells and increases adhesion molecules such as E-selectin, ICAM-1, and VCAM-1, facilitating leukocyte recruitment.",
+      "IL-4 from Th2 cells helps promote IgE class switching and is not the principal endothelial effect of TNF-alpha.",
+      "TGF-beta signals via SMAD2/3 to promote fibroblast activation and collagen synthesis; this is not the primary TNF-alpha effect described."
+    ],
+    "teaching": "Macrophage TNF-alpha → endothelial activation → adhesion molecules → leukocyte recruitment; anti-TNF weakens granulomas."
   }
 ]);
