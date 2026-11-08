@@ -611,5 +611,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Gq–phospholipase C–IP3 is used by many seven-transmembrane G-protein-coupled receptors, not by IFN-gamma receptors."
     ],
     "teaching": "IFN-gamma → IFNGR → JAK1/JAK2 → STAT1 → macrophage antimicrobial activation."
+  },
+  {
+    "id": "nbme28-20261108-hav-extrinsic-apoptosis",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A patient with acute hepatitis A develops apoptotic hepatocytes after CD8+ T-cell recognition of infected cells. Which signaling cascade mediates death-receptor apoptosis?",
+    "options": [
+      "Fas–FasL → FADD → caspase-8",
+      "BAX/BAK → cytochrome c → caspase-9",
+      "NLRP3 inflammasome → caspase-1 → gasdermin D"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fas ligand on cytotoxic T cells engages Fas (CD95), recruits FADD, and activates initiator caspase-8; executioner caspases such as caspase-3 then drive apoptosis.",
+      "Mitochondrial outer-membrane permeabilization and cytochrome c release initiate intrinsic apoptosis via the Apaf-1 apoptosome and caspase-9.",
+      "Inflammasome-driven caspase-1 cleaves gasdermin D, triggering inflammatory pyroptosis rather than classical death-receptor apoptosis."
+    ],
+    "teaching": "Acute viral hepatitis often causes immune-mediated hepatocyte apoptosis; Fas/FasL = extrinsic pathway = caspase-8."
+  },
+  {
+    "id": "nbme28-20261108-councilman-body",
+    "topic": "General Pathology",
+    "level": 2,
+    "stem": "A liver biopsy from a patient with acute viral hepatitis shows isolated shrunken eosinophilic hepatocytes with condensed nuclear remnants. What are these structures?",
+    "options": [
+      "Councilman (acidophilic) apoptotic bodies",
+      "Mallory–Denk bodies",
+      "Noncaseating granulomas"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Councilman bodies are eosinophilic apoptotic hepatocytes classically seen in acute viral hepatitis and yellow fever.",
+      "Mallory–Denk bodies are cytoplasmic keratin aggregates within injured ballooned hepatocytes, classically associated with steatohepatitis.",
+      "Noncaseating granulomas are organized macrophage aggregates seen in conditions such as sarcoidosis and some granulomatous hepatitis cases."
+    ],
+    "teaching": "Councilman body = shrunken eosinophilic apoptotic hepatocyte; Mallory–Denk body = cytokeratin inclusion."
+  },
+  {
+    "id": "nbme28-20261108-cd8-cytotoxic-pathways",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A CD8+ T lymphocyte recognizes an infected hepatocyte and delivers granzymes into its cytosol. Which molecule forms pores that facilitate granzyme entry?",
+    "options": [
+      "Perforin",
+      "Fas ligand (FasL)",
+      "BCL-2"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Perforin facilitates granzyme entry into target cells; granzyme B can activate apoptotic caspases and mitochondrial death signaling.",
+      "Fas ligand binds the Fas death receptor and initiates extrinsic apoptosis via FADD and caspase-8, rather than delivering granzymes.",
+      "BCL-2 is an antiapoptotic mitochondrial protein that blocks BAX/BAK-mediated outer-membrane permeabilization."
+    ],
+    "teaching": "Cytotoxic CD8+ T cells kill by Fas–FasL or perforin–granzyme pathways; both can cause apoptosis."
   }
 ]);
