@@ -665,5 +665,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "BCL-2 is an antiapoptotic mitochondrial protein that blocks BAX/BAK-mediated outer-membrane permeabilization."
     ],
     "teaching": "Cytotoxic CD8+ T cells kill by Fas–FasL or perforin–granzyme pathways; both can cause apoptosis."
+  },
+  {
+    "id": "nbme28-20261108-hemophilia-cross-correction",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "A boy has normal PT, bleeding time, and platelets but prolonged aPTT. His aPTT corrects after mixing his plasma with plasma from a patient with hemophilia A. What is the most likely deficiency?",
+    "options": [
+      "Factor IX (hemophilia B)",
+      "Factor VIII (hemophilia A)",
+      "Von Willebrand factor"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Plasma from a patient with hemophilia A lacks factor VIII but contains factor IX; it complements factor IX deficiency in hemophilia B.",
+      "If both plasma samples lacked factor VIII, mixing them would not adequately restore factor VIII activity or correct the aPTT.",
+      "Von Willebrand disease primarily impairs platelet adhesion, often causes mucocutaneous bleeding, and may secondarily reduce factor VIII; it does not explain the classic hemophilia A plasma-complementation result as well as factor IX deficiency."
+    ],
+    "teaching": "Hemophilia A = factor VIII deficiency; hemophilia B = factor IX deficiency. Factor IX in hemophilia A plasma can correct hemophilia B aPTT."
+  },
+  {
+    "id": "nbme28-20261108-mixing-study-inhibitor",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "An isolated prolonged aPTT fails to correct after a 1:1 mixing study with normal plasma, including after incubation. What is the most likely explanation?",
+    "options": [
+      "A circulating coagulation inhibitor",
+      "An isolated factor IX deficiency",
+      "A low platelet count without a plasma coagulation disorder"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A persistent failure to correct with normal plasma suggests an inhibitor such as lupus anticoagulant or a specific factor inhibitor; interpretation depends on assay and incubation.",
+      "An isolated factor IX deficiency usually corrects when normal plasma supplies the missing factor.",
+      "Platelet count changes do not usually cause an isolated prolonged aPTT, which measures plasma clotting factor activity."
+    ],
+    "teaching": "Mixing with normal plasma: correction suggests factor deficiency; persistent noncorrection suggests an inhibitor."
+  },
+  {
+    "id": "nbme28-20261108-coagulation-factor-pattern",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "A patient has prolonged PT but normal aPTT due to an isolated inherited clotting-factor deficiency. Which factor is most likely deficient?",
+    "options": [
+      "Factor VII",
+      "Factor IX",
+      "Factor V"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Factor VII is in the extrinsic pathway; isolated factor VII deficiency causes a prolonged PT with normal aPTT.",
+      "Factor IX is part of the intrinsic pathway; deficiency causes hemophilia B with prolonged aPTT and normal PT.",
+      "Factor V belongs to the common pathway; severe factor V deficiency generally prolongs both PT and aPTT."
+    ],
+    "teaching": "Factor VII → PT; factors VIII/IX → aPTT; common-pathway factors such as V → both PT and aPTT."
   }
 ]);
