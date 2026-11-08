@@ -287,78 +287,131 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Folate deficiency causes megaloblastic macrocytosis and hypersegmented neutrophils."
     ],
     "teaching": "Rouleaux = elevated plasma proteins such as monoclonal immunoglobulins, classically multiple myeloma."
+  },
+  {
+    "id": "nbme28-20261108-chemo-growth-fraction",
+    "topic": "Pharmacology",
+    "level": 1,
+    "stem": "A patient develops neutropenia, mucositis, and alopecia after cytotoxic chemotherapy. What do the affected tissues have in common?",
+    "options": [
+      "High growth fraction and rapid cell turnover",
+      "High abundance of postmitotic contractile cells",
+      "Low DNA synthesis and minimal cell division"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Bone marrow precursors, intestinal crypt cells, and hair matrix cells divide frequently and are vulnerable to cytotoxic chemotherapy.",
+      "Cardiac and skeletal myocytes are largely postmitotic; some agents cause their own organ-specific toxicity, but not the classic rapid-turnover triad.",
+      "Tissues with little proliferation are generally less sensitive to the nonspecific antiproliferative effects of many cytotoxic drugs."
+    ],
+    "teaching": "Rapidly proliferating normal tissue explains common marrow suppression, gastrointestinal mucositis, and alopecia."
+  },
+  {
+    "id": "nbme28-20261108-5fu-leucovorin",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "Why is leucovorin administered with 5-fluorouracil in a regimen for metastatic colorectal cancer?",
+    "options": [
+      "It enhances inhibition of thymidylate synthase",
+      "It rescues normal cells from 5-fluorouracil toxicity",
+      "It inhibits topoisomerase I and prevents DNA repair"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Leucovorin increases reduced folate availability and stabilizes the inhibitory FdUMP–thymidylate synthase–folate complex, potentiating 5-FU.",
+      "Leucovorin rescues cells from methotrexate toxicity by bypassing dihydrofolate reductase inhibition; it does not rescue 5-FU toxicity.",
+      "Irinotecan inhibits topoisomerase I; leucovorin is a reduced folate, not a topoisomerase inhibitor."
+    ],
+    "teaching": "Leucovorin potentiates 5-FU but rescues methotrexate toxicity—a favorite Step 1 contrast."
+  },
+  {
+    "id": "nbme28-20261108-irinotecan-early-diarrhea",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "A patient receiving irinotecan develops acute abdominal cramping, diaphoresis, and diarrhea during infusion. Which medication treats this reaction?",
+    "options": [
+      "Atropine",
+      "Loperamide",
+      "Mesna"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Early irinotecan-associated diarrhea is an acute cholinergic syndrome and may respond to atropine, a muscarinic antagonist.",
+      "Late irinotecan-associated secretory diarrhea generally occurs more than 24 hours after administration and is managed with loperamide when appropriate.",
+      "Mesna binds toxic acrolein metabolites to prevent hemorrhagic cystitis from ifosfamide and high-dose cyclophosphamide."
+    ],
+    "teaching": "Irinotecan inhibits topoisomerase I; early cholinergic diarrhea → atropine, delayed diarrhea → loperamide."
+  },
+  {
+    "id": "nbme28-20261108-5fu-dpd-deficiency",
+    "topic": "Pharmacology",
+    "level": 2,
+    "stem": "A patient develops unexpectedly severe mucositis, pancytopenia, and diarrhea after standard-dose 5-fluorouracil. Which enzyme deficiency is likely?",
+    "options": [
+      "Dihydropyrimidine dehydrogenase",
+      "Thiopurine methyltransferase",
+      "Dihydrofolate reductase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Dihydropyrimidine dehydrogenase catabolizes 5-FU; deficiency markedly increases exposure and potentially life-threatening toxicity.",
+      "Thiopurine methyltransferase deficiency raises toxicity from thiopurines such as 6-mercaptopurine and azathioprine.",
+      "Dihydrofolate reductase is inhibited by methotrexate, whose cytotoxic effects can be mitigated with leucovorin rescue."
+    ],
+    "teaching": "DPD deficiency (often DPYD variants) causes severe 5-FU toxicity; TPMT deficiency causes thiopurine toxicity."
+  },
+  {
+    "id": "nbme28-20261108-zenker-vagus",
+    "topic": "Anatomy",
+    "level": 2,
+    "stem": "A patient has a posterior hypopharyngeal Zenker diverticulum between the thyropharyngeus and cricopharyngeus. Which nerve supplies these muscles?",
+    "options": [
+      "Motor fibers of the vagus nerve (CN X)",
+      "Motor fibers of the glossopharyngeal nerve (CN IX)",
+      "Motor fibers of the hypoglossal nerve (CN XII)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The inferior pharyngeal constrictor (thyropharyngeus and cricopharyngeus) receives branchial motor innervation from the vagus nerve.",
+      "The glossopharyngeal nerve supplies stylopharyngeus, the major exception to vagal motor innervation of pharyngeal muscles.",
+      "The hypoglossal nerve supplies most intrinsic and extrinsic tongue muscles, not the inferior pharyngeal constrictor."
+    ],
+    "teaching": "CN IX = stylopharyngeus; CN X = pharyngeal constrictors; CN XII = most tongue muscles."
+  },
+  {
+    "id": "nbme28-20261108-zenker-presentation",
+    "topic": "Gastroenterology",
+    "level": 2,
+    "stem": "An older adult has dysphagia, halitosis, gurgling in the neck, and regurgitation of undigested food. Which lesion is most likely?",
+    "options": [
+      "Zenker diverticulum due to impaired upper esophageal sphincter opening",
+      "Achalasia due to failure of lower esophageal sphincter relaxation",
+      "Esophageal varices due to portal hypertension"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Zenker diverticulum is a posterior pharyngoesophageal false diverticulum through Killian dehiscence, classically causing retained food, halitosis, and regurgitation.",
+      "Achalasia causes impaired lower esophageal sphincter relaxation, dysphagia to solids and liquids, and bird-beak narrowing.",
+      "Esophageal varices are dilated submucosal veins due to portal hypertension and commonly present with upper gastrointestinal bleeding."
+    ],
+    "teaching": "Regurgitation of undigested food plus cervical gurgling and halitosis suggests Zenker diverticulum."
+  },
+  {
+    "id": "nbme28-20261108-swallow-motor-vs-autonomic",
+    "topic": "Anatomy",
+    "level": 2,
+    "stem": "The vagus nerve contracts pharyngeal skeletal muscle during swallowing. Which functional component of the nerve mediates this action?",
+    "options": [
+      "Branchial motor (special visceral efferent) fibers",
+      "Parasympathetic (general visceral efferent) fibers",
+      "Visceral sensory (general visceral afferent) fibers"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Branchial motor fibers from CN X activate striated pharyngeal muscles derived from the pharyngeal arches.",
+      "Parasympathetic fibers regulate smooth muscle, cardiac muscle, and glands rather than directly activating skeletal pharyngeal constrictors.",
+      "Visceral afferent fibers carry sensory information from organs and do not provide efferent contraction of pharyngeal skeletal muscle."
+    ],
+    "teaching": "The vagus carries branchial motor, autonomic, and sensory fibers; pharyngeal constrictors use branchial motor fibers."
   }
-,
-{
-  "id": "nbme28-20261108-chemo-growth-fraction",
-  "topic": "Pharmacology",
-  "level": 1,
-  "stem": "A patient develops neutropenia, mucositis, and alopecia after cytotoxic chemotherapy. What do the affected tissues have in common?",
-  "options": [
-    "High growth fraction and rapid cell turnover",
-    "High abundance of postmitotic contractile cells",
-    "Low DNA synthesis and minimal cell division"
-  ],
-  "answer": 0,
-  "explanations": [
-    "Bone marrow precursors, intestinal crypt cells, and hair matrix cells divide frequently and are vulnerable to cytotoxic chemotherapy.",
-    "Cardiac and skeletal myocytes are largely postmitotic; some agents cause their own organ-specific toxicity, but not the classic rapid-turnover triad.",
-    "Tissues with little proliferation are generally less sensitive to the nonspecific antiproliferative effects of many cytotoxic drugs."
-  ],
-  "teaching": "Rapidly proliferating normal tissue explains common marrow suppression, gastrointestinal mucositis, and alopecia."
-},
-{
-  "id": "nbme28-20261108-5fu-leucovorin",
-  "topic": "Pharmacology",
-  "level": 2,
-  "stem": "Why is leucovorin administered with 5-fluorouracil in a regimen for metastatic colorectal cancer?",
-  "options": [
-    "It enhances inhibition of thymidylate synthase",
-    "It rescues normal cells from 5-fluorouracil toxicity",
-    "It inhibits topoisomerase I and prevents DNA repair"
-  ],
-  "answer": 0,
-  "explanations": [
-    "Leucovorin increases reduced folate availability and stabilizes the inhibitory FdUMP–thymidylate synthase–folate complex, potentiating 5-FU.",
-    "Leucovorin rescues cells from methotrexate toxicity by bypassing dihydrofolate reductase inhibition; it does not rescue 5-FU toxicity.",
-    "Irinotecan inhibits topoisomerase I; leucovorin is a reduced folate, not a topoisomerase inhibitor."
-  ],
-  "teaching": "Leucovorin potentiates 5-FU but rescues methotrexate toxicity—a favorite Step 1 contrast."
-},
-{
-  "id": "nbme28-20261108-irinotecan-early-diarrhea",
-  "topic": "Pharmacology",
-  "level": 2,
-  "stem": "A patient receiving irinotecan develops acute abdominal cramping, diaphoresis, and diarrhea during infusion. Which medication treats this reaction?",
-  "options": [
-    "Atropine",
-    "Loperamide",
-    "Mesna"
-  ],
-  "answer": 0,
-  "explanations": [
-    "Early irinotecan-associated diarrhea is an acute cholinergic syndrome and may respond to atropine, a muscarinic antagonist.",
-    "Late irinotecan-associated secretory diarrhea generally occurs more than 24 hours after administration and is managed with loperamide when appropriate.",
-    "Mesna binds toxic acrolein metabolites to prevent hemorrhagic cystitis from ifosfamide and high-dose cyclophosphamide."
-  ],
-  "teaching": "Irinotecan inhibits topoisomerase I; early cholinergic diarrhea → atropine, delayed diarrhea → loperamide."
-},
-{
-  "id": "nbme28-20261108-5fu-dpd-deficiency",
-  "topic": "Pharmacology",
-  "level": 2,
-  "stem": "A patient develops unexpectedly severe mucositis, pancytopenia, and diarrhea after standard-dose 5-fluorouracil. Which enzyme deficiency is likely?",
-  "options": [
-    "Dihydropyrimidine dehydrogenase",
-    "Thiopurine methyltransferase",
-    "Dihydrofolate reductase"
-  ],
-  "answer": 0,
-  "explanations": [
-    "Dihydropyrimidine dehydrogenase catabolizes 5-FU; deficiency markedly increases exposure and potentially life-threatening toxicity.",
-    "Thiopurine methyltransferase deficiency raises toxicity from thiopurines such as 6-mercaptopurine and azathioprine.",
-    "Dihydrofolate reductase is inhibited by methotrexate, whose cytotoxic effects can be mitigated with leucovorin rescue."
-  ],
-  "teaching": "DPD deficiency (often DPYD variants) causes severe 5-FU toxicity; TPMT deficiency causes thiopurine toxicity."
-}
 ]);
