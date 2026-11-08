@@ -3,9 +3,9 @@
 
   var questions = Array.isArray(window.RAPIDFIRE_QUESTIONS) ? window.RAPIDFIRE_QUESTIONS.filter(function (q) {
     return q && typeof q.id === "string" && typeof q.stem === "string" &&
-      Array.isArray(q.options) && q.options.length === 4 &&
-      Array.isArray(q.explanations) && q.explanations.length === 4 &&
-      Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4;
+      Array.isArray(q.options) && (q.options.length === 3 || q.options.length === 4) &&
+      Array.isArray(q.explanations) && q.explanations.length === q.options.length &&
+      Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length;
   }) : [];
 
   var storageKey = "step1-rapidfire-progress-v1";
@@ -409,7 +409,7 @@
     var key = event.key.toUpperCase();
     var index = ["A", "B", "C", "D"].indexOf(key);
     if (index === -1 && /^[1-4]$/.test(key)) index = Number(key) - 1;
-    if (index >= 0) {
+    if (index >= 0 && current && index < current.options.length) {
       event.preventDefault();
       grade(index);
     }
