@@ -575,5 +575,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "TGF-beta signals via SMAD2/3 to promote fibroblast activation and collagen synthesis; this is not the primary TNF-alpha effect described."
     ],
     "teaching": "Macrophage TNF-alpha → endothelial activation → adhesion molecules → leukocyte recruitment; anti-TNF weakens granulomas."
+  },
+  {
+    "id": "nbme28-20261108-il12-ifng-loop",
+    "topic": "Immunology",
+    "level": 2,
+    "stem": "A macrophage engulfs M. tuberculosis and secretes a cytokine that promotes Th1 differentiation and IFN-gamma secretion. Which cytokine is it?",
+    "options": [
+      "IL-12",
+      "TNF-alpha",
+      "TGF-beta"
+    ],
+    "answer": 0,
+    "explanations": [
+      "IL-12 from macrophages and dendritic cells stimulates NK cells and promotes Th1 differentiation, leading to IFN-gamma production.",
+      "TNF-alpha promotes endothelial activation and granuloma formation and maintenance; it is not the key driver of Th1 differentiation.",
+      "TGF-beta regulates immune responses and promotes fibrosis; with particular cytokines it can support Th17 differentiation rather than classical Th1 activation."
+    ],
+    "teaching": "Macrophage IL-12 → Th1/NK IFN-gamma → macrophage activation; TNF-alpha maintains granulomas."
+  },
+  {
+    "id": "nbme28-20261108-ifng-stat1",
+    "topic": "Immunology",
+    "level": 3,
+    "stem": "IFN-gamma released by Th1 cells binds a macrophage receptor. Which downstream pathway enhances intracellular mycobacterial killing?",
+    "options": [
+      "JAK1/JAK2–STAT1 signaling",
+      "SMAD2/3 signaling after TGF-beta receptor activation",
+      "Gq–phospholipase C–IP3 signaling"
+    ],
+    "answer": 0,
+    "explanations": [
+      "IFN-gamma receptors activate JAK1/JAK2–STAT1, inducing macrophage antimicrobial genes and enhancing phagolysosomal function.",
+      "TGF-beta receptors activate SMAD2/3 and participate in immune regulation and fibrosis rather than classical IFN-gamma signaling.",
+      "Gq–phospholipase C–IP3 is used by many seven-transmembrane G-protein-coupled receptors, not by IFN-gamma receptors."
+    ],
+    "teaching": "IFN-gamma → IFNGR → JAK1/JAK2 → STAT1 → macrophage antimicrobial activation."
   }
 ]);
