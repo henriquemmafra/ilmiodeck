@@ -827,5 +827,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Benzodiazepines enhance GABA-A receptor activity but are not standard treatment for core ADHD symptoms."
     ],
     "teaching": "Atomoxetine = NET inhibitor; methylphenidate = DAT/NET inhibitor; amphetamine = increases catecholamine release."
+  },
+  {
+    "id": "nbme28-20261108-down-first-trimester",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "A pregnant patient undergoes first-trimester aneuploidy screening. Which combination is most characteristic of fetal trisomy 21?",
+    "options": [
+      "Increased nuchal translucency, decreased PAPP-A, increased free beta-hCG",
+      "Increased nuchal translucency, decreased PAPP-A, decreased free beta-hCG",
+      "Normal nuchal translucency, elevated maternal serum AFP, decreased hCG"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Trisomy 21 is associated with increased nuchal translucency, low pregnancy-associated plasma protein A, and elevated free beta-hCG in first-trimester combined screening.",
+      "Trisomy 18 often has increased nuchal translucency and low PAPP-A, but free beta-hCG is typically decreased, not increased.",
+      "High maternal serum alpha-fetoprotein is a second-trimester marker for open fetal neural tube defects, not the characteristic first-trimester Down syndrome pattern."
+    ],
+    "teaching": "Trisomy 21 first trimester: nuchal translucency up, PAPP-A down, free beta-hCG up; trisomy 18 typically has both serum markers down."
+  },
+  {
+    "id": "nbme28-20261108-down-quad-screen",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "A second-trimester maternal serum quadruple screen raises concern for trisomy 21. Which marker pattern is expected?",
+    "options": [
+      "Low AFP, low unconjugated estriol, high hCG, high inhibin A",
+      "High AFP, normal estriol, normal hCG, normal inhibin A",
+      "Low AFP, low estriol, low hCG, and generally normal inhibin A"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Trisomy 21 classically decreases AFP and unconjugated estriol while increasing hCG and inhibin A on second-trimester quadruple screening.",
+      "Open neural tube defects typically raise maternal serum AFP, which is not the classic pattern of Down syndrome.",
+      "Trisomy 18 usually decreases AFP, estriol, and hCG; inhibin A is generally not elevated as it is in trisomy 21."
+    ],
+    "teaching": "Down syndrome second trimester: AFP down, estriol down, hCG up, inhibin A up."
+  },
+  {
+    "id": "nbme28-20261108-prenatal-confirmation",
+    "topic": "Obstetrics",
+    "level": 2,
+    "stem": "A patient at 12 weeks' gestation has a high-risk noninvasive screening result for trisomy 21. Which test can provide definitive fetal chromosome diagnosis at this gestational age?",
+    "options": [
+      "Chorionic villus sampling with chromosomal analysis",
+      "Repeat cell-free fetal DNA screening only",
+      "Maternal serum quadruple screen"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Chorionic villus sampling is generally performed at 10–13 weeks and can obtain placental tissue for diagnostic chromosomal analysis; placental mosaicism may occasionally require follow-up.",
+      "Cell-free DNA analysis is a highly accurate screening test, but positive results require diagnostic confirmation rather than simply another screening result.",
+      "Quadruple serum screening is a second-trimester risk assessment, not a diagnostic fetal karyotype."
+    ],
+    "teaching": "Positive aneuploidy screening needs diagnostic confirmation: CVS at about 10–13 weeks or amniocentesis from 15 weeks."
+  },
+  {
+    "id": "nbme28-20261108-trisomy21-maternal-age",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "Why does increasing maternal age increase the probability of fetal trisomy 21?",
+    "options": [
+      "Increased risk of meiotic nondisjunction in maternal oocytes",
+      "Increased probability of germline DNA polymerase point mutations",
+      "Increased risk of mitochondrial DNA maternal inheritance"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Age-related meiotic nondisjunction, most often during maternal meiosis I, is the main mechanism of trisomy 21.",
+      "Errors in DNA polymerase may cause point mutations, but they do not explain the characteristic age-related risk of an extra chromosome 21.",
+      "Mitochondrial inheritance transmits mitochondrial variants through maternal cytoplasm and does not cause autosomal trisomy 21."
+    ],
+    "teaching": "Most Down syndrome is caused by maternal meiotic nondisjunction; a minority results from Robertsonian translocation or mosaicism."
   }
 ]);
