@@ -1511,5 +1511,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Acetyl-CoA carboxylase is biotin-dependent and supports fatty acid synthesis, not tryptophan conversion to niacin."
     ],
     "teaching": "Tryptophan → niacin requires vitamin B6-dependent kynureninase; niacin deficiency may follow Hartnup disease, carcinoid syndrome, or B6 deficiency."
+  },
+  {
+    "id": "nbme28-20261108-cystinuria-homocystinuria",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child has recurrent nephrolithiasis with hexagonal urinary crystals and high urinary cystine, ornithine, lysine, and arginine. What is defective?",
+    "options": [
+      "Renal proximal tubular amino acid transport",
+      "Cystathionine beta-synthase activity",
+      "Intestinal and renal neutral amino acid transport"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Cystinuria is a proximal tubular transport defect involving cystine and dibasic amino acids (COLA). Poorly soluble cystine causes hexagonal kidney stones.",
+      "Classic homocystinuria results from cystathionine beta-synthase deficiency, causing elevated homocysteine, thromboembolism, and ectopia lentis.",
+      "Hartnup disease impairs transport of neutral amino acids such as tryptophan and may cause pellagra-like dermatitis."
+    ],
+    "teaching": "Cystinuria = COLA and hexagonal stones; classic homocystinuria = CBS deficiency and thrombosis; Hartnup = neutral aminoaciduria and pellagra."
+  },
+  {
+    "id": "nbme28-20261108-homocystinuria-cbs-b6",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A tall child has developmental difficulties, inferior lens displacement, recurrent thrombosis, elevated homocysteine, and elevated methionine. Which enzyme is deficient?",
+    "options": [
+      "Cystathionine beta-synthase (vitamin B6 dependent)",
+      "Cystine/dibasic amino acid transporter",
+      "Homogentisate 1,2-dioxygenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Classic homocystinuria is caused by cystathionine beta-synthase deficiency in the transsulfuration pathway; CBS requires pyridoxal phosphate (vitamin B6).",
+      "Cystinuria causes renal cystine stones and COLA aminoaciduria rather than elevated plasma homocysteine, lens dislocation, and thrombosis.",
+      "Homogentisate oxidase deficiency causes alkaptonuria with dark urine and ochronosis."
+    ],
+    "teaching": "Classic CBS deficiency: high homocysteine + high methionine + thrombosis + downward lens dislocation; pyridoxine responsiveness varies."
+  },
+  {
+    "id": "nbme28-20261108-hartnup-cbs-cystinuria-triad",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which condition is associated with impaired intestinal and renal neutral amino acid transport causing tryptophan loss and photosensitive dermatitis?",
+    "options": [
+      "Hartnup disease",
+      "Cystinuria",
+      "Classic homocystinuria"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Hartnup disease impairs neutral amino acid transport (including tryptophan), reducing endogenous niacin synthesis and causing pellagra-like photosensitive dermatitis.",
+      "Cystinuria prevents reabsorption of cystine, ornithine, lysine, and arginine and causes recurrent cystine stones with hexagonal crystals.",
+      "Classic homocystinuria is usually caused by CBS deficiency, with elevated homocysteine, thrombosis, and ectopia lentis rather than primary neutral aminoaciduria."
+    ],
+    "teaching": "Hartnup → tryptophan/niacin/dermatitis; cystinuria → COLA/stones; homocystinuria → CBS/B6/thrombosis."
   }
 ]);
