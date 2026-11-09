@@ -1817,5 +1817,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "PRPP is an activated ribose precursor used in nucleotide synthesis and salvage, not a complete purine nucleotide."
     ],
     "teaching": "Purines: PRPP → 5-phosphoribosylamine → IMP → AMP or GMP; pyrimidines: orotate → OMP → UMP."
+  },
+  {
+    "id": "nbme28-20261108-ump-synthase-megaloblasts",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An infant has growth failure, megaloblastic anemia unresponsive to folate or vitamin B12, high urinary orotic acid, and normal plasma ammonia. Which defect explains the anemia?",
+    "options": [
+      "UMP synthase deficiency limiting pyrimidine nucleotide production",
+      "Ornithine transcarbamylase deficiency impairing ammonia disposal",
+      "Cystathionine beta-synthase deficiency blocking homocysteine transsulfuration"
+    ],
+    "answer": 0,
+    "explanations": [
+      "UMP synthase catalyzes orotate → OMP → UMP. Low UMP limits pyrimidine nucleotides, including dTMP needed for DNA replication, causing defective nuclear maturation and megaloblastic anemia without hyperammonemia.",
+      "OTC deficiency raises orotic acid via excess carbamoyl phosphate but causes marked hyperammonemia; primary megaloblastic anemia is not its signature manifestation.",
+      "CBS deficiency causes elevated homocysteine and methionine with thrombosis and ectopia lentis, not elevated orotic acid and impaired pyrimidine synthesis."
+    ],
+    "teaching": "Orotic aciduria with normal ammonia and megaloblastic anemia = UMP synthase deficiency; treat with uridine."
+  },
+  {
+    "id": "nbme28-20261108-megaloblastic-mechanism",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "Why does impaired pyrimidine nucleotide production in UMP synthase deficiency cause macro-ovalocytes and hypersegmented neutrophils?",
+    "options": [
+      "Defective DNA synthesis delays nuclear maturation despite continued cytoplasmic growth",
+      "Reduced hemoglobin synthesis causes small hypochromic red cells",
+      "Accelerated red cell membrane destruction causes schistocytes"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Inadequate deoxypyrimidines slow DNA replication in rapidly dividing marrow precursors, producing nuclear–cytoplasmic asynchrony and megaloblastic changes.",
+      "Impaired hemoglobin synthesis classically causes microcytosis, as in iron deficiency or thalassemia, not the megaloblastic pattern.",
+      "Schistocytes result from mechanical fragmentation of erythrocytes, such as in thrombotic microangiopathy, rather than deficient nucleotide synthesis."
+    ],
+    "teaching": "Megaloblastic = impaired DNA synthesis → nuclear-cytoplasmic asynchrony, macro-ovalocytes and hypersegmented neutrophils."
   }
 ]);
