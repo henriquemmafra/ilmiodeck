@@ -1403,5 +1403,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "The median nerve mainly supports thumb opposition and forearm flexion, and the tibial nerve supports plantar flexion rather than dorsiflexion."
     ],
     "teaching": "Wrist drop = radial; foot drop = common/deep fibular; loss of finger abduction = ulnar."
+  },
+  {
+    "id": "nbme28-20261108-mcardle-phosphorolysis",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An adult has exertional cramps, myoglobinuria, and increased muscle glycogen on biopsy. Which reaction is directly impaired in McArdle disease?",
+    "options": [
+      "Cleavage of glycogen to release glucose-1-phosphate",
+      "Conversion of fructose-6-phosphate to fructose-1,6-bisphosphate",
+      "Dephosphorylation of glucose-6-phosphate to free glucose"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Muscle glycogen phosphorylase (myophosphorylase) removes glucose residues from alpha-1,4 glycogen chains by phosphorolysis, releasing glucose-1-phosphate.",
+      "Phosphofructokinase-1 catalyzes this glycolytic step; deficiency causes Tarui disease (GSD VII), which may also cause hemolytic anemia.",
+      "Glucose-6-phosphatase releases free glucose in liver and kidney; its deficiency causes von Gierke disease (GSD I), classically with fasting hypoglycemia and hepatomegaly."
+    ],
+    "teaching": "McArdle (GSD V): myophosphorylase deficiency blocks muscle glycogen → glucose-1-phosphate; Tarui (GSD VII) blocks phosphofructokinase."
+  },
+  {
+    "id": "nbme28-20261108-phosphorylase-kinase-distinction",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child has hepatomegaly, impaired growth, fasting ketosis, and deficiency of the enzyme that phosphorylates and activates glycogen phosphorylase. Which enzyme is deficient?",
+    "options": [
+      "Phosphorylase kinase",
+      "Muscle glycogen phosphorylase",
+      "Glycogen synthase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Phosphorylase kinase activates glycogen phosphorylase by phosphorylation; its deficiency causes glycogen storage disease type IX, often with hepatic manifestations.",
+      "Muscle glycogen phosphorylase deficiency causes McArdle disease (GSD V), featuring early exertional cramps, second wind, and possible myoglobinuria.",
+      "Glycogen synthase deficiency reduces glycogen production and stores, often producing fasting ketotic hypoglycemia rather than excessive glycogen accumulation."
+    ],
+    "teaching": "Phosphorylase kinase activates phosphorylase; GSD IX often affects liver. McArdle (GSD V) directly lacks muscle phosphorylase."
   }
 ]);
