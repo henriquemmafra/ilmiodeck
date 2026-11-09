@@ -1565,5 +1565,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Classic homocystinuria is usually caused by CBS deficiency, with elevated homocysteine, thrombosis, and ectopia lentis rather than primary neutral aminoaciduria."
     ],
     "teaching": "Hartnup → tryptophan/niacin/dermatitis; cystinuria → COLA/stones; homocystinuria → CBS/B6/thrombosis."
+  },
+  {
+    "id": "nbme28-20261108-homocysteine-b12-b6-routes",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which vitamin is required by cystathionine beta-synthase to convert homocysteine into cystathionine?",
+    "options": [
+      "Vitamin B6 (pyridoxal phosphate)",
+      "Vitamin B12 (cobalamin)",
+      "Vitamin B9 (folate)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "CBS uses pyridoxal phosphate (vitamin B6) to transfer homocysteine into the transsulfuration pathway and form cystathionine.",
+      "Vitamin B12 is required for methionine synthase, which remethylates homocysteine to methionine, not for CBS.",
+      "Folate provides a methyl group as 5-methyl-THF for B12-dependent methionine synthase, not the CBS reaction."
+    ],
+    "teaching": "B6/CBS sends homocysteine toward cystathionine; B12/folate recycles it into methionine."
+  },
+  {
+    "id": "nbme28-20261108-b12-mma-hcy",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An adult has macrocytosis, paresthesias, increased plasma homocysteine, and elevated methylmalonic acid. Which vitamin is deficient?",
+    "options": [
+      "Vitamin B12 (cobalamin)",
+      "Vitamin B6 (pyridoxine)",
+      "Vitamin B9 (folate)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Vitamin B12 is required by methionine synthase and methylmalonyl-CoA mutase, so deficiency increases both homocysteine and methylmalonic acid and can cause neurologic deficits.",
+      "Vitamin B6 supports CBS and other PLP-dependent enzymes; it can increase homocysteine when deficient but does not cause the classic increased methylmalonic acid pattern.",
+      "Folate deficiency can elevate homocysteine and cause megaloblastic anemia, but methylmalonic acid remains normal."
+    ],
+    "teaching": "B12 deficiency: homocysteine up + MMA up; folate deficiency: homocysteine up + MMA normal; CBS deficiency: homocysteine and methionine up, MMA normal."
+  },
+  {
+    "id": "nbme28-20261108-cbs-vs-remethylation",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A child has thrombosis and ectopia lentis, with high plasma homocysteine and methionine but normal methylmalonic acid. What is the most likely defect?",
+    "options": [
+      "Cystathionine beta-synthase deficiency",
+      "Methionine synthase dysfunction from cobalamin deficiency",
+      "Methylmalonyl-CoA mutase deficiency"
+    ],
+    "answer": 0,
+    "explanations": [
+      "CBS deficiency prevents transsulfuration of homocysteine, which accumulates and can be remethylated to methionine; classic manifestations include thrombosis and lens displacement.",
+      "Methionine synthase dysfunction impairs homocysteine remethylation and generally does not produce the characteristic elevated methionine of classical CBS deficiency; B12 deficiency may increase MMA.",
+      "Methylmalonyl-CoA mutase deficiency elevates methylmalonic acid and causes metabolic acidosis rather than the classic high methionine and lens findings of CBS deficiency."
+    ],
+    "teaching": "High homocysteine + high methionine + normal MMA = classic CBS deficiency (B6-dependent)."
   }
 ]);
