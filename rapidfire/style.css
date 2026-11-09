@@ -42,3 +42,6 @@
 .feedback-compact{margin-top:12px;padding-top:12px}
 .feedback-compact .takeaway{margin-top:7px}
 @media(max-width:700px){.inline-option-explanation{padding-left:14px}}
+/* Prevent iOS WebKit form-focus zoom from leaving RapidFire magnified after returning from ChatGPT. */
+.controls select,
+.chat-assist textarea { font-size: 16px; }
