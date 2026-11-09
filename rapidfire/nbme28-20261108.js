@@ -1439,5 +1439,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Glycogen synthase deficiency reduces glycogen production and stores, often producing fasting ketotic hypoglycemia rather than excessive glycogen accumulation."
     ],
     "teaching": "Phosphorylase kinase activates phosphorylase; GSD IX often affects liver. McArdle (GSD V) directly lacks muscle phosphorylase."
+  },
+  {
+    "id": "nbme28-20261108-hartnup-niacin",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A teenager has photosensitive dermatitis, decreased plasma tryptophan, and urinary loss of neutral amino acids. Which vitamin synthesis is impaired?",
+    "options": [
+      "Niacin (vitamin B3)",
+      "Thiamine (vitamin B1)",
+      "Riboflavin (vitamin B2)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Hartnup disease impairs intestinal and renal transport of neutral amino acids, including tryptophan, reducing endogenous niacin synthesis and producing pellagra-like symptoms.",
+      "Thiamine is a cofactor for oxidative decarboxylation and transketolase; deficiency causes beriberi or Wernicke encephalopathy, not neutral aminoaciduria.",
+      "Riboflavin forms FAD and FMN; deficiency produces cheilosis, glossitis, and seborrheic dermatitis, not the characteristic Hartnup neutral aminoaciduria."
+    ],
+    "teaching": "Hartnup = SLC6A19 neutral amino acid transport defect → tryptophan loss → reduced niacin → photosensitive pellagra-like dermatitis."
+  },
+  {
+    "id": "nbme28-20261108-hartnup-cystinuria-differential",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which finding most strongly distinguishes cystinuria from Hartnup disease?",
+    "options": [
+      "Hexagonal urinary crystals and recurrent cystine stones",
+      "Photosensitive dermatitis caused by low niacin",
+      "Urinary wasting of tryptophan and other neutral amino acids"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Cystinuria disrupts renal transport of cystine and dibasic amino acids (COLA), causing cystine stones with characteristic hexagonal crystals.",
+      "Photosensitive dermatitis from niacin deficiency is a classic presentation of Hartnup disease, not cystinuria.",
+      "Neutral aminoaciduria including tryptophan is the core transporter defect in Hartnup disease; cystinuria affects cystine, ornithine, lysine, and arginine."
+    ],
+    "teaching": "Cystinuria = COLA and hexagonal stones; Hartnup = neutral amino acids, tryptophan loss, pellagra-like rash."
+  },
+  {
+    "id": "nbme28-20261108-carcinoid-niacin-differential",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An adult has flushing, watery diarrhea, and bronchospasm from a serotonin-secreting neuroendocrine tumor, then develops photosensitive dermatitis. Why?",
+    "options": [
+      "Tryptophan is diverted toward serotonin, reducing niacin synthesis",
+      "Impaired renal reabsorption of neutral amino acids from SLC6A19 deficiency",
+      "Excess serotonin directly prevents vitamin C absorption"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Carcinoid syndrome may redirect tryptophan toward serotonin production, leaving less substrate for endogenous niacin synthesis and causing pellagra.",
+      "SLC6A19 deficiency is Hartnup disease, which can cause pellagra through poor tryptophan transport but not the classic adult carcinoid syndrome triad.",
+      "Serotonin does not cause pellagra by inhibiting vitamin C uptake; niacin availability is the relevant mechanism."
+    ],
+    "teaching": "Hartnup loses tryptophan; carcinoid diverts tryptophan to serotonin. Both may cause niacin deficiency and photosensitive dermatitis."
+  },
+  {
+    "id": "nbme28-20261108-b6-tryptophan-niacin",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A malnourished patient has vitamin B6 deficiency and reduced conversion of tryptophan to niacin. Which B6-dependent reaction contributes?",
+    "options": [
+      "Pyridoxal phosphate-dependent kynureninase activity",
+      "Thiamine pyrophosphate-dependent pyruvate dehydrogenase activity",
+      "Biotin-dependent acetyl-CoA carboxylase activity"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Kynureninase requires pyridoxal phosphate (vitamin B6) in the tryptophan-to-NAD pathway; deficiency can reduce endogenous niacin synthesis.",
+      "Pyruvate dehydrogenase requires thiamine pyrophosphate and other cofactors but does not perform the relevant tryptophan conversion.",
+      "Acetyl-CoA carboxylase is biotin-dependent and supports fatty acid synthesis, not tryptophan conversion to niacin."
+    ],
+    "teaching": "Tryptophan → niacin requires vitamin B6-dependent kynureninase; niacin deficiency may follow Hartnup disease, carcinoid syndrome, or B6 deficiency."
   }
 ]);
