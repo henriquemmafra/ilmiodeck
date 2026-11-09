@@ -1691,5 +1691,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Mineralocorticoid receptor antagonists can cause hyperkalemia and metabolic acidosis; furosemide usually produces potassium depletion and metabolic alkalosis."
     ],
     "teaching": "Loop diuretics: lose K+, Ca2+, Mg2+; risk hypokalemic metabolic alkalosis. Thiazides decrease urinary Ca2+."
+  },
+  {
+    "id": "nbme28-20261108-nak-atpase-k-secretory-path",
+    "topic": "Renal Physiology",
+    "level": 2,
+    "stem": "Why would stimulating the basolateral Na+/K+-ATPase in a collecting duct principal cell NOT be a suitable way to prevent urinary potassium loss?",
+    "options": [
+      "It brings K+ into the cell, supporting K+ secretion through apical ROMK channels",
+      "It directly prevents Na+ entry through apical ENaC channels",
+      "It makes K+ move from the tubular lumen into the blood via an apical cotransporter"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The basolateral Na+/K+-ATPase moves 3 Na+ out and 2 K+ into the principal cell. With ENaC activity, it sustains Na+ reabsorption and intracellular K+ supply for apical ROMK-mediated secretion.",
+      "Blocking the epithelial Na+ channel is the action of amiloride and triamterene, not stimulation of the basolateral Na+/K+-ATPase.",
+      "Principal cells primarily secrete K+ through apical ROMK/BK channels; the basolateral Na+/K+ pump is not an apical K+ reabsorption transporter."
+    ],
+    "teaching": "Na+/K+-ATPase: basolateral 3 Na+ out, 2 K+ in. Intracellular K+ can then be secreted via apical ROMK; ENaC blockade spares K+."
+  },
+  {
+    "id": "nbme28-20261108-apical-vs-basolateral-channels",
+    "topic": "Renal Physiology",
+    "level": 2,
+    "stem": "Which apical transport process in a principal cell most directly determines the lumen-negative voltage that drives potassium secretion?",
+    "options": [
+      "Electrogenic Na+ entry through ENaC",
+      "Basolateral K+ recycling channels",
+      "Na+/K+-ATPase directly pumping K+ into the tubular lumen"
+    ],
+    "answer": 0,
+    "explanations": [
+      "ENaC-mediated Na+ entry removes positive charge from the tubular lumen, making it relatively negative and favoring K+ secretion through apical ROMK/BK channels.",
+      "Basolateral K+ conductances exist and support membrane electrical properties, but they are not the direct apical drug target responsible for ENaC-dependent luminal sodium permeability.",
+      "The Na+/K+-ATPase is basolateral, moving Na+ into the interstitium and K+ into the cell, not secreting K+ directly into the tubular lumen."
+    ],
+    "teaching": "Apical = ENaC and ROMK/BK; basolateral = Na+/K+-ATPase. Blocking apical ENaC lowers the drive for potassium secretion."
   }
 ]);
