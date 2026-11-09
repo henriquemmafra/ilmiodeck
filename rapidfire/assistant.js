@@ -66,6 +66,8 @@
       var prompt = promptFor(question, chosenIndex, message);
       // Prefill the composer in ChatGPT. User sends there, with no API key on a public page.
       var url = "https://chatgpt.com/?q=" + encodeURIComponent(prompt);
+      // Release focus before opening ChatGPT, so iOS does not preserve a zoomed input on return.
+      input.blur();
       // Use a direct user gesture so mobile Safari does not block a new tab.
       var newWindow = window.open(url, "_blank");
       if (!newWindow) {
