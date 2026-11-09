@@ -1619,5 +1619,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Methylmalonyl-CoA mutase deficiency elevates methylmalonic acid and causes metabolic acidosis rather than the classic high methionine and lens findings of CBS deficiency."
     ],
     "teaching": "High homocysteine + high methionine + normal MMA = classic CBS deficiency (B6-dependent)."
+  },
+  {
+    "id": "nbme28-20261108-loop-enac-hypokalemia",
+    "topic": "Renal Pharmacology",
+    "level": 2,
+    "stem": "A patient receiving furosemide for edema develops hypokalemia. Which add-on drug directly decreases luminal sodium permeability in collecting duct principal cells?",
+    "options": [
+      "Amiloride",
+      "Hydrochlorothiazide",
+      "Acetazolamide"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Amiloride blocks the apical epithelial sodium channel (ENaC) in collecting duct principal cells. This reduces sodium uptake, lumen-negative potential, and potassium secretion.",
+      "Hydrochlorothiazide blocks the sodium-chloride cotransporter (NCC) in the distal convoluted tubule and can further increase urinary potassium loss.",
+      "Acetazolamide inhibits proximal tubular carbonic anhydrase, promoting bicarbonate excretion and potentially causing hypokalemia."
+    ],
+    "teaching": "Loop diuretics increase distal Na+ delivery, increasing ENaC-driven K+ secretion; amiloride or triamterene blocks ENaC and spares potassium."
+  },
+  {
+    "id": "nbme28-20261108-enac-lumen-potential",
+    "topic": "Renal Physiology",
+    "level": 2,
+    "stem": "Why does increased sodium reabsorption through ENaC promote urinary potassium loss in collecting duct principal cells?",
+    "options": [
+      "It makes the tubular lumen relatively negative, favoring potassium secretion",
+      "It directly blocks the basolateral sodium-potassium ATPase",
+      "It makes the tubular lumen more positive and prevents potassium exit"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Electrogenic apical sodium entry through ENaC removes positive charge from the lumen, promoting potassium secretion through apical ROMK and flow-dependent channels.",
+      "The basolateral Na+/K+-ATPase supports sodium reabsorption and potassium uptake; ENaC does not directly block this pump.",
+      "ENaC activity makes the lumen relatively negative, not positive, and this favors rather than prevents potassium secretion."
+    ],
+    "teaching": "ENaC: Na+ enters cell → lumen relatively negative → K+ secreted via apical ROMK; blocking ENaC preserves K+."
+  },
+  {
+    "id": "nbme28-20261108-mra-vs-enac",
+    "topic": "Renal Pharmacology",
+    "level": 2,
+    "stem": "Which potassium-sparing medication competitively blocks aldosterone signaling rather than directly blocking the ENaC channel?",
+    "options": [
+      "Spironolactone",
+      "Triamterene",
+      "Amiloride"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Spironolactone antagonizes the mineralocorticoid receptor, reducing aldosterone-dependent ENaC and Na+/K+-ATPase expression; it also has antiandrogenic adverse effects such as gynecomastia.",
+      "Triamterene directly blocks apical ENaC in principal cells, independently of mineralocorticoid receptor blockade.",
+      "Amiloride directly blocks ENaC and is also used for lithium-induced nephrogenic diabetes insipidus."
+    ],
+    "teaching": "Spironolactone/eplerenone = aldosterone receptor antagonists; amiloride/triamterene = ENaC channel blockers. Both spare K+."
+  },
+  {
+    "id": "nbme28-20261108-loop-electrolyte-changes",
+    "topic": "Renal Pharmacology",
+    "level": 2,
+    "stem": "A patient begins high-dose furosemide. Which electrolyte pattern is classically associated with this loop diuretic?",
+    "options": [
+      "Hypokalemia, hypomagnesemia, and increased urinary calcium excretion",
+      "Hyperkalemia, hypermagnesemia, and reduced urinary calcium excretion",
+      "Hyperkalemia with metabolic acidosis due to mineralocorticoid receptor blockade"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Loop diuretics inhibit NKCC2 and reduce the lumen-positive potential in the thick ascending limb, increasing urinary calcium and magnesium loss; increased distal sodium delivery promotes potassium loss.",
+      "Thiazides reduce urinary calcium excretion, whereas loop diuretics increase calcium and magnesium excretion and usually promote hypokalemia.",
+      "Mineralocorticoid receptor antagonists can cause hyperkalemia and metabolic acidosis; furosemide usually produces potassium depletion and metabolic alkalosis."
+    ],
+    "teaching": "Loop diuretics: lose K+, Ca2+, Mg2+; risk hypokalemic metabolic alkalosis. Thiazides decrease urinary Ca2+."
   }
 ]);
