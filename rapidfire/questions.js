@@ -1613,12 +1613,12 @@ window.RAPIDFIRE_QUESTIONS = [
     ],
     "answer": 2,
     "explanations": [
-      "ERBB2 copy-number gain does not primarily impair mismatch repair.",
-      "TP53 loss is a distinct tumor suppressor mechanism.",
-      "ERBB2 (HER2) amplification increases growth-promoting receptor signaling and is oncogene activation.",
-      "Beta-catenin deletion is not the mechanism of ERBB2 amplification."
+      "DNA mismatch-repair deficiency (e.g., MLH1 or MSH2 loss) causes microsatellite instability by allowing replication errors to accumulate. ERBB2 amplification does not impair DNA repair; it increases growth signaling.",
+      "Biallelic TP53 inactivation removes an important cell-cycle checkpoint and impairs apoptosis. This is a loss-of-function tumor-suppressor mechanism, unlike ERBB2 amplification.",
+      "ERBB2 amplification causes HER2 receptor overexpression, enhancing MAPK and PI3K–AKT signaling. This promotes cell proliferation and survival through oncogene activation.",
+      "Aberrant beta-catenin signaling usually results from CTNNB1 activation or APC loss, leading to beta-catenin accumulation. Deleting CTNNB1 would not explain ERBB2-driven tumor growth."
     ],
-    "teaching": "Oncogenes may activate through point mutation, amplification, or translocation."
+    "teaching": "Proto-oncogenes become oncogenes through activating mutations, gene amplification, or chromosomal rearrangements. Tumor suppressors promote cancer when their normal function is lost."
   },
   {
     "id": "genpath-20261028-hypertrophy",
