@@ -1727,5 +1727,95 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "The Na+/K+-ATPase is basolateral, moving Na+ into the interstitium and K+ into the cell, not secreting K+ directly into the tubular lumen."
     ],
     "teaching": "Apical = ENaC and ROMK/BK; basolateral = Na+/K+-ATPase. Blocking apical ENaC lowers the drive for potassium secretion."
+  },
+  {
+    "id": "nbme28-20261108-prpp-amidotransferase",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "PRPP reacts with glutamine to form 5-phosphoribosylamine, glutamate, and pyrophosphate. Feedback inhibition of the responsible enzyme reduces the de novo synthesis of what?",
+    "options": [
+      "Purine nucleotides through the first committed step",
+      "Pyrimidine nucleotides through carbamoyl phosphate synthetase II",
+      "Ribose-5-phosphate through the pentose phosphate pathway"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Glutamine-PRPP amidotransferase catalyzes the first committed step of de novo purine synthesis; IMP, AMP, and GMP inhibit it by feedback.",
+      "Carbamoyl phosphate synthetase II catalyzes the committed step of pyrimidine synthesis using glutamine, bicarbonate, and ATP before the ring attaches to PRPP.",
+      "The pentose phosphate pathway supplies ribose-5-phosphate that can be converted into PRPP, but the depicted reaction consumes PRPP and adds nitrogen rather than synthesizing pentoses."
+    ],
+    "teaching": "Purine committed step: PRPP + glutamine → 5-phosphoribosylamine; inhibited by IMP, AMP, GMP and activated by PRPP."
+  },
+  {
+    "id": "nbme28-20261108-purine-vs-pyrimidine-assembly",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "Which statement correctly distinguishes de novo purine and pyrimidine nucleotide synthesis?",
+    "options": [
+      "Purine rings are assembled stepwise on PRPP-derived ribose; pyrimidine rings are assembled before attachment to PRPP",
+      "Both complete rings are synthesized freely and then attached to PRPP",
+      "Pyrimidines are assembled stepwise on PRPP-derived ribose, while purines are made as free rings"
+    ],
+    "answer": 0,
+    "explanations": [
+      "In de novo purine synthesis, atoms are added to a ribose scaffold derived from PRPP until IMP forms; pyrimidine rings are first synthesized as orotate and then attached to PRPP to form OMP.",
+      "A free preformed ring added to PRPP describes the pyrimidine pathway but not the usual de novo purine pathway.",
+      "This reverses the two pathways: purines are built on the ribose scaffold, while pyrimidines form their ring first."
+    ],
+    "teaching": "Purines: build ON PRPP → IMP → AMP/GMP; pyrimidines: build ring FIRST → orotate + PRPP → OMP → UMP."
+  },
+  {
+    "id": "nbme28-20261108-purine-feedback-regulation",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A cell accumulates IMP, AMP, and GMP. Which enzyme in de novo purine synthesis is inhibited by these end products?",
+    "options": [
+      "Glutamine-PRPP amidotransferase",
+      "Carbamoyl phosphate synthetase II",
+      "Glucose-6-phosphate dehydrogenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "IMP, AMP, and GMP inhibit glutamine-PRPP amidotransferase, reducing de novo purine synthesis when purine nucleotides are abundant.",
+      "CPS II controls an early pyrimidine step and is classically inhibited by UTP and activated by PRPP and ATP.",
+      "Glucose-6-phosphate dehydrogenase controls the oxidative pentose phosphate pathway, generating NADPH rather than serving as the committed purine synthesis enzyme."
+    ],
+    "teaching": "Purine de novo feedback = IMP/AMP/GMP inhibit glutamine-PRPP amidotransferase; pyrimidine feedback = UTP inhibits CPS II."
+  },
+  {
+    "id": "nbme28-20261108-prpp-pentose-folate",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A cell requires ribose-5-phosphate and one-carbon units to synthesize purine nucleotides. Which pairing identifies their principal metabolic sources?",
+    "options": [
+      "Pentose phosphate pathway and tetrahydrofolate one-carbon metabolism",
+      "Glycogen synthase and vitamin B12 methylmalonyl-CoA mutase",
+      "Urea cycle and heme oxygenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The pentose phosphate pathway supplies ribose-5-phosphate for PRPP; N10-formyl-tetrahydrofolate donates one-carbon units incorporated at C2 and C8 of the purine ring.",
+      "Glycogen synthase stores glucose as glycogen, while methylmalonyl-CoA mutase uses vitamin B12 to convert methylmalonyl-CoA to succinyl-CoA.",
+      "The urea cycle disposes of nitrogen as urea, and heme oxygenase degrades heme; neither is the principal supplier of purine ribose and one-carbon units."
+    ],
+    "teaching": "PPP → ribose-5-phosphate → PRPP; folate (N10-formyl-THF) contributes C2/C8 of purine rings."
+  },
+  {
+    "id": "nbme28-20261108-purine-imp-branch",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "Which nucleotide is the common first complete purine product in the de novo pathway and serves as the precursor of both AMP and GMP?",
+    "options": [
+      "Inosine monophosphate (IMP)",
+      "Uridine monophosphate (UMP)",
+      "5-Phosphoribosyl-1-pyrophosphate (PRPP)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "IMP is the first complete purine nucleotide produced de novo and branches into AMP and GMP biosynthesis.",
+      "UMP is the principal first pyrimidine nucleotide produced from OMP decarboxylation, not a purine branch-point intermediate.",
+      "PRPP is an activated ribose precursor used in nucleotide synthesis and salvage, not a complete purine nucleotide."
+    ],
+    "teaching": "Purines: PRPP → 5-phosphoribosylamine → IMP → AMP or GMP; pyrimidines: orotate → OMP → UMP."
   }
 ]);
