@@ -7363,10 +7363,10 @@ window.RAPIDFIRE_QUESTIONS = [
       "The categories overlap: the same patient may carry more than one species.",
       "Adding percentages does not provide the age."
     ],
-    "teaching": "Colonização não é uma classificação em grupos exclusivos.",
+    "teaching": "Colonization categories are not mutually exclusive.",
     "image": "images/fibrose-cistica-bacterias.svg",
-    "imageAlt": "Curvas didáticas aproximadas de colonização por idade na fibrose cística e meios de cultura.",
-    "imageCaption": "Esquema aproximado para revisão, não estimativa epidemiológica atual."
+    "imageAlt": "Illustrative airway pathogen colonization trends by age in cystic fibrosis, with culture media.",
+    "imageCaption": "Illustrative review diagram; not a current epidemiologic estimate."
   },
   {
     "id": "cf-cultures-20261106-chart-limit",
@@ -7386,10 +7386,10 @@ window.RAPIDFIRE_QUESTIONS = [
       "Susceptibility requires microbiological testing; it cannot be read from the curve.",
       "The curves show approximate population frequencies, not absolute limits for an individual."
     ],
-    "teaching": "Decore tendências e mecanismos; percentuais históricos não são previsões individuais.",
+    "teaching": "Learn trends and mechanisms; historical percentages do not predict individual cases.",
     "image": "images/fibrose-cistica-bacterias.svg",
-    "imageAlt": "Curvas didáticas aproximadas de colonização por idade na fibrose cística e meios de cultura.",
-    "imageCaption": "Esquema aproximado para revisão, não estimativa epidemiológica atual."
+    "imageAlt": "Illustrative airway pathogen colonization trends by age in cystic fibrosis, with culture media.",
+    "imageCaption": "Illustrative review diagram; not a current epidemiologic estimate."
   },
 
   {
