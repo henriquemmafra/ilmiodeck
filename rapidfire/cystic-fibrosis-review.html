@@ -40,7 +40,7 @@
             var previous = new URL(document.referrer);
             var current = new URL(window.location.href);
             if (previous.origin === current.origin &&
-                previous.pathname.replace(/index\\.html$/, '').endsWith('/rapidfire/') &&
+                (previous.pathname.endsWith('/rapidfire/') || previous.pathname.endsWith('/rapidfire/index.html')) &&
                 window.history.length > 1) {
               event.preventDefault();
               window.history.back();
