@@ -241,6 +241,19 @@
         success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
+
+      // Keep the visual explanation hidden until the learner has answered.
+      // Match the specific competitive-inhibition enzyme-kinetics card only.
+      if (/reversible competitive inhibitor binds the active site of an enzyme/i.test(q.stem) && /km/i.test(q.stem) && /vmax/i.test(q.stem)) {
+        var kineticsFigure = make("figure", "post-answer-figure");
+        var kineticsImage = make("img", "question-image");
+        kineticsImage.src = "./images/competitive-inhibition-michaelis-menten.svg";
+        kineticsImage.alt = "Michaelis–Menten curves: competitive inhibition increases apparent Km, while Vmax remains unchanged.";
+        kineticsImage.loading = "lazy";
+        kineticsFigure.appendChild(kineticsImage);
+        kineticsFigure.appendChild(make("figcaption", "image-caption", "Competitive inhibition shifts the curve right: more substrate is needed to reach half of Vmax, but excess substrate can still achieve the same Vmax."));
+        ids.stage.appendChild(kineticsFigure);
+      }
     }
     if (window.RapidFireAssistant && typeof window.RapidFireAssistant.mount === "function") {
       window.RapidFireAssistant.mount(ids.stage, q, selected);
