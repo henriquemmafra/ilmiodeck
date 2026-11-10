@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="864pt" viewBox="0 0 1008 864" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg aria-label="Cystic fibrosis airway colonization patterns and culture media" xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="864pt" viewBox="0 0 1008 864" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
@@ -107,7 +107,7 @@ z
      </g>
     </g>
     <g id="text_11">
-     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b46" x="408.24" y="525.924062" transform="rotate(-0 408.24 525.924062)">Idade (anos)</text>
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b46" x="408.24" y="525.924062" transform="rotate(-0 408.24 525.924062)">Age (years)</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -167,7 +167,7 @@ L 730.8 186.250909
      </g>
     </g>
     <g id="text_17">
-     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b46" x="49.394844" y="326.16" transform="rotate(-90 49.394844 326.16)">Pacientes colonizados (%) • valores aproximados</text>
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b46" x="49.394844" y="326.16" transform="rotate(-90 49.394844 326.16)">Patients colonized (%) · illustrative values</text>
     </g>
    </g>
    <g id="line2d_21">
@@ -318,40 +318,40 @@ L 730.8 488.16
    </g>
   </g>
   <g id="text_18">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #37737e" x="65.52" y="45.792" transform="rotate(-0 65.52 45.792)">FIBROSE CÍSTICA</text>
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #37737e" x="65.52" y="45.792" transform="rotate(-0 65.52 45.792)">CYSTIC FIBROSIS</text>
   </g>
   <g id="text_19">
-   <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="65.52" y="82.08" transform="rotate(-0 65.52 82.08)">A idade muda o padrão de colonização</text>
+   <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="65.52" y="82.08" transform="rotate(-0 65.52 82.08)">Airway colonization changes with age</text>
   </g>
   <g id="text_20">
-   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="112.32" transform="rotate(-0 65.52 112.32)">Aprenda as tendências e os meios de cultura — não decore os percentuais.</text>
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="112.32" transform="rotate(-0 65.52 112.32)">Learn the trends and culture media—not the percentages.</text>
   </g>
   <g id="text_21">
    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="771.12" y="203.04" transform="rotate(-0 771.12 203.04)">P. aeruginosa</text>
   </g>
   <g id="text_22">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="225.504" transform="rotate(-0 771.12 225.504)">Aumenta com a idade</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="225.504" transform="rotate(-0 771.12 225.504)">Increases with age</text>
   </g>
   <g id="text_23">
    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="771.12" y="302.4" transform="rotate(-0 771.12 302.4)">S. aureus</text>
   </g>
   <g id="text_24">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="324.864" transform="rotate(-0 771.12 324.864)">Muito frequente na infância</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="324.864" transform="rotate(-0 771.12 324.864)">Common in childhood</text>
   </g>
   <g id="text_25">
    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="771.12" y="401.76" transform="rotate(-0 771.12 401.76)">H. influenzae</text>
   </g>
   <g id="text_26">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="424.224" transform="rotate(-0 771.12 424.224)">Mais frequente nos pequenos</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="424.224" transform="rotate(-0 771.12 424.224)">More common in young children</text>
   </g>
   <g id="text_27">
    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="771.12" y="492.48" transform="rotate(-0 771.12 492.48)">B. cepacia complex</text>
   </g>
   <g id="text_28">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="514.944" transform="rotate(-0 771.12 514.944)">Pouco frequente ≠ inofensiva</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="514.944" transform="rotate(-0 771.12 514.944)">Uncommon ≠ harmless</text>
   </g>
   <g id="text_29">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="65.52" y="557.28" transform="rotate(-0 65.52 557.28)">BACTÉRIA → MEIO → PISTA</text>
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="65.52" y="557.28" transform="rotate(-0 65.52 557.28)">BACTERIUM → MEDIUM → CLUE</text>
   </g>
   <g id="text_30">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="70.56" y="600.48" transform="rotate(-0 70.56 600.48)">P. aeruginosa</text>
@@ -360,43 +360,43 @@ L 730.8 488.16
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="600.48" transform="rotate(-0 302.4 600.48)">MacConkey</text>
   </g>
   <g id="text_32">
-   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="600.48" transform="rotate(-0 564.48 600.48)">Não fermenta lactose → colônias incolores</text>
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="600.48" transform="rotate(-0 564.48 600.48)">Non-lactose fermenter → colorless colonies</text>
   </g>
   <g id="text_33">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="70.56" y="648" transform="rotate(-0 70.56 648)">S. aureus</text>
   </g>
   <g id="text_34">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="648" transform="rotate(-0 302.4 648)">Ágar sal-manitol</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="648" transform="rotate(-0 302.4 648)">Mannitol salt agar</text>
   </g>
   <g id="text_35">
-   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="648" transform="rotate(-0 564.48 648)">Tolera sal; fermenta manitol → meio amarelo</text>
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="648" transform="rotate(-0 564.48 648)">Salt-tolerant; mannitol fermentation → yellow agar</text>
   </g>
   <g id="text_36">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="70.56" y="695.52" transform="rotate(-0 70.56 695.52)">H. influenzae</text>
   </g>
   <g id="text_37">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="695.52" transform="rotate(-0 302.4 695.52)">Ágar chocolate</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="695.52" transform="rotate(-0 302.4 695.52)">Chocolate agar</text>
   </g>
   <g id="text_38">
-   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="695.52" transform="rotate(-0 564.48 695.52)">Fator X = hemina · Fator V = NAD¹</text>
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="695.52" transform="rotate(-0 564.48 695.52)">Factor X = hemin · Factor V = NAD¹</text>
   </g>
   <g id="text_39">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="70.56" y="743.04" transform="rotate(-0 70.56 743.04)">B. cepacia complex</text>
   </g>
   <g id="text_40">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="743.04" transform="rotate(-0 302.4 743.04)">Ágar seletivo para B. cepacia</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="743.04" transform="rotate(-0 302.4 743.04)">Selective agar for B. cepacia</text>
   </g>
   <g id="text_41">
-   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="743.04" transform="rotate(-0 564.48 743.04)">Facilita o isolamento em amostras respiratórias</text>
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="743.04" transform="rotate(-0 564.48 743.04)">Helps isolate organisms from respiratory specimens</text>
   </g>
   <g id="text_42">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="799.2" transform="rotate(-0 65.52 799.2)">¹ NAD = nicotinamida adenina dinucleotídeo. Os meios não identificam sozinhos a espécie.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="799.2" transform="rotate(-0 65.52 799.2)">¹ NAD = nicotinamide adenine dinucleotide. Culture media alone do not identify species.</text>
   </g>
   <g id="text_43">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="822.528" transform="rotate(-0 65.52 822.528)">Esquema didático: curvas aproximadas da referência enviada, não estimativas epidemiológicas atuais.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="822.528" transform="rotate(-0 65.52 822.528)">Educational schematic: approximate trends, not current epidemiologic estimates.</text>
   </g>
   <g id="text_44">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="840.672" transform="rotate(-0 65.52 840.672)">Uma pessoa pode ter mais de uma bactéria. Pseudomonas também pode aparecer na infância.</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="840.672" transform="rotate(-0 65.52 840.672)">Patients can carry multiple species. Pseudomonas may also occur in childhood.</text>
   </g>
  </g>
  <defs>
