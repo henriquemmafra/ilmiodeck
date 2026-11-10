@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 470" role="img" aria-labelledby="title desc">
+<title id="title">Competitive inhibition — Michaelis–Menten</title>
+<desc id="desc">Competitive inhibition shifts the substrate-velocity curve to the right, increasing apparent Km while leaving Vmax unchanged.</desc>
+<rect width="720" height="470" rx="18" fill="#101827"/>
+<text x="38" y="43" fill="#f3f7fb" font-size="24" font-family="Arial,sans-serif" font-weight="700">Competitive inhibition</text>
+<text x="38" y="70" fill="#b8c7da" font-size="16" font-family="Arial,sans-serif">Km increases · Vmax unchanged</text>
+<line x1="100" y1="385" x2="675" y2="385" stroke="#ced9e6" stroke-width="2"/>
+<line x1="100" y1="385" x2="100" y2="96" stroke="#ced9e6" stroke-width="2"/>
+<text x="395" y="443" text-anchor="middle" fill="#e3ebf5" font-size="17" font-family="Arial,sans-serif">Substrate concentration [S]</text>
+<text x="28" y="238" text-anchor="middle" transform="rotate(-90 28 238)" fill="#e3ebf5" font-size="17" font-family="Arial,sans-serif">Reaction velocity</text>
+<line x1="100" y1="112" x2="667" y2="112" stroke="#cbd5e1" stroke-dasharray="8 7" opacity=".8"/>
+<text x="90" y="118" text-anchor="end" fill="#e3ebf5" font-size="16" font-family="Arial,sans-serif">Vmax</text>
+<line x1="100" y1="248.5" x2="667" y2="248.5" stroke="#cbd5e1" stroke-dasharray="6 7" opacity=".5"/>
+<text x="90" y="254" text-anchor="end" fill="#e3ebf5" font-size="15" font-family="Arial,sans-serif">½ Vmax</text>
+<!-- Plot Michaelis-Menten curves. Vertical dynamic range 273; Km=45 and 135 substrate units. -->
+<path d="M100 385 L100.0 385.0 L105.5 355.3 L111.0 331.4 L116.5 311.8 L122.0 295.4 L127.5 281.4 L133.0 269.5 L138.5 259.1 L144.0 250.0 L149.5 242.0 L155.0 234.8 L160.5 228.4 L166.0 222.7 L171.5 217.5 L177.0 212.7 L182.5 208.4 L188.0 204.4 L193.5 200.7 L199.0 197.3 L204.5 194.2 L210.0 191.3 L215.5 188.5 L221.0 186.0 L226.5 183.6 L232.0 181.4 L237.5 179.3 L243.0 177.3 L248.5 175.5 L254.0 173.7 L259.5 172.1 L265.0 170.5 L270.5 169.0 L276.0 167.6 L281.5 166.2 L287.0 165.0 L292.5 163.7 L298.0 162.6 L303.5 161.4 L309.0 160.4 L314.5 159.3 L320.0 158.4 L325.5 157.4 L331.0 156.5 L336.5 155.6 L342.0 154.8 L347.5 154.0 L353.0 153.2 L358.5 152.5 L364.0 151.8 L369.5 151.1 L375.0 150.4 L380.5 149.7 L386.0 149.1 L391.5 148.5 L397.0 147.9 L402.5 147.4 L408.0 146.8 L413.5 146.3 L419.0 145.8 L424.5 145.2 L430.0 144.8 L435.5 144.3 L441.0 143.8 L446.5 143.4 L452.0 142.9 L457.5 142.5 L463.0 142.1 L468.5 141.7 L474.0 141.3 L479.5 140.9 L485.0 140.6 L490.5 140.2 L496.0 139.9 L501.5 139.5 L507.0 139.2 L512.5 138.9 L518.0 138.5 L523.5 138.2 L529.0 137.9 L534.5 137.6 L540.0 137.3 L545.5 137.0 L551.0 136.8 L556.5 136.5 L562.0 136.2 L567.5 136.0 L573.0 135.7 L578.5 135.5 L584.0 135.2 L589.5 135.0 L595.0 134.8 L600.5 134.5 L606.0 134.3 L611.5 134.1 L617.0 133.9 L622.5 133.6 L628.0 133.4 L633.5 133.2 L639.0 133.0 L644.5 132.8 L650.0 132.6" fill="none" stroke="#48c6a3" stroke-width="5" stroke-linecap="round"/>
+<path d="M100 385 L100.0 385.0 L105.5 374.3 L111.0 364.4 L116.5 355.3 L122.0 346.7 L127.5 338.8 L133.0 331.4 L138.5 324.4 L144.0 317.9 L149.5 311.8 L155.0 306.0 L160.5 300.5 L166.0 295.4 L171.5 290.5 L177.0 285.8 L182.5 281.4 L188.0 277.3 L193.5 273.3 L199.0 269.5 L204.5 265.9 L210.0 262.4 L215.5 259.1 L221.0 256.0 L226.5 252.9 L232.0 250.0 L237.5 247.2 L243.0 244.6 L248.5 242.0 L254.0 239.5 L259.5 237.1 L265.0 234.8 L270.5 232.6 L276.0 230.5 L281.5 228.4 L287.0 226.5 L292.5 224.5 L298.0 222.7 L303.5 220.9 L309.0 219.1 L314.5 217.5 L320.0 215.8 L325.5 214.2 L331.0 212.7 L336.5 211.2 L342.0 209.8 L347.5 208.4 L353.0 207.0 L358.5 205.7 L364.0 204.4 L369.5 203.1 L375.0 201.9 L380.5 200.7 L386.0 199.5 L391.5 198.4 L397.0 197.3 L402.5 196.2 L408.0 195.2 L413.5 194.2 L419.0 193.2 L424.5 192.2 L430.0 191.3 L435.5 190.3 L441.0 189.4 L446.5 188.5 L452.0 187.7 L457.5 186.8 L463.0 186.0 L468.5 185.2 L474.0 184.4 L479.5 183.6 L485.0 182.9 L490.5 182.1 L496.0 181.4 L501.5 180.7 L507.0 180.0 L512.5 179.3 L518.0 178.6 L523.5 178.0 L529.0 177.3 L534.5 176.7 L540.0 176.1 L545.5 175.5 L551.0 174.9 L556.5 174.3 L562.0 173.7 L567.5 173.2 L573.0 172.6 L578.5 172.1 L584.0 171.5 L589.5 171.0 L595.0 170.5 L600.5 170.0 L606.0 169.5 L611.5 169.0 L617.0 168.5 L622.5 168.1 L628.0 167.6 L633.5 167.1 L639.0 166.7 L644.5 166.2 L650.0 165.8" fill="none" stroke="#ffb35f" stroke-width="5" stroke-linecap="round"/>
+<line x1="145" y1="248.5" x2="145" y2="385" stroke="#48c6a3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="235" y1="248.5" x2="235" y2="385" stroke="#ffb35f" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="145" cy="248.5" r="6" fill="#48c6a3"/><circle cx="235" cy="248.5" r="6" fill="#ffb35f"/>
+<text x="145" y="409" text-anchor="middle" fill="#48c6a3" font-size="17" font-family="Arial,sans-serif">Km</text>
+<text x="235" y="409" text-anchor="middle" fill="#ffb35f" font-size="17" font-family="Arial,sans-serif">Km ↑</text>
+<rect x="400" y="288" width="267" height="72" rx="10" fill="#1c2a40"/>
+<line x1="417" y1="310" x2="450" y2="310" stroke="#48c6a3" stroke-width="5"/>
+<text x="462" y="316" fill="#f3f7fb" font-size="15" font-family="Arial,sans-serif">Without inhibitor</text>
+<line x1="417" y1="337" x2="450" y2="337" stroke="#ffb35f" stroke-width="5"/>
+<text x="462" y="343" fill="#f3f7fb" font-size="15" font-family="Arial,sans-serif">Competitive inhibitor</text>
+</svg>
