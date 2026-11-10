@@ -6660,7 +6660,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Tyrosine is a substrate for melanin synthesis; copper is a cofactor for tyrosinase.",
       "These two sugars form lactose when joined by the appropriate bond."
     ],
-    "teaching": "Ceramida é a base estrutural de muitos esfingolipídios."
+    "teaching": "Ceramide = sphingosine + fatty acid (amide bond). It forms the structural backbone of sphingomyelin and glycosphingolipids."
   },
   {
     "id": "metabolic-eyes-20261106-galactocerebroside",
