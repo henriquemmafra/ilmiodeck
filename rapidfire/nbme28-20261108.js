@@ -1925,5 +1925,113 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Ornithine serves as a regenerated carrier in the cycle; the two nitrogen atoms of urea derive from free ammonia and aspartate."
     ],
     "teaching": "Urea nitrogen sources: free NH3 enters through CPS I; aspartate enters through ASS1. ASL releases fumarate."
+  },
+  {
+    "id": "20261111-pku-phenylalanine-to-tyrosine",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An untreated infant develops seizures, developmental delay, eczema, and a musty odor. Which reaction is directly impaired?",
+    "options": [
+      "Phenylalanine → tyrosine via phenylalanine hydroxylase",
+      "Homogentisate → maleylacetoacetate via homogentisate dioxygenase",
+      "Fumarylacetoacetate → fumarate and acetoacetate via FAH"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Classic phenylketonuria involves phenylalanine hydroxylase deficiency, causing phenylalanine accumulation and reduced tyrosine production; untreated disease can cause neurologic injury and a musty odor.",
+      "Homogentisate dioxygenase deficiency causes alkaptonuria with darkening urine, ochronosis, and arthritis rather than classical PKU.",
+      "Fumarylacetoacetate hydrolase (FAH) deficiency causes tyrosinemia type I with succinylacetone accumulation, hepatic failure, and renal tubular injury."
+    ],
+    "teaching": "PKU = PAH deficiency → phenylalanine up, tyrosine down; musty odor, seizures, eczema, hypopigmentation."
+  },
+  {
+    "id": "20261111-pku-bh4-neurotransmitters",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A newborn has hyperphenylalaninemia plus deficient dopamine and serotonin synthesis despite adequate dietary treatment. Which cofactor deficiency best explains both abnormalities?",
+    "options": [
+      "Tetrahydrobiopterin (BH4)",
+      "Pyridoxal phosphate (vitamin B6)",
+      "Thiamine pyrophosphate (vitamin B1)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "BH4 is needed by phenylalanine, tyrosine, and tryptophan hydroxylases. Defective BH4 metabolism can cause high phenylalanine and impaired catecholamine/serotonin production.",
+      "Vitamin B6 supports amino acid transamination and decarboxylation, including aromatic L-amino acid decarboxylase, but is not the cofactor shared by all three hydroxylases.",
+      "Thiamine pyrophosphate is required for oxidative decarboxylation and transketolase, not for phenylalanine hydroxylase."
+    ],
+    "teaching": "BH4-dependent hydroxylases: PAH, tyrosine hydroxylase, tryptophan hydroxylase; BH4 defects can require neurotransmitter precursor replacement."
+  },
+  {
+    "id": "20261111-alkaptonuria-homogentisate",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An adult has bluish-black cartilage pigmentation, premature spinal arthritis, and urine that turns dark after standing. Which metabolite accumulates?",
+    "options": [
+      "Homogentisic acid",
+      "Phenylalanine",
+      "Succinylacetone"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Alkaptonuria results from homogentisate 1,2-dioxygenase deficiency. Homogentisic acid oxidizes and deposits as ochronotic pigment in connective tissues and darkens urine.",
+      "Phenylalanine accumulates in phenylketonuria due to phenylalanine hydroxylase deficiency, causing neurological and pigmentation changes.",
+      "Succinylacetone is a diagnostic marker of tyrosinemia type I from fumarylacetoacetate hydrolase deficiency."
+    ],
+    "teaching": "Alkaptonuria = HGD deficiency → homogentisic acid up → urine darkens on standing + ochronosis + arthropathy."
+  },
+  {
+    "id": "20261111-tyrosinemia-I-nitisinone",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "An infant has liver failure, renal Fanconi syndrome, and elevated succinylacetone. Nitisinone treats the disease by inhibiting which upstream enzyme?",
+    "options": [
+      "4-Hydroxyphenylpyruvate dioxygenase",
+      "Phenylalanine hydroxylase",
+      "Homogentisate 1,2-dioxygenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Nitisinone inhibits 4-hydroxyphenylpyruvate dioxygenase upstream of fumarylacetoacetate hydrolase, preventing formation of toxic downstream metabolites including succinylacetone.",
+      "Phenylalanine hydroxylase deficiency causes PKU; blocking it would not be the therapeutic mechanism for tyrosinemia type I.",
+      "Homogentisate 1,2-dioxygenase deficiency causes alkaptonuria; it is not the drug target of nitisinone."
+    ],
+    "teaching": "Tyrosinemia I = FAH deficiency, succinylacetone, liver/kidney injury; treat with nitisinone + restricted tyrosine/phenylalanine."
+  },
+  {
+    "id": "20261111-tyrosinemia-II-keratitis",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "A child has painful corneal lesions, photophobia, and thickened skin on the palms and soles with elevated tyrosine. Which enzyme is deficient?",
+    "options": [
+      "Tyrosine aminotransferase",
+      "Fumarylacetoacetate hydrolase",
+      "Homogentisate 1,2-dioxygenase"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Tyrosinemia type II is caused by tyrosine aminotransferase deficiency and classically presents with keratitis, palmoplantar hyperkeratosis, and possible neurodevelopmental symptoms.",
+      "Tyrosinemia type I from FAH deficiency causes succinylacetone accumulation, severe hepatic disease, and renal tubular dysfunction.",
+      "Alkaptonuria from HGD deficiency causes dark urine, ochronosis, and degenerative arthritis rather than painful corneal lesions."
+    ],
+    "teaching": "Tyrosinemia II = TAT deficiency → eye (keratitis) + palms/soles (hyperkeratosis); Tyrosinemia I = FAH + succinylacetone + liver/kidney."
+  },
+  {
+    "id": "20261111-phe-tyr-glucogenic-ketogenic",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "The complete degradation of phenylalanine and tyrosine produces fumarate and acetoacetate. How are these amino acids classified?",
+    "options": [
+      "Both glucogenic and ketogenic",
+      "Exclusively ketogenic",
+      "Exclusively glucogenic"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fumarate can feed gluconeogenic pathways via the citric acid cycle, while acetoacetate supplies ketogenic products; phenylalanine and tyrosine are both glucogenic and ketogenic.",
+      "Leucine and lysine are exclusively ketogenic; phenylalanine and tyrosine also produce fumarate.",
+      "Some amino acids yield only gluconeogenic intermediates, but phenylalanine and tyrosine also produce acetoacetate."
+    ],
+    "teaching": "Phenylalanine/tyrosine → fumarate (glucogenic) + acetoacetate (ketogenic)."
   }
 ]);
