@@ -62,6 +62,38 @@
     return el;
   }
 
+  // Shuffle each new presentation, but keep the same order when navigating back.
+  // Options and their inline explanations always move together.
+  var lastShownCorrectPosition = Object.create(null);
+
+  function shuffleQuestionChoices(question) {
+    var order = question.options.map(function (_, index) { return index; });
+    for (var i = order.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = order[i];
+      order[i] = order[j];
+      order[j] = temp;
+    }
+
+    var answerPosition = order.indexOf(question.answer);
+    var previousPosition = lastShownCorrectPosition[question.id];
+    if (Number.isInteger(previousPosition) && previousPosition === answerPosition) {
+      // On repeat visits, force the correct answer to a different letter.
+      var newPosition = (answerPosition + 1 + Math.floor(Math.random() * (order.length - 1))) % order.length;
+      var swapped = order[newPosition];
+      order[newPosition] = order[answerPosition];
+      order[answerPosition] = swapped;
+      answerPosition = newPosition;
+    }
+    lastShownCorrectPosition[question.id] = answerPosition;
+
+    var shuffled = Object.assign({}, question);
+    shuffled.options = order.map(function (index) { return question.options[index]; });
+    shuffled.explanations = order.map(function (index) { return question.explanations[index]; });
+    shuffled.answer = answerPosition;
+    return shuffled;
+  }
+
   function getProgress(q) {
     var value = history[q.id];
     return value && typeof value === "object" ? value : null;
@@ -135,7 +167,7 @@
     }
     var ranked = candidates.map(function (q) { return { question: q, score: priority(q) }; });
     ranked.sort(function (a, b) { return b.score - a.score; });
-    current = ranked[0].question;
+    current = shuffleQuestionChoices(ranked[0].question);
     seen.add(current.id);
     trail.push({ question: current, selected: null });
     trailPosition = trail.length - 1;
