@@ -11,7 +11,7 @@
   var pairsLabel = document.getElementById("pairs");
   var firstTryLabel = document.getElementById("first-try");
   var order = [], current = [], shuffledClues = [];
-  var setIndex = 0, selected = null, matched = new Set(), missed = new Set(), firstTry = 0;
+  var setIndex = 0, selected = null, matched = new Set(), missed = new Set(), firstTry = 0, completed = false;
   var pointer = null, ghost = null, hovered = null, suppressSourceClicksUntil = 0;
   var storageKey = "rapidfire-brain-tumors-match-v1";
 
@@ -40,6 +40,7 @@
     progress.style.width = (100 * (setIndex * size + matched.size) / Math.max(1, all.length)) + "%";
   }
   function start() {
+    completed = false;
     cleanupDrag();
     order = shuffle(all);
     setIndex = 0;
@@ -67,6 +68,8 @@
     var item = getCase(sourceId);
     if (!item || matched.has(sourceId) || matched.has(targetId)) return;
     if (sourceId !== targetId) {
+      selected = sourceId;
+      paintSelection();
       missed.add(sourceId);
       announce("Not a match. Try another clue for " + item.name + ".", "bad");
       return;
@@ -186,8 +189,10 @@
     if (pointer && event.pointerId === pointer.id) cleanupDrag();
   });
   next.addEventListener("click", function () {
+    if (completed) { start(); return; }
     if (matched.size !== current.length) return;
     if ((setIndex + 1) * size >= all.length) {
+      completed = true;
       board.replaceChildren();
       board.appendChild(node("p", "completion", "All 12 tumors matched. " + firstTry + " of " + all.length + " correct on the first try."));
       try {
@@ -199,14 +204,13 @@
       announce("Round complete. Switch categories to test locations or clinical clues.");
       next.hidden = false;
       next.textContent = "Play again →";
-      next.onclick = function () { next.onclick = null; start(); };
       return;
     }
     setIndex++;
     startSet();
   });
-  mode.addEventListener("change", function () { next.onclick = null; start(); });
-  document.getElementById("restart").addEventListener("click", function () { next.onclick = null; start(); });
+  mode.addEventListener("change", start);
+  document.getElementById("restart").addEventListener("click", start);
   if (all.length) start();
   else announce("Tumor data could not be loaded. Refresh the page.", "bad");
 })();

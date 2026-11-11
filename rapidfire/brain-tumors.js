@@ -50,15 +50,10 @@ window.RAPIDFIRE_BRAIN_TUMORS = [
     "location": "Frontal cortical-subcortical region",
     "clinical": "Adult with seizures and a calcified frontal mass",
     "pearl": "Oligodendroglioma requires IDH mutation and whole-arm 1p/19q codeletion; classic descriptions include fried-egg cells, chicken-wire vessels, and calcification.",
-    "stem": "An adult with seizures has a calcified frontal cortical-subcortical mass. Microscopy shows fried-egg cells and delicate branching capillaries. Which molecular signature confirms the diagnosis?",
+    "stem": "An adult with seizures has a calcified frontal cortical-subcortical mass. Microscopy shows fried-egg cells and delicate branching capillaries. Which tumor is most likely?",
     "distractors": [
       "diffuse-astro",
       "meningioma"
-    ],
-    "quizOverride": [
-      "Oligodendroglioma",
-      "Diffuse astrocytoma, IDH-mutant",
-      "Meningioma"
     ]
   },
   {
