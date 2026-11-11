@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Match brain tumors to Step 1 histology, location, and clinical clues.">
+  <title>Brain Tumors Match · RapidFire</title>
+  <link rel="stylesheet" href="./brain-tumors-match.css?v=20261111-1">
+  <script defer src="./brain-tumors.js?v=20261111-12"></script>
+  <script defer src="./brain-tumors-match.js?v=20261111-1"></script>
+</head>
+<body>
+  <main class="shell">
+    <nav><a href="./index.html">← Back to RapidFire questions</a></nav>
+    <header>
+      <p class="eyebrow">RapidFire · Match mode</p>
+      <h1>Brain <span>Tumors</span></h1>
+      <p class="sub">Drag each tumor onto its matching clue. On mobile, you can also tap a tumor and then tap its match.</p>
+    </header>
+    <section class="toolbar" aria-label="Game settings">
+      <label for="match-mode">What to match</label>
+      <select id="match-mode">
+        <option value="histology">Histology / molecular</option>
+        <option value="location">Location</option>
+        <option value="clinical">Clinical / imaging clues</option>
+      </select>
+      <button id="restart" type="button" class="quiet">Shuffle & restart</button>
+    </section>
+    <section class="scoreboard" aria-label="Score">
+      <div><strong id="round">1 / 3</strong><span>Set</span></div>
+      <div><strong id="pairs">0 / 4</strong><span>Paired</span></div>
+      <div><strong id="first-try">0</strong><span>First-try matches</span></div>
+    </section>
+    <div class="progress-track"><div id="progress-bar"></div></div>
+    <div class="column-labels"><span>Tumor</span><span>Match this clue</span></div>
+    <section id="board" class="board" aria-label="Matching game"></section>
+    <p id="feedback" class="feedback" role="status" aria-live="polite">Pick a tumor, then drag or tap its correct clue.</p>
+    <button id="next-set" class="next" type="button" hidden>Next set →</button>
+    <p class="footnote">Each set has four shuffled pairs. Three sets cover all 12 tumors. Wrong matches are not revealed, so you can try again. All labels and teaching points are in English.</p>
+  </main>
+</body>
+</html>
