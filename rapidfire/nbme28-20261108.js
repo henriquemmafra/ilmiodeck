@@ -1853,5 +1853,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Schistocytes result from mechanical fragmentation of erythrocytes, such as in thrombotic microangiopathy, rather than deficient nucleotide synthesis."
     ],
     "teaching": "Megaloblastic = impaired DNA synthesis → nuclear-cytoplasmic asynchrony, macro-ovalocytes and hypersegmented neutrophils."
+  },
+  {
+    "id": "urea-20261111-argininosuccinate-substrate-trap",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "A neonate has hyperammonemia and markedly elevated urinary argininosuccinate. Which reaction is directly blocked?",
+    "options": [
+      "Argininosuccinate → arginine + fumarate",
+      "Citrulline + aspartate → argininosuccinate",
+      "Ornithine + carbamoyl phosphate → citrulline"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Argininosuccinate lyase (ASL) normally cleaves argininosuccinate to arginine and fumarate. Loss of ASL makes its substrate accumulate and appear in urine.",
+      "Argininosuccinate synthetase 1 (ASS1) combines citrulline with aspartate using ATP. Deficiency typically produces markedly elevated citrulline rather than argininosuccinate.",
+      "Ornithine transcarbamylase (OTC) forms citrulline in mitochondria. OTC deficiency classically causes low citrulline, high urinary orotate, and hyperammonemia."
+    ],
+    "teaching": "A metabolite accumulating before the block identifies the NEXT enzyme: argininosuccinate high → ASL deficiency."
+  },
+  {
+    "id": "urea-20261111-ass1-vs-asl",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "An infant has hyperammonemia and extremely high plasma citrulline but no detectable urinary argininosuccinate excess. Which enzyme is most likely deficient?",
+    "options": [
+      "Argininosuccinate synthetase 1 (ASS1)",
+      "Argininosuccinate lyase (ASL)",
+      "Arginase 1 (ARG1)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "ASS1 normally joins citrulline and aspartate into argininosuccinate. Its deficiency causes classic citrullinemia type I and marked citrulline elevation.",
+      "ASL normally splits argininosuccinate into arginine and fumarate. ASL deficiency causes argininosuccinic aciduria and may cause brittle hair.",
+      "ARG1 normally cleaves arginine to urea and ornithine. Arginase deficiency typically causes elevated arginine with progressive spasticity and often less striking hyperammonemia."
+    ],
+    "teaching": "ASS1 synthesizes ARGININOsuccinate from citrulline; ASL lyses it into arginine + fumarate; arginase handles arginine."
+  },
+  {
+    "id": "urea-20261111-hair-asl-highyield",
+    "topic": "Biochemistry",
+    "level": 2,
+    "stem": "An infant has recurrent vomiting, encephalopathy, hepatomegaly, hyperammonemia and brittle hair (trichorrhexis nodosa). Which biochemical marker is especially characteristic?",
+    "options": [
+      "Elevated argininosuccinate in plasma and urine",
+      "Elevated urinary orotic acid with low citrulline",
+      "Elevated arginine with progressive spasticity"
+    ],
+    "answer": 0,
+    "explanations": [
+      "ASL deficiency causes argininosuccinic aciduria, with elevated argininosuccinate, hyperammonemia, hepatopathy, and sometimes brittle hair due to trichorrhexis nodosa.",
+      "OTC deficiency is X-linked and causes excess mitochondrial carbamoyl phosphate to enter pyrimidine synthesis, producing urinary orotic acid with low citrulline.",
+      "Arginase deficiency produces hyperargininemia and may cause progressive spastic diplegia rather than argininosuccinic aciduria."
+    ],
+    "teaching": "Brittle hair + hyperammonemia + argininosuccinate → ASL deficiency (argininosuccinic aciduria)."
+  },
+  {
+    "id": "urea-20261111-aspartate-nitrogen",
+    "topic": "Biochemistry",
+    "level": 3,
+    "stem": "In the urea cycle, which molecule donates the second nitrogen atom that eventually appears in urea?",
+    "options": [
+      "Aspartate",
+      "Fumarate",
+      "Ornithine"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Aspartate joins citrulline through ASS1, contributing the second nitrogen that is retained as argininosuccinate is cleaved by ASL and urea is later released by arginase.",
+      "Fumarate is a carbon skeleton product released when ASL cleaves argininosuccinate; it is not the second nitrogen donor.",
+      "Ornithine serves as a regenerated carrier in the cycle; the two nitrogen atoms of urea derive from free ammonia and aspartate."
+    ],
+    "teaching": "Urea nitrogen sources: free NH3 enters through CPS I; aspartate enters through ASS1. ASL releases fumarate."
   }
 ]);
