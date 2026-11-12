@@ -2123,5 +2123,41 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Iron deficiency produces classically microcytic anemia and does not explain pan-lineage cytopenias with clonal cytogenetic abnormalities."
     ],
     "teaching": "Fanconi anemia → marrow failure + MDS/AML risk; 15% blasts with clonal abnormalities supports MDS with increased blasts, not uncomplicated aplasia."
+  },
+  {
+    "id": "nbme28-20261112-mds-pancytopenia-blasts",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "A child with inherited marrow failure develops pancytopenia despite 15% myeloid blasts in the bone marrow. How can increased marrow blasts coexist with low peripheral blood counts?",
+    "options": [
+      "Clonal immature cells accumulate while ineffective hematopoiesis limits production of mature blood cells",
+      "Blasts in marrow invariably produce increased circulating leukocytes",
+      "The marrow percentage of blasts is equivalent to the absolute neutrophil count"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Myelodysplastic neoplasms feature clonal hematopoiesis with impaired differentiation and ineffective production of functional erythrocytes, leukocytes, and platelets; elevated marrow blast percentage can coexist with pancytopenia.",
+      "Immature blasts need not appear in large numbers in peripheral blood, and even acute leukemia may present with leukopenia and pancytopenia.",
+      "Blast percentage describes the fraction of nucleated marrow cells that are immature; an absolute blood count measures a different compartment and quantity."
+    ],
+    "teaching": "High marrow blasts do not imply high peripheral blood counts; ineffective hematopoiesis causes cytopenias in advanced MDS and sometimes AML."
+  },
+  {
+    "id": "nbme28-20261112-pediatric-mds-fifteen-percent",
+    "topic": "Hematology",
+    "level": 3,
+    "stem": "A 12-year-old with Fanconi anemia has persistent pancytopenia, clonal monosomy 7, and 15% marrow blasts without an AML-defining genetic lesion. Which interpretation is most appropriate?",
+    "options": [
+      "Pediatric myelodysplastic neoplasm with increased blasts",
+      "Acute myeloid leukemia is proven solely because blasts exceed 10%",
+      "Benign immune thrombocytopenia with normal marrow maturation"
+    ],
+    "answer": 0,
+    "explanations": [
+      "For pediatric myelodysplastic neoplasms, 15% marrow blasts can fit MDS with increased blasts; the conventional general AML blast cutoff is 20%, with important genetic exceptions.",
+      "A 10% blast fraction does not automatically establish AML, especially in pediatric classification; diagnosis also depends on defining molecular and cytogenetic abnormalities.",
+      "Immune thrombocytopenia usually causes isolated thrombocytopenia rather than severe pancytopenia, acquired abnormal marrow clones, and increased myeloid blasts."
+    ],
+    "teaching": "Pediatric MDS with increased blasts may show 5–19% marrow blasts; AML generally requires 20% or an AML-defining genetic lesion. CBC counts and marrow blast fraction are distinct."
   }
 ]);
