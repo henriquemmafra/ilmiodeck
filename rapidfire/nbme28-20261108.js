@@ -2303,5 +2303,77 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "A normal complete blood count or hemoglobin does not exclude colorectal cancer and is not a substitute for guideline-based screening."
     ],
     "teaching": "Strong first-degree family history → colonoscopy preferred; if declined, annual FIT may be offered, but a single negative FOBT is not reassuring."
+  },
+  {
+    "id": "nbme28-20261112-oxygen-content-anemia",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "A dyspneic patient has arterial PaO2 96 mmHg, PaCO2 30 mmHg, arterial oxygen content 12 mL/dL, and mixed venous oxygen content 8 mL/dL. Which condition best explains these findings?",
+    "options": [
+      "Anemia reducing the hemoglobin available to carry oxygen",
+      "Severe ventilation-perfusion mismatch causing impaired oxygen loading",
+      "Opioid-induced alveolar hypoventilation causing CO2 retention"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Normal PaO2 indicates adequate dissolved arterial oxygen, but reduced CaO2 indicates reduced total oxygen carriage, most likely from low hemoglobin in this context. The low PaCO2 is compatible with compensatory hyperventilation.",
+      "Severe V/Q mismatch typically reduces arterial PaO2 (hypoxemia); it does not chiefly reduce hemoglobin-bound oxygen content while leaving PaO2 normal.",
+      "Alveolar hypoventilation usually raises PaCO2 and lowers PaO2. This patient has low PaCO2, indicating increased alveolar ventilation."
+    ],
+    "teaching": "Normal PaO2 + low CaO2 = reduced oxygen-carrying capacity, often anemia. PaO2 assesses dissolved gas; CaO2 depends mainly on hemoglobin."
+  },
+  {
+    "id": "nbme28-20261112-caO2-formula",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "Which equation estimates arterial oxygen content (CaO2) in mL O2/dL of blood?",
+    "options": [
+      "1.34 × hemoglobin (g/dL) × SaO2 (fraction) + 0.003 × PaO2 (mmHg)",
+      "PaO2 (mmHg) minus mixed venous PO2 (mmHg)",
+      "Tidal volume divided by the arterial-to-venous oxygen difference"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Nearly all arterial oxygen is bound to hemoglobin: CaO2 = 1.34 × Hb × SaO2 + 0.003 × PaO2. The dissolved-oxygen term is usually small.",
+      "Subtracting partial pressures does not give blood oxygen content because most oxygen is hemoglobin-bound and content has different units.",
+      "Tidal volume describes respiratory mechanics; oxygen content depends chiefly on hemoglobin and its oxygen saturation."
+    ],
+    "teaching": "CaO2 ≈ 1.34 × Hb × SaO2; PaO2 alone cannot determine content. 1 vol% = 1 mL oxygen/100 mL blood."
+  },
+  {
+    "id": "nbme28-20261112-pco2-hypoventilation",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "Which arterial blood gas pattern is most typical of pure opioid-induced alveolar hypoventilation at sea level?",
+    "options": [
+      "Elevated PaCO2 with decreased PaO2",
+      "Decreased PaCO2 with normal PaO2 and low hemoglobin-dependent oxygen content",
+      "Decreased PaCO2 with elevated alveolar ventilation"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Reduced alveolar ventilation retains CO2 (high PaCO2) and lowers alveolar and arterial PO2; the A–a oxygen gradient remains normal if there is no concurrent lung disease.",
+      "Low PaCO2 indicates hyperventilation, not opioid-induced hypoventilation. Low CaO2 despite normal PaO2 suggests anemia or dyshemoglobinemia.",
+      "A decrease in PaCO2 with increased ventilation is characteristic of hyperventilation and is the opposite of the pure hypoventilation physiology caused by opioids."
+    ],
+    "teaching": "Hypoventilation → PaCO2 up, PaO2 down, normal A–a gradient if lungs otherwise normal. Hyperventilation → PaCO2 down."
+  },
+  {
+    "id": "nbme28-20261112-paO2-saturation-content",
+    "topic": "Respiratory Physiology",
+    "level": 3,
+    "stem": "Two patients have equal PaO2 of 95 mmHg and similar SaO2. One has hemoglobin 15 g/dL; the other has hemoglobin 7 g/dL. What is true?",
+    "options": [
+      "The patient with Hb 7 g/dL has lower oxygen content even with similar PaO2 and saturation",
+      "Both have identical arterial oxygen content because their PaO2 values are equal",
+      "The patient with Hb 7 g/dL necessarily has a much lower arterial PaO2"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Oxygen content is proportional mainly to hemoglobin concentration times saturation, so severe anemia lowers CaO2 even with normal pulmonary oxygen exchange.",
+      "Equal PaO2 does not guarantee equal CaO2 because PaO2 measures dissolved-oxygen pressure rather than the total hemoglobin-bound oxygen load.",
+      "Anemia by itself does not necessarily lower PaO2; it reduces oxygen carrying capacity and delivery despite normal oxygenation of available hemoglobin."
+    ],
+    "teaching": "PaO2 = dissolved gas pressure, SaO2 = fraction of Hb sites occupied, CaO2 = total oxygen carried. Anemia decreases CaO2 without necessarily decreasing PaO2."
   }
 ]);
