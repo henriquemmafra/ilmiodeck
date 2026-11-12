@@ -2249,5 +2249,59 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Fixing tidal volume does not fix compliance; pressure requirements still depend on lung and chest-wall mechanics."
     ],
     "teaching": "Stiffer lungs or chest wall → lower compliance; for the same VT, higher plateau-minus-PEEP driving pressure."
+  },
+  {
+    "id": "nbme28-20261112-gfobt-false-neg",
+    "topic": "Biostatistics",
+    "level": 2,
+    "stem": "A woman with two first-degree relatives with colorectal cancer asks whether a negative single guaiac fecal occult blood test excludes malignancy. Which test limitation is most relevant?",
+    "options": [
+      "Limited sensitivity and risk of false-negative results",
+      "Low specificity leading exclusively to false-positive results",
+      "Positive predictive value independent of disease prevalence"
+    ],
+    "answer": 0,
+    "explanations": [
+      "A single gFOBT can miss colorectal cancer because lesions bleed intermittently; low sensitivity increases false negatives. Stool-based screening does not exclude cancer after a single negative result.",
+      "Specificity concerns false positives among people without disease, not the test's failure to find cancer in someone who has it. High-sensitivity gFOBT has relatively high specificity in validation studies.",
+      "Positive predictive value varies with disease prevalence and is not an intrinsic fixed characteristic of a test."
+    ],
+    "teaching": "Sensitivity = TP/(TP+FN). Negative gFOBT cannot rule out colorectal cancer, especially in higher-risk patients."
+  },
+  {
+    "id": "nbme28-20261112-fobt-vs-fit",
+    "topic": "Preventive Medicine",
+    "level": 2,
+    "stem": "Which statement about stool-based colorectal cancer screening is most accurate?",
+    "options": [
+      "FIT detects human hemoglobin and generally outperforms older guaiac FOBT for colorectal cancer detection",
+      "All guaiac FOBTs have nearly 100% sensitivity for advanced adenomas",
+      "A negative single stool test is equivalent to a normal high-quality colonoscopy"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fecal immunochemical testing (FIT) uses antibodies against human hemoglobin; it generally has higher sensitivity than older guaiac-based tests and is typically repeated annually in screening programs.",
+      "Even high-sensitivity guaiac FOBT has low sensitivity for advanced adenomas; stool testing is not a perfect detector of precursor lesions.",
+      "Colonoscopy visualizes and permits removal/biopsy of polyps, while a negative stool test can miss intermittently bleeding or nonbleeding lesions."
+    ],
+    "teaching": "Old guaiac FOBT < FIT for usual single-round cancer detection; FIT is not 100% sensitive and is less sensitive for advanced adenomas."
+  },
+  {
+    "id": "nbme28-20261112-familial-crc-colonoscopy",
+    "topic": "Preventive Medicine",
+    "level": 2,
+    "stem": "An asymptomatic 67-year-old has a mother and brother with colorectal cancer, both first-degree relatives. Which is the preferred screening approach?",
+    "options": [
+      "Colonoscopy at shortened intervals rather than reliance on a single stool test",
+      "One negative guaiac occult blood sample permanently excludes colorectal cancer",
+      "Annual blood hemoglobin testing alone replaces colorectal screening"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Two affected first-degree relatives generally warrant colonoscopy screening, commonly every five years, starting at age 40 or ten years before the youngest family diagnosis, whichever comes earlier. Annual FIT may be offered if colonoscopy is refused, with appropriate counseling.",
+      "Occult bleeding is intermittent and no single negative stool sample definitively excludes colorectal cancer or advanced adenomas.",
+      "A normal complete blood count or hemoglobin does not exclude colorectal cancer and is not a substitute for guideline-based screening."
+    ],
+    "teaching": "Strong first-degree family history → colonoscopy preferred; if declined, annual FIT may be offered, but a single negative FOBT is not reassuring."
   }
 ]);
