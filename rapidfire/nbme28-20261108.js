@@ -2159,5 +2159,95 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Immune thrombocytopenia usually causes isolated thrombocytopenia rather than severe pancytopenia, acquired abnormal marrow clones, and increased myeloid blasts."
     ],
     "teaching": "Pediatric MDS with increased blasts may show 5–19% marrow blasts; AML generally requires 20% or an AML-defining genetic lesion. CBC counts and marrow blast fraction are distinct."
+  },
+  {
+    "id": "nbme28-20261112-respiratory-system-compliance",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "During an end-inspiratory hold, a mechanically ventilated patient has tidal volume 500 mL, end-expiratory airway pressure 5 cm H2O, and plateau pressure 25 cm H2O. What is the static compliance of the entire respiratory system?",
+    "options": [
+      "25 mL/cm H2O",
+      "20 mL/cm H2O",
+      "0.04 cm H2O/mL"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Static respiratory-system compliance equals ΔV/ΔP = 500/(25−5) = 25 mL/cm H2O. The airway driving pressure includes lung plus chest wall mechanics.",
+      "20 mL/cm H2O results from dividing 500 by plateau pressure 25 and neglecting baseline end-expiratory pressure (PEEP).",
+      "0.04 cm H2O/mL is the reciprocal, elastance = ΔP/ΔV = 20/500, not compliance; note the inverted units."
+    ],
+    "teaching": "Static Crs = VT/(Pplat−total PEEP), with zero inspiratory flow; units mL/cm H2O. Inverse = elastance."
+  },
+  {
+    "id": "nbme28-20261112-transpulmonary-pressure-change",
+    "topic": "Respiratory Physiology",
+    "level": 3,
+    "stem": "A ventilated patient has plateau airway pressure 25 cm H2O and end-inspiratory esophageal pressure +20 cm H2O. End-expiratory airway pressure is 5 cm H2O, but end-expiratory esophageal pressure is unknown. What can be calculated?",
+    "options": [
+      "End-inspiratory transpulmonary pressure, but not isolated lung compliance",
+      "Isolated lung compliance as 500/(25−20)",
+      "Chest wall compliance as 500/(25−5)"
+    ],
+    "answer": 0,
+    "explanations": [
+      "End-inspiratory transpulmonary pressure is Paw−Ppl ≈ 25−20=5 cm H2O. Lung compliance requires the CHANGE in transpulmonary pressure from end expiration to end inspiration; end-expiratory pleural pressure is missing.",
+      "500/(25−20) uses only the end-inspiratory transpulmonary pressure, not Δtranspulmonary pressure, so 100 mL/cm H2O is not a valid isolated lung compliance calculation.",
+      "500/(25−5) yields compliance of the entire respiratory system (lung and chest wall), not chest wall alone."
+    ],
+    "teaching": "Transpulmonary pressure = alveolar−pleural; isolated lung compliance uses Δtranspulmonary pressure, not a single end-inspiratory value."
+  },
+  {
+    "id": "nbme28-20261112-elastance-vs-compliance",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "A 500 mL tidal breath requires a 20 cm H2O increase in static airway pressure. What is the respiratory-system elastance?",
+    "options": [
+      "0.04 cm H2O/mL",
+      "25 mL/cm H2O",
+      "100 mL/cm H2O"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Elastance is the inverse of compliance: ΔP/ΔV=20/500=0.04 cm H2O/mL.",
+      "25 mL/cm H2O is compliance, computed as ΔV/ΔP=500/20, not elastance.",
+      "100 mL/cm H2O would result from dividing the tidal volume by an unrelated 5 cm H2O pressure rather than the relevant 20 cm H2O pressure change."
+    ],
+    "teaching": "Compliance = volume/pressure (mL/cm H2O); elastance = pressure/volume (cm H2O/mL)."
+  },
+  {
+    "id": "nbme28-20261112-peak-plateau-resistance",
+    "topic": "Respiratory Physiology",
+    "level": 3,
+    "stem": "During volume-controlled mechanical ventilation, peak inspiratory pressure increases but the end-inspiratory plateau pressure remains unchanged. What has most likely increased?",
+    "options": [
+      "Airway resistance",
+      "Static respiratory-system elastance",
+      "End-expiratory transpulmonary pressure"
+    ],
+    "answer": 0,
+    "explanations": [
+      "With similar flow and volume, a larger peak-to-plateau pressure difference indicates increased airway resistance, as from bronchospasm, secretions, or a narrowed endotracheal tube.",
+      "Static elastance is derived from driving pressure (plateau minus total PEEP) divided by tidal volume; an unchanged plateau at unchanged volume and PEEP does not indicate increased elastance.",
+      "End-expiratory transpulmonary pressure requires pleural pressure assessment and is not determined by an isolated rise in peak pressure."
+    ],
+    "teaching": "Peak − plateau reflects resistive pressure during flow; plateau − PEEP reflects elastic driving pressure during zero-flow hold."
+  },
+  {
+    "id": "nbme28-20261112-low-compliance-ards",
+    "topic": "Respiratory Physiology",
+    "level": 2,
+    "stem": "A ventilated patient with acute respiratory distress syndrome requires a larger pressure change than before to deliver the same tidal volume. What has happened to respiratory-system compliance?",
+    "options": [
+      "It has decreased",
+      "It has increased",
+      "It is unchanged because tidal volume is fixed"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Compliance is ΔV/ΔP; with a constant delivered volume, increased driving pressure means reduced compliance, as in stiff edematous lungs during ARDS.",
+      "Increased compliance would mean a given pressure change produces a greater volume (or the same volume needs less pressure).",
+      "Fixing tidal volume does not fix compliance; pressure requirements still depend on lung and chest-wall mechanics."
+    ],
+    "teaching": "Stiffer lungs or chest wall → lower compliance; for the same VT, higher plateau-minus-PEEP driving pressure."
   }
 ]);
