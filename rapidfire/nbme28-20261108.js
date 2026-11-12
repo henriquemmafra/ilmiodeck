@@ -2033,5 +2033,95 @@ window.RAPIDFIRE_QUESTIONS = (window.RAPIDFIRE_QUESTIONS || []).concat([
       "Some amino acids yield only gluconeogenic intermediates, but phenylalanine and tyrosine also produce acetoacetate."
     ],
     "teaching": "Phenylalanine/tyrosine → fumarate (glucogenic) + acetoacetate (ketogenic)."
+  },
+  {
+    "id": "nbme28-20261112-fanconi-clinical",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "A 12-year-old boy with absent thumbs, short stature, microcephaly, hyperpigmented skin, macrocytic pancytopenia, and acquired marrow chromosomal abnormalities has which inherited defect?",
+    "options": [
+      "Failure to repair DNA interstrand cross-links",
+      "Defective pre-mRNA splicing of selected transcripts",
+      "Impaired telomere maintenance with nail dystrophy and oral leukoplakia"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fanconi anemia results from defects in the FA/BRCA DNA interstrand cross-link repair network, causing chromosomal instability, congenital malformations, marrow failure, and increased MDS/AML risk.",
+      "RNA-splicing defects can cause particular syndromes and hematologic disease but are not the characteristic explanation for absent thumbs plus childhood marrow failure and chromosomal fragility.",
+      "Telomere biology disorders such as dyskeratosis congenita also cause marrow failure, but the classic triad includes nail dystrophy, reticular skin pigmentation, and oral leukoplakia."
+    ],
+    "teaching": "Fanconi anemia = DNA interstrand cross-link repair defect; radial ray/thumb anomalies + pancytopenia + chromosomal instability."
+  },
+  {
+    "id": "nbme28-20261112-fanconi-test",
+    "topic": "Hematology",
+    "level": 3,
+    "stem": "A child with absent thumbs and progressive pancytopenia is suspected of having Fanconi anemia. Which functional test most directly supports the diagnosis?",
+    "options": [
+      "Increased chromosome breaks after diepoxybutane or mitomycin C exposure",
+      "Absent glucocerebrosidase activity in leukocytes",
+      "Elevated urinary orotic acid with hyperammonemia"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fanconi anemia cells have increased chromosome breakage and radial figures after exposure to DNA cross-linking agents such as diepoxybutane (DEB) or mitomycin C (MMC). Molecular testing then characterizes the genetic defect.",
+      "Deficient glucocerebrosidase indicates Gaucher disease, which can cause hepatosplenomegaly and cytopenias but not Fanconi DNA cross-link hypersensitivity.",
+      "Hyperammonemia with orotic aciduria is characteristic of OTC deficiency, not a DNA-repair disorder."
+    ],
+    "teaching": "Functional confirmation of Fanconi anemia: chromosome breakage test with DEB/MMC; gene testing identifies the subtype."
+  },
+  {
+    "id": "nbme28-20261112-fanconi-vs-dyskeratosis",
+    "topic": "Hematology",
+    "level": 2,
+    "stem": "A teenager with progressive marrow failure has dystrophic fingernails, reticular skin hyperpigmentation, and oral leukoplakia. Which process is most likely impaired?",
+    "options": [
+      "Telomere maintenance",
+      "Fanconi pathway-mediated DNA cross-link repair",
+      "Nucleotide excision repair of ultraviolet DNA photoproducts"
+    ],
+    "answer": 0,
+    "explanations": [
+      "The classic mucocutaneous triad plus marrow failure suggests dyskeratosis congenita, a telomere biology disorder involving telomerase or related telomere-maintenance components.",
+      "Fanconi anemia can cause pigmentation changes and marrow failure but is particularly associated with congenital radial ray anomalies, including thumb defects.",
+      "Nucleotide excision repair deficiency causes xeroderma pigmentosum with severe UV sensitivity and early skin cancers, not the characteristic dyskeratosis congenital triad."
+    ],
+    "teaching": "Dyskeratosis congenita = telomere dysfunction + nails, reticular pigmentation, oral leukoplakia; Fanconi = cross-link repair + thumb anomalies."
+  },
+  {
+    "id": "nbme28-20261112-xp-ner-not-photolyase",
+    "topic": "Genetics",
+    "level": 2,
+    "stem": "A child has severe photosensitivity and multiple early skin cancers due to failure to remove UV-induced bulky DNA lesions. Which repair pathway is defective?",
+    "options": [
+      "Nucleotide excision repair (NER)",
+      "Mismatch repair (MMR)",
+      "Fanconi interstrand cross-link repair"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Xeroderma pigmentosum results from nucleotide excision repair defects, which prevent removal of bulky UV-induced pyrimidine dimers. Human cells do not rely on functional photolyase for this repair.",
+      "Mismatch repair defects cause microsatellite instability and Lynch syndrome, not the typical severe childhood UV hypersensitivity of xeroderma pigmentosum.",
+      "Fanconi pathway defects impair interstrand cross-link repair and cause congenital anomalies and bone marrow failure rather than the characteristic XP phenotype."
+    ],
+    "teaching": "Xeroderma pigmentosum = NER defect, not human photolyase deficiency; Fanconi = interstrand cross-link repair."
+  },
+  {
+    "id": "nbme28-20261112-macrocytosis-mds-fanconi",
+    "topic": "Hematology",
+    "level": 3,
+    "stem": "A patient with inherited chromosomal instability develops anemia, leukopenia, thrombocytopenia, macrocytosis, and 15% marrow blasts. Which complication is especially concerning?",
+    "options": [
+      "Myelodysplastic neoplasm with excess blasts",
+      "Isolated immune thrombocytopenia",
+      "Iron deficiency anemia from reduced dietary iron"
+    ],
+    "answer": 0,
+    "explanations": [
+      "Fanconi anemia predisposes to clonal myeloid disease. Cytopenias with acquired chromosome abnormalities and 15% marrow blasts strongly suggest an advanced myelodysplastic neoplasm (classification details vary).",
+      "Immune thrombocytopenia typically causes isolated low platelets without profound leukopenia, macrocytosis, or increased marrow blasts.",
+      "Iron deficiency produces classically microcytic anemia and does not explain pan-lineage cytopenias with clonal cytogenetic abnormalities."
+    ],
+    "teaching": "Fanconi anemia → marrow failure + MDS/AML risk; 15% blasts with clonal abnormalities supports MDS with increased blasts, not uncomplicated aplasia."
   }
 ]);
