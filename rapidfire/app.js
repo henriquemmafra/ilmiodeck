@@ -396,12 +396,12 @@
         var wrapper = make("div", "option-group");
         var btn = make("button", "option");
         btn.type = "button";
-        btn.disabled = selected !== null;
-        if (selected !== null && index === q.answer) btn.classList.add("correct");
+        btn.disabled = selected !== null && index !== q.answer;
+        if (selected !== null && index === q.answer) { btn.classList.add("correct"); btn.title = "Tap the correct answer again to go to the next question"; btn.setAttribute("aria-label", label + ". Correct answer. Tap to go to the next question."); }
         if (selected === index && selected !== q.answer) btn.classList.add("incorrect");
         btn.appendChild(make("span", "letter", String.fromCharCode(65 + index)));
         btn.appendChild(make("span", "", label));
-        btn.addEventListener("click", function () { grade(index); });
+        btn.addEventListener("click", function () { if (selected !== null) { if (index === q.answer) nextQuestion(); } else grade(index); });
         wrapper.appendChild(btn);
         if (selected !== null) {
           var isCorrect = index === q.answer;
