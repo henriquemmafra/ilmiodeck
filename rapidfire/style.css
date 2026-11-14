@@ -190,3 +190,24 @@ footer{color:#7a8a9b}
  .recall-grade{min-width:0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+
+/* Adaptive spaced-repetition controls: prominent next review and clear ratings. */
+.spaced-review{margin-top:16px;border:1px solid #dcdaf6;background:#f6f5ff;border-radius:15px;padding:16px}
+.spaced-review-title{margin:0 0 7px;font-weight:850;color:#3e3e91;font-size:14px;line-height:1.4}
+.spaced-review-note{margin:0 0 13px;font-size:12px;line-height:1.5;color:#68728f}
+.spaced-review-buttons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.spaced-rating{font:inherit;font-weight:800;font-size:12px;line-height:1.4;padding:12px 6px;border-radius:10px;border:1px solid #d5d9ed;background:#fff;color:#3d4c6b;min-height:45px}
+.spaced-rating:not(:disabled):hover{border-color:#7770e1;background:#eeedff}
+.spaced-rating.active{background:#6965ce;border-color:#6965ce;color:#fff}
+.spaced-rating.active:disabled{opacity:1}
+.spaced-rating:disabled:not(.active){opacity:.45}
+.spaced-review-hint{font-size:11px;line-height:1.55;color:#73809a;margin:13px 0 0}
+#review-summary{font-variant-numeric:tabular-nums;color:#5c55b4;font-weight:800;text-align:right}
+@media(max-width:460px){
+ .spaced-review{padding:12px}
+ .spaced-review-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .spaced-rating{font-size:12px;min-height:42px}
+ .session-line{align-items:flex-start;gap:12px}
+ #review-summary{font-size:11px;max-width:55%}
+}
