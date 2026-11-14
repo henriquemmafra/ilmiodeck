@@ -194,7 +194,7 @@
       localStorage.setItem(key, JSON.stringify(value));
       return true;
     } catch (e) {
-      status("Não foi possível salvar neste navegador. Exporte um backup ou libere espaço.", true);
+      status("Unable to save in this browser. Export a backup or free up storage.", true);
       return false;
     }
   }
@@ -506,7 +506,7 @@
   }
   function handleImport(file) {
     if (!file) return;
-    if (file.size > 3 * 1024 * 1024) { status("Arquivo muito grande (máximo 3 MB).", true); return; }
+    if (file.size > 3 * 1024 * 1024) { status("File too large (maximum 3 MB).", true); return; }
     var reader = new FileReader();
     reader.onload = function () {
       try {
@@ -524,9 +524,9 @@
         }
         var result = importRows(rows);
         status("Importados: " + result.added + ". Ignorados (duplicados/incompletos): " + result.ignored + ".", false);
-      } catch (e) { status("Falha na importação: " + e.message, true); }
+      } catch (e) { status("Import failed: " + e.message, true); }
     };
-    reader.onerror = function () { status("Não foi possível ler o arquivo.", true); };
+    reader.onerror = function () { status("Unable to read the file.", true); };
     reader.readAsText(file);
   }
   function downloadJson() {
@@ -555,22 +555,22 @@
       correct: el("new-correct").value,
       explanations: el("new-explanations").value
     });
-    if (!item) { status("Preencha pelo menos pergunta e resposta.", true); return; }
+    if (!item) { status("Enter at least a question and an answer.", true); return; }
     var result = importRows([item]);
     if (result.added) {
       this.reset();
-      status("Cartão criado. Ele já aparece na revisão.", false);
-    } else status("Este cartão já existe.", true);
+      status("Card created. It is now available for review.", false);
+    } else status("This card already exists.", true);
   });
   el("export-cards").addEventListener("click", downloadJson);
   el("clear-cards").addEventListener("click", function () {
     if (!custom.length) return;
-    if (!confirm("Excluir todos os seus cartões salvos neste navegador? Seus cartões originais de exemplo não serão afetados.")) return;
+    if (!confirm("Delete all your cards saved in this browser? The original sample cards will not be affected.")) return;
     custom = [];
     save(KEY_CARDS, custom);
     refreshSubjects();
     buildSession();
-    status("Cartões pessoais excluídos deste navegador.", false);
+    status("Personal cards deleted from this browser.", false);
   });
   ["subject-filter", "source-filter", "study-filter"].forEach(function (id) {
     el(id).addEventListener("change", buildSession);
