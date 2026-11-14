@@ -141,6 +141,7 @@ ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 <script>
+window.addEventListener('error',e=>{const f=document.getElementById('fail');if(f){f.hidden=false;f.firstElementChild.textContent='Error: '+(e.message||e);}});
 (function(){
 'use strict';
 const $=s=>document.querySelector(s);
@@ -746,7 +747,8 @@ function fitIds(ids,dur=1000){
   ids.forEach(id=>{const n=N[id];box.expandByPoint(V(n.tgt.x-n.W/2,n.tgt.y-.9,n.tgt.z-1));box.expandByPoint(V(n.tgt.x+n.W/2,n.tgt.y+n.H+1.2,n.tgt.z+1));});
   const c=box.getCenter(V()),sz=box.getSize(V());
   const fov=camera.fov*Math.PI/180,{w,h,ox,oy}=viewport();
-  const aspect=(w-ox*2)/(h-oy*2);
+  if(w<2||h<2)return;
+  const aspect=Math.max(.2,(w-ox*2)/Math.max(1,h-oy*2));
   const dist=Math.max(sz.y/2/Math.tan(fov/2),sz.x/2/(Math.tan(fov/2)*aspect))*1.12+sz.z/2+2;
   const cur=camera.position.clone().sub(controls.target).normalize();
   const dir=cur.lerp(DEFDIR,.55).normalize();
@@ -838,10 +840,13 @@ function resizePV(){if(!pv)return;const w=pv.c.clientWidth,h=pv.c.clientHeight;i
 
 /* ================= sizing ================= */
 function viewport(){const w=canvas.clientWidth,h=canvas.clientHeight;const pw=panelId?(mobile()?0:panel.offsetWidth):0,ph=panelId&&mobile()?panel.offsetHeight:0;return {w,h,ox:pw/2,oy:ph/2};}
-function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();applyOffset();resizePV();
+let booted=false;
+function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;if(w<2||h<2)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();applyOffset();resizePV();
+  if(!booted){booted=true;fitIds(visibleIds(),10);}
   Object.values(N).forEach(n=>{const c=n.el.classList.contains('compact');n.el.classList.remove('compact');n.lw=n.el.offsetWidth;n.lh=n.el.offsetHeight;n.el.classList.add('compact');n.lwC=n.el.offsetWidth;n.lhC=n.el.offsetHeight;n.el.classList.toggle('compact',c);n.cw=n.chipEls.map(e=>e.offsetWidth);});}
 function applyOffset(){const w=canvas.clientWidth,h=canvas.clientHeight;if(Math.abs(offX)<.5&&Math.abs(offY)<.5){camera.clearViewOffset();}else camera.setViewOffset(w,h,offX,offY,w,h);}
 addEventListener('resize',resize);
+if(window.ResizeObserver)new ResizeObserver(()=>resize()).observe(canvas);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(resize);
 
 /* ================= frame loop ================= */
@@ -852,6 +857,7 @@ function edgeCurve(e){const p=N[e.p],c=N[e.c];
   return new THREE.CubicBezierCurve3(a,a.clone().add(V(0,-LEVEL*.38,0)),b.clone().add(V(0,LEVEL*.36,0)),b);}
 function frame(now){
   requestAnimationFrame(frame);
+  if(!booted){resize();if(!booted)return;}
   const dt=Math.min(.05,(now-last)/1000);last=now;
   if(!paused)simT+=dt;
   texAcc+=dt;const tick=texAcc>.066;if(tick)texAcc=0;
@@ -916,7 +922,6 @@ function frame(now){
   rects.forEach(r=>{if(r.hide){r.el.style.opacity=0;r.el.style.pointerEvents='none';}});
 }
 resize();
-fitIds(['root'],10);
 setTimeout(()=>{select(null);},0);
 requestAnimationFrame(frame);
 window.__atlas={N,fitIds,toggle,openPanel,closePanel,select,skip:x=>{simT+=x;}};
