@@ -564,12 +564,24 @@ function plateWith({base,cols,mat,halo,grow=1}){
 }
 function contentRootGN(){
   const g=new THREE.Group();
-  const slide=new THREE.Mesh(new THREE.BoxGeometry(7.6,.035,.7),M.glass);slide.position.y=.02;slide.renderOrder=3;g.add(slide);
-  const smear=new THREE.Mesh(new THREE.PlaneGeometry(6.8,.45),new THREE.MeshStandardMaterial({color:0xf2b8c8,transparent:true,opacity:.5,roughness:.7}));smear.rotation.x=-Math.PI/2;smear.position.y=.042;g.add(smear);
-  const d=beanPair();d.g.position.set(-3,1.15,0);d.g.scale.setScalar(1.4);addPili(d.g,d.cells,{n:16,len:.1,seed:3});g.add(d.g);
-  const cb=rodsOf([[-.25,0,0,0,.3],[.2,.12,.1,1,-.2],[.05,-.22,-.1,.4,.9]],{len:.42,r:.15});cb.g.position.set(0,1.15,0);g.add(cb.g);
-  const rd=rodsOf([[0,0,0,.3,.1]],{len:1,r:.19});addFlagella(rd.g,rd.cells,{n:7,len:.9,seed:4});rd.g.position.set(3,1.15,0);g.add(rd.g);
-  return {g,H:1.8,W:9,ports:[-3,0,3],chips:[['Diplococci','p'],['Coccobacilli','p'],['Rods','p']],
+  /* a microscope field under each group: how that shape looks on the Gram-stained slide */
+  const field=(kind,seed)=>{const c=cnv(256),x=c.getContext('2d'),R=rng(seed);
+    const gr=x.createRadialGradient(128,128,0,128,128,128);gr.addColorStop(0,'#fff8f2');gr.addColorStop(.8,'#f3e4e6');gr.addColorStop(.97,'#c9b6bc');gr.addColorStop(1,'#111');x.fillStyle=gr;x.fillRect(0,0,256,256);
+    x.fillStyle='#d64f7e';x.strokeStyle='#a8325c';x.lineWidth=1.2;
+    for(let i=0;i<(kind==='rod'?16:kind==='cb'?34:20);i++){const a=R()*7,r=Math.sqrt(R())*96,cx=128+Math.cos(a)*r,cy=128+Math.sin(a)*r,rot=R()*3.14;
+      x.save();x.translate(cx,cy);x.rotate(rot);x.beginPath();
+      if(kind==='diplo'){x.ellipse(-6,0,5.5,7,0,0,7);x.fill();x.stroke();x.beginPath();x.ellipse(6,0,5.5,7,0,0,7);}
+      else if(kind==='cb'){x.ellipse(0,0,5.5,3.8,0,0,7);}
+      else{x.ellipse(0,0,13,4.2,0,0,7);}
+      x.fill();x.stroke();x.restore();}
+    x.lineWidth=10;x.strokeStyle='#0d1424';x.beginPath();x.arc(128,128,124,0,7);x.stroke();return tex(c);};
+  [['diplo',-3,11],['cb',0,12],['rod',3,13]].forEach(([k,xx,sd])=>{
+    const disc=new THREE.Mesh(new THREE.CircleGeometry(.62,64),new THREE.MeshBasicMaterial({map:field(k,sd)}));disc.position.set(xx,.35,0);disc.rotation.x=-.75;g.add(disc);
+    const ring=new THREE.Mesh(new THREE.TorusGeometry(.63,.05,12,64),M.metal);ring.position.copy(disc.position);ring.rotation.x=-.75;g.add(ring);});
+  const d=beanPair();d.g.position.set(-3,1.6,0);d.g.scale.setScalar(1.4);addPili(d.g,d.cells,{n:16,len:.1,seed:3});g.add(d.g);
+  const cb=rodsOf([[-.25,0,0,0,.3],[.2,.12,.1,1,-.2],[.05,-.22,-.1,.4,.9]],{len:.42,r:.15});cb.g.position.set(0,1.6,0);g.add(cb.g);
+  const rd=rodsOf([[0,0,0,.3,.1]],{len:1,r:.19});addFlagella(rd.g,rd.cells,{n:7,len:.9,seed:4});rd.g.position.set(3,1.6,0);g.add(rd.g);
+  return {g,H:2.2,W:9,ports:[-3,0,3],chips:[['Diplococci','p'],['Coccobacilli','p'],['Rods','p']],
     update(t){d.g.rotation.y=t*.4;cb.g.rotation.y=-t*.3;rd.g.rotation.y=Math.sin(t*.5)*.6;}};
 }
 function tubesWith(defs,{rackW=2.4}={}){/* defs: [x, from, to, positive] → liquid colour shifts from→to when positive */
