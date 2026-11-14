@@ -992,7 +992,7 @@ function openPanel(id){
   const m=d.model();const box=new THREE.Box3().setFromObject(m),sz=box.getSize(V()).length();m.scale.setScalar(2.6/sz);box.setFromObject(m);m.position.sub(box.getCenter(V()));
   m.traverse(fixMat);const holder=new THREE.Group();holder.add(m);pv.s.add(holder);pv.obj=holder;pv.ctl.reset&&pv.ctl.reset();
   pbody.innerHTML=`<div class="ey">${d.group}</div><h2>${d.name}</h2>${d.aka?`<div class="aka">${d.aka}</div>`:'<div class="aka"></div>'}
-    <dl class="kv"><dt>Gram</dt><dd>Positive (purple)</dd><dt>Morphology</dt><dd>${d.morph}</dd></dl>
+    <dl class="kv"><dt>Gram</dt><dd>${d.gram||'Positive (purple)'}</dd><dt>Morphology</dt><dd>${d.morph}</dd></dl>
     <h3>Identification</h3><div class="tests">${d.tests.map(([t,v,k])=>`<span class="tst ${k}">${t}<i>${v}</i></span>`).join('')}</div>
     <h3>High-yield · Step 1</h3><ul class="hy">${d.clin.map(x=>`<li>${x}</li>`).join('')}</ul>
     <h3>Don't confuse</h3><p>${d.diff}</p>
