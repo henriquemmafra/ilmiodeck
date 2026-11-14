@@ -45,7 +45,7 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 .lab.compact{padding:3px 7px}
 .lab.sel{border-color:var(--ivory);box-shadow:0 0 0 3px rgba(242,234,211,.16)}
 .lab .more{display:inline-block;margin-left:6px;font:500 11px/1 var(--f-mono);color:var(--ivory);opacity:.8}
-.chip{position:absolute;left:0;top:0;pointer-events:none;white-space:nowrap;font:500 11.5px/1 var(--f-label);letter-spacing:.02em;
+.chip{position:absolute;left:0;top:0;pointer-events:none;cursor:pointer;touch-action:manipulation;white-space:nowrap;font:500 11.5px/1 var(--f-label);letter-spacing:.02em;
   padding:4px 7px;border-radius:999px;background:rgba(6,16,36,.82);border:1px solid #2b4a7c;color:var(--ink-2);will-change:transform,opacity}
 .chip.p{color:#bff7cf;border-color:rgba(94,240,143,.5)}
 .chip.n{color:#ffc4c4;border-color:rgba(255,107,107,.45)}
@@ -153,7 +153,7 @@ body.pon .tools{margin-right:var(--pw);transition:margin .45s}
     </div>
   </header>
   <div class="status" id="status"></div>
-  <div class="hint" id="hint">Double-tap a node to expand · drag to orbit · pinch to zoom</div>
+  <div class="hint" id="hint">Tap a step or a result to open it · drag to orbit · pinch to zoom</div>
   <div class="snav" id="snav"><button id="sPrev" aria-label="Previous species">‹</button><span id="sName">Species<small>tap ‹ › to browse</small></span><button id="sNext" aria-label="Next species">›</button></div>
   <nav id="drawer" aria-hidden="true" aria-label="Species list"><div class="dh">Species<button id="dClose" aria-label="Close list">✕</button></div><ol id="dlist"></ol></nav>
   <aside id="panel" aria-hidden="true">
@@ -881,7 +881,7 @@ Object.keys(DEF).forEach(id=>{
   const hb=new THREE.Mesh(new THREE.BoxGeometry(n.W*.92,n.H+.9,2.2),M.hit);hb.position.y=n.H/2;hb.userData.id=id;n.root.add(hb);hits.push(hb);
   const el=document.createElement('div');el.className='lab '+d.cls;el.innerHTML=d.title+(d.children.length?'<span class="more">+</span>':'')+'<small>'+d.sub+'</small>';el.dataset.id=id;
   el.style.opacity=0;labelsEl.appendChild(el);n.el=el;
-  n.chipEls=(c.chips||[]).map(([txt,k])=>{const e=document.createElement('div');e.className='chip '+k;e.textContent=txt;e.style.opacity=0;labelsEl.appendChild(e);return e;});
+  n.chipEls=(c.chips||[]).map(([txt,k],ci)=>{const e=document.createElement('div');e.className='chip '+k;e.textContent=txt;e.style.opacity=0;e.dataset.p=id;e.dataset.i=ci;labelsEl.appendChild(e);return e;});
   N[id]=n;
 });
 Object.values(N).forEach(n=>n.children.forEach(k=>N[k].parent=n.id));
@@ -941,7 +941,7 @@ function select(id){
   if(!id){statusEl.classList.remove('on');return;}
   const parts=[];let q=id;const chain=[];while(q){chain.unshift(q);q=N[q].parent;}
   chain.forEach((c,i)=>{if(i>0&&VIA[c])parts.push(VIA[c]);});
-  const n=N[id];const act=n.species?'Double-tap to open the card':(n.children.length?(n.open?'Double-tap to collapse':'Double-tap to expand'):'');
+  const n=N[id];const act=n.species?'Tap to open the card':(n.children.length?(n.open?'Double-tap to collapse · tap a result below to follow it':'Tap to expand'):'');
   statusEl.innerHTML=`<b>${n.title}</b>${parts.length?' · '+parts.join(' → '):''}${act?'<br><span style="color:var(--ink-3)">'+act+'</span>':''}`;statusEl.classList.add('on');
 }
 function collapse(id){const n=N[id];n.open=false;n.children.forEach(collapse);}
@@ -954,9 +954,15 @@ function toggle(id){
 }
 function doubleTap(id){const n=N[id];if(n.species)openPanel(id);else toggle(id);}
 let lastTap={t:0,id:null};
+/* one tap opens (closed step → expand, species → card); a double tap on an already-open step closes it */
 function tapOn(id){const now=performance.now();
-  if(id&&lastTap.id===id&&now-lastTap.t<380){lastTap={t:0,id:null};doubleTap(id);}
-  else{lastTap={t:now,id};select(id||null);}}
+  if(id&&lastTap.id===id&&now-lastTap.t<380){const acted=lastTap.acted;lastTap={t:0,id:null};if(!acted&&N[id].open)toggle(id);return;}
+  let acted=false;
+  if(id){const n=N[id];if(n.species){openPanel(id);acted=true;}else if(n.children.length&&!n.open){toggle(id);acted=true;}else select(id);}
+  else select(null);
+  lastTap={t:now,id,acted};}
+function openChild(pid,i){const k=N[pid].children[i];if(!k)return;hintEl.style.opacity=0;reveal(k);
+  if(N[k].species){select(k);openPanel(k);}else{N[k].open=true;N[k].children.forEach(c=>{if(N[c].autoOpen)N[c].open=true;});relayout();select(k);fitIds(subtreeIds(k),1000);}}
 
 const ray=new THREE.Raycaster(),ndc=new THREE.Vector2();
 function pick(cx,cy){const r=canvas.getBoundingClientRect();ndc.set((cx-r.left)/r.width*2-1,-(cy-r.top)/r.height*2+1);ray.setFromCamera(ndc,camera);
@@ -966,7 +972,7 @@ canvas.addEventListener('pointerdown',e=>{down={x:e.clientX,y:e.clientY,t:perfor
 canvas.addEventListener('pointerup',e=>{if(!down)return;const mv=Math.hypot(e.clientX-down.x,e.clientY-down.y),dt=performance.now()-down.t;if(mv<9&&dt<400)tapOn(pick(e.clientX,e.clientY));down=null;});
 canvas.addEventListener('dblclick',e=>e.preventDefault());
 let hovT=0;canvas.addEventListener('pointermove',e=>{if(isTouch||e.buttons)return;const n=performance.now();if(n-hovT<80)return;hovT=n;canvas.classList.toggle('hot',!!pick(e.clientX,e.clientY));});
-labelsEl.addEventListener('pointerup',e=>{const el=e.target.closest('.lab');if(el)tapOn(el.dataset.id);});
+labelsEl.addEventListener('pointerup',e=>{const ch=e.target.closest('.chip');if(ch){openChild(ch.dataset.p,+ch.dataset.i);return;}const el=e.target.closest('.lab');if(el)tapOn(el.dataset.id);});
 labelsEl.addEventListener('dblclick',e=>e.preventDefault());
 
 $('#bAll').onclick=()=>{Object.values(N).forEach(n=>{if(n.children.length)n.open=true;});relayout();hintEl.style.opacity=0;setTimeout(()=>fitIds(visibleIds(),1100),30);};
@@ -1086,7 +1092,7 @@ function frame(now){
   const w=canvas.clientWidth,h=canvas.clientHeight,rects=[];
   const camDist=camera.position.distanceTo(controls.target);
   Object.values(N).forEach(n=>{
-    const el=n.el;if(n.vis<.05){el.style.opacity=0;el.dataset.op=0;el.style.pointerEvents='none';n.chipEls.forEach(c=>c.style.opacity=0);return;}
+    const el=n.el;if(n.vis<.05){el.style.opacity=0;el.dataset.op=0;el.style.pointerEvents='none';n.chipEls.forEach(c=>{c.style.opacity=0;c.style.pointerEvents='none';});return;}
     const s=n.root.scale.x;
     tmp.set(n.pos.x,n.pos.y+(n.H+.75)*s,n.pos.z).project(camera);
     const x=(tmp.x*.5+.5)*w,y=(-tmp.y*.5+.5)*h;
@@ -1100,7 +1106,7 @@ function frame(now){
     el.dataset.op=behind?0:clamp(n.vis*1.3);
     n.chipEls.forEach((c,i)=>{tmp2.set(n.pos.x+n.ports[i]*s,n.pos.y-.2*s,n.pos.z+1.1*s).project(camera);
       const cx=(tmp2.x*.5+.5)*w,cy=(-tmp2.y*.5+.5)*h;const cw=(n.cw&&n.cw[i])||80;
-      c.style.transform=`translate3d(${(cx-cw/2).toFixed(1)}px,${(cy+4).toFixed(1)}px,0)`;c.style.opacity=(tmp2.z>1||ppu<30)?0:clamp(n.vis*1.3-.3);});
+      c.style.transform=`translate3d(${(cx-cw/2).toFixed(1)}px,${(cy+4).toFixed(1)}px,0)`;const co=(tmp2.z>1||ppu<30)?0:clamp(n.vis*1.3-.3);c.style.opacity=co;c.style.pointerEvents=(co>.5&&n.children[i])?'auto':'none';});
   });
   rects.sort((a,b)=>b.pri-a.pri);
   for(let i=0;i<rects.length;i++){const a=rects[i];a.hide=false;for(let j=0;j<i;j++){const b=rects[j];if(b.hide)continue;
