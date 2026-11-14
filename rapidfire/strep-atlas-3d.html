@@ -352,20 +352,43 @@ function propCandle(){
   g.add(plate,body,drip,wick,flame,core,glow);g.userData.flame=flame;g.userData.glow=glow;return g;
 }
 function propTooth(){
-  const g=new THREE.Group(),enamel=new THREE.MeshPhysicalMaterial({color:0xf5f1e6,roughness:.22,clearcoat:1,clearcoatRoughness:.15});
-  const crown=new THREE.Mesh(GEO.sph,enamel);crown.scale.set(.34,.25,.3);crown.position.y=.5;
-  [[-.13,-.1],[.13,-.1],[-.12,.11],[.12,.11]].forEach(([x,z])=>{const c=new THREE.Mesh(GEO.sph,enamel);c.scale.set(.13,.1,.12);c.position.set(x,.68,z);g.add(c);});
-  [[-.13,-.15],[.13,.17]].forEach(([x,rz])=>{const r=new THREE.Mesh(new THREE.ConeGeometry(.11,.48,16),enamel);r.rotation.z=Math.PI+rz;r.position.set(x,.2,0);g.add(r);});
-  const caries=new THREE.Mesh(GEO.sph,new THREE.MeshStandardMaterial({color:0x3b2412,roughness:.9}));caries.scale.set(.09,.07,.04);caries.position.set(.08,.6,.265);
-  g.add(crown,caries);return g;
+  const s=new THREE.Shape();
+  s.moveTo(-.30,-.62);
+  s.quadraticCurveTo(-.42,-.22,-.40,.04);
+  s.bezierCurveTo(-.54,.2,-.52,.5,-.32,.54);
+  s.quadraticCurveTo(-.17,.58,-.08,.46);
+  s.quadraticCurveTo(0,.39,.08,.46);
+  s.quadraticCurveTo(.17,.58,.32,.54);
+  s.bezierCurveTo(.52,.5,.54,.2,.40,.04);
+  s.quadraticCurveTo(.42,-.22,.30,-.62);
+  s.quadraticCurveTo(.23,-.7,.16,-.58);
+  s.quadraticCurveTo(.1,-.22,0,-.14);
+  s.quadraticCurveTo(-.1,-.22,-.16,-.58);
+  s.quadraticCurveTo(-.23,-.7,-.30,-.62);
+  const geo=new THREE.ExtrudeGeometry(s,{depth:.26,bevelEnabled:true,bevelThickness:.09,bevelSize:.07,bevelSegments:6,curveSegments:28});geo.center();
+  const enamel=new THREE.MeshPhysicalMaterial({color:0xf6f1e4,roughness:.25,clearcoat:1,clearcoatRoughness:.12});
+  const m=new THREE.Mesh(geo,enamel);
+  const caries=new THREE.Mesh(GEO.sph,new THREE.MeshStandardMaterial({color:0x3b2412,roughness:.9}));caries.scale.set(.1,.08,.035);caries.position.set(-.16,.3,.215);
+  const caries2=new THREE.Mesh(GEO.sph,caries.material);caries2.scale.set(.055,.045,.03);caries2.position.set(.2,.36,.2);
+  const g=new THREE.Group();g.add(m,caries,caries2);g.scale.setScalar(1.05);g.position.y=.55;g.userData.spin=g;return g;
 }
-function propKidney(){
+function kidneyGeo(){
   const s=new THREE.Shape();s.moveTo(0,.45);s.bezierCurveTo(.4,.48,.5,.15,.45,-.1);s.bezierCurveTo(.4,-.42,.05,-.5,-.12,-.32);s.bezierCurveTo(-.22,-.2,-.05,-.08,-.12,.05);s.bezierCurveTo(-.2,.2,-.3,.42,0,.45);
-  const geo=new THREE.ExtrudeGeometry(s,{depth:.14,bevelEnabled:true,bevelThickness:.09,bevelSize:.08,bevelSegments:5,curveSegments:24});geo.center();
-  const m=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({color:0x9e3f3f,roughness:.4,clearcoat:.5}));m.scale.setScalar(.85);
-  const cv=new THREE.CatmullRomCurve3([V(-.14,-.05,0),V(-.2,-.3,0),V(-.12,-.6,.02)]);
-  const ur=new THREE.Mesh(new THREE.TubeGeometry(cv,16,.025,8,false),new THREE.MeshStandardMaterial({color:0xd8b06b,roughness:.5}));
-  const g=new THREE.Group();g.add(m,ur);return g;
+  const geo=new THREE.ExtrudeGeometry(s,{depth:.14,bevelEnabled:true,bevelThickness:.09,bevelSize:.08,bevelSegments:5,curveSegments:24});geo.center();return geo;
+}
+function propUrinary(){
+  const g=new THREE.Group(),inflame=[],glows=[];
+  const kGeo=kidneyGeo();
+  [-1,1].forEach(sd=>{const mat=new THREE.MeshPhysicalMaterial({color:0xa8444a,roughness:.4,clearcoat:.5,emissive:0xff1a1a,emissiveIntensity:0});inflame.push(mat);
+    const k=new THREE.Mesh(kGeo,mat);k.scale.set(.5*sd,.5,.5);k.position.set(.46*sd,.62,0);k.rotation.z=-.15*sd;g.add(k);
+    const gl=glowSprite('rgba(255,40,40,.8)',.8);gl.position.set(.46*sd,.62,.15);g.add(gl);glows.push(gl);
+    const cv=new THREE.CatmullRomCurve3([V(.36*sd,.6,0),V(.3*sd,.35,.02),V(.18*sd,.0,.02),V(.1*sd,-.14,0)]);
+    g.add(new THREE.Mesh(new THREE.TubeGeometry(cv,18,.02,8,false),new THREE.MeshStandardMaterial({color:0xd8b06b,roughness:.5})));});
+  const bm=new THREE.MeshPhysicalMaterial({color:0xd27470,roughness:.35,clearcoat:.6,emissive:0xff2020,emissiveIntensity:0});inflame.push(bm);
+  const bl=new THREE.Mesh(GEO.sph,bm);bl.scale.set(.24,.2,.2);bl.position.y=-.26;g.add(bl);
+  const ur=new THREE.Mesh(new THREE.CylinderGeometry(.025,.02,.18,8),new THREE.MeshStandardMaterial({color:0xd8b06b,roughness:.5}));ur.position.y=-.52;g.add(ur);
+  const gb=glowSprite('rgba(255,40,40,.8)',.75);gb.position.set(0,-.26,.15);g.add(gb);glows.push(gb);
+  g.userData.inflame=inflame;g.userData.glows=glows;return g;
 }
 function propColon(){
   const g=new THREE.Group();
@@ -458,18 +481,18 @@ const rustTex=(()=>{const c=cnv(128),g=c.getContext('2d'),r=rng(19);g.fillStyle=
 function neonSign(text,on){
   const g=new THREE.Group(),R=rng(text.length*7+(on?1:2));
   const mat=on?new THREE.MeshStandardMaterial({color:0x1fae4f,emissive:0x12c24a,emissiveIntensity:1,roughness:.3,envMapIntensity:.3})
-              :new THREE.MeshStandardMaterial({color:0x7a201c,map:rustTex,emissive:0x5a0808,emissiveIntensity:.04,roughness:.88,metalness:.15});
+              :new THREE.MeshStandardMaterial({color:0x8a2a20,map:rustTex,emissive:0xff2a14,emissiveIntensity:.9,roughness:.75,metalness:.15});
   fixMat({material:mat});
-  g.userData={on,mat,next:2+R()*3,flick:0};
+  g.userData={on,mat,mats:[],t:0,evT:.6,evEnd:0,dead:Math.floor(text.length*.6),stut:Math.floor(text.length*.25)};
   const build=()=>{
     if(FONT){
       const letters=[];let x=0;
       for(const ch of text){const geo=new THREE.TextGeometry(ch,{font:FONT,size:.2,height:.05,curveSegments:5,bevelEnabled:true,bevelThickness:.008,bevelSize:.006,bevelSegments:2});geo.computeBoundingBox();const w=geo.boundingBox.max.x-geo.boundingBox.min.x;letters.push([geo,x]);x+=w+.035;}
       const W=x-.035;
-      letters.forEach(([geo,lx],i)=>{const m=new THREE.Mesh(geo,mat);m.position.set(lx-W/2,0,0);
+      letters.forEach(([geo,lx],i)=>{const lm=on?mat:mat.clone();if(!on){FIXED.add(lm);g.userData.mats.push(lm);}const m=new THREE.Mesh(geo,lm);m.position.set(lx-W/2,0,0);
         if(!on){m.rotation.z=(R()-.5)*.12;m.position.y+=(R()-.5)*.03;if(i===Math.floor(text.length*.6)){m.rotation.z=-.5;m.position.y-=.07;}}
         g.add(m);});
-      if(on){const gl=glowSprite('rgba(40,255,110,.75)',1);gl.scale.set(W*1.6,.9,1);gl.position.set(0,.1,-.05);g.add(gl);g.userData.glow=gl;}
+      const gl=glowSprite(on?'rgba(40,255,110,.75)':'rgba(255,50,30,.7)',1);gl.scale.set(W*1.6,.9,1);gl.position.set(0,.1,-.05);g.add(gl);g.userData.glow=gl;
     }else{
       const c=cnv(512,96),x=c.getContext('2d');x.font='700 64px IBM Plex Sans, sans-serif';x.textAlign='center';x.textBaseline='middle';
       x.fillStyle=on?'#7dffa6':'#7a201c';if(on){x.shadowColor='#2bff6c';x.shadowBlur=18;}x.fillText(text,256,52);
@@ -479,7 +502,15 @@ function neonSign(text,on){
   if(fontDone)build();else fontWait.push(build);
   g.userData.update=(t,dt)=>{const u=g.userData;
     if(u.on){const pl=.5+.5*Math.sin(t*3.2);u.mat.emissiveIntensity=.55+.75*pl;if(u.glow)u.glow.material.opacity=.45+.4*pl;}
-    else{u.next-=dt;if(u.next<0){u.flick=.16;u.next=3+Math.random()*4;}if(u.flick>0){u.flick-=dt;u.mat.emissiveIntensity=(Math.sin(u.flick*90)>0)?.9:.05;}else u.mat.emissiveIntensity=.04;}
+    else{u.t+=dt;
+      if(u.t>u.evT){u.evT=u.t+.5+Math.random()*1.6;u.evEnd=u.t+.12+Math.random()*.45;u.hz=14+Math.random()*22;}
+      const inEv=u.t<u.evEnd;const buzz=.85+.12*Math.sin(u.t*120)*Math.sin(u.t*7.3);
+      const main=inEv?((Math.sin(u.t*u.hz*6.28)>-.1)?(Math.random()<.3?.15:1):.04):1;
+      u.mats.forEach((m,i)=>{let v=main*buzz;
+        if(i===u.dead)v=(inEv&&Math.random()<.18)?.7:.02;
+        else if(i===u.stut)v*=(Math.sin(u.t*9.7)+Math.sin(u.t*23.1)>.9)?.05:1;
+        m.emissiveIntensity=v*1.15;});
+      if(u.glow)u.glow.material.opacity=.55*main*buzz;}
   };
   return g;
 }
@@ -542,15 +573,17 @@ function contentDisk(drug,letter,hemo){
   function draw2(p,q,t){p.set(q,0);}
 }
 function contentBile(){
-  const g=new THREE.Group();g.add(rack(1.1));
-  const tb=tubeGlass();tb.position.y=.02;
-  const uni={uF:{value:0}};
-  const mat=new THREE.ShaderMaterial({uniforms:uni,
-    vertexShader:'varying float vY;varying vec3 vN;varying vec3 vV;void main(){vY=position.y;vec4 mv=modelViewMatrix*vec4(position,1.);vN=normalize(normalMatrix*normal);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}',
-    fragmentShader:'uniform float uF;varying float vY;varying vec3 vN;varying vec3 vV;void main(){vec3 amber=vec3(.74,.47,.16);vec3 dark=vec3(.07,.045,.025);float d=smoothstep(uF+.14,uF-.14,vY);vec3 col=mix(amber,dark,d);float l=.55+.5*max(dot(normalize(vN),normalize(vec3(.4,.7,.6))),0.);float fr=pow(1.-abs(dot(normalize(vN),normalize(vV))),3.);gl_FragColor=vec4(col*l+fr*.22*vec3(1.,.85,.6),1.);}'});
-  const liq=new THREE.Mesh(liquidGeo(.18,1.05),mat);liq.position.y=.04;
-  g.add(liq,tb);
-  return {g,H:1.8,W:3.4,ports:[0],chips:[['Blackens +','p']],update(t){const q=(t%9)/9;uni.uF.value=sm(.05,.75,q)*(1-sm(.9,1,q))*1.35-.12;}};
+  const g=new THREE.Group();g.add(rack(2.4));
+  const unis=[];
+  [[-.75,true],[.75,false]].forEach(([x,pos])=>{
+    const tb=tubeGlass();tb.position.set(x,.02,0);
+    const uni={uF:{value:-1}};unis.push([uni,pos]);
+    const mat=new THREE.ShaderMaterial({uniforms:uni,
+      vertexShader:'varying float vY;varying vec3 vN;varying vec3 vV;void main(){vY=position.y;vec4 mv=modelViewMatrix*vec4(position,1.);vN=normalize(normalMatrix*normal);vV=normalize(-mv.xyz);gl_Position=projectionMatrix*mv;}',
+      fragmentShader:'uniform float uF;varying float vY;varying vec3 vN;varying vec3 vV;void main(){vec3 amber=vec3(.74,.47,.16);vec3 dark=vec3(.07,.045,.025);float d=smoothstep(uF+.14,uF-.14,vY);vec3 col=mix(amber,dark,d);float l=.55+.5*max(dot(normalize(vN),normalize(vec3(.4,.7,.6))),0.);float fr=pow(1.-abs(dot(normalize(vN),normalize(vV))),3.);gl_FragColor=vec4(col*l+fr*.22*vec3(1.,.85,.6),1.);}'});
+    const liq=new THREE.Mesh(liquidGeo(.18,1.05),mat);liq.position.set(x,.04,0);g.add(liq,tb);
+  });
+  return {g,H:1.8,W:4.2,ports:[-.75,.75],chips:[['Blackens +','p'],['No change −','n']],update(t){const q=(t%9)/9;unis.forEach(([u,pos])=>{u.uF.value=pos?sm(.05,.75,q)*(1-sm(.9,1,q))*1.35-.12:-1;});}};
 }
 function contentCamp(){
   const g=new THREE.Group();
@@ -572,12 +605,16 @@ function contentNacl(){
     const mat=new THREE.MeshPhysicalMaterial({color:0xf3e3a0,roughness:.1,transparent:true,opacity:.3,clearcoat:.5,depthWrite:false});
     const liq=new THREE.Mesh(liquidGeo(.18,1.0),mat);liq.position.set(x,.04,0);liq.renderOrder=2;
     let cloud=null;
+    let bugs=null;
+    if(grow){const nb=46,rb=rng(62);bugs=new THREE.InstancedMesh(GEO.sph,M.gpDeep,nb*2);const ob=new THREE.Object3D();bugs.userData.pts=[];
+      for(let k=0;k<nb;k++){const a=rb()*7,rr=Math.sqrt(rb())*.13,y=.12+rb()*.85,ax=V(rb()-.5,rb()-.5,rb()-.5).normalize();bugs.userData.pts.push([V(x+Math.cos(a)*rr,y,Math.sin(a)*rr),ax,rb()*6]);}
+      g.add(bugs);}
     if(grow){const n=140,p=new Float32Array(n*3),r=rng(61);for(let k=0;k<n;k++){const a=r()*7,rr=Math.sqrt(r())*.15;p[k*3]=x+Math.cos(a)*rr;p[k*3+1]=.1+r()*.9;p[k*3+2]=Math.sin(a)*rr;}
       const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(p,3));cloud=new THREE.Points(geo,new THREE.PointsMaterial({color:0xf2ead8,size:.035,transparent:true,opacity:0,depthWrite:false}));g.add(cloud);}
     const sh=shaker();sh.position.set(x+.32,2.05,.05);sh.rotation.z=2.45;
     const gn=26,gr=new THREE.InstancedMesh(new THREE.BoxGeometry(.018,.018,.018),new THREE.MeshStandardMaterial({color:0xffffff,roughness:.6}),gn);
     const seeds=[];const R=rng(70+i);for(let k=0;k<gn;k++)seeds.push({ph:R(),dx:(R()-.5)*.08,dz:(R()-.5)*.08});
-    g.add(liq,tb,sh,gr);tubes.push({x,grow,mat,cloud,sh,gr,seeds});
+    g.add(liq,tb,sh,gr);tubes.push({x,grow,mat,cloud,sh,gr,seeds,bugs});
   });
   const o=new THREE.Object3D();
   return {g,H:2.6,W:5,ports:[-.9,.9],chips:[['Growth','p'],['No growth','n']],
@@ -587,16 +624,26 @@ function contentNacl(){
         const origin=V(tb.x+.06,1.68,.05);
         tb.seeds.forEach((s,k)=>{const f=((t*.9+s.ph)%1);const y=origin.y-f*1.55;const show=pour&&y>1.0;o.position.set(origin.x+s.dx*f*3,y,origin.z+s.dz*f*3);o.rotation.set(f*9,f*7,0);const sc=show?1:.0001;o.scale.set(sc,sc,sc);o.updateMatrix();tb.gr.setMatrixAt(k,o.matrix);});
         tb.gr.instanceMatrix.needsUpdate=true;
-        if(tb.grow){tb.mat.opacity=.3+.6*T;tb.mat.color.setRGB(.95-.03*T,.89,.63+.24*T).convertSRGBToLinear();tb.cloud.material.opacity=.85*T;}
+        if(tb.bugs){const sc=Math.max(.0001,T)*.026;tb.bugs.userData.pts.forEach(([p,ax,ph],k)=>{for(let j=0;j<2;j++){o.position.copy(p).addScaledVector(ax,(j?1:-1)*sc*1.05);o.position.y+=Math.sin(t*.8+ph)*.02;o.scale.set(sc*1.2,sc,sc);o.quaternion.setFromUnitVectors(AX,ax);o.updateMatrix();tb.bugs.setMatrixAt(k*2+j,o.matrix);}});tb.bugs.instanceMatrix.needsUpdate=true;}
+        if(tb.grow){tb.mat.opacity=.25+.5*T;tb.mat.color.setRGB(.95-.03*T,.89,.63+.24*T).convertSRGBToLinear();tb.cloud.material.opacity=.85*T;}
       });}};
 }
 function contentSpecies(id){
   const d=SP[id];const g=new THREE.Group();
-  const m=d.model();m.position.set(-.75,1.05,0);g.add(m);
-  const pr=d.prop();pr.position.set(1.45,.15,.1);pr.scale.setScalar(d.propScale||1);g.add(pr);
-  return {g,H:2.1,W:5.2,ports:[],update(t){m.rotation.y=m.userData.sway?Math.sin(t*.5)*.7:t*.25;m.position.y=1.05+Math.sin(t*.9)*.05;
+  const m=d.model();g.add(m);
+  const pr=d.prop();pr.scale.setScalar(d.propScale||1);g.add(pr);
+  let W=5.2,ports=[],chips=[],camp=null;
+  if(id==='agal'){
+    m.position.set(-2.5,1.05,0);pr.position.set(-.85,.15,.1);
+    camp=contentCamp();camp.g.position.set(1.9,.1,0);camp.g.scale.setScalar(.82);g.add(camp.g);
+    W=8.2;ports=[1.9-.75*.82];chips=[['CAMP +','p']];
+  }else{m.position.set(-.75,1.05,0);pr.position.set(1.45,.15,.1);}
+  const my=m.position.y;
+  return {g,H:2.1,W,ports,chips,update(t,dt,tick){m.rotation.y=m.userData.sway?Math.sin(t*.5)*.7:t*.25;m.position.y=my+Math.sin(t*.9)*.05;
+    if(camp)camp.update(t,dt,tick);
     if(pr.userData.flame){const f=1+Math.sin(t*13)*.06+Math.sin(t*7.3)*.04;pr.userData.flame.scale.set(1/f,f,1/f);pr.userData.glow.material.opacity=.7+.2*Math.sin(t*11);}
-    if(pr.userData.glow&&!pr.userData.flame)pr.userData.glow.material.opacity=.45+.35*Math.sin(t*2.4);
+    if(pr.userData.inflame){const ph=Math.pow(Math.max(0,Math.sin(t*3.4)),2);pr.userData.inflame.forEach(mt=>mt.emissiveIntensity=.08+.75*ph);pr.userData.glows.forEach(gl=>gl.material.opacity=.15+.7*ph);}
+    else if(pr.userData.glow&&!pr.userData.flame)pr.userData.glow.material.opacity=.45+.35*Math.sin(t*2.4);
     if(pr.userData.spin)pr.rotation.y=Math.sin(t*.8)*.5;}};
 }
 
@@ -626,12 +673,12 @@ const SP={
     clin:['Normal oral flora','S. mutans and S. mitis: dental caries','S. sanguinis: subacute endocarditis on previously damaged valves (dextrans bind fibrin–platelet aggregates)','S. anginosus group: abscesses (brain, liver, lung)'],
     diff:'S. pneumoniae: optochin sensitive, bile soluble, capsule.',
     mnem:'Tooth with a cavity = mouth flora and caries. <b>Viridans</b> lives in the mouth because it is not afraid of <i>the-chin</i> (optochin).'},
-  entero:{name:'Enterococcus',aka:'E. faecalis · E. faecium',short:'Enterococcus',group:'Lancefield group D (enterococci)',model:()=>modelEntero(31),prop:propKidney,
+  entero:{name:'Enterococcus',aka:'E. faecalis · E. faecium',short:'Enterococcus',group:'Lancefield group D (enterococci)',model:()=>modelEntero(31),prop:propUrinary,propScale:1.3,
     morph:'Ovoid cocci in pairs and short chains · thick wall, no capsule',
     tests:[['Catalase','−','n'],['Hemolysis','γ (variable)','v'],['Bile esculin','+','p'],['6.5% NaCl','growth','p'],['PYR','+','p']],
     clin:['UTI and biliary tract infection','Subacute endocarditis after GI/GU procedures','Hospital-acquired; intrinsically resistant to cephalosporins','VRE: D-Ala-D-Ala → D-Ala-D-Lac'],
     diff:'S. gallolyticus is also bile esculin +, but does not grow in 6.5% NaCl and is PYR −.',
-    mnem:'Salt shaker: Enterococcus is hardy — grows in salt and bile. Kidney = UTI.'},
+    mnem:'Salt shaker: Enterococcus is hardy — grows in salt and bile. Inflamed kidneys and bladder = UTI.'},
   bovis:{name:'Streptococcus gallolyticus',aka:'formerly S. bovis biotype I',short:'S. bovis',group:'Lancefield group D (non-enterococcal)',model:modelBovis,prop:propColon,propScale:1.1,
     morph:'Cocci in pairs and short chains · no capsule',
     tests:[['Catalase','−','n'],['Hemolysis','γ','v'],['Bile esculin','+','p'],['6.5% NaCl','no growth','n'],['PYR','−','n']],
@@ -644,13 +691,13 @@ const SP={
 const DEF={
   root:{title:'Catalase-negative cocci',sub:'Gram + · no O₂ bubbles',cls:'root',build:contentRoot,children:['hemo']},
   hemo:{title:'Blood agar hemolysis',sub:'Sheep blood agar',cls:'test',build:contentHemo,children:['bacit','opto','bile']},
-  bacit:{title:'Bacitracin',sub:'β-hemolytic strep',cls:'test',build:()=>contentDisk('BACITRACIN','A','beta'),children:['pyo','camp']},
+  bacit:{title:'Bacitracin',sub:'β-hemolytic strep',cls:'test',build:()=>contentDisk('BACITRACIN','A','beta'),children:['pyo','agal']},
   opto:{title:'Optochin',sub:'α-hemolytic strep',cls:'test',build:()=>contentDisk('OPTOCHIN','P','alpha'),children:['pneumo','viridans']},
-  bile:{title:'Bile esculin',sub:'γ-hemolytic · group D',cls:'test',build:contentBile,children:['nacl']},
-  camp:{title:'CAMP test',sub:'Bacitracin-resistant β-strep',cls:'test',build:contentCamp,children:['agal']},
-  nacl:{title:'6.5% NaCl',sub:'Enterococcus vs S. bovis',cls:'test',build:contentNacl,children:['entero','bovis']},
+  bile:{title:'Bile esculin',sub:'γ-hemolytic strep',cls:'test',build:contentBile,children:['nacl','viridg']},
+  nacl:{title:'6.5% NaCl',sub:'Group D: Enterococcus vs S. bovis',cls:'test',build:contentNacl,children:['entero','bovis'],autoOpen:true},
 };
-['pyo','agal','pneumo','viridans','entero','bovis'].forEach(id=>{DEF[id]={title:SP[id].short,sub:SP[id].group.split(' · ')[0].replace('Lancefield ',''),cls:'sp',species:true,build:()=>contentSpecies(id),children:[]};});
+['pyo','agal','pneumo','viridans','entero','bovis'].forEach(id=>{DEF[id]={title:SP[id].short,sub:SP[id].group.split(' · ')[0].replace('Lancefield ',''),cls:'sp',species:true,spKey:id,build:()=>contentSpecies(id),children:[]};});
+DEF.viridg={title:'Viridans strep',sub:'non-hemolytic (γ) · not group D',cls:'sp',species:true,spKey:'viridans',build:()=>contentSpecies('viridans'),children:[]};
 DEF.viridans.sub='S. mutans, S. sanguinis…';DEF.pneumo.sub='Pneumococcus';DEF.bovis.sub='S. gallolyticus · group D';DEF.entero.sub='E. faecalis · group D';
 
 /* ================= nodes ================= */
@@ -714,7 +761,7 @@ function subtreeIds(id){const out=[id];(N[id].open?N[id].children:[]).forEach(k=
 let selected=null,paused=false;
 const statusEl=$('#status'),hintEl=$('#hint');
 function pathTo(id){const a=[];let p=id,prev=null;while(p){a.unshift({id:p,via:prev});prev=p;p=N[p].parent;}return a;}
-const VIA={bacit:'β',opto:'α',bile:'γ',pyo:'Bacitracin S',camp:'Bacitracin R',pneumo:'Optochin S',viridans:'Optochin R',nacl:'Bile esculin +',agal:'CAMP +',entero:'NaCl growth',bovis:'No NaCl growth'};
+const VIA={bacit:'β',opto:'α',bile:'γ',pyo:'Bacitracin S',agal:'Bacitracin R · CAMP +',pneumo:'Optochin S',viridans:'Optochin R',nacl:'Bile esculin +',viridg:'Bile esculin −',entero:'NaCl growth',bovis:'No NaCl growth'};
 function select(id){
   selected=id;Object.values(N).forEach(n=>n.el.classList.toggle('sel',n.id===id));
   const onPath=new Set();let p=id;while(p){onPath.add(p);p=N[p].parent;}
@@ -730,7 +777,7 @@ function toggle(id){
   const n=N[id];if(!n.children.length)return;
   hintEl.style.opacity=0;
   if(n.open){collapse(id);relayout();fitIds([id,...(n.parent?[n.parent]:[])].concat(n.parent?N[n.parent].children:[]),900);}
-  else{n.open=true;relayout();fitIds([id,...n.children],1000);}
+  else{n.open=true;n.children.forEach(k=>{if(N[k].autoOpen)N[k].open=true;});relayout();fitIds(subtreeIds(id),1000);}
   select(id);
 }
 function doubleTap(id){const n=N[id];if(n.species)openPanel(id);else toggle(id);}
@@ -768,7 +815,7 @@ function initPV(){
   pv={r,s,cam,ctl,c,obj:null};
 }
 function openPanel(id){
-  const d=SP[id];if(!pv)initPV();
+  const d=SP[N[id].spKey||id];if(!pv)initPV();
   if(pv.obj){pv.s.remove(pv.obj);}
   const m=d.model();const box=new THREE.Box3().setFromObject(m),sz=box.getSize(V()).length();m.scale.setScalar(2.6/sz);box.setFromObject(m);m.position.sub(box.getCenter(V()));
   m.traverse(fixMat);const holder=new THREE.Group();holder.add(m);pv.s.add(holder);pv.obj=holder;pv.ctl.reset&&pv.ctl.reset();
