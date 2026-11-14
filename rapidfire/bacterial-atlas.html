@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bacterial ID Atlas · RapidFire</title>
+<meta name="description" content="3D bacterial identification atlas: choose a Gram group and walk the decision tree.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,500;1,8..60,600&display=swap">
+<style>
+/* Single dark world (matches the 3D atlas pages): one hub, three Gram groups as cards, each a door into its tree. */
+:root{
+  color-scheme:dark;
+  --bg:#06122a; --panel:#0a1a38; --line:#26446f; --ink:#eaf0f9; --ink-2:#aebfda; --ink-3:#7891b5; --ivory:#f2ead3;
+  --gp:#8a5cf0; --gn:#f07aa0; --ready:#5ef08f;
+  --f-display:"Source Serif 4",Georgia,serif;
+  --f-ui:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-label:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(120% 80% at 50% 0%,#15386e 0%,#0a2048 38%,#030a1a 100%) fixed,var(--bg);color:var(--ink);font-family:var(--f-ui);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ivory);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:max(20px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) 48px max(18px,env(safe-area-inset-left));display:grid;gap:28px}
+.back{font:500 12px/1 var(--f-label);letter-spacing:.06em;color:var(--ink-3);text-decoration:none}
+.back:hover{color:var(--ink)}
+header{display:grid;gap:8px;max-width:640px}
+.eyebrow{font:500 11px/1.2 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+h1{margin:0;font:600 clamp(30px,5vw,44px)/1.05 var(--f-display);letter-spacing:-.01em;text-wrap:balance}
+h1 em{font-weight:500;color:var(--ink-2)}
+.lede{margin:0;color:var(--ink-2);line-height:1.55;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{position:relative;display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line);border-radius:14px;background:rgba(8,20,44,.78);overflow:hidden;text-decoration:none;transition:transform .25s,border-color .25s,box-shadow .25s}
+a.card:hover{transform:translateY(-3px);border-color:#4d78b8;box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.art{height:170px;display:grid;place-items:center;background:radial-gradient(80% 90% at 50% 40%,#123062,#071634 85%);border-bottom:1px solid var(--line)}
+.art svg{width:86%;height:86%}
+.body{display:grid;gap:10px;padding:16px 18px 18px;align-content:start}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.gram{font:600 11px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase}
+.gram.gp{color:#b598ff}.gram.gn{color:#ff9ebd}
+.state{font:500 11px/1 var(--f-label);letter-spacing:.06em;padding:5px 9px;border-radius:999px;border:1px solid var(--line);color:var(--ink-3);white-space:nowrap}
+.state.ready{color:#bff7cf;border-color:rgba(94,240,143,.5)}
+h2{margin:0;font:600 23px/1.1 var(--f-display)}
+h2 em{font-weight:500}
+.card p{margin:0;color:var(--ink-2);font-size:13.5px;line-height:1.5}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font:500 11.5px/1 var(--f-label);padding:5px 8px;border-radius:999px;background:#0e2449;border:1px solid #1f3b66;color:var(--ink-2)}
+.go{font:600 13px/1 var(--f-ui);color:var(--ivory);margin-top:2px}
+.card.soon{opacity:.72}
+.card.soon .go{color:var(--ink-3)}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;border-top:1px solid var(--line);padding-top:20px}
+.how div{display:grid;gap:4px}
+.how b{font:600 11px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.how span{color:var(--ink-2);font-size:13.5px;line-height:1.45}
+@media (prefers-reduced-motion:reduce){a.card{transition:none}a.card:hover{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <a class="back" href="./index.html">← RapidFire</a>
+  <header>
+    <div class="eyebrow">Microbiology · USMLE Step 1</div>
+    <h1>Bacterial ID <em>Atlas</em></h1>
+    <p class="lede">Start from the Gram stain and walk each identification tree in 3D: real lab tests, the organism's shape, and one visual hook per species.</p>
+  </header>
+
+  <section class="cards" aria-label="Choose a Gram group">
+    <a class="card" href="./gp-cocci-atlas-3d.html">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 300 150">
+          <defs>
+            <radialGradient id="gpS" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#d9c6ff"/><stop offset=".45" stop-color="#7d4fe0"/><stop offset="1" stop-color="#2e1470"/></radialGradient>
+          </defs>
+          <g fill="url(#gpS)">
+            <circle cx="62" cy="64" r="15"/><circle cx="88" cy="58" r="15"/><circle cx="76" cy="84" r="15"/><circle cx="102" cy="82" r="15"/><circle cx="50" cy="90" r="15"/><circle cx="74" cy="110" r="15"/><circle cx="100" cy="107" r="15"/><circle cx="115" cy="60" r="15"/>
+            <circle cx="160" cy="88" r="13"/><circle cx="185" cy="80" r="13"/><circle cx="212" cy="76" r="13"/><circle cx="237" cy="80" r="13"/><circle cx="262" cy="90" r="13"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="row"><span class="gram gp">Gram-positive</span><span class="state ready">Ready · 10 species</span></div>
+        <h2>Cocci <em>· clusters &amp; chains</em></h2>
+        <p>Catalase splits Staphylococcus from Streptococcus and Enterococcus, then coagulase, novobiocin, hemolysis and friends.</p>
+        <div class="tags"><span>Catalase</span><span>Coagulase</span><span>Novobiocin</span><span>Hemolysis</span><span>Bacitracin</span><span>Optochin</span><span>CAMP</span><span>Bile esculin</span><span>6.5% NaCl</span></div>
+        <span class="go">Open tree →</span>
+      </div>
+    </a>
+
+    <div class="card soon" aria-disabled="true">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 300 150">
+          <defs>
+            <linearGradient id="gnR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc6d8"/><stop offset=".5" stop-color="#e2668f"/><stop offset="1" stop-color="#7a1f43"/></linearGradient>
+            <radialGradient id="gnS" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ffd2e0"/><stop offset=".5" stop-color="#e2668f"/><stop offset="1" stop-color="#6b1a3a"/></radialGradient>
+          </defs>
+          <g fill="url(#gnR)">
+            <rect x="40" y="40" width="70" height="26" rx="13" transform="rotate(-14 75 53)"/>
+            <rect x="58" y="86" width="64" height="24" rx="12" transform="rotate(10 90 98)"/>
+            <rect x="128" y="58" width="62" height="24" rx="12" transform="rotate(-4 159 70)"/>
+          </g>
+          <g fill="url(#gnS)">
+            <ellipse cx="222" cy="74" rx="17" ry="20"/><ellipse cx="253" cy="74" rx="17" ry="20"/>
+            <ellipse cx="216" cy="118" rx="12" ry="10"/><ellipse cx="240" cy="116" rx="13" ry="10"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="row"><span class="gram gn">Gram-negative</span><span class="state">In progress</span></div>
+        <h2>Rods, diplococci <em>&amp; coccobacilli</em></h2>
+        <p>Neisseria by maltose, Haemophilus on chocolate agar, and the enteric rods through MacConkey, oxidase and H₂S.</p>
+        <div class="tags"><span>MacConkey</span><span>Oxidase</span><span>Maltose</span><span>X + V factors</span><span>H₂S</span><span>Urease</span></div>
+        <span class="go">Coming next</span>
+      </div>
+    </div>
+
+    <div class="card soon" aria-disabled="true">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="0 0 300 150">
+          <defs>
+            <linearGradient id="gpR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9c6ff"/><stop offset=".5" stop-color="#7d4fe0"/><stop offset="1" stop-color="#2e1470"/></linearGradient>
+          </defs>
+          <g fill="url(#gpR)">
+            <rect x="34" y="52" width="78" height="26" rx="10"/><rect x="116" y="52" width="78" height="26" rx="10"/><rect x="198" y="52" width="70" height="26" rx="10"/>
+            <rect x="70" y="96" width="74" height="24" rx="10" transform="rotate(8 107 108)"/>
+          </g>
+          <g fill="#f2ead3" opacity=".9"><ellipse cx="236" cy="65" rx="11" ry="9"/><ellipse cx="128" cy="109" rx="10" ry="8"/></g>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="row"><span class="gram gp">Gram-positive</span><span class="state">Planned</span></div>
+        <h2>Rods <em>· spores &amp; branching</em></h2>
+        <p>Bacillus and Clostridium by spores and oxygen, Listeria's tumbling motility, Corynebacterium, Actinomyces and Nocardia.</p>
+        <div class="tags"><span>Spores</span><span>Aerobic vs anaerobic</span><span>Motility</span><span>Acid-fast</span></div>
+        <span class="go">Planned</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" aria-label="How it works">
+    <div><b>Expand</b><span>Double-tap a node to open the next step of the tree.</span></div>
+    <div><b>Browse</b><span>Use ☰ Species or the ‹ › arrows to jump from one organism to the next.</span></div>
+    <div><b>Study</b><span>Each species card lists its tests, high-yield clinical points and a mnemonic.</span></div>
+  </section>
+</main>
+</body>
+</html>
