@@ -97,6 +97,26 @@ ul.hy{margin:0;padding:0;list-style:none;display:grid;gap:6px}
 ul.hy li{position:relative;padding-left:14px;line-height:1.45;color:var(--ink);font-size:13.5px}
 ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--gp)}
 .mn{margin-top:4px;padding:10px 12px;border-radius:8px;background:rgba(242,234,211,.07);border:1px solid rgba(242,234,211,.2);color:var(--ivory);font-size:13px;line-height:1.45}
+#drawer{position:absolute;top:0;left:0;bottom:0;width:min(300px,84vw);background:rgba(7,18,40,.96);border-right:1px solid var(--line);transform:translateX(-102%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;z-index:5;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+#drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:max(14px,env(safe-area-inset-top)) 14px 10px 18px;font:600 11px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.dh button{width:32px;height:32px;border-radius:9px;border:1px solid var(--line);background:var(--panel-solid);cursor:pointer}
+#dlist{list-style:none;margin:0;padding:4px 10px 20px;overflow:auto;display:grid;gap:4px}
+#dlist .grp{font:600 10.5px/1 var(--f-label);letter-spacing:.14em;color:var(--ink-3);padding:12px 8px 4px}
+#dlist button{width:100%;text-align:left;border:1px solid transparent;background:transparent;border-radius:8px;padding:8px 10px;cursor:pointer}
+#dlist button:hover{background:#0f2550;border-color:var(--line)}
+#dlist button.cur{background:rgba(242,234,211,.1);border-color:rgba(242,234,211,.35)}
+#dlist b{display:block;font:600 italic 15px/1.15 var(--f-display);color:var(--ink)}
+#dlist small{display:block;margin-top:3px;font:400 11.5px/1.3 var(--f-ui);color:var(--ink-3)}
+.snav{position:absolute;left:50%;transform:translateX(-50%);bottom:max(14px,env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:4px;border-radius:999px;background:var(--panel);border:1px solid var(--line);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:bottom .45s cubic-bezier(.2,.8,.2,1),left .45s cubic-bezier(.2,.8,.2,1);z-index:3}
+.snav button{width:38px;height:38px;border-radius:50%;border:0;background:#13305e;color:var(--ink);font-size:20px;line-height:1;cursor:pointer}
+.snav button:hover{background:#1b3f78}
+.snav span{min-width:150px;text-align:center;font:600 italic 14px/1.1 var(--f-display);color:var(--ink);padding:0 6px;cursor:pointer}
+.snav span small{display:block;font:400 normal 10.5px/1.2 var(--f-ui);color:var(--ink-3);margin-top:2px}
+body.pon .snav{left:calc((100% - var(--pw))/2)}
+body.pon .tools{margin-right:var(--pw);transition:margin .45s}
+.hint{bottom:calc(max(14px,env(safe-area-inset-bottom)) + 56px)}
+.status{bottom:calc(max(14px,env(safe-area-inset-bottom)) + 104px)}
 #fail{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;color:var(--ink-2)}
 
 @media (max-width:760px){
@@ -104,6 +124,9 @@ ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height
   .tb{padding:7px 10px;font-size:12px}
   .lab{font-size:12px;padding:4px 7px} .lab.sp{font-size:13.5px} .lab small{font-size:10px}
   .chip{font-size:10.5px}
+  body.pon .snav{left:50%;bottom:calc(62% + 8px)}
+  body.pon .tools{margin-right:0}
+  .snav span{min-width:120px;font-size:13px}
   #panel{top:auto;left:0;width:auto;height:62%;border-left:0;border-top:1px solid var(--line);border-radius:16px 16px 0 0;transform:translateY(104%)}
   .pviewer{height:clamp(150px,22vh,200px)}
   .hint{font-size:11px}
@@ -122,6 +145,7 @@ ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height
       <h1>Streptococcus <em>&amp; Enterococcus</em></h1>
     </div>
     <div class="tools">
+      <button class="tb" id="bList" aria-expanded="false">☰ Species</button>
       <button class="tb" id="bAll">Show all</button>
       <button class="tb" id="bFocus">Focus branch</button>
       <button class="tb" id="bReset">Reset camera</button>
@@ -130,6 +154,8 @@ ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height
   </header>
   <div class="status" id="status"></div>
   <div class="hint" id="hint">Double-tap a node to expand · drag to orbit · pinch to zoom</div>
+  <div class="snav" id="snav"><button id="sPrev" aria-label="Previous species">‹</button><span id="sName">Species<small>tap ‹ › to browse</small></span><button id="sNext" aria-label="Next species">›</button></div>
+  <nav id="drawer" aria-hidden="true" aria-label="Species list"><div class="dh">Species<button id="dClose" aria-label="Close list">✕</button></div><ol id="dlist"></ol></nav>
   <aside id="panel" aria-hidden="true">
     <button class="pclose" id="pClose" aria-label="Close">✕</button>
     <div class="pviewer"><canvas id="pgl"></canvas><span class="phint">drag to rotate</span></div>
@@ -695,7 +721,7 @@ const SP={
     tests:[['Catalase','−','n'],['α-hemolysis','+','p'],['Optochin','R','n'],['Bile solubility','−','n']],
     clin:['Normal oral flora','S. mutans and S. mitis: dental caries','S. sanguinis: subacute endocarditis on previously damaged valves (dextrans bind fibrin–platelet aggregates)','S. anginosus group: abscesses (brain, liver, lung)'],
     diff:'S. pneumoniae: optochin sensitive, bile soluble, capsule.',
-    mnem:'Tooth with a cavity = mouth flora and caries.'},
+    mnem:'Tooth with a cavity = mouth flora and caries. <b>Viridans</b> lives in the mouth because it is not afraid of <i>the-chin</i> (op-<i>tochin</i> resistant).'},
   entero:{name:'Enterococcus',aka:'E. faecalis · E. faecium',short:'Enterococcus',group:'Lancefield group D (enterococci)',model:()=>modelEntero(31),prop:propUrinary,propScale:1.3,
     morph:'Ovoid cocci in pairs and short chains · thick wall, no capsule',
     tests:[['Catalase','−','n'],['Hemolysis','γ (variable)','v'],['Bile esculin','+','p'],['6.5% NaCl','growth','p'],['PYR','+','p']],
@@ -849,11 +875,28 @@ function openPanel(id){
     <h3>High-yield · Step 1</h3><ul class="hy">${d.clin.map(x=>`<li>${x}</li>`).join('')}</ul>
     <h3>Don't confuse</h3><p>${d.diff}</p>
     <h3>Mnemonic</h3><div class="mn">${d.mnem}</div>`;
-  pbody.scrollTop=0;panelId=id;panel.classList.add('on');panel.setAttribute('aria-hidden','false');dim.classList.add('on');select(id);
+  pbody.scrollTop=0;panelId=id;document.body.classList.add('pon');navIdx=ORDER.indexOf(id);updateNav();panel.classList.add('on');panel.setAttribute('aria-hidden','false');dim.classList.add('on');select(id);
   setTimeout(()=>{resizePV();fitIds([id],900);},60);
 }
-function closePanel(){if(!panelId)return;panelId=null;panel.classList.remove('on');panel.setAttribute('aria-hidden','true');dim.classList.remove('on');}
+function closePanel(){if(!panelId)return;panelId=null;document.body.classList.remove('pon');panel.classList.remove('on');panel.setAttribute('aria-hidden','true');dim.classList.remove('on');}
 $('#pClose').onclick=closePanel;
+/* species navigator: drawer list + prev/next */
+const ORDER=[];(function dfs(id){const n=N[id];if(n.species)ORDER.push(id);n.children.forEach(dfs);})('root');
+let navIdx=-1;
+function pathText(id){const parts=[];let q=id;const ch=[];while(q){ch.unshift(q);q=N[q].parent;}ch.forEach((c,i)=>{if(i>0&&VIA[c])parts.push(VIA[c]);});return parts.join(' → ');}
+const GRP={bacit:'β-HEMOLYTIC',opto:'α-HEMOLYTIC',bile:'γ-HEMOLYTIC',nacl:'γ-HEMOLYTIC'};
+(function(){const ol=$('#dlist');let last='';ORDER.forEach(id=>{let p=N[id].parent;while(p&&!GRP[p])p=N[p].parent;const g=GRP[p]||'';
+  if(g!==last){const li=document.createElement('li');li.className='grp';li.textContent=g;ol.appendChild(li);last=g;}
+  const li=document.createElement('li'),b=document.createElement('button');b.dataset.id=id;b.innerHTML=`<b>${N[id].title}</b><small>${pathText(id)}</small>`;b.onclick=()=>{toggleDrawer(false);goTo(id);};li.appendChild(b);ol.appendChild(li);});})();
+function toggleDrawer(on){const d=$('#drawer');on=on===undefined?!d.classList.contains('on'):on;d.classList.toggle('on',on);d.setAttribute('aria-hidden',!on);$('#bList').setAttribute('aria-expanded',on);}
+$('#bList').onclick=()=>toggleDrawer();$('#dClose').onclick=()=>toggleDrawer(false);
+function reveal(id){let p=N[id].parent;while(p){N[p].open=true;N[p].children.forEach(k=>{if(N[k].autoOpen)N[k].open=true;});p=N[p].parent;}relayout();}
+function goTo(id){hintEl.style.opacity=0;reveal(id);select(id);openPanel(id);}
+function updateNav(){const id=ORDER[navIdx];$('#sName').innerHTML=id?`${N[id].title}<small>${navIdx+1} / ${ORDER.length} · ${pathText(id)}</small>`:'Species<small>tap ‹ › to browse</small>';
+  document.querySelectorAll('#dlist button').forEach(b=>b.classList.toggle('cur',b.dataset.id===id));}
+function step(d){navIdx=navIdx<0?(d>0?0:ORDER.length-1):(navIdx+d+ORDER.length)%ORDER.length;goTo(ORDER[navIdx]);}
+$('#sPrev').onclick=()=>step(-1);$('#sNext').onclick=()=>step(1);$('#sName').onclick=()=>toggleDrawer(true);
+addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('input,textarea'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);});
 addEventListener('keydown',e=>{if(e.key==='Escape')closePanel();if(e.key===' '&&e.target===document.body){e.preventDefault();$('#bPause').click();}});
 (function(){let sx=0,sy=0;panel.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;sy=e.touches[0].clientY;},{passive:true});
   panel.addEventListener('touchend',e=>{const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;if(e.target.closest('#pgl'))return;
