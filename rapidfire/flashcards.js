@@ -34,6 +34,143 @@
   add("heme-1", "Hematology", "Which marker commonly rises in vitamin B12 deficiency but not isolated folate deficiency?", ["Methylmalonic acid", "Serum ferritin", "Haptoglobin"], "Methylmalonic acid", "B12 is required for methylmalonyl-CoA mutase activity.");
   add("heme-2", "Hematology", "Hemophilia A is caused by deficiency of which clotting factor?", ["Factor VII", "Factor VIII", "Factor IX"], "Factor VIII", "Hemophilia A is an X-linked factor VIII deficiency; hemophilia B involves factor IX.");
 
+  // Concise, original high-yield rationale for every choice in the built-in examples.
+  var starterRationales = {
+    "cardio-1": [
+      "Aortic stenosis generally becomes quieter with Valsalva strain because reduced preload lowers flow across the fixed obstruction.",
+      "Correct: less ventricular filling narrows the dynamic outflow tract and intensifies the hypertrophic cardiomyopathy murmur.",
+      "Mitral regurgitation usually softens when preload falls; handgrip, by increasing afterload, tends to accentuate its murmur."
+    ],
+    "cardio-2": [
+      "Lower systemic resistance favors right-to-left flow across the ventricular septal defect, potentially worsening cyanosis.",
+      "Correct: higher systemic vascular resistance reduces right-to-left shunting, improving pulmonary blood flow and oxygenation.",
+      "Reduced pulmonary venous return is not the therapeutic goal; squatting improves the systemic-to-pulmonary resistance balance."
+    ],
+    "pulm-1": [
+      "Emphysema destroys alveolar-capillary surface area and therefore typically decreases diffusing capacity for carbon monoxide.",
+      "Pulmonary fibrosis thickens the alveolar-capillary barrier and typically lowers diffusing capacity.",
+      "Correct: hemoglobin within alveoli binds inhaled carbon monoxide, increasing the measured diffusing capacity."
+    ],
+    "pulm-2": [
+      "Correct: cystic fibrosis transmembrane conductance regulator (CFTR) is an epithelial chloride/bicarbonate channel.",
+      "Epithelial sodium channel (ENaC) activity can be secondarily increased in cystic fibrosis, but ENaC is not the primary defective channel.",
+      "Aquaporin-2 is an antidiuretic hormone-regulated water channel in collecting ducts, not the primary defect of cystic fibrosis."
+    ],
+    "renal-1": [
+      "Hypokalemia is more typical of distal (type 1) and proximal (type 2) renal tubular acidosis, not type 4.",
+      "Correct: hypoaldosteronism or aldosterone resistance impairs renal potassium excretion, causing hyperkalemia.",
+      "Hypercalcemia is not the defining electrolyte feature of type 4 renal tubular acidosis."
+    ],
+    "renal-2": [
+      "Correct: minimal change disease causes diffuse podocyte foot-process effacement on electron microscopy.",
+      "Mesangial immunoglobulin A (IgA) deposits indicate IgA nephropathy, usually a nephritic rather than pure nephrotic pattern.",
+      "Crescents imply severe glomerular capillary injury, as in rapidly progressive glomerulonephritis, not typical minimal change disease."
+    ],
+    "neuro-1": [
+      "The spinothalamic tract carries pain and temperature; injury does not primarily abolish vibration sense.",
+      "Correct: the dorsal columns carry vibration, discriminative touch, and conscious proprioception.",
+      "The corticospinal tract controls voluntary movement; damage produces upper motor neuron findings."
+    ],
+    "neuro-2": [
+      "Correct: multiple sclerosis commonly features cerebrospinal fluid-restricted oligoclonal IgG bands from intrathecal B-cell activity.",
+      "Myasthenia gravis is a neuromuscular junction antibody disorder, not typically defined by cerebrospinal oligoclonal bands.",
+      "Guillain-Barré syndrome typically shows albuminocytologic dissociation (high cerebrospinal fluid protein with few cells)."
+    ],
+    "immuno-1": [
+      "Correct: activation-induced cytidine deaminase (AID) is required for B-cell class switching; T-cell/macrophage signaling can remain intact.",
+      "CD40 ligand deficiency disrupts class switching AND macrophage activation, raising Pneumocystis and other opportunistic infection risk.",
+      "NADPH oxidase deficiency causes chronic granulomatous disease with impaired oxidative burst, not a primary hyper-IgM phenotype."
+    ],
+    "immuno-2": [
+      "Correct: NADPH oxidase generates reactive oxygen species needed for the phagocyte respiratory burst.",
+      "Class-switch recombination depends on AID and CD40 signaling; it is not the primary defect in chronic granulomatous disease.",
+      "Complement C3 activation depends on complement convertases rather than NADPH oxidase."
+    ],
+    "micro-1": [
+      "Correct: Haemophilus influenzae requires factor X (hemin) and factor V (nicotinamide adenine dinucleotide) for growth.",
+      "Factors II and VII are coagulation proteins; they are not bacterial growth-factor requirements.",
+      "Factors VIII and IX belong to the coagulation cascade, not Haemophilus culture requirements."
+    ],
+    "micro-2": [
+      "Urease is useful for organisms such as Proteus and Helicobacter; it does not distinguish Staphylococcus aureus reliably.",
+      "Correct: Staphylococcus aureus is classically coagulase positive, unlike most coagulase-negative staphylococci.",
+      "Oxidase differentiates groups such as Pseudomonas and Neisseria; staphylococci are oxidase negative."
+    ],
+    "bio-1": [
+      "Correct: galactose-1-phosphate uridyltransferase (GALT) yields glucose-1-phosphate and UDP-galactose.",
+      "Galactitol forms via aldose reductase, especially when galactose accumulates; free uridine is not the paired product of GALT.",
+      "Pyruvate-to-lactate conversion is catalyzed by lactate dehydrogenase, not GALT."
+    ],
+    "bio-2": [
+      "Complex I transfers electrons from NADH to ubiquinone and pumps protons across the inner mitochondrial membrane.",
+      "Correct: complex II (succinate dehydrogenase) transfers electrons from succinate/FADH2 to ubiquinone without pumping protons.",
+      "Complex IV reduces oxygen to water and contributes to proton pumping."
+    ],
+    "genetics-1": [
+      "Correct: activating KRAS point mutations lock a growth-signaling protein in an active state.",
+      "RB1 is a tumor suppressor; cancer usually involves loss of RB function rather than an activating RB1 mutation.",
+      "APC is a tumor suppressor in the Wnt/beta-catenin pathway; inactivation is the key oncogenic event."
+    ],
+    "genetics-2": [
+      "Proto-oncogenes often become oncogenic after a single gain-of-function allele; the classical two-hit model is not their hallmark.",
+      "Correct: many tumor suppressors require loss of both functional alleles, as illustrated by RB1.",
+      "Mitochondrial ribosomal genes are not the defining class in Knudson's classic two-hit model."
+    ],
+    "pharm-1": [
+      "Ibuprofen inhibits cyclooxygenase reversibly; its platelet effect disappears as the drug clears.",
+      "Correct: aspirin irreversibly acetylates platelet cyclooxygenase; the effect lasts for the platelet lifespan.",
+      "Acetaminophen is analgesic/antipyretic but does not produce aspirin-like irreversible platelet cyclooxygenase inhibition."
+    ],
+    "pharm-2": [
+      "Correct: carbonic anhydrase inhibition reduces proximal bicarbonate reabsorption, causing bicarbonaturia and non-anion-gap acidosis.",
+      "Potassium may also be lost, but isolated potassium loss is not the primary mechanism of acetazolamide.",
+      "Chloride alone is not the primary urinary loss produced by proximal carbonic anhydrase inhibition."
+    ],
+    "path-1": [
+      "Correct: BRAF V600E is highly characteristic of classic hairy cell leukemia, which can cause marrow fibrosis and dry tap.",
+      "JAK2 V617F is classically seen in myeloproliferative neoplasms such as polycythemia vera, essential thrombocythemia, and primary myelofibrosis.",
+      "BCR-ABL1 defines chronic myeloid leukemia and occurs in some acute lymphoblastic leukemias, not classic hairy cell leukemia."
+    ],
+    "path-2": [
+      "Correct: antimitochondrial antibodies, especially anti-M2, are strongly associated with primary biliary cholangitis.",
+      "Anti-double-stranded DNA antibodies are associated with systemic lupus erythematosus, particularly lupus nephritis.",
+      "Anticentromere antibodies favor limited cutaneous systemic sclerosis; they can coexist with PBC but are not its principal diagnostic marker."
+    ],
+    "endo-1": [
+      "Hypokalemia is associated with mineralocorticoid excess, not the aldosterone deficiency of primary adrenal insufficiency.",
+      "Correct: aldosterone deficiency reduces distal potassium excretion, leading to hyperkalemia.",
+      "Potassium can change substantially in primary adrenal insufficiency; the assertion that it cannot change is false."
+    ],
+    "endo-2": [
+      "Low androgen production points more toward defects such as 17-alpha-hydroxylase deficiency, not classic 21-hydroxylase deficiency.",
+      "Correct: reduced cortisol synthesis raises ACTH and diverts precursors toward adrenal androgen synthesis.",
+      "Severe 21-hydroxylase deficiency impairs aldosterone synthesis and can cause salt wasting; isolated aldosterone excess is incorrect."
+    ],
+    "stats-1": [
+      "Correct: type I (alpha) error means rejecting a true null hypothesis, a false positive.",
+      "Type II (beta) error means failing to reject a false null hypothesis, a false negative.",
+      "Sampling without replacement is a study sampling method, not a type of hypothesis-testing error."
+    ],
+    "stats-2": [
+      "Sensitivity / (1 - specificity) is the positive likelihood ratio (LR+), not the negative likelihood ratio.",
+      "Correct: negative likelihood ratio (LR−) = (1 - sensitivity) / specificity.",
+      "Sensitivity multiplied by specificity is not the formula for a positive or negative likelihood ratio."
+    ],
+    "heme-1": [
+      "Correct: vitamin B12 deficiency impairs methylmalonyl-CoA mutase, raising methylmalonic acid; isolated folate deficiency does not.",
+      "Ferritin reflects iron stores and inflammatory signaling, not a specific distinction between vitamin B12 and folate deficiency.",
+      "Haptoglobin may fall in hemolysis, including some severe B12 deficiency, but it is not the key biochemical discriminator."
+    ],
+    "heme-2": [
+      "Factor VII is in the extrinsic coagulation pathway; its deficiency affects prothrombin time and does not define hemophilia A.",
+      "Correct: hemophilia A is inherited factor VIII deficiency, typically X-linked recessive.",
+      "Factor IX deficiency causes hemophilia B (Christmas disease), not hemophilia A."
+    ]
+  };
+  starter.forEach(function (card) {
+    card.choiceExplanations = starterRationales[card.id.replace(/^starter-/, "")] || [];
+  });
+
   var KEY_CARDS = "rf-personal-flashcards-v1";
   var KEY_PROGRESS = "rf-personal-flashcard-history-v1";
   var el = function (id) { return document.getElementById(id); };
@@ -83,6 +220,16 @@
     if (!raw) return [];
     return String(raw).split(/\s*(?:\/|\||;)\s*/).map(function (x) { return x.trim(); }).filter(Boolean).slice(0, 6);
   }
+  function parseOptionExplanations(value, choices) {
+    if (!choices.length || value == null) return [];
+    if (value && typeof value === "object" && !Array.isArray(value)) {
+      return choices.map(function (choice, index) {
+        return String(value[choice] || value[String.fromCharCode(65 + index)] || value[String(index)] || "").trim().slice(0, 1800);
+      });
+    }
+    var parts = Array.isArray(value) ? value : String(value).split(/\s*\|\|\s*|\r?\n/);
+    return choices.map(function (_, index) { return String(parts[index] || "").trim().slice(0, 1800); });
+  }
   function normalizedRow(row) {
     if (!row || typeof row !== "object" || Array.isArray(row)) return null;
     var front = String(row.front || row.question || row.pergunta || "").trim().slice(0, 2500);
@@ -101,7 +248,8 @@
     if (choices.length && !correct && choices.some(function (x) { return norm(x) === norm(back); })) correct = back;
     if (!front || (!back && !correct)) return null;
     if (choices.length < 2) choices = [];
-    return { id: makeId(), front: front, back: back || correct, topic: topic, choices: choices, correct: correct, source: "personal" };
+    var choiceExplanations = parseOptionExplanations(row.choiceExplanations || row.option_explanations || row.explanations || row.rationales, choices);
+    return { id: makeId(), front: front, back: back || correct, topic: topic, choices: choices, correct: correct, choiceExplanations: choiceExplanations, source: "personal" };
   }
   function allCards() {
     return starter.concat(custom.filter(function (card) { return card && card.id && card.front; }));
@@ -232,26 +380,40 @@
     if (card.choices && card.choices.length > 1) {
       var options = node("div", "choice-list");
       card.choices.forEach(function (choice, index) {
+        var group = node("div", "choice-group");
         var btn = node("button", "choice", "");
         btn.type = "button";
         var letter = node("span", "choice-letter", String.fromCharCode(65 + index));
         btn.appendChild(letter);
         btn.appendChild(node("span", "", choice));
         btn.disabled = !!a.revealed;
+        var isCorrect = !!card.correct && norm(choice) === norm(card.correct);
+        var isSelected = a.selected === index;
         if (a.revealed) {
-          if (card.correct && norm(choice) === norm(card.correct)) btn.classList.add("correct");
-          if (a.selected === index && card.correct && norm(choice) !== norm(card.correct)) btn.classList.add("incorrect");
-          if (a.selected === index && !card.correct) btn.classList.add("selected");
+          if (isCorrect) btn.classList.add("correct");
+          if (isSelected && card.correct && !isCorrect) btn.classList.add("incorrect");
+          if (isSelected && !card.correct) btn.classList.add("selected");
         }
         btn.addEventListener("click", function () {
           if (a.revealed) return;
-          if (!card.correct) {
-            reveal(card, index);
-          } else {
-            grade(card, norm(choice) === norm(card.correct) ? "good" : "again", index);
-          }
+          if (!card.correct) reveal(card, index);
+          else grade(card, isCorrect ? "good" : "again", index);
         });
-        options.appendChild(btn);
+        group.appendChild(btn);
+        if (a.revealed) {
+          var note = node("div", "choice-explanation");
+          if (isCorrect) note.classList.add("correct-note");
+          if (isSelected && !isCorrect) note.classList.add("incorrect-note");
+          var label = isCorrect ? "Correct answer" : isSelected ? "Your answer · Why it's wrong" : "Why not";
+          if (!card.correct) label = isSelected ? "Your selection" : "About this option";
+          note.appendChild(node("span", "choice-explanation-label", label));
+          var reason = card.choiceExplanations && card.choiceExplanations[index];
+          if (!reason && isCorrect) reason = card.back || "Correct answer.";
+          if (!reason) reason = "No individual explanation provided for this option.";
+          note.appendChild(node("p", "choice-explanation-text", reason));
+          group.appendChild(note);
+        }
+        options.appendChild(group);
       });
       area.appendChild(options);
     } else if (!a.revealed) {
@@ -376,7 +538,8 @@
       back: el("new-back").value,
       topic: el("new-topic").value,
       choices: el("new-choices").value,
-      correct: el("new-correct").value
+      correct: el("new-correct").value,
+      explanations: el("new-explanations").value
     });
     if (!item) { status("Preencha pelo menos pergunta e resposta.", true); return; }
     var result = importRows([item]);
