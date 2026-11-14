@@ -326,35 +326,39 @@ L 730.8 488.16
   <g id="text_20">
    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="65.52" y="112.32" transform="rotate(-0 65.52 112.32)">Learn the trends and culture media—not the percentages.</text>
   </g>
-  <g id="text_21">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="771.12" y="203.04" transform="rotate(-0 771.12 203.04)">P. aeruginosa</text>
+  <g transform="translate(737 173)"><rect y="25" width="30" height="12" rx="5" fill="#1b9a7e"/><g fill="#8752b6"><circle cx="10" cy="6" r="5"/><circle cx="20" cy="6" r="5"/><circle cx="15" cy="15" r="5"/></g></g>
+ <g id="text_21">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="779.12" y="203.04" transform="rotate(-0 771.12 203.04)">Pseudomonas aeruginosa</text>
   </g>
   <g id="text_22">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="225.504" transform="rotate(-0 771.12 225.504)">Increases with age</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="779.12" y="225.504" transform="rotate(-0 771.12 225.504)">Increases with age</text>
   </g>
-  <g id="text_23">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="771.12" y="302.4" transform="rotate(-0 771.12 302.4)">S. aureus</text>
+  <g transform="translate(738 273)" fill="#8050b5" stroke="#5a3290"><circle cx="10" cy="8" r="7"/><circle cx="22" cy="9" r="7"/><circle cx="16" cy="20" r="7"/><circle cx="7" cy="25" r="6"/><circle cx="26" cy="27" r="6"/></g>
+ <g id="text_23">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="779.12" y="302.4" transform="rotate(-0 771.12 302.4)">Staphylococcus aureus</text>
   </g>
   <g id="text_24">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="324.864" transform="rotate(-0 771.12 324.864)">Common in childhood</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="779.12" y="324.864" transform="rotate(-0 771.12 324.864)">Common in childhood</text>
   </g>
-  <g id="text_25">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="771.12" y="401.76" transform="rotate(-0 771.12 401.76)">H. influenzae</text>
+  <g transform="translate(737 375)"><rect width="32" height="31" rx="5" fill="#72432c"/><path d="M16 0V31M0 15H32" stroke="#b98861" stroke-width="2"/><text x="4" y="12" font-size="10" fill="white">X</text><text x="20" y="27" font-size="10" fill="white">V</text></g>
+ <g id="text_25">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="779.12" y="401.76" transform="rotate(-0 771.12 401.76)">Haemophilus influenzae</text>
   </g>
   <g id="text_26">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="424.224" transform="rotate(-0 771.12 424.224)">More common in young children</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="779.12" y="424.224" transform="rotate(-0 771.12 424.224)">More common in young children</text>
   </g>
-  <g id="text_27">
-   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="771.12" y="492.48" transform="rotate(-0 771.12 492.48)">B. cepacia complex</text>
+  <g transform="translate(738 468)"><ellipse cx="16" cy="29" rx="16" ry="6" fill="#bdd58c"/><rect x="2" y="7" width="19" height="9" rx="4.5" fill="#ee9db1" stroke="#c46a82"/><rect x="13" y="17" width="19" height="9" rx="4.5" fill="#ee9db1" stroke="#c46a82"/></g>
+ <g id="text_27">
+   <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="779.12" y="492.48" transform="rotate(-0 771.12 492.48)">Burkholderia cepacia complex</text>
   </g>
   <g id="text_28">
-   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="771.12" y="514.944" transform="rotate(-0 771.12 514.944)">Uncommon ≠ harmless</text>
+   <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="779.12" y="514.944" transform="rotate(-0 771.12 514.944)">Uncommon ≠ harmless</text>
   </g>
   <g id="text_29">
    <text style="font-weight: 700; font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="65.52" y="557.28" transform="rotate(-0 65.52 557.28)">BACTERIUM → MEDIUM → CLUE</text>
   </g>
   <g id="text_30">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="70.56" y="600.48" transform="rotate(-0 70.56 600.48)">P. aeruginosa</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #d44955" x="70.56" y="600.48" transform="rotate(-0 70.56 600.48)">Pseudomonas aeruginosa</text>
   </g>
   <g id="text_31">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="600.48" transform="rotate(-0 302.4 600.48)">MacConkey</text>
@@ -363,7 +367,7 @@ L 730.8 488.16
    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="600.48" transform="rotate(-0 564.48 600.48)">Non-lactose fermenter → colorless colonies</text>
   </g>
   <g id="text_33">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="70.56" y="648" transform="rotate(-0 70.56 648)">S. aureus</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #6959ad" x="70.56" y="648" transform="rotate(-0 70.56 648)">Staphylococcus aureus</text>
   </g>
   <g id="text_34">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="648" transform="rotate(-0 302.4 648)">Mannitol salt agar</text>
@@ -372,7 +376,7 @@ L 730.8 488.16
    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="648" transform="rotate(-0 564.48 648)">Salt-tolerant; mannitol fermentation → yellow agar</text>
   </g>
   <g id="text_36">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="70.56" y="695.52" transform="rotate(-0 70.56 695.52)">H. influenzae</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b17a2e" x="70.56" y="695.52" transform="rotate(-0 70.56 695.52)">Haemophilus influenzae</text>
   </g>
   <g id="text_37">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="695.52" transform="rotate(-0 302.4 695.52)">Chocolate agar</text>
@@ -381,7 +385,7 @@ L 730.8 488.16
    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #53657b" x="564.48" y="695.52" transform="rotate(-0 564.48 695.52)">Factor X = hemin · Factor V = NAD¹</text>
   </g>
   <g id="text_39">
-   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="70.56" y="743.04" transform="rotate(-0 70.56 743.04)">B. cepacia complex</text>
+   <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #158798" x="70.56" y="743.04" transform="rotate(-0 70.56 743.04)">Burkholderia cepacia complex</text>
   </g>
   <g id="text_40">
    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b46" x="302.4" y="743.04" transform="rotate(-0 302.4 743.04)">Selective agar for B. cepacia</text>
