@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Original Step 1 flashcards with clickable answers and truly mixed subjects.">
+  <title>Flashcards · RapidFire</title>
+  <link rel="stylesheet" href="./flashcards.css?v=20261114-1">
+  <script defer src="./flashcards.js?v=20261114-1"></script>
+</head>
+<body>
+  <main class="shell">
+    <nav class="tabs" aria-label="Study sections">
+      <a href="./index.html">RapidFire · Questions</a>
+      <a class="active" href="./flashcards.html" aria-current="page">Flashcards</a>
+    </nav>
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Step 1 · Active recall</p>
+        <h1>Flash<span>cards</span></h1>
+        <p class="subtitle">Clickable answers · subjects mixed automatically · independent from your RapidFire question progress.</p>
+      </div>
+      <span class="pill">Separate review mode</span>
+    </header>
+
+    <section class="filters" aria-label="Review settings">
+      <label>Subject
+        <select id="subject-filter"><option value="all">All subjects</option></select>
+      </label>
+      <label>Collection
+        <select id="source-filter">
+          <option value="all">All flashcards</option>
+          <option value="personal">My cards</option>
+          <option value="starter">Original review examples</option>
+        </select>
+      </label>
+      <label>Study mode
+        <select id="study-filter">
+          <option value="all">All · mixed subjects</option>
+          <option value="due">Due for review</option>
+          <option value="missed">Missed</option>
+          <option value="unseen">Unreviewed</option>
+        </select>
+      </label>
+    </section>
+    <div class="toolbar">
+      <p>Default: different subjects alternate whenever possible. Start a new session to remix the deck.</p>
+      <button id="shuffle" type="button" class="secondary">Shuffle again</button>
+    </div>
+
+    <section class="stats" aria-label="Flashcard totals">
+      <div><strong id="deck-count">0</strong><small>Cards available</small></div>
+      <div><strong id="my-count">0</strong><small>My cards</small></div>
+      <div><strong id="reviewed-count">0</strong><small>Reviewed</small></div>
+      <div><strong id="current-count">0 / 0</strong><small>Session</small></div>
+    </section>
+
+    <article class="flashcard" id="flashcard-stage" aria-live="polite"></article>
+    <div class="navigation">
+      <button type="button" class="secondary" id="previous-card">← Previous</button>
+      <button type="button" class="primary" id="next-card">Next →</button>
+    </div>
+    <p class="keyboard">Keyboard: 1–6 selects an option; ← / → navigates. Progress is stored only in this browser.</p>
+
+    <details class="manage" id="manage">
+      <summary>Manage my flashcards <span>Import · Create · Export</span></summary>
+      <div class="manage-body">
+        <section>
+          <h2>Import your own or authorized cards</h2>
+          <p>Accepts JSON, CSV or TSV with <code>front</code>, <code>back</code>, <code>topic</code> and optional <code>choices</code> / <code>correct</code>. Choices can be separated with a slash: <code>A / B / C</code>. Imports stay in your browser, never in the public repository. Do not import protected third-party material without permission.</p>
+          <label class="upload" for="import-file">Choose a file (.json, .csv, .tsv)</label>
+          <input type="file" id="import-file" accept=".json,.csv,.tsv,.txt,text/csv,application/json">
+          <p id="import-status" role="status" class="import-status"></p>
+        </section>
+        <section>
+          <h2>Create a flashcard</h2>
+          <form id="add-card">
+            <label>Subject <input type="text" id="new-topic" placeholder="e.g. Cardiology" required maxlength="80"></label>
+            <label>Front / question <textarea id="new-front" rows="3" required placeholder="What finding suggests ...?"></textarea></label>
+            <label>Back / explanation <textarea id="new-back" rows="3" required placeholder="Explanation and high-yield takeaway"></textarea></label>
+            <label>Clickable options (optional) <input type="text" id="new-choices" placeholder="Option A / Option B / Option C"></label>
+            <label>Correct choice (optional) <input type="text" id="new-correct" placeholder="Exact text of correct option, or A / B / C"></label>
+            <button type="submit" class="primary">Add flashcard</button>
+          </form>
+        </section>
+        <section class="backup">
+          <h2>Backup and privacy</h2>
+          <p>Your cards and review progress stay in this browser. Export your cards before changing devices or clearing browser storage. This does not affect RapidFire questions.</p>
+          <div class="backup-actions">
+            <button id="export-cards" type="button" class="secondary">Export my cards</button>
+            <button id="clear-cards" type="button" class="danger">Delete my cards</button>
+          </div>
+        </section>
+      </div>
+    </details>
+  </main>
+</body>
+</html>
