@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Streptococcus ID · 3D Atlas · RapidFire</title>
-<meta name="description" content="3D interactive identification tree for Streptococcus and Enterococcus: hemolysis, bacitracin, optochin, CAMP, bile esculin and 6.5% NaCl.">
+<title>Gram-positive cocci · 3D ID Atlas · RapidFire</title>
+<meta name="description" content="3D identification tree for Gram-positive cocci: catalase, coagulase, novobiocin, hemolysis, bacitracin, optochin, CAMP, bile esculin and 6.5% NaCl.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;1,8..60,500;1,8..60,600&display=swap">
@@ -135,14 +135,14 @@ body.pon .tools{margin-right:var(--pw);transition:margin .45s}
 </head>
 <body>
 <div id="app">
-  <canvas id="gl" aria-label="3D identification tree for Streptococcus and Enterococcus"></canvas>
+  <canvas id="gl" aria-label="3D identification tree for Gram-positive cocci"></canvas>
   <div id="dim"></div>
   <div id="labels"></div>
   <header class="top">
     <div class="brand">
       <a class="back" href="./index.html">← RapidFire</a>
-      <div class="eyebrow">Bacterial ID atlas · Gram-positive cocci</div>
-      <h1>Streptococcus <em>&amp; Enterococcus</em></h1>
+      <div class="eyebrow">Bacterial ID atlas · Staphylococcus · Streptococcus · Enterococcus</div>
+      <h1>Gram-positive <em>cocci</em></h1>
     </div>
     <div class="tools">
       <button class="tb" id="bList" aria-expanded="false">☰ Species</button>
@@ -336,6 +336,18 @@ function modelEntero(seedBase=31){
     const c=chainOf(Object.assign({r:.24,stretch:1.24,amp:.06,freq:2,seed:seedBase+i,mat:M.gpDeep},o));c.g.position.set(...p);c.g.rotation.set(...rot);g.add(c.g);});
   return g;
 }
+function clusterOf({n=22,r=.2,seed=1,mat=M.gp,spread=2.3}={}){
+  const R=rng(seed),pts=[V(0,0,0)];let tries=0;
+  while(pts.length<n&&tries<4000){tries++;const b=pts[Math.floor(R()*pts.length)];const d=V(R()*2-1,(R()*2-1)*.85,R()*2-1).normalize();const p=b.clone().addScaledVector(d,r*1.96);
+    if(p.length()>r*2*spread)continue;if(pts.some(q=>q.distanceTo(p)<r*1.9))continue;pts.push(p);}
+  const c=pts.reduce((a,p)=>a.add(p),V(0,0,0)).multiplyScalar(1/pts.length);
+  const g=new THREE.Group();pts.forEach(p=>{const m=new THREE.Mesh(GEO.sph,mat);m.position.copy(p.sub(c));m.scale.setScalar(r*(.96+R()*.06));g.add(m);});
+  return g;
+}
+function modelAureus(){const g=new THREE.Group();const a=clusterOf({n:24,seed:3});a.position.set(-.2,.1,0);const b=clusterOf({n:12,seed:7});b.position.set(.62,-.3,.2);g.add(a,b);return g;}
+function modelEpid(){const g=new THREE.Group();const a=clusterOf({n:20,seed:11});g.add(a);
+  const slime=new THREE.Mesh(GEO.sph,fresnel(0xc9ec6a,.6,.12,1.5));slime.scale.set(.82,.62,.72);slime.position.set(.05,-.08,0);slime.renderOrder=2;g.add(slime);g.userData.slime=slime;return g;}
+function modelSapro(){const g=new THREE.Group();const a=clusterOf({n:18,seed:15});a.position.set(-.15,.08,0);const b=clusterOf({n:8,seed:19});b.position.set(.55,-.3,-.1);g.add(a,b);return g;}
 function hornPair(){
   const g=new THREE.Group();
   const mat=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.42,metalness:0});
@@ -358,14 +370,6 @@ function propHeart(){
   const geo=new THREE.ExtrudeGeometry(s,{depth:.16,bevelEnabled:true,bevelThickness:.08,bevelSize:.07,bevelSegments:5,curveSegments:24});geo.center();
   const m=new THREE.Mesh(geo,new THREE.MeshPhysicalMaterial({color:0xb8283c,roughness:.35,clearcoat:.7}));m.scale.setScalar(.8);
   const g=new THREE.Group();g.add(m);g.userData.spin=m;return g;
-}
-function propBottle(){
-  const g=new THREE.Group();
-  const body=new THREE.Mesh(new THREE.LatheGeometry([[0,0],[.2,0],[.23,.04],[.23,.62],[.2,.68]].map(p=>new THREE.Vector2(...p)),36),new THREE.MeshPhysicalMaterial({color:0xffffff,roughness:.1,transparent:true,opacity:.35,clearcoat:1,depthWrite:false,side:THREE.DoubleSide}));
-  const milk=new THREE.Mesh(new THREE.CylinderGeometry(.205,.19,.42,32),new THREE.MeshStandardMaterial({color:0xf7f3ea,roughness:.4}));milk.position.y=.23;
-  const collar=new THREE.Mesh(new THREE.CylinderGeometry(.22,.22,.12,32),new THREE.MeshPhysicalMaterial({color:0x8fc0e8,roughness:.3,clearcoat:.6}));collar.position.y=.72;
-  const nip=new THREE.Mesh(new THREE.LatheGeometry([[0,0],[.17,0],[.14,.06],[.07,.12],[.065,.24],[.075,.3],[0,.33]].map(p=>new THREE.Vector2(...p)),28),new THREE.MeshStandardMaterial({color:0xd9b98d,roughness:.5}));nip.position.y=.78;
-  g.add(body,milk,collar,nip);return g;
 }
 function propCandle(){
   const g=new THREE.Group();
@@ -425,10 +429,10 @@ function kidneyGeo(){
   const s=new THREE.Shape();s.moveTo(0,.45);s.bezierCurveTo(.4,.48,.5,.15,.45,-.1);s.bezierCurveTo(.4,-.42,.05,-.5,-.12,-.32);s.bezierCurveTo(-.22,-.2,-.05,-.08,-.12,.05);s.bezierCurveTo(-.2,.2,-.3,.42,0,.45);
   const geo=new THREE.ExtrudeGeometry(s,{depth:.14,bevelEnabled:true,bevelThickness:.09,bevelSize:.08,bevelSegments:5,curveSegments:24});geo.center();return geo;
 }
-function propUrinary(){
+function propUrinary({kidneys=true,foley=false}={}){
   const g=new THREE.Group(),inflame=[],glows=[];
   const kGeo=kidneyGeo();
-  [-1,1].forEach(sd=>{const mat=new THREE.MeshPhysicalMaterial({color:0xa8444a,roughness:.4,clearcoat:.5,emissive:0xff1a1a,emissiveIntensity:0});inflame.push(mat);
+  (kidneys?[-1,1]:[]).forEach(sd=>{const mat=new THREE.MeshPhysicalMaterial({color:0xa8444a,roughness:.4,clearcoat:.5,emissive:0xff1a1a,emissiveIntensity:0});inflame.push(mat);
     const k=new THREE.Mesh(kGeo,mat);k.scale.set(.5*sd,.5,.5);k.position.set(.46*sd,.62,0);k.rotation.z=-.15*sd;g.add(k);
     const gl=glowSprite('rgba(255,40,40,.8)',.8);gl.position.set(.46*sd,.62,.15);g.add(gl);glows.push(gl);
     const cv=new THREE.CatmullRomCurve3([V(.36*sd,.6,0),V(.3*sd,.35,.02),V(.18*sd,.0,.02),V(.1*sd,-.14,0)]);
@@ -437,7 +441,67 @@ function propUrinary(){
   const bl=new THREE.Mesh(GEO.sph,bm);bl.scale.set(.24,.2,.2);bl.position.y=-.26;g.add(bl);
   const ur=new THREE.Mesh(new THREE.CylinderGeometry(.025,.02,.18,8),new THREE.MeshStandardMaterial({color:0xd8b06b,roughness:.5}));ur.position.y=-.52;g.add(ur);
   const gb=glowSprite('rgba(255,40,40,.8)',.75);gb.position.set(0,-.26,.15);g.add(gb);glows.push(gb);
+  if(foley){
+    const fm=new THREE.MeshPhysicalMaterial({color:0xe9c27e,roughness:.3,transparent:true,opacity:.85,clearcoat:.6});
+    const cv=new THREE.CatmullRomCurve3([V(0,-.2,.05),V(0,-.4,.04),V(0,-.62,.04),V(.08,-.8,.1),V(.32,-.9,.18),V(.55,-.86,.2)]);
+    g.add(new THREE.Mesh(new THREE.TubeGeometry(cv,40,.026,10,false),fm));
+    const yA=new THREE.Mesh(new THREE.CylinderGeometry(.024,.03,.22,10),fm);yA.position.set(.66,-.83,.2);yA.rotation.z=Math.PI/2.4;g.add(yA);
+    const yB=new THREE.Mesh(new THREE.CylinderGeometry(.018,.022,.16,10),fm);yB.position.set(.62,-.94,.2);yB.rotation.z=Math.PI/1.6;g.add(yB);
+    const balloon=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0xf3dca8,transparent:true,opacity:.75,roughness:.15,clearcoat:1}));balloon.scale.setScalar(.075);balloon.position.set(0,-.13,.2);g.add(balloon);
+  }
   g.userData.inflame=inflame;g.userData.glows=glows;return g;
+}
+function propRings(){
+  const g=new THREE.Group(),gold=new THREE.MeshPhysicalMaterial({color:0xe2b13c,metalness:.85,roughness:.22,clearcoat:1});
+  const a=new THREE.Mesh(new THREE.TorusGeometry(.13,.028,18,56),gold);a.rotation.y=.5;
+  const b=new THREE.Mesh(new THREE.TorusGeometry(.13,.028,18,56),gold);b.position.x=.13;b.rotation.set(Math.PI/2.2,.3,0);
+  g.add(a,b);return g;
+}
+function propSapro(){
+  const g=new THREE.Group();const u=propUrinary({kidneys:false});u.position.set(-.15,.55,0);u.scale.setScalar(1.3);g.add(u);
+  const r=propRings();r.position.set(.62,1.0,.1);r.scale.setScalar(1.7);g.add(r);
+  g.userData.inflame=u.userData.inflame;g.userData.glows=u.userData.glows;g.userData.rings=r;return g;
+}
+function propBaby(){
+  const g=new THREE.Group();
+  const skin=new THREE.MeshPhysicalMaterial({color:0xf2c9a6,roughness:.55,clearcoat:.2});
+  const blanket=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0x9cc4ea,roughness:.8}));blanket.scale.set(.3,.36,.26);blanket.position.y=.28;
+  const fold=new THREE.Mesh(new THREE.TorusGeometry(.22,.06,12,40,Math.PI),blanket.material);fold.rotation.set(-.2,0,Math.PI);fold.position.set(0,.55,.06);
+  const head=new THREE.Mesh(GEO.sph,skin);head.scale.setScalar(.3);head.position.y=.82;
+  [-1,1].forEach(s=>{const e=new THREE.Mesh(GEO.sph,skin);e.scale.set(.06,.08,.05);e.position.set(s*.29,.82,0);g.add(e);
+    const eye=new THREE.Mesh(new THREE.TorusGeometry(.045,.009,6,18,Math.PI),new THREE.MeshStandardMaterial({color:0x3a2418}));eye.rotation.z=Math.PI;eye.position.set(s*.11,.88,.28);g.add(eye);
+    const ck=new THREE.Mesh(GEO.sph,new THREE.MeshStandardMaterial({color:0xf09a9a,transparent:true,opacity:.55}));ck.scale.set(.06,.04,.02);ck.position.set(s*.18,.76,.255);g.add(ck);});
+  const curl=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(0,1.1,.05),V(.06,1.17,.1),V(.1,1.12,.06),V(.05,1.08,.08),V(.02,1.12,.12)]),24,.014,6,false),new THREE.MeshStandardMaterial({color:0x8a5a33}));
+  const pac=new THREE.Group();
+  const shield=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0x7fd0c0,roughness:.3,clearcoat:.8}));shield.scale.set(.15,.1,.035);
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(.065,.016,10,32),shield.material);ring.position.z=.06;ring.rotation.x=.25;
+  const btn=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0xffffff,roughness:.3}));btn.scale.set(.035,.035,.03);btn.position.z=.035;
+  pac.add(shield,ring,btn);pac.position.set(0,.72,.3);
+  g.add(blanket,fold,head,curl,pac);g.userData.pac=pac;return g;
+}
+function propGrapes(){
+  const g=new THREE.Group(),gold=new THREE.MeshPhysicalMaterial({color:0xe0ac2e,metalness:.35,roughness:.22,clearcoat:1,clearcoatRoughness:.1});
+  const R=rng(77);
+  for(let L=0;L<6;L++){const n=Math.max(1,7-L),rad=.2*(1-L/6.5)+.02,y=-L*.13;
+    for(let k=0;k<n;k++){const a=k/n*Math.PI*2+L*.6+R()*.3;const m=new THREE.Mesh(GEO.sph,gold);m.scale.setScalar(.085+R()*.012);m.position.set(Math.cos(a)*rad,y+(R()-.5)*.03,Math.sin(a)*rad);g.add(m);}}
+  const stem=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(0,.02,0),V(.02,.16,0),V(.08,.26,.02)]),12,.018,6,false),new THREE.MeshStandardMaterial({color:0x5b3a1e,roughness:.8}));
+  const ls=new THREE.Shape();ls.moveTo(0,0);ls.bezierCurveTo(.12,.08,.2,.2,.08,.32);ls.bezierCurveTo(.02,.22,-.1,.16,0,0);
+  const leaf=new THREE.Mesh(new THREE.ExtrudeGeometry(ls,{depth:.01,bevelEnabled:true,bevelThickness:.008,bevelSize:.008,bevelSegments:2}),new THREE.MeshStandardMaterial({color:0x4f8a3a,roughness:.6,side:THREE.DoubleSide}));leaf.position.set(.06,.2,0);leaf.rotation.z=-.6;
+  g.add(stem,leaf);g.position.y=.75;const out=new THREE.Group();out.add(g);out.userData.spin=g;return out;
+}
+function propProsthesis(){
+  const g=new THREE.Group(),metal=new THREE.MeshPhysicalMaterial({color:0xcfd6df,metalness:.95,roughness:.18,clearcoat:.6});
+  const cv=new THREE.CatmullRomCurve3([V(0,.35,0),V(.03,.05,0),V(.05,-.3,0),V(.06,-.72,0)]);
+  g.add(new THREE.Mesh(varTube(cv,t=>.1*(1-t)+.035,40,18),metal));
+  const neck=new THREE.Mesh(new THREE.CylinderGeometry(.045,.055,.3,16),metal);neck.position.set(-.1,.46,0);neck.rotation.z=.85;g.add(neck);
+  const head=new THREE.Mesh(GEO.sph,metal);head.scale.setScalar(.15);head.position.set(-.22,.58,0);g.add(head);
+  const cup=new THREE.Mesh(new THREE.SphereGeometry(.19,32,16,0,Math.PI*2,0,Math.PI/2),new THREE.MeshPhysicalMaterial({color:0x9aa6b4,metalness:.9,roughness:.3,side:THREE.DoubleSide}));cup.position.set(-.22,.58,0);cup.rotation.z=.7;g.add(cup);
+  const bioM=fresnel(0xc9ec6a,.75,.18,1.6);
+  const bf=new THREE.Mesh(varTube(cv,t=>(.1*(1-t)+.035)+.04+.015*Math.sin(t*40),40,18),bioM);bf.renderOrder=2;g.add(bf);
+  const n=70,im=new THREE.InstancedMesh(GEO.sph,M.gpDeep,n),o=new THREE.Object3D(),R=rng(81);
+  for(let i=0;i<n;i++){const t=R()*.95,P=cv.getPointAt(t),a=R()*7,r=(.1*(1-t)+.035)+.025;o.position.set(P.x+Math.cos(a)*r,P.y,P.z+Math.sin(a)*r);o.scale.setScalar(.022);o.updateMatrix();im.setMatrixAt(i,o.matrix);}
+  g.add(im);g.position.y=.8;g.scale.setScalar(1.05);
+  const out=new THREE.Group();out.add(g);out.userData.bio=bioM;out.userData.spin=g;return out;
 }
 function propColon(){
   const g=new THREE.Group();
@@ -502,7 +566,7 @@ function diskDraw(hemo,sensitive){
     g.drawImage(bloodBase,0,0);
     const L=sm(0,.3,p)*(1-sm(.94,1,p));
     g.save();g.globalAlpha=L;
-    g.fillStyle=hemo==='beta'?'rgba(238,182,128,.42)':'rgba(70,104,42,.5)';g.fillRect(0,0,S,S);
+    g.fillStyle=hemo==='beta'?'rgba(238,182,128,.42)':hemo==='alpha'?'rgba(70,104,42,.5)':'rgba(235,224,200,.3)';g.fillRect(0,0,S,S);
     g.drawImage(lawnTex,0,0);g.restore();
     g.save();g.beginPath();g.arc(S/2,S/2,zoneR,0,7);g.clip();g.drawImage(bloodBase,0,0);g.restore();
   };
@@ -522,7 +586,7 @@ function campDraw(g,p){
 /* ================= neon sign ================= */
 let FONT=null,fontDone=false;const fontWait=[];
 /* glyph subset of Helvetiker Bold (three.js examples, MIT) — only the letters used by the signs, so no network fetch is needed */
-const FONT_DATA={"cssFontWeight":"bold","ascender":1216,"underlinePosition":-100,"cssFontStyle":"normal","boundingBox":{"yMin":-333,"xMin":-162,"yMax":1216,"xMax":1681},"resolution":1000,"original_font_information":{"postscript_name":"Helvetiker-Bold","version_string":"Version 1.00 2004 initial release","vendor_url":"http://www.magenta.gr","full_font_name":"Helvetiker Bold","font_family_name":"Helvetiker","copyright":"Copyright (c) Magenta ltd, 2004.","description":"","trademark":"","designer":"","designer_url":"","unique_font_identifier":"Magenta ltd:Helvetiker Bold:22-10-104","license_url":"http://www.ellak.gr/fonts/MgOpen/license.html","license_description":"Copyright (c) 2004 by MAGENTA Ltd. All Rights Reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license (\"Fonts\") and associated documentation files (the \"Font Software\"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions: \r\n\r\nThe above copyright and this permission notice shall be included in all copies of one or more of the Font Software typefaces.\r\n\r\nThe Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing the word \"MgOpen\", or if the modifications are accepted for inclusion in the Font Software itself by the each appointed Administrator.\r\n\r\nThis License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the \"MgOpen\" name.\r\n\r\nThe Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself. \r\n\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL MAGENTA OR PERSONS OR BODIES IN CHARGE OF ADMINISTRATION AND MAINTENANCE OF THE FONT SOFTWARE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.","manufacturer_name":"Magenta ltd","font_sub_family_name":"Bold"},"descender":-334,"familyName":"Helvetiker","lineHeight":1549,"underlineThickness":50,"glyphs":{"B":{"x_min":0,"x_max":835,"ha":938,"o":"m 674 547 q 791 450 747 518 q 835 304 835 383 q 718 75 835 158 q 461 0 612 0 l 0 0 l 0 1013 l 477 1013 q 697 951 609 1013 q 797 754 797 880 q 765 630 797 686 q 674 547 734 575 m 438 621 q 538 646 495 621 q 590 730 590 676 q 537 814 590 785 q 436 838 494 838 l 199 838 l 199 621 l 438 621 m 445 182 q 561 211 513 182 q 618 311 618 247 q 565 410 618 375 q 444 446 512 446 l 199 446 l 199 182 l 445 182 "},"A":{"x_min":0,"x_max":966.671875,"ha":1069,"o":"m 966 0 l 747 0 l 679 208 l 286 208 l 218 0 l 0 0 l 361 1013 l 600 1013 l 966 0 m 623 376 l 480 810 l 340 376 l 623 376 "},"T":{"x_min":0,"x_max":809,"ha":894,"o":"m 809 831 l 509 831 l 509 0 l 299 0 l 299 831 l 0 831 l 0 1013 l 809 1013 l 809 831 "},"P":{"x_min":0,"x_max":771,"ha":838,"o":"m 208 361 l 208 0 l 0 0 l 0 1013 l 450 1013 q 682 919 593 1013 q 771 682 771 826 q 687 452 771 544 q 466 361 604 361 l 208 361 m 421 837 l 208 837 l 208 544 l 410 544 q 525 579 480 544 q 571 683 571 615 q 527 792 571 747 q 421 837 484 837 "},"O":{"x_min":0,"x_max":994,"ha":1094,"o":"m 497 -29 q 133 127 272 -29 q 0 505 0 277 q 131 883 0 733 q 497 1040 270 1040 q 860 883 721 1040 q 994 505 994 733 q 862 127 994 277 q 497 -29 723 -29 m 497 154 q 710 266 631 154 q 780 506 780 365 q 710 745 780 647 q 497 857 631 857 q 283 747 361 857 q 213 506 213 647 q 282 266 213 365 q 497 154 361 154 "},"R":{"x_min":0,"x_max":836.109375,"ha":947,"o":"m 836 0 l 608 0 q 588 53 596 20 q 581 144 581 86 q 581 179 581 162 q 581 215 581 197 q 553 345 581 306 q 428 393 518 393 l 208 393 l 208 0 l 0 0 l 0 1013 l 491 1013 q 720 944 630 1013 q 819 734 819 869 q 778 584 819 654 q 664 485 738 513 q 757 415 727 463 q 794 231 794 358 l 794 170 q 800 84 794 116 q 836 31 806 51 l 836 0 m 462 838 l 208 838 l 208 572 l 452 572 q 562 604 517 572 q 612 704 612 640 q 568 801 612 765 q 462 838 525 838 "},"H":{"x_min":0,"x_max":838,"ha":953,"o":"m 838 0 l 628 0 l 628 450 l 210 450 l 210 0 l 0 0 l 0 1013 l 210 1013 l 210 635 l 628 635 l 628 1013 l 838 1013 l 838 0 "},"I":{"x_min":41,"x_max":249,"ha":365,"o":"m 249 0 l 41 0 l 41 1013 l 249 1013 l 249 0 "},"N":{"x_min":0,"x_max":833,"ha":949,"o":"m 833 0 l 617 0 l 206 695 l 206 0 l 0 0 l 0 1013 l 216 1013 l 629 315 l 629 1013 l 833 1013 l 833 0 "},"C":{"x_min":0,"x_max":970.828125,"ha":1043,"o":"m 970 345 q 802 70 933 169 q 490 -29 672 -29 q 130 130 268 -29 q 0 506 0 281 q 134 885 0 737 q 502 1040 275 1040 q 802 939 668 1040 q 965 679 936 838 l 745 679 q 649 809 716 761 q 495 857 582 857 q 283 747 361 857 q 214 508 214 648 q 282 267 214 367 q 493 154 359 154 q 651 204 584 154 q 752 345 718 255 l 970 345 "}}};
+const FONT_DATA={"cssFontWeight":"bold","ascender":1216,"underlinePosition":-100,"cssFontStyle":"normal","boundingBox":{"yMin":-333,"xMin":-162,"yMax":1216,"xMax":1681},"resolution":1000,"original_font_information":{"postscript_name":"Helvetiker-Bold","version_string":"Version 1.00 2004 initial release","vendor_url":"http://www.magenta.gr","full_font_name":"Helvetiker Bold","font_family_name":"Helvetiker","copyright":"Copyright (c) Magenta ltd, 2004.","description":"","trademark":"","designer":"","designer_url":"","unique_font_identifier":"Magenta ltd:Helvetiker Bold:22-10-104","license_url":"http://www.ellak.gr/fonts/MgOpen/license.html","license_description":"Copyright (c) 2004 by MAGENTA Ltd. All Rights Reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of the fonts accompanying this license (\"Fonts\") and associated documentation files (the \"Font Software\"), to reproduce and distribute the Font Software, including without limitation the rights to use, copy, merge, publish, distribute, and/or sell copies of the Font Software, and to permit persons to whom the Font Software is furnished to do so, subject to the following conditions: \r\n\r\nThe above copyright and this permission notice shall be included in all copies of one or more of the Font Software typefaces.\r\n\r\nThe Font Software may be modified, altered, or added to, and in particular the designs of glyphs or characters in the Fonts may be modified and additional glyphs or characters may be added to the Fonts, only if the fonts are renamed to names not containing the word \"MgOpen\", or if the modifications are accepted for inclusion in the Font Software itself by the each appointed Administrator.\r\n\r\nThis License becomes null and void to the extent applicable to Fonts or Font Software that has been modified and is distributed under the \"MgOpen\" name.\r\n\r\nThe Font Software may be sold as part of a larger software package but no copy of one or more of the Font Software typefaces may be sold by itself. \r\n\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL MAGENTA OR PERSONS OR BODIES IN CHARGE OF ADMINISTRATION AND MAINTENANCE OF THE FONT SOFTWARE BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM OTHER DEALINGS IN THE FONT SOFTWARE.","manufacturer_name":"Magenta ltd","font_sub_family_name":"Bold"},"descender":-334,"familyName":"Helvetiker","lineHeight":1549,"underlineThickness":50,"glyphs":{"C":{"x_min":0,"x_max":970.828125,"ha":1043,"o":"m 970 345 q 802 70 933 169 q 490 -29 672 -29 q 130 130 268 -29 q 0 506 0 281 q 134 885 0 737 q 502 1040 275 1040 q 802 939 668 1040 q 965 679 936 838 l 745 679 q 649 809 716 761 q 495 857 582 857 q 283 747 361 857 q 214 508 214 648 q 282 267 214 367 q 493 154 359 154 q 651 204 584 154 q 752 345 718 255 l 970 345 "},"V":{"x_min":0,"x_max":895.828125,"ha":997,"o":"m 895 1013 l 550 0 l 347 0 l 0 1013 l 231 1013 l 447 256 l 666 1013 l 895 1013 "},"N":{"x_min":0,"x_max":833,"ha":949,"o":"m 833 0 l 617 0 l 206 695 l 206 0 l 0 0 l 0 1013 l 216 1013 l 629 315 l 629 1013 l 833 1013 l 833 0 "},"R":{"x_min":0,"x_max":836.109375,"ha":947,"o":"m 836 0 l 608 0 q 588 53 596 20 q 581 144 581 86 q 581 179 581 162 q 581 215 581 197 q 553 345 581 306 q 428 393 518 393 l 208 393 l 208 0 l 0 0 l 0 1013 l 491 1013 q 720 944 630 1013 q 819 734 819 869 q 778 584 819 654 q 664 485 738 513 q 757 415 727 463 q 794 231 794 358 l 794 170 q 800 84 794 116 q 836 31 806 51 l 836 0 m 462 838 l 208 838 l 208 572 l 452 572 q 562 604 517 572 q 612 704 612 640 q 568 801 612 765 q 462 838 525 838 "},"A":{"x_min":0,"x_max":966.671875,"ha":1069,"o":"m 966 0 l 747 0 l 679 208 l 286 208 l 218 0 l 0 0 l 361 1013 l 600 1013 l 966 0 m 623 376 l 480 810 l 340 376 l 623 376 "},"I":{"x_min":41,"x_max":249,"ha":365,"o":"m 249 0 l 41 0 l 41 1013 l 249 1013 l 249 0 "},"O":{"x_min":0,"x_max":994,"ha":1094,"o":"m 497 -29 q 133 127 272 -29 q 0 505 0 277 q 131 883 0 733 q 497 1040 270 1040 q 860 883 721 1040 q 994 505 994 733 q 862 127 994 277 q 497 -29 723 -29 m 497 154 q 710 266 631 154 q 780 506 780 365 q 710 745 780 647 q 497 857 631 857 q 283 747 361 857 q 213 506 213 647 q 282 266 213 365 q 497 154 361 154 "},"H":{"x_min":0,"x_max":838,"ha":953,"o":"m 838 0 l 628 0 l 628 450 l 210 450 l 210 0 l 0 0 l 0 1013 l 210 1013 l 210 635 l 628 635 l 628 1013 l 838 1013 l 838 0 "},"T":{"x_min":0,"x_max":809,"ha":894,"o":"m 809 831 l 509 831 l 509 0 l 299 0 l 299 831 l 0 831 l 0 1013 l 809 1013 l 809 831 "},"B":{"x_min":0,"x_max":835,"ha":938,"o":"m 674 547 q 791 450 747 518 q 835 304 835 383 q 718 75 835 158 q 461 0 612 0 l 0 0 l 0 1013 l 477 1013 q 697 951 609 1013 q 797 754 797 880 q 765 630 797 686 q 674 547 734 575 m 438 621 q 538 646 495 621 q 590 730 590 676 q 537 814 590 785 q 436 838 494 838 l 199 838 l 199 621 l 438 621 m 445 182 q 561 211 513 182 q 618 311 618 247 q 565 410 618 375 q 444 446 512 446 l 199 446 l 199 182 l 445 182 "},"P":{"x_min":0,"x_max":771,"ha":838,"o":"m 208 361 l 208 0 l 0 0 l 0 1013 l 450 1013 q 682 919 593 1013 q 771 682 771 826 q 687 452 771 544 q 466 361 604 361 l 208 361 m 421 837 l 208 837 l 208 544 l 410 544 q 525 579 480 544 q 571 683 571 615 q 527 792 571 747 q 421 837 484 837 "}}};
 try{FONT=new THREE.Font(FONT_DATA);}catch(e){FONT=null;}fontDone=true;
 const rustTex=(()=>{const c=cnv(128),g=c.getContext('2d'),r=rng(19);g.fillStyle='#6b1c19';g.fillRect(0,0,128,128);
   for(let i=0;i<260;i++){g.fillStyle=`rgba(${60+r()*70|0},${25+r()*30|0},${15+r()*15|0},${.25+r()*.4})`;g.beginPath();g.arc(r()*128,r()*128,r()*4,0,7);g.fill();}
@@ -600,12 +664,46 @@ function tent(){
 
 /* ================= node content builders ================= */
 function contentRoot(){
-  const g=new THREE.Group();
-  const ch=chainOf({n:8,r:.2,amp:.2,freq:1.6,seed:41});ch.g.position.set(0,1.25,0);ch.g.rotation.z=.08;g.add(ch.g);
-  const slide=new THREE.Mesh(new THREE.BoxGeometry(2.1,.035,.72),M.glass);slide.position.y=.02;slide.renderOrder=3;g.add(slide);
-  const drop=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0xdff2ff,roughness:.02,transparent:true,opacity:.32,clearcoat:1,depthWrite:false}));drop.scale.set(.32,.075,.26);drop.position.y=.04;drop.renderOrder=4;g.add(drop);
-  const smear=new THREE.Mesh(new THREE.CircleGeometry(.14,24),new THREE.MeshStandardMaterial({color:0xe6dfcf,roughness:.6,transparent:true,opacity:.8}));smear.rotation.x=-Math.PI/2;smear.position.y=.04;g.add(smear);
-  return {g,H:1.75,W:4.2,ports:[0],update(t){ch.g.rotation.y=Math.sin(t*.4)*.35;}};
+  const g=new THREE.Group(),bubbles=[];
+  const bm=new THREE.MeshPhysicalMaterial({color:0xffffff,transparent:true,opacity:.4,roughness:0,clearcoat:1,envMapIntensity:2.2,depthWrite:false});
+  [[-1.6,true],[1.6,false]].forEach(([x,pos])=>{
+    const slide=new THREE.Mesh(new THREE.BoxGeometry(1.6,.035,.62),M.glass);slide.position.set(x,.02,0);slide.renderOrder=3;g.add(slide);
+    const drop=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0xdff2ff,roughness:.02,transparent:true,opacity:.32,clearcoat:1,depthWrite:false}));drop.scale.set(.34,.08,.26);drop.position.set(x,.04,0);drop.renderOrder=4;g.add(drop);
+    const smear=new THREE.Mesh(new THREE.CircleGeometry(.13,24),new THREE.MeshStandardMaterial({color:0xe6dfcf,roughness:.6,transparent:true,opacity:.8}));smear.rotation.x=-Math.PI/2;smear.position.set(x,.045,0);g.add(smear);
+    if(pos){const R=rng(91),n=42,im=new THREE.InstancedMesh(GEO.sph,bm,n);im.renderOrder=5;g.add(im);for(let i=0;i<n;i++)bubbles.push({im,i,x:x+(R()-.5)*.42,z:(R()-.5)*.3,ph:R(),sp:.6+R()*.6,r:.02+R()*.035});}
+  });
+  const cl=clusterOf({n:16,r:.17,seed:5});cl.position.set(-1.6,1.25,0);g.add(cl);
+  const ch=chainOf({n:7,r:.17,amp:.15,freq:1.8,seed:41});ch.g.position.set(1.6,1.25,0);g.add(ch.g);
+  const o=new THREE.Object3D();
+  return {g,H:1.75,W:5.4,ports:[-1.6,1.6],chips:[['Bubbles · catalase +','p'],['No bubbles · catalase −','n']],
+    update(t){cl.rotation.y=t*.3;ch.g.rotation.y=Math.sin(t*.4)*.35;
+      bubbles.forEach(b=>{const f=(t*b.sp*.5+b.ph)%1;const r=b.r*sm(0,.25,f)*(1-sm(.85,1,f));o.position.set(b.x+Math.sin(f*9+b.ph*6)*.02,.07+f*.55,b.z);o.scale.setScalar(Math.max(.0001,r));o.updateMatrix();b.im.setMatrixAt(b.i,o.matrix);});
+      if(bubbles.length)bubbles[0].im.instanceMatrix.needsUpdate=true;}};
+}
+function contentCoag(){
+  const g=new THREE.Group();g.add(rack(2.4));
+  const plasma=()=>new THREE.MeshPhysicalMaterial({color:0xe9c66a,roughness:.15,transparent:true,opacity:.55,clearcoat:.5,depthWrite:false});
+  // positive: tube in a pivot so it can be pulled out and tipped over
+  const piv=new THREE.Group();piv.position.set(-.75,.8,0);g.add(piv);
+  const tp=tubeGlass();tp.position.y=-.78;piv.add(tp);
+  const pm=plasma();const lp=new THREE.Mesh(liquidGeo(.18,.95),pm);lp.position.y=-.76;lp.renderOrder=2;piv.add(lp);
+  const cg=new THREE.SphereGeometry(1,28,20),cp=cg.attributes.position,R=rng(95);
+  for(let i=0;i<cp.count;i++){const v=V(cp.getX(i),cp.getY(i),cp.getZ(i));const k=1+(Math.sin(v.x*7+1)*Math.sin(v.y*6)*Math.sin(v.z*8+2))*.12+(R()-.5)*.04;cp.setXYZ(i,v.x*k,v.y*k,v.z*k);}cg.computeVertexNormals();
+  const clot=new THREE.Mesh(cg,new THREE.MeshPhysicalMaterial({color:0xf3e2b0,roughness:.6,transparent:true,opacity:.95,clearcoat:.2}));clot.position.y=-.4;piv.add(clot);
+  // negative
+  const tn=tubeGlass();tn.position.set(.75,.02,0);g.add(tn);
+  const ln=new THREE.Mesh(liquidGeo(.18,.95),plasma());ln.position.set(.75,.04,0);ln.renderOrder=2;g.add(ln);
+  return {g,H:1.9,W:4.2,ports:[-.75,.75],chips:[['Clot · coagulase +','p'],['Liquid · coagulase −','n']],
+    update(t){const q=(t%10)/10;const c=sm(.05,.4,q)*(1-sm(.94,1,q));clot.scale.set(.16*c+.001,.36*c+.001,.16*c+.001);pm.opacity=.55+.35*c;
+      const lift=sm(.45,.55,q)*(1-sm(.82,.9,q)),tip=sm(.52,.64,q)*(1-sm(.74,.84,q));piv.position.y=.8+lift*1.0;piv.rotation.z=tip*2.6;
+      ln.rotation.z=Math.sin(t*2.2)*.02;}};
+}
+function contentMSA(){
+  const cols=streak(404);
+  const draw=(g,p)=>{g.fillStyle='#b8264a';g.fillRect(0,0,S,S);const h=sm(.2,.7,p)*(1-sm(.9,1,p));
+    if(h>0)cols.forEach(c=>{const x=px(c.x),y=px(c.y),rr=16*c.s*(.4+.6*h)+3;const gr=g.createRadialGradient(x,y,0,x,y,rr);gr.addColorStop(0,`rgba(250,214,60,${.95*h})`);gr.addColorStop(.7,`rgba(246,200,60,${.75*h})`);gr.addColorStop(1,'rgba(246,200,60,0)');g.fillStyle=gr;g.beginPath();g.arc(x,y,rr,0,7);g.fill();});};
+  const p=makePlate({colonies:cols,colonyMat:M.colonyGold,draw});p.g.rotation.x=.4;const g=new THREE.Group();g.add(p.g);
+  return {g,ports:[0],chip:['Mannitol salt · yellow','p'],update(t,dt,tick){if(!tick)return;const q=(t%9)/9;p.set(q,sm(0,.28,q)*(1-sm(.9,1,q)));}};
 }
 function contentHemo(){
   const g=new THREE.Group(),plates=[];
@@ -682,15 +780,19 @@ function contentSpecies(id){
   const m=d.model();g.add(m);
   const pr=d.prop();pr.scale.setScalar(d.propScale||1);g.add(pr);
   let W=5.2,ports=[],chips=[],camp=null;
-  if(id==='agal'){
+  if(d.extra){
     m.position.set(-2.5,1.05,0);pr.position.set(-.85,.15,.1);
-    camp=contentCamp();camp.g.position.set(1.9,.1,0);camp.g.scale.setScalar(.82);g.add(camp.g);
-    W=8.2;ports=[1.9-.75*.82];chips=[['CAMP +','p']];
+    camp=d.extra();const ex=camp.g;const ox=camp.chip?1.6:1.9;ex.position.set(ox,.1,0);ex.scale.setScalar(.82);g.add(ex);
+    W=8.2;ports=[ox+camp.ports[0]*.82];chips=[camp.chip||['CAMP +','p']];
   }else{m.position.set(-.75,1.05,0);pr.position.set(1.45,.15,.1);}
   const my=m.position.y;
   return {g,H:2.1,W,ports,chips,update(t,dt,tick){m.rotation.y=m.userData.sway?Math.sin(t*.5)*.7:t*.25;m.position.y=my+Math.sin(t*.9)*.05;
     if(camp)camp.update(t,dt,tick);
     if(pr.userData.flame){const f=1+Math.sin(t*13)*.06+Math.sin(t*7.3)*.04;pr.userData.flame.scale.set(1/f,f,1/f);pr.userData.glow.material.opacity=.7+.2*Math.sin(t*11);}
+    if(pr.userData.pac)pr.userData.pac.position.z=.3+Math.max(0,Math.sin(t*4))*.025;
+    if(pr.userData.bio)pr.userData.bio.uniforms.b.value=.14+.08*Math.sin(t*2);
+    if(m.userData.slime)m.userData.slime.scale.set(.82+.03*Math.sin(t*1.7),.62,.72+.03*Math.cos(t*1.5));
+    if(pr.userData.rings)pr.userData.rings.rotation.y=t*.8;
     if(pr.userData.inflame){const ph=Math.pow(Math.max(0,Math.sin(t*3.4)),2);pr.userData.inflame.forEach(mt=>mt.emissiveIntensity=.08+.75*ph);pr.userData.glows.forEach(gl=>gl.material.opacity=.15+.7*ph);}
     else if(pr.userData.glow&&!pr.userData.flame)pr.userData.glow.material.opacity=.45+.35*Math.sin(t*2.4);
     if(pr.userData.spin)pr.rotation.y=Math.sin(t*.8)*.5;}};
@@ -698,18 +800,36 @@ function contentSpecies(id){
 
 /* ================= species data ================= */
 const SP={
+  aureus:{name:'Staphylococcus aureus',short:'S. aureus',group:'Coagulase-positive staphylococcus',model:modelAureus,prop:propGrapes,extra:contentMSA,
+    morph:'Cocci in grape-like clusters',
+    tests:[['Catalase','+','p'],['Coagulase','+','p'],['β-hemolysis','+','p'],['Mannitol fermentation','+','p']],
+    clin:['Skin and soft tissue: abscesses, furuncles, carbuncles, cellulitis, impetigo','Toxin-mediated: toxic shock syndrome (TSST-1), scalded skin syndrome (exfoliative toxin), food poisoning (preformed enterotoxin, rapid onset)','Acute endocarditis (tricuspid valve in IV drug use), osteomyelitis, septic arthritis, post-influenza pneumonia','Protein A binds IgG Fc; MRSA: mecA → altered PBP2a'],
+    diff:'Coagulase-negative staph (S. epidermidis, S. saprophyticus): novobiocin separates the two.',
+    mnem:'Golden bunch of grapes: <b>staphylé</b> = bunch of grapes, <b>aureus</b> = golden. Mannitol salt agar turns yellow.'},
+  epid:{name:'Staphylococcus epidermidis',short:'S. epidermidis',group:'Coagulase-negative staphylococcus',model:modelEpid,prop:propProsthesis,propScale:1.45,
+    morph:'Cocci in clusters · biofilm (extracellular polysaccharide)',
+    tests:[['Catalase','+','p'],['Coagulase','−','n'],['Novobiocin','S','p'],['Hemolysis','none','v']],
+    clin:['Normal skin flora; most common blood culture contaminant','Infections of prosthetic material: IV catheters, prosthetic joints and valves, CSF shunts','Biofilm shields it from antibiotics and host defenses','Usually methicillin resistant → vancomycin'],
+    diff:'S. saprophyticus is also coagulase −, but novobiocin resistant.',
+    mnem:'Hip prosthesis coated in biofilm = device infections. NO StRESs: <b>NO</b>vobiocin — <b>S</b>aprophyticus <b>R</b>esistant, <b>E</b>pidermidis <b>S</b>ensitive.'},
+  sapro:{name:'Staphylococcus saprophyticus',short:'S. saprophyticus',group:'Coagulase-negative staphylococcus',model:modelSapro,prop:propSapro,propScale:1.35,
+    morph:'Cocci in clusters',
+    tests:[['Catalase','+','p'],['Coagulase','−','n'],['Novobiocin','R','n'],['Urease','+','p']],
+    clin:['2nd most common cause of uncomplicated UTI (cystitis) in young sexually active women, after E. coli','Community-acquired','Urease positive'],
+    diff:'S. epidermidis: novobiocin sensitive; device infections. Enterococcus: hospital / catheter UTI.',
+    mnem:'Inflamed bladder + wedding rings = “honeymoon cystitis”. NO StRESs: Saprophyticus Resistant to novobiocin.'},
   pyo:{name:'Streptococcus pyogenes',short:'S. pyogenes',group:'Lancefield group A (GAS)',model:modelPyogenes,prop:propHeart,propScale:.9,
     morph:'Cocci in long chains · thin hyaluronic acid capsule · M-protein fimbriae',
     tests:[['Catalase','−','n'],['β-hemolysis','+','p'],['Bacitracin','S','p'],['PYR','+','p']],
     clin:['Pharyngitis, impetigo, cellulitis, erysipelas, necrotizing fasciitis','Scarlet fever and streptococcal toxic shock (pyrogenic exotoxins)','Acute rheumatic fever — after pharyngitis only (M-protein molecular mimicry)','Post-streptococcal glomerulonephritis — after pharyngitis or skin infection','ASO and anti-DNase B titers document recent infection'],
     diff:'S. agalactiae is also β-hemolytic, but bacitracin resistant, CAMP +, hippurate +, PYR −.',
     mnem:'Heart = rheumatic fever. B-BRAS: group <b>B</b> is Bacitracin <b>R</b>esistant, group <b>A</b> is <b>S</b>ensitive.'},
-  agal:{name:'Streptococcus agalactiae',short:'S. agalactiae',group:'Lancefield group B (GBS)',model:modelAgalactiae,prop:propBottle,
+  agal:{name:'Streptococcus agalactiae',short:'S. agalactiae',group:'Lancefield group B (GBS)',model:modelAgalactiae,prop:propBaby,extra:contentCamp,
     morph:'Cocci in pairs and short chains · prominent polysaccharide (sialic acid) capsule',
     tests:[['Catalase','−','n'],['β-hemolysis','+','p'],['Bacitracin','R','n'],['CAMP','+','p'],['Hippurate','+','p']],
     clin:['Leading cause of neonatal sepsis, pneumonia and meningitis (first 3 months)','Colonizes the vagina and rectum; acquired during delivery','Screen with rectovaginal culture at 36–37 weeks','Positive screen → intrapartum IV penicillin (or ampicillin)'],
     diff:'S. pyogenes: bacitracin sensitive, CAMP −.',
-    mnem:'Baby bottle = <b>B</b> for <b>B</b>abies. Tent = <b>CAMP</b> test.'},
+    mnem:'Baby with a pacifier = group <b>B</b> for <b>B</b>abies. Tent = <b>CAMP</b> test.'},
   pneumo:{name:'Streptococcus pneumoniae',short:'S. pneumoniae',group:'Pneumococcus · no Lancefield group',model:modelPneumo,prop:propCandle,
     morph:'Lancet-shaped diplococci · thick polysaccharide capsule (quellung +)',
     tests:[['Catalase','−','n'],['α-hemolysis','+','p'],['Optochin','S','p'],['Bile solubility','+','p']],
@@ -722,12 +842,12 @@ const SP={
     clin:['Normal oral flora','S. mutans and S. mitis: dental caries','S. sanguinis: subacute endocarditis on previously damaged valves (dextrans bind fibrin–platelet aggregates)','S. anginosus group: abscesses (brain, liver, lung)'],
     diff:'S. pneumoniae: optochin sensitive, bile soluble, capsule.',
     mnem:'Tooth with a cavity = mouth flora and caries. <b>Viridans</b> lives in the mouth because it is not afraid of <i>the-chin</i> (op-<i>tochin</i> resistant).'},
-  entero:{name:'Enterococcus',aka:'E. faecalis · E. faecium',short:'Enterococcus',group:'Lancefield group D (enterococci)',model:()=>modelEntero(31),prop:propUrinary,propScale:1.3,
+  entero:{name:'Enterococcus',aka:'E. faecalis · E. faecium',short:'Enterococcus',group:'Lancefield group D (enterococci)',model:()=>modelEntero(31),prop:()=>propUrinary({foley:true}),propScale:1.25,
     morph:'Ovoid cocci in pairs and short chains · thick wall, no capsule',
     tests:[['Catalase','−','n'],['Hemolysis','γ (variable)','v'],['Bile esculin','+','p'],['6.5% NaCl','growth','p'],['PYR','+','p']],
-    clin:['UTI and biliary tract infection','Subacute endocarditis after GI/GU procedures','Hospital-acquired; intrinsically resistant to cephalosporins','VRE: D-Ala-D-Ala → D-Ala-D-Lac'],
+    clin:['UTI, especially hospital-acquired and catheter-associated; biliary tract infection','Subacute endocarditis after GI/GU procedures','Hospital-acquired; intrinsically resistant to cephalosporins','VRE: D-Ala-D-Ala → D-Ala-D-Lac'],
     diff:'S. gallolyticus is also bile esculin +, but does not grow in 6.5% NaCl and is PYR −.',
-    mnem:'Salt shaker: Enterococcus is hardy — grows in salt and bile. Inflamed kidneys and bladder = UTI.'},
+    mnem:'Foley catheter in an inflamed urinary tract = hospital / catheter-associated UTI. Salt shaker: Enterococcus is hardy, grows in salt and bile.'},
   bovis:{name:'Streptococcus gallolyticus',aka:'formerly S. bovis biotype I',short:'S. bovis',group:'Lancefield group D (non-enterococcal)',model:modelBovis,prop:propColon,propScale:1.1,
     morph:'Cocci in pairs and short chains · no capsule',
     tests:[['Catalase','−','n'],['Hemolysis','γ','v'],['Bile esculin','+','p'],['6.5% NaCl','no growth','n'],['PYR','−','n']],
@@ -738,14 +858,16 @@ const SP={
 
 /* ================= tree definition ================= */
 const DEF={
-  root:{title:'Catalase-negative cocci',sub:'Gram + · no O₂ bubbles',cls:'root',build:contentRoot,children:['hemo']},
-  hemo:{title:'Blood agar hemolysis',sub:'Sheep blood agar',cls:'test',build:contentHemo,children:['bacit','opto','bile']},
+  root:{title:'Gram-positive cocci',sub:'Catalase · H₂O₂ on a slide',cls:'root',build:contentRoot,children:['coag','hemo']},
+  coag:{title:'Coagulase',sub:'Staphylococcus · clusters',cls:'test',build:contentCoag,children:['aureus','novo']},
+  novo:{title:'Novobiocin',sub:'Coagulase-negative staph',cls:'test',build:()=>contentDisk('NOVOBIOCIN','NB','none'),children:['epid','sapro']},
+  hemo:{title:'Blood agar hemolysis',sub:'Streptococcus · Enterococcus',cls:'test',build:contentHemo,children:['bacit','opto','bile']},
   bacit:{title:'Bacitracin',sub:'β-hemolytic strep',cls:'test',build:()=>contentDisk('BACITRACIN','A','beta'),children:['pyo','agal']},
   opto:{title:'Optochin',sub:'α-hemolytic strep',cls:'test',build:()=>contentDisk('OPTOCHIN','P','alpha'),children:['pneumo','viridans']},
   bile:{title:'Bile esculin',sub:'γ-hemolytic strep',cls:'test',build:contentBile,children:['nacl','viridg']},
   nacl:{title:'6.5% NaCl',sub:'Group D: Enterococcus vs S. bovis',cls:'test',build:contentNacl,children:['entero','bovis'],autoOpen:true},
 };
-['pyo','agal','pneumo','viridans','entero','bovis'].forEach(id=>{DEF[id]={title:SP[id].short,sub:SP[id].group.split(' · ')[0].replace('Lancefield ',''),cls:'sp',species:true,spKey:id,build:()=>contentSpecies(id),children:[]};});
+['aureus','epid','sapro','pyo','agal','pneumo','viridans','entero','bovis'].forEach(id=>{DEF[id]={title:SP[id].short,sub:SP[id].group.split(' · ')[0].replace('Lancefield ',''),cls:'sp',species:true,spKey:id,build:()=>contentSpecies(id),children:[]};});
 DEF.viridg={title:'Viridans strep',sub:'non-hemolytic (γ) · not group D',cls:'sp',species:true,spKey:'viridans',build:()=>contentSpecies('viridans'),children:[]};
 DEF.viridans.sub='S. mutans, S. sanguinis…';DEF.pneumo.sub='Pneumococcus';DEF.bovis.sub='S. gallolyticus · group D';DEF.entero.sub='E. faecalis · group D';
 
@@ -811,7 +933,7 @@ function subtreeIds(id){const out=[id];(N[id].open?N[id].children:[]).forEach(k=
 let selected=null,paused=false;
 const statusEl=$('#status'),hintEl=$('#hint');
 function pathTo(id){const a=[];let p=id,prev=null;while(p){a.unshift({id:p,via:prev});prev=p;p=N[p].parent;}return a;}
-const VIA={bacit:'β',opto:'α',bile:'γ',pyo:'Bacitracin S',agal:'Bacitracin R · CAMP +',pneumo:'Optochin S',viridans:'Optochin R',nacl:'Bile esculin +',viridg:'Bile esculin −',entero:'NaCl growth',bovis:'No NaCl growth'};
+const VIA={coag:'Catalase +',aureus:'Coagulase +',novo:'Coagulase −',epid:'Novobiocin S',sapro:'Novobiocin R',hemo:'Catalase −',bacit:'β',opto:'α',bile:'γ',pyo:'Bacitracin S',agal:'Bacitracin R · CAMP +',pneumo:'Optochin S',viridans:'Optochin R',nacl:'Bile esculin +',viridg:'Bile esculin −',entero:'NaCl growth',bovis:'No NaCl growth'};
 function select(id){
   selected=id;Object.values(N).forEach(n=>n.el.classList.toggle('sel',n.id===id));
   const onPath=new Set();let p=id;while(p){onPath.add(p);p=N[p].parent;}
@@ -884,7 +1006,7 @@ $('#pClose').onclick=closePanel;
 const ORDER=[];(function dfs(id){const n=N[id];if(n.species)ORDER.push(id);n.children.forEach(dfs);})('root');
 let navIdx=-1;
 function pathText(id){const parts=[];let q=id;const ch=[];while(q){ch.unshift(q);q=N[q].parent;}ch.forEach((c,i)=>{if(i>0&&VIA[c])parts.push(VIA[c]);});return parts.join(' → ');}
-const GRP={bacit:'β-HEMOLYTIC',opto:'α-HEMOLYTIC',bile:'γ-HEMOLYTIC',nacl:'γ-HEMOLYTIC'};
+const GRP={coag:'STAPHYLOCOCCUS',bacit:'STREP · β-HEMOLYTIC',opto:'STREP · α-HEMOLYTIC',bile:'γ-HEMOLYTIC · GROUP D',nacl:'γ-HEMOLYTIC · GROUP D'};
 (function(){const ol=$('#dlist');let last='';ORDER.forEach(id=>{let p=N[id].parent;while(p&&!GRP[p])p=N[p].parent;const g=GRP[p]||'';
   if(g!==last){const li=document.createElement('li');li.className='grp';li.textContent=g;ol.appendChild(li);last=g;}
   const li=document.createElement('li'),b=document.createElement('button');b.dataset.id=id;b.innerHTML=`<b>${N[id].title}</b><small>${pathText(id)}</small>`;b.onclick=()=>{toggleDrawer(false);goTo(id);};li.appendChild(b);ol.appendChild(li);});})();
