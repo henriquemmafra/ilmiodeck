@@ -502,7 +502,7 @@ window.RAPIDFIRE_QUESTIONS = [
   },
   {
     "id": "nnt",
-    "topic": "Bioestatística",
+    "topic": "Biostatistics",
     "level": 1,
     "stem": "In a randomized trial, an event occurs in 10% of untreated patients and 5% of treated patients. What is the number needed to treat to prevent one event?",
     "options": [
@@ -522,7 +522,7 @@ window.RAPIDFIRE_QUESTIONS = [
   },
   {
     "id": "alpha",
-    "topic": "Bioestatística",
+    "topic": "Biostatistics",
     "level": 1,
     "stem": "A researcher rejects a true null hypothesis. Which statistical error has occurred?",
     "options": [
@@ -542,7 +542,7 @@ window.RAPIDFIRE_QUESTIONS = [
   },
   {
     "id": "power",
-    "topic": "Bioestatística",
+    "topic": "Biostatistics",
     "level": 2,
     "stem": "A trial has a 20% probability of failing to detect a true treatment effect. What is its statistical power?",
     "options": [
@@ -4058,7 +4058,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Acid alpha-glucosidase deficiency causes Pompe disease (type II), primarily with cardiomyopathy and hypotonia.",
       "Muscle phosphorylase deficiency causes McArdle disease (type V), with exercise intolerance."
     ],
-    "teaching": "Von Gierke = glicose-6-fosfatase ausente: hipoglicemia de jejum, lactato alto, ácido úrico alto, lipídios altos e hepatomegalia."
+    "teaching": "Von Gierke: glucose-6-phosphatase deficiency causes fasting hypoglycemia, high lactate, uric acid and lipids, and hepatomegaly."
   },
   {
     "id": "glycogen-20261105-pompe",
@@ -4078,7 +4078,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "McArdle disease causes cramps and exercise intolerance, generally without infantile cardiomyopathy.",
       "Branching enzyme deficiency causes Andersen disease, with progressive liver disease."
     ],
-    "teaching": "Pompe = depósito lisossômico de glicogênio; coração aumentado e hipotonia com glicemia geralmente normal."
+    "teaching": "Pompe: lysosomal glycogen accumulation causes cardiomegaly and hypotonia, usually with normal glucose."
   },
   {
     "id": "glycogen-20261105-cori",
@@ -4098,7 +4098,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Glucose-6-phosphatase deficiency causes Von Gierke disease (type I), with severe hypoglycemia and lactic acidosis.",
       "Muscle phosphorylase deficiency causes McArdle disease (type V), which manifests during exercise."
     ],
-    "teaching": "Cori (tipo III) = deficiência da enzima desramificadora e acúmulo de dextrina-limite; hipoglicemia costuma ser mais leve que em Von Gierke."
+    "teaching": "Cori (type III): debranching enzyme deficiency causes limit dextrin accumulation and milder hypoglycemia than Von Gierke."
   },
   {
     "id": "glycogen-20261105-andersen",
@@ -4118,7 +4118,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Liver phosphorylase deficiency causes Hers disease (type VI), which is generally milder.",
       "Acid alpha-glucosidase is a lysosomal enzyme; its deficiency causes Pompe disease."
     ],
-    "teaching": "Andersen (tipo IV): glicogênio com poucas ramificações → depósito hepático e cirrose progressiva."
+    "teaching": "Andersen (type IV): poorly branched glycogen accumulates in the liver, causing progressive cirrhosis."
   },
   {
     "id": "glycogen-20261105-hers",
@@ -4138,7 +4138,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "McArdle disease affects skeletal muscle and causes exercise intolerance.",
       "Branching enzyme deficiency causes the progressive liver disease of Andersen disease."
     ],
-    "teaching": "Hers (tipo VI) = fosforilase hepática; hepatomegalia e hipoglicemia de jejum geralmente leves."
+    "teaching": "Hers (type VI): hepatic glycogen phosphorylase deficiency causes hepatomegaly and mild fasting hypoglycemia."
   },
   {
     "id": "lysosomal-20261105-gaucher",
@@ -4158,7 +4158,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Hexosaminidase A deficiency causes Tay–Sachs disease, with neurodegeneration and a cherry-red spot without hepatosplenomegaly.",
       "Alpha-galactosidase A deficiency causes Fabry disease."
     ],
-    "teaching": "Gaucher = glucocerebrosidase baixa; macrófagos com aspecto de papel amassado, citopenias e doença óssea."
+    "teaching": "Gaucher: glucocerebrosidase deficiency causes crumpled-tissue-paper macrophages, cytopenias, and bone disease."
   },
   {
     "id": "lysosomal-20261105-niemann-pick",
@@ -4178,7 +4178,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Glucocerebrosidase deficiency causes Gaucher disease; macrophages have a crumpled tissue-paper appearance.",
       "Iduronate-2-sulfatase deficiency causes Hunter syndrome, a mucopolysaccharidosis."
     ],
-    "teaching": "Niemann–Pick: esfingomielinase ácida baixa, células espumosas e hepatoesplenomegalia; pode haver mancha vermelho-cereja."
+    "teaching": "Niemann–Pick: acid sphingomyelinase deficiency causes foam cells, hepatosplenomegaly, and sometimes a cherry-red spot."
   },
   {
     "id": "lysosomal-20261105-fabry",
@@ -4198,7 +4198,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Sphingomyelin accumulates in Niemann–Pick disease.",
       "GM2 accumulates in Tay–Sachs disease due to hexosaminidase A deficiency."
     ],
-    "teaching": "Fabry = alfa-galactosidase A baixa → Gb3; dor acral, angiokeratomas, hipohidrose e doença renal/cardiaca."
+    "teaching": "Fabry: alpha-galactosidase A deficiency causes Gb3 accumulation, acroparesthesias, angiokeratomas, hypohidrosis, and kidney/heart disease."
   },
   {
     "id": "lysosomal-20261105-hurler",
@@ -4218,7 +4218,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Arylsulfatase A deficiency causes metachromatic leukodystrophy.",
       "Hexosaminidase A deficiency causes Tay–Sachs disease."
     ],
-    "teaching": "Hurler (MPS I) = alfa-L-iduronidase; opacidade corneana. Hunter (MPS II) = iduronate-2-sulfatase; sem opacidade corneana."
+    "teaching": "Hurler (MPS I): alpha-L-iduronidase deficiency causes corneal clouding. Hunter (MPS II): iduronate-2-sulfatase deficiency usually spares the cornea."
   },
   {
     "id": "lysosomal-20261105-hunter",
@@ -4238,7 +4238,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Low arylsulfatase A causes metachromatic leukodystrophy, not the syndrome described.",
       "Low alpha-galactosidase A causes Fabry disease, with angiokeratomas and acral pain."
     ],
-    "teaching": "Hunter = MPS II, ligada ao X, iduronate-2-sulfatase, córneas claras."
+    "teaching": "Hunter: X-linked MPS II involves iduronate-2-sulfatase deficiency and typically clear corneas."
   },
   {
     "id": "inborn-20261105-pku",
@@ -4258,7 +4258,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Homogentisate oxidase deficiency causes alkaptonuria.",
       "Dihydropteridine reductase regenerates BH4; a defect can reduce the activity of BH4-dependent enzymes and requires specific management."
     ],
-    "teaching": "Fenilcetonúria clássica = fenilalanina hidroxilase baixa → fenilalanina alta e tirosina baixa; tirosina torna-se essencial."
+    "teaching": "Classic phenylketonuria: phenylalanine hydroxylase deficiency increases phenylalanine and decreases tyrosine, making tyrosine essential."
   },
   {
     "id": "inborn-20261105-mcad",
@@ -4278,7 +4278,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Hormone-sensitive lipase deficiency is not the classic inherited deficiency associated with this presentation.",
       "Low liver phosphorylase causes glycogen storage disease VI, with hypoglycemia and hepatomegaly, not dicarboxylic aciduria."
     ],
-    "teaching": "MCAD = defeito de beta-oxidação; jejum → hipoglicemia hipocetótica. Crianças afetadas devem evitar jejum prolongado."
+    "teaching": "MCAD deficiency impairs fatty acid beta-oxidation and causes fasting hypoketotic hypoglycemia; avoid prolonged fasting."
   },
   {
     "id": "inborn-20261105-mma",
@@ -4298,7 +4298,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Cystathionine beta-synthase deficiency increases homocysteine and methionine, not methylmalonic acid.",
       "Phenylalanine hydroxylase deficiency raises phenylalanine and reduces tyrosine."
     ],
-    "teaching": "Ácido metilmalônico alto + homocisteína alta + metionina baixa sugere defeito combinado de cobalamina (por exemplo, cblC), que afeta duas reações dependentes de vitamina B12."
+    "teaching": "High methylmalonic acid and homocysteine with low methionine suggest a combined cobalamin defect (e.g., cblC)."
   },
   {
     "id": "inborn-20261105-tyrosinemia",
@@ -4318,7 +4318,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Low homogentisate oxidase causes alkaptonuria, with dark urine and ochronosis.",
       "Phenylalanine hydroxylase deficiency causes phenylketonuria."
     ],
-    "teaching": "Tirosinemia tipo I = fumarylacetoacetato hidrolase baixa; succinilacetona, insuficiência hepática e lesão renal."
+    "teaching": "Tyrosinemia type I: fumarylacetoacetate hydrolase deficiency causes succinylacetone accumulation, liver failure, and renal injury."
   },
   {
     "id": "biochem-20261105-glut4",
@@ -4338,7 +4338,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "GLUT3 has high affinity for glucose and is prominent in neurons.",
       "Correct: insulin stimulates GLUT4 translocation to the membrane in skeletal muscle and adipose tissue."
     ],
-    "teaching": "GLUT4 = transportador de glicose sensível à insulina em músculo e tecido adiposo; exercício também pode aumentar sua translocação muscular."
+    "teaching": "GLUT4 is insulin responsive in muscle and adipose tissue; exercise can also increase its translocation in muscle."
   },
   {
     "id": "biochem-20261105-beta2-gs",
@@ -4358,7 +4358,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Gq activates phospholipase C, forming IP3 and DAG; alpha-1 is a classic example.",
       "STAT is activated primarily by JAK-associated cytokine receptors."
     ],
-    "teaching": "Beta-2 = Gs → adenilil ciclase → AMPc sobe → proteína quinase A → relaxamento do músculo liso."
+    "teaching": "Beta-2 receptors activate Gs → adenylyl cyclase → increased cAMP → protein kinase A → smooth muscle relaxation."
   },
   {
     "id": "biochem-20261105-pertussis-gi",
@@ -4378,7 +4378,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Gq activates phospholipase C but is not the classic target of pertussis toxin.",
       "Protein kinase C is activated by DAG downstream of Gq, not directly by this toxin."
     ],
-    "teaching": "Toxina pertussis ADP-ribosila Gi e a deixa inativa → adenilil ciclase sem freio → AMPc aumenta."
+    "teaching": "Pertussis toxin ADP-ribosylates and inactivates Gi, increasing adenylyl cyclase activity and cAMP."
   },
   {
     "id": "biochem-20261105-translation-direction",
@@ -4398,7 +4398,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The RNA direction is correct, but the protein grows in the opposite direction to that described.",
       "Protein synthesis proceeds N→C, and RNA is read 5′→3′."
     ],
-    "teaching": "Tradução: leitura do RNA mensageiro 5′→3′; crescimento da proteína N-terminal→C-terminal."
+    "teaching": "Translation reads mRNA 5′→3′ and extends proteins from the N-terminus to the C-terminus."
   },
   {
     "id": "biochem-20261105-trna-ape",
@@ -4418,7 +4418,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The E site is the exit site for uncharged tRNA.",
       "Peptidyl transferase activity catalyzes peptide bond formation in the large subunit; it is not the entry site for the new tRNA."
     ],
-    "teaching": "A-P-E: aminoacil entra no A; peptidil fica no P; tRNA vazio sai pelo E."
+    "teaching": "A-P-E: aminoacyl-tRNA enters the A site, peptidyl-tRNA occupies P, and empty tRNA exits through E."
   },
   {
     "id": "biochem-20261105-kozak",
@@ -4438,7 +4438,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The Pribnow box is a prokaryotic promoter sequence.",
       "The Shine–Dalgarno sequence aligns the ribosome on prokaryotic mRNA."
     ],
-    "teaching": "Eucariotos: subunidade 40S faz scanning do 5′ cap; a sequência de Kozak favorece a escolha do AUG de início."
+    "teaching": "In eukaryotes, the 40S subunit scans from the 5′ cap; the Kozak sequence promotes AUG start codon recognition."
   },
   {
     "id": "biochem-20261105-telomerase",
@@ -4458,7 +4458,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "DNA polymerase delta replicates DNA but does not replace telomerase.",
       "RNase H and exonucleases participate in primer removal; this does not resolve terminal shortening."
     ],
-    "teaching": "Telomerase carrega seu próprio RNA molde e alonga a extremidade 3′ do telômero; depois a maquinaria convencional completa a fita complementar."
+    "teaching": "Telomerase carries its own RNA template and extends the 3′ telomeric end; conventional machinery completes the complementary strand."
   },
   {
     "id": "biochem-20261105-competitive",
@@ -4478,7 +4478,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This is the typical change seen in pure noncompetitive inhibition.",
       "Vmax does not increase; competition raises apparent Km and leaves Vmax unchanged."
     ],
-    "teaching": "Inibidor competitivo: Km aparente ↑, Vmax inalterada; aumentar substrato pode superar a inibição."
+    "teaching": "Competitive inhibition increases apparent Km without changing Vmax; increasing substrate can overcome inhibition."
   },
   {
     "id": "biochem-20261105-nadph",
@@ -4498,7 +4498,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Heme oxygenase breaks down heme and is not the system that directly depends on NADPH for this protective role in erythrocytes.",
       "Fetal hemoglobin production is not the antioxidant defense in question."
     ],
-    "teaching": "Via das pentoses fosfato gera NADPH; NADPH regenera glutationa reduzida e protege hemácias contra estresse oxidativo."
+    "teaching": "The pentose phosphate pathway produces NADPH, which regenerates reduced glutathione to protect red blood cells from oxidative stress."
   },
   {
     "id": "biochem-20261105-pyruvate-carboxylase",
@@ -4518,7 +4518,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Pyridoxal phosphate is vitamin B6 and participates in transamination and decarboxylation reactions.",
       "Tetrahydrofolate carries one-carbon units."
     ],
-    "teaching": "Piruvato carboxilase: piruvato → oxaloacetato; precisa de biotina e ATP."
+    "teaching": "The 5′ 7-methylguanosine cap protects mRNA and helps initiate translation; the poly-A tail is at the 3′ end."
   },
   {
     "id": "biochem-20261105-mrna-5cap",
@@ -4538,7 +4538,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The poly-A tail is added separately to the 3′ end.",
       "Replication origin licensing occurs on DNA and does not depend on the mRNA cap."
     ],
-    "teaching": "Cap 5′ de 7-metilguanosina protege o mRNA e ajuda a iniciar tradução; cauda poli-A fica na extremidade 3′."
+    "teaching": "The 5′ 7-methylguanosine cap protects mRNA and helps initiate translation; the poly-A tail is at the 3′ end."
   },
   {
     "id": "biochem-20261105-ethanol-nad",
@@ -4558,7 +4558,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Gluconeogenesis is impaired because oxaloacetate is shifted toward malate; this reaction is not favored.",
       "High NADH inhibits beta-oxidation and promotes triglyceride accumulation."
     ],
-    "teaching": "Etanol ↑NADH/NAD+ → piruvato vira lactato e oxaloacetato vira malato; gliconeogênese cai e pode ocorrer hipoglicemia."
+    "teaching": "Ethanol increases NADH/NAD+, shifting pyruvate to lactate and oxaloacetate to malate, reducing gluconeogenesis."
   },
   {
     "id": "biochem-20261105-dna-direction",
@@ -4578,7 +4578,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Each new strand is synthesized 5′→3′, although one is continuous and the other consists of Okazaki fragments.",
       "Replication can proceed bidirectionally from the origin, but each daughter strand still has 5′→3′ polarity."
     ],
-    "teaching": "DNA polimerase lê a fita molde 3′→5′ e sintetiza DNA novo 5′→3′; ela só consegue adicionar à extremidade 3′."
+    "teaching": "DNA polymerase reads the template 3′→5′ and synthesizes new DNA 5′→3′, adding only to the 3′ end."
   },
   {
     "id": "cell-20261105-ras-gep-gap",
@@ -4598,7 +4598,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "GAP accelerates GTP hydrolysis; GEF promotes GDP→GTP exchange.",
       "RAS requires guanine nucleotide exchange factors (GEFs) to facilitate GDP release and GTP binding."
     ],
-    "teaching": "GEF ativa RAS ao trocar GDP por GTP. RAS hidrolisa GTP por conta própria; GAP acelera essa hidrólise e desliga RAS."
+    "teaching": "GEFs activate RAS by exchanging GDP for GTP; GAPs accelerate GTP hydrolysis and turn RAS off."
   },
   {
     "id": "cell-20261105-nf1-gap",
@@ -4638,7 +4638,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "IP3 is produced by the phospholipase C pathway, which is activated by Gq.",
       "An isolated calcium increase is not the mechanism of the heat-stable toxin."
     ],
-    "teaching": "ETEC termoestável → guanilil ciclase C → GMP cíclico ↑; termo-lábil → Gs/adenilil ciclase → AMP cíclico ↑."
+    "teaching": "ETEC heat-stable toxin increases cGMP via guanylyl cyclase C; heat-labile toxin increases cAMP via Gs."
   },
   {
     "id": "biochem-20261105-cps1",
@@ -4658,7 +4658,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "OTC combines carbamoyl phosphate with ornithine to form citrulline.",
       "Argininosuccinate synthetase acts later in the cytosol, combining citrulline and aspartate."
     ],
-    "teaching": "CPS I = mitocôndria + amônia + ciclo da ureia; CPS II = citosol + glutamina + síntese de pirimidinas."
+    "teaching": "CPS I is mitochondrial and uses ammonia in the urea cycle; CPS II is cytosolic and uses glutamine in pyrimidine synthesis."
   },
   {
     "id": "biochem-20261105-nags",
@@ -4698,7 +4698,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Cobalamin and glutathione do not replace the dehydrogenase complex's cofactors.",
       "PLP and BH4 are not sufficient; the complex depends on the five cofactors listed in the correct option."
     ],
-    "teaching": "BCKD e piruvato desidrogenase usam o mesmo conjunto clássico: B1, lipoato, B5, B2 e B3."
+    "teaching": "BCKD and pyruvate dehydrogenase share five cofactors: B1, lipoate, B5, B2, and B3."
   },
   {
     "id": "biochem-20261105-ammonia-akg",
@@ -4718,7 +4718,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Glutamine synthesis increases as a mechanism of ammonia detoxification.",
       "Acetyl-CoA does not directly enter the urea cycle; N-acetylglutamate activates CPS I."
     ],
-    "teaching": "Amônia alta → glutamato é desviado para glutamina; a depleção de alfa-cetoglutarato prejudica o ciclo do ácido cítrico e a produção de energia cerebral."
+    "teaching": "Hyperammonemia drives glutamate into glutamine; alpha-ketoglutarate depletion impairs the citric acid cycle and brain energy production."
   },
   {
     "id": "biochem-20261105-hgprt",
@@ -4738,7 +4738,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Xanthine oxidase inhibition reduces uric acid and is used therapeutically.",
       "APRT deficiency can cause 2,8-dihydroxyadenine stones but not the classic neurobehavioral presentation."
     ],
-    "teaching": "Lesch–Nyhan = deficiência ligada ao X de HGPRT → salvage de hipoxantina/guanina falha, ácido úrico alto e automutilação."
+    "teaching": "Lesch–Nyhan: X-linked HGPRT deficiency impairs purine salvage, causing hyperuricemia and self-injury."
   },
   {
     "id": "biochem-20261105-cystinuria",
@@ -4758,7 +4758,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Cystathionine beta-synthase deficiency causes homocystinuria, not hexagonal cystine stones.",
       "Glucosuria and phosphaturia suggest generalized proximal tubular dysfunction, such as Fanconi syndrome."
     ],
-    "teaching": "Cistinúria: transporte COLA (cistina, ornitina, lisina, arginina) proximal deficiente → cálculos hexagonais; cistinose é doença lisossômica distinta."
+    "teaching": "Cystinuria: defective proximal tubular COLA transport causes hexagonal cystine stones; cystinosis is a distinct lysosomal disorder."
   },
   {
     "id": "biochem-20261105-alkaptonuria",
@@ -4778,7 +4778,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Fumarylacetoacetate hydrolase deficiency causes tyrosinemia type I, with succinylacetone and hepatorenal injury.",
       "Phenylalanine hydroxylase deficiency causes phenylketonuria."
     ],
-    "teaching": "Alcaptonúria = homogentisato oxidase baixa → urina escurece ao oxidar e ocorre ocronose."
+    "teaching": "Alkaptonuria: homogentisate oxidase deficiency causes urine darkening and ochronosis."
   },
   {
     "id": "biochem-20261105-cyanide",
@@ -4798,7 +4798,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Correct: cyanide blocks cytochrome c oxidase (complex IV), preventing electron transfer to oxygen.",
       "Oligomycin inhibits ATP synthase (complex V)."
     ],
-    "teaching": "Cianeto → complexo IV bloqueado → cadeia respiratória para; oxigênio pode estar presente, mas os tecidos não conseguem utilizá-lo (hipóxia histotóxica)."
+    "teaching": "Cyanide blocks complex IV, preventing cellular oxygen use despite adequate oxygen delivery (histotoxic hypoxia)."
   },
   {
     "id": "biochem-20261105-methanol",
@@ -4818,7 +4818,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Glycolate, an ethylene glycol metabolite, contributes to acidosis and is not the principal cause of methanol's optic toxicity.",
       "Acetaldehyde is derived from ethanol and does not explain the typical optic neuropathy."
     ],
-    "teaching": "Metanol → formiato → acidose metabólica e toxicidade retiniana/nervo óptico; etilenoglicol → glicolato/oxalato e lesão renal."
+    "teaching": "Methanol produces formate, causing acidosis and optic toxicity; ethylene glycol produces glycolate/oxalate and kidney injury."
   },
   {
     "id": "biochem-20261105-lead-heme",
@@ -4838,7 +4838,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "These enzymes are not the two targets inhibited by lead.",
       "Heme oxygenase breaks down heme and is not a classic target; ferrochelatase is inhibited."
     ],
-    "teaching": "Chumbo inibe ALA desidratase e ferroquelatase → síntese de heme cai; anemia microcítica, dor abdominal e pontilhado basofílico."
+    "teaching": "Lead inhibits ALA dehydratase and ferrochelatase, causing impaired heme synthesis, microcytic anemia, and basophilic stippling."
   },
   {
     "id": "micro-20261105-tb-listeria",
@@ -4858,7 +4858,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Antibodies are not the principal mechanism of intracellular survival for these pathogens.",
       "Listeria replicates in the cytosol, and TB can survive in modified phagosomes; they do not both replicate exclusively in phagolysosomes."
     ],
-    "teaching": "TB bloqueia maturação/fusão fagolisossômica; Listeria escapa do fagossomo via listeriolisina O e usa ActA para motilidade baseada em actina."
+    "teaching": "Mycobacterium tuberculosis impairs phagolysosome fusion; Listeria escapes via listeriolysin O and uses ActA for actin-based movement."
   },
   {
     "id": "phys-20261105-fsh-lh",
@@ -4878,7 +4878,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Correct: FSH stimulates Sertoli cells, which support spermatogenesis and produce ABP and inhibin B.",
       "LH stimulates Leydig cells and testosterone production, not Sertoli cells directly."
     ],
-    "teaching": "FSH → Sertoli → espermatogênese, ABP e inibina B; LH → Leydig → testosterona."
+    "teaching": "FSH stimulates Sertoli cells (spermatogenesis, ABP, inhibin B); LH stimulates Leydig cells (testosterone)."
   },
   {
     "id": "pharm-20261105-buprenorphine",
@@ -4898,7 +4898,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This mechanism does not describe buprenorphine's main clinical action.",
       "It does not precipitate withdrawal by blocking CYP3A4."
     ],
-    "teaching": "Buprenorfina = agonista parcial μ com alta afinidade; pode deslocar agonista pleno e precipitar abstinência se iniciada antes do momento adequado."
+    "teaching": "Buprenorphine is a high-affinity partial mu-opioid agonist; displacing full agonists can precipitate withdrawal."
   },
   {
     "id": "immunology-20261105-bare2",
@@ -4918,7 +4918,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "DiGeorge syndrome causes thymic hypoplasia/aplasia and T-cell deficiency, but MHC II is not absent from antigen-presenting cells.",
       "Low C1 esterase inhibitor causes hereditary angioedema."
     ],
-    "teaching": "Bare lymphocyte syndrome tipo II = MHC II baixo/ausente → ativação e seleção de CD4+ prejudicadas; infecções oportunistas."
+    "teaching": "Bare lymphocyte syndrome type II: MHC II deficiency impairs CD4+ T-cell development and activation, causing opportunistic infections."
   },
   {
     "id": "endocrine-addison",
