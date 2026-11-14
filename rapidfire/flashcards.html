@@ -3,26 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0b1220">
+  <meta name="theme-color" content="#f4f3ef">
   <meta name="description" content="Original Step 1 flashcards with clickable answers and truly mixed subjects.">
   <title>Flashcards · RapidFire</title>
-  <link rel="stylesheet" href="./flashcards.css?v=20261114-1">
-  <script defer src="./flashcards.js?v=20261114-1"></script>
+  <link rel="stylesheet" href="./flashcards.css?v=20261114-study-studio-v2">
+  <script defer src="./flashcards.js?v=20261114-rationales-v2"></script>
 </head>
 <body>
   <main class="shell">
     <nav class="tabs" aria-label="Study sections">
-      <a href="./index.html">RapidFire · Questions</a>
-      <a class="active" href="./flashcards.html" aria-current="page">Flashcards</a>
+      <a href="./index.html">RapidFire <span>Questions</span></a>
+      <a class="active" href="./flashcards.html" aria-current="page">Flashcards <span>Study desk</span></a>
     </nav>
     <header class="masthead">
-      <div>
-        <p class="eyebrow">Step 1 · Active recall</p>
-        <h1>Flash<span>cards</span></h1>
-        <p class="subtitle">Clickable answers · subjects mixed automatically · independent from your RapidFire question progress.</p>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="hero-dot"></span> STEP 1 • PERSONAL STUDY DESK</p>
+        <h1>A little more recall.<br><em>A lot more understanding.</em></h1>
+        <p class="subtitle">One card at a time. Subjects flow naturally. Every option gets its own explanation after you answer.</p>
+        <div class="hero-features">
+          <span>01&nbsp; MIXED SYSTEMS</span>
+          <span>02&nbsp; TAP TO ANSWER</span>
+          <span>03&nbsp; LEARN THE WHY</span>
+        </div>
       </div>
-      <span class="pill">Separate review mode</span>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-card art-back"></div>
+        <div class="art-card art-middle"></div>
+        <div class="art-card art-front"><span class="art-top">STEP 1 REVIEW</span><span class="art-symbol">✳</span><span class="art-bottom">Know the mechanism.</span></div>
+      </div>
     </header>
+    <div class="workspace">
+      <section class="study-primary" aria-label="Flashcard practice">
 
     <section class="filters" aria-label="Review settings">
       <label>Subject
@@ -45,8 +56,12 @@
       </label>
     </section>
     <div class="toolbar">
-      <p>Default: different subjects alternate whenever possible. Start a new session to remix the deck.</p>
-      <button id="shuffle" type="button" class="secondary">Shuffle again</button>
+      <p>Mixed mode is on. We avoid back-to-back cards from the same subject whenever possible.</p>
+      <button id="shuffle" type="button" class="secondary">↻ New mix</button>
+    </div>
+    <div class="session-progress" aria-label="Session progress">
+      <div class="session-progress-heading"><span>YOUR SESSION</span><strong id="deck-progress-label">0% completed</strong></div>
+      <div class="session-progress-track"><div id="deck-progress-fill"></div></div>
     </div>
 
     <section class="stats" aria-label="Flashcard totals">
@@ -56,19 +71,41 @@
       <div><strong id="current-count">0 / 0</strong><small>Session</small></div>
     </section>
 
+    <div class="card-heading"><span class="card-heading-icon" aria-hidden="true">✦</span><span>YOUR NEXT RECALL</span><span class="card-heading-rule"></span></div>
     <article class="flashcard" id="flashcard-stage" aria-live="polite"></article>
     <div class="navigation">
       <button type="button" class="secondary" id="previous-card">← Previous</button>
       <button type="button" class="primary" id="next-card">Next →</button>
     </div>
-    <p class="keyboard">Keyboard: 1–6 selects an option; ← / → navigates. Progress is stored only in this browser.</p>
+    <p class="keyboard">Keyboard: 1–6 to choose • ← / → to navigate. Your review progress stays on this device.</p>
+      </section>
+      <aside class="study-aside" aria-label="Study dashboard">
+        <section class="aside-card overview-card">
+          <span class="aside-kicker">YOUR LIBRARY</span>
+          <h2>Keep your momentum.</h2>
+          <p>Your cards, your pace. This deck is separate from the RapidFire question bank.</p>
+          <div class="aside-divider"></div>
+          <span class="aside-kicker">COMING UP</span>
+          <div id="upcoming-subjects" class="upcoming-subjects"></div>
+        </section>
+        <section class="aside-card learning-card">
+          <span class="aside-kicker">HOW TO STUDY</span>
+          <ol class="learning-steps">
+            <li><strong>Predict.</strong> Find the clue before choosing.</li>
+            <li><strong>Commit.</strong> Tap an answer.</li>
+            <li><strong>Understand.</strong> Read every explanation, including the distractors.</li>
+          </ol>
+        </section>
+        <a class="aside-link" href="#manage">Manage or import cards <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
 
     <details class="manage" id="manage">
       <summary>Manage my flashcards <span>Import · Create · Export</span></summary>
       <div class="manage-body">
         <section>
           <h2>Import your own or authorized cards</h2>
-          <p>Accepts JSON, CSV or TSV with <code>front</code>, <code>back</code>, <code>topic</code> and optional <code>choices</code> / <code>correct</code>. Choices can be separated with a slash: <code>A / B / C</code>. Imports stay in your browser, never in the public repository. Do not import protected third-party material without permission.</p>
+          <p>Accepts JSON, CSV or TSV containing <code>front</code>, <code>back</code>, <code>topic</code>, and optionally <code>choices</code>, <code>correct</code>, <code>explanations</code>. Separate answer choices with <code>/</code> and separate rationales with <code>||</code> (A || B || C). Imports stay in your browser; use only content you own or are authorized to reuse.</p>
           <label class="upload" for="import-file">Choose a file (.json, .csv, .tsv)</label>
           <input type="file" id="import-file" accept=".json,.csv,.tsv,.txt,text/csv,application/json">
           <p id="import-status" role="status" class="import-status"></p>
@@ -81,6 +118,10 @@
             <label>Back / explanation <textarea id="new-back" rows="3" required placeholder="Explanation and high-yield takeaway"></textarea></label>
             <label>Clickable options (optional) <input type="text" id="new-choices" placeholder="Option A / Option B / Option C"></label>
             <label>Correct choice (optional) <input type="text" id="new-correct" placeholder="Exact text of correct option, or A / B / C"></label>
+            <label>Why each option is right or wrong (optional)
+              <textarea id="new-explanations" rows="3" placeholder="Explanation for A || Explanation for B || Explanation for C"></textarea>
+              <small>Write one reason per alternative, in the same order. After answering, each appears directly below its option.</small>
+            </label>
             <button type="submit" class="primary">Add flashcard</button>
           </form>
         </section>
