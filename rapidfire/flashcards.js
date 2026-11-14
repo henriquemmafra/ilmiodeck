@@ -352,6 +352,17 @@
     el("next-card").disabled = !queue.length || position >= queue.length;
     el("next-card").textContent = position + 1 < queue.length ? "Next →" : "Finish";
     el("current-count").textContent = queue.length ? Math.min(position + 1, queue.length) + " / " + queue.length : "0 / 0";
+    var percent = queue.length ? Math.round(100 * Math.min(position, queue.length) / queue.length) : 0;
+    el("deck-progress-fill").style.width = percent + "%";
+    el("deck-progress-label").textContent = percent + "% completed";
+    var upcoming = el("upcoming-subjects");
+    upcoming.replaceChildren();
+    var subjects = [];
+    for (var next = position + 1; next < queue.length && subjects.length < 3; next++) {
+      if (subjects.indexOf(queue[next].topic) === -1) subjects.push(queue[next].topic);
+    }
+    if (!subjects.length) upcoming.appendChild(node("span", "upcoming-empty", "No more cards in this session"));
+    subjects.forEach(function (topic) { upcoming.appendChild(node("span", "upcoming-tag", topic)); });
     el("deck-count").textContent = String(allCards().length);
     el("my-count").textContent = String(custom.length);
     el("reviewed-count").textContent = String(allCards().filter(function (c) { return history[c.id] && history[c.id].attempts; }).length);
