@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f5f4f0">
   <meta name="description" content="Fast questions and targeted review of missed Step 1 concepts">
   <title>Step 1 RapidFire</title>
-  <link rel="stylesheet" href="./style.css?v=20261114-unified-studio">
+  <link rel="stylesheet" href="./style.css?v=20261114-srs-v1">
   <script defer src="./questions.js?v=20261107-389-english-explanations"></script>
   <script defer src="./antibiotic-resistance.js?v=20261107-16"></script>
   <script defer src="./renal.js?v=20261107-40"></script>
@@ -17,7 +17,8 @@
   <script defer src="./brain-tumors.js?v=20261111-12"></script>
   <script defer src="./assistant.js?v=20261109-ios-focus"></script>
   <script defer src="./card-integration.js?v=20261114-unified"></script>
-  <script defer src="./app.js?v=20261114-unified"></script>
+  <script defer src="./scheduler.js?v=20261114-srs-v1"></script>
+  <script defer src="./app.js?v=20261114-srs-v1"></script>
   <style>.review-map-link{display:inline-block;color:#6260cc;font-size:13px;font-weight:750;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #6a69df;outline-offset:4px}</style>
 </head>
 <body>
@@ -47,10 +48,11 @@
     <section class="controls" aria-label="Session filters">
       <label>Subject <select id="topic"><option value="all">All subjects</option></select></label>
       <label>Practice mode <select id="mode">
-        <option value="all">All — prioritize misses</option>
-        <option value="missed">Missed questions</option>
-        <option value="due">Due for review</option>
-        <option value="unseen">Unanswered</option>
+        <option value="smart" selected>Smart review · due + new</option>
+        <option value="due">Due reviews only</option>
+        <option value="unseen">New cards only</option>
+        <option value="missed">Previously missed</option>
+        <option value="all">All cards · free practice</option>
       </select></label>
       <label>Difficulty <select id="level"><option value="all">All levels</option><option value="1">Foundational</option><option value="2">Intermediate</option><option value="3">Advanced</option></select></label>
     </section>
@@ -62,11 +64,11 @@
     </section>
     <div class="session-line">
       <span id="session-count">Question 1</span>
-      <span id="session-type">Single best answer</span>
+      <span id="review-summary" aria-live="polite">0 due now · 0 new</span>
     </div>
     <div class="progress" aria-hidden="true"><div id="progress-fill"></div></div>
     <section id="stage" class="stage" aria-live="polite"></section>
-    <p class="swipe-hint">← Swipe left for next · Swipe right for previous →</p>
+    <p class="swipe-hint">← Swipe left for next · Swipe right for previous → · After answering, choose Again / Hard / Good / Easy to adjust the next review.</p>
     <div class="actions">
       <button id="previous" class="secondary previous" type="button" disabled aria-label="Previous question" title="Previous question">←</button>
       <button id="skip" class="secondary" type="button">Skip</button>
@@ -87,10 +89,10 @@
         <section class="aside-panel dark-panel">
           <span class="aside-kicker">YOUR STUDY FLOW</span>
           <h2>Mechanism first.</h2>
-          <p>Every question and flashcard appears in one mixed review queue. Prior errors still get extra attention.</p>
+          <p>Questions return according to their review date. Fast, accurate recalls earn longer intervals; missed cards return sooner.</p>
           <div class="aside-divider"></div>
-          <span class="aside-kicker">AFTER EACH ANSWER</span>
-          <p>Read the explanation attached to each option — not just the correct one.</p>
+          <span class="aside-kicker">SPACED REPETITION</span>
+          <p>Again · 10 minutes. Hard · shorter interval. Good · growing interval. Easy · longest interval.</p>
         </section>
         <section class="aside-panel warm-panel">
           <span class="aside-kicker">HOW IT WORKS</span>
@@ -98,7 +100,7 @@
             <li><strong>Recognize</strong> the clue.</li>
             <li><strong>Choose</strong> the answer.</li>
             <li><strong>Understand</strong> each distractor.</li>
-            <li><strong>Repeat</strong> what you missed.</li>
+            <li><strong>Rate</strong> your recall speed and effort.</li>
           </ol>
         </section>
         <a class="aside-import-link" href="#cards-manage">Import / add my cards <span aria-hidden="true">↗</span></a>
