@@ -5438,7 +5438,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Terminal complement deficiency predisposes to Neisseria infections without this pattern of lymphopenia.",
       "Isolated immunoglobulin A deficiency does not cause profound T-cell loss."
     ],
-    "teaching": "SCID: infecções precoces + diarreia + baixo ganho ponderal + deficiência de T e da função de anticorpos."
+    "teaching": "SCID causes early infections, diarrhea, failure to thrive, and impaired T-cell and antibody function."
   },
   {
     "id": "scid-20261106-ada-enzyme",
@@ -5458,7 +5458,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Terminal complement is a different defense system.",
       "ADA deficiency impairs lymphocyte survival, not just class switching."
     ],
-    "teaching": "ADA é uma enzima do metabolismo de purinas; sua deficiência causa SCID."
+    "teaching": "ADA participates in purine metabolism; its deficiency causes SCID."
   },
   {
     "id": "scid-20261106-datp",
@@ -5478,7 +5478,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Excess dATP, deoxyadenosine triphosphate, inhibits ribonucleotide reductase and impairs the synthesis of deoxyribonucleotides and DNA, deoxyribonucleic acid.",
       "Adenylate cyclase produces cyclic adenosine monophosphate; it is not the classic target of this toxicity."
     ],
-    "teaching": "ADA baixa → desoxiadenosina/dATP altos → ribonucleotídeo redutase inibida → proliferação linfocitária prejudicada."
+    "teaching": "ADA deficiency increases deoxyadenosine/dATP, inhibits ribonucleotide reductase, and impairs lymphocyte proliferation."
   },
   {
     "id": "scid-20261106-ada-phenotype",
@@ -5498,7 +5498,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This can occur with receptor recombination defects, such as RAG1/2 defects.",
       "In severe ADA deficiency, toxic metabolites affect T, B, and NK, natural killer, cells."
     ],
-    "teaching": "ADA: herança autossômica recessiva e padrão clássico T− B− NK−; formas parciais podem variar."
+    "teaching": "ADA deficiency is autosomal recessive and classically causes T− B− NK− SCID; partial forms vary."
   },
   {
     "id": "scid-20261106-gamma",
@@ -5518,7 +5518,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "A defect confined to the B-cell receptor does not explain the loss of T and NK cells.",
       "CD18, cluster of differentiation 18, is involved in leukocyte adhesion."
     ],
-    "teaching": "SCID ligado ao X: cadeia gama comum, compartilhada por vários receptores; não apenas pelo receptor de interleucina 2."
+    "teaching": "X-linked SCID involves the common gamma chain shared by several cytokine receptors, not only the interleukin-2 receptor."
   },
   {
     "id": "scid-20261106-b-present",
@@ -5538,7 +5538,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Antibodies are produced by plasma cells of the B-cell lineage.",
       "NK cells do not become plasma cells."
     ],
-    "teaching": "Combinada descreve perda de função celular e humoral; não exige ausência numérica de B em todos os subtipos."
+    "teaching": "Combined immunodeficiency means impaired cellular and humoral function; not every subtype has a low numerical B-cell count."
   },
   {
     "id": "scid-20261106-cgd-distinction",
@@ -5558,7 +5558,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This combination indicates a defect in lymphocytes and humoral function. Chronic granulomatous disease primarily affects the microbicidal activity of phagocytes.",
       "Fungal infections also occur in chronic granulomatous disease."
     ],
-    "teaching": "Não escolha a doença só pelo microrganismo: localize o defeito pelo padrão imunológico."
+    "teaching": "Do not identify an immunodeficiency by the pathogen alone; localize the defect using the immunologic pattern."
   },
   {
     "id": "scid-20261106-trec",
@@ -5578,7 +5578,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Screening can detect the disease before symptoms appear.",
       "TRECs are T-cell receptor excision circles, markers of new T-cell production. Flow cytometry and functional tests help confirm and classify the defect."
     ],
-    "teaching": "TREC baixo é triagem para baixa produção de T; não confirma sozinho SCID nem seu subtipo."
+    "teaching": "Low TREC is a screening marker for reduced T-cell production; it does not establish SCID or its subtype."
   },
   {
     "id": "scid-20261106-bruton",
@@ -5618,7 +5618,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This does not cause T-cell deficiency with this combination of malformations.",
       "This is a defect in phagocyte microbicidal function and is often asymptomatic."
     ],
-    "teaching": "T baixos + hipocalcemia + cardiopatia conotruncal → DiGeorge; aplasia tímica completa pode produzir imunodeficiência grave."
+    "teaching": "Low T cells with hypocalcemia and conotruncal heart disease suggest DiGeorge syndrome; complete thymic aplasia can cause severe immunodeficiency."
   },
   {
     "id": "scid-20261106-hyperigm",
@@ -5638,7 +5638,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "CD40L, the CD40 ligand on activated T cells, enables antibody class switching and helps activate macrophages. Its deficiency causes X-linked hyper-IgM syndrome.",
       "Terminal complement deficiency predisposes to Neisseria infections."
     ],
-    "teaching": "Hiper-IgM: imunoglobulina M preservada/alta, G e A baixas; contagem de células pode estar normal."
+    "teaching": "Hyper-IgM syndrome features normal/high IgM with low IgG and IgA; lymphocyte counts may be normal."
   },
   {
     "id": "scid-20261106-wiskott",
@@ -5658,7 +5658,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Bruton agammaglobulinemia causes B-cell absence without this characteristic triad.",
       "Wiskott–Aldrich syndrome is an X-linked immunodeficiency with eczema, infections, and thrombocytopenia with small platelets."
     ],
-    "teaching": "Infecções + eczema + microplaquetas → Wiskott–Aldrich."
+    "teaching": "Infections, eczema, and small platelets suggest Wiskott–Aldrich syndrome."
   },
   {
     "id": "scid-20261106-gene-therapy",
@@ -5678,7 +5678,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The strategy corrects stem cells and their descendants, not every existing mature neutrophil.",
       "Immune and safety monitoring remain necessary."
     ],
-    "teaching": "Na terapia gênica, o vetor transporta o gene terapêutico; o vetor não é a proteína que falta ao paciente."
+    "teaching": "In gene therapy, the vector delivers the therapeutic gene; the vector is not the protein missing from the patient."
   },
   {
     "id": "scid-20261106-mpo",
@@ -5698,7 +5698,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "NADPH oxidase initiates superoxide generation, which is preserved here.",
       "Ribonucleotide reductase supplies precursors for the synthesis of DNA, deoxyribonucleic acid."
     ],
-    "teaching": "NADPH oxidase inicia a explosão oxidativa; mieloperoxidase usa o peróxido produzido a jusante."
+    "teaching": "NADPH oxidase initiates the respiratory burst; myeloperoxidase uses the hydrogen peroxide produced downstream."
   },
   {
     "id": "nutrition-failure-to-thrive-percentiles",
@@ -6260,7 +6260,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Classic galactosemia causes liver disease, feeding difficulties, and cataracts after exposure to galactose from milk.",
       "Metachromatic leukodystrophy involves arylsulfatase A deficiency and sulfatide accumulation."
     ],
-    "teaching": "Nistagmo isolado é inespecífico; cabelo branco + transiluminação da íris + hipoplasia foveal apontam para albinismo."
+    "teaching": "Isolated nystagmus is nonspecific; white hair, iris transillumination, and foveal hypoplasia suggest albinism."
   },
   {
     "id": "metabolic-eyes-20261106-enzyme",
@@ -6300,7 +6300,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Melanocytes are present, but deficient tyrosinase prevents adequate melanin synthesis.",
       "Loss of keratinocytes does not explain the enzyme defect."
     ],
-    "teaching": "Não confunda célula produtora de pigmento com a enzima que ela usa."
+    "teaching": "Do not confuse the pigment-producing cell with the enzyme it uses."
   },
   {
     "id": "metabolic-eyes-20261106-organelle",
@@ -6320,7 +6320,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The nucleolus participates in ribosome production.",
       "Melanin is synthesized in melanosomes, which can then be transferred to keratinocytes."
     ],
-    "teaching": "Melanócito = célula; melanossomo = organela; melanina = pigmento."
+    "teaching": "Melanocyte = cell; melanosome = organelle; melanin = pigment."
   },
   {
     "id": "metabolic-eyes-20261106-precursor",
@@ -6360,7 +6360,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Phenylalanine hydroxylase converts phenylalanine to tyrosine; its deficiency causes classic phenylketonuria.",
       "Homogentisate oxidase is deficient in alkaptonuria, which features darkening urine and ochronosis."
     ],
-    "teaching": "Mesmo substrato e intermediário, mas enzimas diferentes conforme a via."
+    "teaching": "The substrate and intermediate can be shared even when the enzymes differ between pathways."
   },
   {
     "id": "metabolic-eyes-20261106-iris",
@@ -6380,7 +6380,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The iris has little pigment to block light, so light passes through areas that would normally be pigmented.",
       "Galactitol primarily causes osmotic injury to the lens."
     ],
-    "teaching": "Íris translúcida = pouco pigmento; catarata = cristalino opaco."
+    "teaching": "Translucent iris means reduced pigment; cataract means an opaque lens."
   },
   {
     "id": "metabolic-eyes-20261106-fovea",
@@ -6400,7 +6400,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Corneal opacity is not required in albinism.",
       "Foveal hypoplasia and abnormal optic fiber routing impair vision beyond any refractive error."
     ],
-    "teaching": "Melanina participa do desenvolvimento visual; o problema não é apenas deixar entrar luz demais."
+    "teaching": "Melanin contributes to visual development; the problem is not merely excess light entering the eye."
   },
   {
     "id": "metabolic-eyes-20261106-nystagmus",
@@ -6420,7 +6420,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This pattern can occur in infantile Krabbe disease.",
       "Central and peripheral demyelination favors a leukodystrophy."
     ],
-    "teaching": "Não diagnostique Krabbe apenas por nistagmo ou por um nervo óptico anormal."
+    "teaching": "Do not diagnose Krabbe disease from nystagmus or an abnormal optic nerve alone."
   },
   {
     "id": "metabolic-eyes-20261106-tyrosinase-not-all",
@@ -6440,7 +6440,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Preserved tyrosinase activity does not establish a leukodystrophy.",
       "Melanocytes can be present in different forms of albinism."
     ],
-    "teaching": "Na questão de enzimas, tirosinase é a associação clássica; nem todo albinismo é deficiência de tirosinase."
+    "teaching": "Tyrosinase is the classic enzyme association, but not all albinism results from tyrosinase deficiency."
   },
   {
     "id": "metabolic-eyes-20261106-inheritance",
@@ -6460,7 +6460,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Each pregnancy has an independent 25% probability of a child with two pathogenic copies.",
       "Both parents are carriers, not affected homozygotes."
     ],
-    "teaching": "Albinismo oculocutâneo tipo 1 e Krabbe têm herança autossômica recessiva."
+    "teaching": "Oculocutaneous albinism type 1 and Krabbe disease are autosomal recessive."
   },
   {
     "id": "metabolic-eyes-20261106-uv",
@@ -6480,7 +6480,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This is related to hyperammonemia.",
       "Less melanin reduces protection against ultraviolet radiation, increasing susceptibility to burns and damage to DNA, deoxyribonucleic acid."
     ],
-    "teaching": "Falta de pigmento tem consequência funcional: menor fotoproteção."
+    "teaching": "Lack of pigment reduces photoprotection and has functional consequences."
   },
   {
     "id": "metabolic-eyes-20261106-krabbe-enzyme",
@@ -6500,7 +6500,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1.",
       "Arylsulfatase A degrades sulfatides; its deficiency causes metachromatic leukodystrophy."
     ],
-    "teaching": "GALC, gene da galactocerebrosidase, é diferente de GALT, gene da galactose-1-fosfato uridiltransferase."
+    "teaching": "GALC encodes galactocerebrosidase; GALT encodes galactose-1-phosphate uridyltransferase. They are different genes."
   },
   {
     "id": "metabolic-eyes-20261106-psychosine",
@@ -6520,7 +6520,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "GM2 ganglioside accumulates in Tay–Sachs and Sandhoff diseases.",
       "Globotriaosylceramide, abbreviated Gb3, accumulates in Fabry disease."
     ],
-    "teaching": "Krabbe: psicosina tóxica → desmielinização."
+    "teaching": "Krabbe disease: toxic psychosine accumulation causes demyelination."
   },
   {
     "id": "metabolic-eyes-20261106-myelin-cells",
@@ -6540,7 +6540,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Oligodendrocytes form myelin in the central nervous system; Schwann cells form myelin in peripheral nerves.",
       "Ependymal cells line the ventricles; neurons do not form their own myelin sheath."
     ],
-    "teaching": "Krabbe compromete mielina central e periférica."
+    "teaching": "Krabbe disease affects both central and peripheral myelin."
   },
   {
     "id": "metabolic-eyes-20261106-globoid",
@@ -6560,7 +6560,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Platelet dense granule deficiency occurs in Hermansky–Pudlak syndrome.",
       "Globoid cells are lipid-laden macrophages, often multinucleated, found in white matter."
     ],
-    "teaching": "Globoid cell leukodystrophy é outro nome de Krabbe."
+    "teaching": "Globoid cell leukodystrophy is another name for Krabbe disease."
   },
   {
     "id": "metabolic-eyes-20261106-regression",
@@ -6580,7 +6580,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This suggests vitiligo.",
       "This favors a cause of cataracts, not a leukodystrophy."
     ],
-    "teaching": "Diferencie alteração de desenvolvimento visual de perda progressiva de habilidades."
+    "teaching": "Distinguish abnormal visual development from progressive loss of acquired skills."
   },
   {
     "id": "metabolic-eyes-20261106-enzyme-names",
@@ -6600,7 +6600,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Galactokinase acts on the sugar galactose, and its deficiency primarily causes cataracts.",
       "Alpha-galactosidase A is the enzyme deficient in Fabry disease."
     ],
-    "teaching": "Galactose no nome não torna as enzimas equivalentes: açúcar livre versus glicoesfingolipídio."
+    "teaching": "The word galactose does not make these enzymes equivalent: free sugar versus glycosphingolipid."
   },
   {
     "id": "metabolic-eyes-20261106-mld-substrate",
@@ -6620,7 +6620,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "In metachromatic leukodystrophy, failure to degrade sulfatides causes their accumulation and impairs myelin.",
       "Globotriaosylceramide, abbreviated Gb3, accumulates in Fabry disease."
     ],
-    "teaching": "Krabbe: psicosina/galactocerebrosidase. Metacromática: sulfatídeos/arilsulfatase A."
+    "teaching": "Krabbe: psychosine/galactocerebrosidase; metachromatic leukodystrophy: sulfatides/arylsulfatase A."
   },
   {
     "id": "metabolic-eyes-20261106-metachromasia",
@@ -6640,7 +6640,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Acid sphingomyelinase is deficient in the forms historically called Niemann–Pick types A and B.",
       "Metachromasia is the change in dye color upon interaction with deposits, characteristic of metachromatic leukodystrophy due to arylsulfatase A deficiency."
     ],
-    "teaching": "Metacromática descreve a coloração histológica; não significa perda de pigmento da pele."
+    "teaching": "Metachromatic refers to histologic staining, not loss of skin pigment."
   },
   {
     "id": "metabolic-eyes-20261106-ceramide",
@@ -6680,7 +6680,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Triacylglycerol contains glycerol and three fatty acids.",
       "Cholesterol is a sterol, not a ceramide derivative containing galactose."
     ],
-    "teaching": "Galactocerebrosídeo = galactose + ceramida."
+    "teaching": "Galactocerebroside consists of galactose plus ceramide."
   },
   {
     "id": "metabolic-eyes-20261106-compartment",
@@ -6700,7 +6700,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Galactocerebrosidase is a lysosomal enzyme; Krabbe disease is a lysosomal storage disease.",
       "Ribosomes synthesize proteins."
     ],
-    "teaching": "Albinismo tipo 1: síntese de pigmento. Krabbe: degradação lisossômica de lipídios."
+    "teaching": "Albinism type 1 impairs pigment synthesis; Krabbe impairs lysosomal lipid degradation."
   },
   {
     "id": "metabolic-eyes-20261106-cherry-location",
@@ -6720,7 +6720,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The iris may transilluminate in albinism.",
       "A cherry-red spot is a retinal finding: the relatively preserved fovea contrasts with the surrounding retina."
     ],
-    "teaching": "Catarata = cristalino; opacidade corneana = córnea; cherry-red spot = mácula."
+    "teaching": "Cataract affects the lens; corneal clouding affects the cornea; a cherry-red spot is in the macula."
   },
   {
     "id": "metabolic-eyes-20261106-tay-enzyme",
@@ -6740,7 +6740,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Galactocerebrosidase, also called galactosylceramidase, degrades lipids; its deficiency causes Krabbe disease.",
       "Tyrosinase functions in melanin synthesis; its deficiency causes oculocutaneous albinism type 1."
     ],
-    "teaching": "Tay–Sachs não causa a íris translúcida e o cabelo branco típicos de albinismo."
+    "teaching": "Tay–Sachs does not cause the translucent iris and white hair typical of albinism."
   },
   {
     "id": "metabolic-eyes-20261106-organomegaly",
@@ -6760,7 +6760,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This can occur in both and does not distinguish them by itself.",
       "This can occur in both."
     ],
-    "teaching": "Mácula em cereja não basta: procure organomegalia."
+    "teaching": "A cherry-red macula alone is insufficient; look for organomegaly."
   },
   {
     "id": "metabolic-eyes-20261106-npc-transport",
@@ -6780,7 +6780,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Niemann–Pick type C involves the NPC1 or NPC2 proteins in intracellular lipid transport, not acid sphingomyelinase deficiency.",
       "This is the mechanism of Tay–Sachs disease."
     ],
-    "teaching": "Niemann–Pick A/B e C não têm o mesmo defeito molecular."
+    "teaching": "Niemann–Pick types A/B and C have different molecular defects."
   },
   {
     "id": "metabolic-eyes-20261106-fabry-step",
@@ -6800,7 +6800,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Arylsulfatase A degrades sulfatides; its deficiency causes metachromatic leukodystrophy.",
       "Alpha-galactosidase A removes the terminal galactose from globotriaosylceramide, Gb3; its deficiency causes Fabry disease."
     ],
-    "teaching": "Krabbe e Fabry têm enzimas com galacto no nome, mas substratos diferentes."
+    "teaching": "Krabbe and Fabry involve enzymes with galacto in their names but different substrates."
   },
   {
     "id": "metabolic-eyes-20261106-cornea-verticillata",
@@ -6820,7 +6820,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Classic galactosemia causes liver disease, feeding difficulties, and cataracts after exposure to galactose from milk.",
       "Oculocutaneous albinism causes hypopigmentation and abnormalities of visual development, such as foveal hypoplasia."
     ],
-    "teaching": "Córnea verticilata + dor acral + angiokeratomas → Fabry; fármacos também podem causar córnea verticilata."
+    "teaching": "Cornea verticillata with acroparesthesias and angiokeratomas suggests Fabry; drugs can also cause cornea verticillata."
   },
   {
     "id": "metabolic-eyes-20261106-hurler-hunter",
@@ -6840,7 +6840,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This is not the classic distinction between these mucopolysaccharidoses.",
       "A cherry-red macula is not the main distinction."
     ],
-    "teaching": "Hurler: córnea opaca. Hunter: córnea geralmente clara e herança ligada ao X."
+    "teaching": "Hurler causes corneal clouding; Hunter usually spares the cornea and is X-linked."
   },
   {
     "id": "metabolic-eyes-20261106-galactose-lens",
@@ -6860,7 +6860,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "A cataract is an opacity of the lens; in galactosemia, it can result from osmotic accumulation of galactitol.",
       "Optic nerve demyelination does not make the lens opaque."
     ],
-    "teaching": "Localize a alteração ocular antes de associar uma enzima."
+    "teaching": "Localize the ocular abnormality before matching it to an enzyme defect."
   },
   {
     "id": "metabolic-eyes-20261106-milk",
@@ -6880,7 +6880,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Milk contains lactose, which provides glucose and galactose after digestion.",
       "Lactose digestion supplies galactose, which is not adequately processed in galactose-1-phosphate uridyltransferase deficiency."
     ],
-    "teaching": "Aleitamento materno não exclui galactosemia: leite materno também contém lactose."
+    "teaching": "Breastfeeding does not exclude galactosemia: breast milk also contains lactose."
   },
   {
     "id": "metabolic-eyes-20261106-galt-reaction",
@@ -6900,7 +6900,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "These are breakdown products of a glycosphingolipid, not products of this reaction.",
       "These are intermediates in melanin synthesis."
     ],
-    "teaching": "GALT atua numa via de açúcares fosforilados; GALC atua sobre lipídios lisossômicos."
+    "teaching": "GALT acts in phosphorylated sugar metabolism; GALC acts on lysosomal lipids."
   },
   {
     "id": "metabolic-eyes-20261106-osmotic",
@@ -6920,7 +6920,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "This describes a different mechanism, as in vitiligo.",
       "This does not explain the primary lens injury."
     ],
-    "teaching": "Galactitol → água entra no cristalino → catarata."
+    "teaching": "Galactitol draws water into the lens and causes cataracts."
   },
   {
     "id": "metabolic-eyes-20261106-galk-versus-galt",
@@ -6960,7 +6960,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Galactocerebrosidase, also called galactosylceramidase, breaks down lipids; its deficiency causes Krabbe disease.",
       "Ornithine transcarbamylase deficiency is a urea cycle defect: hyperammonemia and elevated orotic acid, often with respiratory alkalosis."
     ],
-    "teaching": "Hiperamonemia com alcalose respiratória sugere ciclo da ureia; acidose com ânion gap alto sugere acidemia orgânica."
+    "teaching": "Hyperammonemia with respiratory alkalosis suggests a urea cycle disorder; high-anion-gap acidosis suggests organic acidemia."
   },
   {
     "id": "metabolic-eyes-20261106-mma-cofactor",
@@ -6980,7 +6980,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Thiamine pyrophosphate participates in oxidative decarboxylation reactions and in transketolase activity.",
       "Pyridoxal phosphate participates in several amino acid reactions."
     ],
-    "teaching": "Metilmalonil-coenzima A mutase depende de vitamina B12; seu defeito não explica albinismo."
+    "teaching": "Methylmalonyl-CoA mutase requires vitamin B12; its deficiency does not explain albinism."
   },
   {
     "id": "metabolic-eyes-20261106-ch-giant",
@@ -7000,7 +7000,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Hermansky–Pudlak syndrome is associated with albinism and deficient platelet dense granules; some subtypes cause pulmonary fibrosis.",
       "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination."
     ],
-    "teaching": "Albinismo + infecções + grânulos gigantes → Chediak–Higashi."
+    "teaching": "Albinism, infections, and giant granules suggest Chediak–Higashi syndrome."
   },
   {
     "id": "metabolic-eyes-20261106-ch-mechanism",
@@ -7020,7 +7020,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Chediak–Higashi syndrome results from abnormal regulation and trafficking of lysosomes and related organelles, affecting pigmentation and immune function.",
       "This is related to arylsulfatase A."
     ],
-    "teaching": "O defeito de tráfego afeta diferentes células; não é apenas falta de uma enzima de pigmento."
+    "teaching": "The trafficking defect affects multiple cell types, not only pigment-producing enzymes."
   },
   {
     "id": "metabolic-eyes-20261106-hps",
@@ -7040,7 +7040,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination.",
       "Hermansky–Pudlak syndrome is associated with albinism and defective platelet dense granules; pulmonary fibrosis occurs in certain subtypes."
     ],
-    "teaching": "Albinismo + sangramento por grânulos densos ausentes ± fibrose pulmonar → Hermansky–Pudlak."
+    "teaching": "Albinism with bleeding from absent dense platelet granules, sometimes with pulmonary fibrosis, suggests Hermansky–Pudlak syndrome."
   },
   {
     "id": "metabolic-eyes-20261106-platelet-count",
@@ -7060,7 +7060,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The count may be normal.",
       "Tyrosinase acts in melanin synthesis, not fibrinolysis."
     ],
-    "teaching": "Contagem normal não exclui doença funcional das plaquetas."
+    "teaching": "A normal platelet count does not exclude a platelet function disorder."
   },
   {
     "id": "metabolic-eyes-20261106-vitiligo",
@@ -7080,7 +7080,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency, with psychosine toxicity and demyelination.",
       "Hermansky–Pudlak syndrome is associated with albinism and deficient platelet dense granules; some subtypes cause pulmonary fibrosis."
     ],
-    "teaching": "Vitiligo: perda de melanócitos. Albinismo tipo 1: melanócitos presentes com tirosinase deficiente."
+    "teaching": "Vitiligo involves melanocyte loss; type 1 albinism has melanocytes but impaired tyrosinase activity."
   },
   {
     "id": "metabolic-eyes-20261106-pku-pigment",
@@ -7100,7 +7100,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Reduced tyrosine formation and interference with melanogenesis by excess phenylalanine contribute to hypopigmentation in untreated phenylketonuria.",
       "Platelets are not responsible for skin pigmentation."
     ],
-    "teaching": "Pele clara também pode ocorrer na fenilcetonúria; use o conjunto clínico, não só a cor."
+    "teaching": "Light skin can also occur in phenylketonuria; use the full clinical picture, not skin color alone."
   },
   {
     "id": "metabolic-eyes-20261106-homocystinuria-eye",
@@ -7120,7 +7120,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Krabbe disease causes demyelination.",
       "Cystathionine beta-synthase deficiency causes classic homocystinuria, with ectopia lentis and thrombotic risk."
     ],
-    "teaching": "Luxação do cristalino é diferente de catarata; lente deslocada + trombose → homocistinúria."
+    "teaching": "Lens dislocation differs from cataract; displaced lens with thrombosis suggests homocystinuria."
   },
   {
     "id": "metabolic-eyes-20261106-copper",
@@ -7163,7 +7163,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Group A streptococcus is not the classic rising curve.",
       "Bordetella causes whooping cough and is not the association shown in the chart."
     ],
-    "teaching": "Idade orienta a probabilidade, mas não determina sozinha a bactéria."
+    "teaching": "Age changes the probability but does not determine the bacterium by itself."
   },
   {
     "id": "cf-cultures-20261106-child",
@@ -7183,7 +7183,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "It causes syphilis; this is not the relevant association.",
       "It is associated with secretory diarrhea."
     ],
-    "teaching": "Infância: lembre de Staphylococcus aureus e Haemophilus influenzae; Pseudomonas não é exclusiva do adulto."
+    "teaching": "In childhood, remember Staphylococcus aureus and Haemophilus influenzae; Pseudomonas is not exclusive to adults."
   },
   {
     "id": "cf-cultures-20261106-macconkey",
@@ -7203,7 +7203,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Pseudomonas grows as a non-lactose fermenter, producing colorless colonies on MacConkey agar.",
       "Mannitol and a change to yellow are associated with mannitol salt agar."
     ],
-    "teaching": "Cor da curva não é cor da colônia: Pseudomonas pode estar vermelha no gráfico e ser incolor no MacConkey."
+    "teaching": "A graph's line color does not represent colony color: Pseudomonas may be red on a chart but colorless on MacConkey agar."
   },
   {
     "id": "cf-cultures-20261106-salt",
@@ -7223,7 +7223,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Growth alone does not identify the species; salinity is the classic selective mechanism.",
       "The high sodium chloride concentration favors salt-tolerant microorganisms, such as staphylococci."
     ],
-    "teaching": "Sal seleciona; fermentação do manitol diferencia."
+    "teaching": "Salt selects organisms; mannitol fermentation differentiates them."
   },
   {
     "id": "cf-cultures-20261106-mannitol",
@@ -7263,7 +7263,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "It does not adequately meet the requirements of this fastidious organism.",
       "It is intended for fungal culture."
     ],
-    "teaching": "Chocolate é sangue aquecido, não chocolate de comer."
+    "teaching": "Chocolate agar contains heated blood, not edible chocolate."
   },
   {
     "id": "cf-cultures-20261106-xv",
@@ -7283,7 +7283,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "X is hemin; V is nicotinamide adenine dinucleotide, abbreviated NAD.",
       "Salt and mannitol are components of the medium used for staphylococci."
     ],
-    "teaching": "Haemophilus: X = hemina; V = NAD (nicotinamida adenina dinucleotídeo)."
+    "teaching": "Haemophilus requires factor X (hemin) and factor V (NAD, nicotinamide adenine dinucleotide)."
   },
   {
     "id": "cf-cultures-20261106-heated-blood",
@@ -7303,7 +7303,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Heating is not used for this conversion.",
       "Red blood cell lysis makes the factors available; heating also inactivates enzymes that would degrade factor V."
     ],
-    "teaching": "Ágar chocolate resolve exigências nutricionais de bactérias fastidiosas."
+    "teaching": "Chocolate agar supplies growth factors required by fastidious bacteria."
   },
   {
     "id": "cf-cultures-20261106-burkholderia-medium",
@@ -7323,7 +7323,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "It is used for mycobacteria.",
       "It is associated with the isolation of pathogenic Neisseria."
     ],
-    "teaching": "Burkholderia tem meio seletivo próprio; baixa frequência não significa baixa importância clínica."
+    "teaching": "Burkholderia has its own selective medium; low frequency does not mean low clinical importance."
   },
   {
     "id": "cf-cultures-20261106-biofilm",
@@ -7343,7 +7343,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "It is a bacterium, not a virus.",
       "Pseudomonas does not ferment lactose."
     ],
-    "teaching": "Pseudomonas mucoide → alginato → biofilme → persistência."
+    "teaching": "Mucoid Pseudomonas produces alginate, promoting biofilm formation and persistence."
   },
   {
     "id": "cf-cultures-20261106-chart-sum",
@@ -7410,7 +7410,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Peripheral myelin injury suggests a demyelinating neuropathy, often with hyporeflexia and sensory changes.",
       "A dystrophin defect causes muscular dystrophies, not fluctuating ocular weakness."
     ],
-    "teaching": "Miastenia: fraqueza fatigável, pupilas e sensibilidade preservadas; defeito pós-sináptico."
+    "teaching": "Myasthenia gravis causes fatigable weakness with preserved pupils and sensation; the defect is postsynaptic."
   },
   {
     "id": "nm-20261106-mg-thymus",
@@ -7430,7 +7430,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "A schwannoma can compress nerves, but it is not the classic tumor association with myasthenia gravis.",
       "Pheochromocytoma causes catecholamine excess, not the typical pattern of myasthenia gravis."
     ],
-    "teaching": "Miastenia → pesquisar timoma; Lambert–Eaton → lembrar carcinoma de pequenas células."
+    "teaching": "Evaluate for thymoma in myasthenia gravis; consider small-cell lung carcinoma in Lambert–Eaton syndrome."
   },
   {
     "id": "nm-20261106-mg-pyridostigmine",
@@ -7450,7 +7450,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "It inhibits acetylcholinesterase → reduces acetylcholine breakdown → prolongs its action on the available receptors.",
       "Plasma exchange removes antibodies; pyridostigmine provides symptomatic improvement without removing them."
     ],
-    "teaching": "Piridostigmina aumenta a disponibilidade de acetilcolina na fenda; não corrige a autoimunidade."
+    "teaching": "Pyridostigmine increases acetylcholine availability in the synaptic cleft but does not correct the autoimmunity."
   },
   {
     "id": "nm-20261106-lems-calcium",
@@ -7470,7 +7470,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Dystrophin deficiency causes structural myopathy, without brief improvement in reflexes after contraction.",
       "Lambert–Eaton syndrome: antibodies against P/Q-type calcium channels reduce calcium entry and acetylcholine release."
     ],
-    "teaching": "Lambert–Eaton é pré-sináptica: pouca entrada de cálcio → pouca liberação de acetilcolina."
+    "teaching": "Lambert–Eaton is presynaptic: reduced calcium influx causes reduced acetylcholine release."
   },
   {
     "id": "nm-20261106-lems-facilitation",
@@ -7490,7 +7490,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The antibodies remain present during contraction.",
       "Remyelination does not occur within seconds and is not the mechanism of this disease."
     ],
-    "teaching": "Facilitação em Lambert–Eaton = acúmulo pré-sináptico de cálcio, não aumento rápido de receptores."
+    "teaching": "Facilitation in Lambert–Eaton results from presynaptic calcium accumulation, not rapid receptor upregulation."
   },
   {
     "id": "nm-20261106-botulism-mechanism",
@@ -7510,7 +7510,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The toxin does not act primarily on postsynaptic receptor synthesis.",
       "Defects in muscle calcium handling do not explain the mechanism of botulism."
     ],
-    "teaching": "Botulismo bloqueia a liberação de acetilcolina; lembra paralisia descendente com sinais autonômicos."
+    "teaching": "Botulism blocks acetylcholine release, causing descending paralysis with autonomic symptoms."
   },
   {
     "id": "nm-20261106-gbs-csf",
@@ -7530,7 +7530,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Albuminocytologic dissociation = elevated protein with little or no increase in leukocytes. Testing may be normal during the first week.",
       "Marked neutrophilia is not the expected pattern and warrants investigation for another cause."
     ],
-    "teaching": "Guillain–Barré: dissociação albuminocitológica; líquido normal no início não exclui."
+    "teaching": "Guillain–Barré syndrome causes albuminocytologic dissociation: elevated cerebrospinal fluid protein with a normal or near-normal white cell count."
   },
   {
     "id": "nm-20261106-gbs-myelin",
@@ -7550,7 +7550,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Microglia perform immune functions in the central nervous system.",
       "Schwann cells form peripheral myelin. Their injury impairs saltatory conduction in this demyelinating variant of Guillain–Barré syndrome."
     ],
-    "teaching": "Mielina periférica = Schwann; mielina central = oligodendrócito. Nem toda variante de Guillain–Barré é desmielinizante."
+    "teaching": "Peripheral myelin is produced by Schwann cells; central myelin is produced by oligodendrocytes."
   },
   {
     "id": "nm-20261106-miller-fisher",
@@ -7570,7 +7570,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Anti-Jo-1 targets histidyl-transfer RNA synthetase and is associated with antisynthetase syndrome.",
       "Anticentromere antibodies are associated with limited cutaneous systemic sclerosis."
     ],
-    "teaching": "Miller Fisher: olhos + equilíbrio + reflexos → oftalmoplegia, ataxia e arreflexia; anti-GQ1b."
+    "teaching": "Miller Fisher syndrome: ophthalmoplegia, ataxia, and areflexia; associated with anti-GQ1b."
   },
   {
     "id": "nm-20261106-als-localization",
@@ -7590,7 +7590,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Guillain–Barré syndrome usually causes hyporeflexia or areflexia, not typical pyramidal signs.",
       "Duchenne muscular dystrophy begins in childhood and does not cause upper motor neuron signs."
     ],
-    "teaching": "Atrofia e fasciculações + hiperreflexia e Babinski, sem déficit sensitivo importante → pensar em esclerose lateral amiotrófica."
+    "teaching": "Atrophy and fasciculations plus hyperreflexia and Babinski signs, without major sensory loss, suggest amyotrophic lateral sclerosis."
   },
   {
     "id": "nm-20261106-sma-neuron",
@@ -7610,7 +7610,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Biallelic loss of SMN1, the gene encoding survival motor neuron protein, causes degeneration of anterior horn motor neurons; inheritance is autosomal recessive.",
       "Motor end-plate receptors are targeted in myasthenia gravis, not spinal muscular atrophy."
     ],
-    "teaching": "Bebê hipotônico + fasciculações da língua + arreflexia → atrofia muscular espinhal, neurônio motor inferior."
+    "teaching": "Hypotonic infant with tongue fasciculations and areflexia suggests spinal muscular atrophy, a lower motor neuron disorder."
   },
   {
     "id": "nm-20261106-duchenne-reading-frame",
@@ -7650,7 +7650,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "The sarcoplasmic reticulum calcium pump takes calcium back up; this is not the role of dystrophin.",
       "Peripheral myelin is produced by Schwann cells."
     ],
-    "teaching": "Distrofina estabiliza a membrana muscular; sua falta causa lesão, necrose e substituição por gordura/fibrose."
+    "teaching": "Dystrophin stabilizes the muscle membrane; its absence causes injury, necrosis, and replacement by fat/fibrosis."
   },
   {
     "id": "nm-20261106-becker",
@@ -7670,7 +7670,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Myasthenia gravis is not a dystrophin defect and does not cause this pattern of cardiomyopathy.",
       "Myotonic dystrophy suggests myotonia, cataracts, and conduction defects, with an expansion in the DMPK gene."
     ],
-    "teaching": "Becker é mais branda no músculo esquelético que Duchenne, mas a cardiomiopatia ainda pode ser grave."
+    "teaching": "Becker muscular dystrophy is milder in skeletal muscle than Duchenne, but cardiomyopathy can still be severe."
   },
   {
     "id": "nm-20261106-dm1-repeat",
@@ -7690,7 +7690,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "A CTG expansion in DMPK, the myotonic dystrophy protein kinase gene, causes myotonic dystrophy type 1, which has autosomal dominant inheritance.",
       "A CGG expansion in FMR1 causes fragile X syndrome."
     ],
-    "teaching": "Distrofia miotônica tipo 1: dificuldade de relaxar a contração + cataratas; expansão CTG."
+    "teaching": "Myotonic dystrophy type 1 causes delayed muscle relaxation and cataracts; CTG repeat expansion."
   },
   {
     "id": "nm-20261106-dm1-anticipation",
@@ -7710,7 +7710,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Shortening does not explain the typical anticipation caused by expansion.",
       "The number of CTG repeats may increase between generations, favoring earlier onset and greater severity; the congenital form is usually maternally transmitted."
     ],
-    "teaching": "Antecipação = início mais precoce/maior gravidade em gerações seguintes por expansão de repetições."
+    "teaching": "Anticipation means earlier onset or greater severity in successive generations due to repeat expansion."
   },
   {
     "id": "nm-20261106-dermatomyositis",
@@ -7730,7 +7730,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Rimmed vacuoles, in the appropriate clinical context, suggest inclusion body myositis.",
       "Absent dystrophin suggests Duchenne muscular dystrophy; it does not explain a heliotrope rash and Gottron papules."
     ],
-    "teaching": "Dermatomiosite: fraqueza proximal + rash heliotrópico/Gottron + atrofia perifascicular."
+    "teaching": "Dermatomyositis: proximal weakness, heliotrope rash/Gottron papules, and perifascicular atrophy."
   },
   {
     "id": "nm-20261106-polymyositis",
@@ -7750,7 +7750,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Duchenne muscular dystrophy results from dystrophin deficiency, not a primary cytotoxic attack.",
       "Steroid myopathy typically causes type II fiber atrophy without this inflammatory infiltrate."
     ],
-    "teaching": "Polimiosite clássica: inflamação endomisial citotóxica; dermatomiosite: padrão perifascicular/microvascular."
+    "teaching": "Classic polymyositis features cytotoxic endomysial inflammation; dermatomyositis shows a perifascicular/microvascular pattern."
   },
   {
     "id": "nm-20261106-ibm",
@@ -7770,7 +7770,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "Inclusion body myositis typically affects older adults, with weakness of the finger flexors and quadriceps, often asymmetrically, and rimmed vacuoles.",
       "Lambert–Eaton syndrome causes a presynaptic defect, autonomic signs, and facilitation, not this histologic pattern."
     ],
-    "teaching": "Idoso + flexores dos dedos/quadríceps + assimetria + vacúolos marginados → miosite por corpos de inclusão."
+    "teaching": "Older adult with asymmetric finger flexor/quadriceps weakness and rimmed vacuoles suggests inclusion body myositis."
   },
   {
     "id": "nm-20261106-cmt",
@@ -7790,7 +7790,7 @@ window.RAPIDFIRE_QUESTIONS = [
       "An expansion in DMPK causes myotonic dystrophy type 1.",
       "Duplication of PMP22, the peripheral myelin protein 22 gene, causes the hereditary demyelinating neuropathy Charcot–Marie–Tooth disease type 1A."
     ],
-    "teaching": "Charcot–Marie–Tooth: neuropatia distal hereditária com pé cavo; tipo 1A = duplicação de PMP22."
+    "teaching": "Charcot–Marie–Tooth causes hereditary distal neuropathy with pes cavus; type 1A involves PMP22 duplication."
   }
 
 ];
