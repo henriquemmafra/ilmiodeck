@@ -25,6 +25,8 @@
   var current = null;
   var selected = null;
   var revealed = false;
+  var cardShownAt = Date.now();
+  var scheduler = window.RapidFireScheduler;
   var topicCounts = Object.create(null);
   var finished = false;
   var trail = [];
@@ -39,6 +41,7 @@
     accuracy: document.getElementById("accuracy"),
     streak: document.getElementById("streak"),
     pending: document.getElementById("pending"),
+    reviewSummary: document.getElementById("review-summary"),
     count: document.getElementById("session-count"),
     type: document.getElementById("session-type"),
     progress: document.getElementById("progress-fill"),
@@ -123,16 +126,17 @@
       if (level !== "all" && String(q.level) !== level) return false;
       if (mode === "missed") return Boolean(p && p.lastWrong);
       if (mode === "unseen") return !p || !p.attempts;
-      if (mode === "due") return !p || !p.nextAt || p.nextAt <= now;
+      if (mode === "due") return Boolean(p && p.attempts && (!p.nextAt || p.nextAt <= now));
+      if (mode === "smart") return !p || !p.attempts || !p.nextAt || p.nextAt <= now;
       return true;
     });
   }
 
   function priority(q) {
     var p = getProgress(q);
-    if (!p) return 2.5 + Math.random() * 2;
+    if (!p || !p.attempts) return 2.5 + Math.random() * 2;
     var score = (p.lastWrong ? 6 : 0) + Math.min(Number(p.misses) || 0, 5) * 0.7;
-    if (p.nextAt && p.nextAt <= Date.now()) score += 2;
+    if (!p.nextAt || p.nextAt <= Date.now()) score += 5;
     return score + Math.random() * 3;
   }
 
@@ -145,6 +149,18 @@
     ids.accuracy.textContent = attempts ? Math.round(100 * hits / attempts) + "%" : "—";
     ids.streak.textContent = String(session.streak);
     ids.pending.textContent = String(missed);
+    if (ids.reviewSummary) {
+      var now = Date.now();
+      var due = questions.filter(function (q) {
+        var p = getProgress(q);
+        return p && p.attempts && (!p.nextAt || p.nextAt <= now);
+      }).length;
+      var newCards = questions.filter(function (q) {
+        var p = getProgress(q);
+        return !p || !p.attempts;
+      }).length;
+      ids.reviewSummary.textContent = due + " due now · " + newCards + " new";
+    }
     ids.count.textContent = finished ? "Session complete" : "Question " + Math.max(1, trailPosition + 1) + " de " + session.initialSize;
     ids.type.textContent = session.asked + " answered this session · " + questions.length + " in bank";
     ids.progress.style.width = (session.initialSize ? Math.min(100, 100 * seen.size / session.initialSize) : 0) + "%";
@@ -156,7 +172,7 @@
     trailPosition = -1;
     revealed = false;
     topicCounts = Object.create(null);
-    session = { asked: 0, correct: 0, streak: 0, initialSize: filtered().length };
+    session = { asked: 0, correct: 0, streak: 0, initialSize: filtered().length, startedAt: Date.now() };
     finished = false;
     selected = null;
     nextQuestion();
@@ -171,11 +187,18 @@
       current = trail[trailPosition].question;
       selected = trail[trailPosition].selected;
       revealed = Boolean(trail[trailPosition].revealed);
+      cardShownAt = Date.now();
       finished = false;
       renderQuestion();
       return;
     }
-    var candidates = filtered().filter(function (q) { return !seen.has(q.id); });
+    var candidates = filtered().filter(function (q) {
+      if (!seen.has(q.id)) return true;
+      // A failed card can become due again in this same session after 10 minutes.
+      var p = getProgress(q);
+      return Boolean(p && p.lastAt >= session.startedAt && p.nextAt &&
+        p.nextAt <= Date.now() && p.lastWrong);
+    });
     if (candidates.length === 0) {
       current = null;
       finished = true;
@@ -191,9 +214,10 @@
     });
     ranked.sort(function (a, b) { return b.score - a.score; });
     current = shuffleQuestionChoices(ranked[0].question);
+    cardShownAt = Date.now();
     topicCounts[current.topic] = (topicCounts[current.topic] || 0) + 1;
     seen.add(current.id);
-    trail.push({ question: current, selected: null, revealed: false });
+    trail.push({ question: current, selected: null, revealed: false, revealSeconds: null });
     trailPosition = trail.length - 1;
     renderQuestion();
   }
@@ -209,32 +233,97 @@
     current = trail[trailPosition].question;
     selected = trail[trailPosition].selected;
     revealed = Boolean(trail[trailPosition].revealed);
+    cardShownAt = Date.now();
     finished = false;
     renderQuestion();
   }
 
   function grade(index) {
     if (!current || selected !== null) return;
-    selected = index;
-    if (trail[trailPosition]) trail[trailPosition].selected = index;
     var q = current;
     var correct = q.recallAnswer ? index === 0 : index === q.answer;
-    var p = getProgress(q) || { attempts: 0, hits: 0, misses: 0, streak: 0 };
-    p.attempts = (Number(p.attempts) || 0) + 1;
-    p.hits = (Number(p.hits) || 0) + (correct ? 1 : 0);
-    p.misses = (Number(p.misses) || 0) + (correct ? 0 : 1);
-    p.streak = correct ? (Number(p.streak) || 0) + 1 : 0;
-    p.lastWrong = !correct;
-    p.lastAt = Date.now();
-    // Intervalos simples: 1, 3, 7, 14, 30 dias. Após erro, o item volta à fila de erros.
-    var intervals = [1, 3, 7, 14, 30];
-    p.nextAt = correct ? Date.now() + intervals[Math.min(p.streak - 1, 4)] * 86400000 : Date.now();
-    history[q.id] = p;
+    var base = Object.assign({}, getProgress(q) || {});
+    var entry = trail[trailPosition];
+    var at = Date.now();
+    var seconds = entry && entry.revealSeconds != null
+      ? entry.revealSeconds : Math.max(0.5, (at - cardShownAt) / 1000);
+    // A large pause / background tab should not count as a slow answer.
+    if (seconds > 600) seconds = null;
+    var rating = correct ? "good" : "again";
+    var scheduled = scheduler.schedule(base, rating, seconds, at, q);
+    selected = index;
+    if (entry) {
+      entry.selected = index;
+      entry.reviewBase = base;
+      entry.reviewAt = at;
+      entry.answerSeconds = seconds;
+      entry.rating = rating;
+    }
+    history[q.id] = Object.assign({}, base, scheduled, {
+      attempts: (Number(base.attempts) || 0) + 1,
+      hits: (Number(base.hits) || 0) + (correct ? 1 : 0),
+      misses: (Number(base.misses) || 0) + (correct ? 0 : 1),
+      streak: correct ? (Number(base.streak) || 0) + 1 : 0,
+      lastWrong: !correct
+    });
     session.asked++;
     session.correct += correct ? 1 : 0;
     session.streak = correct ? session.streak + 1 : 0;
     saveHistory();
     renderQuestion();
+  }
+
+  function changeRating(rating) {
+    if (!current || selected === null) return;
+    var q = current;
+    var entry = trail[trailPosition];
+    if (!entry || !entry.reviewBase || !entry.reviewAt) return;
+    var correct = q.recallAnswer ? selected === 0 : selected === q.answer;
+    if (!correct && rating !== "again") return;
+    var currentProgress = getProgress(q);
+    // Prevent editing an older attempt after this card was reviewed again.
+    if (!currentProgress || currentProgress.lastAt !== entry.reviewAt) return;
+    var scheduled = scheduler.schedule(entry.reviewBase, rating, entry.answerSeconds, entry.reviewAt, q);
+    history[q.id] = Object.assign({}, currentProgress, scheduled, {
+      lastWrong: !correct || rating === "again"
+    });
+    entry.rating = rating;
+    saveHistory();
+    renderQuestion();
+  }
+
+  function reviewControls(q) {
+    var entry = trail[trailPosition];
+    var p = getProgress(q);
+    if (!entry || !p || !entry.reviewBase) return null;
+    var correct = q.recallAnswer ? selected === 0 : selected === q.answer;
+    var locked = p.lastAt !== entry.reviewAt;
+    var panel = make("section", "spaced-review");
+    var next = scheduler.formatInterval(Math.max(0, p.nextAt - Date.now()));
+    panel.appendChild(make("p", "spaced-review-title", "Spaced repetition · next review in " + next));
+    var secondsLabel = Number.isFinite(entry.answerSeconds)
+      ? Math.round(entry.answerSeconds * 10) / 10 + "s response"
+      : "response time unavailable";
+    panel.appendChild(make("p", "spaced-review-note",
+      secondsLabel + " · Faster correct recall stretches intervals; difficulty ratings can override it."));
+    var ratings = make("div", "spaced-review-buttons");
+    [["again", "Again"], ["hard", "Hard"], ["good", "Good"], ["easy", "Easy"]].forEach(function (item) {
+      var plan = scheduler.schedule(entry.reviewBase, item[0], entry.answerSeconds, entry.reviewAt, q);
+      var button = make("button", "spaced-rating", item[1] + " · " +
+        scheduler.formatInterval(plan.nextAt - entry.reviewAt));
+      button.type = "button";
+      button.disabled = locked || (!correct && item[0] !== "again");
+      if (entry.rating === item[0]) button.classList.add("active");
+      button.setAttribute("aria-pressed", entry.rating === item[0] ? "true" : "false");
+      button.addEventListener("click", function () { changeRating(item[0]); });
+      ratings.appendChild(button);
+    });
+    panel.appendChild(ratings);
+    if (!correct) panel.appendChild(make("p", "spaced-review-hint",
+      "Incorrect answers always use Again. Review in 10 minutes."));
+    else panel.appendChild(make("p", "spaced-review-hint",
+      "Choose Again if you guessed. Hard = effortful recall; Good = normal; Easy = effortless."));
+    return panel;
   }
 
   function renderQuestion() {
@@ -272,7 +361,11 @@
         reveal.type = "button";
         reveal.addEventListener("click", function () {
           revealed = true;
-          if (trail[trailPosition]) trail[trailPosition].revealed = true;
+          if (trail[trailPosition]) {
+            trail[trailPosition].revealed = true;
+            trail[trailPosition].revealSeconds = Math.min(600,
+              Math.max(0.5, (Date.now() - cardShownAt) / 1000));
+          }
           renderQuestion();
         });
         ids.stage.appendChild(reveal);
@@ -332,6 +425,8 @@
           ? "Marked for review." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
+      var spaced = reviewControls(q);
+      if (spaced) ids.stage.appendChild(spaced);
 
       // Keep the visual explanation hidden until the learner has answered.
       // Match the specific competitive-inhibition enzyme-kinetics card only.
@@ -362,7 +457,9 @@
     var count = session.asked;
     empty.appendChild(make("h2", "", session.initialSize === 0 ? "No questions match this filter" : "Session complete"));
     var msg = session.initialSize === 0
-      ? "Choose a different subject or mode. Correct answers return for review on future days."
+      ? (ids.mode.value === "smart" || ids.mode.value === "due"
+        ? "No reviews are due right now. New cards and past mistakes will appear on their scheduled dates."
+        : "Choose a different subject or mode. Correct answers return for review on future days.")
       : "You answered " + count + " questions and got " + session.correct +
         " (" + (count ? Math.round(100 * session.correct / count) : 0) + "%). Missed questions remain available for review.";
     empty.appendChild(make("p", "", msg));
@@ -411,7 +508,19 @@
             streak: Math.max(0, Number(value.streak) || 0),
             lastWrong: Boolean(value.lastWrong),
             lastAt: Number(value.lastAt) || 0,
-            nextAt: Number(value.nextAt) || 0
+            nextAt: Number(value.nextAt) || 0,
+            intervalDays: Math.max(0, Number(value.intervalDays) || 0),
+            easeFactor: Math.min(3.3, Math.max(1.4, Number(value.easeFactor) || 2.3)),
+            repetitions: Math.max(0, Number(value.repetitions) || 0),
+            lapses: Math.max(0, Number(value.lapses) || 0),
+            lastSeconds: Number.isFinite(value.lastSeconds) ? value.lastSeconds : null,
+            averageSeconds: Math.max(0, Number(value.averageSeconds) || 0),
+            lastRating: ["again","hard","good","easy"].includes(value.lastRating) ? value.lastRating : null,
+            speedFactor: Number(value.speedFactor) || 1,
+            reviewLog: Array.isArray(value.reviewLog) ? value.reviewLog.slice(-50).map(function (item) {
+              return { at:Number(item.at)||0, grade:String(item.grade||""),seconds:Number(item.seconds)||null,
+                intervalDays:Number(item.intervalDays)||0,dueAt:Number(item.dueAt)||0 };
+            }) : []
           };
         });
         if (!confirm("Replace this browser's progress with the imported progress?")) return;
@@ -448,6 +557,13 @@
     history = {};
     saveHistory();
     startSession();
+  });
+
+  // Do not count time spent away from the tab as slow reasoning.
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState === "visible" && current && selected === null) {
+      cardShownAt = Date.now();
+    }
   });
 
   // Swipe left for the next card (skip if unanswered), right to revisit a card.
