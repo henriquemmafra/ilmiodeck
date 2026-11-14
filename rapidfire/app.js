@@ -1,12 +1,22 @@
 (function () {
   "use strict";
 
-  var questions = Array.isArray(window.RAPIDFIRE_QUESTIONS) ? window.RAPIDFIRE_QUESTIONS.filter(function (q) {
+  // The main RapidFire engine is also the flashcard engine.
+  // Personal cards never leave the browser and are not committed to the repository.
+  if (window.RapidFireCards && typeof window.RapidFireCards.migrateReviewHistory === "function") {
+    window.RapidFireCards.migrateReviewHistory();
+  }
+  var builtIn = Array.isArray(window.RAPIDFIRE_QUESTIONS) ? window.RAPIDFIRE_QUESTIONS : [];
+  var extras = window.RapidFireCards && typeof window.RapidFireCards.load === "function"
+    ? window.RapidFireCards.load() : [];
+  var questions = builtIn.concat(extras).filter(function (q) {
     return q && typeof q.id === "string" && typeof q.stem === "string" &&
-      Array.isArray(q.options) && (q.options.length === 3 || q.options.length === 4) &&
-      Array.isArray(q.explanations) && q.explanations.length === q.options.length &&
-      Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length;
-  }) : [];
+      Array.isArray(q.options) && (
+        (q.options.length >= 2 && q.options.length <= 6 &&
+          Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.options.length &&
+          Array.isArray(q.explanations) && q.explanations.length === q.options.length) ||
+        (q.options.length === 0 && typeof q.recallAnswer === "string" && q.recallAnswer.length > 0));
+  });
 
   var storageKey = "step1-rapidfire-progress-v1";
   var history = loadHistory();
@@ -14,6 +24,8 @@
   var session = { asked: 0, correct: 0, streak: 0, initialSize: 0 };
   var current = null;
   var selected = null;
+  var revealed = false;
+  var topicCounts = Object.create(null);
   var finished = false;
   var trail = [];
   var trailPosition = -1;
@@ -67,6 +79,7 @@
   var lastShownCorrectPosition = Object.create(null);
 
   function shuffleQuestionChoices(question) {
+    if (!question.options.length) return Object.assign({}, question);
     var order = question.options.map(function (_, index) { return index; });
     for (var i = order.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
@@ -141,6 +154,8 @@
     seen = new Set();
     trail = [];
     trailPosition = -1;
+    revealed = false;
+    topicCounts = Object.create(null);
     session = { asked: 0, correct: 0, streak: 0, initialSize: filtered().length };
     finished = false;
     selected = null;
@@ -149,11 +164,13 @@
 
   function nextQuestion() {
     selected = null;
+    revealed = false;
     // Revisit the next card if the user previously swiped backward.
     if (trailPosition < trail.length - 1) {
       trailPosition++;
       current = trail[trailPosition].question;
       selected = trail[trailPosition].selected;
+      revealed = Boolean(trail[trailPosition].revealed);
       finished = false;
       renderQuestion();
       return;
@@ -165,11 +182,18 @@
       renderEnd();
       return;
     }
-    var ranked = candidates.map(function (q) { return { question: q, score: priority(q) }; });
+    // Alternate subjects whenever possible while still giving missed cards extra weight.
+    var previousTopic = trail.length ? trail[trail.length - 1].question.topic : "";
+    var choices = candidates.filter(function (q) { return q.topic !== previousTopic; });
+    if (!choices.length) choices = candidates;
+    var ranked = choices.map(function (q) {
+      return { question: q, score: priority(q) - (topicCounts[q.topic] || 0) * 1.25 };
+    });
     ranked.sort(function (a, b) { return b.score - a.score; });
     current = shuffleQuestionChoices(ranked[0].question);
+    topicCounts[current.topic] = (topicCounts[current.topic] || 0) + 1;
     seen.add(current.id);
-    trail.push({ question: current, selected: null });
+    trail.push({ question: current, selected: null, revealed: false });
     trailPosition = trail.length - 1;
     renderQuestion();
   }
@@ -184,6 +208,7 @@
     }
     current = trail[trailPosition].question;
     selected = trail[trailPosition].selected;
+    revealed = Boolean(trail[trailPosition].revealed);
     finished = false;
     renderQuestion();
   }
@@ -193,7 +218,7 @@
     selected = index;
     if (trail[trailPosition]) trail[trailPosition].selected = index;
     var q = current;
-    var correct = index === q.answer;
+    var correct = q.recallAnswer ? index === 0 : index === q.answer;
     var p = getProgress(q) || { attempts: 0, hits: 0, misses: 0, streak: 0 };
     p.attempts = (Number(p.attempts) || 0) + 1;
     p.hits = (Number(p.hits) || 0) + (correct ? 1 : 0);
@@ -241,36 +266,70 @@
       if (q.imageCaption) ids.stage.appendChild(make("p", "image-caption", q.imageCaption));
     }
 
-    var list = make("div", "options");
-    q.options.forEach(function (label, index) {
-      var wrapper = make("div", "option-group");
-      var btn = make("button", "option");
-      btn.type = "button";
-      btn.disabled = selected !== null;
-      if (selected !== null && index === q.answer) btn.classList.add("correct");
-      if (selected === index && selected !== q.answer) btn.classList.add("incorrect");
-      btn.appendChild(make("span", "letter", String.fromCharCode(65 + index)));
-      btn.appendChild(make("span", "", label));
-      btn.addEventListener("click", function () { grade(index); });
-      wrapper.appendChild(btn);
-      if (selected !== null) {
-        var isCorrect = index === q.answer;
-        var explanation = make("div", "inline-option-explanation " +
-          (isCorrect ? "inline-correct" : index === selected ? "inline-selected" : ""));
-        explanation.appendChild(make("span", "inline-result",
-          isCorrect ? "Correct answer" : index === selected ? "Your answer" : "Why not"));
-        explanation.appendChild(make("span", "inline-reason", q.explanations[index]));
-        wrapper.appendChild(explanation);
+    if (q.recallAnswer) {
+      if (!revealed && selected === null) {
+        var reveal = make("button", "recall-show primary", "Show answer");
+        reveal.type = "button";
+        reveal.addEventListener("click", function () {
+          revealed = true;
+          if (trail[trailPosition]) trail[trailPosition].revealed = true;
+          renderQuestion();
+        });
+        ids.stage.appendChild(reveal);
+      } else {
+        var recallBox = make("section", "recall-answer");
+        recallBox.appendChild(make("p", "recall-answer-label", "Answer"));
+        recallBox.appendChild(make("p", "recall-answer-content", q.recallAnswer));
+        if (q.teaching && q.teaching !== q.recallAnswer) {
+          recallBox.appendChild(make("p", "recall-explanation", q.teaching));
+        }
+        ids.stage.appendChild(recallBox);
+        if (selected === null) {
+          var grades = make("div", "recall-grade-buttons");
+          var again = make("button", "secondary recall-grade", "Again · I missed it");
+          again.type = "button";
+          again.addEventListener("click", function () { grade(-1); });
+          var good = make("button", "primary recall-grade", "Good · I recalled it");
+          good.type = "button";
+          good.addEventListener("click", function () { grade(0); });
+          grades.appendChild(again);
+          grades.appendChild(good);
+          ids.stage.appendChild(grades);
+        }
       }
-      list.appendChild(wrapper);
-    });
-    ids.stage.appendChild(list);
+    } else {
+      var list = make("div", "options");
+      q.options.forEach(function (label, index) {
+        var wrapper = make("div", "option-group");
+        var btn = make("button", "option");
+        btn.type = "button";
+        btn.disabled = selected !== null;
+        if (selected !== null && index === q.answer) btn.classList.add("correct");
+        if (selected === index && selected !== q.answer) btn.classList.add("incorrect");
+        btn.appendChild(make("span", "letter", String.fromCharCode(65 + index)));
+        btn.appendChild(make("span", "", label));
+        btn.addEventListener("click", function () { grade(index); });
+        wrapper.appendChild(btn);
+        if (selected !== null) {
+          var isCorrect = index === q.answer;
+          var explanation = make("div", "inline-option-explanation " +
+            (isCorrect ? "inline-correct" : index === selected ? "inline-selected" : ""));
+          explanation.appendChild(make("span", "inline-result",
+            isCorrect ? "Correct answer" : index === selected ? "Your answer" : "Why not"));
+          explanation.appendChild(make("span", "inline-reason", q.explanations[index]));
+          wrapper.appendChild(explanation);
+        }
+        list.appendChild(wrapper);
+      });
+      ids.stage.appendChild(list);
+    }
 
     if (selected !== null) {
       var feedback = make("section", "feedback feedback-compact");
-      var success = selected === q.answer;
+      var success = q.recallAnswer ? selected === 0 : selected === q.answer;
       feedback.appendChild(make("div", "verdict " + (success ? "good" : "bad"),
-        success ? "Correct. Keep going." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
+        success ? "Correct. Keep going." : q.recallAnswer
+          ? "Marked for review." : "Incorrect. Correct answer: " + String.fromCharCode(65 + q.answer) + "."));
       feedback.appendChild(make("div", "takeaway", "Step 1 trap: " + q.teaching));
       ids.stage.appendChild(feedback);
 
@@ -452,13 +511,16 @@
     }
     if (!current || selected !== null) return;
     var key = event.key.toUpperCase();
-    var index = ["A", "B", "C", "D"].indexOf(key);
-    if (index === -1 && /^[1-4]$/.test(key)) index = Number(key) - 1;
+    var index = ["A", "B", "C", "D", "E", "F"].indexOf(key);
+    if (index === -1 && /^[1-6]$/.test(key)) index = Number(key) - 1;
     if (index >= 0 && current && index < current.options.length) {
       event.preventDefault();
       grade(index);
     }
   });
 
+  if (window.RapidFireCards && typeof window.RapidFireCards.setup === "function") {
+    window.RapidFireCards.setup();
+  }
   startSession();
 })();
