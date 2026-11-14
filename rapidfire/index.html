@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101827">
+  <meta name="theme-color" content="#f5f4f0">
   <meta name="description" content="Fast questions and targeted review of missed Step 1 concepts">
   <title>Step 1 RapidFire</title>
-  <link rel="stylesheet" href="./style.css?v=20261109-ios-zoom">
+  <link rel="stylesheet" href="./style.css?v=20261114-unified-studio">
   <script defer src="./questions.js?v=20261107-389-english-explanations"></script>
   <script defer src="./antibiotic-resistance.js?v=20261107-16"></script>
   <script defer src="./renal.js?v=20261107-40"></script>
@@ -16,25 +16,34 @@
   <script defer src="./mitochondria-complexes-20261109.js?v=20261111-balanced"></script>
   <script defer src="./brain-tumors.js?v=20261111-12"></script>
   <script defer src="./assistant.js?v=20261109-ios-focus"></script>
-  <script defer src="./app.js?v=20261111-randomized-choices"></script>
-  <style>.study-tabs{display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid #33465f;margin-bottom:26px}.study-tabs a{text-decoration:none;color:#c7d5e9;font-size:14px;font-weight:800;padding:13px 16px;border-radius:12px 12px 0 0}.study-tabs a.active{color:#0c1c33;background:#89b9ff}.study-tabs a:focus-visible{outline:2px solid #89b9ff;outline-offset:2px}@media(max-width:670px){.study-tabs a{padding:12px;font-size:13px}}.review-map-link{display:inline-block;color:#78cee0;font-size:14px;font-weight:700;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #78cee0;outline-offset:4px}</style>
+  <script defer src="./card-integration.js?v=20261114-unified"></script>
+  <script defer src="./app.js?v=20261114-unified"></script>
+  <style>.review-map-link{display:inline-block;color:#6260cc;font-size:13px;font-weight:750;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #6a69df;outline-offset:4px}</style>
 </head>
 <body>
   <main class="shell">
-    <nav class="study-tabs" aria-label="Study sections">
-      <a href="./index.html" class="active" aria-current="page">RapidFire · Questions</a>
-      <a href="./flashcards.html">Flashcards</a>
-    </nav>
     <header class="masthead">
-      <div>
-        <p class="eyebrow">Your missed concepts · Step 1</p>
+      <div class="masthead-copy">
+        <p class="eyebrow"><span class="dot"></span> USMLE STEP 1 · ACTIVE RECALL</p>
         <h1>Rapid<span>Fire</span></h1>
-        <p><a href="./brain-tumors-match.html" class="review-map-link">Brain Tumors Match · Drag tumors onto their clues →</a></p>
-        <p><a href="./cystic-fibrosis-review.html" class="review-map-link">Cystic fibrosis review map · Pathogens and culture media →</a></p>
-        <p class="subtitle">Quick recall · 5–15 seconds per question · shuffled answers · instant feedback.</p>
+        <p class="subtitle">One bank. Mixed subjects. Clickable answers and the reasoning behind every option.</p>
+        <div class="hero-points">
+          <span>01&nbsp; MIXED TOPICS</span>
+          <span>02&nbsp; QUICK RECALL</span>
+          <span>03&nbsp; REVIEW EVERY OPTION</span>
+        </div>
       </div>
-      <div class="pill">663 questions in the bank</div>
+      <div class="stack-art" aria-hidden="true">
+        <div class="art-back"></div><div class="art-middle"></div>
+        <div class="art-front"><span>RAPIDFIRE</span><strong>✳</strong><small>Think. Answer. Learn.</small></div>
+      </div>
     </header>
+    <nav class="study-links" aria-label="Additional study modules">
+      <a href="./brain-tumors-match.html" class="review-map-link">Brain Tumors Match · Drag tumors onto their clues</a>
+      <a href="./cystic-fibrosis-review.html" class="review-map-link">Cystic fibrosis · Pathogens and culture media</a>
+    </nav>
+    <div class="study-layout">
+      <div class="study-column">
     <section class="controls" aria-label="Session filters">
       <label>Subject <select id="topic"><option value="all">All subjects</option></select></label>
       <label>Practice mode <select id="mode">
@@ -64,7 +73,7 @@
       <button id="next" class="primary" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
     </div>
     <footer>
-      <span>Press A–D or 1–4 to answer; Enter for next.</span>
+      <span>Press A–F or 1–6 to answer; Enter for next.</span>
       <div class="footer-actions">
         <button id="export" class="linklike" type="button">Export progress</button>
         <label class="linklike import-label" for="import-file">Import progress</label>
@@ -72,7 +81,54 @@
         <button id="reset" class="linklike danger" type="button">Reset progress</button>
       </div>
     </footer>
-    <p class="disclaimer">Fast-review mode with concise explanations. Original educational questions; no proprietary question-bank text. Progress stays in this browser, not in the public repository.</p>
+    <p class="disclaimer">One integrated Step 1 deck. Original educational questions; no proprietary question-bank text. Personal cards and review progress are stored only in this browser.</p>
+      </div>
+      <aside class="study-sidebar" aria-label="Study guide">
+        <section class="aside-panel dark-panel">
+          <span class="aside-kicker">YOUR STUDY FLOW</span>
+          <h2>Mechanism first.</h2>
+          <p>Every question and flashcard appears in one mixed review queue. Prior errors still get extra attention.</p>
+          <div class="aside-divider"></div>
+          <span class="aside-kicker">AFTER EACH ANSWER</span>
+          <p>Read the explanation attached to each option — not just the correct one.</p>
+        </section>
+        <section class="aside-panel warm-panel">
+          <span class="aside-kicker">HOW IT WORKS</span>
+          <ol>
+            <li><strong>Recognize</strong> the clue.</li>
+            <li><strong>Choose</strong> the answer.</li>
+            <li><strong>Understand</strong> each distractor.</li>
+            <li><strong>Repeat</strong> what you missed.</li>
+          </ol>
+        </section>
+        <a class="aside-import-link" href="#cards-manage">Import / add my cards <span aria-hidden="true">↗</span></a>
+      </aside>
+    </div>
+    <details class="cards-manage" id="cards-manage">
+      <summary>Manage your cards <span>Add · Import · Export</span></summary>
+      <div class="cards-manage-body">
+        <section>
+          <h2>Import cards into RapidFire</h2>
+          <p>Import your own or authorized CSV, TSV or JSON cards. Use <code>front</code>, <code>back</code>, <code>topic</code> and optional <code>choices</code>, <code>correct</code> and <code>explanations</code> fields. Separate choices with <code>/</code> and explanations with <code>||</code> in their matching order.</p>
+          <label for="cards-import-file">Choose a card file</label>
+          <input id="cards-import-file" type="file" accept=".json,.csv,.tsv,.txt,text/csv,application/json">
+          <p role="status" id="cards-status" class="cards-status"></p>
+          <button type="button" class="secondary" id="cards-export">Export personal cards</button>
+        </section>
+        <section>
+          <h2>Add a card</h2>
+          <form id="cards-form">
+            <label>Subject <input id="cards-topic" required type="text" placeholder="Cardiology" maxlength="80"></label>
+            <label>Question <textarea id="cards-front" required rows="2" placeholder="Question or recall prompt"></textarea></label>
+            <label>Answer and takeaway <textarea id="cards-back" required rows="2" placeholder="High-yield explanation"></textarea></label>
+            <label>Clickable options <input id="cards-options" type="text" placeholder="A / B / C"></label>
+            <label>Correct option <input id="cards-correct" type="text" placeholder="A, B, C or exact option text"></label>
+            <label>Why each option is right / wrong <textarea id="cards-rationales" rows="2" placeholder="A explanation || B explanation || C explanation"></textarea></label>
+            <button class="primary" type="submit">Add to RapidFire</button>
+          </form>
+        </section>
+      </div>
+    </details>
   </main>
 </body>
 </html>
