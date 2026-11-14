@@ -263,6 +263,9 @@
     return result;
   }
   function mixedOrder(cards) {
+    // Mix cards within each subject, then balance subjects by remaining frequency.
+    // Choosing a largest remaining subject other than the previous one keeps
+    // consecutive duplicate subjects to a minimum even near the end of a deck.
     var byTopic = Object.create(null);
     cards.forEach(function (card) {
       var topic = card.topic || "General";
@@ -273,15 +276,15 @@
     var result = [];
     var last = "";
     while (result.length < cards.length) {
-      var topics = Object.keys(byTopic).filter(function (key) { return byTopic[key].length && key !== last; });
-      if (!topics.length) topics = Object.keys(byTopic).filter(function (key) { return byTopic[key].length; });
-      var total = topics.reduce(function (sum, key) { return sum + byTopic[key].length; }, 0);
-      var target = Math.random() * total;
-      var chosen = topics[topics.length - 1];
-      for (var i = 0; i < topics.length; i++) {
-        target -= byTopic[topics[i]].length;
-        if (target < 0) { chosen = topics[i]; break; }
+      var available = Object.keys(byTopic).filter(function (topic) {
+        return byTopic[topic].length > 0 && topic !== last;
+      });
+      if (!available.length) {
+        available = Object.keys(byTopic).filter(function (topic) { return byTopic[topic].length > 0; });
       }
+      var max = Math.max.apply(null, available.map(function (topic) { return byTopic[topic].length; }));
+      var candidates = available.filter(function (topic) { return byTopic[topic].length === max; });
+      var chosen = candidates[Math.floor(Math.random() * candidates.length)];
       result.push(byTopic[chosen].pop());
       last = chosen;
     }
