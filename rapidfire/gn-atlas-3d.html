@@ -95,6 +95,9 @@ h1 em{font-weight:500;color:var(--ink-2)}
 .tst.v i{color:var(--amber)}
 ul.hy{margin:0;padding:0;list-style:none;display:grid;gap:6px}
 ul.hy li{position:relative;padding-left:14px;line-height:1.45;color:var(--ink);font-size:13.5px}
+figure.ill{margin:8px 0 6px -14px}
+figure.ill svg{display:block;width:100%;height:auto;border-radius:10px}
+ul.hy{gap:12px}
 ul.hy li::before{content:"";position:absolute;left:2px;top:.6em;width:5px;height:5px;border-radius:50%;background:var(--gp)}
 .mn{margin-top:4px;padding:10px 12px;border-radius:8px;background:rgba(242,234,211,.07);border:1px solid rgba(242,234,211,.2);color:var(--ivory);font-size:13px;line-height:1.45}
 #drawer{position:absolute;top:0;left:0;bottom:0;width:min(300px,84vw);background:rgba(7,18,40,.96);border-right:1px solid var(--line);transform:translateX(-102%);transition:transform .4s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;z-index:5;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
@@ -406,7 +409,7 @@ function propPetechiae(){
   const glass=new THREE.Mesh(new THREE.LatheGeometry([[0,0],[.2,0],[.21,.02],[.25,.55],[.24,.56]].map(p=>new THREE.Vector2(...p)),36),new THREE.MeshPhysicalMaterial({color:0xeaf6ff,roughness:.03,transparent:true,opacity:.28,clearcoat:1,depthWrite:false,side:THREE.DoubleSide}));
   glass.renderOrder=3;const gp=new THREE.Group();gp.add(glass);gp.position.set(.05,.33,.06);gp.rotation.x=.5;g.add(gp);g.userData.press=gp;return g;
 }
-function propNeutrophil(){
+function neutroCell(seed){
   const g=new THREE.Group();
   const cyto=new THREE.Mesh(GEO.sph,new THREE.MeshPhysicalMaterial({color:0xe9dcf3,roughness:.4,transparent:true,opacity:.28,depthWrite:false,clearcoat:.6}));cyto.scale.setScalar(.55);cyto.renderOrder=2;
   const mem=new THREE.Mesh(GEO.sph,fresnel(0xd8c6ff,.7,.02,2.4));mem.scale.setScalar(.56);mem.renderOrder=3;
@@ -415,7 +418,12 @@ function propNeutrophil(){
   lobes.forEach(p=>{const l=new THREE.Mesh(GEO.sph,nuc);l.scale.set(.13,.11,.11);l.position.copy(p);g.add(l);});
   for(let i=0;i<3;i++)g.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.LineCurve3(lobes[i],lobes[i+1]),4,.025,6),nuc));
   [[-.2,-.22,.18,0],[.05,-.3,.12,1],[-.32,.0,-.2,2],[.28,.25,.15,.6]].forEach(([x,y,z,r])=>{const b=beanPair(M.gn,.055);b.g.position.set(x,y,z);b.g.rotation.y=r;g.add(b.g);});
-  g.add(cyto,mem);const out=new THREE.Group();g.position.y=.6;out.add(g);out.userData.spin=g;return out;
+  g.add(cyto,mem);g.rotation.set(seed*.7,seed*1.9,seed*.3);return g;
+}
+function propNeutrophil(){
+  const out=new THREE.Group(),cells=[];
+  [[-.42,.95,0,.62,1],[.42,1.0,-.15,.58,2],[0,.42,.18,.66,3]].forEach(([x,y,z,s,sd])=>{const c=neutroCell(sd);c.position.set(x,y,z);c.scale.setScalar(s);out.add(c);cells.push(c);});
+  out.userData.cells=cells;return out;
 }
 function propChocolate(){
   const g=new THREE.Group(),choc=new THREE.MeshPhysicalMaterial({color:0x4a2614,roughness:.35,clearcoat:.5,clearcoatRoughness:.3});
@@ -689,6 +697,7 @@ function contentSpecies(id){
   return {g,H:2.1,W,ports,chips,update(t,dt,tick){m.rotation.y=m.userData.sway?Math.sin(t*.5)*.7:t*.25;m.position.y=my+Math.sin(t*.9)*.05;
     if(camp)camp.update(t,dt,tick);
     if(pr.userData.flame){const f=1+Math.sin(t*13)*.06+Math.sin(t*7.3)*.04;pr.userData.flame.scale.set(1/f,f,1/f);pr.userData.glow.material.opacity=.7+.2*Math.sin(t*11);}
+    if(pr.userData.cells)pr.userData.cells.forEach((c,i)=>{c.rotation.y+=.004*(i%2?1:-1);c.position.y+=Math.sin(t*1.3+i*2)*.0015;});
     if(pr.userData.press)pr.userData.press.position.y=.33+Math.max(0,Math.sin(t*1.6))*.12;
     if(pr.userData.flip){const q=(t%4)/4;pr.userData.flip.rotation.x=-2.5*(1-sm(.1,.3,q)*(1-sm(.55,.8,q)));}
     if(pr.userData.turtle){const T=pr.userData.turtle;T.headG.position.z=.55+Math.sin(t*1.5)*.04;T.legs.forEach((l,i)=>l.rotation.y=(i%3?1:-1)*.6+Math.sin(t*3+i)*.3);}
@@ -700,6 +709,137 @@ function contentSpecies(id){
     else if(pr.userData.glow&&!pr.userData.flame)pr.userData.glow.material.opacity=.45+.35*Math.sin(t*2.4);
     if(pr.userData.spin)pr.rotation.y=Math.sin(t*.8)*.5;}};
 }
+
+
+/* ================= illustrations for species cards (inline SVG) ================= */
+const ILL_DEFS=`<defs>
+<radialGradient id="ilPink" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#ffd2e0"/><stop offset=".55" stop-color="#e2608c"/><stop offset="1" stop-color="#8a2a52"/></radialGradient>
+<radialGradient id="ilSkin" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#f3cdb0"/><stop offset="1" stop-color="#d9a17e"/></radialGradient>
+<radialGradient id="ilBrain" cx="45%" cy="40%" r="65%"><stop offset="0" stop-color="#f6d6d9"/><stop offset="1" stop-color="#d9a3ab"/></radialGradient>
+<linearGradient id="ilKid" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c25a5a"/><stop offset="1" stop-color="#7d2a33"/></linearGradient>
+<linearGradient id="ilAdr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a0d18"/><stop offset="1" stop-color="#a3162a"/></linearGradient>
+<linearGradient id="ilMem" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2608c"/><stop offset="1" stop-color="#9c3460"/></linearGradient>
+<filter id="ilGlow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>`;
+const T=(x,y,s,o={})=>`<text x="${x}" y="${y}" font-family="IBM Plex Sans, system-ui, sans-serif" font-size="${o.fs||10}" fill="${o.c||'#aebfda'}" ${o.a?`text-anchor="${o.a}"`:''} ${o.w?`font-weight="${o.w}"`:''}>${s}</text>`;
+const dip=(x,y,r=4,rot=0)=>`<g transform="translate(${x} ${y}) rotate(${rot})"><ellipse cx="${-r*.85}" cy="0" rx="${r*.8}" ry="${r}" fill="url(#ilPink)"/><ellipse cx="${r*.85}" cy="0" rx="${r*.8}" ry="${r}" fill="url(#ilPink)"/></g>`;
+const svg=(body,h=150)=>`<svg viewBox="0 0 320 ${h}" xmlns="http://www.w3.org/2000/svg" role="img">${ILL_DEFS}${body}</svg>`;
+
+const ILL={mening:[
+/* 1 · dorms / barracks → meningitis */
+svg(`
+<rect x="8" y="10" width="304" height="132" rx="10" fill="#0d2247"/>
+<g stroke="#8fa3c2" stroke-width="3" stroke-linecap="round">
+  <line x1="26" y1="34" x2="26" y2="124"/><line x1="126" y1="34" x2="126" y2="124"/>
+  <line x1="26" y1="62" x2="126" y2="62"/><line x1="26" y1="104" x2="126" y2="104"/>
+  <line x1="40" y1="34" x2="40" y2="62" stroke-width="2"/>
+</g>
+<rect x="28" y="52" width="96" height="10" rx="3" fill="#dfe6f2"/><rect x="28" y="94" width="96" height="10" rx="3" fill="#dfe6f2"/>
+<circle cx="44" cy="47" r="6" fill="url(#ilSkin)"/><path d="M52 52 q30 -14 70 0 v4 h-70z" fill="#4f7fc4"/>
+<circle cx="44" cy="89" r="6" fill="url(#ilSkin)"/><path d="M52 94 q30 -14 70 0 v4 h-70z" fill="#c9844a"/>
+<path d="M44 40 q-4 -6 2 -9 q6 -2 6 4" fill="#5a3a22"/><path d="M44 82 q-4 -6 2 -9 q6 -2 6 4" fill="#2a1d14"/>
+<g fill="#ffd2e0" opacity=".85"><circle cx="62" cy="72" r="1.6"/><circle cx="70" cy="76" r="1.3"/><circle cx="78" cy="71" r="1.6"/><circle cx="86" cy="77" r="1.2"/><circle cx="94" cy="73" r="1.5"/></g>
+${T(76,138,'dorms · barracks · 15–24 y',{a:'middle',fs:9.5})}
+<path d="M138 80 h26" stroke="#f2ead3" stroke-width="2" marker-end="url(#ar)"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#f2ead3"/></marker></defs>
+${T(151,72,'droplets',{a:'middle',fs:8.5})}
+<g transform="translate(240 72)">
+  <ellipse cx="0" cy="0" rx="62" ry="50" fill="#d23a4a" opacity=".55" filter="url(#ilGlow)"/>
+  <ellipse cx="0" cy="0" rx="56" ry="45" fill="none" stroke="#e8455a" stroke-width="5"/>
+  <path d="M-48 4 c-4 -30 20 -44 48 -40 c26 -4 50 12 46 40 c2 24 -22 38 -46 34 c-26 4 -50 -10 -48 -34z" fill="url(#ilBrain)"/>
+  <g fill="none" stroke="#b97c86" stroke-width="2" stroke-linecap="round">
+    <path d="M-36 -12 q8 -8 16 0 t16 0"/><path d="M4 -22 q8 -8 16 0 t14 2"/><path d="M-30 12 q8 -8 16 0 t16 0 t14 0"/><path d="M8 26 q6 -6 14 0"/><path d="M0 -40 v76" stroke="#a96f79"/>
+  </g>
+  ${dip(-52,-18,3.2,40)}${dip(50,-24,3.2,-30)}${dip(-46,30,3.2,10)}${dip(46,28,3.2,70)}${dip(0,-46,3,0)}
+</g>
+${T(240,137,'inflamed meninges',{a:'middle',fs:9.5,c:'#ffb0bc'})}
+`),
+/* 2 · meningococcemia: non-blanching rash, DIC, adrenal hemorrhage */
+svg(`
+<rect x="8" y="10" width="96" height="132" rx="10" fill="#0d2247"/><rect x="112" y="10" width="96" height="132" rx="10" fill="#0d2247"/><rect x="216" y="10" width="96" height="132" rx="10" fill="#0d2247"/>
+<rect x="18" y="26" width="76" height="74" rx="10" fill="url(#ilSkin)"/>
+<g fill="#7a1638">${[[30,40],[46,34],[60,46],[76,38],[34,62],[52,58],[70,66],[84,56],[40,84],[58,80],[78,88],[28,92],[66,30],[88,76]].map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%4?2:3.4}"/>`).join('')}</g>
+<g fill="#5a0d2a" opacity=".8"><ellipse cx="56" cy="70" rx="7" ry="5"/><ellipse cx="80" cy="48" rx="5" ry="4"/></g>
+<circle cx="56" cy="62" r="26" fill="#eaf6ff" fill-opacity=".18" stroke="#eaf6ff" stroke-width="2.5"/>
+<path d="M78 46 l10 -10" stroke="#eaf6ff" stroke-width="2.5"/>
+${T(56,118,'pressed glass:',{a:'middle',fs:9})}${T(56,131,'rash stays',{a:'middle',fs:9.5,c:'#ffb0bc',w:600})}
+<path d="M122 40 h76 M122 72 h76" stroke="#c94a5a" stroke-width="2"/>
+<rect x="122" y="40" width="76" height="32" fill="#7d1c2c" opacity=".55"/>
+<g fill="#e8d9b0">${[[140,52],[166,60],[186,50]].map(([x,y])=>`<ellipse cx="${x}" cy="${y}" rx="9" ry="5"/>`).join('')}</g>
+<g stroke="#f4eccd" stroke-width=".8" opacity=".8"><path d="M132 49 l16 6 M134 56 l12 -6 M158 57 l16 6 M160 64 l12 -6 M178 47 l16 6 M180 54 l12 -6"/></g>
+<g fill="#d0263c"><path d="M140 86 q6 9 0 14 q-6 -5 0 -14z"/><path d="M160 92 q6 9 0 14 q-6 -5 0 -14z"/><path d="M180 84 q6 9 0 14 q-6 -5 0 -14z"/></g>
+${T(160,30,'micro-clots',{a:'middle',fs:9})}${T(160,118,'clots + bleeding',{a:'middle',fs:9})}${T(160,131,'DIC',{a:'middle',fs:10,c:'#ffb0bc',w:600})}
+<path d="M236 70 c-6 -18 6 -32 22 -28 c14 -6 30 2 30 18 c4 20 -6 44 -24 46 c-18 4 -32 -14 -28 -36z" fill="url(#ilKid)"/>
+<path d="M258 92 q-6 -4 -2 -16" stroke="#e8c27a" stroke-width="2.5" fill="none"/>
+<path d="M236 46 c4 -14 18 -20 30 -16 c12 2 22 10 22 18 c-10 -4 -18 -2 -26 0 c-10 2 -18 2 -26 -2z" fill="url(#ilAdr)"/>
+<g fill="#ff6a7a" opacity=".9"><circle cx="252" cy="38" r="2"/><circle cx="266" cy="35" r="1.6"/><circle cx="278" cy="40" r="2"/></g>
+<path d="M290 34 l10 -8" stroke="#ffb0bc" stroke-width="1.5"/>${T(300,24,'adrenal',{a:'end',fs:8.5,c:'#ffb0bc'})}
+${T(264,118,'adrenal hemorrhage',{a:'middle',fs:9})}${T(264,131,'Waterhouse–Friderichsen',{a:'middle',fs:8.6,c:'#ffb0bc',w:600})}
+`),
+/* 3 · LOS endotoxin + IgA protease */
+svg(`
+<rect x="8" y="10" width="148" height="132" rx="10" fill="#0d2247"/><rect x="164" y="10" width="148" height="132" rx="10" fill="#0d2247"/>
+<rect x="18" y="74" width="128" height="30" fill="#10284f"/>
+<g fill="url(#ilMem)">${Array.from({length:11},(_,i)=>`<circle cx="${22+i*12}" cy="76" r="4.6"/><circle cx="${22+i*12}" cy="102" r="4.6"/>`).join('')}</g>
+<g stroke="#c98aa8" stroke-width="1.4">${Array.from({length:11},(_,i)=>`<path d="M${20+i*12} 80 v8 M${24+i*12} 80 v8 M${20+i*12} 98 v-8 M${24+i*12} 98 v-8"/>`).join('')}</g>
+${[40,82,124].map(x=>`<g><path d="M${x-4} 74 v14 M${x} 74 v16 M${x+4} 74 v14" stroke="#f2ead3" stroke-width="1.6"/><rect x="${x-7}" y="66" width="14" height="8" rx="2" fill="#f2c94c"/>
+<g fill="#7fd6c2" stroke="#3a9c86" stroke-width=".8"><polygon points="${x-4},62 ${x+4},62 ${x+6},56 ${x+2},51 ${x-2},51 ${x-6},56"/><polygon points="${x-2},49 ${x+6},49 ${x+8},43 ${x+4},38 ${x},38 ${x-4},43"/><polygon points="${x+4},36 ${x+12},36 ${x+14},30 ${x+10},25 ${x+6},25 ${x+2},30"/></g></g>`).join('')}
+${T(82,20,'LOS',{a:'middle',fs:11,c:'#f2ead3',w:600})}
+${T(150,118,'outer membrane',{a:'end',fs:8.5})}
+${T(26,134,'lipid A = endotoxin',{fs:9,c:'#f2c94c'})}
+<g transform="translate(238 70)">
+  <g stroke="#8fc0ff" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M-34 -30 L-22 -8 L-22 20"/><path d="M-10 -30 L-22 -8"/><path d="M10 -30 L22 -8 L22 20"/><path d="M34 -30 L22 -8"/>
+  </g>
+  <path d="M-22 24 q22 12 44 0" stroke="#f2c94c" stroke-width="4" fill="none"/>
+  <circle cx="0" cy="30" r="5" fill="#f2c94c"/>
+  <g transform="translate(-30 -6) rotate(-30)">
+    <circle cx="-6" cy="10" r="5" fill="none" stroke="#e8edf5" stroke-width="2.4"/><circle cx="6" cy="10" r="5" fill="none" stroke="#e8edf5" stroke-width="2.4"/>
+    <path d="M-4 6 L8 -14 M4 6 L-8 -14" stroke="#e8edf5" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <path d="M-25 -10 l6 2" stroke="#ff6a7a" stroke-width="2.5"/>
+</g>
+${T(238,20,'IgA protease',{a:'middle',fs:11,c:'#f2ead3',w:600})}
+${T(238,122,'secretory IgA cut at the hinge',{a:'middle',fs:9})}${T(238,134,'→ colonizes the nasopharynx',{a:'middle',fs:9,c:'#8fc0ff'})}
+`),
+/* 4 · terminal complement deficiency */
+svg(`
+<rect x="8" y="10" width="148" height="132" rx="10" fill="#0d2247"/><rect x="164" y="10" width="148" height="132" rx="10" fill="#0d2247"/>
+${[[0,1],[156,0]].map(([ox,ok])=>`
+<g transform="translate(${ox} 0)">
+<rect x="18" y="72" width="128" height="26" fill="#10284f"/>
+<g fill="url(#ilMem)">${Array.from({length:11},(_,i)=>`<circle cx="${22+i*12}" cy="74" r="4.2"/><circle cx="${22+i*12}" cy="96" r="4.2"/>`).join('')}</g>
+${ok?`<rect x="66" y="44" width="34" height="62" fill="#06122a"/>
+<g>${['#7fd6c2','#8fc0ff','#b598ff','#f2c94c'].map((c,i)=>`<rect x="${58+i*2}" y="${46+i*3}" width="6" height="${44-i*2}" rx="3" fill="${c}"/>`).join('')}
+${Array.from({length:6},(_,i)=>`<rect x="${70+i*5}" y="40" width="4.4" height="70" rx="2.2" fill="#f07aa0"/>`).join('')}</g>
+<g fill="#cfe2ff">${[[84,60],[80,78],[88,96],[84,116],[78,128]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="2"/>`).join('')}</g>
+${T(82,30,'C5b–C9 pore (MAC)',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(82,138,'water rushes in → lysis',{a:'middle',fs:9})}`
+:`<g opacity=".45">${Array.from({length:6},(_,i)=>`<rect x="${70+i*5}" y="34" width="4.4" height="26" rx="2.2" fill="none" stroke="#f07aa0" stroke-dasharray="3 2"/>`).join('')}</g>
+<path d="M62 40 l40 24 M102 40 l-40 24" stroke="#ff6a7a" stroke-width="3" stroke-linecap="round"/>
+${dip(60,120,6,0)}${dip(102,118,6,30)}
+${T(82,30,'C5–C9 missing',{a:'middle',fs:9.5,c:'#ffb0bc',w:600})}${T(82,138,'Neisseria survives · recurs',{a:'middle',fs:9})}`}
+</g>`).join('')}
+`),
+/* 5 · prophylaxis for close contacts + vaccine */
+svg(`
+<rect x="8" y="10" width="304" height="132" rx="10" fill="#0d2247"/>
+<g>${[[30,58],[52,52],[41,86]].map(([x,y])=>`<circle cx="${x}" cy="${y-12}" r="7" fill="url(#ilSkin)"/><path d="M${x-11} ${y+12} q11 -20 22 0z" fill="#4f7fc4"/>`).join('')}</g>
+${T(41,116,'close',{a:'middle',fs:9.5})}${T(41,128,'contacts',{a:'middle',fs:9.5})}
+<path d="M70 70 h14" stroke="#f2ead3" stroke-width="2" marker-end="url(#ar2)"/>
+<defs><marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#f2ead3"/></marker></defs>
+<g transform="translate(116 56)"><rect x="-15" y="-7" width="30" height="14" rx="7" fill="#d8572a"/><rect x="0" y="-7" width="15" height="14" fill="#a8341a"/><rect x="8" y="-7" width="7" height="14" rx="7" fill="#a8341a"/>
+<path d="M-5 13 q4 8 0 12 q-4 -4 0 -12z" fill="#ff8a3a"/></g>
+${T(116,98,'rifampin',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(116,110,'orange fluids',{a:'middle',fs:8,c:'#ff9a5a'})}
+<g transform="translate(168 56)"><ellipse cx="0" cy="0" rx="14" ry="8" fill="#f6f2e8"/><path d="M-10 0 h20" stroke="#c9c2b2" stroke-width="1.2"/></g>
+${T(168,98,'cipro',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(168,110,'1 oral dose',{a:'middle',fs:8})}
+<g transform="translate(220 56) rotate(-20)"><rect x="-16" y="-5" width="26" height="10" rx="2" fill="#e8f3ff" fill-opacity=".85" stroke="#9fb6d6"/><rect x="-12" y="-3.5" width="13" height="7" fill="#f2c94c" opacity=".8"/><path d="M10 0 h11" stroke="#c9d2de" stroke-width="1.6"/><rect x="-21" y="-3" width="5" height="6" fill="#9fb6d6"/></g>
+${T(220,98,'ceftriaxone',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(220,110,'1 IM dose',{a:'middle',fs:8})}
+<line x1="94" y1="120" x2="246" y2="120" stroke="#26446f"/>${T(170,133,'any one of the three',{a:'middle',fs:8.5})}
+<line x1="258" y1="22" x2="258" y2="130" stroke="#26446f"/>
+<g transform="translate(285 52)"><rect x="-9" y="-12" width="18" height="26" rx="3" fill="#dfe9f6" fill-opacity=".9"/><rect x="-10" y="-17" width="20" height="6" rx="2" fill="#6bb36b"/><rect x="-9" y="0" width="18" height="10" fill="#8fc0ff" opacity=".6"/></g>
+${T(285,98,'vaccine',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(285,110,'MenACWY',{a:'middle',fs:8})}${T(285,121,'MenB',{a:'middle',fs:8})}
+`)
+]};
 
 /* ================= species data ================= */
 const SP={
@@ -916,7 +1056,7 @@ function openPanel(id){
   pbody.innerHTML=`<div class="ey">${d.group}</div><h2>${d.name}</h2>${d.aka?`<div class="aka">${d.aka}</div>`:'<div class="aka"></div>'}
     <dl class="kv"><dt>Gram</dt><dd>${d.gram||'Positive (purple)'}</dd><dt>Morphology</dt><dd>${d.morph}</dd></dl>
     <h3>Identification</h3><div class="tests">${d.tests.map(([t,v,k])=>`<span class="tst ${k}">${t}<i>${v}</i></span>`).join('')}</div>
-    <h3>High-yield · Step 1</h3><ul class="hy">${d.clin.map(x=>`<li>${x}</li>`).join('')}</ul>
+    <h3>High-yield · Step 1</h3><ul class="hy">${d.clin.map((x,i)=>{const il=ILL[N[id].spKey||id];return `<li>${x}${il&&il[i]?`<figure class="ill">${il[i]}</figure>`:''}</li>`;}).join('')}</ul>
     <h3>Don't confuse</h3><p>${d.diff}</p>
     <h3>Mnemonic</h3><div class="mn">${d.mnem}</div>`;
   pbody.scrollTop=0;panelId=id;document.body.classList.add('pon');navIdx=ORDER.indexOf(id);updateNav();panel.classList.add('on');panel.setAttribute('aria-hidden','false');dim.classList.add('on');select(id);
