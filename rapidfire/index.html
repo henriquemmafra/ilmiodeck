@@ -17,10 +17,14 @@
   <script defer src="./brain-tumors.js?v=20261111-12"></script>
   <script defer src="./assistant.js?v=20261109-ios-focus"></script>
   <script defer src="./app.js?v=20261111-randomized-choices"></script>
-  <style>.review-map-link{display:inline-block;color:#78cee0;font-size:14px;font-weight:700;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #78cee0;outline-offset:4px}</style>
+  <style>.study-tabs{display:flex;flex-wrap:wrap;gap:5px;border-bottom:1px solid #33465f;margin-bottom:26px}.study-tabs a{text-decoration:none;color:#c7d5e9;font-size:14px;font-weight:800;padding:13px 16px;border-radius:12px 12px 0 0}.study-tabs a.active{color:#0c1c33;background:#89b9ff}.study-tabs a:focus-visible{outline:2px solid #89b9ff;outline-offset:2px}@media(max-width:670px){.study-tabs a{padding:12px;font-size:13px}}.review-map-link{display:inline-block;color:#78cee0;font-size:14px;font-weight:700;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #78cee0;outline-offset:4px}</style>
 </head>
 <body>
   <main class="shell">
+    <nav class="study-tabs" aria-label="Study sections">
+      <a href="./index.html" class="active" aria-current="page">RapidFire · Questions</a>
+      <a href="./flashcards.html">Flashcards</a>
+    </nav>
     <header class="masthead">
       <div>
         <p class="eyebrow">Your missed concepts · Step 1</p>
