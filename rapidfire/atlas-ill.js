@@ -408,5 +408,93 @@ ${T(285,98,'vaccine',{a:'middle',fs:9.5,c:'#f2ead3',w:600})}${T(285,110,'MenACWY
 
 return ILL.mening;})();
 
+/* ---------- Gram-positive rods ---------- */
+{
+const prod=(x,y,s=1,r=0,sp=0)=>G(x,y,s,`<rect x="-13" y="-5" width="26" height="10" rx="5" fill="url(#ilPurp)"/>${sp===1?'<ellipse cx="0" cy="0" rx="4.5" ry="3.6" fill="#f6eed6"/>':sp===2?'<ellipse cx="9" cy="0" rx="5" ry="6" fill="#f6eed6" stroke="#cdbf98" stroke-width=".8"/>':''}`,r);
+const spore=(x,y,s=1)=>G(x,y,s,'<ellipse cx="0" cy="0" rx="6" ry="4.6" fill="#f6eed6" stroke="#cdbf98" stroke-width="1"/><ellipse cx="-1.5" cy="-1.5" rx="2" ry="1.2" fill="#fff"/>');
+const club=(x,y,s=1,r=0)=>G(x,y,s,'<path d="M-12 -2.6 L8 -4.8 Q14 0 8 4.8 L-12 2.6 Q-14 0 -12 -2.6z" fill="url(#ilPurp)"/><circle cx="8" cy="0" r="2.2" fill="#1a0e40"/><circle cx="-7" cy="0" r="1.6" fill="#1a0e40"/>',r);
+const chin=(x,y,s=1)=>G(x,y,s,club(0,0,1,-30)+club(14,-2,1,30)+club(2,16,1,90)+club(22,14,1,-60)+club(-16,14,1,10));
+const fil=(x,y,s=1,c='#9a62e8',bead=false)=>G(x,y,s,`<g fill="none" stroke="${c}" stroke-width="${bead?2.4:3}" stroke-linecap="round" ${bead?'stroke-dasharray="4 1.6"':''}><path d="M-30 6 q12 -4 22 -2 t24 -6 t16 -10"/><path d="M-12 3 q2 -10 -4 -18 t0 -12"/><path d="M8 -2 q6 8 2 18"/><path d="M20 -8 q4 -10 14 -12"/><path d="M-16 -12 q-8 -4 -12 -12"/></g>`);
+const bowl=(x,y,s=1,steam=true)=>G(x,y,s,`${steam?'<g fill="none" stroke="#dfe7f2" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M-10 -26 q-5 -7 0 -13 t0 -13"/><path d="M2 -28 q-5 -7 0 -13 t0 -12"/><path d="M14 -26 q-5 -7 0 -13 t0 -13"/></g>':''}<ellipse cx="0" cy="-10" rx="26" ry="10" fill="#f6eed6"/>${Array.from({length:14},(_,i)=>`<ellipse cx="${-20+(i*37)%40}" cy="${-14+(i*13)%8}" rx="2.6" ry="1.2" fill="#fffaf0" stroke="#d8cba6" stroke-width=".5" transform="rotate(${i*41} ${-20+(i*37)%40} ${-14+(i*13)%8})"/>`).join('')}<circle cx="-8" cy="-12" r="2" fill="#5aa63a"/><circle cx="10" cy="-10" r="2" fill="#5aa63a"/><rect x="2" y="-15" width="3.4" height="3.4" fill="#e07a2a"/><path d="M-28 -8 Q-26 16 0 16 Q26 16 28 -8z" fill="#f2f4f8"/><path d="M-27 -2 Q0 6 27 -2" stroke="#3a6fb0" stroke-width="2.4" fill="none"/>`);
+const cheese=(x,y,s=1)=>G(x,y,s,'<path d="M-24 10 L24 10 L24 -8 Z" fill="#f3cf5a"/><path d="M-24 10 L24 -8 L30 -12 L-18 6z" fill="#ffe08a"/><path d="M24 10 L30 6 L30 -12 L24 -8z" fill="#d9ad35"/><circle cx="8" cy="4" r="2.6" fill="#c99a25"/><circle cx="16" cy="-1" r="2" fill="#c99a25"/><circle cx="-6" cy="7" r="1.8" fill="#c99a25"/>');
+const flake=(x,y,s=1)=>G(x,y,s,`<g stroke="#cfe8ff" stroke-width="2" stroke-linecap="round">${[0,60,120].map(a=>`<g transform="rotate(${a})"><path d="M0 -14 V14 M-4 -10 L0 -6 L4 -10 M-4 10 L0 6 L4 10"/></g>`).join('')}</g>`);
+const fridge=(x,y,s=1)=>G(x,y,s,'<rect x="-18" y="-30" width="36" height="60" rx="5" fill="#e6edf6"/><path d="M-18 -8 H18" stroke="#9fb0c6" stroke-width="2"/><rect x="11" y="-24" width="3" height="10" rx="1.5" fill="#9fb0c6"/><rect x="11" y="-2" width="3" height="14" rx="1.5" fill="#9fb0c6"/>');
+const deli=(x,y,s=1)=>G(x,y,s,'<ellipse cx="0" cy="0" rx="16" ry="7" fill="#e88a8a"/><ellipse cx="0" cy="-3" rx="16" ry="7" fill="#f2a4a4"/><circle cx="-6" cy="-4" r="1.4" fill="#fff3f3"/><circle cx="5" cy="-2" r="1.2" fill="#fff3f3"/><circle cx="2" cy="-6" r="1" fill="#fff3f3"/>');
+const milk=(x,y,s=1)=>G(x,y,s,'<path d="M-10 -22 L10 -22 L10 -14 L14 -8 L14 22 L-14 22 L-14 -8 L-10 -14z" fill="#f2f4f8"/><path d="M-14 0 H14 V10 H-14z" fill="#3a6fb0"/><path d="M-12 -32 L12 -6 M12 -32 L-12 -6" stroke="#ff5a6a" stroke-width="0" />');
+const capsule=(x,y,s=1,r=-30)=>G(x,y,s,'<rect x="-14" y="-6" width="28" height="12" rx="6" fill="#f2f4f8"/><path d="M0 -6 H8 a6 6 0 0 1 0 12 H0z" fill="#6b8fd8"/>',r);
+const pm=(x,y,s=1)=>G(x,y,s,`<path d="M-40 -14 H40 V14 H-40z" fill="url(#ilGut)" rx="8"/><path d="M-40 -14 H40" stroke="#8a3e38" stroke-width="2"/>${[[-30,-6],[-16,2],[-2,-8],[10,4],[24,-4],[34,6],[-24,8]].map(([a,b])=>`<ellipse cx="${a}" cy="${b}" rx="6" ry="3.6" fill="#f0dc8a" stroke="#c9b25a" stroke-width=".8"/>`).join('')}`);
+const soap=(x,y,s=1)=>G(x,y,s,'<rect x="-16" y="-8" width="32" height="16" rx="6" fill="#bfe3ff"/><circle cx="-12" cy="-14" r="5" fill="none" stroke="#dfefff" stroke-width="1.4"/><circle cx="2" cy="-18" r="3.4" fill="none" stroke="#dfefff" stroke-width="1.2"/><circle cx="12" cy="-12" r="4" fill="none" stroke="#dfefff" stroke-width="1.2"/>');
+const gel=(x,y,s=1)=>G(x,y,s,'<rect x="-9" y="-12" width="18" height="30" rx="4" fill="#9fd8c0"/><rect x="-4" y="-22" width="8" height="10" fill="#e6edf6"/><rect x="-2" y="-26" width="12" height="5" fill="#e6edf6"/>');
+const actin=(x,y,s=1)=>G(x,y,s,`${prod(0,0,1,0)}<path d="M-13 0 L-40 -8 L-40 8z" fill="#7fe0b0" opacity=".75"/>`);
+const tellPlate=(x,y,s=1)=>plate(x,y,s,'#6e1e22','#111',10);
+const blocks=(x,y,s=1)=>G(x,y,s,['A','B','C','D','E','F','G'].map((L,i)=>{const cols=['#e2608c','#f2c94c','#7fd6a0','#8fc0ff','#b598ff','#f0a060','#ff8a96'];const px=(i<4?(i-1.5)*17:(i-5)*17),py=i<4?0:-17;return `<rect x="${px-8}" y="${py-8}" width="16" height="16" rx="2" fill="${cols[i]}"/>${T(px,py+4,L,{fs:10,c:'#14234a',w:700})}`;}).join(''));
+const soil=(x,y,s=1)=>G(x,y,s,'<path d="M-30 10 Q-24 -10 0 -12 Q24 -10 30 10z" fill="#5a3a22"/><circle cx="-14" cy="0" r="1.6" fill="#7a5638"/><circle cx="10" cy="-4" r="1.4" fill="#7a5638"/><circle cx="18" cy="4" r="1.2" fill="#7a5638"/><path d="M0 -12 q2 -10 -1 -18" stroke="#5aa63a" stroke-width="2" fill="none"/><path d="M-1 -28 q8 -2 10 -10 q-8 0 -10 10z M-1 -24 q-8 -2 -10 -8 q8 0 10 8z" fill="#6bbf4a"/>');
+const iud=(x,y,s=1)=>G(x,y,s,`<rect x="-2" y="-22" width="4" height="40" rx="2" fill="#f6f6f2"/><rect x="-18" y="-24" width="36" height="4" rx="2" fill="#f6f6f2"/>${Array.from({length:7},(_,i)=>`<rect x="-3.5" y="${-8+i*3.4}" width="7" height="2" rx="1" fill="#c87533"/>`).join('')}<path d="M0 18 q4 6 -2 12" stroke="#3a6fb0" stroke-width="1.2" fill="none"/>`);
+const gran=(x,y,s=1)=>G(x,y,s,'<circle cx="0" cy="0" r="6" fill="#f2c22a"/><circle cx="8" cy="4" r="4.6" fill="#e8b520"/><circle cx="-6" cy="6" r="4" fill="#f5cf4a"/><circle cx="-2" cy="-2" r="1.6" fill="#fff3b0"/>');
+const jaw=(x,y,s=1)=>G(x,y,s,'<path d="M-28 -30 Q-34 0 -22 22 Q0 34 22 22 Q30 6 24 -10" fill="url(#ilSkin)"/><path d="M-6 -4 q-2 -10 4 -16" stroke="#b07a5a" stroke-width="1.5" fill="none"/><circle cx="14" cy="10" r="8" fill="#d9706a"/><circle cx="14" cy="10" r="3" fill="#f2c22a"/><path d="M14 18 q2 8 -2 14" stroke="#f2c22a" stroke-width="2" fill="none"/>');
+const neck=(x,y,s=1)=>G(x,y,s,'<path d="M-14 -34 Q-16 -14 -24 0 Q-30 22 -26 34 L26 34 Q30 22 24 0 Q16 -14 14 -34z" fill="url(#ilSkin)"/><ellipse cx="-14" cy="6" rx="9" ry="7" fill="#d9706a" opacity=".8"/><ellipse cx="14" cy="6" rx="9" ry="7" fill="#d9706a" opacity=".8"/>');
+
+ILL.cereus=[
+svg(frames(1)+bowl(110,70,1.3)+prod(196,46,1.2,-15,1)+prod(220,66,1.2,20,1)+T(244,40,'B. cereus',{fs:9,c:C.dim})
+ +T(160,124,'“Fried rice syndrome”',{fs:10,c:C.ink,w:600})+T(160,136,'reheated rice → food poisoning',{fs:8.5})),
+svg(frames(2)+bowl(cx(2,0)-18,72,.9,false)+clock(cx(2,0)+28,50,1,'1–5h')+cap(2,0,'Vomiting type','1–5 h after eating',C.pink)
+ +gut(cx(2,1)-14,56,.9)+clock(cx(2,1)+30,50,1,'8–18h')+cap(2,1,'Diarrheal type','watery · 8–18 h')),
+svg(frames(3)+spore(cx(3,0),60,2.2)+flame(cx(3,0),90,.7)+cap(3,0,'spores','survive cooking',C.pink)
+ +bowl(cx(3,1),74,.8,false)+thermo(cx(3,1)+26,52,.7)+cap(3,1,'kept warm','hours at room temp')
+ +prod(cx(3,2)-12,56,1.1,-20)+prod(cx(3,2)+10,70,1.1,15)+arrow(cx(3,2)-30,90,cx(3,2)-14,72)+cap(3,2,'germinate','rods multiply',C.pink))
+];
+ILL.cdiff=[
+svg(frames(2)+capsule(cx(2,0)-16,50,1.2)+capsule(cx(2,0)+16,66,1.2,20)+cap(2,0,'Antibiotics','clinda · cephalo · FQ',C.pink)
+ +hospital(cx(2,1),58,1)+cap(2,1,'Hospital stay','older adults · PPIs')),
+svg(frames(1)+pm(110,56,1.3)+prod(212,48,1.1,-20,2)+prod(236,66,1.1,15,2)+T(232,92,'subterminal spores',{fs:8.5,c:C.dim})
+ +T(160,124,'Pseudomembranous colitis',{fs:10,c:C.ink,w:600})+T(160,136,'watery diarrhea · toxic megacolon risk',{fs:8.5,c:C.pink})),
+svg(frames(2)+gel(cx(2,0),58,1.3)+X(cx(2,0),58,16)+cap(2,0,'Alcohol gel','does not kill spores',C.pink)
+ +soap(cx(2,1),62,1.4)+water(cx(2,1)+24,40,.7)+cap(2,1,'Soap and water','+ contact precautions')),
+svg(frames(3)+vial(cx(3,0),58,1)+cap(3,0,'Oral vancomycin','not IV',C.pink)+pill(cx(3,1),58,1.2,'#7fd6a0','#3f8a5a')+cap(3,1,'Fidaxomicin','fewer recurrences')
+ +gut(cx(3,2),56,.8)+cap(3,2,'Recurrence','fecal transplant'))
+];
+ILL.listeria=[
+svg(frames(3)+cheese(cx(3,0),62,1.1)+cap(3,0,'Soft cheese','unpasteurized dairy',C.pink)+deli(cx(3,1),64,1.4)+cap(3,1,'Deli meats','cold cuts')
+ +fridge(cx(3,2)-10,60,.9)+flake(cx(3,2)+22,46,.9)+cap(3,2,'Grows at 4 °C','cold enrichment',C.pink)),
+svg(frames(2)+person(cx(2,0),60,1.1,'#c47fb0')+`<circle cx="${cx(2,0)+4}" cy="68" r="10" fill="#f3cdb0" opacity=".9"/>`+cap(2,0,'Pregnancy','amnionitis · miscarriage',C.pink)
+ +baby(cx(2,1)-12,64,1.2)+brain(cx(2,1)+22,54,.55,true)+cap(2,1,'Neonate','sepsis · meningitis')),
+svg(frames(1)+baby(70,64,1)+person(120,60,1,'#8fa8c4')+shield(170,58,.9)+X(170,58,10)+brain(232,56,.9,true)
+ +T(160,124,'Meningitis: neonates · elderly · immunocompromised',{fs:9.5,c:C.ink,w:600})+T(160,136,'empiric regimen → add ampicillin',{fs:8.5,c:C.pink})),
+svg(frames(1)+`<ellipse cx="110" cy="60" rx="56" ry="38" fill="#2a3f66" stroke="#6b8fc4" stroke-width="2"/><ellipse cx="226" cy="60" rx="50" ry="36" fill="#2a3f66" stroke="#6b8fc4" stroke-width="2"/>`
+ +actin(130,56,1.2)+actin(92,72,1,)+`<path d="M166 56 q8 -6 18 -2" stroke="#7fe0b0" stroke-width="3" fill="none"/>`+prod(206,52,1,0)+`<path d="M193 52 L176 46 L176 58z" fill="#7fe0b0" opacity=".75"/>`
+ +T(160,124,'Actin “rockets”',{fs:10,c:C.ink,w:600})+T(160,136,'facultative intracellular · cell-to-cell spread',{fs:8.5}))
+];
+ILL.diph=[
+svg(frames(2)+throat(cx(2,0),56,1.1)+`<path d="M${cx(2,0)-16} 58 q16 -12 32 0 q-16 10 -32 0z" fill="#9aa3ae" opacity=".9"/>`+cap(2,0,'Gray pseudomembrane','bleeds if scraped',C.pink)
+ +neck(cx(2,1),58,1)+cap(2,1,'“Bull neck”','cervical lymphadenopathy')),
+svg(frames(2)+heart(cx(2,0),58,1)+`<path d="M${cx(2,0)-34} 92 l8 0 l4 -10 l4 14 l4 -8 l6 0 l3 -6 l3 10 l4 -4 l8 0" stroke="#7fd6a0" stroke-width="1.6" fill="none"/>`+cap(2,0,'Myocarditis','arrhythmias',C.pink)
+ +brain(cx(2,1),48,.6)+`<path d="M${cx(2,1)} 66 v24 M${cx(2,1)} 74 l-14 12 M${cx(2,1)} 74 l14 12" stroke="#f2c94c" stroke-width="2"/>`+cap(2,1,'Neuropathy','cranial nerve palsies')),
+svg(frames(3)+tellPlate(cx(3,0),58,1)+cap(3,0,'Tellurite','black colonies',C.pink)+chin(cx(3,1)-6,50,1.2)+cap(3,1,'Löffler','metachromatic granules')
+ +`<rect x="${cx(3,2)-30}" y="34" width="60" height="44" rx="4" fill="#e6edf6"/><path d="M${cx(3,2)-30} 56 H${cx(3,2)+30}" stroke="#8fc0ff" stroke-width="3"/><path d="M${cx(3,2)-6} 40 L${cx(3,2)-22} 74 M${cx(3,2)+6} 40 L${cx(3,2)+22} 74" stroke="#b9c6d6" stroke-width="2"/>`+cap(3,2,'Elek test','toxin precipitin line')),
+svg(frames(3)+syringe(cx(3,0),58,1.1,-20,'#8fc0ff')+cap(3,0,'Antitoxin','give early',C.pink)+pill(cx(3,1),58,1.2)+cap(3,1,'Penicillin','or erythromycin')
+ +shield(cx(3,2),56,1.1)+cap(3,2,'DTaP vaccine','toxoid',C.green))
+];
+ILL.nocardia=[
+svg(frames(1)+soil(110,72,1.6)+`<g opacity=".7">${[0,1,2].map(i=>`<circle cx="${150+i*14}" cy="${50-i*6}" r="${2+i}" fill="#a77cf0"/>`).join('')}</g>`+arrow(196,42,224,48)+lungs(252,58,.8)
+ +T(160,124,'Lives in soil',{fs:10,c:C.ink,w:600})+T(160,136,'infection by inhalation',{fs:8.5})),
+svg(frames(2)+lungs(cx(2,0),56,1,{cav:true})+cap(2,0,'Pulmonary disease','can mimic TB',C.pink)
+ +pill(cx(2,1)-16,54,1)+`<rect x="${cx(2,1)+4}" y="40" width="26" height="30" rx="4" fill="#e6edf6"/>${T(cx(2,1)+17,60,'Tx',{fs:10,c:'#1b2a44',w:700})}`+cap(2,1,'Immunocompromised','transplant · steroids')),
+svg(frames(2)+brain(cx(2,0),56,1)+`<circle cx="${cx(2,0)+10}" cy="50" r="8" fill="#f2c94c" stroke="#ff8a96" stroke-width="2.5"/>`+cap(2,0,'Brain abscess','hematogenous spread',C.pink)
+ +skin(cx(2,1),60,1,'<circle cx="-6" cy="-8" r="7" fill="#c4447e"/><circle cx="12" cy="-6" r="4.5" fill="#c4447e"/>')+cap(2,1,'Skin','cutaneous infection')),
+svg(frames(1)+fil(90,62,1.4,'#c4447e',true)+`<rect x="160" y="40" width="96" height="40" rx="10" fill="#7fd6a0"/>`+T(208,66,'TMP-SMX',{fs:14,c:'#0d2247',w:700})
+ +T(160,124,'SNAP: Sulfonamides → Nocardia',{fs:10,c:C.ink,w:600})+T(160,136,'weakly acid-fast · aerobic',{fs:8.5}))
+];
+ILL.actino=[
+svg(frames(3)+face(cx(3,0),58,.9)+cap(3,0,'Mouth','normal flora')+gut(cx(3,1),56,.8)+cap(3,1,'Gut','normal flora')+uterus(cx(3,2),58,.8)+cap(3,2,'Female genital tract','normal flora')),
+svg(frames(1)+jaw(110,60,1.3)+`<path d="M164 46 l10 -6 l2 10" stroke="#f2ead3" stroke-width="2" fill="none"/>`+fil(230,58,1.1)
+ +T(160,124,'“Lumpy jaw” after dental work',{fs:10,c:C.ink,w:600})+T(160,136,'cervicofacial abscess · draining sinus tracts',{fs:8.5,c:C.pink})),
+svg(frames(1)+`<path d="M60 40 Q90 30 120 44 Q140 70 110 86 Q80 96 62 80z" fill="#e8d8a0" opacity=".8"/>`+gran(90,62,1.5)+gran(116,70,.9)+arrow(150,62,186,62)+G(230,62,1,`<circle r="30" fill="#efdde1"/>`+fil(0,0,.8,'#7d4fe0'))
+ +T(160,124,'Yellow “sulfur granules”',{fs:10,c:C.ink,w:600})+T(160,136,'filaments inside the pus',{fs:8.5})),
+svg(frames(2)+uterus(cx(2,0)-12,60,.9,true)+iud(cx(2,0)+28,58,1)+cap(2,0,'IUD-associated','pelvic infection',C.pink)
+ +gran(cx(2,1)-10,56,1.4)+iud(cx(2,1)+22,58,.8)+cap(2,1,'Look for granules','on the device')),
+svg(frames(1)+vial(98,58,1.2)+T(98,96,'Penicillin',{fs:10,c:C.ink,w:600})+scissors(220,56,1.1)+T(220,96,'Drainage',{fs:10,c:C.ink,w:600})
+ +T(160,124,'SNAP: Actinomyces → Penicillin',{fs:10,c:C.ink,w:600})+T(160,136,'anaerobic · not acid-fast',{fs:8.5}))
+];
+}
 window.ATLAS_ILL=ILL;
 })();
