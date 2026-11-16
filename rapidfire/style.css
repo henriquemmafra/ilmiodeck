@@ -211,3 +211,40 @@ footer{color:#7a8a9b}
  .session-line{align-items:flex-start;gap:12px}
  #review-summary{font-size:11px;max-width:55%}
 }
+
+
+/* Small illustrated module mosaic: clean cards with compact medical icons. */
+.masthead{isolation:isolate}
+.masthead-texture{position:absolute;z-index:0;pointer-events:none;width:440px;height:440px;right:-120px;top:-130px;border-radius:50%;opacity:.5;background:repeating-radial-gradient(circle at 50% 50%,transparent 0 21px,rgba(204,207,250,.16) 22px 23px,transparent 24px 34px),radial-gradient(circle at 48% 52%,rgba(154,150,246,.2),transparent 66%)}
+.modules{margin:0 0 26px}
+.modules-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
+.modules-heading h2{margin:0;color:#243953;font-size:12px;text-transform:uppercase;letter-spacing:.11em;font-weight:900}
+.modules-heading>span{font-size:11px;color:#7e89a0;font-weight:750}
+.study-links.module-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:0;margin:0}
+.module-card{position:relative;display:flex;flex-direction:column;gap:11px;min-width:0;min-height:143px;padding:15px;border-radius:17px;border:1px solid #e1e4ed;background:linear-gradient(155deg,#fff 62%,#f8f8ff 100%);box-shadow:0 5px 18px rgba(24,36,64,.045);text-decoration:none;color:#25334d;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.module-card:hover{transform:translateY(-2px);border-color:#aaa8df;box-shadow:0 11px 24px rgba(42,44,90,.09)}
+.module-card:focus-visible{outline:3px solid #7773d9;outline-offset:3px}
+.module-icon{width:45px;height:45px;flex:none;display:grid;place-items:center;border:1px solid #e4e6f4;border-radius:12px;background:#f4f3fb}
+.module-icon svg{display:block;width:32px;height:32px}
+.module-icon--fundus{background:#fff1e6;border-color:#f8e6d6}
+.module-icon--lab{background:#fff0f1;border-color:#f6e3e7}
+.module-icon--pv{background:#f8f0fc}
+.module-icon--brain{background:#f0f4f9}
+.module-icon--lungs{background:#fff1f7}
+.module-copy{display:flex;flex-direction:column;gap:5px;min-width:0;padding-right:5px}
+.module-copy strong{font-size:13.5px;line-height:1.25;letter-spacing:-.012em;font-weight:850;color:#24344c}
+.module-copy small{font-size:11.5px;line-height:1.45;color:#75829a;font-weight:500}
+.module-chevron{position:absolute;right:14px;top:17px;font-size:22px;line-height:1;color:#8b85d1;font-weight:500}
+@media(max-width:1000px){.study-links.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:750px){
+ .study-links.module-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .module-card{min-height:155px;padding:12px;gap:10px}
+ .module-icon{width:40px;height:40px;border-radius:10px}
+ .module-icon svg{width:29px;height:29px}
+ .module-copy strong{font-size:12.5px}
+ .module-copy small{font-size:11px}
+ .module-chevron{right:12px;top:14px}
+ .modules{margin-bottom:19px}
+ .masthead-texture{width:285px;height:285px;right:-110px;top:-80px}
+}
+@media(prefers-reduced-motion:reduce){.module-card{transition:none}}
