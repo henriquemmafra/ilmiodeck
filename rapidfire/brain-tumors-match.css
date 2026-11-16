@@ -46,3 +46,29 @@ h1 span{color:var(--accent)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 .completion{grid-column:1/-1;font-size:20px;font-weight:800;line-height:1.5;text-align:center;padding:40px 12px;color:#c9f3de}
+
+/* Match board: comfortable gaps and resolved pairs collected beneath it. */
+.board[hidden],.column-labels[hidden],.completed-pairs[hidden]{display:none!important}
+.board{column-gap:16px;padding:18px}
+.column-labels{column-gap:16px}
+.match-column{row-gap:16px}
+.match-source,.match-target{min-height:106px}
+.completed-pairs{margin-top:24px;padding:17px;background:#102332;border:1px solid #315369;border-radius:18px}
+.completed-pairs h2{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:0 0 13px;font-size:16px;font-weight:850;color:#e5f9f2}
+.completed-pairs h2 span{font-size:11px;font-weight:750;color:#82cbb2}
+.completed-list{display:grid;gap:12px}
+.completed-row{display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);gap:14px;padding:8px;border-radius:13px;background:#0d1c2a;border:1px solid #2c6759;animation:pair-settled .24s ease-out}
+.completed-tumor,.completed-clue{display:flex;align-items:center;justify-content:center;min-width:0;overflow-wrap:anywhere;min-height:73px;padding:11px 9px;text-align:center;line-height:1.4;border-radius:10px;background:#153c33;border:1px solid #357e64;color:#b6efd8;font-size:13px;font-weight:750}
+.completed-clue{font-weight:600}
+@keyframes pair-settled{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:500px){
+ .board{padding:12px;column-gap:12px}
+ .column-labels{column-gap:12px}
+ .match-column{row-gap:15px}
+ .match-source,.match-target{min-height:112px;font-size:13px;padding:10px 7px}
+ .completed-pairs{padding:12px;margin-top:18px}
+ .completed-list{gap:11px}
+ .completed-row{gap:11px;padding:7px}
+ .completed-tumor,.completed-clue{min-height:78px;padding:10px 7px;font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.completed-row{animation:none}}
