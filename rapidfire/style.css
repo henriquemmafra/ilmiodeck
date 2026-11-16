@@ -214,17 +214,20 @@ footer{color:#7a8a9b}
 
 
 
-/* Compact module navigation, redesigned to prioritize answering questions. */
+
+/* Clean study-first layout: fixed two-row quick-launch modules with small line icons. */
 .masthead{isolation:isolate}
 .masthead-texture{position:absolute;z-index:0;pointer-events:none;width:360px;height:360px;right:-120px;top:-120px;border-radius:50%;opacity:.38;background:repeating-radial-gradient(circle,transparent 0 23px,rgba(205,207,249,.13) 24px 25px,transparent 26px 37px)}
 .modules{margin:0 0 17px;min-width:0}
-.modules-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px}
+.modules-heading{display:flex;align-items:center;margin:0 0 8px}
 .modules-heading h2{font-size:11px;color:#4b5a76;letter-spacing:.09em;text-transform:uppercase;font-weight:850;margin:0}
-.modules-swipe-hint{color:#8290a4;font-size:10px;font-weight:600}
-.study-links.module-grid{display:flex;flex-wrap:nowrap;gap:7px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scroll-snap-type:x proximity;margin:0;padding:1px 0 6px}
-.module-card{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;min-height:34px;min-width:0;border:1px solid #dfe1ed;border-radius:9px;background:#fff;padding:7px 12px;color:#4d4a96;text-decoration:none;font-weight:750;font-size:12px;line-height:1.15;letter-spacing:0;white-space:nowrap;box-shadow:none;scroll-snap-align:start;transition:border-color .15s,background .15s}
+.study-links.module-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:0;padding:0;overflow:visible}
+.module-card{display:flex;align-items:center;justify-content:center;gap:6px;min-width:0;min-height:39px;padding:8px 9px;border:1px solid #dfe2ed;border-radius:10px;background:#fff;color:#4d4a96;text-decoration:none;font-weight:750;font-size:12px;line-height:1.1;letter-spacing:-.012em;white-space:nowrap;box-shadow:0 2px 5px rgba(28,39,70,.025);transition:border-color .15s,background .15s}
 .module-card:hover{background:#f3f2ff;border-color:#a5a0d8}
 .module-card:focus-visible{outline:3px solid #7773d9;outline-offset:2px}
+.module-mini-icon{display:block;width:16px;height:16px;flex:0 0 16px;color:#7570c5}
+.module-card span{min-width:0;overflow:hidden;text-overflow:clip}
+.study-layout{display:block;max-width:880px;margin:0 auto}
 .study-filters{margin-bottom:13px}
 .study-filters>summary{display:none;cursor:pointer;list-style:none}
 .study-filters>summary::-webkit-details-marker{display:none}
@@ -241,8 +244,9 @@ footer{color:#7a8a9b}
  .modules{margin-bottom:10px}
  .modules-heading{margin-bottom:6px}
  .modules-heading h2{font-size:10px}
- .study-links.module-grid{gap:6px;padding:0 0 4px}
- .module-card{min-height:30px;padding:6px 10px;font-size:11px;border-radius:8px}
+ .study-links.module-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+ .module-card{min-height:39px;padding:7px 4px;gap:4px;font-size:10.5px;border-radius:8px}
+ .module-mini-icon{width:14px;height:14px;flex-basis:14px}
  .study-filters{margin:0 0 10px}
  .study-filters>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:35px;padding:8px 11px;background:#fff;border:1px solid #e1e4ec;border-radius:10px;font-size:12px;font-weight:800;color:#374665}
  .study-filters>summary:after{content:"⌄";font-size:18px;line-height:1;color:#7870cc}
@@ -256,4 +260,5 @@ footer{color:#7a8a9b}
  .stem{margin-bottom:15px}
  .session-line #review-summary{max-width:42%;line-height:1.25}
 }
+@media(max-width:360px){.module-card{font-size:9.5px;gap:3px}.module-mini-icon{width:13px;height:13px;flex-basis:13px}}
 @media(prefers-reduced-motion:reduce){.module-card{transition:none}}
