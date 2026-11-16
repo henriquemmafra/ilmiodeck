@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#0b1220">
   <meta name="description" content="Match brain tumors to Step 1 histology, location, and clinical clues.">
   <title>Brain Tumors Match · RapidFire</title>
-  <link rel="stylesheet" href="./brain-tumors-match.css?v=20261111-1">
+  <link rel="stylesheet" href="./brain-tumors-match.css?v=20261115-pairs-1">
   <script defer src="./brain-tumors.js?v=20261111-12"></script>
-  <script defer src="./brain-tumors-match.js?v=20261111-1"></script>
+  <script defer src="./brain-tumors-match.js?v=20261115-pairs-1"></script>
 </head>
 <body>
   <main class="shell">
@@ -35,9 +35,13 @@
     <div class="progress-track"><div id="progress-bar"></div></div>
     <div class="column-labels"><span>Tumor</span><span>Match this clue</span></div>
     <section id="board" class="board" aria-label="Matching game"></section>
+    <section id="completed-pairs" class="completed-pairs" aria-labelledby="completed-heading" hidden>
+      <h2 id="completed-heading">Matched pairs <span>✓ Correct answers</span></h2>
+      <div id="completed-list" class="completed-list"></div>
+    </section>
     <p id="feedback" class="feedback" role="status" aria-live="polite">Pick a tumor, then drag or tap its correct clue.</p>
     <button id="next-set" class="next" type="button" hidden>Next set →</button>
-    <p class="footnote">Each set has four shuffled pairs. Three sets cover all 12 tumors. Wrong matches are not revealed, so you can try again. All labels and teaching points are in English.</p>
+    <p class="footnote">Each set has four shuffled pairs. Three sets cover all 12 tumors. Correct matches move together below the board. Wrong matches are not revealed, so you can try again. All labels and teaching points are in English.</p>
   </main>
 </body>
 </html>
