@@ -213,38 +213,47 @@ footer{color:#7a8a9b}
 }
 
 
-/* Small illustrated module mosaic: clean cards with compact medical icons. */
+
+/* Compact module navigation, redesigned to prioritize answering questions. */
 .masthead{isolation:isolate}
-.masthead-texture{position:absolute;z-index:0;pointer-events:none;width:440px;height:440px;right:-120px;top:-130px;border-radius:50%;opacity:.5;background:repeating-radial-gradient(circle at 50% 50%,transparent 0 21px,rgba(204,207,250,.16) 22px 23px,transparent 24px 34px),radial-gradient(circle at 48% 52%,rgba(154,150,246,.2),transparent 66%)}
-.modules{margin:0 0 26px}
-.modules-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 12px}
-.modules-heading h2{margin:0;color:#243953;font-size:12px;text-transform:uppercase;letter-spacing:.11em;font-weight:900}
-.modules-heading>span{font-size:11px;color:#7e89a0;font-weight:750}
-.study-links.module-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:0;margin:0}
-.module-card{position:relative;display:flex;flex-direction:column;gap:11px;min-width:0;min-height:143px;padding:15px;border-radius:17px;border:1px solid #e1e4ed;background:linear-gradient(155deg,#fff 62%,#f8f8ff 100%);box-shadow:0 5px 18px rgba(24,36,64,.045);text-decoration:none;color:#25334d;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
-.module-card:hover{transform:translateY(-2px);border-color:#aaa8df;box-shadow:0 11px 24px rgba(42,44,90,.09)}
-.module-card:focus-visible{outline:3px solid #7773d9;outline-offset:3px}
-.module-icon{width:45px;height:45px;flex:none;display:grid;place-items:center;border:1px solid #e4e6f4;border-radius:12px;background:#f4f3fb}
-.module-icon svg{display:block;width:32px;height:32px}
-.module-icon--fundus{background:#fff1e6;border-color:#f8e6d6}
-.module-icon--lab{background:#fff0f1;border-color:#f6e3e7}
-.module-icon--pv{background:#f8f0fc}
-.module-icon--brain{background:#f0f4f9}
-.module-icon--lungs{background:#fff1f7}
-.module-copy{display:flex;flex-direction:column;gap:5px;min-width:0;padding-right:5px}
-.module-copy strong{font-size:13.5px;line-height:1.25;letter-spacing:-.012em;font-weight:850;color:#24344c}
-.module-copy small{font-size:11.5px;line-height:1.45;color:#75829a;font-weight:500}
-.module-chevron{position:absolute;right:14px;top:17px;font-size:22px;line-height:1;color:#8b85d1;font-weight:500}
-@media(max-width:1000px){.study-links.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.masthead-texture{position:absolute;z-index:0;pointer-events:none;width:360px;height:360px;right:-120px;top:-120px;border-radius:50%;opacity:.38;background:repeating-radial-gradient(circle,transparent 0 23px,rgba(205,207,249,.13) 24px 25px,transparent 26px 37px)}
+.modules{margin:0 0 17px;min-width:0}
+.modules-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 8px}
+.modules-heading h2{font-size:11px;color:#4b5a76;letter-spacing:.09em;text-transform:uppercase;font-weight:850;margin:0}
+.modules-swipe-hint{color:#8290a4;font-size:10px;font-weight:600}
+.study-links.module-grid{display:flex;flex-wrap:nowrap;gap:7px;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scroll-snap-type:x proximity;margin:0;padding:1px 0 6px}
+.module-card{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;min-height:34px;min-width:0;border:1px solid #dfe1ed;border-radius:9px;background:#fff;padding:7px 12px;color:#4d4a96;text-decoration:none;font-weight:750;font-size:12px;line-height:1.15;letter-spacing:0;white-space:nowrap;box-shadow:none;scroll-snap-align:start;transition:border-color .15s,background .15s}
+.module-card:hover{background:#f3f2ff;border-color:#a5a0d8}
+.module-card:focus-visible{outline:3px solid #7773d9;outline-offset:2px}
+.study-filters{margin-bottom:13px}
+.study-filters>summary{display:none;cursor:pointer;list-style:none}
+.study-filters>summary::-webkit-details-marker{display:none}
+.study-filters .controls{margin-bottom:0}
+.study-column>.metrics{margin:20px 0 12px}
 @media(max-width:750px){
- .study-links.module-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
- .module-card{min-height:155px;padding:12px;gap:10px}
- .module-icon{width:40px;height:40px;border-radius:10px}
- .module-icon svg{width:29px;height:29px}
- .module-copy strong{font-size:12.5px}
- .module-copy small{font-size:11px}
- .module-chevron{right:12px;top:14px}
- .modules{margin-bottom:19px}
- .masthead-texture{width:285px;height:285px;right:-110px;top:-80px}
+ .shell{padding:10px 12px 30px}
+ .masthead{margin:0 0 12px;padding:17px 18px;min-height:0;border-radius:15px}
+ .masthead .eyebrow{font-size:9px;margin:0 0 6px;gap:7px}
+ .masthead .dot{height:6px;width:6px}
+ .masthead h1{font-size:30px;line-height:1}
+ .masthead .subtitle,.masthead .hero-points{display:none}
+ .masthead-texture{width:220px;height:220px;top:-80px;right:-55px}
+ .modules{margin-bottom:10px}
+ .modules-heading{margin-bottom:6px}
+ .modules-heading h2{font-size:10px}
+ .study-links.module-grid{gap:6px;padding:0 0 4px}
+ .module-card{min-height:30px;padding:6px 10px;font-size:11px;border-radius:8px}
+ .study-filters{margin:0 0 10px}
+ .study-filters>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:35px;padding:8px 11px;background:#fff;border:1px solid #e1e4ec;border-radius:10px;font-size:12px;font-weight:800;color:#374665}
+ .study-filters>summary:after{content:"⌄";font-size:18px;line-height:1;color:#7870cc}
+ .study-filters[open]>summary:after{content:"⌃"}
+ .study-filters>summary span{font-size:10px;font-weight:550;color:#8893a5;margin-left:auto}
+ .study-filters[open]>.controls{margin-top:9px}
+ .study-column>.metrics{margin:18px 0 12px}
+ .session-line{margin-bottom:6px}
+ .progress{margin:0 0 9px;height:5px}
+ .stage{padding:19px 15px;min-height:280px}
+ .stem{margin-bottom:15px}
+ .session-line #review-summary{max-width:42%;line-height:1.25}
 }
 @media(prefers-reduced-motion:reduce){.module-card{transition:none}}
