@@ -4,13 +4,16 @@
   var size = 4;
   var mode = document.getElementById("match-mode");
   var board = document.getElementById("board");
+  var columnLabels = document.querySelector(".column-labels");
+  var completedArea = document.getElementById("completed-pairs");
+  var completedList = document.getElementById("completed-list");
   var status = document.getElementById("feedback");
   var next = document.getElementById("next-set");
   var progress = document.getElementById("progress-bar");
   var setLabel = document.getElementById("round");
   var pairsLabel = document.getElementById("pairs");
   var firstTryLabel = document.getElementById("first-try");
-  var order = [], current = [], shuffledClues = [];
+  var order = [], current = [], shuffledClues = [], matchedOrder = [];
   var setIndex = 0, selected = null, matched = new Set(), missed = new Set(), firstTry = 0, completed = false;
   var pointer = null, ghost = null, hovered = null, suppressSourceClicksUntil = 0;
   var storageKey = "rapidfire-brain-tumors-match-v1";
@@ -49,6 +52,7 @@
   }
   function startSet() {
     matched = new Set();
+    matchedOrder = [];
     missed = new Set();
     selected = null;
     current = order.slice(setIndex * size, setIndex * size + size);
@@ -76,6 +80,7 @@
     }
     if (!missed.has(sourceId)) firstTry++;
     matched.add(sourceId);
+    matchedOrder.push(sourceId);
     selected = null;
     announce("Correct — " + item.pearl, "good");
     render();
@@ -94,38 +99,56 @@
   }
   function render() {
     board.replaceChildren();
-    var left = node("div", "match-column");
-    var right = node("div", "match-column");
-    current.forEach(function (item) {
-      var btn = node("button", "match-source" + (matched.has(item.id) ? " is-matched" : ""), item.name);
-      btn.type = "button";
-      btn.dataset.id = item.id;
-      btn.disabled = matched.has(item.id);
-      btn.setAttribute("aria-pressed", "false");
-      btn.setAttribute("aria-label", item.name + ". Select or drag to the matching clue.");
-      btn.addEventListener("click", function () {
-        if (Date.now() < suppressSourceClicksUntil) return;
-        selectTumor(item.id);
+    var remaining = current.filter(function (item) { return !matched.has(item.id); });
+    var remainingClues = shuffledClues.filter(function (item) { return !matched.has(item.id); });
+    board.hidden = remaining.length === 0;
+    columnLabels.hidden = remaining.length === 0;
+
+    if (remaining.length) {
+      var left = node("div", "match-column");
+      var right = node("div", "match-column");
+      remaining.forEach(function (item) {
+        var btn = node("button", "match-source", item.name);
+        btn.type = "button";
+        btn.dataset.id = item.id;
+        btn.setAttribute("aria-pressed", "false");
+        btn.setAttribute("aria-label", item.name + ". Select or drag to the matching clue.");
+        btn.addEventListener("click", function () {
+          if (Date.now() < suppressSourceClicksUntil) return;
+          selectTumor(item.id);
+        });
+        btn.addEventListener("pointerdown", beginDrag);
+        left.appendChild(btn);
       });
-      btn.addEventListener("pointerdown", beginDrag);
-      left.appendChild(btn);
-    });
-    shuffledClues.forEach(function (item) {
-      var btn = node("button", "match-target" + (matched.has(item.id) ? " is-matched" : ""), item[mode.value]);
-      btn.type = "button";
-      btn.dataset.id = item.id;
-      btn.disabled = matched.has(item.id);
-      btn.setAttribute("aria-label", "Match clue: " + item[mode.value]);
-      btn.addEventListener("click", function () {
-        if (!selected) {
-          announce("Choose a tumor from the left column first.");
-          return;
-        }
-        tryMatch(selected, item.id);
+      remainingClues.forEach(function (item) {
+        var btn = node("button", "match-target", item[mode.value]);
+        btn.type = "button";
+        btn.dataset.id = item.id;
+        btn.setAttribute("aria-label", "Match clue: " + item[mode.value]);
+        btn.addEventListener("click", function () {
+          if (!selected) {
+            announce("Choose a tumor from the left column first.");
+            return;
+          }
+          tryMatch(selected, item.id);
+        });
+        right.appendChild(btn);
       });
-      right.appendChild(btn);
+      board.append(left, right);
+    }
+
+    completedList.replaceChildren();
+    completedArea.hidden = matchedOrder.length === 0;
+    matchedOrder.forEach(function (id) {
+      var item = getCase(id);
+      if (!item) return;
+      var pair = node("div", "completed-row");
+      var tumor = node("div", "completed-tumor", item.name);
+      var clue = node("div", "completed-clue", item[mode.value]);
+      pair.setAttribute("aria-label", "Correct pair: " + item.name + " — " + item[mode.value]);
+      pair.append(tumor, clue);
+      completedList.appendChild(pair);
     });
-    board.append(left, right);
     paintSelection();
     setCounters();
   }
@@ -193,6 +216,7 @@
     if (matched.size !== current.length) return;
     if ((setIndex + 1) * size >= all.length) {
       completed = true;
+      board.hidden = false;
       board.replaceChildren();
       board.appendChild(node("p", "completion", "All 12 tumors matched. " + firstTry + " of " + all.length + " correct on the first try."));
       try {
