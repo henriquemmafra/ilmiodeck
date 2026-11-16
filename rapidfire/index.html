@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#f5f4f0">
   <meta name="description" content="Fast questions and targeted review of missed Step 1 concepts">
   <title>Step 1 RapidFire</title>
-  <link rel="stylesheet" href="./style.css?v=20261114-srs-v1">
+  <link rel="stylesheet" href="./style.css?v=20261115-mosaic-v1">
   <script defer src="./questions.js?v=20261114-english-audit"></script>
   <script defer src="./microbiology-original-20261115.js?v=1"></script>
   <script defer src="./antibiotic-resistance.js?v=20261107-16"></script>
@@ -21,7 +21,6 @@
   <script defer src="./card-integration.js?v=20261114-unified"></script>
   <script defer src="./scheduler.js?v=20261114-srs-v1"></script>
   <script defer src="./app.js?v=20261114-tap-correct-next"></script>
-  <style>.review-map-link{display:inline-block;color:#6260cc;font-size:13px;font-weight:750;line-height:1.5;text-underline-offset:3px}.review-map-link:focus-visible{outline:2px solid #6a69df;outline-offset:4px}</style>
 </head>
 <body>
   <main class="shell">
@@ -36,20 +35,48 @@
           <span>03&nbsp; REVIEW EVERY OPTION</span>
         </div>
       </div>
-      <div class="stack-art" aria-hidden="true">
-        <div class="art-back"></div><div class="art-middle"></div>
-        <div class="art-front"><span>RAPIDFIRE</span><strong>✳</strong><small>Think. Answer. Learn.</small></div>
-      </div>
+      <div class="masthead-texture" aria-hidden="true"></div>
     </header>
-    <nav class="study-links" aria-label="Additional study modules">
-      <a href="./fundus-id-challenge.html" class="review-map-link">Fundus ID Challenge · Identify 12 retinal findings by image</a>
-      <a href="./bacterial-atlas.html" class="review-map-link">Bacterial ID Atlas 3D · Start from the Gram stain and walk each identification tree</a>
-      <a href="./bacterial-3d-atlas.html" class="review-map-link">3D Bacterial Atlas · Animated complete identification map</a>
-      <a href="./bacterial-id-lab.html" class="review-map-link">Bacterial ID Lab · Catalase, coagulase, hemolysis and species identification</a>
-      <a href="./pressure-volume-lab.html" class="review-map-link">Pressure–Volume Lab · Interactive cardiac physiology</a>
-      <a href="./brain-tumors-match.html" class="review-map-link">Brain Tumors Match · Drag tumors onto their clues</a>
-      <a href="./cystic-fibrosis-review.html" class="review-map-link">Cystic fibrosis · Pathogens and culture media</a>
-    </nav>
+    <section class="modules" aria-labelledby="modules-heading">
+      <div class="modules-heading"><h2 id="modules-heading">Interactive study modules</h2><span>7 activities</span></div>
+      <nav class="study-links module-grid" aria-label="Additional study modules">
+        <a href="./fundus-id-challenge.html" class="module-card">
+          <span class="module-icon module-icon--fundus" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="#F7A56B" stroke="#D67E4E" stroke-width="1.4"/><path d="M25 25C18 15 12 14 8 12M25 25C18 27 10 30 7 37M25 25C33 19 37 14 39 9M25 25C30 32 33 37 36 41M19 19l-2-8M16 30l-5-2M31 20l4 2M31 33l-5 5" stroke="#C96350" stroke-width="1.5" stroke-linecap="round"/><circle cx="25" cy="25" r="4.5" fill="#FCEAC7" stroke="#D98150" stroke-width="1.2"/><circle cx="17" cy="23" r="2" fill="#BD5846"/></svg></span>
+          <span class="module-copy"><strong>Fundus ID Challenge</strong><small>Identify 12 retinal findings by image</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./bacterial-atlas.html" class="module-card">
+          <span class="module-icon module-icon--gram" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="8" width="10" height="20" rx="5" fill="#AA90E4" stroke="#6D56B6" stroke-width="1.2" transform="rotate(-29 11 18)"/><rect x="27" y="12" width="10" height="21" rx="5" fill="#CE8FBF" stroke="#A45C93" stroke-width="1.2" transform="rotate(35 32 22)"/><circle cx="13" cy="36" r="4.6" fill="#A88BE0" stroke="#6650B0"/><circle cx="22" cy="35" r="4.6" fill="#BEA5F0" stroke="#6650B0"/><circle cx="18" cy="28" r="4.6" fill="#9479D7" stroke="#6650B0"/><circle cx="35" cy="37" r="3.5" fill="#E4A5CE" stroke="#AD679B"/></svg></span>
+          <span class="module-copy"><strong>Bacterial ID Atlas 3D</strong><small>Gram stain → identification tree</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./bacterial-3d-atlas.html" class="module-card">
+          <span class="module-icon module-icon--atlas" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="13" r="6" fill="#9F87D9" stroke="#7159B9"/><circle cx="28" cy="12" r="6" fill="#C1B2F3" stroke="#7159B9"/><circle cx="36" cy="24" r="6" fill="#937AD4" stroke="#7159B9"/><circle cx="25" cy="25" r="7" fill="#B49AEA" stroke="#7159B9"/><circle cx="14" cy="29" r="6" fill="#A78ADD" stroke="#7159B9"/><circle cx="27" cy="37" r="6" fill="#9C84DA" stroke="#7159B9"/><circle cx="15" cy="14" r="1.6" fill="#E6DEFF"/><circle cx="25" cy="22" r="1.8" fill="#E6DEFF"/></svg></span>
+          <span class="module-copy"><strong>3D Bacterial Atlas</strong><small>Animated identification map</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./bacterial-id-lab.html" class="module-card">
+          <span class="module-icon module-icon--lab" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><ellipse cx="24" cy="20" rx="18" ry="11" fill="#F4B7B6" stroke="#D16C79" stroke-width="1.6"/><path d="M6 20v8c0 6 8 11 18 11s18-5 18-11v-8" fill="#D98C9A" fill-opacity=".4" stroke="#A95264" stroke-width="1.8"/><ellipse cx="24" cy="20" rx="14.5" ry="8" fill="#C95664" stroke="#A84B5B"/><g fill="#F9D2B4"><circle cx="18" cy="17" r="2.1"/><circle cx="27" cy="19" r="2.5"/><circle cx="32" cy="24" r="1.8"/><circle cx="21" cy="25" r="1.8"/><circle cx="30" cy="14" r="1.5"/></g></svg></span>
+          <span class="module-copy"><strong>Bacterial ID Lab</strong><small>Catalase, coagulase & hemolysis</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./pressure-volume-lab.html" class="module-card">
+          <span class="module-icon module-icon--pv" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M9 7v32h33" stroke="#899AB8" stroke-width="1.8" stroke-linecap="round"/><path d="M17 32V19c0-8 4-11 11-11s11 5 11 13v8c0 5-6 8-14 8-5 0-8-2-8-5Z" fill="#F0D9F4" stroke="#AD65B3" stroke-width="2.6"/><path d="m15 11-6-4 6-4M39 33l3-4-3-4" stroke="#899AB8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="module-copy"><strong>Pressure–Volume Lab</strong><small>Interactive cardiac physiology</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./brain-tumors-match.html" class="module-card">
+          <span class="module-icon module-icon--brain" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="5" width="36" height="38" rx="12" fill="#D9E1EE" stroke="#8F9BB1" stroke-width="1.4"/><path d="M24 9C15 9 11 15 11 23c0 10 5 15 13 15s13-5 13-15c0-8-4-14-13-14Z" fill="#ADB9C9" stroke="#73849B" stroke-width="1.3"/><path d="M23 12v21M19 16l3 3-5 4 5 4-3 4" stroke="#EBF1F9" stroke-width="1.4" stroke-linecap="round"/><path d="M29 15c2 0 5 2 6 5M30 32c3-1 5-3 6-6" stroke="#E1E7F1" stroke-width="1.5"/><circle cx="30" cy="24" r="5.2" fill="#F9FBFF" stroke="#EEF2FA" stroke-width="1.3"/></svg></span>
+          <span class="module-copy"><strong>Brain Tumors Match</strong><small>Match tumors with their clues</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+        <a href="./cystic-fibrosis-review.html" class="module-card">
+          <span class="module-icon module-icon--lungs" aria-hidden="true"><svg viewBox="0 0 48 48" width="33" height="33" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M24 7v13M24 16l-8 9M24 16l8 9" stroke="#C86E9D" stroke-width="2.8" stroke-linecap="round"/><path d="M21 20c-2-5-5-5-7-2C9 23 7 27 6 35c-.5 4 3 6 7 5 7-2 10-8 10-15l-2-5Z" fill="#F1C0D6" stroke="#C478A4" stroke-width="1.7"/><path d="M27 20c2-5 5-5 7-2 5 5 7 9 8 17 .5 4-3 6-7 5-7-2-10-8-10-15l2-5Z" fill="#F1C0D6" stroke="#C478A4" stroke-width="1.7"/><path d="M14 28l6 6M34 28l-6 6M16 34l-3 3M32 34l3 3" stroke="#C478A4" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+          <span class="module-copy"><strong>Cystic fibrosis</strong><small>Pathogens & culture media</small></span>
+          <span class="module-chevron" aria-hidden="true">›</span>
+        </a>
+      </nav>
+    </section>
     <div class="study-layout">
       <div class="study-column">
     <section class="controls" aria-label="Session filters">
