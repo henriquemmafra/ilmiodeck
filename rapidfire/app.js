@@ -18,6 +18,17 @@
         (q.options.length === 0 && typeof q.recallAnswer === "string" && q.recallAnswer.length > 0));
   });
 
+  // ?deck=hy150 opens the same RapidFire engine with only the 150 reviewed concepts.
+  // The mixed bank remains unchanged, and progress IDs are shared between both views.
+  if (new URLSearchParams(window.location.search).get("deck") === "hy150") {
+    questions = questions.filter(function (q) { return /^hy150-\\d{3}$/.test(q.id); }).map(function (q) {
+      return Object.assign({}, q, { topic: q.sourceGroup || q.topic });
+    });
+    var subtitle = document.querySelector(".masthead .subtitle");
+    if (subtitle) subtitle.textContent = "150 high-yield Step 1 concepts · Ten topics · Three choices · Every option explained.";
+    document.title = "High-Yield 150 · RapidFire";
+  }
+
   var storageKey = "step1-rapidfire-progress-v1";
   var history = loadHistory();
   var seen = new Set();
